@@ -1,0 +1,1021 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket"
+    
+    interface Serializable
+    interface IMetadataContext
+    interface IEvent
+    interface Iterable
+    interface UnboundListener
+    interface IEventSink
+    interface IInitializer
+    interface IClusterable
+    interface IMarkupIdGenerator
+    interface IPageManagerProvider
+    interface IRequestableComponent
+    interface IRequestablePage
+    interface Supplier
+    interface IConverter
+    interface IQueueRegion
+    interface IRequestMapper
+    interface IEventSource
+    interface IVisitor
+    interface IBehaviorInstantiationListener
+    interface ISessionListener
+    interface IConverterLocator
+    interface IHeaderContributor
+    interface IHierarchical
+    interface IApplicationListener
+    interface IMapperContext
+    interface IExceptionMapper
+    interface IFeedbackContributor
+    
+    ISessionStore.UnboundListener <|-- Application
+    IEventSink <|-- Application
+    IMetadataContext <|-- Application
+    abstract class Application
+    {
+        --(constructors)--
+        +Application()
+        --
+        +void configure()
+        +RequestCycle createRequestCycle(Request, Response)
+        +IHeaderResponse decorateHeaderResponse(IHeaderResponse)
+        +Session fetchCreateAndSetSession(RequestCycle)
+        +Application get()
+        +Application get(String applicationKey)
+        +ApplicationSettings getApplicationSettings()
+        +IConverterLocator getConverterLocator()
+        +DebugSettings getDebugSettings()
+        +Supplier<IExceptionMapper> getExceptionMapperProvider()
+        +ExceptionSettings getExceptionSettings()
+        +FrameworkSettings getFrameworkSettings()
+        +HeaderResponseDecoratorCollection getHeaderResponseDecorators()
+        +Class<? extends Page> getHomePage()
+        +JavaScriptLibrarySettings getJavaScriptLibrarySettings()
+        +IMapperContext getMapperContext()
+        +MarkupSettings getMarkupSettings()
+        +String getMimeType(String fileName)
+        +IPageManagerProvider getPageManagerProvider()
+        +IPageRendererProvider getPageRendererProvider()
+        +PageSettings getPageSettings()
+        +IRequestCycleProvider getRequestCycleProvider()
+        +RequestCycleSettings getRequestCycleSettings()
+        +IRequestLogger getRequestLogger()
+        +RequestLoggerSettings getRequestLoggerSettings()
+        +ResourceBundles getResourceBundles()
+        +ResourceReferenceRegistry getResourceReferenceRegistry()
+        +ResourceSettings getResourceSettings()
+        +IRequestMapper getRootRequestMapper()
+        +ICompoundRequestMapper getRootRequestMapperAsCompound()
+        +SecuritySettings getSecuritySettings()
+        +ISessionStore getSessionStore()
+        +Supplier<ISessionStore> getSessionStoreProvider()
+        +StoreSettings getStoreSettings()
+        +void internalDestroy()
+        +void logResponseTarget(IRequestHandler requestTarget)
+        +Application setApplicationSettings(ApplicationSettings)
+        +Application setDebugSettings(DebugSettings)
+        +Application setExceptionSettings(ExceptionSettings)
+        +Application setFrameworkSettings(FrameworkSettings)
+        +Application setHeaderResponseDecorator(IHeaderResponseDecorator)
+        +Application setJavaScriptLibrarySettings(JavaScriptLibrarySettings)
+        +Application setMarkupSettings(MarkupSettings)
+        +Application setPageManagerProvider(IPageManagerProvider)
+        +Application setPageRendererProvider(IPageRendererProvider)
+        +Application setPageSettings(PageSettings)
+        +Application setRequestCycleProvider(IRequestCycleProvider)
+        +Application setRequestCycleSettings(RequestCycleSettings)
+        +Application setRequestLoggerSettings(RequestLoggerSettings)
+        +Application setResourceSettings(ResourceSettings)
+        +Application setRootRequestMapper(IRequestMapper rootRequestMapper)
+        +Application setSecuritySettings(SecuritySettings)
+        +Application setSessionStoreProvider(Supplier<ISessionStore> sessionStoreProvider)
+        +Application setStoreSettings(StoreSettings)
+        #void checkSettingsAvailable()
+        #void onDestroy()
+        --(collection)--
+        +String getApplicationKey()
+        +Set<String> getApplicationKeys()
+        +List<IInitializer> getInitializers()
+        --(configuration)--
+        +RuntimeConfigurationType getConfigurationType()
+        +boolean usesDeploymentConfig()
+        +boolean usesDevelopmentConfig()
+        --(factory)--
+        +IPageFactory getPageFactory()
+        +Session newSession(Request, Response)
+        #IConverterLocator newConverterLocator()
+        #IMapperContext newMapperContext()
+        #IPageFactory newPageFactory()
+        #IRequestLogger newRequestLogger()
+        #ResourceBundles newResourceBundles(ResourceReferenceRegistry)
+        #ResourceReferenceRegistry newResourceReferenceRegistry()
+        #SharedResources newSharedResources(ResourceReferenceRegistry)
+        --(filesystem)--
+        +boolean exists()
+        --(functional)--
+        +SharedResources getSharedResources()
+        --(lifecycle)--
+        +void initApplication()
+        #void init()
+        #void internalInit()
+        #void validateInit()
+        --(messaging)--
+        +ApplicationListenerCollection getApplicationListeners()
+        +BehaviorInstantiationListenerCollection getBehaviorInstantiationListeners()
+        +ComponentInitializationListenerCollection getComponentInitializationListeners()
+        +ComponentInstantiationListenerCollection getComponentInstantiationListeners()
+        +ComponentOnAfterRenderListenerCollection getComponentOnAfterRenderListeners()
+        +ComponentOnConfigureListenerCollection getComponentOnConfigureListeners()
+        +ComponentOnBeforeRenderListenerCollection getComponentPostOnBeforeRenderListeners()
+        +ComponentOnBeforeRenderListenerCollection getComponentPreOnBeforeRenderListeners()
+        +HeaderContributorListenerCollection getHeaderContributorListeners()
+        +OnComponentTagListenerCollection getOnComponentTagListeners()
+        +RequestCycleListenerCollection getRequestCycleListeners()
+        +SessionListenerCollection getSessionListeners()
+        +void logEventTarget(IRequestHandler target)
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+    }
+    
+    ListenerCollection <|-- ApplicationListenerCollection
+    IApplicationListener <|-- ApplicationListenerCollection
+    class ApplicationListenerCollection
+    {
+    }
+    
+    Behavior <|-- AttributeModifier
+    IClusterable <|-- AttributeModifier
+    class AttributeModifier
+    {
+        --(constructors)--
+        +AttributeModifier(String, Serializable)
+        +AttributeModifier(String, IModel<?>)
+        --
+        +AttributeAppender append(String attributeName, IModel<?> value)
+        +AttributeAppender append(String attributeName, Serializable value)
+        +String getAttribute()
+        +AttributeAppender prepend(String attributeName, IModel<?> value)
+        +AttributeAppender prepend(String attributeName, Serializable value)
+        +AttributeModifier replace(String attributeName, IModel<?> value)
+        +AttributeModifier replace(String attributeName, Serializable value)
+        +void replaceAttributeValue(Component, ComponentTag)
+        #IModel<?> getReplaceModel()
+        --(collection)--
+        +AttributeModifier remove(String attributeName)
+        --(factory)--
+        #Serializable newValue(String currentValue, String replacementValue)
+    }
+    
+    ResourceReference <|-- SharedResources.AutoResourceReference
+    class SharedResources.AutoResourceReference
+    {
+    }
+    
+    ArrayList <|-- Behaviors.BehaviorIdList
+    class Behaviors.BehaviorIdList
+    {
+        --(constructors)--
+        +BehaviorIdList()
+    }
+    
+    ListenerCollection <|-- BehaviorInstantiationListenerCollection
+    IBehaviorInstantiationListener <|-- BehaviorInstantiationListenerCollection
+    class BehaviorInstantiationListenerCollection
+    {
+    }
+    
+    class Behaviors
+    {
+        --
+        +void detach(Component)
+        --(collection)--
+        +void add(Component, Behavior... behaviors)
+        +List<M> getBehaviors(Component, Class<M> type)
+        +void onRemove(Component)
+        +void remove(Component, Behavior)
+        --(identity)--
+        +Behavior getBehaviorById(Component, int id)
+        +int getBehaviorId(Component, Behavior)
+    }
+    
+    class DequeueContext.Bookmark
+    {
+    }
+    
+    enum ChildToDequeueType
+    {
+        BORDER
+        GENERIC_COMPONENT
+        MARKUP_CONTAINER
+        NULL
+        QUEUE_REGION
+    }
+    
+    AttributeAppender <|-- ClassAttributeModifier
+    abstract class ClassAttributeModifier
+    {
+        --(constructors)--
+        +ClassAttributeModifier()
+        --
+        #Set<String> update(Set<String> oldClasses)
+    }
+    
+    class Localizer.ClassMetaDatabase
+    {
+        --(identity)--
+        +long id(Class<?> clazz)
+    }
+    
+    IClusterable <|-- Component
+    IConverterLocator <|-- Component
+    IRequestableComponent <|-- Component
+    IHeaderContributor <|-- Component
+    IHierarchical <|-- Component
+    IEventSink <|-- Component
+    IEventSource <|-- Component
+    IMetadataContext <|-- Component
+    IFeedbackContributor <|-- Component
+    abstract class Component
+    {
+        --(constructors)--
+        +Component(String)
+        +Component(String, IModel<?>)
+        --
+        +void beforeRender()
+        +void configure()
+        +void continueToOriginalDestination()
+        +void detachModels()
+        +boolean determineVisibility()
+        +Application getApplication()
+        +IModel<?> getDefaultModel()
+        +Object getDefaultModelObject()
+        +String getDefaultModelObjectAsString(Object modelObject)
+        +String getDefaultModelObjectAsString()
+        +boolean getEscapeModelStrings()
+        +IModel<?> getInnermostModel()
+        +Locale getLocale()
+        +Localizer getLocalizer()
+        +IMarkupFragment getMarkup()
+        +IModelComparator getModelComparator()
+        +boolean getRenderBodyOnly()
+        +Request getRequest()
+        +RequestCycle getRequestCycle()
+        +Response getResponse()
+        +Session getSession()
+        +String getString(String key, IModel<?>)
+        +String getString(String key)
+        +String getString(String key, IModel<?>, String defaultValue)
+        +String getStyle()
+        +String getVariation()
+        +void internalRenderHead(HtmlHeaderContainer)
+        +void markRendering(boolean setRenderingFlag)
+        +void modelChanged()
+        +void modelChanging()
+        +void onComponentTagBody(MarkupStream, ComponentTag openTag)
+        +void redirectToInterceptPage(Page)
+        +void render()
+        +void renderPart()
+        +void rendered()
+        +Component replaceWith(Component replacement)
+        +boolean sameInnermostModel(Component)
+        +boolean sameInnermostModel(IModel<?>)
+        +Component setDefaultModel(IModel<?>)
+        +Component setDefaultModelObject(Object)
+        +Component setEscapeModelStrings(boolean escapeMarkup)
+        +Component setMarkup(IMarkupFragment)
+        +void setParent(MarkupContainer parent)
+        +Component setRenderBodyOnly(boolean renderTag)
+        +void setResponsePage(Class<C> cls)
+        +void setResponsePage(Class<C> cls, PageParameters)
+        +void setResponsePage(IRequestablePage)
+        +Component setVisible(boolean visible)
+        +R visitParents(Class<C> parentClass, IVisitor<C,R>)
+        +R visitParents(Class<C> parentClass, IVisitor<C,R>, IVisitFilter)
+        #void checkComponentTag(ComponentTag, String name)
+        #void checkComponentTagAttribute(ComponentTag, String key, String... values)
+        #void checkHierarchyChange(Component)
+        #IConverter<?> createConverter(Class<?> type)
+        #void detachModel()
+        #boolean getFlag(int flag)
+        #IModel<?> getInnermostModel(IModel<?>)
+        #IMarkupSourcingStrategy getMarkupSourcingStrategy()
+        #ComponentTag getMarkupTag()
+        #boolean getRequestFlag(short flag)
+        #boolean getStatelessHint()
+        #void internalOnModelChanged()
+        #void internalRenderComponent()
+        #void onAfterRender()
+        #void onBeforeRender()
+        #void onComponentTag(ComponentTag)
+        #void onConfigure()
+        #void onDetach()
+        #void onModelChanged()
+        #void onModelChanging()
+        #void onRender()
+        #void renderComponentTag(ComponentTag)
+        #void renderPlaceholderTag(ComponentTag, Response)
+        #void replaceComponentTagBody(MarkupStream, ComponentTag, CharSequence body)
+        #Component setAuto(boolean auto)
+        #Component setFlag(int flag, boolean set)
+        #Component setIgnoreAttributeModifier(boolean ignore)
+        #IModel<V> wrap(IModel<V>)
+        --(checks)--
+        +boolean canCallListener()
+        +boolean hasBeenRendered()
+        +boolean hasErrorMessage()
+        +boolean hasFeedbackMessage()
+        +boolean isActionAuthorized(Action)
+        +boolean isAuto()
+        +boolean isEnableAllowed()
+        +boolean isEnabled()
+        +boolean isEnabledInHierarchy()
+        +boolean isInitialized()
+        +boolean isRenderAllowed()
+        +boolean isRendering()
+        +boolean isStateless()
+        +boolean isVersioned()
+        +boolean isVisibilityAllowed()
+        +boolean isVisible()
+        +boolean isVisibleInHierarchy()
+        #boolean isBehaviorAccepted(Behavior)
+        #boolean isIgnoreAttributeModifier()
+        --(collection)--
+        +Component add(Behavior... behaviors)
+        +void clearOriginalDestination()
+        +List<M> getBehaviors(Class<M> type)
+        +List<? extends Behavior> getBehaviors()
+        +ValueMap getMarkupAttributes()
+        +long getSizeInBytes()
+        +Component remove(Behavior... behaviors)
+        +void remove()
+        #void addStateChange()
+        #void onReAdd()
+        #void onRemove()
+        --(factory)--
+        #IMarkupSourcingStrategy newMarkupSourcingStrategy()
+        --(functional)--
+        +MarkupContainer findParentWithAssociatedMarkup()
+        +Component setEnabled(boolean enabled)
+        +Component setVersioned(boolean versioned)
+        +Component setVisibilityAllowed(boolean allowed)
+        --(identity)--
+        +String getAjaxRegionMarkupId()
+        +String getMarkupId()
+        +String getMarkupId(boolean createIfDoesNotExist)
+        +String getMarkupIdFromMarkup()
+        +Object getMarkupIdImpl()
+        +boolean getOutputMarkupId()
+        +Component setMarkupId(String markupId)
+        +void setMarkupIdImpl(Object markupId)
+        +Component setOutputMarkupId(boolean output)
+        --(lifecycle)--
+        +void internalInitialize()
+        #IModel<?> initModel()
+        #void onInitialize()
+        --(messaging)--
+        +FeedbackMessages getFeedbackMessages()
+        #String exceptionMessage(String message)
+        --(path)--
+        +String getClassRelativePath()
+        +String getPath()
+        --(primitive)--
+        +CharSequence urlFor(IRequestHandler)
+        +CharSequence urlFor(Class<C> pageClass, PageParameters)
+        +CharSequence urlFor(ResourceReference, PageParameters)
+        +CharSequence urlForListener(Behavior behaviour, PageParameters)
+        +CharSequence urlForListener(PageParameters)
+        --(search)--
+        +Z findParent(Class<Z>)
+        #MarkupStream findMarkupStream()
+        #Page findPage()
+        --(write)--
+        +boolean getOutputMarkupPlaceholderTag()
+        +Component setOutputMarkupPlaceholderTag(boolean outputTag)
+    }
+    
+    IEvent <|-- ComponentEvent
+    class ComponentEvent<T>
+    {
+        --(constructors)--
+        +ComponentEvent(IEventSink, IEventSource, Broadcast, T)
+        --(messaging)--
+        +IEventSink getSink()
+    }
+    
+    IEventSource <|-- ComponentEventSender
+    class ComponentEventSender
+    {
+        --(constructors)--
+        +ComponentEventSender(Component, IEventDispatcher)
+    }
+    
+    IVisitor <|-- ComponentEventSender.ComponentEventVisitor
+    class ComponentEventSender.ComponentEventVisitor<T>
+    {
+    }
+    
+    class ComponentQueue
+    {
+        --
+        +Component get(String id)
+        --(collection)--
+        +boolean isEmpty()
+    }
+    
+    IConverterLocator <|-- ConverterLocator
+    class ConverterLocator
+    {
+        --(constructors)--
+        +ConverterLocator()
+        --
+        +IConverter<C> get(Class<C>)
+        +IConverter<?> set(Class<?>, IConverter<?>)
+        --(collection)--
+        +IConverter<?> remove(Class<?>)
+    }
+    
+    IConverter <|-- ConverterLocator.DefaultConverter
+    class ConverterLocator.DefaultConverter<C>
+    {
+    }
+    
+    IExceptionMapper <|-- DefaultExceptionMapper
+    class DefaultExceptionMapper
+    {
+        --
+        #Page extractCurrentPage()
+        --(checks)--
+        #boolean isProcessingAjaxRequest()
+        --(messaging)--
+        #RenderPageRequestHandler createPageRequestHandler(PageProvider)
+        #IRequestHandler mapExpectedExceptions(Exception, Application)
+        #IRequestHandler mapUnexpectedExceptions(Exception, Application)
+    }
+    
+    IMapperContext <|-- DefaultMapperContext
+    class DefaultMapperContext
+    {
+        --(constructors)--
+        +DefaultMapperContext()
+        +DefaultMapperContext(Application)
+    }
+    
+    IMarkupIdGenerator <|-- DefaultMarkupIdGenerator
+    class DefaultMarkupIdGenerator
+    {
+    }
+    
+    IPageManagerProvider <|-- DefaultPageManagerProvider
+    class DefaultPageManagerProvider
+    {
+        --(constructors)--
+        +DefaultPageManagerProvider(Application)
+        --
+        #ISerializer getSerializer()
+        --(factory)--
+        #IPageStore newAsynchronousStore(IPageStore)
+        #IPageStore newCachingStore(IPageStore)
+        #IPageStore newCryptingStore(IPageStore)
+        #IPageStore newPersistentStore()
+        #IPageStore newRequestStore(IPageStore)
+        #IPageStore newSerializingStore(IPageStore)
+    }
+    
+    class DequeueContext
+    {
+        --(constructors)--
+        +DequeueContext(IMarkupFragment, MarkupContainer, boolean)
+        --
+        +MarkupContainer peekContainer()
+        +ComponentTag peekTag()
+        +void restore(Bookmark)
+        +ComponentTag takeTag()
+        --(collection)--
+        +MarkupContainer popContainer()
+        +void pushContainer(MarkupContainer)
+        --(io)--
+        +boolean isAtOpenOrOpenCloseTag()
+        +void skipToCloseTag()
+        --(search)--
+        +Component findComponentToDequeue(ComponentTag)
+        --(write)--
+        +Bookmark save()
+    }
+    
+    enum DequeueTagAction
+    {
+        DEQUEUE
+        IGNORE
+        SKIP
+    }
+    
+    Supplier <|-- SystemMapper.HomePageProvider
+    class SystemMapper.HomePageProvider<C>
+    {
+        --(constructors)--
+        #HomePageProvider(Application)
+    }
+    
+    interface IApplicationListener
+    {
+        --
+        +void onAfterInitialized(Application)
+        +void onBeforeDestroyed(Application)
+    }
+    
+    interface IBehaviorInstantiationListener
+    {
+        --
+        +void onInstantiation(Behavior)
+    }
+    
+    interface IComponentAwareEventSink
+    {
+        --(messaging)--
+        +void onEvent(Component, IEvent<?>)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IConverterLocator
+    interface IConverterLocator
+    {
+        --
+        +IConverter<C> getConverter(Class<C> type)
+    }
+    
+    interface IDetachListener
+    {
+        --
+        +void onDetach(Component)
+        --(messaging)--
+        +void onDestroyListener()
+    }
+    
+    interface IEventDispatcher
+    {
+        --(messaging)--
+        +void dispatchEvent(Object sink, IEvent<?>, Component)
+    }
+    
+    interface IGenericComponent<T, C>
+    {
+        --
+        +IModel<?> getDefaultModel()
+        +Object getDefaultModelObject()
+        +IModel<T> getModel()
+        +T getModelObject()
+        +Component setDefaultModel(IModel<?>)
+        +Component setDefaultModelObject(Object)
+        +C setModel(IModel<T>)
+        +C setModelObject(T object)
+    }
+    
+    interface IInitializer
+    {
+        --
+        +void destroy(Application)
+        --(lifecycle)--
+        +void init(Application)
+    }
+    
+    interface IMarkupIdGenerator
+    {
+        --(identity)--
+        +String generateMarkupId(Component, boolean createIfDoesNotExist)
+    }
+    
+    interface IMetadataContext<B, R>
+    {
+        --
+        +T getMetaData(MetaDataKey<T>)
+        +R setMetaData(MetaDataKey<T>, T data)
+    }
+    
+    interface IPageFactory
+    {
+        --(checks)--
+        +boolean isBookmarkable(Class<C> pageClass)
+        --(factory)--
+        +C newPage(Class<C> pageClass, PageParameters)
+        +C newPage(Class<C> pageClass)
+    }
+    
+    interface Supplier<IPageManager>
+    Supplier <|-- IPageManagerProvider
+    interface IPageManagerProvider
+    {
+    }
+    
+    interface Function<RenderPageRequestHandler,PageRenderer>
+    Function <|-- IPageRendererProvider
+    interface IPageRendererProvider
+    {
+    }
+    
+    interface IQueueRegion
+    {
+        --
+        +void dequeue()
+        +IMarkupFragment getRegionMarkup()
+        --(factory)--
+        +DequeueContext newDequeueContext()
+    }
+    
+    interface Function<RequestCycleContext,RequestCycle>
+    Function <|-- IRequestCycleProvider
+    interface IRequestCycleProvider
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IRequestListener
+    interface IRequestListener
+    {
+        --
+        +void onRequest()
+        +boolean rendersPage()
+    }
+    
+    interface IResourceFactory
+    {
+        --(factory)--
+        +IResource newResource(String specification, Locale, String style, String variation)
+    }
+    
+    interface ISessionListener
+    {
+        --
+        +void onCreated(Session)
+        +void onUnbound(String sessionId)
+    }
+    
+    interface IWicketInternalException
+    {
+    }
+    
+    IInitializer <|-- Initializer
+    class Initializer
+    {
+    }
+    
+    Serializable <|-- RestartResponseAtInterceptPageException.InterceptData
+    class RestartResponseAtInterceptPageException.InterceptData
+    {
+        --
+        +void set()
+        --(collection)--
+        +void clear()
+        +Map<String,List<StringValue>> getPostParameters()
+        --(lifecycle)--
+        +InterceptData get()
+        --(network)--
+        +Url getOriginalUrl()
+    }
+    
+    class Localizer
+    {
+        --(constructors)--
+        +Localizer()
+        --
+        +Localizer get()
+        +String getString(String key, Component, IModel<?>, Locale, String style, String defaultValue)
+        +String getString(String key, Component, IModel<?>)
+        +String getString(String key, Component, String defaultValue)
+        +String getString(String key, Component, IModel<?>, String defaultValue)
+        +String getString(String key, Component)
+        +String getString(String key, Component, IModel<?>, Locale, String style, IModel<String> defaultValue)
+        +String getStringIgnoreSettings(String key, Component, IModel<?>, Locale, String style, String defaultValue)
+        +String getStringIgnoreSettings(String key, Component, IModel<?>, String defaultValue)
+        +void setEnableCache(boolean value)
+        +String substitutePropertyExpressions(Component, String, IModel<?>)
+        #String getFromCache(String cacheKey)
+        --(collection)--
+        +void clearCache()
+        #String getCacheKey(String key, Component, Locale, String style, String variation)
+        #List<IStringResourceLoader> getStringResourceLoaders()
+        #Map<String,String> newCache()
+        #void putIntoCache(String cacheKey, String)
+    }
+    
+    enum AttributeModifier.MarkerValue
+    {
+        VALUELESS_ATTRIBUTE_ADD
+        VALUELESS_ATTRIBUTE_REMOVE
+    }
+    
+    Component <|-- MarkupContainer
+    Iterable <|-- MarkupContainer
+    abstract class MarkupContainer
+    {
+        --(constructors)--
+        +MarkupContainer(String)
+        +MarkupContainer(String, IModel<?>)
+        --
+        +void dequeue(DequeueContext)
+        +void dequeue()
+        +IMarkupFragment getMarkup(Component child)
+        +MarkupType getMarkupType()
+        +IMarkupFragment getRegionMarkup()
+        +MarkupContainer queue(Component... components)
+        +void renderAssociatedMarkup(String openTagName, String exceptionMessage)
+        +MarkupContainer replace(Component child)
+        +Stream<Component> stream()
+        +Stream<Component> streamChildren()
+        +R visitChildren(IVisitor<Component,R>)
+        +R visitChildren(Class<?> clazz, IVisitor<S,R>)
+        #void dequeuePreamble(DequeueContext)
+        #void renderAll(MarkupStream, ComponentTag openTag)
+        --(checks)--
+        #DequeueTagAction canDequeueTag(ComponentTag)
+        --(collection)--
+        +MarkupContainer add(Component... children)
+        +MarkupContainer addOrReplace(Component... children)
+        +boolean autoAdd(Component, MarkupStream)
+        +boolean contains(Component, boolean recurse)
+        +void internalAdd(Component child)
+        +Iterator<Component> iterator(Comparator<Component>)
+        +MarkupContainer remove(Component)
+        +MarkupContainer remove(String id)
+        +MarkupContainer removeAll()
+        +int size()
+        #void addDequeuedComponent(Component, ComponentTag)
+        --(factory)--
+        +DequeueContext newDequeueContext()
+        --(functional)--
+        +Markup getAssociatedMarkup()
+        +MarkupStream getAssociatedMarkupStream(boolean throwException)
+        --(iteration)--
+        #boolean renderNext(MarkupStream)
+        --(search)--
+        +Component findComponentToDequeue(ComponentTag)
+        #Component findChildComponent(ComponentTag)
+    }
+    
+    IClusterable <|-- MetaDataEntry
+    class MetaDataEntry<T>
+    {
+        --(constructors)--
+        +MetaDataEntry(MetaDataKey<T>, Object)
+    }
+    
+    IClusterable <|-- MetaDataKey
+    abstract class MetaDataKey<T>
+    {
+        --(constructors)--
+        +MetaDataKey()
+        --
+        +T get(MetaDataEntry<?>[])
+        +MetaDataEntry<?>[] set(MetaDataEntry<?>[], Object)
+    }
+    
+    RequestHandlerExecutor.ReplaceHandlerException <|-- NonResettingRestartException
+    class NonResettingRestartException
+    {
+        --(constructors)--
+        +NonResettingRestartException(Class<? extends Page>)
+        +NonResettingRestartException(Class<? extends Page>, PageParameters)
+        +NonResettingRestartException(Class<? extends Page>, PageParameters, RenderPageRequestHandler.RedirectPolicy)
+        +NonResettingRestartException(IRequestHandler, boolean)
+        +NonResettingRestartException(String)
+    }
+    
+    MarkupContainer <|-- Page
+    IRequestablePage <|-- Page
+    IQueueRegion <|-- Page
+    abstract class Page
+    {
+        --(constructors)--
+        #Page()
+        #Page(IModel<?>)
+        #Page(PageParameters)
+        --
+        +void componentRendered(Component)
+        +void dirty()
+        +void dirty(boolean isInitialization)
+        +Class<? extends Page> getPageClass()
+        +PageReference getPageReference()
+        +String hierarchyAsString()
+        +Page setStatelessHint(boolean value)
+        +void setWasCreatedBookmarkable(boolean wasCreatedBookmarkable)
+        +boolean wasRendered(Component)
+        #void componentChanged(Component, MarkupContainer parent)
+        --(collection)--
+        +int getAutoIndex()
+        --(identity)--
+        +void setNumericId(int id)
+        --(status)--
+        +boolean isErrorPage()
+    }
+    
+    LazyInitializer <|-- Session.PageAccessSynchronizerProvider
+    class Session.PageAccessSynchronizerProvider
+    {
+    }
+    
+    IClusterable <|-- PageReference
+    class PageReference
+    {
+        --(constructors)--
+        +PageReference(int)
+        --
+        +Page getPage()
+        --(identity)--
+        +int getPageId()
+    }
+    
+    Supplier <|-- SystemMapper.ParentFolderPlaceholderProvider
+    class SystemMapper.ParentFolderPlaceholderProvider
+    {
+        --(constructors)--
+        #ParentFolderPlaceholderProvider(Application)
+    }
+    
+    Serializable <|-- MarkupContainer.RemovedChild
+    class MarkupContainer.RemovedChild
+    {
+    }
+    
+    class ResourceBundles
+    {
+        --(constructors)--
+        +ResourceBundles(ResourceReferenceRegistry)
+        --(collection)--
+        +T addBundle(T bundle)
+        +CssReferenceHeaderItem addCssBundle(Class<?> scope, String name, CssResourceReference... references)
+        +JavaScriptReferenceHeaderItem addJavaScriptBundle(Class<?> scope, String name, boolean defer, JavaScriptResourceReference... references)
+        +JavaScriptReferenceHeaderItem addJavaScriptBundle(Class<?> scope, String name, JavaScriptResourceReference... references)
+        --(factory)--
+        #ConcatResourceBundleReference<T> newBundleResourceReference(Class<?> scope, String name, List<T> items)
+        --(search)--
+        +HeaderItem findBundle(HeaderItem)
+    }
+    
+    ResetResponseException <|-- RestartResponseAtInterceptPageException
+    class RestartResponseAtInterceptPageException
+    {
+        --(constructors)--
+        +RestartResponseAtInterceptPageException(Class<? extends Page>)
+        +RestartResponseAtInterceptPageException(Class<? extends Page>, PageParameters)
+        +RestartResponseAtInterceptPageException(Page)
+        --(collection)--
+        +Map<String,List<StringValue>> getOriginalPostParameters()
+        --(network)--
+        +Url getOriginalUrl()
+    }
+    
+    ResetResponseException <|-- RestartResponseException
+    class RestartResponseException
+    {
+        --(constructors)--
+        +RestartResponseException(Class<C>)
+        +RestartResponseException(Class<C>, PageParameters)
+        +RestartResponseException(IPageProvider, RedirectPolicy)
+        +RestartResponseException(IRequestablePage)
+    }
+    
+    enum RuntimeConfigurationType
+    {
+        DEPLOYMENT
+        DEVELOPMENT
+    }
+    
+    IClusterable <|-- Session
+    IEventSink <|-- Session
+    IMetadataContext <|-- Session
+    IFeedbackContributor <|-- Session
+    abstract class Session
+    {
+        --(constructors)--
+        +Session(Request)
+        --
+        +void bind()
+        +void detach()
+        +void dirty(boolean forced)
+        +void dirty()
+        +Session get()
+        +Application getApplication()
+        +Serializable getAttribute(String name)
+        +IAuthorizationStrategy getAuthorizationStrategy()
+        +IClassResolver getClassResolver()
+        +Locale getLocale()
+        +IPageManager getPageManager()
+        +String getStyle()
+        +void internalDetach()
+        +void invalidate()
+        +void invalidateNow()
+        +void onInvalidate()
+        +void replaceSession()
+        +Session setAttribute(String name, Serializable value)
+        +Session setLocale(Locale)
+        +Session setStyle(String style)
+        #ISessionStore getSessionStore()
+        --(checks)--
+        +boolean isSessionInvalidated()
+        +boolean isTemporary()
+        --(collection)--
+        +void clear()
+        +List<String> getAttributeNames()
+        +long getSizeInBytes()
+        +void removeAttribute(String name)
+        --(factory)--
+        +IPageFactory getPageFactory()
+        #PageAccessSynchronizer newPageAccessSynchronizer(Duration timeout)
+        --(filesystem)--
+        +boolean exists()
+        --(identity)--
+        +void changeSessionId()
+        +String getId()
+        +int nextPageId()
+        #String generateNewSessionId()
+        --(iteration)--
+        +int nextSequenceValue()
+        --(lifecycle)--
+        +void endRequest()
+        --(messaging)--
+        +ClientInfo getClientInfo()
+        +FeedbackMessages getFeedbackMessages()
+        +Session setClientInfo(ClientInfo)
+    }
+    
+    ListenerCollection <|-- SessionListenerCollection
+    ISessionListener <|-- SessionListenerCollection
+    class SessionListenerCollection
+    {
+    }
+    
+    class SharedResources
+    {
+        --(constructors)--
+        +SharedResources(ResourceReferenceRegistry)
+        --
+        +ResourceReference get(String name)
+        +ResourceReference get(Class<?> scope, String name, Locale, String style, String variation, boolean strict)
+        --(collection)--
+        +void add(Class<?> scope, String name, Locale, String style, String variation, IResource)
+        +void add(String name, Locale, IResource)
+        +void add(String name, IResource)
+        +ResourceReference remove(Key)
+    }
+    
+    AttributeAppender <|-- StyleAttributeModifier
+    abstract class StyleAttributeModifier
+    {
+        --(constructors)--
+        +StyleAttributeModifier()
+        --(collection)--
+        #Map<String,String> update(Map<String,String> oldStyles)
+    }
+    
+    CompoundRequestMapper <|-- SystemMapper
+    class SystemMapper
+    {
+        --(constructors)--
+        +SystemMapper(Application)
+        --
+        #Supplier<IResourceCachingStrategy> getResourceCachingStrategy()
+        --(factory)--
+        #IRequestMapper newBookmarkableMapper()
+        #IRequestMapper newBufferedResponseMapper()
+        #IRequestMapper newHomePageMapper(Supplier<Class<? extends IRequestablePage>> homePageProvider)
+        #IRequestMapper newPageInstanceMapper()
+        #IRequestMapper newUrlResourceReferenceMapper()
+    }
+    
+    class ThreadContext
+    {
+        --
+        +ThreadContext detach()
+        +ThreadContext get(boolean createIfDoesNotExist)
+        +Application getApplication()
+        +RequestCycle getRequestCycle()
+        +Session getSession()
+        +void restore(ThreadContext)
+        +void setApplication(Application)
+        +void setRequestCycle(RequestCycle)
+        +void setSession(Session)
+        --(filesystem)--
+        +boolean exists()
+    }
+    
+    IRequestMapper <|-- UrlResourceReferenceMapper
+    class UrlResourceReferenceMapper
+    {
+    }
+    
+    RuntimeException <|-- WicketRuntimeException
+    class WicketRuntimeException
+    {
+        --(constructors)--
+        +WicketRuntimeException()
+        +WicketRuntimeException(String)
+        +WicketRuntimeException(String, Throwable)
+        +WicketRuntimeException(Throwable)
+    }
+    
+@enduml
+

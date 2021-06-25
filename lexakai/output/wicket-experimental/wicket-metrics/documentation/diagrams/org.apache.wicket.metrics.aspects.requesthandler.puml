@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.requesthandler"
+    
+    WicketMetrics <|-- IRequestHandlerDetachAspect
+    class IRequestHandlerDetachAspect
+    {
+        --
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- IRequestHandlerRespondAspect
+    class IRequestHandlerRespondAspect
+    {
+        --
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+@enduml
+

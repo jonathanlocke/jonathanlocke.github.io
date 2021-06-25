@@ -1,0 +1,18 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.tabs"
+    
+    TabbedPanel <|-- AjaxTabbedPanel
+    class AjaxTabbedPanel<T>
+    {
+        --(constructors)--
+        +AjaxTabbedPanel(String, List<T>)
+        +AjaxTabbedPanel(String, List<T>, IModel<Integer>)
+        --
+        #void onAjaxUpdate(Optional<AjaxRequestTarget>)
+    }
+    
+@enduml
+

@@ -1,0 +1,174 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.diff"
+    
+    Delta <|-- AddDelta
+    class AddDelta
+    {
+        --(constructors)--
+        +AddDelta(int, Chunk)
+    }
+    
+    Delta <|-- ChangeDelta
+    class ChangeDelta
+    {
+        --(constructors)--
+        +ChangeDelta(Chunk, Chunk)
+    }
+    
+    ToString <|-- Chunk
+    class Chunk
+    {
+        --(constructors)--
+        +Chunk(List<Object>, int, int)
+        +Chunk(List<Object>, int, int, int)
+        +Chunk(Object[], int, int)
+        +Chunk(Object[], int, int, int)
+        +Chunk(int, int)
+        --
+        +int anchor()
+        +void rangeString(StringBuilder)
+        +String rangeString()
+        +void rangeString(StringBuilder, String separ)
+        +int rcsfrom()
+        +int rcsto()
+        +boolean verify(List<Object> target)
+        --(collection)--
+        +void applyAdd(int start, List<Object> target)
+        +List<Object> chunk()
+        +int first()
+        +int last()
+        +int size()
+        +List<T> slice(List<T> seq, int pos, int count)
+        +List<Object> slice(Object[] seq, int pos, int count)
+        --(filesystem)--
+        +void applyDelete(List<Object> target)
+    }
+    
+    Delta <|-- DeleteDelta
+    class DeleteDelta
+    {
+        --(constructors)--
+        +DeleteDelta(Chunk)
+    }
+    
+    ToString <|-- Delta
+    abstract class Delta
+    {
+        --(constructors)--
+        #Delta()
+        #Delta(Chunk, Chunk)
+        --
+        +void applyTo(List<Object> target)
+        +Chunk getOriginal()
+        +void patch(List<Object> target)
+        +String toRCSString(String EOL)
+        +void toRCSString(StringBuilder, String EOL)
+        +void verify(List<Object> target)
+        --(factory)--
+        +Delta newDelta(Chunk orig, Chunk rev)
+        --(filtering)--
+        +void accept(RevisionVisitor)
+        --(functional)--
+        +Chunk getRevised()
+        --(lifecycle)--
+        #void init(Chunk orig, Chunk rev)
+    }
+    
+    ToString <|-- Diff
+    class Diff
+    {
+        --(constructors)--
+        +Diff(Object[])
+        +Diff(Object[], DiffAlgorithm)
+        --
+        +boolean compare(Object[] orig, Object[] rev)
+        +Revision diff(Object[] rev)
+        +Revision diff(Object[] orig, Object[] rev, DiffAlgorithm)
+        +Revision diff(Object[] orig, Object[] rev)
+        +Object[] editAll(Object[] text)
+        +Object[] randomEdit(Object[] text)
+        +Object[] randomEdit(Object[] text, long seed)
+        +Object[] randomSequence(int size)
+        +Object[] randomSequence(int size, long seed)
+        +Object[] shuffle(Object[] text, long seed)
+        +Object[] shuffle(Object[] text)
+        #DiffAlgorithm defaultAlgorithm()
+        --(collection)--
+        +String arrayToString(Object[])
+    }
+    
+    interface DiffAlgorithm
+    {
+        --
+        +Revision diff(Object[] orig, Object[] rev)
+    }
+    
+    Exception <|-- DiffException
+    class DiffException
+    {
+        --(constructors)--
+        +DiffException()
+        +DiffException(String)
+    }
+    
+    DiffException <|-- DifferentiationFailedException
+    class DifferentiationFailedException
+    {
+        --(constructors)--
+        +DifferentiationFailedException()
+        +DifferentiationFailedException(String)
+    }
+    
+    DiffException <|-- PatchFailedException
+    class PatchFailedException
+    {
+        --(constructors)--
+        +PatchFailedException()
+        +PatchFailedException(String)
+    }
+    
+    ToString <|-- Revision
+    class Revision
+    {
+        --(constructors)--
+        +Revision()
+        --
+        +void applyTo(List<Object> target)
+        +Delta getDelta(int)
+        +void insertDelta(Delta)
+        +Object[] patch(Object[] src)
+        +String toRCSString(String EOL)
+        +String toRCSString()
+        +void toRCSString(StringBuilder, String EOL)
+        +void toRCSString(StringBuilder)
+        --(collection)--
+        +void addDelta(Delta)
+        +int size()
+        --(filtering)--
+        +void accept(RevisionVisitor)
+    }
+    
+    interface RevisionVisitor
+    {
+        --
+        +void visit(Revision)
+        +void visit(AddDelta)
+        +void visit(DeleteDelta)
+        +void visit(ChangeDelta)
+    }
+    
+    class ToString
+    {
+        --(constructors)--
+        +ToString()
+        --(collection)--
+        +String arrayToString(Object[])
+        +String arrayToString(Object[], String EOL)
+        +String[] stringToArray(String value)
+    }
+    
+@enduml
+

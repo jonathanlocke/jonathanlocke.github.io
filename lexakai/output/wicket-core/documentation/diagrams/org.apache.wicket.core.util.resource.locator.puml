@@ -1,0 +1,98 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.resource.locator"
+    
+    interface IResourceNameIterator
+    interface Iterator
+    interface IResourceStreamLocator
+    
+    ResourceNameIterator <|-- EmptyResourceNameIterator
+    class EmptyResourceNameIterator
+    {
+        --(constructors)--
+        +EmptyResourceNameIterator()
+    }
+    
+    Iterator <|-- ExtensionResourceNameIterator
+    class ExtensionResourceNameIterator
+    {
+        --(constructors)--
+        +ExtensionResourceNameIterator(Iterable<String>)
+        --(filesystem)--
+        +String getExtension()
+    }
+    
+    interface Iterator<String>
+    Iterator <|-- IResourceNameIterator
+    interface IResourceNameIterator
+    {
+        --
+        +Locale getLocale()
+        +String getStyle()
+        +String getVariation()
+        --(filesystem)--
+        +String getExtension()
+    }
+    
+    interface IResourceStreamLocator
+    {
+        --(collection)--
+        +IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation, String extension, boolean strict)
+        --(search)--
+        +IResourceStream locate(Class<?> clazz, String path)
+        +IResourceStream locate(Class<?> clazz, String path, String style, String variation, Locale, String extension, boolean strict)
+    }
+    
+    Iterator <|-- LocaleResourceNameIterator
+    class LocaleResourceNameIterator
+    {
+        --(constructors)--
+        +LocaleResourceNameIterator(Locale, boolean)
+        --
+        +Locale getLocale()
+    }
+    
+    ResourceStreamLocator <|-- OsgiResourceStreamLocator
+    class OsgiResourceStreamLocator
+    {
+        --(constructors)--
+        +OsgiResourceStreamLocator()
+        +OsgiResourceStreamLocator(IResourceFinder)
+    }
+    
+    IResourceNameIterator <|-- ResourceNameIterator
+    class ResourceNameIterator
+    {
+        --(constructors)--
+        +ResourceNameIterator(String, String, String, Locale, Iterable<String>, boolean)
+        --(collection)--
+        #ExtensionResourceNameIterator newExtensionResourceNameIterator(Iterable<String> extensions)
+        #LocaleResourceNameIterator newLocaleResourceNameIterator(Locale, boolean strict)
+        #StyleAndVariationResourceNameIterator newStyleAndVariationResourceNameIterator(String style, String variation)
+    }
+    
+    IResourceStreamLocator <|-- ResourceStreamLocator
+    class ResourceStreamLocator
+    {
+        --(constructors)--
+        +ResourceStreamLocator()
+        +ResourceStreamLocator(IResourceFinder)
+        +ResourceStreamLocator(List<IResourceFinder>)
+        --(collection)--
+        +IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation, Iterable<String> extensions, boolean strict)
+    }
+    
+    Iterator <|-- StyleAndVariationResourceNameIterator
+    class StyleAndVariationResourceNameIterator
+    {
+        --(constructors)--
+        +StyleAndVariationResourceNameIterator(String, String)
+        --
+        +String getStyle()
+        +String getVariation()
+    }
+    
+@enduml
+

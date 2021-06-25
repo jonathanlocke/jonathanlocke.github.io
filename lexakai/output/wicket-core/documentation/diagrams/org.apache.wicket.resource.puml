@@ -1,0 +1,257 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.resource"
+    
+    abstract AbstractResource
+    
+    interface ICssCompressor
+    interface IPropertiesLoader
+    interface IScopeAwareTextResourceProcessor
+    interface IJavaScriptCompressor
+    interface FileSystemPathService
+    interface IClusterable
+    interface IPropertiesFactory
+    
+    WicketRuntimeException <|-- CircularDependencyException
+    class CircularDependencyException
+    {
+        --(constructors)--
+        +CircularDependencyException(Set<HeaderItem>, HeaderItem)
+    }
+    
+    IScopeAwareTextResourceProcessor <|-- CompositeCssCompressor
+    ICssCompressor <|-- CompositeCssCompressor
+    class CompositeCssCompressor
+    {
+        --(constructors)--
+        +CompositeCssCompressor(ICssCompressor)
+        --(collection)--
+        +CompositeCssCompressor add(ICssCompressor)
+    }
+    
+    IScopeAwareTextResourceProcessor <|-- CompositeJavaScriptCompressor
+    IJavaScriptCompressor <|-- CompositeJavaScriptCompressor
+    class CompositeJavaScriptCompressor
+    {
+        --(constructors)--
+        +CompositeJavaScriptCompressor(IJavaScriptCompressor)
+        --(collection)--
+        +CompositeJavaScriptCompressor add(IJavaScriptCompressor)
+    }
+    
+    class CoreLibrariesContributor
+    {
+        --
+        +void contribute(Application, IHeaderResponse)
+        +void contributeAjax(Application, IHeaderResponse)
+    }
+    
+    IScopeAwareTextResourceProcessor <|-- CssUrlReplacer
+    ICssCompressor <|-- CssUrlReplacer
+    class CssUrlReplacer
+    {
+        --(constructors)--
+        +CssUrlReplacer()
+        +CssUrlReplacer(Collection<String>)
+        --
+        +Collection<String> getExcludes()
+        +void setExcludes(Collection<String> excludes)
+    }
+    
+    FileSystemPathService <|-- FileSystemJarPathService
+    class FileSystemJarPathService
+    {
+    }
+    
+    interface FileSystemPathService
+    {
+        --(checks)--
+        +boolean isResponsible(URI)
+        --(path)--
+        +Path getPath(URI, Map<String,String> env)
+    }
+    
+    AbstractResource <|-- FileSystemResource
+    class FileSystemResource
+    {
+        --(constructors)--
+        +FileSystemResource()
+        +FileSystemResource(Path)
+        --
+        #ResourceResponse createResourceResponse(Attributes, Path)
+        #String getMimeType()
+        --(collection)--
+        #long getSize()
+        --(read)--
+        #InputStream getInputStream()
+    }
+    
+    ResourceReference <|-- FileSystemResourceReference
+    class FileSystemResourceReference
+    {
+        --(constructors)--
+        +FileSystemResourceReference(Class<?>, String)
+        +FileSystemResourceReference(String)
+        +FileSystemResourceReference(String, Path)
+        --(filesystem)--
+        #FileSystemResource getFileSystemResource()
+        --(path)--
+        +Path getPath(URI)
+        +Path getPath(URI, Map<String,String> env)
+    }
+    
+    interface IPropertiesChangeListener
+    {
+        --
+        +void propertiesChanged(String key)
+    }
+    
+    interface IPropertiesFactory
+    {
+        --(collection)--
+        +void addListener(IPropertiesChangeListener)
+        +void clearCache()
+        --(read)--
+        +Properties load(Class<?> clazz, String path)
+    }
+    
+    interface IPropertiesFactoryContext
+    {
+        --
+        +Localizer getLocalizer()
+        +IResourceStreamLocator getResourceStreamLocator()
+        +IModificationWatcher getResourceWatcher(boolean start)
+    }
+    
+    interface IPropertiesLoader
+    {
+        --(filesystem)--
+        +String getFileExtension()
+        --(read)--
+        +java.util.Properties loadJavaProperties(InputStream)
+        +ValueMap loadWicketProperties(InputStream)
+    }
+    
+    interface ITextResourceCompressor
+    ITextResourceCompressor <|-- IScopeAwareTextResourceProcessor
+    interface IScopeAwareTextResourceProcessor
+    {
+        --
+        +String process(String input, Class<?> scope, String name)
+    }
+    
+    interface ITextResourceCompressor
+    {
+        --
+        +String compress(String original)
+    }
+    
+    IPropertiesLoader <|-- IsoPropertiesFilePropertiesLoader
+    class IsoPropertiesFilePropertiesLoader
+    {
+        --(constructors)--
+        +IsoPropertiesFilePropertiesLoader(String)
+    }
+    
+    JavaScriptResourceReference <|-- JQueryPluginResourceReference
+    class JQueryPluginResourceReference
+    {
+        --(constructors)--
+        +JQueryPluginResourceReference(Class<?>, String)
+        +JQueryPluginResourceReference(Class<?>, String, Locale, String, String)
+    }
+    
+    JavaScriptResourceReference <|-- JQueryResourceReference
+    class JQueryResourceReference
+    {
+        --(constructors)--
+        #JQueryResourceReference(String)
+        --(search)--
+        +JQueryResourceReference getV1()
+        +JQueryResourceReference getV2()
+        +JQueryResourceReference getV3()
+    }
+    
+    IJavaScriptCompressor <|-- NoOpTextCompressor
+    ICssCompressor <|-- NoOpTextCompressor
+    class NoOpTextCompressor
+    {
+    }
+    
+    LoadableDetachableModel <|-- FileSystemResource.PathModel
+    class FileSystemResource.PathModel
+    {
+        --(constructors)--
+        +PathModel(Path)
+    }
+    
+    class Properties
+    {
+        --(constructors)--
+        +Properties(String, ValueMap)
+        --
+        +String getString(String key)
+        --(collection)--
+        +ValueMap getAll()
+    }
+    
+    IPropertiesFactory <|-- PropertiesFactory
+    class PropertiesFactory
+    {
+        --(constructors)--
+        +PropertiesFactory(IPropertiesFactoryContext)
+        --(collection)--
+        +List<IPropertiesLoader> getPropertiesLoaders()
+        #void addToWatcher(String path, IResourceStream, IModificationWatcher)
+        #Map<String,Properties> getCache()
+        #ValueMap loadFromLoader(IPropertiesLoader, IResourceStream)
+        #Map<String,Properties> newPropertiesCache()
+    }
+    
+    class ResourceUtil
+    {
+        --
+        +void encodeResourceReferenceAttributes(Url, ResourceReference)
+        +String encodeResourceReferenceAttributes(ResourceReference.UrlAttributes)
+        +String unescapeAttributesSeparator(String attribute)
+        --(network)--
+        +ResourceReference.UrlAttributes decodeResourceReferenceAttributes(String encodedAttributes)
+        +ResourceReference.UrlAttributes decodeResourceReferenceAttributes(Url)
+        --(parsing)--
+        +Locale parseLocale(String locale)
+        --(primitive)--
+        +CharSequence escapeAttributesSeparator(String attribute)
+        --(read)--
+        +String readString(IResourceStream)
+        +String readString(IResourceStream, Charset)
+    }
+    
+    ResourceReference <|-- TextTemplateResourceReference
+    IClusterable <|-- TextTemplateResourceReference
+    class TextTemplateResourceReference
+    {
+        --(constructors)--
+        +TextTemplateResourceReference(Class<?>, String, IModel<Map<String, Object>>)
+        +TextTemplateResourceReference(Class<?>, String, String, IModel<Map<String, Object>>)
+        +TextTemplateResourceReference(Class<?>, String, String, String, IModel<Map<String, Object>>)
+        +TextTemplateResourceReference(Class<?>, String, String, String, IModel<Map<String, Object>>, Locale, String, String)
+    }
+    
+    IPropertiesLoader <|-- UtfPropertiesFilePropertiesLoader
+    class UtfPropertiesFilePropertiesLoader
+    {
+        --(constructors)--
+        +UtfPropertiesFilePropertiesLoader(String, String)
+    }
+    
+    IPropertiesLoader <|-- XmlFilePropertiesLoader
+    class XmlFilePropertiesLoader
+    {
+        --(constructors)--
+        +XmlFilePropertiesLoader(String)
+    }
+    
+@enduml
+

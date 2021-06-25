@@ -1,0 +1,98 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.javax"
+    
+    abstract AbstractUpgradeFilter
+    abstract AbstractWebSocketProcessor
+    abstract AbstractWebSocketConnection
+    
+    interface HttpServletRequest
+    interface ServerEndpointConfig
+    interface IApplicationListener
+    interface FilterConfig
+    interface ServerApplicationConfig
+    interface Whole
+    interface CloseCode
+    
+    IApplicationListener <|-- WicketEndpoint.ApplicationListener
+    class WicketEndpoint.ApplicationListener
+    {
+    }
+    
+    MessageHandler.Whole <|-- JavaxWebSocketProcessor.BinaryMessageHandler
+    class JavaxWebSocketProcessor.BinaryMessageHandler
+    {
+    }
+    
+    CloseReason.CloseCode <|-- JavaxWebSocketConnection.CloseCode
+    class JavaxWebSocketConnection.CloseCode
+    {
+    }
+    
+    HttpServletRequest <|-- JavaxUpgradeHttpRequest
+    class JavaxUpgradeHttpRequest
+    {
+        --(constructors)--
+        +JavaxUpgradeHttpRequest(Session, EndpointConfig)
+    }
+    
+    ServerEndpointConfig.Configurator <|-- WicketServerEndpointConfig.JavaxWebSocketConfigurator
+    class WicketServerEndpointConfig.JavaxWebSocketConfigurator
+    {
+        --(constructors)--
+        +JavaxWebSocketConfigurator(ServerEndpointConfig.Configurator)
+    }
+    
+    AbstractWebSocketConnection <|-- JavaxWebSocketConnection
+    class JavaxWebSocketConnection
+    {
+        --(constructors)--
+        +JavaxWebSocketConnection(Session, AbstractWebSocketProcessor)
+    }
+    
+    AbstractUpgradeFilter <|-- JavaxWebSocketFilter
+    class JavaxWebSocketFilter
+    {
+        --(constructors)--
+        +JavaxWebSocketFilter()
+        +JavaxWebSocketFilter(WebApplication)
+    }
+    
+    FilterConfig <|-- JavaxWebSocketFilter.JavaxWebSocketFilterConfig
+    class JavaxWebSocketFilter.JavaxWebSocketFilterConfig
+    {
+    }
+    
+    AbstractWebSocketProcessor <|-- JavaxWebSocketProcessor
+    class JavaxWebSocketProcessor
+    {
+        --(constructors)--
+        +JavaxWebSocketProcessor(Session, WebApplication, EndpointConfig)
+    }
+    
+    MessageHandler.Whole <|-- JavaxWebSocketProcessor.StringMessageHandler
+    class JavaxWebSocketProcessor.StringMessageHandler
+    {
+    }
+    
+    Endpoint <|-- WicketEndpoint
+    class WicketEndpoint
+    {
+    }
+    
+    ServerApplicationConfig <|-- WicketServerApplicationConfig
+    class WicketServerApplicationConfig
+    {
+    }
+    
+    ServerEndpointConfig <|-- WicketServerEndpointConfig
+    class WicketServerEndpointConfig
+    {
+        --(constructors)--
+        +WicketServerEndpointConfig()
+    }
+    
+@enduml
+

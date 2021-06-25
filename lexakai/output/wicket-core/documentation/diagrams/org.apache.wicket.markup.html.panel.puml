@@ -1,0 +1,156 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.panel"
+    
+    abstract AbstractMarkupSourcingStrategy
+    
+    interface IMarkupSourcingStrategy
+    interface IGenericComponent
+    interface IFeedback
+    interface IQueueRegion
+    
+    IMarkupSourcingStrategy <|-- AbstractMarkupSourcingStrategy
+    abstract class AbstractMarkupSourcingStrategy
+    {
+        --(constructors)--
+        +AbstractMarkupSourcingStrategy()
+        --(search)--
+        #IMarkupFragment searchInNestedTransparentResolvers(IMarkupFragment containerMarkup, Component child, List<MarkupContainer> componentResolvers)
+        #IMarkupFragment searchMarkupInTransparentResolvers(MarkupContainer, IMarkupFragment containerMarkup, Component child)
+    }
+    
+    AbstractMarkupSourcingStrategy <|-- AssociatedMarkupSourcingStrategy
+    abstract class AssociatedMarkupSourcingStrategy
+    {
+        --(constructors)--
+        +AssociatedMarkupSourcingStrategy(String)
+        --
+        #void renderAssociatedMarkup(Component)
+        --(filesystem)--
+        +IMarkupFragment findMarkupInAssociatedFileHeader(MarkupContainer, Component child)
+        +void renderHeadFromAssociatedMarkupFile(WebMarkupContainer, HtmlHeaderContainer htmlContainer)
+    }
+    
+    AssociatedMarkupSourcingStrategy <|-- BorderMarkupSourcingStrategy
+    class BorderMarkupSourcingStrategy
+    {
+        --(constructors)--
+        +BorderMarkupSourcingStrategy()
+    }
+    
+    FeedbackPanel <|-- ComponentFeedbackPanel
+    class ComponentFeedbackPanel
+    {
+        --(constructors)--
+        +ComponentFeedbackPanel(String, Component)
+    }
+    
+    AbstractMarkupSourcingStrategy <|-- DefaultMarkupSourcingStrategy
+    class DefaultMarkupSourcingStrategy
+    {
+        --
+        +DefaultMarkupSourcingStrategy get()
+    }
+    
+    Panel <|-- EmptyPanel
+    class EmptyPanel
+    {
+        --(constructors)--
+        +EmptyPanel(String)
+    }
+    
+    Panel <|-- FeedbackPanel
+    IFeedback <|-- FeedbackPanel
+    class FeedbackPanel
+    {
+        --(constructors)--
+        +FeedbackPanel(String)
+        +FeedbackPanel(String, IFeedbackMessageFilter)
+        --
+        +FeedbackPanel setSortingComparator(Comparator<FeedbackMessage> sortingComparator)
+        #String getCSSClass(FeedbackMessage)
+        --(filtering)--
+        +FeedbackPanel setFilter(IFeedbackMessageFilter)
+        --(messaging)--
+        +boolean anyErrorMessage()
+        +boolean anyMessage(int level)
+        +boolean anyMessage()
+        +FeedbackMessagesModel getFeedbackMessagesModel()
+        +IFeedbackMessageFilter getFilter()
+        +Comparator<FeedbackMessage> getSortingComparator()
+        +FeedbackPanel setMaxMessages(int maxMessages)
+        #List<FeedbackMessage> getCurrentMessages()
+        #FeedbackMessagesModel newFeedbackMessagesModel()
+        #Component newMessageDisplayComponent(String id, FeedbackMessage)
+        #ListItem<FeedbackMessage> newMessageItem(int index, IModel<FeedbackMessage> itemModel)
+    }
+    
+    WebMarkupContainer <|-- Fragment
+    IQueueRegion <|-- Fragment
+    class Fragment
+    {
+        --(constructors)--
+        +Fragment(String, String, MarkupContainer)
+        +Fragment(String, String, MarkupContainer, IModel<?>)
+        --
+        #IMarkupFragment chooseMarkup(MarkupContainer provider)
+        --(identity)--
+        +String getAssociatedMarkupId()
+    }
+    
+    AbstractMarkupSourcingStrategy <|-- FragmentMarkupSourcingStrategy
+    class FragmentMarkupSourcingStrategy
+    {
+        --(constructors)--
+        +FragmentMarkupSourcingStrategy(String, MarkupContainer)
+        --
+        +IMarkupFragment chooseMarkup(Component)
+        #MarkupContainer getMarkupProvider(Component)
+    }
+    
+    Panel <|-- GenericPanel
+    IGenericComponent <|-- GenericPanel
+    class GenericPanel<T>
+    {
+        --(constructors)--
+        +GenericPanel(String)
+        +GenericPanel(String, IModel<T>)
+    }
+    
+    interface IMarkupSourcingStrategy
+    {
+        --
+        +IMarkupFragment getMarkup(MarkupContainer, Component child)
+        +void onComponentTag(Component, ComponentTag)
+        +void onComponentTagBody(Component, MarkupStream, ComponentTag openTag)
+        +void renderHead(Component, HtmlHeaderContainer)
+    }
+    
+    ListView <|-- FeedbackPanel.MessageListView
+    class FeedbackPanel.MessageListView
+    {
+        --(constructors)--
+        +MessageListView(String)
+    }
+    
+    WebMarkupContainer <|-- Panel
+    IQueueRegion <|-- Panel
+    abstract class Panel
+    {
+        --(constructors)--
+        +Panel(String)
+        +Panel(String, IModel<?>)
+    }
+    
+    AssociatedMarkupSourcingStrategy <|-- PanelMarkupSourcingStrategy
+    class PanelMarkupSourcingStrategy
+    {
+        --(constructors)--
+        +PanelMarkupSourcingStrategy(String, boolean)
+        +PanelMarkupSourcingStrategy(boolean)
+    }
+    
+@enduml
+

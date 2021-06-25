@@ -1,0 +1,80 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.tree.table"
+    
+    abstract AbstractTreeColumn
+    abstract AbstractColumn
+    
+    interface IWrapModel
+    interface ITreeColumn
+    interface Iterator
+    interface ITreeDataProvider
+    
+    AbstractColumn <|-- AbstractTreeColumn
+    ITreeColumn <|-- AbstractTreeColumn
+    abstract class AbstractTreeColumn<T, S>
+    {
+        --(constructors)--
+        +AbstractTreeColumn(IModel<String>)
+        +AbstractTreeColumn(IModel<String>, S)
+        --
+        +TableTree<T,S> getTree()
+    }
+    
+    Iterator <|-- TreeDataProvider.Branch
+    class TreeDataProvider.Branch<T>
+    {
+    }
+    
+    interface IColumn
+    IColumn <|-- ITreeColumn
+    interface ITreeColumn<T, S>
+    {
+        --
+        +void setTree(TableTree<T,S>)
+    }
+    
+    interface IDataProvider
+    IDataProvider <|-- ITreeDataProvider
+    interface ITreeDataProvider<T>
+    {
+    }
+    
+    Behavior <|-- NodeBorder
+    class NodeBorder
+    {
+        --(constructors)--
+        +NodeBorder(boolean[])
+    }
+    
+    IWrapModel <|-- NodeModel
+    class NodeModel<T>
+    {
+        --(constructors)--
+        +NodeModel(IModel<T>, boolean[])
+        --
+        +boolean[] getBranches()
+        +int getDepth()
+    }
+    
+    AbstractTreeColumn <|-- TreeColumn
+    class TreeColumn<T, S>
+    {
+        --(constructors)--
+        +TreeColumn(IModel<String>)
+        +TreeColumn(IModel<String>, S)
+    }
+    
+    ITreeDataProvider <|-- TreeDataProvider
+    abstract class TreeDataProvider<T>
+    {
+        --(constructors)--
+        #TreeDataProvider(ITreeProvider<T>)
+        --
+        #boolean iterateChildren(T node)
+    }
+    
+@enduml
+

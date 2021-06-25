@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.form.palette.component"
+    
+    abstract AbstractOptions
+    
+    FormComponent <|-- AbstractOptions
+    abstract class AbstractOptions<T>
+    {
+        --(constructors)--
+        +AbstractOptions(String, Palette<T>)
+        --
+        #Palette<T> getPalette()
+        --(collection)--
+        #Map<String,String> getAdditionalAttributes(T choice)
+        #Iterator<T> getOptionsIterator()
+        #boolean localizeDisplayValues()
+    }
+    
+    AbstractOptions <|-- Choices
+    class Choices<T>
+    {
+        --(constructors)--
+        +Choices(String, Palette<T>)
+    }
+    
+    HiddenField <|-- Recorder
+    class Recorder<T>
+    {
+        --(constructors)--
+        +Recorder(String, Palette<T>)
+        --
+        +Palette<T> getPalette()
+        --(collection)--
+        +List<T> getSelectedList()
+        +List<T> getUnselectedList()
+    }
+    
+    AbstractOptions <|-- Selection
+    class Selection<T>
+    {
+        --(constructors)--
+        +Selection(String, Palette<T>)
+    }
+    
+@enduml
+

@@ -1,0 +1,194 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.feedback"
+    
+    interface IFeedbackMessageFilter
+    interface Serializable
+    interface IDetachable
+    interface IModel
+    interface Iterable
+    interface AutoCloseable
+    interface IClusterable
+    
+    IFeedbackMessageFilter <|-- ComponentFeedbackMessageFilter
+    class ComponentFeedbackMessageFilter
+    {
+        --(constructors)--
+        +ComponentFeedbackMessageFilter(Component)
+    }
+    
+    IFeedbackMessageFilter <|-- ContainerFeedbackMessageFilter
+    class ContainerFeedbackMessageFilter
+    {
+        --(constructors)--
+        +ContainerFeedbackMessageFilter(MarkupContainer)
+    }
+    
+    IFeedbackMessageFilter <|-- DefaultCleanupFeedbackMessageFilter
+    class DefaultCleanupFeedbackMessageFilter
+    {
+    }
+    
+    IFeedbackMessageFilter <|-- ErrorLevelFeedbackMessageFilter
+    class ErrorLevelFeedbackMessageFilter
+    {
+        --(constructors)--
+        +ErrorLevelFeedbackMessageFilter(int)
+    }
+    
+    IFeedbackMessageFilter <|-- ExactLevelFeedbackMessageFilter
+    class ExactLevelFeedbackMessageFilter
+    {
+        --(constructors)--
+        +ExactLevelFeedbackMessageFilter(int)
+    }
+    
+    class FeedbackCollector
+    {
+        --(constructors)--
+        +FeedbackCollector()
+        +FeedbackCollector(Component)
+        +FeedbackCollector(Component, boolean)
+        --
+        +FeedbackCollector setRecursive(boolean value)
+        --(checks)--
+        #boolean shouldRecurseInto(Component)
+        --(collection)--
+        +List<FeedbackMessage> collect()
+        +List<FeedbackMessage> collect(IFeedbackMessageFilter)
+        --(filtering)--
+        +FeedbackCollector setIncludeSession(boolean value)
+    }
+    
+    Serializable <|-- FeedbackDelay
+    AutoCloseable <|-- FeedbackDelay
+    class FeedbackDelay
+    {
+        --(constructors)--
+        +FeedbackDelay(RequestCycle)
+        --
+        +void beforeRender()
+        +Optional<FeedbackDelay> get(RequestCycle)
+        +FeedbackDelay postpone(IFeedback)
+    }
+    
+    IDetachable <|-- FeedbackMessage
+    class FeedbackMessage
+    {
+        --(constructors)--
+        +FeedbackMessage(Component, Serializable, int)
+        --
+        +int getLevel()
+        +String getLevelAsString()
+        +Component getReporter()
+        +void markRendered()
+        --(checks)--
+        +boolean isDebug()
+        +boolean isError()
+        +boolean isFatal()
+        +boolean isInfo()
+        +boolean isLevel(int level)
+        +boolean isRendered()
+        +boolean isSuccess()
+        +boolean isUndefined()
+        +boolean isWarning()
+        --(messaging)--
+        +Serializable getMessage()
+    }
+    
+    IClusterable <|-- FeedbackMessages
+    Iterable <|-- FeedbackMessages
+    class FeedbackMessages
+    {
+        --(constructors)--
+        +FeedbackMessages()
+        --
+        +void debug(Component reporter, Serializable message)
+        +void detach()
+        +void fatal(Component reporter, Serializable message)
+        --(collection)--
+        +void add(Component reporter, Serializable message, int level)
+        +void add(FeedbackMessage)
+        +int clear()
+        +int clear(IFeedbackMessageFilter)
+        +FeedbackMessage first()
+        +FeedbackMessage first(int level)
+        +boolean isEmpty()
+        +List<FeedbackMessage> messages(IFeedbackMessageFilter)
+        +int size()
+        +int size(IFeedbackMessageFilter)
+        +List<FeedbackMessage> toList()
+        --(messaging)--
+        +boolean hasMessage(IFeedbackMessageFilter)
+        +boolean hasMessage(int level)
+        +void info(Component reporter, Serializable message)
+        +void warn(Component reporter, Serializable message)
+        --(status)--
+        +void error(Component reporter, Serializable message)
+        +void success(Component reporter, Serializable message)
+    }
+    
+    IModel <|-- FeedbackMessagesModel
+    class FeedbackMessagesModel
+    {
+        --(constructors)--
+        +FeedbackMessagesModel(Component)
+        +FeedbackMessagesModel(Page, IFeedbackMessageFilter)
+        --(messaging)--
+        +IFeedbackMessageFilter getFilter()
+        +Comparator<FeedbackMessage> getSortingComparator()
+        +FeedbackMessagesModel setFilter(IFeedbackMessageFilter)
+        +FeedbackMessagesModel setIncludeSession(boolean includeSession)
+        +FeedbackMessagesModel setSortingComparator(Comparator<FeedbackMessage> sortingComparator)
+        #List<FeedbackMessage> collectMessages(Component pageResolvingComponent, IFeedbackMessageFilter)
+        #List<FeedbackMessage> processMessages(List<FeedbackMessage> messages)
+    }
+    
+    FeedbackCollector <|-- FencedFeedbackPanel.FencedFeedbackCollector
+    class FencedFeedbackPanel.FencedFeedbackCollector
+    {
+    }
+    
+    FeedbackPanel <|-- FencedFeedbackPanel
+    class FencedFeedbackPanel
+    {
+        --(constructors)--
+        +FencedFeedbackPanel(String)
+        +FencedFeedbackPanel(String, Component)
+        +FencedFeedbackPanel(String, Component, IFeedbackMessageFilter)
+        +FencedFeedbackPanel(String, IFeedbackMessageFilter)
+    }
+    
+    interface IFeedback
+    {
+        --
+        +void beforeRender()
+    }
+    
+    interface IFeedbackContributor
+    {
+        --
+        +void debug(Serializable message)
+        +void fatal(Serializable message)
+        --(messaging)--
+        +void info(Serializable message)
+        +void warn(Serializable message)
+        --(status)--
+        +void error(Serializable message)
+        +void success(Serializable message)
+    }
+    
+    interface IClusterable
+    interface Predicate<FeedbackMessage>
+    IClusterable <|-- IFeedbackMessageFilter
+    Predicate <|-- IFeedbackMessageFilter
+    interface IFeedbackMessageFilter
+    {
+        --(filtering)--
+        +boolean accept(FeedbackMessage)
+    }
+    
+@enduml
+

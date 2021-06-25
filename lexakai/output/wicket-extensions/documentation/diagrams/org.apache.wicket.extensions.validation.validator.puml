@@ -1,0 +1,21 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.validation.validator"
+    
+    interface IValidator
+    
+    IValidator <|-- RfcCompliantEmailAddressValidator
+    class RfcCompliantEmailAddressValidator
+    {
+        --(constructors)--
+        #RfcCompliantEmailAddressValidator()
+        --(network)--
+        +RfcCompliantEmailAddressValidator getInstance()
+        --(status)--
+        #IValidationError decorate(IValidationError, IValidatable<String>)
+    }
+    
+@enduml
+

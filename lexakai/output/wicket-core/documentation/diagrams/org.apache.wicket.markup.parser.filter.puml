@@ -1,0 +1,154 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.parser.filter"
+    
+    abstract AbstractMarkupFilter
+    
+    interface IComponentResolver
+    
+    Behavior <|-- WicketMessageTagHandler.AttributeLocalizer
+    class WicketMessageTagHandler.AttributeLocalizer
+    {
+        --(constructors)--
+        +AttributeLocalizer(String)
+    }
+    
+    AbstractMarkupFilter <|-- EnclosureHandler
+    IComponentResolver <|-- EnclosureHandler
+    class EnclosureHandler
+    {
+        --(constructors)--
+        +EnclosureHandler()
+        +EnclosureHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- HeadForceTagIdHandler
+    class HeadForceTagIdHandler
+    {
+        --(constructors)--
+        +HeadForceTagIdHandler(Class<?>)
+    }
+    
+    AbstractMarkupFilter <|-- HtmlHandler
+    class HtmlHandler
+    {
+        --(constructors)--
+        +HtmlHandler()
+        --(io)--
+        +boolean requiresCloseTag(String name)
+        --(naming)--
+        +boolean hasEqualTagName(ComponentTag tag1, ComponentTag tag2)
+    }
+    
+    AbstractMarkupFilter <|-- HtmlHeaderSectionHandler
+    class HtmlHeaderSectionHandler
+    {
+        --(constructors)--
+        +HtmlHeaderSectionHandler(Markup)
+    }
+    
+    AbstractMarkupFilter <|-- HtmlProblemFinder
+    class HtmlProblemFinder
+    {
+        --(constructors)--
+        +HtmlProblemFinder(int)
+    }
+    
+    AbstractMarkupFilter <|-- InlineEnclosureHandler
+    IComponentResolver <|-- InlineEnclosureHandler
+    class InlineEnclosureHandler
+    {
+        --(constructors)--
+        +InlineEnclosureHandler()
+        +InlineEnclosureHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- OpenCloseTagExpander
+    class OpenCloseTagExpander
+    {
+        --(collection)--
+        #boolean contains(String name)
+        --(extension points)--
+        #boolean onFound(ComponentTag)
+    }
+    
+    AbstractMarkupFilter <|-- RelativePathPrefixHandler
+    IComponentResolver <|-- RelativePathPrefixHandler
+    class RelativePathPrefixHandler
+    {
+        --(constructors)--
+        +RelativePathPrefixHandler()
+        +RelativePathPrefixHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- RootMarkupFilter
+    class RootMarkupFilter
+    {
+        --(constructors)--
+        +RootMarkupFilter(IXmlPullParser, MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- StyleAndScriptIdentifier
+    class StyleAndScriptIdentifier
+    {
+        --(constructors)--
+        +StyleAndScriptIdentifier()
+    }
+    
+    AbstractMarkupFilter <|-- WicketContainerTagHandler
+    class WicketContainerTagHandler
+    {
+        --(constructors)--
+        +WicketContainerTagHandler(MarkupResourceStream, boolean)
+        +WicketContainerTagHandler(boolean)
+    }
+    
+    AbstractMarkupFilter <|-- WicketLinkTagHandler
+    IComponentResolver <|-- WicketLinkTagHandler
+    class WicketLinkTagHandler
+    {
+        --(constructors)--
+        +WicketLinkTagHandler()
+        +WicketLinkTagHandler(MarkupResourceStream)
+        --
+        +void setAutomaticLinking(boolean enable)
+        #boolean analyzeAutolinkCondition(ComponentTag)
+    }
+    
+    AbstractMarkupFilter <|-- WicketMessageTagHandler
+    IComponentResolver <|-- WicketMessageTagHandler
+    class WicketMessageTagHandler
+    {
+        --(constructors)--
+        +WicketMessageTagHandler()
+        +WicketMessageTagHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- WicketNamespaceHandler
+    class WicketNamespaceHandler
+    {
+        --(constructors)--
+        +WicketNamespaceHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- WicketRemoveTagHandler
+    class WicketRemoveTagHandler
+    {
+        --(constructors)--
+        +WicketRemoveTagHandler()
+        +WicketRemoveTagHandler(MarkupResourceStream)
+    }
+    
+    AbstractMarkupFilter <|-- WicketTagIdentifier
+    class WicketTagIdentifier
+    {
+        --(constructors)--
+        +WicketTagIdentifier(MarkupResourceStream)
+        --(naming)--
+        +void registerWellKnownTagName(String name)
+    }
+    
+@enduml
+

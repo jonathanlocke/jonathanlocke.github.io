@@ -1,0 +1,34 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.asemail"
+    
+    WicketExamplePage <|-- MailTemplate
+    class MailTemplate
+    {
+        --(constructors)--
+        +MailTemplate(PageParameters)
+    }
+    
+    WicketExampleApplication <|-- MailTemplateApplication
+    class MailTemplateApplication
+    {
+    }
+    
+    Panel <|-- MailTemplatePanel
+    class MailTemplatePanel
+    {
+        --(constructors)--
+        +MailTemplatePanel(String, IModel<String>)
+    }
+    
+    WebPage <|-- TemplateBasedOnPage
+    class TemplateBasedOnPage
+    {
+        --(constructors)--
+        +TemplateBasedOnPage(PageParameters)
+    }
+    
+@enduml
+

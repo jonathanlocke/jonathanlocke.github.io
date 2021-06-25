@@ -1,0 +1,123 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.value"
+    
+    interface Serializable
+    interface Comparable
+    interface IValueMap
+    
+    ValueMap <|-- AttributeMap
+    class AttributeMap
+    {
+        --(constructors)--
+        +AttributeMap()
+        +AttributeMap(Map<String, Object>)
+        --(collection)--
+        +String putAttribute(String key, CharSequence value)
+        +boolean putAttribute(String key, boolean value)
+        --(primitive)--
+        +CharSequence toCharSequence()
+    }
+    
+    IValueMap <|-- CopyOnWriteValueMap
+    Serializable <|-- CopyOnWriteValueMap
+    class CopyOnWriteValueMap
+    {
+        --(constructors)--
+        +CopyOnWriteValueMap(IValueMap)
+    }
+    
+    interface Map<String,Object>
+    Map <|-- IValueMap
+    interface IValueMap
+    {
+        --
+        +boolean getAsBoolean(String key, boolean defaultValue)
+        +Boolean getAsBoolean(String key)
+        +T getAsEnum(String key, Class<T> eClass)
+        +T getAsEnum(String key, Class<T> eClass, T defaultValue)
+        +T getAsEnum(String key, T defaultValue)
+        +Instant getAsInstant(String key)
+        +boolean getBoolean(String key)
+        +Instant getInstant(String key)
+        +String getString(String key, String defaultValue)
+        +String getString(String key)
+        +StringValue getStringValue(String key)
+        --(checks)--
+        +boolean isImmutable()
+        --(collection)--
+        +String getKey(String key)
+        +String[] getStringArray(String key)
+        +IValueMap makeImmutable()
+        --(primitive)--
+        +double getAsDouble(String key, double defaultValue)
+        +Double getAsDouble(String key)
+        +int getAsInteger(String key, int defaultValue)
+        +Integer getAsInteger(String key)
+        +Long getAsLong(String key)
+        +long getAsLong(String key, long defaultValue)
+        +CharSequence getCharSequence(String key)
+        +double getDouble(String key, double defaultValue)
+        +double getDouble(String key)
+        +int getInt(String key, int defaultValue)
+        +int getInt(String key)
+        +long getLong(String key, long defaultValue)
+        +long getLong(String key)
+        --(time)--
+        +Duration getAsDuration(String key)
+        +Duration getAsDuration(String key, Duration defaultValue)
+        +Instant getAsTime(String key, Instant defaultValue)
+        +Duration getDuration(String key)
+    }
+    
+    Comparable <|-- IntValue
+    Serializable <|-- IntValue
+    class IntValue
+    {
+        --(constructors)--
+        +IntValue(int)
+        --
+        +boolean greaterThan(int value)
+        +boolean greaterThan(IntValue that)
+        +boolean lessThan(int that)
+        +boolean lessThan(IntValue that)
+    }
+    
+    Comparable <|-- LongValue
+    Serializable <|-- LongValue
+    class LongValue
+    {
+        --(constructors)--
+        +LongValue(long)
+        --
+        +boolean greaterThan(long value)
+        +boolean greaterThan(LongValue that)
+        +boolean greaterThanOrEqual(LongValue that)
+        +boolean greaterThanOrEqual(long value)
+        +boolean lessThan(long that)
+        +boolean lessThan(LongValue that)
+        +boolean lessThanOrEqual(LongValue that)
+        +boolean lessThanOrEqual(long that)
+        +T max(T lhs, T rhs)
+        +T maxNullSafe(T lhs, T rhs)
+        +T min(T lhs, T rhs)
+    }
+    
+    LinkedHashMap <|-- ValueMap
+    IValueMap <|-- ValueMap
+    class ValueMap
+    {
+        --(constructors)--
+        +ValueMap()
+        +ValueMap(Map<? extends String, ?>)
+        +ValueMap(String)
+        +ValueMap(String, String)
+        +ValueMap(String, String, MetaPattern)
+        --(collection)--
+        +Object add(String key, String value)
+    }
+    
+@enduml
+

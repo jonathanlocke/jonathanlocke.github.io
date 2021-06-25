@@ -1,0 +1,170 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.page"
+    
+    interface IPageManager
+    interface Serializable
+    interface IPageLockManager
+    
+    RuntimeException <|-- CouldNotLockPageException
+    class CouldNotLockPageException
+    {
+        --(constructors)--
+        +CouldNotLockPageException(int, String, Duration)
+        --
+        +int getPage()
+        --(naming)--
+        +String getThreadName()
+        --(time)--
+        +Duration getTimeout()
+    }
+    
+    IPageLockManager <|-- DefaultPageLockManager
+    class DefaultPageLockManager
+    {
+        --(constructors)--
+        +DefaultPageLockManager(Duration)
+        --(time)--
+        +Duration getTimeout(int pageId)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IManageablePage
+    interface IManageablePage
+    {
+        --
+        +void detach()
+        --(checks)--
+        +boolean isPageStateless()
+        --(identity)--
+        +int getPageId()
+        +boolean setFreezePageId(boolean freeze)
+    }
+    
+    interface Serializable
+    Serializable <|-- IPageLockManager
+    interface IPageLockManager
+    {
+        --(thread)--
+        +void lockPage(int pageId)
+        +void unlockAllPages()
+        +void unlockPage(int pageId)
+    }
+    
+    interface IPageManager
+    {
+        --
+        +void destroy()
+        +void detach()
+        +IManageablePage getPage(int pageId)
+        +IPageStore getPageStore()
+        +boolean supportsVersioning()
+        +void touchPage(IManageablePage)
+        +void untouchPage(IManageablePage)
+        --(collection)--
+        +void clear()
+        +void removePage(IManageablePage)
+        --(lifecycle)--
+        +void end()
+    }
+    
+    Serializable <|-- PageAccessSynchronizer
+    class PageAccessSynchronizer
+    {
+        --(constructors)--
+        +PageAccessSynchronizer(Duration)
+        +PageAccessSynchronizer(IPageLockManager)
+        --
+        +IPageManager adapt(IPageManager)
+        --(thread)--
+        +void lockPage(int pageId)
+        +void unlockAllPages()
+        +void unlockPage(int pageId)
+    }
+    
+    class PageAccessSynchronizer.PageLock
+    {
+        --(constructors)--
+        +PageLock(int, Thread)
+        --
+        +Thread getThread()
+        +void markReleased(boolean isDebugEnabled)
+        --(identity)--
+        +int getPageId()
+        --(thread)--
+        +void waitForRelease(long remaining, boolean isDebugEnabled)
+    }
+    
+    IPageManager <|-- PageManager
+    class PageManager
+    {
+        --(constructors)--
+        +PageManager(IPageStore)
+        --
+        #IPageContext createPageContext()
+    }
+    
+    HeaderResponse <|-- PartialPageUpdate.PartialHeaderResponse
+    class PartialPageUpdate.PartialHeaderResponse
+    {
+    }
+    
+    HtmlHeaderContainer <|-- PartialPageUpdate.PartialHtmlHeaderContainer
+    class PartialPageUpdate.PartialHtmlHeaderContainer
+    {
+        --(constructors)--
+        +PartialHtmlHeaderContainer(PartialPageUpdate)
+    }
+    
+    abstract class PartialPageUpdate
+    {
+        --(constructors)--
+        +PartialPageUpdate(Page)
+        --
+        +void appendJavaScript(CharSequence javascript)
+        +void detach(IRequestCycle)
+        +Collection<? extends Component> getComponents()
+        +IHeaderResponse getHeaderResponse()
+        +void prependJavaScript(CharSequence javascript)
+        +void setContentType(WebResponse, String encoding)
+        #void onAfterRespond(Response)
+        #void onBeforeRespond(Response)
+        #boolean prepareComponent(Component)
+        --(collection)--
+        +void add(Component, String markupId)
+        +boolean containsPage()
+        #boolean containsAncestorFor(Component)
+        --(write)--
+        +void writeTo(Response, String encoding)
+        #void writeComponent(Response, String markupId, Component, String encoding)
+        #void writeComponent(Response, String markupId, CharSequence contents)
+        #void writeEvaluation(Response, CharSequence contents)
+        #void writeEvaluations(Response, Collection<CharSequence> scripts)
+        #void writeFooter(Response, String encoding)
+        #void writeHeader(Response, String encoding)
+        #void writeHeaderContribution(Response, CharSequence contents)
+        #void writeHeaderContribution(Response, Component)
+        #void writePriorityEvaluation(Response, CharSequence contents)
+        #void writePriorityEvaluations(Response, Collection<CharSequence> scripts)
+    }
+    
+    WebResponse <|-- PartialPageUpdate.ResponseBuffer
+    class PartialPageUpdate.ResponseBuffer
+    {
+        --(primitive)--
+        +CharSequence getContents()
+    }
+    
+    PartialPageUpdate <|-- XmlPartialPageUpdate
+    class XmlPartialPageUpdate
+    {
+        --(constructors)--
+        +XmlPartialPageUpdate(Page)
+        --(primitive)--
+        #CharSequence encode(CharSequence str)
+    }
+    
+@enduml
+

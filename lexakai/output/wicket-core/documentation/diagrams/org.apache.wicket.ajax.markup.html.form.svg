@@ -1,0 +1,517 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="512.5px" preserveAspectRatio="none" style="width:1703px;height:512px;background:#333333;" version="1.1" viewBox="0 0 1703 512" width="1703.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="441.6667" x="623.4375" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="418.75" x="634.8958" y="30.5583">org.apache.wicket.ajax.markup.html.form</text><!--MD5=[e363f27c182ea03d82e31aa3a51b1cbb]
+class AbstractSubmitLink--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractSubmitLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="165.625" x="133.3333" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="165.625" x="133.3333" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="165.625" x="133.3333" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="AbstractSubmitLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="165.625" x="133.3333" y="53.7028"/><ellipse cx="147.9167" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M147.5098,66.099 L146.6614,69.8283 L148.3643,69.8283 Z M146.4111,64.4511 L148.6145,64.4511 L151.0742,73.5636 L149.2737,73.5636 L148.7122,71.3114 L146.3013,71.3114 L145.752,73.5636 L143.9514,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="128.125" x="164.5833" y="74.1211">AbstractSubmitLink</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="134.375" x2="297.9167" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="134.375" x2="297.9167" y1="93.4245" y2="93.4245"/><!--MD5=[90ba54f54370e77ef24813dec6818fa3]
+class Button--><rect fill="#282828" height="48.055" id="Button" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="855.7292" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="855.7292" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="855.7292" y="76.7578"/><rect fill="none" height="48.055" id="Button" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="855.7292" y="53.7028"/><ellipse cx="870.3125" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M872.2229,73.822 Q871.7957,74.0417 871.3257,74.1516 Q870.8557,74.2615 870.3369,74.2615 Q868.4937,74.2615 867.5232,73.0469 Q866.5527,71.8323 866.5527,69.5374 Q866.5527,67.2363 867.5232,66.0217 Q868.4937,64.8071 870.3369,64.8071 Q870.8557,64.8071 871.3318,64.917 Q871.8079,65.0269 872.2229,65.2466 L872.2229,67.2485 Q871.759,66.8213 871.3226,66.6229 Q870.8862,66.4246 870.4224,66.4246 Q869.4336,66.4246 868.9301,67.2089 Q868.4265,67.9932 868.4265,69.5374 Q868.4265,71.0754 868.9301,71.8597 Q869.4336,72.644 870.4224,72.644 Q870.8862,72.644 871.3226,72.4457 Q871.759,72.2473 872.2229,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="43.75" x="886.9792" y="74.1211">Button</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="856.7708" x2="935.9375" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="856.7708" x2="935.9375" y1="93.4245" y2="93.4245"/><!--MD5=[8a64f45b4c9cee6e5fe8dd26156d4a68]
+class AjaxButton--><rect codeLine="9" fill="#282828" height="341.1499" id="AjaxButton" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="413.5417" x="459.375" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="413.5417" x="459.375" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="413.5417" x="459.375" y="187.1745"/><rect codeLine="9" fill="none" height="341.1499" id="AjaxButton" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="413.5417" x="459.375" y="164.1195"/><ellipse cx="622.9167" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M622.5098,176.5157 L621.6614,180.245 L623.3643,180.245 Z M621.4111,174.8678 L623.6145,174.8678 L626.0742,183.9803 L624.2737,183.9803 L623.7122,181.7281 L621.3013,181.7281 L620.752,183.9803 L618.9514,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="71.875" x="645.8333" y="184.5378">AjaxButton</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="460.4167" x2="871.875" y1="195.5078" y2="195.5078"/><ellipse cx="470.8333" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="103.125" x="482.2917" y="237.7889">AjaxButton(String)</text><ellipse cx="470.8333" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="482.2917" y="257.5338">AjaxButton(String, Form&lt;?&gt;)</text><ellipse cx="470.8333" cy="270.3674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="197.9167" x="482.2917" y="277.2786">AjaxButton(String, IModel&lt;String&gt;)</text><ellipse cx="470.8333" cy="290.1123" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="257.2917" x="482.2917" y="297.0235">AjaxButton(String, IModel&lt;String&gt;, Form&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="622.3958" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="625.5208" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="709.8958" x2="871.875" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="871.875" y1="306.7322" y2="306.7322"/><polygon fill="#FFFF44" points="470.8333,312.9822,475,317.1488,470.8333,321.3155,466.6667,317.1488" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="482.2917" y="325.1017">void onAfterSubmit(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="470.8333,332.7271,475,336.8937,470.8333,341.0604,466.6667,336.8937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="194.7917" x="482.2917" y="344.8466">void onSubmit(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="470.8333,352.4719,475,356.6386,470.8333,360.8053,466.6667,356.6386" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="482.2917" y="364.5915">void updateAjaxAttributes(AjaxRequestAttributes)</text><polygon fill="#FFFF44" points="470.8333,396.1283,475,400.295,470.8333,404.4617,466.6667,400.295" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="381.25" x="482.2917" y="408.2479">AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="639.0625" y1="384.1726" y2="384.1726"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="642.1875" y="387.9822">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="693.2292" x2="871.875" y1="384.1726" y2="384.1726"/><polygon fill="#FFFF44" points="470.8333,439.7847,475,443.9514,470.8333,448.1181,466.6667,443.9514" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="259.375" x="482.2917" y="451.9043">boolean shouldTriggerJavaScriptSubmitEvent()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="628.6458" y1="427.829" y2="427.829"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="631.7708" y="431.6386">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="703.6458" x2="871.875" y1="427.829" y2="427.829"/><polygon fill="#FFFF44" points="470.8333,483.4412,475,487.6078,470.8333,491.7745,466.6667,487.6078" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="482.2917" y="495.5607">void onError(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="641.6667" y1="471.4854" y2="471.4854"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="644.7917" y="475.295">(status)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="690.625" x2="871.875" y1="471.4854" y2="471.4854"/><!--MD5=[c46fe013b7ecd8d162125b87a86014cb]
+class CheckBox--><rect fill="#282828" height="48.055" id="CheckBox" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="101.0417" x="1488.5417" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="101.0417" x="1488.5417" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="101.0417" x="1488.5417" y="76.7578"/><rect fill="none" height="48.055" id="CheckBox" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="101.0417" x="1488.5417" y="53.7028"/><ellipse cx="1503.125" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1505.0354,73.822 Q1504.6082,74.0417 1504.1382,74.1516 Q1503.6682,74.2615 1503.1494,74.2615 Q1501.3062,74.2615 1500.3357,73.0469 Q1499.3652,71.8323 1499.3652,69.5374 Q1499.3652,67.2363 1500.3357,66.0217 Q1501.3062,64.8071 1503.1494,64.8071 Q1503.6682,64.8071 1504.1443,64.917 Q1504.6204,65.0269 1505.0354,65.2466 L1505.0354,67.2485 Q1504.5715,66.8213 1504.1351,66.6229 Q1503.6987,66.4246 1503.2349,66.4246 Q1502.2461,66.4246 1501.7426,67.2089 Q1501.239,67.9932 1501.239,69.5374 Q1501.239,71.0754 1501.7426,71.8597 Q1502.2461,72.644 1503.2349,72.644 Q1503.6987,72.644 1504.1351,72.4457 Q1504.5715,72.2473 1505.0354,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="63.5417" x="1519.7917" y="74.1211">CheckBox</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1489.5833" x2="1588.5417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1489.5833" x2="1588.5417" y1="93.4245" y2="93.4245"/><!--MD5=[524f6161f47218b95ce2f4f004bf4900]
+class AjaxCheckBox--><rect codeLine="29" fill="#282828" height="150.946" id="AjaxCheckBox" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="313.5417" x="1382.2917" y="259.432"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="313.5417" x="1382.2917" y="259.432"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="313.5417" x="1382.2917" y="282.487"/><rect codeLine="29" fill="none" height="150.946" id="AjaxCheckBox" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="313.5417" x="1382.2917" y="259.432"/><ellipse cx="1485.9375" cy="275.1261" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1485.5306,271.8282 L1484.6822,275.5575 L1486.3851,275.5575 Z M1484.432,270.1803 L1486.6353,270.1803 L1489.0951,279.2928 L1487.2945,279.2928 L1486.733,277.0406 L1484.3221,277.0406 L1483.7728,279.2928 L1481.9722,279.2928 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="1508.8542" y="279.8503">AjaxCheckBox</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1383.3333" x2="1694.7917" y1="290.8203" y2="290.8203"/><ellipse cx="1393.75" cy="326.1902" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="1405.2083" y="333.1014">AjaxCheckBox(String)</text><ellipse cx="1393.75" cy="345.9351" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="227.0833" x="1405.2083" y="352.8463">AjaxCheckBox(String, IModel&lt;Boolean&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1383.3333" x2="1495.3125" y1="309.0261" y2="309.0261"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1498.4375" y="312.8357">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1582.8125" x2="1694.7917" y1="309.0261" y2="309.0261"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1383.3333" x2="1694.7917" y1="362.5549" y2="362.5549"/><polygon fill="#FFFF44" points="1393.75,368.8049,1397.9167,372.9716,1393.75,377.1383,1389.5833,372.9716" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="195.8333" x="1405.2083" y="380.9245">void onUpdate(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="1393.75,388.5498,1397.9167,392.7165,1393.75,396.8831,1389.5833,392.7165" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="1405.2083" y="400.6694">void updateAjaxAttributes(AjaxRequestAttributes)</text><!--MD5=[4f480b41a7c7453d1a4b98f34ef727b9]
+class AjaxFallbackButton--><rect codeLine="40" fill="#282828" height="321.405" id="AjaxFallbackButton" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="435.4167" x="909.8958" y="174.0153"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="435.4167" x="909.8958" y="174.0153"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="435.4167" x="909.8958" y="197.0703"/><rect codeLine="40" fill="none" height="321.405" id="AjaxFallbackButton" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="435.4167" x="909.8958" y="174.0153"/><ellipse cx="1057.8125" cy="189.7095" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1057.4056,186.4115 L1056.5572,190.1408 L1058.2601,190.1408 Z M1056.307,184.7636 L1058.5103,184.7636 L1060.9701,193.8761 L1059.1695,193.8761 L1058.608,191.6239 L1056.1971,191.6239 L1055.6478,193.8761 L1053.8472,193.8761 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="125" x="1080.7292" y="194.4336">AjaxFallbackButton</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="910.9375" x2="1344.2708" y1="205.4036" y2="205.4036"/><ellipse cx="921.3542" cy="240.7735" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="932.8125" y="247.6847">AjaxFallbackButton(String, Form&lt;?&gt;)</text><ellipse cx="921.3542" cy="260.5184" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="302.0833" x="932.8125" y="267.4296">AjaxFallbackButton(String, IModel&lt;String&gt;, Form&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="910.9375" x2="1083.8542" y1="223.6094" y2="223.6094"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1086.9792" y="227.419">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1171.3542" x2="1344.2708" y1="223.6094" y2="223.6094"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="910.9375" x2="1344.2708" y1="277.1383" y2="277.1383"/><polygon fill="#FFFF44" points="921.3542,283.3883,925.5208,287.5549,921.3542,291.7216,917.1875,287.5549" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="289.5833" x="932.8125" y="295.5078">void onAfterSubmit(Optional&lt;AjaxRequestTarget&gt;)</text><polygon fill="#FFFF44" points="921.3542,303.1331,925.5208,307.2998,921.3542,311.4665,917.1875,307.2998" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="261.4583" x="932.8125" y="315.2527">void onSubmit(Optional&lt;AjaxRequestTarget&gt;)</text><polygon fill="#FFFF44" points="921.3542,322.878,925.5208,327.0447,921.3542,331.2113,917.1875,327.0447" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="932.8125" y="334.9976">void updateAjaxAttributes(AjaxRequestAttributes)</text><polygon fill="#FFFF44" points="921.3542,366.5344,925.5208,370.7011,921.3542,374.8678,917.1875,370.7011" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="932.8125" y="378.654">boolean isButtonEnabled()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="910.9375" x2="1101.0417" y1="354.5787" y2="354.5787"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="1104.1667" y="358.3883">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1154.1667" x2="1344.2708" y1="354.5787" y2="354.5787"/><polygon fill="#FFFF44" points="921.3542,410.1908,925.5208,414.3575,921.3542,418.5242,917.1875,414.3575" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="403.125" x="932.8125" y="422.3104">AjaxFormSubmitBehavior newAjaxEventBehavior(Form&lt;?&gt;, String event)</text><polygon fill="#FFFF44" points="921.3542,429.9357,925.5208,434.1024,921.3542,438.269,917.1875,434.1024" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="259.375" x="932.8125" y="442.0553">boolean shouldTriggerJavaScriptSubmitEvent()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="910.9375" x2="1090.1042" y1="398.2351" y2="398.2351"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1093.2292" y="402.0447">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1165.1042" x2="1344.2708" y1="398.2351" y2="398.2351"/><polygon fill="#FFFF44" points="921.3542,473.5921,925.5208,477.7588,921.3542,481.9255,917.1875,477.7588" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="252.0833" x="932.8125" y="485.7117">void onError(Optional&lt;AjaxRequestTarget&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="910.9375" x2="1103.125" y1="461.6364" y2="461.6364"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="1106.25" y="465.446">(status)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1152.0833" x2="1344.2708" y1="461.6364" y2="461.6364"/><!--MD5=[5c48f7417411b098f0675859cf2efa00]
+class AjaxSubmitLink--><rect codeLine="59" fill="#282828" height="258.0037" id="AjaxSubmitLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="413.5417" x="9.375" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="413.5417" x="9.375" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="413.5417" x="9.375" y="228.8411"/><rect codeLine="59" fill="none" height="258.0037" id="AjaxSubmitLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="413.5417" x="9.375" y="205.7861"/><ellipse cx="157.8125" cy="221.4803" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M157.4056,218.1824 L156.5572,221.9116 L158.2601,221.9116 Z M156.307,216.5344 L158.5103,216.5344 L160.9701,225.647 L159.1695,225.647 L158.608,223.3948 L156.1971,223.3948 L155.6478,225.647 L153.8472,225.647 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="180.7292" y="226.2044">AjaxSubmitLink</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="421.875" y1="237.1745" y2="237.1745"/><ellipse cx="20.8333" cy="272.5444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="32.2917" y="279.4556">AjaxSubmitLink(String)</text><ellipse cx="20.8333" cy="292.2892" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="32.2917" y="299.2004">AjaxSubmitLink(String, Form&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="172.3958" y1="255.3802" y2="255.3802"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="175.5208" y="259.1899">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="259.8958" x2="421.875" y1="255.3802" y2="255.3802"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="421.875" y1="308.9091" y2="308.9091"/><polygon fill="#FFFF44" points="20.8333,315.1591,25,319.3258,20.8333,323.4924,16.6667,319.3258" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="32.2917" y="327.2786">void onAfterSubmit(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="20.8333,334.904,25,339.0706,20.8333,343.2373,16.6667,339.0706" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="194.7917" x="32.2917" y="347.0235">void onSubmit(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="20.8333,354.6488,25,358.8155,20.8333,362.9822,16.6667,358.8155" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="32.2917" y="366.7684">void updateAjaxAttributes(AjaxRequestAttributes)</text><polygon fill="#FFFF44" points="20.8333,398.3053,25,402.4719,20.8333,406.6386,16.6667,402.4719" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="381.25" x="32.2917" y="410.4248">AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="189.0625" y1="386.3495" y2="386.3495"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="192.1875" y="390.1591">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="243.2292" x2="421.875" y1="386.3495" y2="386.3495"/><polygon fill="#FFFF44" points="20.8333,441.9617,25,446.1283,20.8333,450.295,16.6667,446.1283" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="32.2917" y="454.0812">void onError(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="191.6667" y1="430.0059" y2="430.0059"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="194.7917" y="433.8155">(status)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="240.625" x2="421.875" y1="430.0059" y2="430.0059"/><!--MD5=[8acf766ddbe096116c98dfa317860a61]
+reverse link Button to AjaxButton--><path codeLine="8" d="M861.5417,117.2965 C849.4167,130.734 834.9479,146.7861 819.4167,163.9945 " fill="none" id="Button-backto-AjaxButton" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="856.1458,112.3903,875.5208,101.7965,866.9792,122.1507,856.1458,112.3903" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c520a8a53de6357524a19f142fdfed7a]
+reverse link CheckBox to AjaxCheckBox--><path codeLine="28" d="M1539.0625,122.6715 C1539.0625,160.1715 1539.0625,214.8903 1539.0625,259.234 " fill="none" id="CheckBox-backto-AjaxCheckBox" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1531.7708,122.6299,1539.0625,101.7965,1546.3542,122.6299,1531.7708,122.6299" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[450a87ead09dda38a243f821f41fb34e]
+reverse link Button to AjaxFallbackButton--><path codeLine="39" d="M931.5521,117.5465 C946,133.4945 963.7604,153.0986 982.6458,173.932 " fill="none" id="Button-backto-AjaxFallbackButton" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="925.8646,122.1403,917.2813,101.7965,936.6771,112.3382,925.8646,122.1403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[edba4d67caee27eaa23ae77c58ad5841]
+reverse link AbstractSubmitLink to AjaxSubmitLink--><path codeLine="58" d="M216.1458,122.9424 C216.1458,146.1195 216.1458,175.8278 216.1458,205.5882 " fill="none" id="AbstractSubmitLink-backto-AjaxSubmitLink" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="208.8542,122.6299,216.1458,101.7965,223.4375,122.6299,208.8542,122.6299" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c9d9a0dfe87ae0aafb07447fc334c814]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.markup.html.form"
+    
+    abstract AbstractSubmitLink
+    
+    Button <|- - AjaxButton
+    abstract class AjaxButton
+    {
+        - -(constructors)- -
+        +AjaxButton(String)
+        +AjaxButton(String, Form<?>)
+        +AjaxButton(String, IModel<String>)
+        +AjaxButton(String, IModel<String>, Form<?>)
+        - -
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(factory)- -
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        - -(messaging)- -
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        - -(status)- -
+        #void onError(AjaxRequestTarget)
+    }
+    
+    CheckBox <|- - AjaxCheckBox
+    abstract class AjaxCheckBox
+    {
+        - -(constructors)- -
+        +AjaxCheckBox(String)
+        +AjaxCheckBox(String, IModel<Boolean>)
+        - -
+        #void onUpdate(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    Button <|- - AjaxFallbackButton
+    abstract class AjaxFallbackButton
+    {
+        - -(constructors)- -
+        +AjaxFallbackButton(String, Form<?>)
+        +AjaxFallbackButton(String, IModel<String>, Form<?>)
+        - -
+        #void onAfterSubmit(Optional<AjaxRequestTarget>)
+        #void onSubmit(Optional<AjaxRequestTarget>)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(checks)- -
+        #boolean isButtonEnabled()
+        - -(messaging)- -
+        #AjaxFormSubmitBehavior newAjaxEventBehavior(Form<?>, String event)
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        - -(status)- -
+        #void onError(Optional<AjaxRequestTarget>)
+    }
+    
+    AbstractSubmitLink <|- - AjaxSubmitLink
+    abstract class AjaxSubmitLink
+    {
+        - -(constructors)- -
+        +AjaxSubmitLink(String)
+        +AjaxSubmitLink(String, Form<?>)
+        - -
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(factory)- -
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        - -(status)- -
+        #void onError(AjaxRequestTarget)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.ajax.markup.html.form"
+    
+    abstract AbstractSubmitLink
+    
+    Button <|- - AjaxButton
+    abstract class AjaxButton
+    {
+        - -(constructors)- -
+        +AjaxButton(String)
+        +AjaxButton(String, Form<?>)
+        +AjaxButton(String, IModel<String>)
+        +AjaxButton(String, IModel<String>, Form<?>)
+        - -
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(factory)- -
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        - -(messaging)- -
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        - -(status)- -
+        #void onError(AjaxRequestTarget)
+    }
+    
+    CheckBox <|- - AjaxCheckBox
+    abstract class AjaxCheckBox
+    {
+        - -(constructors)- -
+        +AjaxCheckBox(String)
+        +AjaxCheckBox(String, IModel<Boolean>)
+        - -
+        #void onUpdate(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    Button <|- - AjaxFallbackButton
+    abstract class AjaxFallbackButton
+    {
+        - -(constructors)- -
+        +AjaxFallbackButton(String, Form<?>)
+        +AjaxFallbackButton(String, IModel<String>, Form<?>)
+        - -
+        #void onAfterSubmit(Optional<AjaxRequestTarget>)
+        #void onSubmit(Optional<AjaxRequestTarget>)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(checks)- -
+        #boolean isButtonEnabled()
+        - -(messaging)- -
+        #AjaxFormSubmitBehavior newAjaxEventBehavior(Form<?>, String event)
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        - -(status)- -
+        #void onError(Optional<AjaxRequestTarget>)
+    }
+    
+    AbstractSubmitLink <|- - AjaxSubmitLink
+    abstract class AjaxSubmitLink
+    {
+        - -(constructors)- -
+        +AjaxSubmitLink(String)
+        +AjaxSubmitLink(String, Form<?>)
+        - -
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(factory)- -
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        - -(status)- -
+        #void onError(AjaxRequestTarget)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

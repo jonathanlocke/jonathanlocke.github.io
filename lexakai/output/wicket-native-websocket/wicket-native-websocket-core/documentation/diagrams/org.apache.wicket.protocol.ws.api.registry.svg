@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="487.5px" preserveAspectRatio="none" style="width:864px;height:487px;background:#333333;" version="1.1" viewBox="0 0 864 487" width="864.5833px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="443.75" x="203.3854" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="420.8333" x="214.8438" y="30.5583">org.apache.wicket.protocol.ws.api.registry</text><!--MD5=[fd03418446789a9c953ad7d3f0937fae]
+class IKey--><rect codeLine="11" fill="#282828" height="48.055" id="IKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="65.625" x="236.4583" y="287.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="65.625" x="236.4583" y="287.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="65.625" x="236.4583" y="310.0911"/><rect codeLine="11" fill="none" height="48.055" id="IKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="65.625" x="236.4583" y="287.0361"/><ellipse cx="251.0417" cy="302.7303" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M248.4456,299.8922 L248.4456,298.3053 L253.8717,298.3053 L253.8717,299.8922 L252.0589,299.8922 L252.0589,305.8309 L253.8717,305.8309 L253.8717,307.4178 L248.4456,307.4178 L248.4456,305.8309 L250.2584,305.8309 L250.2584,299.8922 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="28.125" x="267.7083" y="307.4544">IKey</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="237.5" x2="301.0417" y1="318.4245" y2="318.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="237.5" x2="301.0417" y1="326.7578" y2="326.7578"/><!--MD5=[c4dee387620ae12cef2eda8491dc91ec]
+class IWebSocketConnectionRegistry--><rect codeLine="15" fill="#282828" height="170.6909" id="IWebSocketConnectionRegistry" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="493.75" x="364.0625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="493.75" x="364.0625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="493.75" x="364.0625" y="76.7578"/><rect codeLine="15" fill="none" height="170.6909" id="IWebSocketConnectionRegistry" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="493.75" x="364.0625" y="53.7028"/><ellipse cx="503.125" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M500.529,66.5588 L500.529,64.9719 L505.955,64.9719 L505.955,66.5588 L504.1423,66.5588 L504.1423,72.4976 L505.955,72.4976 L505.955,74.0845 L500.529,74.0845 L500.529,72.4976 L502.3417,72.4976 L502.3417,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="201.0417" x="526.0417" y="74.1211">IWebSocketConnectionRegistry</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="365.1042" x2="856.7708" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="365.1042" x2="856.7708" y1="93.4245" y2="93.4245"/><ellipse cx="375.5208" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="409.375" x="386.9792" y="111.794">IWebSocketConnection getConnection(Application, String sessionId, IKey)</text><ellipse cx="375.5208" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="365.625" x="386.9792" y="131.5389">Collection&lt;IWebSocketConnection&gt; getConnections(Application)</text><ellipse cx="375.5208" cy="144.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="461.4583" x="386.9792" y="151.2838">Collection&lt;IWebSocketConnection&gt; getConnections(Application, String sessionId)</text><ellipse cx="375.5208" cy="164.1174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="438.5417" x="386.9792" y="171.0286">void setConnection(Application, String sessionId, IKey, IWebSocketConnection)</text><ellipse cx="375.5208" cy="207.7738" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="330.2083" x="386.9792" y="214.6851">void removeConnection(Application, String sessionId, IKey)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="365.1042" x2="576.5625" y1="190.6097" y2="190.6097"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="579.6875" y="194.4194">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="645.3125" x2="856.7708" y1="190.6097" y2="190.6097"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="9" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="211.4583" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="211.4583" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="211.4583" y="138.2161"/><rect codeLine="9" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="211.4583" y="115.1611"/><ellipse cx="226.0417" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M223.4456,128.0172 L223.4456,126.4303 L228.8717,126.4303 L228.8717,128.0172 L227.0589,128.0172 L227.0589,133.9559 L228.8717,133.9559 L228.8717,135.5428 L223.4456,135.5428 L223.4456,133.9559 L225.2584,133.9559 L225.2584,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="242.7083" y="135.5794">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="212.5" x2="326.0417" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="212.5" x2="326.0417" y1="154.8828" y2="154.8828"/><!--MD5=[f10d75b4d9b37da0b617c36456396141]
+class PageIdKey--><rect codeLine="27" fill="#282828" height="83.3781" id="PageIdKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="136.4583" x="7.2917" y="397.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="136.4583" x="7.2917" y="397.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="136.4583" x="7.2917" y="420.5078"/><rect codeLine="27" fill="none" height="83.3781" id="PageIdKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="136.4583" x="7.2917" y="397.4528"/><ellipse cx="36.4063" cy="413.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M38.3167,417.572 Q37.8894,417.7917 37.4194,417.9016 Q36.9495,418.0115 36.4307,418.0115 Q34.5874,418.0115 33.6169,416.7969 Q32.6465,415.5823 32.6465,413.2874 Q32.6465,410.9863 33.6169,409.7717 Q34.5874,408.5571 36.4307,408.5571 Q36.9495,408.5571 37.4255,408.667 Q37.9016,408.7769 38.3167,408.9966 L38.3167,410.9985 Q37.8528,410.5713 37.4164,410.3729 Q36.98,410.1746 36.5161,410.1746 Q35.5273,410.1746 35.0238,410.9589 Q34.5203,411.7432 34.5203,413.2874 Q34.5203,414.8254 35.0238,415.6097 Q35.5273,416.394 36.5161,416.394 Q36.98,416.394 37.4164,416.1957 Q37.8528,415.9973 38.3167,415.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="66.6667" x="56.3021" y="417.8711">PageIdKey</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="142.7083" y1="428.8411" y2="428.8411"/><ellipse cx="18.75" cy="464.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="30.2083" y="471.1222">PageIdKey(Integer)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="31.7708" y1="447.0469" y2="447.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="34.8958" y="450.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="119.2708" x2="142.7083" y1="447.0469" y2="447.0469"/><!--MD5=[8bf1173be007decd9efccd7b2372c922]
+class ResourceNameKey--><rect codeLine="34" fill="#282828" height="83.3781" id="ResourceNameKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="177.0833" x="180.7292" y="397.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="177.0833" x="180.7292" y="397.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="177.0833" x="180.7292" y="420.5078"/><rect codeLine="34" fill="none" height="83.3781" id="ResourceNameKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="177.0833" x="180.7292" y="397.4528"/><ellipse cx="204.6875" cy="413.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M206.5979,417.572 Q206.1707,417.7917 205.7007,417.9016 Q205.2307,418.0115 204.7119,418.0115 Q202.8687,418.0115 201.8982,416.7969 Q200.9277,415.5823 200.9277,413.2874 Q200.9277,410.9863 201.8982,409.7717 Q202.8687,408.5571 204.7119,408.5571 Q205.2307,408.5571 205.7068,408.667 Q206.1829,408.7769 206.5979,408.9966 L206.5979,410.9985 Q206.134,410.5713 205.6976,410.3729 Q205.2612,410.1746 204.7974,410.1746 Q203.8086,410.1746 203.3051,410.9589 Q202.8015,411.7432 202.8015,413.2874 Q202.8015,414.8254 203.3051,415.6097 Q203.8086,416.394 204.7974,416.394 Q205.2612,416.394 205.6976,416.1957 Q206.134,415.9973 206.5979,415.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="118.75" x="223.4375" y="417.8711">ResourceNameKey</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="181.7708" x2="356.7708" y1="428.8411" y2="428.8411"/><ellipse cx="192.1875" cy="464.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="203.6458" y="471.1222">ResourceNameKey(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="181.7708" x2="225.5208" y1="447.0469" y2="447.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="228.6458" y="450.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="313.0208" x2="356.7708" y1="447.0469" y2="447.0469"/><!--MD5=[f6d012db175ca22fad56910523dba295]
+class ResourceNameTokenKey--><rect codeLine="41" fill="#282828" height="83.3781" id="ResourceNameTokenKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="251.0417" x="394.7917" y="397.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="251.0417" x="394.7917" y="397.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="251.0417" x="394.7917" y="420.5078"/><rect codeLine="41" fill="none" height="83.3781" id="ResourceNameTokenKey" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="251.0417" x="394.7917" y="397.4528"/><ellipse cx="433.75" cy="413.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M435.6604,417.572 Q435.2332,417.7917 434.7632,417.9016 Q434.2932,418.0115 433.7744,418.0115 Q431.9312,418.0115 430.9607,416.7969 Q429.9902,415.5823 429.9902,413.2874 Q429.9902,410.9863 430.9607,409.7717 Q431.9312,408.5571 433.7744,408.5571 Q434.2932,408.5571 434.7693,408.667 Q435.2454,408.7769 435.6604,408.9966 L435.6604,410.9985 Q435.1965,410.5713 434.7601,410.3729 Q434.3237,410.1746 433.8599,410.1746 Q432.8711,410.1746 432.3676,410.9589 Q431.864,411.7432 431.864,413.2874 Q431.864,414.8254 432.3676,415.6097 Q432.8711,416.394 433.8599,416.394 Q434.3237,416.394 434.7601,416.1957 Q435.1965,415.9973 435.6604,415.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="455.8333" y="417.8711">ResourceNameTokenKey</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="395.8333" x2="644.7917" y1="428.8411" y2="428.8411"/><ellipse cx="406.25" cy="464.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="218.75" x="417.7083" y="471.1222">ResourceNameTokenKey(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="395.8333" x2="476.5625" y1="447.0469" y2="447.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="479.6875" y="450.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="564.0625" x2="644.7917" y1="447.0469" y2="447.0469"/><!--MD5=[db3cf54c85f0f3761ec476d0a0f0b323]
+class SimpleWebSocketConnectionRegistry--><rect codeLine="48" fill="#282828" height="48.055" id="SimpleWebSocketConnectionRegistry" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="278.125" x="471.875" y="287.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="278.125" x="471.875" y="287.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="278.125" x="471.875" y="310.0911"/><rect codeLine="48" fill="none" height="48.055" id="SimpleWebSocketConnectionRegistry" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="278.125" x="471.875" y="287.0361"/><ellipse cx="486.4583" cy="302.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M488.3687,307.1554 Q487.9415,307.3751 487.4715,307.4849 Q487.0015,307.5948 486.4827,307.5948 Q484.6395,307.5948 483.669,306.3802 Q482.6986,305.1656 482.6986,302.8707 Q482.6986,300.5697 483.669,299.3551 Q484.6395,298.1405 486.4827,298.1405 Q487.0015,298.1405 487.4776,298.2503 Q487.9537,298.3602 488.3687,298.5799 L488.3687,300.5819 Q487.9049,300.1546 487.4685,299.9563 Q487.0321,299.7579 486.5682,299.7579 Q485.5794,299.7579 485.0759,300.5422 Q484.5723,301.3265 484.5723,302.8707 Q484.5723,304.4088 485.0759,305.1931 Q485.5794,305.9774 486.5682,305.9774 Q487.0321,305.9774 487.4685,305.779 Q487.9049,305.5806 488.3687,305.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="240.625" x="503.125" y="307.4544">SimpleWebSocketConnectionRegistry</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="472.9167" x2="748.9583" y1="318.4245" y2="318.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="472.9167" x2="748.9583" y1="326.7578" y2="326.7578"/><!--MD5=[156063989cbd4a895d3890ea9e9a9c9a]
+reverse link IClusterable to IKey--><path codeLine="10" d="M269.2708,184.5882 C269.2708,217.432 269.2708,260.807 269.2708,286.984 " fill="none" id="IClusterable-backto-IKey" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="261.9792,184.2445,269.2708,163.4111,276.5625,184.2445,261.9792,184.2445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[503dccff91fdca308bd1cd56831c8b31]
+reverse link IKey to PageIdKey--><path codeLine="26" d="M218.6979,344.932 C194.0104,360.9945 164.0833,380.4632 137.9792,397.4424 " fill="none" id="IKey-backto-PageIdKey" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="214.9688,338.6611,236.4063,333.4215,222.9167,350.8903,214.9688,338.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c70840756f8ef7b92ce39ca59cd4a591]
+reverse link IKey to ResourceNameKey--><path codeLine="33" d="M269.2708,356.0153 C269.2708,369.4111 269.2708,384.0778 269.2708,397.2549 " fill="none" id="IKey-backto-ResourceNameKey" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="261.9792,355.984,269.2708,335.1507,276.5625,355.984,261.9792,355.984" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[87feebaf9b7de18c03319cc57ba65c16]
+reverse link IKey to ResourceNameTokenKey--><path codeLine="40" d="M320.7083,337.859 C354.8021,354.9736 400.2292,377.7861 439.1354,397.3278 " fill="none" id="IKey-backto-ResourceNameTokenKey" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="317.4375,344.3799,302.0938,328.5153,323.9792,331.3486,317.4375,344.3799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7004942b0be210c3849a8e67a13ec1cf]
+reverse link IWebSocketConnectionRegistry to SimpleWebSocketConnectionRegistry--><path codeLine="47" d="M610.9375,245.6403 C610.9375,261.0986 610.9375,275.5882 610.9375,286.8903 " fill="none" id="IWebSocketConnectionRegistry-backto-SimpleWebSocketConnectionRegistry" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="603.6458,245.3903,610.9375,224.557,618.2292,245.3903,603.6458,245.3903" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1a9f83803bf165b08d141ef2364788c1]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api.registry"
+    
+    interface IKey
+    interface IWebSocketConnectionRegistry
+    
+    interface IClusterable
+    IClusterable <|- - IKey
+    interface IKey
+    {
+    }
+    
+    interface IWebSocketConnectionRegistry
+    {
+        - -
+        +IWebSocketConnection getConnection(Application, String sessionId, IKey)
+        +Collection<IWebSocketConnection> getConnections(Application)
+        +Collection<IWebSocketConnection> getConnections(Application, String sessionId)
+        +void setConnection(Application, String sessionId, IKey, IWebSocketConnection)
+        - -(collection)- -
+        +void removeConnection(Application, String sessionId, IKey)
+    }
+    
+    IKey <|- - PageIdKey
+    class PageIdKey
+    {
+        - -(constructors)- -
+        +PageIdKey(Integer)
+    }
+    
+    IKey <|- - ResourceNameKey
+    class ResourceNameKey
+    {
+        - -(constructors)- -
+        +ResourceNameKey(String)
+    }
+    
+    IKey <|- - ResourceNameTokenKey
+    class ResourceNameTokenKey
+    {
+        - -(constructors)- -
+        +ResourceNameTokenKey(String, String)
+    }
+    
+    IWebSocketConnectionRegistry <|- - SimpleWebSocketConnectionRegistry
+    class SimpleWebSocketConnectionRegistry
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.protocol.ws.api.registry"
+    
+    interface IKey
+    interface IWebSocketConnectionRegistry
+    
+    interface IClusterable
+    IClusterable <|- - IKey
+    interface IKey
+    {
+    }
+    
+    interface IWebSocketConnectionRegistry
+    {
+        - -
+        +IWebSocketConnection getConnection(Application, String sessionId, IKey)
+        +Collection<IWebSocketConnection> getConnections(Application)
+        +Collection<IWebSocketConnection> getConnections(Application, String sessionId)
+        +void setConnection(Application, String sessionId, IKey, IWebSocketConnection)
+        - -(collection)- -
+        +void removeConnection(Application, String sessionId, IKey)
+    }
+    
+    IKey <|- - PageIdKey
+    class PageIdKey
+    {
+        - -(constructors)- -
+        +PageIdKey(Integer)
+    }
+    
+    IKey <|- - ResourceNameKey
+    class ResourceNameKey
+    {
+        - -(constructors)- -
+        +ResourceNameKey(String)
+    }
+    
+    IKey <|- - ResourceNameTokenKey
+    class ResourceNameTokenKey
+    {
+        - -(constructors)- -
+        +ResourceNameTokenKey(String, String)
+    }
+    
+    IWebSocketConnectionRegistry <|- - SimpleWebSocketConnectionRegistry
+    class SimpleWebSocketConnectionRegistry
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

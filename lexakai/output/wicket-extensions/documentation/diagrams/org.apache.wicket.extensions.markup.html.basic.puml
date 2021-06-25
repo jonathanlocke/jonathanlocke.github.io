@@ -1,0 +1,62 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.basic"
+    
+    interface ILinkParser
+    
+    LinkParser <|-- DefaultLinkParser
+    class DefaultLinkParser
+    {
+        --(constructors)--
+        +DefaultLinkParser()
+    }
+    
+    interface ILinkParser
+    {
+        --(parsing)--
+        +String parse(String text)
+    }
+    
+    ILinkRenderStrategy --> String : "creates"
+    interface ILinkRenderStrategy
+    {
+        --(building)--
+        +String buildLink(String linkTarget)
+    }
+    
+    ILinkParser <|-- LinkParser
+    class LinkParser
+    {
+        --(collection)--
+        +ILinkParser addLinkRenderStrategy(String pattern, ILinkRenderStrategy)
+    }
+    
+    Label <|-- SmartLinkLabel
+    class SmartLinkLabel
+    {
+        --(constructors)--
+        +SmartLinkLabel(String)
+        +SmartLinkLabel(String, IModel<String>)
+        +SmartLinkLabel(String, String)
+        --(parsing)--
+        #ILinkParser getLinkParser()
+        --(primitive)--
+        #CharSequence getSmartLink(CharSequence text)
+    }
+    
+    MultiLineLabel <|-- SmartLinkMultiLineLabel
+    class SmartLinkMultiLineLabel
+    {
+        --(constructors)--
+        +SmartLinkMultiLineLabel(String, IModel<String>)
+        +SmartLinkMultiLineLabel(String, String)
+        --(parsing)--
+        #ILinkParser getLinkParser()
+        --(primitive)--
+        #CharSequence getSmartLink(CharSequence text)
+    }
+    
+@enduml
+

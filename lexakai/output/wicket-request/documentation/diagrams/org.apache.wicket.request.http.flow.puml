@@ -1,0 +1,18 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.http.flow"
+    
+    ResetResponseException <|-- AbortWithHttpErrorCodeException
+    class AbortWithHttpErrorCodeException
+    {
+        --(constructors)--
+        +AbortWithHttpErrorCodeException(int)
+        +AbortWithHttpErrorCodeException(int, String)
+        --(status)--
+        +int getErrorCode()
+    }
+    
+@enduml
+

@@ -1,0 +1,32 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.repeater.data.sort"
+    
+    interface IAjaxLink
+    
+    OrderByBorder <|-- AjaxFallbackOrderByBorder
+    abstract class AjaxFallbackOrderByBorder<S>
+    {
+        --(constructors)--
+        +AjaxFallbackOrderByBorder(String, S, ISortStateLocator<S>)
+        --
+        #void onAjaxClick(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    OrderByLink <|-- AjaxOrderByLink
+    IAjaxLink <|-- AjaxOrderByLink
+    abstract class AjaxOrderByLink<S>
+    {
+        --(constructors)--
+        +AjaxOrderByLink(String, S, ISortStateLocator<S>)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(messaging)--
+        #AjaxEventBehavior newAjaxEventBehavior(String event)
+    }
+    
+@enduml
+

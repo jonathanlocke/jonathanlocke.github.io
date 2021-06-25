@@ -1,0 +1,192 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.lang"
+    
+    interface IClusterable
+    
+    class Args
+    {
+        --
+        +T notNull(T argument, String name)
+        +T withinRange(T min, T max, T value, String name)
+        --(checks)--
+        +boolean isFalse(boolean argument, String msg, Object... params)
+        +boolean isTrue(boolean argument, String msg, Object... params)
+        --(collection)--
+        +T notEmpty(T argument, String name)
+        +T notEmpty(T collection, String name)
+        +T notEmpty(T collection, String message, Object... params)
+    }
+    
+    LongValue <|-- Bytes
+    class Bytes
+    {
+        --
+        +double gigabytes()
+        +boolean greaterThan(Bytes other)
+        +double kilobytes()
+        +double megabytes()
+        +double terabytes()
+        --(primitive)--
+        +Bytes bytes(long bytes)
+        +Bytes bytes(double bytes)
+        +long bytes()
+        +Bytes gigabytes(double gigabytes)
+        +Bytes gigabytes(long gigabytes)
+        +Bytes kilobytes(long kilobytes)
+        +Bytes kilobytes(double kilobytes)
+        +Bytes megabytes(double megabytes)
+        +Bytes megabytes(long megabytes)
+        +Bytes terabytes(long terabytes)
+        +Bytes terabytes(double terabytes)
+        +Bytes valueOf(String)
+        +Bytes valueOf(String, Locale)
+    }
+    
+    class Checks
+    {
+        --
+        +void notNull(Object argument, String message, Object... params)
+        +void withinRange(T min, T max, T value, String message)
+        --(collection)--
+        +void notEmpty(String argument, String message, Object... params)
+        --(primitive)--
+        +void notEmptyShort(String argument, String name)
+        +void notNullShort(Object argument, String name)
+        +void withinRangeShort(T min, T max, T value, String name)
+    }
+    
+    class Classes
+    {
+        --
+        +Class<?> relativeClass(Class<?> scope, String path)
+        --(naming)--
+        +String name(Class<?>)
+        +String simpleName(Class<?>)
+    }
+    
+    class Comparators
+    {
+        --
+        +T max(T firstComp, T secondComp)
+        +T min(T firstComp, T secondComp)
+    }
+    
+    StringValue <|-- EnumeratedType
+    abstract class EnumeratedType
+    {
+        --(constructors)--
+        +EnumeratedType(String)
+        --(collection)--
+        +List<EnumeratedType> getValues(Class<? extends EnumeratedType>)
+        --(read)--
+        +Object readResolve()
+    }
+    
+    class Exceptions
+    {
+        --
+        +Throwable getRootCause(Throwable)
+        +T visit(Throwable, IThrowableVisitor<T>)
+        --(search)--
+        +T findCause(Throwable, Class<T> causeType)
+    }
+    
+    class Generics
+    {
+        --(collection)--
+        +Iterator<T> iterator(Iterator<?> delegate)
+        +ArrayList<T> newArrayList()
+        +ArrayList<T> newArrayList(int capacity)
+        +ConcurrentHashMap<K,V> newConcurrentHashMap()
+        +ConcurrentHashMap<K,V> newConcurrentHashMap(int initialCapacity)
+        +HashMap<K,V> newHashMap(int capacity)
+        +HashMap<K,V> newHashMap()
+    }
+    
+    interface Exceptions.IThrowableVisitor<T>
+    {
+        --
+        +void visit(Throwable, Visit<T>)
+    }
+    
+    class Numbers
+    {
+        --
+        +Number getMaxValue(Class<? extends Number> numberType)
+        +Number getMinValue(Class<? extends Number> numberType)
+    }
+    
+    class Objects
+    {
+        --
+        +BigDecimal bigDecValue(Object value)
+        +boolean booleanValue(Object value)
+        +int compareWithConversion(Object v1, Object v2)
+        +T convertValue(Object value, Class<T> toType)
+        +T defaultIfNull(T originalObj, T defaultObj)
+        +boolean equal(Object a, Object)
+        +int getNumericType(int t1, int t2, boolean canBeNonNumeric)
+        +int getNumericType(Object v1, Object v2)
+        +int getNumericType(Object v1, Object v2, boolean canBeNonNumeric)
+        +int getNumericType(Object value)
+        +String stringValue(Object value, boolean trim)
+        +String stringValue(Object value)
+        --(checks)--
+        +boolean isEqual(Object object1, Object object2)
+        --(primitive)--
+        +BigInteger bigIntValue(Object value)
+        +double doubleValue(Object value)
+        +long longValue(Object value)
+        +Number newInteger(int type, long value)
+    }
+    
+    IClusterable <|-- PackageName
+    class PackageName
+    {
+        --(naming)--
+        +PackageName forClass(Class<?>)
+        +PackageName forPackage(Package)
+        +String getName()
+    }
+    
+    class Packages
+    {
+        --
+        +String parent(String packageName)
+        +String resolveScope(Class<?> forClass)
+        --(naming)--
+        +String extractPackageName(Class<?> forClass)
+        --(path)--
+        +String absolutePath(Package, String relativePath)
+        +String absolutePath(String packageName, String path)
+        +String absolutePath(Class<?> p, String path)
+    }
+    
+    class Primitives
+    {
+    }
+    
+    RuntimeException <|-- Threads.ThreadDump
+    class Threads.ThreadDump
+    {
+    }
+    
+    class Threads
+    {
+        --
+        +void dumpAllThreads(Logger)
+        +void dumpSingleThread(Logger, Thread)
+    }
+    
+    class Exceptions.Visit<T>
+    {
+        --(lifecycle)--
+        +void stop()
+        +void stop(T result)
+    }
+    
+@enduml
+

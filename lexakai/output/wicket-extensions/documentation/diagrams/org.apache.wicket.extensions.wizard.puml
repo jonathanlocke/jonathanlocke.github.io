@@ -1,0 +1,260 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.wizard"
+    
+    abstract AbstractWizardModel
+    
+    interface IWizardModelListener
+    interface IFormValidator
+    interface IWizard
+    interface IWizardStep
+    interface IWizardModel
+    
+    IWizardModel <|-- AbstractWizardModel
+    abstract class AbstractWizardModel
+    {
+        --(constructors)--
+        +AbstractWizardModel()
+        --
+        +void setCancelVisible(boolean cancelVisible)
+        --(collection)--
+        +void setLastVisible(boolean lastVisible)
+        --(messaging)--
+        #void fireActiveStepChanged(IWizardStep)
+        #void fireWizardCancelled()
+        #void fireWizardFinished()
+    }
+    
+    WizardButtonBar <|-- AjaxWizardButtonBar
+    class AjaxWizardButtonBar
+    {
+        --(constructors)--
+        +AjaxWizardButtonBar(String, Wizard)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    WizardButton <|-- CancelButton
+    class CancelButton
+    {
+        --(constructors)--
+        +CancelButton(String, IWizard)
+    }
+    
+    WizardButton <|-- FinishButton
+    class FinishButton
+    {
+        --(constructors)--
+        +FinishButton(String, IWizard)
+    }
+    
+    IFormValidator <|-- WizardStep.FormValidatorWrapper
+    class WizardStep.FormValidatorWrapper
+    {
+        --(collection)--
+        +void add(IFormValidator)
+    }
+    
+    Panel <|-- WizardStep.Header
+    class WizardStep.Header
+    {
+        --(constructors)--
+        +Header(String, IWizard)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- WizardModel.ICondition
+    interface WizardModel.ICondition
+    {
+        --
+        +boolean evaluate()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IWizard
+    interface IWizard
+    {
+        --
+        +IWizardModel getWizardModel()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IWizardModel
+    interface IWizardModel
+    {
+        --
+        +void cancel()
+        +IWizardStep getActiveStep()
+        +void previous()
+        --(checks)--
+        +boolean isCancelVisible()
+        +boolean isFinishAvailable()
+        +boolean isNextAvailable()
+        +boolean isPreviousAvailable()
+        --(collection)--
+        +void addListener(IWizardModelListener)
+        +boolean isLastAvailable()
+        +boolean isLastStep(IWizardStep)
+        +boolean isLastVisible()
+        +void last()
+        +void removeListener(IWizardModelListener)
+        +Iterator<IWizardStep> stepIterator()
+        --(iteration)--
+        +void next()
+        --(lifecycle)--
+        +void finish()
+        +void reset()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IWizardModelListener
+    interface IWizardModelListener
+    {
+        --
+        +void onActiveStepChanged(IWizardStep newStep)
+        +void onCancel()
+        --(lifecycle)--
+        +void onFinish()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IWizardStep
+    interface IWizardStep
+    {
+        --
+        +void applyState()
+        +Component getHeader(String id, Component parent, IWizard)
+        +Component getView(String id, Component parent, IWizard)
+        --(checks)--
+        +boolean isComplete()
+        --(lifecycle)--
+        +void init(IWizardModel)
+    }
+    
+    WizardButton <|-- LastButton
+    class LastButton
+    {
+        --(constructors)--
+        +LastButton(String, IWizard)
+    }
+    
+    WizardButton <|-- NextButton
+    class NextButton
+    {
+        --(constructors)--
+        +NextButton(String, IWizard)
+    }
+    
+    WizardButton <|-- PreviousButton
+    class PreviousButton
+    {
+        --(constructors)--
+        +PreviousButton(String, IWizard)
+    }
+    
+    WizardStep <|-- StaticContentStep
+    class StaticContentStep
+    {
+        --(constructors)--
+        +StaticContentStep(IModel<String>, IModel<String>, IModel<?>, boolean)
+        +StaticContentStep(IModel<String>, IModel<String>, String, boolean)
+        +StaticContentStep(String, String, IModel<?>, boolean)
+        +StaticContentStep(String, String, String, boolean)
+        +StaticContentStep(boolean)
+        --
+        +boolean getAllowHtml()
+        +String getContent()
+        +IModel<?> getContentModel()
+        +void setContentModel(IModel<T> content)
+    }
+    
+    Panel <|-- Wizard
+    IWizardModelListener <|-- Wizard
+    IWizard <|-- Wizard
+    class Wizard
+    {
+        --(constructors)--
+        +Wizard(String)
+        +Wizard(String, IWizardModel)
+        --
+        +IWizardStep getActiveStep()
+        +Form<?> getForm()
+        --(factory)--
+        #Component newButtonBar(String id)
+        #Component newFeedbackPanel(String id)
+        #Form<E> newForm(String id)
+        #Component newOverviewBar(String id)
+        --(lifecycle)--
+        #void init(IWizardModel)
+    }
+    
+    Button <|-- WizardButton
+    abstract class WizardButton
+    {
+        --(constructors)--
+        +WizardButton(String, IWizard, IModel<String>)
+        --
+        #IWizard getWizard()
+        #IWizardModel getWizardModel()
+        #void onClick()
+    }
+    
+    Panel <|-- WizardButtonBar
+    class WizardButtonBar
+    {
+        --(constructors)--
+        +WizardButtonBar(String, IWizard)
+        --
+        +WizardButton getDefaultButton(IWizardModel)
+        --(factory)--
+        #WizardButton newCancelButton(String id, IWizard)
+        #WizardButton newFinishButton(String id, IWizard)
+        #WizardButton newLastButton(String id, IWizard)
+        #WizardButton newNextButton(String id, IWizard)
+        #WizardButton newPreviousButton(String id, IWizard)
+    }
+    
+    AbstractWizardModel <|-- WizardModel
+    class WizardModel
+    {
+        --(constructors)--
+        +WizardModel()
+        --
+        +void setActiveStep(IWizardStep)
+        #boolean allStepsComplete()
+        --(collection)--
+        +void add(IWizardStep, ICondition)
+        +void add(IWizardStep)
+        +List<ICondition> getConditions()
+        #IWizardStep findLastStep()
+        --(iteration)--
+        #IWizardStep findNextVisibleStep()
+    }
+    
+    Panel <|-- WizardStep
+    IWizardStep <|-- WizardStep
+    class WizardStep
+    {
+        --(constructors)--
+        +WizardStep()
+        +WizardStep(IModel<String>, IModel<String>)
+        +WizardStep(IModel<String>, IModel<String>, IModel<?>)
+        +WizardStep(String, String)
+        +WizardStep(String, String, IModel<?>)
+        --
+        +String getSummary()
+        +String getTitle()
+        +IWizardModel getWizardModel()
+        +void setComplete(boolean complete)
+        +void setSummaryModel(IModel<String> summary)
+        +void setTitleModel(IModel<String> title)
+        --(collection)--
+        +void add(IFormValidator)
+        --(lifecycle)--
+        #void onInit(IWizardModel)
+    }
+    
+@enduml
+

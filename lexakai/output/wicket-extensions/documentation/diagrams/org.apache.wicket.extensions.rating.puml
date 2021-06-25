@@ -1,0 +1,36 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.rating"
+    
+    Panel <|-- RatingPanel
+    abstract class RatingPanel
+    {
+        --(constructors)--
+        +RatingPanel(String)
+        +RatingPanel(String, IModel<? extends Number>)
+        +RatingPanel(String, IModel<? extends Number>, IModel<Integer>, IModel<Integer>, IModel<Boolean>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, IModel<Integer>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, boolean)
+        +RatingPanel(String, int)
+        --
+        +RatingPanel setRatingLabelVisible(boolean visible)
+        #void onRated(int rating, Optional<AjaxRequestTarget>)
+        --(extension points)--
+        #boolean onIsStarActive(int star)
+        --(factory)--
+        #Component newRatingLabel(String id, IModel<? extends Number> rating, IModel<Integer> nrOfVotes)
+        #Component newRatingStarBar(String id, IModel<Integer> nrOfStars)
+        --(network)--
+        #String getActiveStarUrl(int iteration)
+        #String getInactiveStarUrl(int iteration)
+    }
+    
+    Loop <|-- RatingPanel.RatingStarBar
+    class RatingPanel.RatingStarBar
+    {
+    }
+    
+@enduml
+

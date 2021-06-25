@@ -1,0 +1,248 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api"
+    
+    abstract AbstractPartialPageRequestHandler
+    abstract BaseWebSocketBehavior
+    
+    interface HttpServletRequest
+    interface IWebSocketConnectionFilter
+    interface IWebSocketRequestHandler
+    interface IRequestHandler
+    interface IWebSocketProcessor
+    interface HttpSession
+    interface IWebSocketConnection
+    interface IRequestMapper
+    interface IResource
+    interface IMarkupResourceStreamProvider
+    
+    IWebSocketConnection <|-- AbstractWebSocketConnection
+    abstract class AbstractWebSocketConnection
+    {
+        --(constructors)--
+        +AbstractWebSocketConnection(AbstractWebSocketProcessor)
+    }
+    
+    IWebSocketProcessor <|-- AbstractWebSocketProcessor
+    abstract class AbstractWebSocketProcessor
+    {
+        --(constructors)--
+        +AbstractWebSocketProcessor(HttpServletRequest, WebApplication)
+        --
+        #WebApplication getApplication()
+        #void onConnect(IWebSocketConnection)
+        --(collection)--
+        #IKey getRegistryKey()
+        --(identity)--
+        #String getSessionId()
+        --(messaging)--
+        +void broadcastMessage(IWebSocketMessage)
+    }
+    
+    Behavior <|-- BaseWebSocketBehavior
+    class BaseWebSocketBehavior
+    {
+        --(constructors)--
+        #BaseWebSocketBehavior()
+        +BaseWebSocketBehavior(String)
+        +BaseWebSocketBehavior(String, String)
+        --
+        #String getWebSocketSetupScript(Map<String,Object> parameters)
+        --(network)--
+        #Integer getPort(WebSocketSettings)
+        #Integer getSecurePort(WebSocketSettings)
+        --(primitive)--
+        #CharSequence getBaseUrl(WebSocketSettings)
+        #CharSequence getContextPath(WebSocketSettings)
+        #CharSequence getFilterPrefix(WebSocketSettings)
+        #CharSequence getSessionId(Component)
+    }
+    
+    class ConnectionRejected
+    {
+        --(constructors)--
+        +ConnectionRejected(int, String)
+        --
+        +int getCode()
+        +String getReason()
+    }
+    
+    HttpSession <|-- HttpSessionCopy
+    class HttpSessionCopy
+    {
+        --(constructors)--
+        +HttpSessionCopy(HttpSession)
+    }
+    
+    interface IWebSocketConnection
+    {
+        --
+        +Application getApplication()
+        --(checks)--
+        +boolean isOpen()
+        --(collection)--
+        +IKey getKey()
+        --(identity)--
+        +String getSessionId()
+        --(io)--
+        +void close(int code, String reason)
+        --(messaging)--
+        +IWebSocketConnection sendMessage(byte[] message, int offset, int length)
+        +void sendMessage(IWebSocketPushMessage)
+        +IWebSocketConnection sendMessage(String message)
+    }
+    
+    interface IWebSocketConnectionFilter
+    {
+        --(filtering)--
+        +ConnectionRejected doFilter(HttpServletRequest)
+    }
+    
+    interface IWebSocketProcessor
+    {
+        --
+        +void onOpen(Object containerConnection)
+        --(io)--
+        +void onClose(int closeCode, String message)
+        --(messaging)--
+        +void onMessage(byte[] data, int offset, int length)
+        +void onMessage(String message)
+        --(status)--
+        +void onError(Throwable)
+    }
+    
+    interface ILoggableRequestHandler
+    interface IPartialPageRequestHandler
+    IPartialPageRequestHandler <|-- IWebSocketRequestHandler
+    ILoggableRequestHandler <|-- IWebSocketRequestHandler
+    interface IWebSocketRequestHandler
+    {
+        --(collection)--
+        +void push(CharSequence message)
+        +void push(byte[] message, int offset, int length)
+    }
+    
+    HttpServletRequest <|-- ServletRequestCopy
+    class ServletRequestCopy
+    {
+        --(constructors)--
+        +ServletRequestCopy(HttpServletRequest)
+    }
+    
+    BaseWebSocketBehavior <|-- WebSocketBehavior
+    abstract class WebSocketBehavior
+    {
+        --(constructors)--
+        +WebSocketBehavior()
+        --
+        #void onAbort(AbortedMessage)
+        #void onConnect(ConnectedMessage)
+        --(collection)--
+        #void onPush(WebSocketRequestHandler, IWebSocketPushMessage)
+        --(io)--
+        #void onClose(ClosedMessage)
+        --(messaging)--
+        #void onMessage(WebSocketRequestHandler, TextMessage)
+        #void onMessage(WebSocketRequestHandler, BinaryMessage)
+        --(status)--
+        #void onError(WebSocketRequestHandler, ErrorMessage)
+    }
+    
+    ArrayList <|-- WebSocketConnectionFilterCollection
+    IWebSocketConnectionFilter <|-- WebSocketConnectionFilterCollection
+    class WebSocketConnectionFilterCollection
+    {
+    }
+    
+    IWebSocketConnectionFilter <|-- WebSocketConnectionOriginFilter
+    class WebSocketConnectionOriginFilter
+    {
+        --(constructors)--
+        +WebSocketConnectionOriginFilter(List<String>)
+        --
+        +void setAllowedDomains(Iterable<String> domains)
+        --(collection)--
+        +List<String> getAllowedDomains()
+    }
+    
+    IRequestHandler <|-- WebSocketMessageBroadcastHandler
+    class WebSocketMessageBroadcastHandler
+    {
+    }
+    
+    class WebSocketPushBroadcaster
+    {
+        --(constructors)--
+        +WebSocketPushBroadcaster(IWebSocketConnectionRegistry)
+        --(messaging)--
+        +void broadcast(ConnectedMessage connection, IWebSocketPushMessage)
+        +void broadcastAll(Application, IWebSocketPushMessage)
+    }
+    
+    ServletWebRequest <|-- WebSocketRequest
+    class WebSocketRequest
+    {
+        --(constructors)--
+        +WebSocketRequest(HttpServletRequest, String)
+    }
+    
+    AbstractPartialPageRequestHandler <|-- WebSocketRequestHandler
+    IWebSocketRequestHandler <|-- WebSocketRequestHandler
+    class WebSocketRequestHandler
+    {
+        --(constructors)--
+        +WebSocketRequestHandler(Component, IWebSocketConnection)
+        --
+        #PartialPageUpdate getUpdate()
+    }
+    
+    IRequestMapper <|-- WebSocketRequestMapper
+    class WebSocketRequestMapper
+    {
+        --(constructors)--
+        +WebSocketRequestMapper(IRequestMapper)
+        --(messaging)--
+        +void setHandler(IRequestHandler)
+    }
+    
+    IResource <|-- WebSocketResource
+    abstract class WebSocketResource
+    {
+        --
+        #void onAbort(AbortedMessage)
+        #void onConnect(ConnectedMessage)
+        --(collection)--
+        #void onPush(WebSocketRequestHandler, IWebSocketPushMessage)
+        --(io)--
+        #void onClose(ClosedMessage)
+        --(messaging)--
+        #void onMessage(WebSocketRequestHandler, TextMessage)
+        #void onMessage(WebSocketRequestHandler, BinaryMessage)
+        --(status)--
+        #void onError(WebSocketRequestHandler, ErrorMessage)
+    }
+    
+    WebPage <|-- AbstractWebSocketProcessor.WebSocketResourcePage
+    IMarkupResourceStreamProvider <|-- AbstractWebSocketProcessor.WebSocketResourcePage
+    class AbstractWebSocketProcessor.WebSocketResourcePage
+    {
+    }
+    
+    WebResponse <|-- WebSocketResponse
+    class WebSocketResponse
+    {
+        --(constructors)--
+        +WebSocketResponse(IWebSocketConnection)
+    }
+    
+    JavaScriptResourceReference <|-- WicketWebSocketJQueryResourceReference
+    class WicketWebSocketJQueryResourceReference
+    {
+        --(search)--
+        +WicketWebSocketJQueryResourceReference get()
+    }
+    
+@enduml
+

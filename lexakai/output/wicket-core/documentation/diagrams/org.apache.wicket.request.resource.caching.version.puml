@@ -1,0 +1,60 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.resource.caching.version"
+    
+    interface IResourceVersion
+    
+    IResourceVersion <|-- CachingResourceVersion
+    class CachingResourceVersion
+    {
+        --(constructors)--
+        +CachingResourceVersion(IResourceVersion)
+        +CachingResourceVersion(IResourceVersion, int)
+        --
+        +void invalidate(IStaticCacheableResource)
+        +void invalidateAll()
+    }
+    
+    interface IResourceVersion
+    {
+        --(identity)--
+        +String getVersion(IStaticCacheableResource)
+        +Pattern getVersionPattern()
+    }
+    
+    IResourceVersion <|-- LastModifiedResourceVersion
+    class LastModifiedResourceVersion
+    {
+    }
+    
+    IResourceVersion <|-- MessageDigestResourceVersion
+    class MessageDigestResourceVersion
+    {
+        --(constructors)--
+        +MessageDigestResourceVersion()
+        +MessageDigestResourceVersion(String)
+        +MessageDigestResourceVersion(String, Bytes)
+        --
+        #byte[] computeDigest(InputStream)
+        --(messaging)--
+        #MessageDigest getMessageDigest()
+    }
+    
+    IResourceVersion <|-- RequestCycleCachedResourceVersion
+    class RequestCycleCachedResourceVersion
+    {
+        --(constructors)--
+        +RequestCycleCachedResourceVersion(IResourceVersion)
+    }
+    
+    IResourceVersion <|-- StaticResourceVersion
+    class StaticResourceVersion
+    {
+        --(constructors)--
+        +StaticResourceVersion(String)
+    }
+    
+@enduml
+

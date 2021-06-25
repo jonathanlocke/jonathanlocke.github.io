@@ -1,0 +1,21 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.form"
+    
+    interface ITextFormatProvider
+    
+    TextField <|-- DateTextField
+    AbstractTextComponent.ITextFormatProvider <|-- DateTextField
+    class DateTextField
+    {
+        --(constructors)--
+        +DateTextField(String)
+        +DateTextField(String, IModel<Date>)
+        +DateTextField(String, IModel<Date>, String)
+        +DateTextField(String, String)
+    }
+    
+@enduml
+

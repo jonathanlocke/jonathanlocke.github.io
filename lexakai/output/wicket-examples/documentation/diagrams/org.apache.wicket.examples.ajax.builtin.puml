@@ -1,0 +1,331 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.ajax.builtin"
+    
+    abstract BasePage
+    
+    interface IModel
+    interface IClusterable
+    
+    WebMarkupContainer <|-- TodoList.AddItemsContainer
+    class TodoList.AddItemsContainer
+    {
+        --(constructors)--
+        +AddItemsContainer(String)
+    }
+    
+    Form <|-- TodoList.AddItemsContainer.AddTodoForm
+    class TodoList.AddItemsContainer.AddTodoForm
+    {
+        --(constructors)--
+        +AddTodoForm(String)
+    }
+    
+    AjaxFallbackLink <|-- TodoList.AddItemsContainer.AddTodoLink
+    class TodoList.AddItemsContainer.AddTodoLink
+    {
+    }
+    
+    WicketExampleApplication <|-- AjaxApplication
+    class AjaxApplication
+    {
+    }
+    
+    BasePage <|-- AjaxDownloadPage
+    class AjaxDownloadPage
+    {
+        --(constructors)--
+        +AjaxDownloadPage()
+    }
+    
+    BasePage <|-- AutoCompletePage
+    class AutoCompletePage
+    {
+        --(constructors)--
+        +AutoCompletePage()
+    }
+    
+    WicketExamplePage <|-- BasePage
+    class BasePage
+    {
+        --(constructors)--
+        +BasePage()
+        --
+        #Class<? extends WicketExamplePage> getBackPage()
+    }
+    
+    IClusterable <|-- FormPage.Bean
+    class FormPage.Bean
+    {
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(network)--
+        +String getEmail()
+        +void setEmail(String email)
+    }
+    
+    BasePage <|-- ChoicePage
+    class ChoicePage
+    {
+        --(constructors)--
+        +ChoicePage()
+        --
+        +String getSelectedMake()
+        +void setSelectedMake(String selectedMake)
+    }
+    
+    Label <|-- Clock
+    class Clock
+    {
+        --(constructors)--
+        +Clock(String, ZoneId)
+    }
+    
+    IModel <|-- Clock.ClockModel
+    class Clock.ClockModel
+    {
+        --(constructors)--
+        +ClockModel(ZoneId)
+    }
+    
+    BasePage <|-- ClockPage
+    class ClockPage
+    {
+        --(constructors)--
+        +ClockPage()
+    }
+    
+    Form <|-- GuestBook.CommentForm
+    class GuestBook.CommentForm
+    {
+    }
+    
+    SortableDataProvider <|-- FileUploadPage.MultipleFileUploadsSamplePanel.DataProvider
+    class FileUploadPage.MultipleFileUploadsSamplePanel.DataProvider
+    {
+        --(filesystem)--
+        +void setFileDescriptions(List<FileDescription> fileDescriptions)
+    }
+    
+    BasePage <|-- EditableLabelPage
+    class EditableLabelPage
+    {
+        --(constructors)--
+        +EditableLabelPage()
+        --
+        +String getSite()
+        +String getText1()
+        +String getText2()
+        +String getText3()
+        +void setSite(String site)
+        +void setText1(String text1)
+        +void setText2(String text2)
+        +void setText3(String text3)
+    }
+    
+    BasePage <|-- EffectsPage
+    class EffectsPage
+    {
+        --(constructors)--
+        +EffectsPage()
+        --
+        +int getCounter1()
+        +int getCounter2()
+        +int getCounter3()
+        +void setCounter1(int counter1)
+        +void setCounter2(int counter2)
+        +void setCounter3(int counter3)
+    }
+    
+    ResourceStreamResource <|-- AjaxDownloadPage.ExampleResource
+    class AjaxDownloadPage.ExampleResource
+    {
+        --(constructors)--
+        +ExampleResource(String)
+    }
+    
+    BasePage <|-- FileUploadPage
+    class FileUploadPage
+    {
+        --(constructors)--
+        +FileUploadPage()
+    }
+    
+    BasePage <|-- FormPage
+    class FormPage
+    {
+        --(constructors)--
+        +FormPage()
+    }
+    
+    BasePage <|-- GuestBook
+    class GuestBook
+    {
+        --(constructors)--
+        +GuestBook()
+        --(collection)--
+        +void clear()
+    }
+    
+    BasePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    BasePage <|-- LazyLoadingPage
+    class LazyLoadingPage
+    {
+        --(constructors)--
+        +LazyLoadingPage()
+    }
+    
+    BasePage <|-- LinksPage
+    class LinksPage
+    {
+        --(constructors)--
+        +LinksPage()
+        --
+        +int getCounter1()
+        +int getCounter2()
+        +int getCounter3()
+    }
+    
+    Panel <|-- FileUploadPage.MultipleFileUploadsSamplePanel
+    class FileUploadPage.MultipleFileUploadsSamplePanel
+    {
+        --(constructors)--
+        +MultipleFileUploadsSamplePanel(String)
+    }
+    
+    BasePage <|-- OnChangeAjaxBehaviorPage
+    class OnChangeAjaxBehaviorPage
+    {
+        --(constructors)--
+        +OnChangeAjaxBehaviorPage()
+    }
+    
+    BasePage <|-- PageablesPage
+    class PageablesPage
+    {
+        --(constructors)--
+        +PageablesPage()
+    }
+    
+    IClusterable <|-- RatingsPage.RatingModel
+    class RatingsPage.RatingModel
+    {
+        --
+        +Integer getNrOfVotes()
+        +Double getRating()
+        +int getSumOfRatings()
+        --(checks)--
+        +boolean isActive(int star)
+        --(collection)--
+        +void addRating(int nrOfStars)
+    }
+    
+    BasePage <|-- RatingsPage
+    class RatingsPage
+    {
+        --(constructors)--
+        +RatingsPage()
+        --
+        +Boolean getHasVoted()
+    }
+    
+    AjaxFallbackLink <|-- TodoList.AddItemsContainer.RemoveCompletedTodosLink
+    class TodoList.AddItemsContainer.RemoveCompletedTodosLink
+    {
+        --(constructors)--
+        +RemoveCompletedTodosLink(String)
+    }
+    
+    Link <|-- RatingsPage.ResetRatingLink
+    class RatingsPage.ResetRatingLink
+    {
+        --(constructors)--
+        +ResetRatingLink(String, IModel<RatingModel>)
+    }
+    
+    Panel <|-- FileUploadPage.SingleFileUploadSamplePanel
+    class FileUploadPage.SingleFileUploadSamplePanel
+    {
+        --(constructors)--
+        +SingleFileUploadSamplePanel(String)
+    }
+    
+    ResourceStreamResource <|-- AjaxDownloadPage.StaticResource
+    class AjaxDownloadPage.StaticResource
+    {
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel1
+    class TabbedPanelPage.TabPanel1
+    {
+        --(constructors)--
+        +TabPanel1(String)
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel2
+    class TabbedPanelPage.TabPanel2
+    {
+        --(constructors)--
+        +TabPanel2(String)
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel3
+    class TabbedPanelPage.TabPanel3
+    {
+        --(constructors)--
+        +TabPanel3(String)
+    }
+    
+    BasePage <|-- TabbedPanelPage
+    class TabbedPanelPage
+    {
+        --(constructors)--
+        +TabbedPanelPage()
+    }
+    
+    IClusterable <|-- TodoList.TodoItem
+    class TodoList.TodoItem
+    {
+        --(constructors)--
+        +TodoItem()
+        +TodoItem(TodoItem)
+        --
+        +String getText()
+        +void setChecked(boolean checked)
+        +void setText(String text)
+        --(checks)--
+        +boolean isChecked()
+    }
+    
+    WebMarkupContainer <|-- TodoList.TodoItemsContainer
+    class TodoList.TodoItemsContainer
+    {
+        --(constructors)--
+        +TodoItemsContainer(String)
+    }
+    
+    BasePage <|-- TodoList
+    class TodoList
+    {
+        --(constructors)--
+        +TodoList()
+    }
+    
+    BasePage <|-- WorldClockPage
+    class WorldClockPage
+    {
+        --(constructors)--
+        +WorldClockPage()
+    }
+    
+@enduml
+

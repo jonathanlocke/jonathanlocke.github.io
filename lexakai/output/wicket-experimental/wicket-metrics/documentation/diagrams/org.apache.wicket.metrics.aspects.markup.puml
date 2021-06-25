@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.markup"
+    
+    WicketMetrics <|-- WicketTagCreateAspect
+    class WicketTagCreateAspect
+    {
+        --
+        +void beforeResponsePage()
+    }
+    
+@enduml
+

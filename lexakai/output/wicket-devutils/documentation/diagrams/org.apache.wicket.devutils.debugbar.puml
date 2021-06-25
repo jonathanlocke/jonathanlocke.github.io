@@ -1,0 +1,79 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils.debugbar"
+    
+    interface IDebugBarContributor
+    interface IInitializer
+    
+    DevUtilsPanel <|-- DebugBar
+    class DebugBar
+    {
+        --(constructors)--
+        +DebugBar(String)
+        +DebugBar(String, boolean)
+        --
+        +DebugBar positionBottom()
+        +void setContributors(List<IDebugBarContributor> contributors, Application)
+        --(collection)--
+        +List<IDebugBarContributor> getContributors(Application)
+        --(lookup)--
+        +void registerContributor(IDebugBarContributor, Application)
+        +void registerContributor(IDebugBarContributor)
+    }
+    
+    IInitializer <|-- DebugBarInitializer
+    class DebugBarInitializer
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IDebugBarContributor
+    interface IDebugBarContributor
+    {
+        --
+        +Component createComponent(String id, DebugBar)
+    }
+    
+    StandardDebugPanel <|-- InspectorDebugPanel
+    class InspectorDebugPanel
+    {
+        --(constructors)--
+        +InspectorDebugPanel(String)
+    }
+    
+    StandardDebugPanel <|-- PageStoreDebugPanel
+    class PageStoreDebugPanel
+    {
+        --(constructors)--
+        +PageStoreDebugPanel(String)
+    }
+    
+    StandardDebugPanel <|-- SessionSizeDebugPanel
+    class SessionSizeDebugPanel
+    {
+        --(constructors)--
+        +SessionSizeDebugPanel(String)
+    }
+    
+    DevUtilsPanel <|-- StandardDebugPanel
+    abstract class StandardDebugPanel
+    {
+        --(constructors)--
+        +StandardDebugPanel(String)
+        --
+        #WebMarkupContainer createLink(String id)
+        #IModel<String> getDataModel()
+        #ResourceReference getImageResourceReference()
+        #Class<? extends Page> getLinkPageClass()
+        #PageParameters getLinkPageParameters()
+    }
+    
+    IDebugBarContributor <|-- VersionDebugContributor
+    class VersionDebugContributor
+    {
+    }
+    
+@enduml
+

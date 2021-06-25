@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.serialize.java"
+    
+    interface ISerializer
+    
+    ObjectInputStream <|-- JavaSerializer.ClassResolverObjectInputStream
+    class JavaSerializer.ClassResolverObjectInputStream
+    {
+        --(constructors)--
+        +ClassResolverObjectInputStream(InputStream)
+    }
+    
+    JavaSerializer <|-- DeflatedJavaSerializer
+    class DeflatedJavaSerializer
+    {
+        --(constructors)--
+        +DeflatedJavaSerializer(String)
+        --
+        #Deflater createDeflater()
+    }
+    
+    ISerializer <|-- JavaSerializer
+    class JavaSerializer
+    {
+        --(constructors)--
+        +JavaSerializer(String)
+        --(factory)--
+        #ObjectInputStream newObjectInputStream(InputStream)
+        #ObjectOutputStream newObjectOutputStream(OutputStream)
+    }
+    
+    ObjectOutputStream <|-- JavaSerializer.SerializationCheckerObjectOutputStream
+    class JavaSerializer.SerializationCheckerObjectOutputStream
+    {
+    }
+    
+@enduml
+

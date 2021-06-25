@@ -1,0 +1,206 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-examples"
+    
+    artifact aopalliance
+    artifact cglib
+    artifact classmate
+    artifact kaptcha
+    artifact cage
+    artifact openjson
+    artifact jsr305
+    artifact error_prone_annotations
+    artifact failureaccess
+    artifact guava
+    artifact listenablefuture
+    artifact guice
+    artifact j2objc_annotations
+    artifact filters
+    artifact commons_fileupload
+    artifact commons_io
+    artifact jakarta_annotation_api
+    artifact jakarta_el_api
+    artifact jakarta_enterprise_cdi_api
+    artifact jakarta_inject_api
+    artifact jakarta_interceptor_api
+    artifact jakarta_servlet_jsp_api
+    artifact jakarta_servlet_api
+    artifact jakarta_transaction_api
+    artifact jakarta_validation_api
+    artifact javax_inject
+    artifact servlet_api
+    artifact junit
+    artifact log4j
+    artifact nekohtml
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact jtidy
+    artifact commons_collections4
+    artifact commons_lang3
+    artifact velocity_engine_core
+    artifact wicket_auth_roles
+    artifact wicket_bean_validation
+    artifact wicket_cdi
+    artifact wicket_core
+    artifact wicket_devutils
+    artifact wicket_extensions
+    artifact wicket_guice
+    artifact wicket_ioc
+    artifact wicket_jmx
+    artifact wicket_native_websocket_core
+    artifact wicket_native_websocket_javax
+    artifact wicket_request
+    artifact wicket_spring
+    artifact wicket_util
+    artifact wicket_velocity
+    artifact apiguardian_api
+    artifact checker_qual
+    artifact animal_sniffer_annotations
+    artifact jhighlight
+    artifact jdk_serializable_functional
+    artifact jetty_jakarta_servlet_api
+    artifact jetty_jakarta_websocket_api
+    artifact websocket_core_client
+    artifact websocket_core_common
+    artifact websocket_core_server
+    artifact websocket_jakarta_client
+    artifact websocket_jakarta_common
+    artifact websocket_jakarta_server
+    artifact websocket_servlet
+    artifact jetty_alpn_client
+    artifact jetty_annotations
+    artifact jetty_client
+    artifact jetty_http
+    artifact jetty_io
+    artifact jetty_jmx
+    artifact jetty_jndi
+    artifact jetty_plus
+    artifact jetty_security
+    artifact jetty_server
+    artifact jetty_servlet
+    artifact jetty_util
+    artifact jetty_webapp
+    artifact jetty_xml
+    artifact jakarta_el
+    artifact hamcrest_core
+    artifact hibernate_validator
+    artifact httpunit
+    artifact jboss_classfilewriter
+    artifact jboss_logging
+    artifact weld_environment_common
+    artifact weld_jsf
+    artifact weld_web
+    artifact weld_probe_core
+    artifact weld_servlet_core
+    artifact weld_api
+    artifact weld_core_impl
+    artifact weld_spi
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact asm_analysis
+    artifact asm_commons
+    artifact asm_tree
+    artifact asm
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    artifact spring_aop
+    artifact spring_beans
+    artifact spring_context
+    artifact spring_core
+    artifact spring_expression
+    artifact spring_jcl
+    artifact spring_web
+    artifact js
+    artifact xercesImpl
+    asm_commons --> asm_analysis
+    asm_commons --> asm_tree
+    guava --> animal_sniffer_annotations
+    guava --> checker_qual
+    guava --> error_prone_annotations
+    guava --> failureaccess
+    guava --> j2objc_annotations
+    guava --> jsr305
+    guava --> listenablefuture
+    guice --> aopalliance
+    guice --> guava
+    guice --> javax_inject
+    hibernate_validator --> classmate
+    hibernate_validator --> jboss_logging
+    httpunit --> js
+    httpunit --> jtidy
+    httpunit --> junit
+    httpunit --> nekohtml
+    httpunit --> servlet_api
+    httpunit --> xercesImpl
+    jakarta_enterprise_cdi_api --> jakarta_inject_api
+    jakarta_enterprise_cdi_api --> jakarta_interceptor_api
+    jakarta_interceptor_api --> jakarta_annotation_api
+    jetty_annotations --> asm_commons
+    jetty_annotations --> jetty_plus
+    jetty_client --> jetty_alpn_client
+    jetty_jmx --> jetty_util
+    jetty_plus --> jakarta_transaction_api
+    jetty_plus --> jetty_jndi
+    jetty_server --> jetty_http
+    jetty_server --> jetty_io
+    jetty_server --> jetty_jakarta_servlet_api
+    jetty_servlet --> jetty_security
+    jetty_webapp --> jetty_servlet
+    jetty_webapp --> jetty_xml
+    jhighlight --> commons_io
+    junit --> hamcrest_core
+    junit_jupiter_engine --> apiguardian_api
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_jupiter_engine --> junit_platform_engine
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    kaptcha --> filters
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    spring_context --> spring_aop
+    spring_context --> spring_expression
+    spring_core --> spring_jcl
+    spring_web --> spring_beans
+    spring_web --> spring_core
+    velocity_engine_core --> commons_lang3
+    websocket_core_client --> websocket_core_common
+    websocket_jakarta_client --> jetty_client
+    websocket_jakarta_client --> websocket_core_client
+    websocket_jakarta_client --> websocket_jakarta_common
+    websocket_jakarta_server --> jetty_annotations
+    websocket_jakarta_server --> jetty_jakarta_websocket_api
+    websocket_jakarta_server --> websocket_jakarta_client
+    websocket_jakarta_server --> websocket_servlet
+    websocket_servlet --> websocket_core_server
+    weld_environment_common --> weld_core_impl
+    weld_servlet_core --> jboss_classfilewriter
+    weld_servlet_core --> weld_environment_common
+    weld_servlet_core --> weld_jsf
+    weld_servlet_core --> weld_probe_core
+    weld_servlet_core --> weld_spi
+    weld_servlet_core --> weld_web
+    weld_spi --> weld_api
+    wicket_core --> jdk_serializable_functional
+    wicket_core --> openjson
+    wicket_core --> wicket_request
+    wicket_core --> wicket_util
+    wicket_guice --> guice
+    wicket_guice --> wicket_ioc
+    wicket_jmx --> asm
+    wicket_jmx --> cglib
+    wicket_native_websocket_javax --> wicket_native_websocket_core
+    wicket_spring --> spring_context
+    wicket_util --> commons_collections4
+    wicket_util --> commons_fileupload
+    wicket_velocity --> velocity_engine_core
+    
+@enduml

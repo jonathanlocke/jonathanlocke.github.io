@@ -1,0 +1,40 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.coop"
+    
+    interface IRequestCycleListener
+    
+    enum CrossOriginOpenerPolicyConfiguration.CoopMode
+    {
+        DISABLED
+        SAME_ORIGIN
+        SAME_ORIGIN_ALLOW_POPUPS
+        UNSAFE_NONE
+    }
+    
+    class CrossOriginOpenerPolicyConfiguration
+    {
+        --(constructors)--
+        +CrossOriginOpenerPolicyConfiguration(CoopMode)
+        +CrossOriginOpenerPolicyConfiguration(CoopMode, String)
+        --
+        +Set<String> getExemptions()
+        +String getHeaderValue()
+        --(checks)--
+        +boolean isEnabled()
+        --(configuration)--
+        +CrossOriginOpenerPolicyConfiguration addExemptedPath(String path)
+        +CoopMode getMode()
+    }
+    
+    IRequestCycleListener <|-- CrossOriginOpenerPolicyRequestCycleListener
+    class CrossOriginOpenerPolicyRequestCycleListener
+    {
+        --(constructors)--
+        +CrossOriginOpenerPolicyRequestCycleListener(CrossOriginOpenerPolicyConfiguration)
+    }
+    
+@enduml
+

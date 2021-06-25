@@ -1,0 +1,14 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.image"
+    
+    class ImageUtil
+    {
+        --(primitive)--
+        +CharSequence createBase64EncodedImage(PackageResourceReference imageReference, boolean removeWhitespaces)
+    }
+    
+@enduml
+

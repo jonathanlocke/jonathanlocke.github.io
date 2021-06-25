@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="839.5833px" preserveAspectRatio="none" style="width:2281px;height:839px;background:#333333;" version="1.1" viewBox="0 0 2281 839" width="2281.25px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="419.7917" x="923.4375" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="396.875" x="934.8958" y="30.5583">org.apache.wicket.util.convert.converter</text><!--MD5=[e8d3275bd8ca854bd388445e82a7627b]
+class AbstractDateConverter--><rect codeLine="27" fill="#282828" height="87.5448" id="AbstractDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="226.0417" x="326.5625" y="415.682"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="226.0417" x="326.5625" y="415.682"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="226.0417" x="326.5625" y="438.737"/><rect codeLine="27" fill="none" height="87.5448" id="AbstractDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="226.0417" x="326.5625" y="415.682"/><ellipse cx="350.0521" cy="431.3761" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M349.6452,428.0782 L348.7968,431.8075 L350.4997,431.8075 Z M348.5465,426.4303 L350.7499,426.4303 L353.2096,435.5428 L351.4091,435.5428 L350.8476,433.2906 L348.4367,433.2906 L347.8874,435.5428 L346.0868,435.5428 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="368.6979" y="436.1003">AbstractDateConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="18.75" x="536.9792" y="412.557"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="10.4167" x="541.1458" y="428.8086">D</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="327.6042" x2="551.5625" y1="447.0703" y2="447.0703"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="327.6042" x2="551.5625" y1="455.4036" y2="455.4036"/><ellipse cx="338.0208" cy="466.862" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="349.4792" y="473.7732">DateFormat getDateFormat(Locale)</text><polygon fill="#FFFF44" points="338.0208,481.3985,342.1875,485.5652,338.0208,489.7319,333.8542,485.5652" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="153.125" x="349.4792" y="493.5181">D createDateLike(long date)</text><!--MD5=[2dba0aa4bc5a55c7e12d89a67c3739e8]
+class AbstractNumberConverter--><rect codeLine="55" fill="#282828" height="155.1127" id="AbstractNumberConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="430.2083" x="1071.3542" y="381.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="430.2083" x="1071.3542" y="381.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="430.2083" x="1071.3542" y="404.8828"/><rect codeLine="55" fill="none" height="155.1127" id="AbstractNumberConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="430.2083" x="1071.3542" y="381.8278"/><ellipse cx="1184.8958" cy="397.522" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1184.4889,394.224 L1183.6405,397.9533 L1185.3434,397.9533 Z M1183.3903,392.5761 L1185.5937,392.5761 L1188.0534,401.6886 L1186.2528,401.6886 L1185.6913,399.4364 L1183.2804,399.4364 L1182.7311,401.6886 L1180.9306,401.6886 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="168.75" x="1207.8125" y="402.2461">AbstractNumberConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="17.7083" x="1486.9792" y="378.7028"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="1491.1458" y="394.9544">N</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1072.3958" x2="1500.5208" y1="413.2161" y2="413.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1072.3958" x2="1500.5208" y1="421.5495" y2="421.5495"/><ellipse cx="1082.8125" cy="433.0078" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="233.3333" x="1094.2708" y="439.919">NumberFormat getNumberFormat(Locale)</text><polygon fill="#FFFF44" points="1082.8125,471.4559,1086.9792,475.6226,1082.8125,479.7892,1078.6458,475.6226" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="237.5" x="1094.2708" y="483.5754">NumberFormat newNumberFormat(Locale)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1072.3958" x2="1259.375" y1="459.5001" y2="459.5001"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="1262.5" y="463.3097">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1313.5417" x2="1500.5208" y1="459.5001" y2="459.5001"/><polygon fill="#FFFF44" points="1082.8125,515.1123,1086.9792,519.279,1082.8125,523.4456,1078.6458,519.279" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="397.9167" x="1094.2708" y="527.2319">BigDecimal parse(Object value, BigDecimal min, BigDecimal max, Locale)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1072.3958" x2="1257.8125" y1="503.1565" y2="503.1565"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="51.0417" x="1260.9375" y="506.9661">(parsing)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1315.1042" x2="1500.5208" y1="503.1565" y2="503.1565"/><!--MD5=[c5cff15d0fa9f7e10cc9bce07d91c7ba]
+class AbstractDecimalConverter--><rect codeLine="35" fill="#282828" height="48.055" id="AbstractDecimalConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="227.0833" x="800" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="227.0833" x="800" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="227.0833" x="800" y="660.0911"/><rect codeLine="35" fill="none" height="48.055" id="AbstractDecimalConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="227.0833" x="800" y="637.0361"/><ellipse cx="814.5833" cy="652.7303" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M814.1764,649.4324 L813.328,653.1616 L815.0309,653.1616 Z M813.0778,647.7844 L815.2812,647.7844 L817.7409,656.897 L815.9403,656.897 L815.3788,654.6448 L812.9679,654.6448 L812.4186,656.897 L810.6181,656.897 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="169.7917" x="831.25" y="657.4544">AbstractDecimalConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="17.7083" x="1012.5" y="633.9111"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="1016.6667" y="650.1628">N</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="801.0417" x2="1026.0417" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="801.0417" x2="1026.0417" y1="676.7578" y2="676.7578"/><!--MD5=[9e991e43d0e635302215699f23b19f3d]
+class AbstractJavaTimeConverter--><rect codeLine="45" fill="#282828" height="131.2012" id="AbstractJavaTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="311.4583" x="1556.7708" y="393.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="311.4583" x="1556.7708" y="393.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="311.4583" x="1556.7708" y="416.862"/><rect codeLine="45" fill="none" height="131.2012" id="AbstractJavaTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="311.4583" x="1556.7708" y="393.807"/><ellipse cx="1607.2917" cy="409.5011" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1606.8848,406.2032 L1606.0364,409.9325 L1607.7393,409.9325 Z M1605.7861,404.5553 L1607.9895,404.5553 L1610.4492,413.6678 L1608.6487,413.6678 L1608.0872,411.4156 L1605.6763,411.4156 L1605.127,413.6678 L1603.3264,413.6678 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="177.0833" x="1630.2083" y="414.2253">AbstractJavaTimeConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1854.6875" y="390.682"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1858.8542" y="406.9336">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1557.8125" x2="1867.1875" y1="425.1953" y2="425.1953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1557.8125" x2="1867.1875" y1="433.5286" y2="433.5286"/><polygon fill="#FFFF44" points="1568.2292,439.7786,1572.3958,443.9453,1568.2292,448.112,1564.0625,443.9453" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="211.4583" x="1579.6875" y="451.8982">T createTemporal(TemporalAccessor)</text><ellipse cx="1568.2292" cy="488.6434" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="279.1667" x="1579.6875" y="495.5546">DateTimeFormatter getDateTimeFormatter(Locale)</text><polygon fill="#FFFF44" points="1568.2292,503.1799,1572.3958,507.3466,1568.2292,511.5133,1564.0625,507.3466" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="1579.6875" y="515.2995">DateTimeFormatter getDateTimeFormatter()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1557.8125" x2="1693.2292" y1="471.4793" y2="471.4793"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="1696.3542" y="475.2889">(time)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1731.7708" x2="1867.1875" y1="471.4793" y2="471.4793"/><!--MD5=[df79f82e296fecb52a62d515389230a9]
+class AbstractConverter--><rect codeLine="16" fill="#282828" height="155.1127" id="AbstractConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="507.2917" x="1458.8542" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="507.2917" x="1458.8542" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="507.2917" x="1458.8542" y="187.1745"/><rect codeLine="16" fill="none" height="155.1127" id="AbstractConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="507.2917" x="1458.8542" y="164.1195"/><ellipse cx="1636.4583" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1636.0514,176.5157 L1635.203,180.245 L1636.9059,180.245 Z M1634.9528,174.8678 L1637.1562,174.8678 L1639.6159,183.9803 L1637.8153,183.9803 L1637.2538,181.7281 L1634.8429,181.7281 L1634.2936,183.9803 L1632.4931,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="1659.375" y="184.5378">AbstractConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="17.7083" x="1951.5625" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="9.375" x="1955.7292" y="177.2461">C</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1459.8958" x2="1965.1042" y1="195.5078" y2="195.5078"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1459.8958" x2="1965.1042" y1="203.8411" y2="203.8411"/><polygon fill="#FFFF44" points="1470.3125,210.0911,1474.4792,214.2578,1470.3125,218.4245,1466.1458,214.2578" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="150" x="1481.7708" y="222.2107">Class&lt;C&gt; getTargetType()</text><polygon fill="#FFFF44" points="1470.3125,253.7476,1474.4792,257.9142,1470.3125,262.0809,1466.1458,257.9142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="475" x="1481.7708" y="265.8671">ConversionException newConversionException(String message, Object value, Locale)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1459.8958" x2="1685.4167" y1="241.7918" y2="241.7918"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="1688.5417" y="245.6014">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="1965.1042" y1="241.7918" y2="241.7918"/><polygon fill="#FFFF44" points="1470.3125,297.404,1474.4792,301.5706,1470.3125,305.7373,1466.1458,301.5706" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="1481.7708" y="309.5235">C parse(Format, Object value, Locale)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1459.8958" x2="1683.8542" y1="285.4482" y2="285.4482"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="51.0417" x="1686.9792" y="289.2578">(parsing)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1741.1458" x2="1965.1042" y1="285.4482" y2="285.4482"/><!--MD5=[5f9b7b778a91db27cdc99b0c710cf4cc]
+class AbstractIntegerConverter--><rect codeLine="40" fill="#282828" height="48.055" id="AbstractIntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="1178.6458" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="1178.6458" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="1178.6458" y="660.0911"/><rect codeLine="40" fill="none" height="48.055" id="AbstractIntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="1178.6458" y="637.0361"/><ellipse cx="1193.2292" cy="652.7303" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1192.8223,649.4324 L1191.9739,653.1616 L1193.6768,653.1616 Z M1191.7236,647.7844 L1193.927,647.7844 L1196.3867,656.897 L1194.5862,656.897 L1194.0247,654.6448 L1191.6138,654.6448 L1191.0645,656.897 L1189.2639,656.897 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="163.5417" x="1209.8958" y="657.4544">AbstractIntegerConverter</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="12.5" x="1384.8958" y="633.9111"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="4.1667" x="1389.0625" y="650.1628">I</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1179.6875" x2="1393.2292" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1179.6875" x2="1393.2292" y1="676.7578" y2="676.7578"/><!--MD5=[adeef2c07ef4d865eb36040661a853c1]
+class IConverter--><rect codeLine="13" fill="#282828" height="48.055" id="IConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="1867.1875" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="1867.1875" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="1867.1875" y="76.7578"/><rect codeLine="13" fill="none" height="48.055" id="IConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="1867.1875" y="53.7028"/><ellipse cx="1881.7708" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1879.1748,66.5588 L1879.1748,64.9719 L1884.6008,64.9719 L1884.6008,66.5588 L1882.7881,66.5588 L1882.7881,72.4976 L1884.6008,72.4976 L1884.6008,74.0845 L1879.1748,74.0845 L1879.1748,72.4976 L1880.9875,72.4976 L1880.9875,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="67.7083" x="1898.4375" y="74.1211">IConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1868.2292" x2="1971.3542" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1868.2292" x2="1971.3542" y1="93.4245" y2="93.4245"/><!--MD5=[e800d7d7932567153e12b77f8a45ad01]
+class BigDecimalConverter--><rect codeLine="66" fill="#282828" height="48.055" id="BigDecimalConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="451.5625" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="451.5625" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="451.5625" y="808.0078"/><rect codeLine="66" fill="none" height="48.055" id="BigDecimalConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="451.5625" y="784.9528"/><ellipse cx="466.1458" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M468.0562,805.072 Q467.629,805.2917 467.159,805.4016 Q466.689,805.5115 466.1702,805.5115 Q464.327,805.5115 463.3565,804.2969 Q462.3861,803.0823 462.3861,800.7874 Q462.3861,798.4863 463.3565,797.2717 Q464.327,796.0571 466.1702,796.0571 Q466.689,796.0571 467.1651,796.167 Q467.6412,796.2769 468.0562,796.4966 L468.0562,798.4985 Q467.5924,798.0713 467.156,797.8729 Q466.7196,797.6746 466.2557,797.6746 Q465.2669,797.6746 464.7634,798.4589 Q464.2598,799.2432 464.2598,800.7874 Q464.2598,802.3254 464.7634,803.1097 Q465.2669,803.894 466.2557,803.894 Q466.7196,803.894 467.156,803.6957 Q467.5924,803.4973 468.0562,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="482.8125" y="805.3711">BigDecimalConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="452.6042" x2="624.4792" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="452.6042" x2="624.4792" y1="824.6745" y2="824.6745"/><!--MD5=[6ca0348673a226e359833d4499e461e0]
+class BigIntegerConverter--><rect codeLine="71" fill="#282828" height="48.055" id="BigIntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="1017.1875" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="1017.1875" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="1017.1875" y="808.0078"/><rect codeLine="71" fill="none" height="48.055" id="BigIntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="1017.1875" y="784.9528"/><ellipse cx="1031.7708" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1033.6812,805.072 Q1033.254,805.2917 1032.784,805.4016 Q1032.314,805.5115 1031.7952,805.5115 Q1029.952,805.5115 1028.9815,804.2969 Q1028.0111,803.0823 1028.0111,800.7874 Q1028.0111,798.4863 1028.9815,797.2717 Q1029.952,796.0571 1031.7952,796.0571 Q1032.314,796.0571 1032.7901,796.167 Q1033.2662,796.2769 1033.6812,796.4966 L1033.6812,798.4985 Q1033.2174,798.0713 1032.781,797.8729 Q1032.3446,797.6746 1031.8807,797.6746 Q1030.8919,797.6746 1030.3884,798.4589 Q1029.8848,799.2432 1029.8848,800.7874 Q1029.8848,802.3254 1030.3884,803.1097 Q1030.8919,803.894 1031.8807,803.894 Q1032.3446,803.894 1032.781,803.6957 Q1033.2174,803.4973 1033.6812,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="130.2083" x="1048.4375" y="805.3711">BigIntegerConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1018.2292" x2="1183.8542" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1018.2292" x2="1183.8542" y1="824.6745" y2="824.6745"/><!--MD5=[2c67e58eb5d6a5a53b8636c68ca38e04]
+class BooleanConverter--><rect codeLine="76" fill="#282828" height="48.055" id="BooleanConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="1904.6875" y="435.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="1904.6875" y="435.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="1904.6875" y="458.5286"/><rect codeLine="76" fill="none" height="48.055" id="BooleanConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="1904.6875" y="435.4736"/><ellipse cx="1919.2708" cy="451.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1921.1812,455.5929 Q1920.754,455.8126 1920.284,455.9224 Q1919.814,456.0323 1919.2952,456.0323 Q1917.452,456.0323 1916.4815,454.8177 Q1915.5111,453.6031 1915.5111,451.3082 Q1915.5111,449.0072 1916.4815,447.7926 Q1917.452,446.578 1919.2952,446.578 Q1919.814,446.578 1920.2901,446.6878 Q1920.7662,446.7977 1921.1812,447.0174 L1921.1812,449.0194 Q1920.7174,448.5921 1920.281,448.3938 Q1919.8446,448.1954 1919.3807,448.1954 Q1918.3919,448.1954 1917.8884,448.9797 Q1917.3848,449.764 1917.3848,451.3082 Q1917.3848,452.8463 1917.8884,453.6306 Q1918.3919,454.4149 1919.3807,454.4149 Q1919.8446,454.4149 1920.281,454.2165 Q1920.7174,454.0181 1921.1812,453.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="1935.9375" y="455.8919">BooleanConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1905.7292" x2="2056.7708" y1="466.862" y2="466.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1905.7292" x2="2056.7708" y1="475.1953" y2="475.1953"/><!--MD5=[aeeaddc13cf3c9a40c315efb93db12c5]
+class ByteConverter--><rect codeLine="81" fill="#282828" height="48.055" id="ByteConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="1221.875" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="1221.875" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="1221.875" y="808.0078"/><rect codeLine="81" fill="none" height="48.055" id="ByteConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="1221.875" y="784.9528"/><ellipse cx="1236.4583" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1238.3687,805.072 Q1237.9415,805.2917 1237.4715,805.4016 Q1237.0015,805.5115 1236.4827,805.5115 Q1234.6395,805.5115 1233.669,804.2969 Q1232.6986,803.0823 1232.6986,800.7874 Q1232.6986,798.4863 1233.669,797.2717 Q1234.6395,796.0571 1236.4827,796.0571 Q1237.0015,796.0571 1237.4776,796.167 Q1237.9537,796.2769 1238.3687,796.4966 L1238.3687,798.4985 Q1237.9049,798.0713 1237.4685,797.8729 Q1237.0321,797.6746 1236.5682,797.6746 Q1235.5794,797.6746 1235.0759,798.4589 Q1234.5723,799.2432 1234.5723,800.7874 Q1234.5723,802.3254 1235.0759,803.1097 Q1235.5794,803.894 1236.5682,803.894 Q1237.0321,803.894 1237.4685,803.6957 Q1237.9049,803.4973 1238.3687,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="1253.125" y="805.3711">ByteConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1222.9167" x2="1350" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1222.9167" x2="1350" y1="824.6745" y2="824.6745"/><!--MD5=[51d6964d50abd12abc978d53271c6208]
+class CalendarConverter--><rect codeLine="86" fill="#282828" height="103.123" id="CalendarConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="250" x="2003.125" y="190.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="250" x="2003.125" y="190.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="250" x="2003.125" y="213.2161"/><rect codeLine="86" fill="none" height="103.123" id="CalendarConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="250" x="2003.125" y="190.1611"/><ellipse cx="2060.4167" cy="205.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2062.3271,210.2804 Q2061.8998,210.5001 2061.4299,210.6099 Q2060.9599,210.7198 2060.4411,210.7198 Q2058.5978,210.7198 2057.6274,209.5052 Q2056.6569,208.2906 2056.6569,205.9957 Q2056.6569,203.6947 2057.6274,202.4801 Q2058.5978,201.2655 2060.4411,201.2655 Q2060.9599,201.2655 2061.436,201.3753 Q2061.912,201.4852 2062.3271,201.7049 L2062.3271,203.7069 Q2061.8632,203.2796 2061.4268,203.0813 Q2060.9904,202.8829 2060.5265,202.8829 Q2059.5378,202.8829 2059.0342,203.6672 Q2058.5307,204.4515 2058.5307,205.9957 Q2058.5307,207.5338 2059.0342,208.3181 Q2059.5378,209.1024 2060.5265,209.1024 Q2060.9904,209.1024 2061.4268,208.904 Q2061.8632,208.7056 2062.3271,208.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="120.8333" x="2083.3333" y="210.5794">CalendarConverter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2004.1667" x2="2252.0833" y1="221.5495" y2="221.5495"/><ellipse cx="2014.5833" cy="256.9194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="2026.0417" y="263.8306">CalendarConverter()</text><ellipse cx="2014.5833" cy="276.6642" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="217.7083" x="2026.0417" y="283.5754">CalendarConverter(IConverter&lt;Date&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2004.1667" x2="2084.375" y1="239.7552" y2="239.7552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2087.5" y="243.5649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2171.875" x2="2252.0833" y1="239.7552" y2="239.7552"/><!--MD5=[d2619bcb919d7cadb23d38beac885da4]
+class CharacterConverter--><rect codeLine="94" fill="#282828" height="48.055" id="CharacterConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="162.5" x="2094.7917" y="435.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="162.5" x="2094.7917" y="435.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="162.5" x="2094.7917" y="458.5286"/><rect codeLine="94" fill="none" height="48.055" id="CharacterConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="162.5" x="2094.7917" y="435.4736"/><ellipse cx="2109.375" cy="451.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2111.2854,455.5929 Q2110.8582,455.8126 2110.3882,455.9224 Q2109.9182,456.0323 2109.3994,456.0323 Q2107.5562,456.0323 2106.5857,454.8177 Q2105.6152,453.6031 2105.6152,451.3082 Q2105.6152,449.0072 2106.5857,447.7926 Q2107.5562,446.578 2109.3994,446.578 Q2109.9182,446.578 2110.3943,446.6878 Q2110.8704,446.7977 2111.2854,447.0174 L2111.2854,449.0194 Q2110.8215,448.5921 2110.3851,448.3938 Q2109.9487,448.1954 2109.4849,448.1954 Q2108.4961,448.1954 2107.9926,448.9797 Q2107.489,449.764 2107.489,451.3082 Q2107.489,452.8463 2107.9926,453.6306 Q2108.4961,454.4149 2109.4849,454.4149 Q2109.9487,454.4149 2110.3851,454.2165 Q2110.8215,454.0181 2111.2854,453.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="125" x="2126.0417" y="455.8919">CharacterConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2095.8333" x2="2256.25" y1="466.862" y2="466.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2095.8333" x2="2256.25" y1="475.1953" y2="475.1953"/><!--MD5=[af7e5152773f8195ae6c20073511da28]
+class DateConverter--><rect codeLine="99" fill="#282828" height="48.055" id="DateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="7.2917" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="7.2917" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="7.2917" y="660.0911"/><rect codeLine="99" fill="none" height="48.055" id="DateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="7.2917" y="637.0361"/><ellipse cx="21.875" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M23.7854,657.1554 Q23.3582,657.3751 22.8882,657.4849 Q22.4182,657.5948 21.8994,657.5948 Q20.0562,657.5948 19.0857,656.3802 Q18.1152,655.1656 18.1152,652.8707 Q18.1152,650.5697 19.0857,649.3551 Q20.0562,648.1405 21.8994,648.1405 Q22.4182,648.1405 22.8943,648.2503 Q23.3704,648.3602 23.7854,648.5799 L23.7854,650.5819 Q23.3215,650.1546 22.8851,649.9563 Q22.4487,649.7579 21.9849,649.7579 Q20.9961,649.7579 20.4926,650.5422 Q19.989,651.3265 19.989,652.8707 Q19.989,654.4088 20.4926,655.1931 Q20.9961,655.9774 21.9849,655.9774 Q22.4487,655.9774 22.8851,655.779 Q23.3215,655.5806 23.7854,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="93.75" x="38.5417" y="657.4544">DateConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="137.5" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="137.5" y1="676.7578" y2="676.7578"/><!--MD5=[3bd4b3ba27e7a1e0605455b6d48fb281]
+class DoubleConverter--><rect codeLine="104" fill="#282828" height="48.055" id="DoubleConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="147.9167" x="662.5" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="147.9167" x="662.5" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="147.9167" x="662.5" y="808.0078"/><rect codeLine="104" fill="none" height="48.055" id="DoubleConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="147.9167" x="662.5" y="784.9528"/><ellipse cx="677.0833" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M678.9937,805.072 Q678.5665,805.2917 678.0965,805.4016 Q677.6265,805.5115 677.1077,805.5115 Q675.2645,805.5115 674.294,804.2969 Q673.3236,803.0823 673.3236,800.7874 Q673.3236,798.4863 674.294,797.2717 Q675.2645,796.0571 677.1077,796.0571 Q677.6265,796.0571 678.1026,796.167 Q678.5787,796.2769 678.9937,796.4966 L678.9937,798.4985 Q678.5299,798.0713 678.0935,797.8729 Q677.6571,797.6746 677.1932,797.6746 Q676.2044,797.6746 675.7009,798.4589 Q675.1973,799.2432 675.1973,800.7874 Q675.1973,802.3254 675.7009,803.1097 Q676.2044,803.894 677.1932,803.894 Q677.6571,803.894 678.0935,803.6957 Q678.5299,803.4973 678.9937,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="110.4167" x="693.75" y="805.3711">DoubleConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="663.5417" x2="809.375" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="663.5417" x2="809.375" y1="824.6745" y2="824.6745"/><!--MD5=[ba76442fb5dfc35da0422f297e77a0dd]
+class FloatConverter--><rect codeLine="109" fill="#282828" height="48.055" id="FloatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="133.3333" x="846.875" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="133.3333" x="846.875" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="133.3333" x="846.875" y="808.0078"/><rect codeLine="109" fill="none" height="48.055" id="FloatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="133.3333" x="846.875" y="784.9528"/><ellipse cx="861.4583" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M863.3687,805.072 Q862.9415,805.2917 862.4715,805.4016 Q862.0015,805.5115 861.4827,805.5115 Q859.6395,805.5115 858.669,804.2969 Q857.6986,803.0823 857.6986,800.7874 Q857.6986,798.4863 858.669,797.2717 Q859.6395,796.0571 861.4827,796.0571 Q862.0015,796.0571 862.4776,796.167 Q862.9537,796.2769 863.3687,796.4966 L863.3687,798.4985 Q862.9049,798.0713 862.4685,797.8729 Q862.0321,797.6746 861.5682,797.6746 Q860.5794,797.6746 860.0759,798.4589 Q859.5723,799.2432 859.5723,800.7874 Q859.5723,802.3254 860.0759,803.1097 Q860.5794,803.894 861.5682,803.894 Q862.0321,803.894 862.4685,803.6957 Q862.9049,803.4973 863.3687,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="95.8333" x="878.125" y="805.3711">FloatConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="847.9167" x2="979.1667" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="847.9167" x2="979.1667" y1="824.6745" y2="824.6745"/><!--MD5=[979af96ec88e32cb436642cc2571058b]
+class IntegerConverter--><rect codeLine="114" fill="#282828" height="48.055" id="IntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="146.875" x="1388.0208" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="146.875" x="1388.0208" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="146.875" x="1388.0208" y="808.0078"/><rect codeLine="114" fill="none" height="48.055" id="IntegerConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="146.875" x="1388.0208" y="784.9528"/><ellipse cx="1402.6042" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1404.5146,805.072 Q1404.0873,805.2917 1403.6174,805.4016 Q1403.1474,805.5115 1402.6286,805.5115 Q1400.7853,805.5115 1399.8149,804.2969 Q1398.8444,803.0823 1398.8444,800.7874 Q1398.8444,798.4863 1399.8149,797.2717 Q1400.7853,796.0571 1402.6286,796.0571 Q1403.1474,796.0571 1403.6235,796.167 Q1404.0995,796.2769 1404.5146,796.4966 L1404.5146,798.4985 Q1404.0507,798.0713 1403.6143,797.8729 Q1403.1779,797.6746 1402.714,797.6746 Q1401.7253,797.6746 1401.2217,798.4589 Q1400.7182,799.2432 1400.7182,800.7874 Q1400.7182,802.3254 1401.2217,803.1097 Q1401.7253,803.894 1402.714,803.894 Q1403.1779,803.894 1403.6143,803.6957 Q1404.0507,803.4973 1404.5146,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="109.375" x="1419.2708" y="805.3711">IntegerConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1389.0625" x2="1533.8542" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1389.0625" x2="1533.8542" y1="824.6745" y2="824.6745"/><!--MD5=[17f137dfa24b805223a5423e10618b0c]
+class LocalDateConverter--><rect codeLine="119" fill="#282828" height="48.055" id="LocalDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="1431.25" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="1431.25" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="1431.25" y="660.0911"/><rect codeLine="119" fill="none" height="48.055" id="LocalDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="1431.25" y="637.0361"/><ellipse cx="1445.8333" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1447.7437,657.1554 Q1447.3165,657.3751 1446.8465,657.4849 Q1446.3765,657.5948 1445.8577,657.5948 Q1444.0145,657.5948 1443.044,656.3802 Q1442.0736,655.1656 1442.0736,652.8707 Q1442.0736,650.5697 1443.044,649.3551 Q1444.0145,648.1405 1445.8577,648.1405 Q1446.3765,648.1405 1446.8526,648.2503 Q1447.3287,648.3602 1447.7437,648.5799 L1447.7437,650.5819 Q1447.2799,650.1546 1446.8435,649.9563 Q1446.4071,649.7579 1445.9432,649.7579 Q1444.9544,649.7579 1444.4509,650.5422 Q1443.9473,651.3265 1443.9473,652.8707 Q1443.9473,654.4088 1444.4509,655.1931 Q1444.9544,655.9774 1445.9432,655.9774 Q1446.4071,655.9774 1446.8435,655.779 Q1447.2799,655.5806 1447.7437,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="1462.5" y="657.4544">LocalDateConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1432.2917" x2="1594.7917" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1432.2917" x2="1594.7917" y1="676.7578" y2="676.7578"/><!--MD5=[18ae419b4f55cafd1f2720e05c001aaa]
+class LocalDateTimeConverter--><rect codeLine="124" fill="#282828" height="48.055" id="LocalDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="1632.8125" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="1632.8125" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="1632.8125" y="660.0911"/><rect codeLine="124" fill="none" height="48.055" id="LocalDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="1632.8125" y="637.0361"/><ellipse cx="1647.3958" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1649.3062,657.1554 Q1648.879,657.3751 1648.409,657.4849 Q1647.939,657.5948 1647.4202,657.5948 Q1645.577,657.5948 1644.6065,656.3802 Q1643.6361,655.1656 1643.6361,652.8707 Q1643.6361,650.5697 1644.6065,649.3551 Q1645.577,648.1405 1647.4202,648.1405 Q1647.939,648.1405 1648.4151,648.2503 Q1648.8912,648.3602 1649.3062,648.5799 L1649.3062,650.5819 Q1648.8424,650.1546 1648.406,649.9563 Q1647.9696,649.7579 1647.5057,649.7579 Q1646.5169,649.7579 1646.0134,650.5422 Q1645.5098,651.3265 1645.5098,652.8707 Q1645.5098,654.4088 1646.0134,655.1931 Q1646.5169,655.9774 1647.5057,655.9774 Q1647.9696,655.9774 1648.406,655.779 Q1648.8424,655.5806 1649.3062,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="1664.0625" y="657.4544">LocalDateTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1633.8542" x2="1828.6458" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1633.8542" x2="1828.6458" y1="676.7578" y2="676.7578"/><!--MD5=[4921c59f79b438eee3203467cdc1356d]
+class LocalTimeConverter--><rect codeLine="129" fill="#282828" height="48.055" id="LocalTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="166.6667" x="1866.6667" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="166.6667" x="1866.6667" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="166.6667" x="1866.6667" y="660.0911"/><rect codeLine="129" fill="none" height="48.055" id="LocalTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="166.6667" x="1866.6667" y="637.0361"/><ellipse cx="1881.25" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1883.1604,657.1554 Q1882.7332,657.3751 1882.2632,657.4849 Q1881.7932,657.5948 1881.2744,657.5948 Q1879.4312,657.5948 1878.4607,656.3802 Q1877.4902,655.1656 1877.4902,652.8707 Q1877.4902,650.5697 1878.4607,649.3551 Q1879.4312,648.1405 1881.2744,648.1405 Q1881.7932,648.1405 1882.2693,648.2503 Q1882.7454,648.3602 1883.1604,648.5799 L1883.1604,650.5819 Q1882.6965,650.1546 1882.2601,649.9563 Q1881.8237,649.7579 1881.3599,649.7579 Q1880.3711,649.7579 1879.8676,650.5422 Q1879.364,651.3265 1879.364,652.8707 Q1879.364,654.4088 1879.8676,655.1931 Q1880.3711,655.9774 1881.3599,655.9774 Q1881.8237,655.9774 1882.2601,655.779 Q1882.6965,655.5806 1883.1604,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="129.1667" x="1897.9167" y="657.4544">LocalTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1867.7083" x2="2032.2917" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1867.7083" x2="2032.2917" y1="676.7578" y2="676.7578"/><!--MD5=[9a1a620840ebe7d105163bddbb8419de]
+class LongConverter--><rect codeLine="134" fill="#282828" height="48.055" id="LongConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="133.3333" x="1571.875" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="133.3333" x="1571.875" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="133.3333" x="1571.875" y="808.0078"/><rect codeLine="134" fill="none" height="48.055" id="LongConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="133.3333" x="1571.875" y="784.9528"/><ellipse cx="1586.4583" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1588.3687,805.072 Q1587.9415,805.2917 1587.4715,805.4016 Q1587.0015,805.5115 1586.4827,805.5115 Q1584.6395,805.5115 1583.669,804.2969 Q1582.6986,803.0823 1582.6986,800.7874 Q1582.6986,798.4863 1583.669,797.2717 Q1584.6395,796.0571 1586.4827,796.0571 Q1587.0015,796.0571 1587.4776,796.167 Q1587.9537,796.2769 1588.3687,796.4966 L1588.3687,798.4985 Q1587.9049,798.0713 1587.4685,797.8729 Q1587.0321,797.6746 1586.5682,797.6746 Q1585.5794,797.6746 1585.0759,798.4589 Q1584.5723,799.2432 1584.5723,800.7874 Q1584.5723,802.3254 1585.0759,803.1097 Q1585.5794,803.894 1586.5682,803.894 Q1587.0321,803.894 1587.4685,803.6957 Q1587.9049,803.4973 1588.3687,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="95.8333" x="1603.125" y="805.3711">LongConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1572.9167" x2="1704.1667" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1572.9167" x2="1704.1667" y1="824.6745" y2="824.6745"/><!--MD5=[34dfb7064c299e0034e7f0bcaddeb46e]
+class ShortConverter--><rect codeLine="139" fill="#282828" height="48.055" id="ShortConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="135.4167" x="1741.6667" y="784.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="135.4167" x="1741.6667" y="784.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="135.4167" x="1741.6667" y="808.0078"/><rect codeLine="139" fill="none" height="48.055" id="ShortConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="135.4167" x="1741.6667" y="784.9528"/><ellipse cx="1756.25" cy="800.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1758.1604,805.072 Q1757.7332,805.2917 1757.2632,805.4016 Q1756.7932,805.5115 1756.2744,805.5115 Q1754.4312,805.5115 1753.4607,804.2969 Q1752.4902,803.0823 1752.4902,800.7874 Q1752.4902,798.4863 1753.4607,797.2717 Q1754.4312,796.0571 1756.2744,796.0571 Q1756.7932,796.0571 1757.2693,796.167 Q1757.7454,796.2769 1758.1604,796.4966 L1758.1604,798.4985 Q1757.6965,798.0713 1757.2601,797.8729 Q1756.8237,797.6746 1756.3599,797.6746 Q1755.3711,797.6746 1754.8676,798.4589 Q1754.364,799.2432 1754.364,800.7874 Q1754.364,802.3254 1754.8676,803.1097 Q1755.3711,803.894 1756.3599,803.894 Q1756.8237,803.894 1757.2601,803.6957 Q1757.6965,803.4973 1758.1604,803.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="97.9167" x="1772.9167" y="805.3711">ShortConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1742.7083" x2="1876.0417" y1="816.3411" y2="816.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1742.7083" x2="1876.0417" y1="824.6745" y2="824.6745"/><!--MD5=[ac842903fd44d020ebc98fe820082f3d]
+class SqlDateConverter--><rect codeLine="144" fill="#282828" height="48.055" id="SqlDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="151.0417" x="175.5208" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="151.0417" x="175.5208" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="151.0417" x="175.5208" y="660.0911"/><rect codeLine="144" fill="none" height="48.055" id="SqlDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="151.0417" x="175.5208" y="637.0361"/><ellipse cx="190.1042" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M192.0146,657.1554 Q191.5873,657.3751 191.1174,657.4849 Q190.6474,657.5948 190.1286,657.5948 Q188.2853,657.5948 187.3149,656.3802 Q186.3444,655.1656 186.3444,652.8707 Q186.3444,650.5697 187.3149,649.3551 Q188.2853,648.1405 190.1286,648.1405 Q190.6474,648.1405 191.1235,648.2503 Q191.5995,648.3602 192.0146,648.5799 L192.0146,650.5819 Q191.5507,650.1546 191.1143,649.9563 Q190.6779,649.7579 190.214,649.7579 Q189.2253,649.7579 188.7217,650.5422 Q188.2182,651.3265 188.2182,652.8707 Q188.2182,654.4088 188.7217,655.1931 Q189.2253,655.9774 190.214,655.9774 Q190.6779,655.9774 191.1143,655.779 Q191.5507,655.5806 192.0146,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="113.5417" x="206.7708" y="657.4544">SqlDateConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="176.5625" x2="325.5208" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="176.5625" x2="325.5208" y1="676.7578" y2="676.7578"/><!--MD5=[9610e8729908968a0df71350f44e0ad9]
+class SqlTimeConverter--><rect codeLine="149" fill="#282828" height="48.055" id="SqlTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="363.0208" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="363.0208" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="363.0208" y="660.0911"/><rect codeLine="149" fill="none" height="48.055" id="SqlTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="363.0208" y="637.0361"/><ellipse cx="377.6042" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M379.5146,657.1554 Q379.0873,657.3751 378.6174,657.4849 Q378.1474,657.5948 377.6286,657.5948 Q375.7853,657.5948 374.8149,656.3802 Q373.8444,655.1656 373.8444,652.8707 Q373.8444,650.5697 374.8149,649.3551 Q375.7853,648.1405 377.6286,648.1405 Q378.1474,648.1405 378.6235,648.2503 Q379.0995,648.3602 379.5146,648.5799 L379.5146,650.5819 Q379.0507,650.1546 378.6143,649.9563 Q378.1779,649.7579 377.714,649.7579 Q376.7253,649.7579 376.2217,650.5422 Q375.7182,651.3265 375.7182,652.8707 Q375.7182,654.4088 376.2217,655.1931 Q376.7253,655.9774 377.714,655.9774 Q378.1779,655.9774 378.6143,655.779 Q379.0507,655.5806 379.5146,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="394.2708" y="657.4544">SqlTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="364.0625" x2="515.1042" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="364.0625" x2="515.1042" y1="676.7578" y2="676.7578"/><!--MD5=[7823d45cc05555a722f18119db9beba1]
+class SqlTimestampConverter--><rect codeLine="154" fill="#282828" height="122.8678" id="SqlTimestampConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="553.125" y="599.5361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="553.125" y="599.5361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="553.125" y="622.5911"/><rect codeLine="154" fill="none" height="122.8678" id="SqlTimestampConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="553.125" y="599.5361"/><ellipse cx="575.2083" cy="615.2303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M577.1187,619.6554 Q576.6915,619.8751 576.2215,619.9849 Q575.7515,620.0948 575.2327,620.0948 Q573.3895,620.0948 572.419,618.8802 Q571.4486,617.6656 571.4486,615.3707 Q571.4486,613.0697 572.419,611.8551 Q573.3895,610.6405 575.2327,610.6405 Q575.7515,610.6405 576.2276,610.7503 Q576.7037,610.8602 577.1187,611.0799 L577.1187,613.0819 Q576.6549,612.6546 576.2185,612.4563 Q575.7821,612.2579 575.3182,612.2579 Q574.3294,612.2579 573.8259,613.0422 Q573.3223,613.8265 573.3223,615.3707 Q573.3223,616.9088 573.8259,617.6931 Q574.3294,618.4774 575.3182,618.4774 Q575.7821,618.4774 576.2185,618.279 Q576.6549,618.0806 577.1187,617.6534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="156.25" x="593.5417" y="619.9544">SqlTimestampConverter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="554.1667" x2="762.5" y1="630.9245" y2="630.9245"/><ellipse cx="564.5833" cy="666.2944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="142.7083" x="576.0417" y="673.2056">SqlTimestampConverter()</text><ellipse cx="564.5833" cy="686.0392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="157.2917" x="576.0417" y="692.9504">SqlTimestampConverter(int)</text><ellipse cx="564.5833" cy="705.7841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="576.0417" y="712.6953">SqlTimestampConverter(int, int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="554.1667" x2="614.5833" y1="649.1302" y2="649.1302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="617.7083" y="652.9399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="702.0833" x2="762.5" y1="649.1302" y2="649.1302"/><!--MD5=[e7f6e789ab8c7c596538c2eff97c0bc0]
+class ZonedDateTimeConverter--><rect codeLine="163" fill="#282828" height="48.055" id="ZonedDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="204.1667" x="2069.7917" y="637.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="204.1667" x="2069.7917" y="637.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="204.1667" x="2069.7917" y="660.0911"/><rect codeLine="163" fill="none" height="48.055" id="ZonedDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="204.1667" x="2069.7917" y="637.0361"/><ellipse cx="2084.375" cy="652.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2086.2854,657.1554 Q2085.8582,657.3751 2085.3882,657.4849 Q2084.9182,657.5948 2084.3994,657.5948 Q2082.5562,657.5948 2081.5857,656.3802 Q2080.6152,655.1656 2080.6152,652.8707 Q2080.6152,650.5697 2081.5857,649.3551 Q2082.5562,648.1405 2084.3994,648.1405 Q2084.9182,648.1405 2085.3943,648.2503 Q2085.8704,648.3602 2086.2854,648.5799 L2086.2854,650.5819 Q2085.8215,650.1546 2085.3851,649.9563 Q2084.9487,649.7579 2084.4849,649.7579 Q2083.4961,649.7579 2082.9926,650.5422 Q2082.489,651.3265 2082.489,652.8707 Q2082.489,654.4088 2082.9926,655.1931 Q2083.4961,655.9774 2084.4849,655.9774 Q2084.9487,655.9774 2085.3851,655.779 Q2085.8215,655.5806 2086.2854,655.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="166.6667" x="2101.0417" y="657.4544">ZonedDateTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2070.8333" x2="2272.9167" y1="668.4245" y2="668.4245"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2070.8333" x2="2272.9167" y1="676.7578" y2="676.7578"/><!--MD5=[6313b14ba656a25653c696786c00b0d5]
+reverse link IConverter to AbstractConverter--><path codeLine="15" d="M1873.4375,114.9215 C1854.7708,129.5049 1832.5,146.9111 1810.5625,164.057 " fill="none" id="IConverter-backto-AbstractConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1869.1875,108.9945,1890.0938,101.9111,1878.1667,120.484,1869.1875,108.9945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4fc716130b67314efc7d1e242b977b83]
+reverse link AbstractConverter to AbstractDateConverter--><path codeLine="26" d="M1437.8646,289.2861 C1161.9479,336.0257 750.1875,405.7757 552.9167,439.1924 " fill="none" id="AbstractConverter-backto-AbstractDateConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1436.9688,282.0465,1458.7292,285.7549,1439.4063,296.4215,1436.9688,282.0465" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[906b6020c725b7d44259e8e944bf1335]
+reverse link AbstractNumberConverter to AbstractDecimalConverter--><path codeLine="34" d="M1124.5938,547.057 C1063.1771,579.9111 998.1354,614.7028 956.75,636.8382 " fill="none" id="AbstractNumberConverter-backto-AbstractDecimalConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1121.2708,540.5674,1143.0833,537.1715,1128.1458,553.4215,1121.2708,540.5674" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c981c896add7d310d23247a9f98a5fd8]
+reverse link AbstractNumberConverter to AbstractIntegerConverter--><path codeLine="39" d="M1286.4583,558.4736 C1286.4583,587.7861 1286.4583,617.2965 1286.4583,636.8695 " fill="none" id="AbstractNumberConverter-backto-AbstractIntegerConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1279.1667,558.1507,1286.4583,537.307,1293.75,558.1403,1279.1667,558.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3f367340e3f170bb4a9e2b34939d2ef5]
+reverse link AbstractConverter to AbstractJavaTimeConverter--><path codeLine="44" d="M1712.5,340.3486 C1712.5,358.4528 1712.5,376.9528 1712.5,393.7757 " fill="none" id="AbstractConverter-backto-AbstractJavaTimeConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1705.2083,340.2236,1712.5,319.3903,1719.7917,340.2236,1705.2083,340.2236" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[71c11cb863fc1fdfabca49c4eb8d543e]
+reverse link AbstractConverter to AbstractNumberConverter--><path codeLine="54" d="M1542.1042,329.0049 C1507.5938,346.4736 1471.5313,364.7236 1437.7396,381.8278 " fill="none" id="AbstractConverter-backto-AbstractNumberConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1539.2083,322.2965,1561.0938,319.3903,1545.8021,335.307,1539.2083,322.2965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e5f9b455bfc15f9a0bd6b023e86c0ca7]
+reverse link AbstractDecimalConverter to BigDecimalConverter--><path codeLine="65" d="M846.8021,693.932 C825.9792,703.5049 802.8125,713.7549 781.25,722.4528 C723.9792,745.557 657.7813,768.6195 609,784.9424 " fill="none" id="AbstractDecimalConverter-backto-BigDecimalConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="843.9583,687.2132,865.9167,685.0361,850.1042,700.432,843.9583,687.2132" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9b09de7645c0f7ec94c8de4e44687c27]
+reverse link AbstractIntegerConverter to BigIntegerConverter--><path codeLine="70" d="M1240.2708,698.3695 C1205.8125,725.4632 1159.8021,761.6611 1130.2813,784.8695 " fill="none" id="AbstractIntegerConverter-backto-BigIntegerConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1236.1979,692.2965,1257.0833,685.1403,1245.2083,703.7549,1236.1979,692.2965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7294a57d2ac43672ea871f2726e8ce94]
+reverse link AbstractConverter to BooleanConverter--><path codeLine="75" d="M1825.2708,332.7757 C1845.6458,349.0882 1866.6979,365.9528 1886.4583,381.8278 C1908.7188,399.7132 1933.8646,420.0257 1952.6563,435.234 " fill="none" id="AbstractConverter-backto-BooleanConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1820.4479,338.2549,1808.7292,319.5465,1829.5521,326.8695,1820.4479,338.2549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[cbc69ef78e640d80370a1c40b2eacb80]
+reverse link AbstractIntegerConverter to ByteConverter--><path codeLine="80" d="M1286.4583,706.0361 C1286.4583,731.9945 1286.4583,763.7861 1286.4583,784.8695 " fill="none" id="AbstractIntegerConverter-backto-ByteConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1279.1667,705.9736,1286.4583,685.1403,1293.75,705.9736,1279.1667,705.9736" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5deeac4654e820cc2c9d314276bc3ea3]
+reverse link IConverter to CalendarConverter--><path codeLine="85" d="M1966.1875,114.7757 C1994.7083,136.9528 2031.6875,165.7028 2063.1042,190.1299 " fill="none" id="IConverter-backto-CalendarConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1961.6146,120.4528,1949.6458,101.9111,1970.5625,108.9424,1961.6146,120.4528" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[57bb9da9be0f0155b3e44e8403502053]
+reverse link AbstractConverter to CharacterConverter--><path codeLine="93" d="M1962.375,327.359 C2001.2917,343.6403 2040.375,361.9111 2076.0417,381.8278 C2103.1458,396.9736 2130.9479,418.8695 2150.3333,435.3695 " fill="none" id="AbstractConverter-backto-CharacterConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1959.5,334.057,1943,319.4007,1965.0417,320.5674,1959.5,334.057" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1321b2d145e4304ef70956fe40e8ed9d]
+reverse link AbstractDateConverter to DateConverter--><path codeLine="98" d="M324.0417,512.1403 C272.0313,536.7236 210.5,567.6715 157.2917,599.5361 C138.4375,610.8278 118.3854,625.0778 102.5729,636.9007 " fill="none" id="AbstractDateConverter-backto-DateConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="321.1458,505.4424,343.1042,503.2132,327.3333,518.6507,321.1458,505.4424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[65d69c5f308f8c1d82c897f8030fc385]
+reverse link AbstractDecimalConverter to DoubleConverter--><path codeLine="103" d="M868.9688,698.7445 C836.125,725.7965 792.4479,761.7653 764.3854,784.8695 " fill="none" id="AbstractDecimalConverter-backto-DoubleConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="864.7604,692.7549,885.4792,685.1403,874.0313,704.0153,864.7604,692.7549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b4b0416005a890ab4fbfc5181f009e95]
+reverse link AbstractDecimalConverter to FloatConverter--><path codeLine="108" d="M913.5417,706.0361 C913.5417,731.9945 913.5417,763.7861 913.5417,784.8695 " fill="none" id="AbstractDecimalConverter-backto-FloatConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="906.25,705.9736,913.5417,685.1403,920.8333,705.9736,906.25,705.9736" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2a74038515d4006f7aa2f44a8a85a0ab]
+reverse link AbstractIntegerConverter to IntegerConverter--><path codeLine="113" d="M1330.5,698.7445 C1362.9688,725.7965 1406.1354,761.7653 1433.8542,784.8695 " fill="none" id="AbstractIntegerConverter-backto-IntegerConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1325.5208,704.0778,1314.1875,685.1403,1334.8646,692.8799,1325.5208,704.0778" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c3ca8be57c018b385707bb3352b81f4a]
+reverse link AbstractJavaTimeConverter to LocalDateConverter--><path codeLine="118" d="M1632.8229,540.359 C1598.25,575.0257 1560.3333,613.0361 1536.7396,636.6924 " fill="none" id="AbstractJavaTimeConverter-backto-LocalDateConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1628.0313,534.8382,1647.9063,525.234,1638.3542,545.1403,1628.0313,534.8382" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f40e258e6e3715cb0e0b5529cfd335e0]
+reverse link AbstractJavaTimeConverter to LocalDateTimeConverter--><path codeLine="123" d="M1720.5833,546.4528 C1723.6771,579.4111 1726.9688,614.4111 1729.0625,636.6924 " fill="none" id="AbstractJavaTimeConverter-backto-LocalDateTimeConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1713.2813,546.6611,1718.5833,525.234,1727.8021,545.2965,1713.2813,546.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c554a935a07cd8807f6c4a920f458ec1]
+reverse link AbstractJavaTimeConverter to LocalTimeConverter--><path codeLine="128" d="M1805.7188,538.7653 C1847.6354,573.9736 1894.0208,612.932 1922.5938,636.932 " fill="none" id="AbstractJavaTimeConverter-backto-LocalTimeConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1800.875,544.2236,1789.6146,525.234,1810.25,533.057,1800.875,544.2236" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[046867479cc0ecc3b4937bcd087af56e]
+reverse link AbstractIntegerConverter to LongConverter--><path codeLine="133" d="M1350.9063,694.234 C1370.5208,703.682 1392.25,713.7965 1412.5,722.4528 C1465.9271,745.2965 1527.6979,768.432 1573.1563,784.8486 " fill="none" id="AbstractIntegerConverter-backto-LongConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1347.6563,700.7653,1332.125,685.0882,1354.0417,687.6507,1347.6563,700.7653" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[a7fc2b2c8cddebabad5bf755a802fcd2]
+reverse link AbstractIntegerConverter to ShortConverter--><path codeLine="138" d="M1346.3333,694.484 C1366.8542,704.5882 1390.2604,715.0153 1412.5,722.4528 C1545.9583,767.0986 1585.8542,753.0257 1722.9167,784.9528 C1728.9688,786.359 1735.2396,787.8903 1741.5104,789.4632 " fill="none" id="AbstractIntegerConverter-backto-ShortConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1342.9479,700.932,1327.6667,685.0049,1349.5521,687.932,1342.9479,700.932" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7c23c195738664a267684305a2407e3e]
+reverse link AbstractDateConverter to SqlDateConverter--><path codeLine="143" d="M384.6354,518.609 C347.3542,558.057 300.0729,608.0778 272.9167,636.807 " fill="none" id="AbstractDateConverter-backto-SqlDateConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="379.5313,513.4007,399.1354,503.2653,390.125,523.4111,379.5313,513.4007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f3ac5ecdefd1f3155feb0384aac8a10e]
+reverse link AbstractDateConverter to SqlTimeConverter--><path codeLine="148" d="M439.5833,524.1924 C439.5833,562.6715 439.5833,609.4111 439.5833,636.807 " fill="none" id="AbstractDateConverter-backto-SqlTimeConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="432.2917,524.0986,439.5833,503.2653,446.875,524.0986,432.2917,524.0986" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bf0b39c097b4f2e1d1a371471fac8256]
+reverse link AbstractDateConverter to SqlTimestampConverter--><path codeLine="153" d="M501.9792,517.3799 C530.125,543.0361 563.3854,573.3695 591.9792,599.4424 " fill="none" id="AbstractDateConverter-backto-SqlTimestampConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="496.9896,522.6924,486.5104,503.2653,506.8229,511.9215,496.9896,522.6924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[6d6c528ba28b3c4320bb96c0b4983a6a]
+reverse link AbstractJavaTimeConverter to ZonedDateTimeConverter--><path codeLine="162" d="M1877.2188,533.2236 C1880.3229,534.5153 1883.4063,535.7861 1886.4583,537.0361 C1958.8646,566.6924 1979.3854,568.109 2051.0417,599.5361 C2077.1354,610.984 2105.6875,625.1715 2128.4688,636.9215 " fill="none" id="AbstractJavaTimeConverter-backto-ZonedDateTimeConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1874.3542,539.932,1857.9583,525.1507,1879.9896,526.484,1874.3542,539.932" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5bec7223906d6b1e155d87c16dfccda2]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.convert.converter"
+    
+    abstract AbstractDateConverter
+    abstract AbstractNumberConverter
+    abstract AbstractDecimalConverter
+    abstract AbstractJavaTimeConverter
+    abstract AbstractConverter
+    abstract AbstractIntegerConverter
+    
+    interface IConverter
+    
+    IConverter <|- - AbstractConverter
+    abstract class AbstractConverter<C>
+    {
+        - -
+        #Class<C> getTargetType()
+        - -(factory)- -
+        #ConversionException newConversionException(String message, Object value, Locale)
+        - -(parsing)- -
+        #C parse(Format, Object value, Locale)
+    }
+    
+    AbstractConverter <|- - AbstractDateConverter
+    abstract class AbstractDateConverter<D>
+    {
+        - -
+        +DateFormat getDateFormat(Locale)
+        #D createDateLike(long date)
+    }
+    
+    AbstractNumberConverter <|- - AbstractDecimalConverter
+    abstract class AbstractDecimalConverter<N>
+    {
+    }
+    
+    AbstractNumberConverter <|- - AbstractIntegerConverter
+    abstract class AbstractIntegerConverter<I>
+    {
+    }
+    
+    AbstractConverter <|- - AbstractJavaTimeConverter
+    abstract class AbstractJavaTimeConverter<T>
+    {
+        - -
+        #T createTemporal(TemporalAccessor)
+        - -(time)- -
+        +DateTimeFormatter getDateTimeFormatter(Locale)
+        #DateTimeFormatter getDateTimeFormatter()
+    }
+    
+    AbstractConverter <|- - AbstractNumberConverter
+    abstract class AbstractNumberConverter<N>
+    {
+        - -
+        +NumberFormat getNumberFormat(Locale)
+        - -(factory)- -
+        #NumberFormat newNumberFormat(Locale)
+        - -(parsing)- -
+        #BigDecimal parse(Object value, BigDecimal min, BigDecimal max, Locale)
+    }
+    
+    AbstractDecimalConverter <|- - BigDecimalConverter
+    class BigDecimalConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - BigIntegerConverter
+    class BigIntegerConverter
+    {
+    }
+    
+    AbstractConverter <|- - BooleanConverter
+    class BooleanConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - ByteConverter
+    class ByteConverter
+    {
+    }
+    
+    IConverter <|- - CalendarConverter
+    class CalendarConverter
+    {
+        - -(constructors)- -
+        +CalendarConverter()
+        +CalendarConverter(IConverter<Date>)
+    }
+    
+    AbstractConverter <|- - CharacterConverter
+    class CharacterConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - DateConverter
+    class DateConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|- - DoubleConverter
+    class DoubleConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|- - FloatConverter
+    class FloatConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - IntegerConverter
+    class IntegerConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalDateConverter
+    class LocalDateConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalDateTimeConverter
+    class LocalDateTimeConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalTimeConverter
+    class LocalTimeConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - LongConverter
+    class LongConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - ShortConverter
+    class ShortConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlDateConverter
+    class SqlDateConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlTimeConverter
+    class SqlTimeConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlTimestampConverter
+    class SqlTimestampConverter
+    {
+        - -(constructors)- -
+        +SqlTimestampConverter()
+        +SqlTimestampConverter(int)
+        +SqlTimestampConverter(int, int)
+    }
+    
+    AbstractJavaTimeConverter <|- - ZonedDateTimeConverter
+    class ZonedDateTimeConverter
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.util.convert.converter"
+    
+    abstract AbstractDateConverter
+    abstract AbstractNumberConverter
+    abstract AbstractDecimalConverter
+    abstract AbstractJavaTimeConverter
+    abstract AbstractConverter
+    abstract AbstractIntegerConverter
+    
+    interface IConverter
+    
+    IConverter <|- - AbstractConverter
+    abstract class AbstractConverter<C>
+    {
+        - -
+        #Class<C> getTargetType()
+        - -(factory)- -
+        #ConversionException newConversionException(String message, Object value, Locale)
+        - -(parsing)- -
+        #C parse(Format, Object value, Locale)
+    }
+    
+    AbstractConverter <|- - AbstractDateConverter
+    abstract class AbstractDateConverter<D>
+    {
+        - -
+        +DateFormat getDateFormat(Locale)
+        #D createDateLike(long date)
+    }
+    
+    AbstractNumberConverter <|- - AbstractDecimalConverter
+    abstract class AbstractDecimalConverter<N>
+    {
+    }
+    
+    AbstractNumberConverter <|- - AbstractIntegerConverter
+    abstract class AbstractIntegerConverter<I>
+    {
+    }
+    
+    AbstractConverter <|- - AbstractJavaTimeConverter
+    abstract class AbstractJavaTimeConverter<T>
+    {
+        - -
+        #T createTemporal(TemporalAccessor)
+        - -(time)- -
+        +DateTimeFormatter getDateTimeFormatter(Locale)
+        #DateTimeFormatter getDateTimeFormatter()
+    }
+    
+    AbstractConverter <|- - AbstractNumberConverter
+    abstract class AbstractNumberConverter<N>
+    {
+        - -
+        +NumberFormat getNumberFormat(Locale)
+        - -(factory)- -
+        #NumberFormat newNumberFormat(Locale)
+        - -(parsing)- -
+        #BigDecimal parse(Object value, BigDecimal min, BigDecimal max, Locale)
+    }
+    
+    AbstractDecimalConverter <|- - BigDecimalConverter
+    class BigDecimalConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - BigIntegerConverter
+    class BigIntegerConverter
+    {
+    }
+    
+    AbstractConverter <|- - BooleanConverter
+    class BooleanConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - ByteConverter
+    class ByteConverter
+    {
+    }
+    
+    IConverter <|- - CalendarConverter
+    class CalendarConverter
+    {
+        - -(constructors)- -
+        +CalendarConverter()
+        +CalendarConverter(IConverter<Date>)
+    }
+    
+    AbstractConverter <|- - CharacterConverter
+    class CharacterConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - DateConverter
+    class DateConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|- - DoubleConverter
+    class DoubleConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|- - FloatConverter
+    class FloatConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - IntegerConverter
+    class IntegerConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalDateConverter
+    class LocalDateConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalDateTimeConverter
+    class LocalDateTimeConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|- - LocalTimeConverter
+    class LocalTimeConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - LongConverter
+    class LongConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|- - ShortConverter
+    class ShortConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlDateConverter
+    class SqlDateConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlTimeConverter
+    class SqlTimeConverter
+    {
+    }
+    
+    AbstractDateConverter <|- - SqlTimestampConverter
+    class SqlTimestampConverter
+    {
+        - -(constructors)- -
+        +SqlTimestampConverter()
+        +SqlTimestampConverter(int)
+        +SqlTimestampConverter(int, int)
+    }
+    
+    AbstractJavaTimeConverter <|- - ZonedDateTimeConverter
+    class ZonedDateTimeConverter
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

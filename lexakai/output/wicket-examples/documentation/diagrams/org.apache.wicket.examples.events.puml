@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.events"
+    
+    abstract BasePage
+    
+    WicketExamplePage <|-- BasePage
+    abstract class BasePage
+    {
+        --(constructors)--
+        +BasePage()
+    }
+    
+    Label <|-- DecoupledAjaxUpdatePage.CounterLabel
+    class DecoupledAjaxUpdatePage.CounterLabel
+    {
+        --(constructors)--
+        +CounterLabel(String)
+    }
+    
+    class DecoupledAjaxUpdatePage.CounterUpdate
+    {
+        --(constructors)--
+        +CounterUpdate(AjaxRequestTarget)
+        --
+        +AjaxRequestTarget getTarget()
+    }
+    
+    BasePage <|-- DecoupledAjaxUpdatePage
+    class DecoupledAjaxUpdatePage
+    {
+        --(constructors)--
+        +DecoupledAjaxUpdatePage()
+    }
+    
+    WicketExampleApplication <|-- EventsApplication
+    class EventsApplication
+    {
+    }
+    
+    BasePage <|-- IndexPage
+    class IndexPage
+    {
+    }
+    
+@enduml
+

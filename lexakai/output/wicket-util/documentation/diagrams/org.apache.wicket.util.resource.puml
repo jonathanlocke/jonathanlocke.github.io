@@ -1,0 +1,180 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.resource"
+    
+    abstract AbstractResourceStream
+    abstract AbstractStringResourceStream
+    
+    interface IResourceStream
+    interface IStringResourceStream
+    interface IResourceStreamWriter
+    interface IFixedLocationResourceStream
+    
+    IResourceStream <|-- AbstractResourceStream
+    abstract class AbstractResourceStream
+    {
+    }
+    
+    IResourceStreamWriter <|-- AbstractResourceStreamWriter
+    abstract class AbstractResourceStreamWriter
+    {
+    }
+    
+    AbstractResourceStream <|-- AbstractStringResourceStream
+    IStringResourceStream <|-- AbstractStringResourceStream
+    abstract class AbstractStringResourceStream
+    {
+        --(constructors)--
+        +AbstractStringResourceStream()
+        +AbstractStringResourceStream(String)
+        --
+        #Charset getCharset()
+        #String getString()
+        --(time)--
+        +void setLastModified(Instant lastModified)
+    }
+    
+    AbstractResourceStream <|-- FileResourceStream
+    IFixedLocationResourceStream <|-- FileResourceStream
+    class FileResourceStream
+    {
+        --(constructors)--
+        +FileResourceStream(File)
+        +FileResourceStream(java.io.File)
+        --(filesystem)--
+        +File getFile()
+    }
+    
+    AbstractResourceStream <|-- FileSystemResourceStream
+    IFixedLocationResourceStream <|-- FileSystemResourceStream
+    class FileSystemResourceStream
+    {
+        --(constructors)--
+        +FileSystemResourceStream(File)
+        +FileSystemResourceStream(Path)
+        +FileSystemResourceStream(java.io.File)
+        --(path)--
+        +Path getPath()
+    }
+    
+    interface IFixedLocationResourceStream
+    {
+        --
+        +String locationAsString()
+    }
+    
+    interface Closeable
+    interface IClusterable
+    interface IModifiable
+    IModifiable <|-- IResourceStream
+    IClusterable <|-- IResourceStream
+    Closeable <|-- IResourceStream
+    interface IResourceStream
+    {
+        --
+        +String getContentType()
+        +Locale getLocale()
+        +String getStyle()
+        +String getVariation()
+        +void setLocale(Locale)
+        +void setStyle(String style)
+        +void setVariation(String variation)
+        --(primitive)--
+        +Bytes length()
+        --(read)--
+        +InputStream getInputStream()
+    }
+    
+    interface IResourceStream
+    IResourceStream <|-- IResourceStreamWriter
+    interface IResourceStreamWriter
+    {
+        --(write)--
+        +void write(OutputStream)
+    }
+    
+    interface IResourceStream
+    IResourceStream <|-- IStringResourceStream
+    interface IStringResourceStream
+    {
+        --
+        +void setCharset(Charset)
+        --(conversion)--
+        +String asString()
+    }
+    
+    class ResourceUtils.PathLocale
+    {
+        --(constructors)--
+        +PathLocale(String, Locale)
+    }
+    
+    Exception <|-- ResourceStreamNotFoundException
+    class ResourceStreamNotFoundException
+    {
+        --(constructors)--
+        +ResourceStreamNotFoundException()
+        +ResourceStreamNotFoundException(String)
+        +ResourceStreamNotFoundException(String, Throwable)
+        +ResourceStreamNotFoundException(Throwable)
+    }
+    
+    IResourceStream <|-- ResourceStreamWrapper
+    class ResourceStreamWrapper
+    {
+        --(constructors)--
+        +ResourceStreamWrapper(IResourceStream)
+        --
+        +IResourceStream getDelegate()
+    }
+    
+    class ResourceUtils
+    {
+        --(filesystem)--
+        +PathLocale getLocaleFromFilename(String path)
+        --(naming)--
+        +String getMinifiedName(String name, String minPostfix)
+    }
+    
+    AbstractStringResourceStream <|-- StringBufferResourceStream
+    class StringBufferResourceStream
+    {
+        --(constructors)--
+        +StringBufferResourceStream()
+        +StringBufferResourceStream(String)
+        --
+        +StringBufferResourceStream append(CharSequence)
+        +StringBufferResourceStream prepend(CharSequence)
+        --(collection)--
+        +StringBufferResourceStream clear()
+    }
+    
+    AbstractStringResourceStream <|-- StringResourceStream
+    class StringResourceStream
+    {
+        --(constructors)--
+        +StringResourceStream(CharSequence)
+        +StringResourceStream(CharSequence, String)
+    }
+    
+    AbstractResourceStream <|-- XSLTResourceStream
+    class XSLTResourceStream
+    {
+        --(constructors)--
+        +XSLTResourceStream(IResourceStream, IResourceStream)
+        --(collection)--
+        #Map<Object,Object> getParameters()
+    }
+    
+    AbstractResourceStream <|-- ZipResourceStream
+    class ZipResourceStream
+    {
+        --(constructors)--
+        +ZipResourceStream(File)
+        +ZipResourceStream(File, boolean)
+    }
+    
+@enduml
+

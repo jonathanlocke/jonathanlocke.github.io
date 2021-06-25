@@ -1,0 +1,52 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.captcha"
+    
+    abstract AbstractCaptchaForm
+    
+    GenericPanel <|-- AbstractCaptchaForm
+    abstract class AbstractCaptchaForm<T>
+    {
+        --(constructors)--
+        +AbstractCaptchaForm(String)
+        --
+        #CaptchaImageResource createCaptchaImageResource()
+    }
+    
+    AbstractCaptchaForm <|-- CageForm
+    class CageForm<T>
+    {
+        --(constructors)--
+        +CageForm(String)
+    }
+    
+    WicketExamplePage <|-- Captcha
+    class Captcha
+    {
+        --(constructors)--
+        +Captcha()
+    }
+    
+    WicketExampleApplication <|-- CaptchaApplication
+    class CaptchaApplication
+    {
+    }
+    
+    AbstractCaptchaForm <|-- CaptchaForm
+    class CaptchaForm<T>
+    {
+        --(constructors)--
+        +CaptchaForm(String)
+    }
+    
+    AbstractCaptchaForm <|-- KaptchaForm
+    class KaptchaForm<T>
+    {
+        --(constructors)--
+        +KaptchaForm(String)
+    }
+    
+@enduml
+

@@ -1,0 +1,34 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.media.video"
+    
+    MediaComponent <|-- Video
+    class Video
+    {
+        --(constructors)--
+        +Video(String)
+        +Video(String, IModel<?>)
+        +Video(String, IModel<?>, ResourceReference)
+        +Video(String, IModel<?>, ResourceReference, PageParameters)
+        +Video(String, IModel<?>, String)
+        +Video(String, IModel<?>, String, PageParameters)
+        +Video(String, ResourceReference)
+        +Video(String, ResourceReference, PageParameters)
+        +Video(String, String)
+        +Video(String, String, PageParameters)
+        --
+        +Integer getHeight()
+        +ResourceReference getPoster()
+        +PageParameters getPosterPageParameters()
+        +Integer getWidth()
+        +void setHeight(Integer height)
+        +void setPoster(ResourceReference poster, PageParameters posterPageParameters)
+        +void setPoster(ResourceReference poster)
+        +void setPosterPageParameters(PageParameters posterPageParameters)
+        +void setWidth(Integer width)
+    }
+    
+@enduml
+

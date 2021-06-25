@@ -1,0 +1,62 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.border"
+    
+    interface IQueueRegion
+    interface IComponentResolver
+    
+    WebMarkupContainer <|-- Body
+    class Body
+    {
+        --(constructors)--
+        +Body(String, MarkupContainer)
+        +Body(String, IModel<?>, MarkupContainer)
+    }
+    
+    WebMarkupContainer <|-- Border
+    IComponentResolver <|-- Border
+    IQueueRegion <|-- Border
+    abstract class Border
+    {
+        --(constructors)--
+        +Border(String)
+        +Border(String, IModel<?>)
+        --
+        +BorderBodyContainer getBodyContainer()
+        +Border queueToBorder(Component... children)
+        +Border replaceInBorder(Component)
+        --(collection)--
+        +Border addToBorder(Component... children)
+        +Border removeFromBorder(Component child)
+    }
+    
+    Behavior <|-- BorderBehavior
+    class BorderBehavior
+    {
+    }
+    
+    WebMarkupContainer <|-- Border.BorderBodyContainer
+    IQueueRegion <|-- Border.BorderBodyContainer
+    class Border.BorderBodyContainer
+    {
+        --(constructors)--
+        +BorderBodyContainer(String)
+    }
+    
+    Panel <|-- BorderPanel
+    abstract class BorderPanel
+    {
+        --(constructors)--
+        +BorderPanel(String)
+        +BorderPanel(String, IModel<?>)
+        --
+        +Body getBodyContainer()
+        +Body setBodyContainer(Body)
+        --(factory)--
+        +Body newBodyContainer(String id)
+    }
+    
+@enduml
+

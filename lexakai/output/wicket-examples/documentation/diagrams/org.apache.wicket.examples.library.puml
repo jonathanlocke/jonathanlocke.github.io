@@ -1,0 +1,126 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.library"
+    
+    interface IClusterable
+    
+    WicketExamplePage <|-- AuthenticatedWebPage
+    class AuthenticatedWebPage
+    {
+        --
+        +LibrarySession getLibrarySession()
+    }
+    
+    IClusterable <|-- Book
+    class Book
+    {
+        --(constructors)--
+        +Book(String, String, boolean)
+        --
+        +Book get(long id)
+        +String getAuthor()
+        +Collection<Book> getBooks()
+        +Book getCompanionBook()
+        +boolean getFiction()
+        +String getTitle()
+        +void setAuthor(String)
+        +void setCompanionBook(Book)
+        +void setFiction(boolean isFiction)
+        +void setRelatedBook(Book relatedBook)
+        +void setTitle(String)
+        +void setWritingStyles(List<WritingStyle> writingStyles)
+        --(collection)--
+        +List<WritingStyle> getWritingStyles()
+        --(functional)--
+        +Book getRelatedBook()
+        --(identity)--
+        +long getId()
+        +void setId(long id)
+    }
+    
+    AuthenticatedWebPage <|-- BookDetails
+    class BookDetails
+    {
+        --(constructors)--
+        +BookDetails(Book)
+        +BookDetails(PageParameters)
+        --
+        +BookmarkablePageLink<Void> link(String name, Book, String noBookTitle)
+    }
+    
+    AuthenticatedWebPage <|-- EditBook
+    class EditBook
+    {
+        --(constructors)--
+        +EditBook(Book)
+        --
+        +Link<Void> link(String name, long id)
+    }
+    
+    Form <|-- EditBook.EditBookForm
+    class EditBook.EditBookForm
+    {
+        --(constructors)--
+        +EditBookForm(String, Book)
+    }
+    
+    AuthenticatedWebPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home(PageParameters)
+        --(collection)--
+        +List<Book> getBooks()
+    }
+    
+    WicketExampleApplication <|-- LibraryApplication
+    class LibraryApplication
+    {
+    }
+    
+    AuthenticatedWebSession <|-- LibrarySession
+    class LibrarySession
+    {
+        --(constructors)--
+        #LibrarySession(Request)
+        --
+        +User getUser()
+        +void setUser(User)
+    }
+    
+    WicketExamplePage <|-- SignIn
+    class SignIn
+    {
+        --(constructors)--
+        +SignIn()
+        +SignIn(PageParameters)
+    }
+    
+    WicketExamplePage <|-- SignOut
+    class SignOut
+    {
+        --(constructors)--
+        +SignOut(PageParameters)
+    }
+    
+    IClusterable <|-- User
+    class User
+    {
+        --
+        +void setBooks(List<Book> books)
+        --(collection)--
+        +List<Book> getBooks()
+        --(naming)--
+        +String getName()
+        +void setName(String)
+    }
+    
+    EnumeratedType <|-- Book.WritingStyle
+    class Book.WritingStyle
+    {
+    }
+    
+@enduml
+

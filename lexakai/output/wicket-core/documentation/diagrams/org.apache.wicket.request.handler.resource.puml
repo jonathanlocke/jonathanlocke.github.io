@@ -1,0 +1,82 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.handler.resource"
+    
+    interface ILogData
+    interface IRequestHandler
+    interface ILoggableRequestHandler
+    
+    ILogData <|-- ResourceLogData
+    abstract class ResourceLogData
+    {
+        --(constructors)--
+        +ResourceLogData(String, Locale, String, String)
+        --
+        +String getLocale()
+        +String getStyle()
+        +String getVariation()
+        #void fillToString(StringBuilder sb)
+        --(naming)--
+        +String getName()
+    }
+    
+    IRequestHandler <|-- ResourceReferenceRequestHandler
+    ILoggableRequestHandler <|-- ResourceReferenceRequestHandler
+    class ResourceReferenceRequestHandler
+    {
+        --(constructors)--
+        +ResourceReferenceRequestHandler(ResourceReference)
+        +ResourceReferenceRequestHandler(ResourceReference, PageParameters)
+        --
+        +Locale getLocale()
+        +PageParameters getPageParameters()
+        +IResource getResource()
+        +ResourceReference getResourceReference()
+        +String getStyle()
+        +String getVariation()
+    }
+    
+    IRequestHandler <|-- ResourceRequestHandler
+    class ResourceRequestHandler
+    {
+        --(constructors)--
+        +ResourceRequestHandler(IResource, PageParameters)
+        --
+        +PageParameters getPageParameters()
+        +IResource getResource()
+    }
+    
+    IRequestHandler <|-- ResourceStreamRequestHandler
+    ILoggableRequestHandler <|-- ResourceStreamRequestHandler
+    class ResourceStreamRequestHandler
+    {
+        --(constructors)--
+        +ResourceStreamRequestHandler(IResourceStream)
+        +ResourceStreamRequestHandler(IResourceStream, String)
+        --
+        +ContentDisposition getContentDisposition()
+        +IResourceStream getResourceStream()
+        #void configure(ResourceStreamResource)
+        --(filesystem)--
+        +String getFileName()
+        --(messaging)--
+        +ResourceStreamRequestHandler setCacheDuration(Duration cacheDuration)
+        +ResourceStreamRequestHandler setContentDisposition(ContentDisposition)
+        +ResourceStreamRequestHandler setFileName(String fileName)
+        --(time)--
+        +Duration getCacheDuration()
+    }
+    
+    ResourceStreamRequestHandler <|-- WebExternalResourceRequestHandler
+    class WebExternalResourceRequestHandler
+    {
+        --(constructors)--
+        +WebExternalResourceRequestHandler(String)
+        --(network)--
+        +String getUrl()
+    }
+    
+@enduml
+

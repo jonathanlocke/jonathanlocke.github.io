@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization.strategies"
+    
+    interface IAuthorizationStrategy
+    
+    IAuthorizationStrategy <|-- CompoundAuthorizationStrategy
+    class CompoundAuthorizationStrategy
+    {
+        --(collection)--
+        +void add(IAuthorizationStrategy)
+    }
+    
+@enduml
+

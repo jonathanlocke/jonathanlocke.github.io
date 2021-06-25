@@ -1,0 +1,103 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-cdi"
+    
+    artifact openjson
+    artifact commons_codec
+    artifact commons_fileupload
+    artifact commons_io
+    artifact commons_logging
+    artifact classgraph
+    artifact jakarta_annotation_api
+    artifact jakarta_el_api
+    artifact jakarta_enterprise_cdi_api
+    artifact jakarta_inject_api
+    artifact jakarta_interceptor_api
+    artifact jakarta_servlet_api
+    artifact activation
+    artifact junit
+    artifact log4j
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact jcip_annotations
+    artifact commons_collections4
+    artifact deltaspike_core_api
+    artifact deltaspike_core_impl
+    artifact httpclient
+    artifact httpcore
+    artifact wicket_core
+    artifact wicket_request
+    artifact wicket_util
+    artifact apiguardian_api
+    artifact jdk_serializable_functional
+    artifact hamcrest_core
+    artifact javassist
+    artifact jboss_classfilewriter
+    artifact jboss_logging
+    artifact resteasy_jaxrs
+    artifact jboss_annotations_api_1_2_spec
+    artifact jboss_jaxrs_api_2_0_spec
+    artifact weld_environment_common
+    artifact weld_web
+    artifact weld_probe_core
+    artifact weld_se_core
+    artifact weld_api
+    artifact weld_core_impl
+    artifact weld_spi
+    artifact cdi_unit
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact junit_vintage_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    cdi_unit --> classgraph
+    cdi_unit --> deltaspike_core_impl
+    cdi_unit --> javassist
+    cdi_unit --> resteasy_jaxrs
+    deltaspike_core_impl --> deltaspike_core_api
+    httpclient --> commons_codec
+    httpclient --> commons_logging
+    httpclient --> httpcore
+    jakarta_enterprise_cdi_api --> jakarta_el_api
+    jakarta_enterprise_cdi_api --> jakarta_inject_api
+    jakarta_enterprise_cdi_api --> jakarta_interceptor_api
+    junit --> hamcrest_core
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    junit_vintage_engine --> apiguardian_api
+    junit_vintage_engine --> junit
+    junit_vintage_engine --> junit_platform_engine
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    resteasy_jaxrs --> activation
+    resteasy_jaxrs --> httpclient
+    resteasy_jaxrs --> jboss_annotations_api_1_2_spec
+    resteasy_jaxrs --> jboss_jaxrs_api_2_0_spec
+    resteasy_jaxrs --> jcip_annotations
+    slf4j_log4j12 --> log4j
+    weld_se_core --> jboss_classfilewriter
+    weld_se_core --> weld_environment_common
+    weld_se_core --> weld_probe_core
+    weld_web --> jboss_logging
+    weld_web --> weld_api
+    weld_web --> weld_core_impl
+    weld_web --> weld_spi
+    wicket_core --> jdk_serializable_functional
+    wicket_core --> openjson
+    wicket_core --> wicket_request
+    wicket_core --> wicket_util
+    wicket_util --> commons_collections4
+    wicket_util --> commons_fileupload
+    wicket_util --> commons_io
+    
+@enduml

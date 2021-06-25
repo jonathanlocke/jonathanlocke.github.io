@@ -1,0 +1,156 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.http.mock"
+    
+    interface HttpServletRequest
+    interface Serializable
+    interface IMetaDataBufferingWebResponse
+    interface HttpSession
+    interface HttpServletResponse
+    interface ServletContext
+    interface InvocationHandler
+    
+    class CookieCollection
+    {
+        --(collection)--
+        +void add(Cookie)
+        +void addAll(Cookie[] cookies)
+        +void addAll(List<Cookie> cookies)
+        +List<Cookie> allAsList()
+        +List<Cookie> asList()
+        +List<Cookie> expiredAsList()
+    }
+    
+    class Cookies
+    {
+        --(checks)--
+        +boolean isEqual(Cookie c1, Cookie c2)
+        +boolean isExpired(Cookie)
+        --(collection)--
+        +Key keyOf(Cookie)
+        --(filesystem)--
+        +Cookie copyOf(Cookie)
+    }
+    
+    Serializable <|-- Cookies.Key
+    class Cookies.Key
+    {
+        --(constructors)--
+        #Key(Cookie)
+    }
+    
+    HttpServletRequest <|-- MockHttpServletRequest
+    class MockHttpServletRequest
+    {
+        --(constructors)--
+        +MockHttpServletRequest(Application, HttpSession, ServletContext)
+        +MockHttpServletRequest(Application, HttpSession, ServletContext, Locale)
+        --
+        +Charset getCharset()
+        +Cookie getCookie(String name)
+        +MockRequestParameters getPostParameters()
+        +void setAuthType(String authType)
+        +void setCookies(Cookie[] theCookies)
+        +void setHeader(String name, String value)
+        +void setLocale(Locale)
+        +void setMethod(String method)
+        +void setParameter(String name, String value)
+        +void setParameters(Map<String,String[]> parameters)
+        +void setRemoteAddr(String addr)
+        +void setScheme(String scheme)
+        +void setSecure(boolean secure)
+        +void setURL(String url)
+        +void setUseMultiPartContentType(boolean useMultiPartContentType)
+        --(collection)--
+        +void addCookie(Cookie)
+        +void addCookies(Iterable<Cookie> cookies)
+        +void addDateHeader(String name, long date)
+        +void addFile(String fieldName, File, String contentType)
+        +void addHeader(String name, String value)
+        +void addParameter(String name, String value)
+        --(filesystem)--
+        +boolean hasUploadedFiles()
+        --(filtering)--
+        +String getFilterPrefix()
+        --(lifecycle)--
+        +void initialize(Locale)
+        --(naming)--
+        +void setServerName(String serverName)
+        --(network)--
+        +Url getUrl()
+        +MockHttpServletRequest setPart(String name, Part)
+        +void setServerPort(int port)
+        +void setUrl(Url)
+        --(path)--
+        +void setPath(String path)
+    }
+    
+    HttpServletResponse <|-- MockHttpServletResponse
+    IMetaDataBufferingWebResponse <|-- MockHttpServletResponse
+    class MockHttpServletResponse
+    {
+        --(constructors)--
+        +MockHttpServletResponse(MockHttpServletRequest)
+        --
+        +void append2digits(StringBuilder buf, int)
+        +void formatDate(StringBuilder buf, Calendar, boolean cookie)
+        +String formatDate(long)
+        +byte[] getBinaryContent()
+        +String getBinaryResponse()
+        +String getDocument()
+        +String getRedirectLocation()
+        --(checks)--
+        +boolean isRedirect()
+        --(collection)--
+        +List<Cookie> getCookies()
+        --(lifecycle)--
+        +void initialize()
+        --(status)--
+        +String getErrorMessage()
+        +boolean isError()
+    }
+    
+    HttpSession <|-- MockHttpSession
+    Serializable <|-- MockHttpSession
+    class MockHttpSession
+    {
+        --(constructors)--
+        +MockHttpSession(ServletContext)
+        --
+        +void setTemporary(boolean temporary)
+        +void timestamp()
+        --(checks)--
+        +boolean isTemporary()
+    }
+    
+    ServletContext <|-- MockServletContext
+    class MockServletContext
+    {
+        --(constructors)--
+        +MockServletContext(Application, String)
+        --(collection)--
+        +void addInitParameter(String name, String value)
+        +void addMimeType(String fileExtension, String mimeType)
+    }
+    
+    InvocationHandler <|-- MockServletContext.MockedServletRegistationHandler
+    class MockServletContext.MockedServletRegistationHandler
+    {
+        --(constructors)--
+        +MockedServletRegistationHandler(String)
+    }
+    
+    class MockHttpServletRequest.UploadedFile
+    {
+        --(constructors)--
+        +UploadedFile(String, File, String)
+        --
+        +String getContentType()
+        --(filesystem)--
+        +File getFile()
+    }
+    
+@enduml
+

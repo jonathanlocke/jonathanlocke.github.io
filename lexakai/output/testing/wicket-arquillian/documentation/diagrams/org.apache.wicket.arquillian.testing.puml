@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.arquillian.testing"
+    
+    WebApplication <|-- WicketJavaEEApplication
+    class WicketJavaEEApplication
+    {
+        --(lifecycle)--
+        #void initResourceFinder()
+    }
+    
+@enduml
+

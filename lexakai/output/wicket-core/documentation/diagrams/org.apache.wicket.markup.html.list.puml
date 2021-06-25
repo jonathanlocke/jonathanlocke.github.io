@@ -1,0 +1,128 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.list"
+    
+    abstract AbstractItem
+    abstract AbstractRepeater
+    
+    interface IModel
+    interface IPageableItems
+    interface IGenericComponent
+    
+    WebMarkupContainer <|-- AbstractItem
+    class AbstractItem
+    {
+        --(constructors)--
+        +AbstractItem(String)
+        +AbstractItem(String, IModel<?>)
+        +AbstractItem(long)
+        +AbstractItem(long, IModel<?>)
+    }
+    
+    LoopItem <|-- ListItem
+    IGenericComponent <|-- ListItem
+    class ListItem<T>
+    {
+        --(constructors)--
+        +ListItem(String, int)
+        +ListItem(String, int, IModel<T>)
+        +ListItem(int, IModel<T>)
+    }
+    
+    IModel <|-- ListItemModel
+    class ListItemModel<T>
+    {
+        --(constructors)--
+        +ListItemModel(ListView<T>, int)
+    }
+    
+    AbstractRepeater <|-- ListView
+    abstract class ListView<T>
+    {
+        --(constructors)--
+        +ListView(String)
+        +ListView(String, IModel<? extends List<T>>)
+        +ListView(String, List<T>)
+        --
+        +boolean getReuseItems()
+        +Link<Void> moveDownLink(String id, ListItem<T>)
+        +Link<Void> moveUpLink(String id, ListItem<T>)
+        +void setModel(IModel<? extends List<T>>)
+        +void setModelObject(List<T> object)
+        #void populateItem(ListItem<T>)
+        #void renderItem(ListItem<?>)
+        --(collection)--
+        +List<T> getList()
+        +IModel<? extends List<T>> getModel()
+        +List<T> getModelObject()
+        +int getStartIndex()
+        +int getViewSize()
+        +Link<Void> removeLink(String id, ListItem<T>)
+        +ListView<T> setList(List<T>)
+        +ListView<T> setReuseItems(boolean reuseItems)
+        +ListView<T> setStartIndex(int startIndex)
+        +ListView<T> setViewSize(int size)
+        #IModel<T> getListItemModel(IModel<? extends List<T>> listViewModel, int index)
+        #ListItem<T> newItem(int index, IModel<T> itemModel)
+        --(lifecycle)--
+        #void onBeginPopulateItem(ListItem<T>)
+    }
+    
+    AbstractRepeater <|-- Loop
+    abstract class Loop
+    {
+        --(constructors)--
+        +Loop(String, IModel<Integer>)
+        +Loop(String, int)
+        --
+        +int getIterations()
+        #void populateItem(LoopItem)
+        #void renderItem(LoopItem)
+        --(iteration)--
+        #LoopItem newItem(int iteration)
+    }
+    
+    AbstractItem <|-- LoopItem
+    class LoopItem
+    {
+        --(constructors)--
+        +LoopItem(String, int)
+        +LoopItem(String, int, IModel<?>)
+        +LoopItem(int)
+        +LoopItem(int, IModel<?>)
+        --(collection)--
+        +int getIndex()
+        +void setIndex(int index)
+    }
+    
+    ListItem <|-- OddEvenListItem
+    class OddEvenListItem<T>
+    {
+        --(constructors)--
+        +OddEvenListItem(int, IModel<T>)
+    }
+    
+    ListView <|-- PageableListView
+    IPageableItems <|-- PageableListView
+    abstract class PageableListView<T>
+    {
+        --(constructors)--
+        +PageableListView(String, IModel<? extends List<T>>, long)
+        +PageableListView(String, List<T>, long)
+        --(collection)--
+        +long getFirstItemOffset()
+    }
+    
+    ListView <|-- PropertyListView
+    abstract class PropertyListView<T>
+    {
+        --(constructors)--
+        +PropertyListView(String)
+        +PropertyListView(String, IModel<? extends List<T>>)
+        +PropertyListView(String, List<T>)
+    }
+    
+@enduml
+

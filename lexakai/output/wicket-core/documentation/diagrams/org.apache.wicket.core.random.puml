@@ -1,0 +1,26 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.random"
+    
+    interface ISecureRandomSupplier
+    
+    ISecureRandomSupplier <|-- DefaultSecureRandomSupplier
+    class DefaultSecureRandomSupplier
+    {
+        --(constructors)--
+        +DefaultSecureRandomSupplier()
+    }
+    
+    interface ISecureRandomSupplier
+    {
+        --
+        +SecureRandom getRandom()
+        +String getRandomBase64(int length)
+        --(primitive)--
+        +byte[] getRandomBytes(int length)
+    }
+    
+@enduml
+

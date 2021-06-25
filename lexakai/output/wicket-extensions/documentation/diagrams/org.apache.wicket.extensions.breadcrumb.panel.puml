@@ -1,0 +1,56 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.breadcrumb.panel"
+    
+    interface IBreadCrumbPanelFactory
+    interface IBreadCrumbParticipant
+    
+    Panel <|-- BreadCrumbPanel
+    IBreadCrumbParticipant <|-- BreadCrumbPanel
+    abstract class BreadCrumbPanel
+    {
+        --(constructors)--
+        +BreadCrumbPanel(String, IBreadCrumbModel)
+        +BreadCrumbPanel(String, IBreadCrumbModel, IModel<?>)
+        --
+        +void activate(IBreadCrumbPanelFactory)
+        +void activate(IBreadCrumbParticipant)
+        +IBreadCrumbModel getBreadCrumbModel()
+        +void setBreadCrumbModel(IBreadCrumbModel)
+    }
+    
+    IBreadCrumbPanelFactory <|-- BreadCrumbPanelFactory
+    class BreadCrumbPanelFactory
+    {
+        --(constructors)--
+        +BreadCrumbPanelFactory(Class<? extends BreadCrumbPanel>)
+    }
+    
+    BreadCrumbLink <|-- BreadCrumbPanelLink
+    class BreadCrumbPanelLink
+    {
+        --(constructors)--
+        +BreadCrumbPanelLink(String, BreadCrumbPanel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, IBreadCrumbPanelFactory)
+    }
+    
+    IBreadCrumbParticipant <|-- BreadCrumbParticipantDelegate
+    abstract class BreadCrumbParticipantDelegate
+    {
+        --(constructors)--
+        +BreadCrumbParticipantDelegate(Component)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IBreadCrumbPanelFactory
+    interface IBreadCrumbPanelFactory
+    {
+        --
+        +BreadCrumbPanel create(String componentId, IBreadCrumbModel)
+    }
+    
+@enduml
+

@@ -1,0 +1,19 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.head.internal"
+    
+    interface IHeaderResponse
+    
+    IHeaderResponse <|-- HeaderResponse
+    abstract class HeaderResponse
+    {
+        --
+        #Response getRealResponse()
+        #void markItemRendered(HeaderItem)
+        #boolean wasItemRendered(HeaderItem)
+    }
+    
+@enduml
+

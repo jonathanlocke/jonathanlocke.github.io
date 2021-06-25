@@ -1,0 +1,310 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.settings"
+    
+    interface IEventDispatcher
+    interface IUnauthorizedResourceRequestListener
+    interface IPropertiesFactoryContext
+    
+    enum ExceptionSettings.AjaxErrorStrategy
+    {
+        INVOKE_FAILURE_HANDLER
+        REDIRECT_TO_ERROR_PAGE
+    }
+    
+    class ApplicationSettings
+    {
+        --
+        +Class<? extends Page> getAccessDeniedPage()
+        +IClassResolver getClassResolver()
+        +ApplicationSettings setAccessDeniedPage(Class<? extends Page> accessDeniedPage)
+        +ApplicationSettings setClassResolver(IClassResolver defaultClassResolver)
+        --(checks)--
+        +boolean isUploadProgressUpdatesEnabled()
+        --(collection)--
+        +Bytes getDefaultMaximumUploadSize()
+        +ApplicationSettings setDefaultMaximumUploadSize(Bytes defaultMaximumUploadSize)
+        --(filtering)--
+        +IFeedbackMessageFilter getFeedbackMessageCleanupFilter()
+        +ApplicationSettings setFeedbackMessageCleanupFilter(IFeedbackMessageFilter)
+        --(functional)--
+        +ApplicationSettings setUploadProgressUpdatesEnabled(boolean uploadProgressUpdatesEnabled)
+        --(status)--
+        +Class<? extends Page> getInternalErrorPage()
+        +Class<? extends Page> getPageExpiredErrorPage()
+        +ApplicationSettings setInternalErrorPage(Class<? extends Page> internalErrorPage)
+        +ApplicationSettings setPageExpiredErrorPage(Class<? extends Page> pageExpiredErrorPage)
+    }
+    
+    class DebugSettings
+    {
+        --
+        +boolean getComponentUseCheck()
+        +DebugSettings setComponentUseCheck(boolean componentUseCheck)
+        --(checks)--
+        +boolean isAjaxDebugModeEnabled()
+        +boolean isDevelopmentUtilitiesEnabled()
+        +boolean isLinePreciseReportingOnAddComponentEnabled()
+        +boolean isLinePreciseReportingOnNewComponentEnabled()
+        +boolean isOutputMarkupContainerClassName()
+        --(functional)--
+        +DebugSettings setAjaxDebugModeEnabled(boolean enable)
+        +DebugSettings setDevelopmentUtilitiesEnabled(boolean enable)
+        +DebugSettings setLinePreciseReportingOnAddComponentEnabled(boolean enable)
+        +DebugSettings setLinePreciseReportingOnNewComponentEnabled(boolean enable)
+        --(naming)--
+        +String getComponentPathAttributeName()
+        +DebugSettings setComponentPathAttributeName(String componentPathAttributeName)
+        +DebugSettings setOutputMarkupContainerClassName(boolean enable)
+    }
+    
+    IUnauthorizedResourceRequestListener <|-- DefaultUnauthorizedResourceRequestListener
+    class DefaultUnauthorizedResourceRequestListener
+    {
+        --(status)--
+        #String createErrorMessage(IResource, PageParameters)
+    }
+    
+    class ExceptionSettings
+    {
+        --
+        +ThreadDumpStrategy getThreadDumpStrategy()
+        +UnexpectedExceptionDisplay getUnexpectedExceptionDisplay()
+        +ExceptionSettings setThreadDumpStrategy(ThreadDumpStrategy)
+        --(functional)--
+        +ExceptionSettings setUnexpectedExceptionDisplay(UnexpectedExceptionDisplay)
+        --(status)--
+        +AjaxErrorStrategy getAjaxErrorHandlingStrategy()
+        +NotRenderableErrorStrategy getNotRenderableErrorStrategy()
+        +ExceptionSettings setAjaxErrorHandlingStrategy(AjaxErrorStrategy errorHandlingStrategyDuringAjaxRequests)
+        +void setNotRenderableErrorStrategy(NotRenderableErrorStrategy)
+    }
+    
+    IEventDispatcher <|-- FrameworkSettings
+    class FrameworkSettings
+    {
+        --(constructors)--
+        +FrameworkSettings(Application)
+        --
+        +ISerializer getSerializer()
+        +FrameworkSettings setSerializer(ISerializer)
+        --(collection)--
+        +FrameworkSettings add(IEventDispatcher)
+        --(identity)--
+        +String getVersion()
+        --(messaging)--
+        +IDetachListener getDetachListener()
+        +FrameworkSettings setDetachListener(IDetachListener)
+    }
+    
+    class JavaScriptLibrarySettings
+    {
+        --
+        +ResourceReference getWicketAjaxReference()
+        +JavaScriptLibrarySettings setWicketAjaxReference(ResourceReference wicketAjaxReference)
+        --(search)--
+        +ResourceReference getJQueryReference()
+        +JavaScriptLibrarySettings setJQueryReference(ResourceReference jQueryReference)
+    }
+    
+    class MarkupSettings
+    {
+        --(constructors)--
+        +MarkupSettings()
+        --
+        +boolean getAutomaticLinking()
+        +boolean getCompressWhitespace()
+        +String getDefaultMarkupEncoding()
+        +boolean getStripComments()
+        +boolean getStripWicketTags()
+        +boolean getThrowExceptionOnMissingXmlDeclaration()
+        +MarkupSettings setAutomaticLinking(boolean automaticLinking)
+        +MarkupSettings setCompressWhitespace(boolean compressWhitespace)
+        +MarkupSettings setDefaultMarkupEncoding(String encoding)
+        +MarkupSettings setStripComments(boolean stripComments)
+        +MarkupSettings setStripWicketTags(boolean stripWicketTags)
+        +MarkupSettings setThrowExceptionOnMissingXmlDeclaration(boolean throwException)
+        --(factory)--
+        +MarkupFactory getMarkupFactory()
+        +MarkupSettings setMarkupFactory(MarkupFactory)
+        --(identity)--
+        +IMarkupIdGenerator getMarkupIdGenerator()
+        +MarkupSettings setMarkupIdGenerator(IMarkupIdGenerator)
+    }
+    
+    enum ExceptionSettings.NotRenderableErrorStrategy
+    {
+        LOG_WARNING
+        THROW_EXCEPTION
+    }
+    
+    class PageSettings
+    {
+        --
+        +boolean getRecreateBookmarkablePagesAfterExpiry()
+        +PageSettings setRecreateBookmarkablePagesAfterExpiry(boolean recreateBookmarkablePagesAfterExpiry)
+        --(collection)--
+        +PageSettings addComponentResolver(IComponentResolver)
+        +List<IComponentResolver> getComponentResolvers()
+        --(identity)--
+        +boolean getVersionPagesByDefault()
+        +PageSettings setVersionPagesByDefault(boolean pagesVersionedByDefault)
+        --(messaging)--
+        +boolean getCallListenerAfterExpiry()
+        +PageSettings setCallListenerAfterExpiry(boolean callAfterExpiry)
+    }
+    
+    enum RequestCycleSettings.RenderStrategy
+    {
+        ONE_PASS_RENDER
+        REDIRECT_TO_BUFFER
+        REDIRECT_TO_RENDER
+    }
+    
+    class RequestCycleSettings
+    {
+        --
+        +boolean getBufferResponse()
+        +RequestCycleSettings.RenderStrategy getRenderStrategy()
+        +String getResponseRequestEncoding()
+        +RequestCycleSettings setBufferResponse(boolean bufferResponse)
+        +RequestCycleSettings setRenderStrategy(RequestCycleSettings.RenderStrategy)
+        +RequestCycleSettings setResponseRequestEncoding(String encoding)
+        --(collection)--
+        +RequestCycleSettings addResponseFilter(IResponseFilter)
+        +int getExceptionRetryCount()
+        +List<IResponseFilter> getResponseFilters()
+        +RequestCycleSettings setExceptionRetryCount(int retries)
+        --(messaging)--
+        +boolean getGatherExtendedBrowserInfo()
+        +RequestCycleSettings setGatherExtendedBrowserInfo(boolean gatherExtendedBrowserInfo)
+        --(network)--
+        +Duration getTimeout()
+        +RequestCycleSettings setTimeout(Duration timeout)
+    }
+    
+    class RequestLoggerSettings
+    {
+        --(checks)--
+        +boolean isRequestLoggerEnabled()
+        --(collection)--
+        +boolean getRecordSessionSize()
+        +int getRequestsWindowSize()
+        +RequestLoggerSettings setRecordSessionSize(boolean record)
+        +RequestLoggerSettings setRequestsWindowSize(int size)
+        --(functional)--
+        +RequestLoggerSettings setRequestLoggerEnabled(boolean enable)
+    }
+    
+    IPropertiesFactoryContext <|-- ResourceSettings
+    class ResourceSettings
+    {
+        --(constructors)--
+        +ResourceSettings(Application)
+        --
+        +IResourceCachingStrategy getCachingStrategy()
+        +ICssCompressor getCssCompressor()
+        +Comparator<? super RecordedHeaderItem> getHeaderItemComparator()
+        +IJavaScriptCompressor getJavaScriptCompressor()
+        +IPackageResourceGuard getPackageResourceGuard()
+        +boolean getThrowExceptionOnMissingResource()
+        +boolean getUseDefaultOnMissingResource()
+        +boolean getUseMinifiedResources()
+        +ResourceSettings setCachingStrategy(IResourceCachingStrategy)
+        +ICssCompressor setCssCompressor(ICssCompressor)
+        +ResourceSettings setHeaderItemComparator(Comparator<? super RecordedHeaderItem> headerItemComparator)
+        +IJavaScriptCompressor setJavaScriptCompressor(IJavaScriptCompressor)
+        +ResourceSettings setLocalizer(Localizer)
+        +ResourceSettings setPackageResourceGuard(IPackageResourceGuard)
+        +ResourceSettings setResourceFinders(List<IResourceFinder> resourceFinders)
+        +ResourceSettings setResourceStreamLocator(IResourceStreamLocator)
+        +ResourceSettings setResourceWatcher(IModificationWatcher)
+        +ResourceSettings setThrowExceptionOnMissingResource(boolean throwExceptionOnMissingResource)
+        +ResourceSettings setUseDefaultOnMissingResource(boolean useDefaultOnMissingResource)
+        +ResourceSettings setUseMinifiedResources(boolean useMinifiedResources)
+        --(collection)--
+        +List<IResourceFinder> getResourceFinders()
+        +List<IStringResourceLoader> getStringResourceLoaders()
+        --(factory)--
+        +ResourceSettings addResourceFactory(String name, IResourceFactory)
+        +org.apache.wicket.resource.IPropertiesFactory getPropertiesFactory()
+        +IResourceFactory getResourceFactory(String name)
+        +ResourceSettings setPropertiesFactory(org.apache.wicket.resource.IPropertiesFactory)
+        --(filesystem)--
+        +IFileCleaner getFileCleaner()
+        +String getParentFolderPlaceholder()
+        +ResourceSettings setFileCleaner(IFileCleaner fileUploadCleaner)
+        +ResourceSettings setParentFolderPlaceholder(String sequence)
+        --(identity)--
+        +boolean isEncodeJSessionId()
+        +ResourceSettings setEncodeJSessionId(boolean encodeJSessionId)
+        --(time)--
+        +Duration getDefaultCacheDuration()
+        +Duration getResourcePollFrequency()
+        +ResourceSettings setDefaultCacheDuration(Duration)
+        +ResourceSettings setResourcePollFrequency(Duration resourcePollFrequency)
+    }
+    
+    class SecuritySettings
+    {
+        --
+        +IAuthenticationStrategy getAuthenticationStrategy()
+        +IAuthorizationStrategy getAuthorizationStrategy()
+        +boolean getEnforceMounts()
+        +ISecureRandomSupplier getRandomSupplier()
+        +SecuritySettings setAuthenticationStrategy(IAuthenticationStrategy)
+        +SecuritySettings setAuthorizationStrategy(IAuthorizationStrategy)
+        +SecuritySettings setEnforceMounts(boolean enforce)
+        +SecuritySettings setRandomSupplier(ISecureRandomSupplier)
+        --(configuration)--
+        +CrossOriginEmbedderPolicyConfiguration getCrossOriginEmbedderPolicyConfiguration()
+        +CrossOriginOpenerPolicyConfiguration getCrossOriginOpenerPolicyConfiguration()
+        +SecuritySettings setCrossOriginEmbedderPolicyConfiguration(CoepMode, String... exemptions)
+        +SecuritySettings setCrossOriginOpenerPolicyConfiguration(CoopMode, String... exemptions)
+        --(factory)--
+        +ICryptFactory getCryptFactory()
+        +SecuritySettings setCryptFactory(ICryptFactory)
+        --(functional)--
+        +IUnauthorizedComponentInstantiationListener getUnauthorizedComponentInstantiationListener()
+        +IUnauthorizedResourceRequestListener getUnauthorizedResourceRequestListener()
+        +SecuritySettings setUnauthorizedComponentInstantiationListener(IUnauthorizedComponentInstantiationListener)
+        +SecuritySettings setUnauthorizedResourceRequestListener(IUnauthorizedResourceRequestListener)
+    }
+    
+    class StoreSettings
+    {
+        --(constructors)--
+        +StoreSettings(Application)
+        --
+        +int getAsynchronousQueueCapacity()
+        +StoreSettings setAsynchronous(boolean async)
+        +StoreSettings setAsynchronousQueueCapacity(int queueCapacity)
+        --(checks)--
+        +boolean isAsynchronous()
+        +boolean isEncrypted()
+        --(collection)--
+        +Bytes getMaxSizePerSession()
+        +StoreSettings setMaxSizePerSession(Bytes maxSizePerSession)
+        --(filesystem)--
+        +File getFileStoreFolder()
+        +StoreSettings setFileStoreFolder(File fileStoreFolder)
+        --(functional)--
+        +StoreSettings setEncrypted(boolean encrypted)
+    }
+    
+    enum ExceptionSettings.ThreadDumpStrategy
+    {
+        ALL_THREADS
+        NO_THREADS
+        THREAD_HOLDING_LOCK
+    }
+    
+    EnumeratedType <|-- ExceptionSettings.UnexpectedExceptionDisplay
+    class ExceptionSettings.UnexpectedExceptionDisplay
+    {
+    }
+    
+@enduml
+

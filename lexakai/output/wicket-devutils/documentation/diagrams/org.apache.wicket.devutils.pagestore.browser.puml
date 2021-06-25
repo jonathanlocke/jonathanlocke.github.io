@@ -1,0 +1,34 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils.pagestore.browser"
+    
+    interface Comparator
+    
+    SortableDataProvider <|-- PersistedPagesProvider
+    class PersistedPagesProvider
+    {
+    }
+    
+    GenericPanel <|-- PersistedPanel
+    class PersistedPanel
+    {
+        --(constructors)--
+        +PersistedPanel(String, IModel<IPersistentPageStore>)
+    }
+    
+    LoadableDetachableModel <|-- SessionIdentifiersModel
+    class SessionIdentifiersModel
+    {
+        --(constructors)--
+        +SessionIdentifiersModel(IModel<IPersistentPageStore>)
+    }
+    
+    Comparator <|-- PersistedPagesProvider.SortComparator
+    class PersistedPagesProvider.SortComparator
+    {
+    }
+    
+@enduml
+

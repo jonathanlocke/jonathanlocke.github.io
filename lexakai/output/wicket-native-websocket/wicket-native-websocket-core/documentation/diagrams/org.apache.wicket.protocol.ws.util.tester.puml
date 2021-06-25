@@ -1,0 +1,50 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.util.tester"
+    
+    abstract AbstractWebSocketProcessor
+    
+    interface IWebSocketConnection
+    
+    IWebSocketConnection <|-- TestWebSocketConnection
+    abstract class TestWebSocketConnection
+    {
+        --(constructors)--
+        +TestWebSocketConnection(WebApplication, String, IKey)
+        --(messaging)--
+        #void onOutMessage(byte[] message, int offset, int length)
+        #void onOutMessage(String message)
+    }
+    
+    AbstractWebSocketProcessor <|-- TestWebSocketProcessor
+    abstract class TestWebSocketProcessor
+    {
+        --(constructors)--
+        +TestWebSocketProcessor(HttpServletRequest, WebApplication)
+        +TestWebSocketProcessor(WicketTester, Page)
+        +TestWebSocketProcessor(WicketTester, String)
+        --(messaging)--
+        #void onOutMessage(byte[] message, int offset, int length)
+        #void onOutMessage(String message)
+    }
+    
+    class WebSocketTester
+    {
+        --(constructors)--
+        +WebSocketTester(WicketTester, Page)
+        +WebSocketTester(WicketTester, String)
+        --
+        +void destroy()
+        --(messaging)--
+        +void broadcast(Application, String sessionId, IKey, IWebSocketPushMessage)
+        +void broadcastAll(Application, IWebSocketPushMessage)
+        +void sendMessage(byte[] message, int offset, int length)
+        +void sendMessage(String message)
+        #void onOutMessage(byte[] message, int offset, int length)
+        #void onOutMessage(String message)
+    }
+    
+@enduml
+

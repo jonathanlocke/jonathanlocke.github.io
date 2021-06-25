@@ -1,0 +1,89 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.form.validation"
+    
+    abstract AbstractFormValidator
+    
+    interface IFormValidator
+    interface IFeedback
+    
+    Behavior <|-- AbstractFormValidator
+    IFormValidator <|-- AbstractFormValidator
+    abstract class AbstractFormValidator
+    {
+        --(collection)--
+        #String resourceKey()
+        #Map<String,Object> variablesMap()
+        --(status)--
+        +void error(FormComponent<?> fc)
+        +void error(FormComponent<?> fc, String resourceKey)
+        +void error(FormComponent<?> fc, Map<String,Object> vars)
+        +void error(FormComponent<?> fc, String resourceKey, Map<String,Object> vars)
+    }
+    
+    AbstractFormValidator <|-- EqualInputValidator
+    class EqualInputValidator
+    {
+        --(constructors)--
+        +EqualInputValidator(FormComponent<?>, FormComponent<?>)
+    }
+    
+    EqualInputValidator <|-- EqualPasswordInputValidator
+    class EqualPasswordInputValidator
+    {
+        --(constructors)--
+        +EqualPasswordInputValidator(FormComponent<?>, FormComponent<?>)
+    }
+    
+    WebMarkupContainer <|-- FormComponentFeedbackBorder.ErrorIndicator
+    class FormComponentFeedbackBorder.ErrorIndicator
+    {
+        --(constructors)--
+        +ErrorIndicator(String)
+    }
+    
+    Border <|-- FormComponentFeedbackBorder
+    IFeedback <|-- FormComponentFeedbackBorder
+    class FormComponentFeedbackBorder
+    {
+        --(constructors)--
+        +FormComponentFeedbackBorder(String)
+        --(filtering)--
+        #IFeedbackMessageFilter getMessagesFilter()
+    }
+    
+    Panel <|-- FormComponentFeedbackIndicator
+    IFeedback <|-- FormComponentFeedbackIndicator
+    class FormComponentFeedbackIndicator
+    {
+        --(constructors)--
+        +FormComponentFeedbackIndicator(String)
+        --
+        +void setIndicatorFor(Component)
+        --(filtering)--
+        #IFeedbackMessageFilter getFeedbackMessageFilter()
+    }
+    
+    Behavior <|-- FormValidatorAdapter
+    IFormValidator <|-- FormValidatorAdapter
+    class FormValidatorAdapter
+    {
+        --(constructors)--
+        +FormValidatorAdapter(IFormValidator)
+        --
+        +IFormValidator getValidator()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IFormValidator
+    interface IFormValidator
+    {
+        --
+        +FormComponent<?>[] getDependentFormComponents()
+        +void validate(Form<?>)
+    }
+    
+@enduml
+

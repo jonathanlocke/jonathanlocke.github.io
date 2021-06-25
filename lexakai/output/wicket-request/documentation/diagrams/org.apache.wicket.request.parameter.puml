@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.parameter"
+    
+    interface IRequestParameters
+    
+    IRequestParameters <|-- CombinedRequestParametersAdapter
+    class CombinedRequestParametersAdapter
+    {
+        --(constructors)--
+        +CombinedRequestParametersAdapter(IRequestParameters)
+    }
+    
+    IRequestParameters <|-- EmptyRequestParameters
+    class EmptyRequestParameters
+    {
+    }
+    
+    IRequestParameters <|-- UrlRequestParametersAdapter
+    class UrlRequestParametersAdapter
+    {
+        --(constructors)--
+        +UrlRequestParametersAdapter(Url)
+    }
+    
+@enduml
+

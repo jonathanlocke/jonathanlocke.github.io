@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="898.9583px" preserveAspectRatio="none" style="width:1928px;height:898px;background:#333333;" version="1.1" viewBox="0 0 1928 898" width="1928.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="351.0417" x="781.25" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="328.125" x="792.7083" y="30.5583">org.apache.wicket.examples.tree</text><!--MD5=[a804f9ff9c9bbcb863c623005b497fed]
+cluster FooProvider--><polygon fill="#333333" points="1287.5,273.4945,1377.0833,273.4945,1384.375,300.7161,1473.9583,300.7161,1473.9583,430.7861,1287.5,430.7861,1287.5,273.4945" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="1287.5" x2="1384.375" y1="300.7161" y2="300.7161"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="1294.7917" y="290.7878">FooProvider</text><!--MD5=[e7eb12400ce40cd74daa7c6a84631955]
+class FooProvider.FooModel--><rect codeLine="75" fill="#282828" height="83.3781" id="FooProvider.FooModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1332.8125" y="322.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1332.8125" y="322.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1332.8125" y="345.5078"/><rect codeLine="75" fill="none" height="83.3781" id="FooProvider.FooModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1332.8125" y="322.4528"/><ellipse cx="1353.9583" cy="338.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1355.8687,342.572 Q1355.4415,342.7917 1354.9715,342.9016 Q1354.5015,343.0115 1353.9827,343.0115 Q1352.1395,343.0115 1351.169,341.7969 Q1350.1986,340.5823 1350.1986,338.2874 Q1350.1986,335.9863 1351.169,334.7717 Q1352.1395,333.5571 1353.9827,333.5571 Q1354.5015,333.5571 1354.9776,333.667 Q1355.4537,333.7769 1355.8687,333.9966 L1355.8687,335.9985 Q1355.4049,335.5713 1354.9685,335.3729 Q1354.5321,335.1746 1354.0682,335.1746 Q1353.0794,335.1746 1352.5759,335.9589 Q1352.0723,336.7432 1352.0723,338.2874 Q1352.0723,339.8254 1352.5759,340.6097 Q1353.0794,341.394 1354.0682,341.394 Q1354.5321,341.394 1354.9685,341.1957 Q1355.4049,340.9973 1355.8687,340.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="63.5417" x="1372.0833" y="342.8711">FooModel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1333.8542" x2="1447.3958" y1="353.8411" y2="353.8411"/><ellipse cx="1344.2708" cy="389.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="1355.7292" y="396.1222">FooModel(Foo)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1333.8542" x2="1346.875" y1="372.0469" y2="372.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1350" y="375.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1434.375" x2="1447.3958" y1="372.0469" y2="372.0469"/><!--MD5=[ea1f4759d969a015c83fd0a20c5ec8d9]
+class AbstractTreePage--><rect codeLine="14" fill="#282828" height="48.055" id="AbstractTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="315.625" y="340.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="315.625" y="340.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="315.625" y="363.2161"/><rect codeLine="14" fill="none" height="48.055" id="AbstractTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="315.625" y="340.1611"/><ellipse cx="330.2083" cy="355.8553" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M329.8014,352.5574 L328.953,356.2866 L330.6559,356.2866 Z M328.7028,350.9094 L330.9062,350.9094 L333.3659,360.022 L331.5653,360.022 L331.0038,357.7698 L328.5929,357.7698 L328.0436,360.022 L326.2431,360.022 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="112.5" x="346.875" y="360.5794">AbstractTreePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="316.6667" x2="464.5833" y1="371.5495" y2="371.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="316.6667" x2="464.5833" y1="379.8828" y2="379.8828"/><!--MD5=[cc3de0a176daa3c4ec875deafdf5ddd1]
+class Serializable--><rect codeLine="8" fill="#282828" height="48.055" id="Serializable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="111.4583" x="597.3958" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="111.4583" x="597.3958" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="111.4583" x="597.3958" y="76.7578"/><rect codeLine="8" fill="none" height="48.055" id="Serializable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="111.4583" x="597.3958" y="53.7028"/><ellipse cx="611.9792" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M609.3831,66.5588 L609.3831,64.9719 L614.8092,64.9719 L614.8092,66.5588 L612.9964,66.5588 L612.9964,72.4976 L614.8092,72.4976 L614.8092,74.0845 L609.3831,74.0845 L609.3831,72.4976 L611.1959,72.4976 L611.1959,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="73.9583" x="628.6458" y="74.1211">Serializable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="598.4375" x2="707.8125" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="598.4375" x2="707.8125" y1="93.4245" y2="93.4245"/><!--MD5=[6ba6ebbfde90f18b91d79409d3fac0bd]
+class IModel--><rect codeLine="9" fill="#282828" height="48.055" id="IModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="969.7917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="969.7917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="969.7917" y="76.7578"/><rect codeLine="9" fill="none" height="48.055" id="IModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="969.7917" y="53.7028"/><ellipse cx="984.375" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M981.779,66.5588 L981.779,64.9719 L987.205,64.9719 L987.205,66.5588 L985.3923,66.5588 L985.3923,72.4976 L987.205,72.4976 L987.205,74.0845 L981.779,74.0845 L981.779,72.4976 L983.5917,72.4976 L983.5917,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="43.75" x="1001.0417" y="74.1211">IModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="970.8333" x2="1050" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="970.8333" x2="1050" y1="93.4245" y2="93.4245"/><!--MD5=[73145e46247802284b2f7aaef1fa1797]
+class Set--><rect codeLine="10" fill="#282828" height="48.055" id="Set" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="57.2917" x="791.1458" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="57.2917" x="791.1458" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="57.2917" x="791.1458" y="76.7578"/><rect codeLine="10" fill="none" height="48.055" id="Set" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="57.2917" x="791.1458" y="53.7028"/><ellipse cx="805.7292" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M803.1331,66.5588 L803.1331,64.9719 L808.5592,64.9719 L808.5592,66.5588 L806.7464,66.5588 L806.7464,72.4976 L808.5592,72.4976 L808.5592,74.0845 L803.1331,74.0845 L803.1331,72.4976 L804.9459,72.4976 L804.9459,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="822.3958" y="74.1211">Set</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="792.1875" x2="847.3958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="792.1875" x2="847.3958" y1="93.4245" y2="93.4245"/><!--MD5=[d0544bceff2b2110b3cbf0bde36d565f]
+class ITreeProvider--><rect codeLine="11" fill="#282828" height="48.055" id="ITreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="122.9167" x="1127.0833" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="122.9167" x="1127.0833" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="122.9167" x="1127.0833" y="76.7578"/><rect codeLine="11" fill="none" height="48.055" id="ITreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="122.9167" x="1127.0833" y="53.7028"/><ellipse cx="1141.6667" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1139.0706,66.5588 L1139.0706,64.9719 L1144.4967,64.9719 L1144.4967,66.5588 L1142.6839,66.5588 L1142.6839,72.4976 L1144.4967,72.4976 L1144.4967,74.0845 L1139.0706,74.0845 L1139.0706,72.4976 L1140.8834,72.4976 L1140.8834,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="85.4167" x="1158.3333" y="74.1211">ITreeProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1128.125" x2="1248.9583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1128.125" x2="1248.9583" y1="93.4245" y2="93.4245"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="308.3333" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="308.3333" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="308.3333" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="308.3333" y="53.7028"/><ellipse cx="322.9167" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M324.8271,73.822 Q324.3998,74.0417 323.9299,74.1516 Q323.4599,74.2615 322.9411,74.2615 Q321.0978,74.2615 320.1274,73.0469 Q319.1569,71.8323 319.1569,69.5374 Q319.1569,67.2363 320.1274,66.0217 Q321.0978,64.8071 322.9411,64.8071 Q323.4599,64.8071 323.936,64.917 Q324.412,65.0269 324.8271,65.2466 L324.8271,67.2485 Q324.3632,66.8213 323.9268,66.6229 Q323.4904,66.4246 323.0265,66.4246 Q322.0378,66.4246 321.5342,67.2089 Q321.0307,67.9932 321.0307,69.5374 Q321.0307,71.0754 321.5342,71.8597 Q322.0378,72.644 323.0265,72.644 Q323.4904,72.644 323.9268,72.4457 Q324.3632,72.2473 324.8271,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="339.5833" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="309.375" x2="471.875" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="309.375" x2="471.875" y1="93.4245" y2="93.4245"/><!--MD5=[2c8b748f45ad0f5f5903a0b61dbc151d]
+class AdvancedTreePage--><rect codeLine="19" fill="#282828" height="155.1127" id="AdvancedTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="431.25" x="9.375" y="626.6195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="431.25" x="9.375" y="626.6195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="431.25" x="9.375" y="649.6745"/><rect codeLine="19" fill="none" height="155.1127" id="AdvancedTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="431.25" x="9.375" y="626.6195"/><ellipse cx="157.2917" cy="642.3136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M156.8848,639.0157 L156.0364,642.745 L157.7393,642.745 Z M155.7861,637.3678 L157.9895,637.3678 L160.4492,646.4803 L158.6487,646.4803 L158.0872,644.2281 L155.6763,644.2281 L155.127,646.4803 L153.3264,646.4803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="120.8333" x="180.2083" y="647.0378">AdvancedTreePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="439.5833" y1="658.0078" y2="658.0078"/><ellipse cx="20.8333" cy="693.3777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="32.2917" y="700.2889">AdvancedTreePage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="181.25" y1="676.2136" y2="676.2136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="184.375" y="680.0232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="268.75" x2="439.5833" y1="676.2136" y2="676.2136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="439.5833" y1="709.9976" y2="709.9976"/><polygon fill="#FFFF44" points="20.8333,716.2476,25,720.4142,20.8333,724.5809,16.6667,720.4142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="398.9583" x="32.2917" y="728.3671">AbstractTree&lt;Foo&gt; createTree(FooProvider, IModel&lt;Set&lt;Foo&gt;&gt; state)</text><polygon fill="#FFFF44" points="20.8333,759.904,25,764.0706,20.8333,768.2373,16.6667,764.0706" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="338.5417" x="32.2917" y="772.0235">Component newContentComponent(String id, IModel&lt;Foo&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="197.9167" y1="747.9482" y2="747.9482"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="201.0417" y="751.7578">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="252.0833" x2="439.5833" y1="747.9482" y2="747.9482"/><!--MD5=[6dee01fe90575cd26f326a020c5b3216]
+class BeginnersTreePage--><rect codeLine="30" fill="#282828" height="83.3781" id="BeginnersTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="477.0833" y="662.557"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="477.0833" y="662.557"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="477.0833" y="685.612"/><rect codeLine="30" fill="none" height="83.3781" id="BeginnersTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="477.0833" y="662.557"/><ellipse cx="491.6667" cy="678.2511" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M493.5771,682.6762 Q493.1498,682.8959 492.6799,683.0058 Q492.2099,683.1156 491.6911,683.1156 Q489.8478,683.1156 488.8774,681.901 Q487.9069,680.6864 487.9069,678.3915 Q487.9069,676.0905 488.8774,674.8759 Q489.8478,673.6613 491.6911,673.6613 Q492.2099,673.6613 492.686,673.7712 Q493.162,673.881 493.5771,674.1007 L493.5771,676.1027 Q493.1132,675.6755 492.6768,675.4771 Q492.2404,675.2787 491.7765,675.2787 Q490.7878,675.2787 490.2842,676.063 Q489.7807,676.8473 489.7807,678.3915 Q489.7807,679.9296 490.2842,680.7139 Q490.7878,681.4982 491.7765,681.4982 Q492.2404,681.4982 492.6768,681.2998 Q493.1132,681.1015 493.5771,680.6742 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="508.3333" y="682.9753">BeginnersTreePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="478.125" x2="636.4583" y1="693.9453" y2="693.9453"/><ellipse cx="488.5417" cy="729.3152" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="500" y="736.2264">BeginnersTreePage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="478.125" x2="513.5417" y1="712.1511" y2="712.1511"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="516.6667" y="715.9607">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="601.0417" x2="636.4583" y1="712.1511" y2="712.1511"/><!--MD5=[d10371c429a20e8e62c953c705282488]
+class Foo--><rect codeLine="37" fill="#282828" height="400.3845" id="Foo" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="502.0833" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="502.0833" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="502.0833" y="187.1745"/><rect codeLine="37" fill="none" height="400.3845" id="Foo" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="502.0833" y="164.1195"/><ellipse cx="588.0208" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M589.9312,184.2387 Q589.504,184.4584 589.034,184.5683 Q588.564,184.6781 588.0452,184.6781 Q586.202,184.6781 585.2315,183.4635 Q584.2611,182.2489 584.2611,179.954 Q584.2611,177.653 585.2315,176.4384 Q586.202,175.2238 588.0452,175.2238 Q588.564,175.2238 589.0401,175.3337 Q589.5162,175.4435 589.9312,175.6632 L589.9312,177.6652 Q589.4674,177.238 589.031,177.0396 Q588.5946,176.8412 588.1307,176.8412 Q587.1419,176.8412 586.6384,177.6255 Q586.1348,178.4098 586.1348,179.954 Q586.1348,181.4921 586.6384,182.2764 Q587.1419,183.0607 588.1307,183.0607 Q588.5946,183.0607 589.031,182.8623 Q589.4674,182.664 589.9312,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="23.9583" x="610.9375" y="184.5378">Foo</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="503.125" x2="711.4583" y1="195.5078" y2="195.5078"/><ellipse cx="513.5417" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="89.5833" x="525" y="237.7889">Foo(Foo, String)</text><ellipse cx="513.5417" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="525" y="257.5338">Foo(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="503.125" x2="563.5417" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="566.6667" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="651.0417" x2="711.4583" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="503.125" x2="711.4583" y1="267.2424" y2="267.2424"/><ellipse cx="513.5417" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="80.2083" x="525" y="285.612">String getBar()</text><ellipse cx="513.5417" cy="298.4456" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="525" y="305.3569">String getBaz()</text><ellipse cx="513.5417" cy="318.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="525" y="325.1017">Foo getParent()</text><ellipse cx="513.5417" cy="337.9354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="105.2083" x="525" y="344.8466">boolean getQuux()</text><ellipse cx="513.5417" cy="357.6803" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="525" y="364.5915">void setBar(String bar)</text><ellipse cx="513.5417" cy="377.4251" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="525" y="384.3363">void setBaz(String baz)</text><ellipse cx="513.5417" cy="397.17" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="525" y="404.0812">void setLoaded(boolean loaded)</text><ellipse cx="513.5417" cy="416.9149" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="525" y="423.8261">void setQuux(boolean quux)</text><ellipse cx="513.5417" cy="460.5713" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="106.25" x="525" y="467.4825">boolean isLoaded()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="503.125" x2="580.7292" y1="443.4072" y2="443.4072"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="583.8542" y="447.2168">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="633.8542" x2="711.4583" y1="443.4072" y2="443.4072"/><ellipse cx="513.5417" cy="504.2277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="525" y="511.1389">List&lt;Foo&gt; getFoos()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="503.125" x2="572.9167" y1="487.0636" y2="487.0636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="576.0417" y="490.8732">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="641.6667" x2="711.4583" y1="487.0636" y2="487.0636"/><ellipse cx="513.5417" cy="547.8841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="525" y="554.7953">String getId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="503.125" x2="579.1667" y1="530.72" y2="530.72"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="582.2917" y="534.5296">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="635.4167" x2="711.4583" y1="530.72" y2="530.72"/><!--MD5=[b7fa740772287082feb7ff1a64e0752e]
+class FooExpansion--><rect codeLine="61" fill="#282828" height="107.2896" id="FooExpansion" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="140.625" x="749.4792" y="310.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="140.625" x="749.4792" y="310.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="140.625" x="749.4792" y="333.5286"/><rect codeLine="61" fill="none" height="107.2896" id="FooExpansion" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="140.625" x="749.4792" y="310.4736"/><ellipse cx="769.6875" cy="326.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M771.5979,330.5929 Q771.1707,330.8126 770.7007,330.9224 Q770.2307,331.0323 769.7119,331.0323 Q767.8687,331.0323 766.8982,329.8177 Q765.9277,328.6031 765.9277,326.3082 Q765.9277,324.0072 766.8982,322.7926 Q767.8687,321.578 769.7119,321.578 Q770.2307,321.578 770.7068,321.6878 Q771.1829,321.7977 771.5979,322.0174 L771.5979,324.0194 Q771.134,323.5921 770.6976,323.3938 Q770.2612,323.1954 769.7974,323.1954 Q768.8086,323.1954 768.3051,323.9797 Q767.8015,324.764 767.8015,326.3082 Q767.8015,327.8463 768.3051,328.6306 Q768.8086,329.4149 769.7974,329.4149 Q770.2612,329.4149 770.6976,329.2165 Q771.134,329.0181 771.5979,328.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="787.6042" y="330.8919">FooExpansion</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="750.5208" x2="889.0625" y1="341.862" y2="341.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="750.5208" x2="889.0625" y1="350.1953" y2="350.1953"/><ellipse cx="760.9375" cy="361.6536" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="772.3958" y="368.5649">void collapseAll()</text><ellipse cx="760.9375" cy="381.3985" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="772.3958" y="388.3097">void expandAll()</text><ellipse cx="760.9375" cy="401.1434" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="108.3333" x="772.3958" y="408.0546">FooExpansion get()</text><!--MD5=[951278cfe7aea97da2549eb18c1d0115]
+class AdvancedTreePage.FooExpansionModel--><rect codeLine="70" fill="#282828" height="48.055" id="AdvancedTreePage.FooExpansionModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="926.5625" y="340.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="926.5625" y="340.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="926.5625" y="363.2161"/><rect codeLine="70" fill="none" height="48.055" id="AdvancedTreePage.FooExpansionModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="926.5625" y="340.1611"/><ellipse cx="941.1458" cy="355.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M943.0562,360.2804 Q942.629,360.5001 942.159,360.6099 Q941.689,360.7198 941.1702,360.7198 Q939.327,360.7198 938.3565,359.5052 Q937.3861,358.2906 937.3861,355.9957 Q937.3861,353.6947 938.3565,352.4801 Q939.327,351.2655 941.1702,351.2655 Q941.689,351.2655 942.1651,351.3753 Q942.6412,351.4852 943.0562,351.7049 L943.0562,353.7069 Q942.5924,353.2796 942.156,353.0813 Q941.7196,352.8829 941.2557,352.8829 Q940.2669,352.8829 939.7634,353.6672 Q939.2598,354.4515 939.2598,355.9957 Q939.2598,357.5338 939.7634,358.3181 Q940.2669,359.1024 941.2557,359.1024 Q941.7196,359.1024 942.156,358.904 Q942.5924,358.7056 943.0562,358.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="130.2083" x="957.8125" y="360.5794">FooExpansionModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="927.6042" x2="1093.2292" y1="371.5495" y2="371.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="927.6042" x2="1093.2292" y1="379.8828" y2="379.8828"/><!--MD5=[af80e25d1d74a9b89426ee81519c936e]
+class LoadableDetachableModel--><rect fill="#282828" height="48.055" id="LoadableDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="1286.9792" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="1286.9792" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="1286.9792" y="76.7578"/><rect fill="none" height="48.055" id="LoadableDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="1286.9792" y="53.7028"/><ellipse cx="1301.5625" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1303.4729,73.822 Q1303.0457,74.0417 1302.5757,74.1516 Q1302.1057,74.2615 1301.5869,74.2615 Q1299.7437,74.2615 1298.7732,73.0469 Q1297.8027,71.8323 1297.8027,69.5374 Q1297.8027,67.2363 1298.7732,66.0217 Q1299.7437,64.8071 1301.5869,64.8071 Q1302.1057,64.8071 1302.5818,64.917 Q1303.0579,65.0269 1303.4729,65.2466 L1303.4729,67.2485 Q1303.009,66.8213 1302.5726,66.6229 Q1302.1362,66.4246 1301.6724,66.4246 Q1300.6836,66.4246 1300.1801,67.2089 Q1299.6765,67.9932 1299.6765,69.5374 Q1299.6765,71.0754 1300.1801,71.8597 Q1300.6836,72.644 1301.6724,72.644 Q1302.1362,72.644 1302.5726,72.4457 Q1303.009,72.2473 1303.4729,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="169.7917" x="1318.2292" y="74.1211">LoadableDetachableModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1288.0208" x2="1493.2292" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1288.0208" x2="1493.2292" y1="93.4245" y2="93.4245"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="1566.1458" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="1566.1458" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="1566.1458" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="1566.1458" y="53.7028"/><ellipse cx="1580.7292" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1582.6396,73.822 Q1582.2123,74.0417 1581.7424,74.1516 Q1581.2724,74.2615 1580.7536,74.2615 Q1578.9103,74.2615 1577.9399,73.0469 Q1576.9694,71.8323 1576.9694,69.5374 Q1576.9694,67.2363 1577.9399,66.0217 Q1578.9103,64.8071 1580.7536,64.8071 Q1581.2724,64.8071 1581.7485,64.917 Q1582.2245,65.0269 1582.6396,65.2466 L1582.6396,67.2485 Q1582.1757,66.8213 1581.7393,66.6229 Q1581.3029,66.4246 1580.839,66.4246 Q1579.8503,66.4246 1579.3467,67.2089 Q1578.8432,67.9932 1578.8432,69.5374 Q1578.8432,71.0754 1579.3467,71.8597 Q1579.8503,72.644 1580.839,72.644 Q1581.3029,72.644 1581.7393,72.4457 Q1582.1757,72.2473 1582.6396,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="1597.3958" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1567.1875" x2="1636.9792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1567.1875" x2="1636.9792" y1="93.4245" y2="93.4245"/><!--MD5=[1d5b9aafe9f2e4738dd9e484293c1f02]
+class FooPanel--><rect codeLine="82" fill="#282828" height="83.3781" id="FooPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="206.25" x="1498.9583" y="322.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="206.25" x="1498.9583" y="322.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="206.25" x="1498.9583" y="345.5078"/><rect codeLine="82" fill="none" height="83.3781" id="FooPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="206.25" x="1498.9583" y="322.4528"/><ellipse cx="1565.625" cy="338.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1567.5354,342.572 Q1567.1082,342.7917 1566.6382,342.9016 Q1566.1682,343.0115 1565.6494,343.0115 Q1563.8062,343.0115 1562.8357,341.7969 Q1561.8652,340.5823 1561.8652,338.2874 Q1561.8652,335.9863 1562.8357,334.7717 Q1563.8062,333.5571 1565.6494,333.5571 Q1566.1682,333.5571 1566.6443,333.667 Q1567.1204,333.7769 1567.5354,333.9966 L1567.5354,335.9985 Q1567.0715,335.5713 1566.6351,335.3729 Q1566.1987,335.1746 1565.7349,335.1746 Q1564.7461,335.1746 1564.2426,335.9589 Q1563.739,336.7432 1563.739,338.2874 Q1563.739,339.8254 1564.2426,340.6097 Q1564.7461,341.394 1565.7349,341.394 Q1566.1987,341.394 1566.6351,341.1957 Q1567.0715,340.9973 1567.5354,340.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="58.3333" x="1588.5417" y="342.8711">FooPanel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1500" x2="1704.1667" y1="353.8411" y2="353.8411"/><ellipse cx="1510.4167" cy="389.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="173.9583" x="1521.875" y="396.1222">FooPanel(String, IModel&lt;Foo&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1500" x2="1558.3333" y1="372.0469" y2="372.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1561.4583" y="375.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1645.8333" x2="1704.1667" y1="372.0469" y2="372.0469"/><!--MD5=[3e522ee04a813b2abbaab45035d2fe5f]
+class FooProvider--><rect codeLine="89" fill="#282828" height="83.3781" id="FooProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="114.5833" x="1131.25" y="322.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="114.5833" x="1131.25" y="322.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="114.5833" x="1131.25" y="345.5078"/><rect codeLine="89" fill="none" height="83.3781" id="FooProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="114.5833" x="1131.25" y="322.4528"/><ellipse cx="1145.8333" cy="338.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1147.7437,342.572 Q1147.3165,342.7917 1146.8465,342.9016 Q1146.3765,343.0115 1145.8577,343.0115 Q1144.0145,343.0115 1143.044,341.7969 Q1142.0736,340.5823 1142.0736,338.2874 Q1142.0736,335.9863 1143.044,334.7717 Q1144.0145,333.5571 1145.8577,333.5571 Q1146.3765,333.5571 1146.8526,333.667 Q1147.3287,333.7769 1147.7437,333.9966 L1147.7437,335.9985 Q1147.2799,335.5713 1146.8435,335.3729 Q1146.4071,335.1746 1145.9432,335.1746 Q1144.9544,335.1746 1144.4509,335.9589 Q1143.9473,336.7432 1143.9473,338.2874 Q1143.9473,339.8254 1144.4509,340.6097 Q1144.9544,341.394 1145.9432,341.394 Q1146.4071,341.394 1146.8435,341.1957 Q1147.2799,340.9973 1147.7437,340.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="1162.5" y="342.8711">FooProvider</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1132.2917" x2="1244.7917" y1="353.8411" y2="353.8411"/><ellipse cx="1142.7083" cy="389.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="76.0417" x="1154.1667" y="396.1222">FooProvider()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1132.2917" x2="1144.7917" y1="372.0469" y2="372.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1147.9167" y="375.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1232.2917" x2="1244.7917" y1="372.0469" y2="372.0469"/><!--MD5=[40069f160dc89349bd399e6f6e7ab927]
+class NestedTreePage--><rect codeLine="96" fill="#282828" height="48.055" id="NestedTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="140.625" x="68.2292" y="844.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="140.625" x="68.2292" y="844.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="140.625" x="68.2292" y="867.3828"/><rect codeLine="96" fill="none" height="48.055" id="NestedTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="140.625" x="68.2292" y="844.3278"/><ellipse cx="82.8125" cy="860.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M84.7229,864.447 Q84.2957,864.6667 83.8257,864.7766 Q83.3557,864.8865 82.8369,864.8865 Q80.9937,864.8865 80.0232,863.6719 Q79.0527,862.4573 79.0527,860.1624 Q79.0527,857.8613 80.0232,856.6467 Q80.9937,855.4321 82.8369,855.4321 Q83.3557,855.4321 83.8318,855.542 Q84.3079,855.6519 84.7229,855.8716 L84.7229,857.8735 Q84.259,857.4463 83.8226,857.2479 Q83.3862,857.0496 82.9224,857.0496 Q81.9336,857.0496 81.4301,857.8339 Q80.9265,858.6182 80.9265,860.1624 Q80.9265,861.7004 81.4301,862.4847 Q81.9336,863.269 82.9224,863.269 Q83.3862,863.269 83.8226,863.0707 Q84.259,862.8723 84.7229,862.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="103.125" x="99.4792" y="864.7461">NestedTreePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="69.2708" x2="207.8125" y1="875.7161" y2="875.7161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="69.2708" x2="207.8125" y1="884.0495" y2="884.0495"/><!--MD5=[057cf058ee2a83ec148ca80b6f246853]
+class TableTreePage--><rect codeLine="101" fill="#282828" height="48.055" id="TableTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="245.8333" y="844.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="245.8333" y="844.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="245.8333" y="867.3828"/><rect codeLine="101" fill="none" height="48.055" id="TableTreePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="245.8333" y="844.3278"/><ellipse cx="260.4167" cy="860.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M262.3271,864.447 Q261.8998,864.6667 261.4299,864.7766 Q260.9599,864.8865 260.4411,864.8865 Q258.5978,864.8865 257.6274,863.6719 Q256.6569,862.4573 256.6569,860.1624 Q256.6569,857.8613 257.6274,856.6467 Q258.5978,855.4321 260.4411,855.4321 Q260.9599,855.4321 261.436,855.542 Q261.912,855.6519 262.3271,855.8716 L262.3271,857.8735 Q261.8632,857.4463 261.4268,857.2479 Q260.9904,857.0496 260.5265,857.0496 Q259.5378,857.0496 259.0342,857.8339 Q258.5307,858.6182 258.5307,860.1624 Q258.5307,861.7004 259.0342,862.4847 Q259.5378,863.269 260.5265,863.269 Q260.9904,863.269 261.4268,863.0707 Q261.8632,862.8723 262.3271,862.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="93.75" x="277.0833" y="864.7461">TableTreePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="246.875" x2="376.0417" y1="875.7161" y2="875.7161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="246.875" x2="376.0417" y1="884.0495" y2="884.0495"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1712.5" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1712.5" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1712.5" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1712.5" y="53.7028"/><ellipse cx="1727.0833" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1728.9937,73.822 Q1728.5665,74.0417 1728.0965,74.1516 Q1727.6265,74.2615 1727.1077,74.2615 Q1725.2645,74.2615 1724.294,73.0469 Q1723.3236,71.8323 1723.3236,69.5374 Q1723.3236,67.2363 1724.294,66.0217 Q1725.2645,64.8071 1727.1077,64.8071 Q1727.6265,64.8071 1728.1026,64.917 Q1728.5787,65.0269 1728.9937,65.2466 L1728.9937,67.2485 Q1728.5299,66.8213 1728.0935,66.6229 Q1727.6571,66.4246 1727.1932,66.4246 Q1726.2044,66.4246 1725.7009,67.2089 Q1725.1973,67.9932 1725.1973,69.5374 Q1725.1973,71.0754 1725.7009,71.8597 Q1726.2044,72.644 1727.1932,72.644 Q1727.6571,72.644 1728.0935,72.4457 Q1728.5299,72.2473 1728.9937,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="1743.75" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1713.5417" x2="1919.7917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1713.5417" x2="1919.7917" y1="93.4245" y2="93.4245"/><!--MD5=[34e32f119b769e7d848605038e762f68]
+class TreeApplication--><rect codeLine="106" fill="#282828" height="131.2012" id="TreeApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="1741.6667" y="298.4945"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="1741.6667" y="298.4945"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="1741.6667" y="321.5495"/><rect codeLine="106" fill="none" height="131.2012" id="TreeApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="1741.6667" y="298.4945"/><ellipse cx="1760.9375" cy="314.1886" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1762.8479,318.6137 Q1762.4207,318.8334 1761.9507,318.9433 Q1761.4807,319.0531 1760.9619,319.0531 Q1759.1187,319.0531 1758.1482,317.8385 Q1757.1777,316.6239 1757.1777,314.329 Q1757.1777,312.028 1758.1482,310.8134 Q1759.1187,309.5988 1760.9619,309.5988 Q1761.4807,309.5988 1761.9568,309.7087 Q1762.4329,309.8185 1762.8479,310.0382 L1762.8479,312.0402 Q1762.384,311.613 1761.9476,311.4146 Q1761.5112,311.2162 1761.0474,311.2162 Q1760.0586,311.2162 1759.5551,312.0005 Q1759.0515,312.7848 1759.0515,314.329 Q1759.0515,315.8671 1759.5551,316.6514 Q1760.0586,317.4357 1761.0474,317.4357 Q1761.5112,317.4357 1761.9476,317.2373 Q1762.384,317.039 1762.8479,316.6117 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="1778.6458" y="318.9128">TreeApplication</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1742.7083" x2="1890.625" y1="329.8828" y2="329.8828"/><ellipse cx="1753.125" cy="365.2527" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="1764.5833" y="372.1639">TreeApplication()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1742.7083" x2="1772.9167" y1="348.0886" y2="348.0886"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1776.0417" y="351.8982">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1860.4167" x2="1890.625" y1="348.0886" y2="348.0886"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1742.7083" x2="1890.625" y1="381.8726" y2="381.8726"/><ellipse cx="1753.125" cy="393.3309" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="1764.5833" y="400.2421">TreeApplication get()</text><ellipse cx="1753.125" cy="413.0758" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="1764.5833" y="419.987">Foo getFoo(String id)</text><!--MD5=[be1fb7916bc74641bebdfa305be20866]
+reverse link WicketExamplePage to AbstractTreePage--><path codeLine="13" d="M390.625,122.9007 C390.625,184.1299 390.625,292.5465 390.625,339.8799 " fill="none" id="WicketExamplePage-backto-AbstractTreePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="383.3333,122.807,390.625,101.9736,397.9167,122.807,383.3333,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1f1da1f75e38e715698d93b07aa14c49]
+reverse link AbstractTreePage to AdvancedTreePage--><path codeLine="18" d="M370.1979,406.8486 C343.4271,461.4945 295.9688,558.3486 262.6146,626.4215 " fill="none" id="AbstractTreePage-backto-AdvancedTreePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="363.6563,403.6299,379.375,388.1299,376.75,410.0465,363.6563,403.6299" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[50d50a6e8a46741d632a89f545f6d597]
+reverse link AbstractTreePage to BeginnersTreePage--><path codeLine="29" d="M409.6042,407.5778 C427.9167,448.0674 456.6875,510.6611 483.3333,564.1195 C499.9896,597.5257 519.9063,634.8382 534.875,662.4007 " fill="none" id="AbstractTreePage-backto-BeginnersTreePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="402.8438,410.3174,400.9375,388.3278,416.1458,404.3278,402.8438,410.3174" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[03de299e4978a3a3245218b2a4d91668]
+reverse link Serializable to Foo--><path codeLine="36" d="M646.0104,122.8278 C644.0521,134.984 641.7917,149.0049 639.375,164.0361 " fill="none" id="Serializable-backto-Foo" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="638.8646,121.3799,649.375,101.9736,653.2604,123.7028,638.8646,121.3799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f8d571aad542fea77ed3bd878b042f3f]
+reverse link Set to FooExpansion--><path codeLine="59" d="M819.7917,123.057 C819.7917,173.682 819.7917,256.4007 819.7917,310.2965 " fill="none" id="Set-backto-FooExpansion" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="812.5,122.807,819.7917,101.9736,827.0833,122.807,812.5,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[139f8514b992833ee1ee36fb1f2c43f6]
+reverse link Serializable to FooExpansion--><path codeLine="60" d="M692.2604,116.9111 C705.3646,130.9736 719.375,147.5361 730.2083,164.1195 C760.4583,210.4215 785.3333,268.6195 801.1354,310.0882 " fill="none" id="Serializable-backto-FooExpansion" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="686.7917,121.7549,677.5521,101.7028,697.2813,111.609,686.7917,121.7549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c203d3fe3c471e8b03b2cf297b8b7336]
+reverse link IModel to AdvancedTreePage.FooExpansionModel--><path codeLine="69" d="M1010.4167,122.9007 C1010.4167,184.1299 1010.4167,292.5465 1010.4167,339.8799 " fill="none" id="IModel-backto-AdvancedTreePage.FooExpansionModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1003.125,122.807,1010.4167,101.9736,1017.7083,122.807,1003.125,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[acde18c3a3ff79ba75da20de7da6cae9]
+reverse link LoadableDetachableModel to FooProvider.FooModel--><path codeLine="74" d="M1390.625,122.8278 C1390.625,177.359 1390.625,269.4215 1390.625,322.3382 " fill="none" id="LoadableDetachableModel-backto-FooProvider.FooModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1383.3333,122.807,1390.625,101.9736,1397.9167,122.807,1383.3333,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[6303aa121dbe0ebe756663546735d28c]
+reverse link Panel to FooPanel--><path codeLine="81" d="M1602.0833,122.8278 C1602.0833,177.359 1602.0833,269.4215 1602.0833,322.3382 " fill="none" id="Panel-backto-FooPanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1594.7917,122.807,1602.0833,101.9736,1609.375,122.807,1594.7917,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[dc8d34d104fc8c880a47620c25ee2891]
+reverse link ITreeProvider to FooProvider--><path codeLine="88" d="M1188.5417,122.8278 C1188.5417,177.359 1188.5417,269.4215 1188.5417,322.3382 " fill="none" id="ITreeProvider-backto-FooProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1181.25,122.807,1188.5417,101.9736,1195.8333,122.807,1181.25,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e8e17c3f58471625acfa7dfdd6746790]
+reverse link AdvancedTreePage to NestedTreePage--><path codeLine="95" d="M174.1875,800.4528 C165.5521,816.6507 157.3229,832.057 150.9583,843.984 " fill="none" id="AdvancedTreePage-backto-NestedTreePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="167.8021,796.932,184.0521,781.984,180.6771,803.7965,167.8021,796.932" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ede6d563e467e015800c7ec55cde62a4]
+reverse link AdvancedTreePage to TableTreePage--><path codeLine="100" d="M275.8125,800.4528 C284.4479,816.6507 292.6771,832.057 299.0417,843.984 " fill="none" id="AdvancedTreePage-backto-TableTreePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="269.3229,803.7965,265.9479,781.984,282.1979,796.932,269.3229,803.7965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2490bec3cd96b9f095464df57996c867]
+reverse link WicketExampleApplication to TreeApplication--><path codeLine="105" d="M1816.6667,122.8903 C1816.6667,169.8903 1816.6667,244.7236 1816.6667,298.3695 " fill="none" id="WicketExampleApplication-backto-TreeApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1809.375,122.807,1816.6667,101.9736,1823.9583,122.807,1809.375,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3b355542ded60400c32dc6360f1c484c]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.tree"
+    
+    abstract AbstractTreePage
+    
+    interface Serializable
+    interface IModel
+    interface Set
+    interface ITreeProvider
+    
+    WicketExamplePage <|- - AbstractTreePage
+    abstract class AbstractTreePage
+    {
+    }
+    
+    AbstractTreePage <|- - AdvancedTreePage
+    abstract class AdvancedTreePage
+    {
+        - -(constructors)- -
+        +AdvancedTreePage()
+        - -
+        #AbstractTree<Foo> createTree(FooProvider, IModel<Set<Foo>> state)
+        - -(factory)- -
+        #Component newContentComponent(String id, IModel<Foo>)
+    }
+    
+    AbstractTreePage <|- - BeginnersTreePage
+    class BeginnersTreePage
+    {
+        - -(constructors)- -
+        +BeginnersTreePage()
+    }
+    
+    Serializable <|- - Foo
+    class Foo
+    {
+        - -(constructors)- -
+        +Foo(Foo, String)
+        +Foo(String)
+        - -
+        +String getBar()
+        +String getBaz()
+        +Foo getParent()
+        +boolean getQuux()
+        +void setBar(String bar)
+        +void setBaz(String baz)
+        +void setLoaded(boolean loaded)
+        +void setQuux(boolean quux)
+        - -(checks)- -
+        +boolean isLoaded()
+        - -(collection)- -
+        +List<Foo> getFoos()
+        - -(identity)- -
+        +String getId()
+    }
+    
+    Set <|- - FooExpansion
+    Serializable <|- - FooExpansion
+    class FooExpansion
+    {
+        - -
+        +void collapseAll()
+        +void expandAll()
+        +FooExpansion get()
+    }
+    
+    IModel <|- - AdvancedTreePage.FooExpansionModel
+    class AdvancedTreePage.FooExpansionModel
+    {
+    }
+    
+    LoadableDetachableModel <|- - FooProvider.FooModel
+    class FooProvider.FooModel
+    {
+        - -(constructors)- -
+        +FooModel(Foo)
+    }
+    
+    Panel <|- - FooPanel
+    class FooPanel
+    {
+        - -(constructors)- -
+        +FooPanel(String, IModel<Foo>)
+    }
+    
+    ITreeProvider <|- - FooProvider
+    class FooProvider
+    {
+        - -(constructors)- -
+        +FooProvider()
+    }
+    
+    AdvancedTreePage <|- - NestedTreePage
+    class NestedTreePage
+    {
+    }
+    
+    AdvancedTreePage <|- - TableTreePage
+    class TableTreePage
+    {
+    }
+    
+    WicketExampleApplication <|- - TreeApplication
+    class TreeApplication
+    {
+        - -(constructors)- -
+        +TreeApplication()
+        - -
+        +TreeApplication get()
+        +Foo getFoo(String id)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.tree"
+    
+    abstract AbstractTreePage
+    
+    interface Serializable
+    interface IModel
+    interface Set
+    interface ITreeProvider
+    
+    WicketExamplePage <|- - AbstractTreePage
+    abstract class AbstractTreePage
+    {
+    }
+    
+    AbstractTreePage <|- - AdvancedTreePage
+    abstract class AdvancedTreePage
+    {
+        - -(constructors)- -
+        +AdvancedTreePage()
+        - -
+        #AbstractTree<Foo> createTree(FooProvider, IModel<Set<Foo>> state)
+        - -(factory)- -
+        #Component newContentComponent(String id, IModel<Foo>)
+    }
+    
+    AbstractTreePage <|- - BeginnersTreePage
+    class BeginnersTreePage
+    {
+        - -(constructors)- -
+        +BeginnersTreePage()
+    }
+    
+    Serializable <|- - Foo
+    class Foo
+    {
+        - -(constructors)- -
+        +Foo(Foo, String)
+        +Foo(String)
+        - -
+        +String getBar()
+        +String getBaz()
+        +Foo getParent()
+        +boolean getQuux()
+        +void setBar(String bar)
+        +void setBaz(String baz)
+        +void setLoaded(boolean loaded)
+        +void setQuux(boolean quux)
+        - -(checks)- -
+        +boolean isLoaded()
+        - -(collection)- -
+        +List<Foo> getFoos()
+        - -(identity)- -
+        +String getId()
+    }
+    
+    Set <|- - FooExpansion
+    Serializable <|- - FooExpansion
+    class FooExpansion
+    {
+        - -
+        +void collapseAll()
+        +void expandAll()
+        +FooExpansion get()
+    }
+    
+    IModel <|- - AdvancedTreePage.FooExpansionModel
+    class AdvancedTreePage.FooExpansionModel
+    {
+    }
+    
+    LoadableDetachableModel <|- - FooProvider.FooModel
+    class FooProvider.FooModel
+    {
+        - -(constructors)- -
+        +FooModel(Foo)
+    }
+    
+    Panel <|- - FooPanel
+    class FooPanel
+    {
+        - -(constructors)- -
+        +FooPanel(String, IModel<Foo>)
+    }
+    
+    ITreeProvider <|- - FooProvider
+    class FooProvider
+    {
+        - -(constructors)- -
+        +FooProvider()
+    }
+    
+    AdvancedTreePage <|- - NestedTreePage
+    class NestedTreePage
+    {
+    }
+    
+    AdvancedTreePage <|- - TableTreePage
+    class TableTreePage
+    {
+    }
+    
+    WicketExampleApplication <|- - TreeApplication
+    class TreeApplication
+    {
+        - -(constructors)- -
+        +TreeApplication()
+        - -
+        +TreeApplication get()
+        +Foo getFoo(String id)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

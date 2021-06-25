@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.string.interpolator"
+    
+    PropertyVariableInterpolator <|-- ConvertingPropertyVariableInterpolator
+    class ConvertingPropertyVariableInterpolator
+    {
+        --(constructors)--
+        +ConvertingPropertyVariableInterpolator(String, Object, IConverterLocator, Locale)
+    }
+    
+    VariableInterpolator <|-- PropertyVariableInterpolator
+    class PropertyVariableInterpolator
+    {
+        --(constructors)--
+        +PropertyVariableInterpolator(String, Object)
+    }
+    
+@enduml
+

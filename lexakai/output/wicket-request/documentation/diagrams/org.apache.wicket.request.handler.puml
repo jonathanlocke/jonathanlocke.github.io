@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.handler"
+    
+    interface IRequestHandler
+    
+    IRequestHandler <|-- EmptyRequestHandler
+    class EmptyRequestHandler
+    {
+        --(constructors)--
+        +EmptyRequestHandler()
+    }
+    
+    IRequestHandler <|-- TextRequestHandler
+    class TextRequestHandler
+    {
+        --(constructors)--
+        +TextRequestHandler(String, String, String)
+        +TextRequestHandler(String)
+        --
+        +String getString()
+    }
+    
+@enduml
+

@@ -1,0 +1,168 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.attributes"
+    
+    interface IComponentAwareHeaderContributor
+    interface IAjaxCallListener
+    interface IClusterable
+    
+    enum AjaxAttributeName
+    {
+        AFTER_HANDLER
+        BEFORE_HANDLER
+        BEFORE_SEND_HANDLER
+        CHANNEL
+        CHILD_SELECTOR
+        COMPLETE_HANDLER
+        DATATYPE
+        DONE_HANDLER
+        DYNAMIC_PARAMETER_FUNCTION
+        EVENT_NAME
+        EVENT_PROPAGATION
+        EXTRA_PARAMETERS
+        FAILURE_HANDLER
+        FORM_ID
+        INDICATOR_ID
+        INIT_HANDLER
+        IS_ASYNC
+        IS_MULTIPART
+        IS_PREVENT_DEFAULT
+        IS_WICKET_AJAX_RESPONSE
+        MARKUP_ID
+        METHOD
+        PRECONDITION
+        REQUEST_TIMEOUT
+        SERIALIZE_RECURSIVELY
+        SUBMITTING_COMPONENT_NAME
+        SUCCESS_HANDLER
+        THROTTLING
+        THROTTLING_DELAY
+        THROTTLING_ID
+        THROTTLING_POSTPONE_ON_UPDATE
+        URL
+    }
+    
+    IAjaxCallListener <|-- AjaxCallListener
+    IComponentAwareHeaderContributor <|-- AjaxCallListener
+    class AjaxCallListener
+    {
+        --(extension points)--
+        +AjaxCallListener onAfter(CharSequence after)
+        +AjaxCallListener onBefore(CharSequence before)
+        +AjaxCallListener onBeforeSend(CharSequence beforeSend)
+        +AjaxCallListener onComplete(CharSequence complete)
+        +AjaxCallListener onDone(CharSequence done)
+        +AjaxCallListener onFailure(CharSequence failure)
+        +AjaxCallListener onInit(CharSequence init)
+        +AjaxCallListener onPrecondition(CharSequence precondition)
+        +AjaxCallListener onSuccess(CharSequence success)
+    }
+    
+    class AjaxRequestAttributes
+    {
+        --
+        +AjaxChannel getChannel()
+        +String getDataType()
+        +Method getMethod()
+        +ThrottlingSettings getThrottlingSettings()
+        +AjaxRequestAttributes setAsynchronous(boolean async)
+        +AjaxRequestAttributes setChannel(AjaxChannel)
+        +void setChildSelector(CharSequence childSelector)
+        +AjaxRequestAttributes setDataType(String dataType)
+        +AjaxRequestAttributes setMethod(Method)
+        +AjaxRequestAttributes setMultipart(boolean multipart)
+        +AjaxRequestAttributes setPreventDefault(boolean preventDefault)
+        +AjaxRequestAttributes setSerializeRecursively(boolean serializeRecursively)
+        +AjaxRequestAttributes setThrottlingSettings(ThrottlingSettings)
+        +AjaxRequestAttributes setWicketAjaxResponse(boolean wicketAjaxResponse)
+        --(checks)--
+        +boolean isAsynchronous()
+        +boolean isMultipart()
+        +boolean isPreventDefault()
+        +boolean isSerializeRecursively()
+        +boolean isWicketAjaxResponse()
+        --(collection)--
+        +Map<String,Object> getExtraParameters()
+        --(identity)--
+        +String getFormId()
+        +AjaxRequestAttributes setFormId(String formId)
+        --(messaging)--
+        +List<IAjaxCallListener> getAjaxCallListeners()
+        +String[] getEventNames()
+        +EventPropagation getEventPropagation()
+        +AjaxRequestAttributes setEventNames(String... eventNames)
+        +AjaxRequestAttributes setEventPropagation(EventPropagation)
+        --(naming)--
+        +String getSubmittingComponentName()
+        +AjaxRequestAttributes setSubmittingComponentName(String submittingComponentName)
+        --(network)--
+        +Duration getRequestTimeout()
+        +AjaxRequestAttributes setRequestTimeout(Duration requestTimeout)
+        --(primitive)--
+        +CharSequence getChildSelector()
+        +List<CharSequence> getDynamicExtraParameters()
+    }
+    
+    class CallbackParameter
+    {
+        --
+        +CallbackParameter context(String name)
+        +CallbackParameter explicit(String name)
+        +String getAjaxParameterCode()
+        --(functional)--
+        +CallbackParameter converted(String name, String code)
+        +CallbackParameter resolved(String name, String code)
+        --(naming)--
+        +String getAjaxParameterName()
+        +String getFunctionParameterName()
+    }
+    
+    enum AjaxRequestAttributes.EventPropagation
+    {
+        BUBBLE
+        STOP
+        STOP_IMMEDIATE
+    }
+    
+    interface IAjaxCallListener
+    {
+        --(primitive)--
+        +CharSequence getAfterHandler(Component)
+        +CharSequence getBeforeHandler(Component)
+        +CharSequence getBeforeSendHandler(Component)
+        +CharSequence getCompleteHandler(Component)
+        +CharSequence getDoneHandler(Component)
+        +CharSequence getFailureHandler(Component)
+        +CharSequence getInitHandler(Component)
+        +CharSequence getPrecondition(Component)
+        +CharSequence getSuccessHandler(Component)
+    }
+    
+    enum AjaxRequestAttributes.Method
+    {
+        GET
+        POST
+    }
+    
+    IClusterable <|-- ThrottlingSettings
+    class ThrottlingSettings
+    {
+        --(constructors)--
+        +ThrottlingSettings(Duration)
+        +ThrottlingSettings(Duration, boolean)
+        +ThrottlingSettings(String, Duration)
+        +ThrottlingSettings(String, Duration, boolean)
+        --
+        +boolean getPostponeTimerOnUpdate()
+        +void setDelay(Duration delay)
+        +void setPostponeTimerOnUpdate(boolean postponeTimerOnUpdate)
+        --(identity)--
+        +String getId()
+        --(time)--
+        +Duration getDelay()
+    }
+    
+@enduml
+

@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.bean.validation.constraint"
+    
+    interface ConstraintValidator
+    
+    annotation ValidPassword
+    
+    ConstraintValidator <|-- ValidPasswordValidator
+    class ValidPasswordValidator
+    {
+    }
+    
+@enduml
+

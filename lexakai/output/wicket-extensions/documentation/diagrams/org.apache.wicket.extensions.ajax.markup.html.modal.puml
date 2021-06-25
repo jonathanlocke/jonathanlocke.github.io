@@ -1,0 +1,150 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.modal"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    AjaxEventBehavior <|-- ModalDialog.CloseBehavior
+    abstract class ModalDialog.CloseBehavior
+    {
+        --(primitive)--
+        #CharSequence getPrecondition()
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- ModalWindow.CloseButtonBehavior
+    class ModalWindow.CloseButtonBehavior
+    {
+        --(constructors)--
+        +CloseButtonBehavior()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ModalWindow.CloseButtonCallback
+    interface ModalWindow.CloseButtonCallback
+    {
+        --(extension points)--
+        +boolean onCloseButtonClicked(AjaxRequestTarget)
+    }
+    
+    EnumeratedType <|-- ModalWindow.MaskType
+    class ModalWindow.MaskType
+    {
+        --(constructors)--
+        +MaskType(String)
+    }
+    
+    Panel <|-- ModalDialog
+    class ModalDialog
+    {
+        --(constructors)--
+        +ModalDialog(String)
+        --
+        +ModalDialog open(Component content, AjaxRequestTarget)
+        +ModalDialog open(AjaxRequestTarget)
+        +void setContent(Component content)
+        +ModalDialog trapFocus()
+        --(checks)--
+        +boolean isOpen()
+        --(factory)--
+        #WebMarkupContainer newDialog(String dialogId)
+        #WebMarkupContainer newOverlay(String overlayId)
+        --(io)--
+        +ModalDialog close(AjaxRequestTarget)
+        +ModalDialog closeOnClick()
+        +ModalDialog closeOnEscape()
+    }
+    
+    Panel <|-- ModalWindow
+    class ModalWindow
+    {
+        --(constructors)--
+        +ModalWindow(String)
+        +ModalWindow(String, IModel<?>)
+        --
+        +String getHeightUnit()
+        +MaskType getMaskType()
+        +int getMinimalHeight()
+        +int getMinimalWidth()
+        +IModel<String> getTitle()
+        +String getWidthUnit()
+        +ModalWindow setContent(Component)
+        +ModalWindow setHeightUnit(String heightUnit)
+        +ModalWindow setMaskType(MaskType)
+        +ModalWindow setMinimalHeight(int minimalHeight)
+        +ModalWindow setMinimalWidth(int minimalWidth)
+        +ModalWindow setPageCreator(PageCreator)
+        +ModalWindow setResizable(boolean resizable)
+        +ModalWindow setTitle(IModel<String> title)
+        +ModalWindow setTitle(String title)
+        +ModalWindow setWidthUnit(String widthUnit)
+        +void show(IPartialPageRequestHandler target)
+        +ModalWindow showUnloadConfirmation(boolean unloadConfirmation)
+        +boolean showUnloadConfirmation()
+        #Component getContent()
+        #String getWindowOpenJavaScript()
+        #boolean makeContentVisible()
+        #void postProcessSettings(JSONObject settings)
+        --(checks)--
+        +boolean isAutoSize()
+        +boolean isResizable()
+        +boolean isShown()
+        #boolean isCustomComponent()
+        --(collection)--
+        +ModalWindow setAutoSize(boolean autoSize)
+        --(factory)--
+        #ResourceReference newCssResource()
+        --(identity)--
+        +String getContentId()
+        --(io)--
+        +void close(IPartialPageRequestHandler target)
+        +void closeCurrent(IPartialPageRequestHandler target)
+        +ModalWindow setCloseButtonCallback(CloseButtonCallback)
+        +ModalWindow setWindowClosedCallback(WindowClosedCallback)
+        #String getCloseJavacript()
+        #CloseButtonBehavior newCloseButtonBehavior()
+        --(lifecycle)--
+        +int getInitialHeight()
+        +int getInitialWidth()
+        +boolean isUseInitialHeight()
+        +ModalWindow setInitialHeight(int initialHeight)
+        +ModalWindow setInitialWidth(int initialWidth)
+        +ModalWindow setUseInitialHeight(boolean useInitialHeight)
+        --(naming)--
+        +String getCookieName()
+        +String getCssClassName()
+        +ModalWindow setCookieName(String cookieName)
+        +ModalWindow setCssClassName(String cssClassName)
+        --(primitive)--
+        #CharSequence getShowJavaScript()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ModalWindow.PageCreator
+    interface ModalWindow.PageCreator
+    {
+        --
+        +Page createPage()
+    }
+    
+    Behavior <|-- TrapFocusBehavior
+    class TrapFocusBehavior
+    {
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- ModalWindow.WindowClosedBehavior
+    class ModalWindow.WindowClosedBehavior
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ModalWindow.WindowClosedCallback
+    interface ModalWindow.WindowClosedCallback
+    {
+        --(io)--
+        +void onClose(AjaxRequestTarget)
+    }
+    
+@enduml
+

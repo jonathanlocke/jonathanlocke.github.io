@@ -1,0 +1,141 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.autocomplete"
+    
+    abstract AbstractDefaultAjaxBehavior
+    abstract AbstractAutoCompleteTextRenderer
+    abstract AbstractAutoCompleteRenderer
+    abstract AbstractAutoCompleteBehavior
+    
+    interface IAutoCompleteRenderer
+    interface IWrappedHeaderItem
+    interface IClusterable
+    
+    AbstractDefaultAjaxBehavior <|-- AbstractAutoCompleteBehavior
+    abstract class AbstractAutoCompleteBehavior
+    {
+        --(constructors)--
+        +AbstractAutoCompleteBehavior()
+        +AbstractAutoCompleteBehavior(AutoCompleteSettings)
+        --
+        #String constructSettingsJS()
+        #void onRequest(String input, RequestCycle)
+    }
+    
+    IAutoCompleteRenderer <|-- AbstractAutoCompleteRenderer
+    abstract class AbstractAutoCompleteRenderer<T>
+    {
+        --
+        #String getTextValue(T object)
+        #void renderChoice(T object, Response, String criteria)
+        --(primitive)--
+        #CharSequence getOnSelectJavaScriptExpression(T item)
+    }
+    
+    AbstractAutoCompleteRenderer <|-- AbstractAutoCompleteTextRenderer
+    abstract class AbstractAutoCompleteTextRenderer<T>
+    {
+    }
+    
+    AbstractAutoCompleteBehavior <|-- AutoCompleteBehavior
+    abstract class AutoCompleteBehavior<T>
+    {
+        --(constructors)--
+        +AutoCompleteBehavior(IAutoCompleteRenderer<T>)
+        +AutoCompleteBehavior(IAutoCompleteRenderer<T>, AutoCompleteSettings)
+        +AutoCompleteBehavior(IAutoCompleteRenderer<T>, boolean)
+        --(collection)--
+        #Iterator<T> getChoices(String input)
+    }
+    
+    IClusterable <|-- AutoCompleteSettings
+    class AutoCompleteSettings
+    {
+        --
+        +boolean getIgnoreBordersWhenPositioning()
+        +int getMaxHeightInPx()
+        +boolean getPreselect()
+        +int getThrottleDelay()
+        +boolean getUseSmartPositioning()
+        +AutoCompleteSettings setIgnoreBordersWhenPositioning(boolean ignoreBordersWhenPositioning)
+        +AutoCompleteSettings setMaxHeightInPx(int maxHeightInPx)
+        +AutoCompleteSettings setPreselect(boolean preselect)
+        +AutoCompleteSettings setThrottleDelay(int throttleDelay)
+        +AutoCompleteSettings setUseSmartPositioning(boolean useSmartPositioning)
+        --(collection)--
+        +boolean getShowCompleteListOnFocusGain()
+        +boolean getShowListOnEmptyInput()
+        +boolean getShowListOnFocusGain()
+        +AutoCompleteSettings setShowCompleteListOnFocusGain(boolean showCompleteListOnFocusGain)
+        +AutoCompleteSettings setShowListOnEmptyInput(boolean showListOnEmptyInput)
+        +AutoCompleteSettings setShowListOnFocusGain(boolean showListOnFocusGain)
+        --(naming)--
+        +String getCssClassName()
+        +String getParameterName()
+        +AutoCompleteSettings setCssClassName(String cssClassName)
+        +AutoCompleteSettings setParameterName(String parameterName)
+        --(read)--
+        +int getMinInputLength()
+        +boolean isAdjustInputWidth()
+        +AutoCompleteSettings setAdjustInputWidth(boolean adjustInputWidth)
+        +AutoCompleteSettings setMinInputLength(int minInputLength)
+    }
+    
+    TextField <|-- AutoCompleteTextField
+    abstract class AutoCompleteTextField<T>
+    {
+        --(constructors)--
+        +AutoCompleteTextField(String)
+        +AutoCompleteTextField(String, AutoCompleteSettings)
+        +AutoCompleteTextField(String, Class<T>)
+        +AutoCompleteTextField(String, Class<T>, IAutoCompleteRenderer<T>)
+        +AutoCompleteTextField(String, IAutoCompleteRenderer<T>)
+        +AutoCompleteTextField(String, IModel<T>)
+        +AutoCompleteTextField(String, IModel<T>, AutoCompleteSettings)
+        +AutoCompleteTextField(String, IModel<T>, Class<T>, AutoCompleteSettings)
+        +AutoCompleteTextField(String, IModel<T>, Class<T>, IAutoCompleteRenderer<T>, AutoCompleteSettings)
+        +AutoCompleteTextField(String, IModel<T>, IAutoCompleteRenderer<T>)
+        --
+        +IAutoCompleteRenderer<T> getChoiceRenderer()
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(collection)--
+        #Iterator<T> getChoices(String input)
+        --(factory)--
+        #AutoCompleteBehavior<T> newAutoCompleteBehavior(IAutoCompleteRenderer<T>, AutoCompleteSettings)
+    }
+    
+    AutoCompleteTextField <|-- DefaultCssAutoCompleteTextField
+    abstract class DefaultCssAutoCompleteTextField<T>
+    {
+        --(constructors)--
+        +DefaultCssAutoCompleteTextField(String)
+        +DefaultCssAutoCompleteTextField(String, IModel<T>)
+    }
+    
+    interface IDetachable
+    IDetachable <|-- IAutoCompleteRenderer
+    interface IAutoCompleteRenderer<T>
+    {
+        --
+        +void render(T object, Response, String criteria)
+        +void renderFooter(Response, int count)
+        +void renderHeader(Response)
+    }
+    
+    AbstractAutoCompleteTextRenderer <|-- StringAutoCompleteRenderer
+    class StringAutoCompleteRenderer
+    {
+        --
+        +IAutoCompleteRenderer<T> instance()
+    }
+    
+    HeaderItem <|-- AbstractAutoCompleteBehavior.WrappedHeaderItem
+    IWrappedHeaderItem <|-- AbstractAutoCompleteBehavior.WrappedHeaderItem
+    class AbstractAutoCompleteBehavior.WrappedHeaderItem
+    {
+    }
+    
+@enduml
+

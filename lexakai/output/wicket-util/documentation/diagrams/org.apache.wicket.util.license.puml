@@ -1,0 +1,115 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.license"
+    
+    abstract AbstractLicenseHeaderHandler
+    
+    interface FileFilter
+    interface ILicenseHeaderHandler
+    
+    ILicenseHeaderHandler <|-- AbstractLicenseHeaderHandler
+    abstract class AbstractLicenseHeaderHandler
+    {
+        --(constructors)--
+        +AbstractLicenseHeaderHandler(List<String>)
+        --
+        #String extractLicenseHeader(File, int start, int length)
+        #String getLicenseHeader()
+        #void prependLicenseHeader(File)
+        --(filesystem)--
+        #String getLicenseHeaderFilename()
+    }
+    
+    abstract class ApacheLicenseHeaderTestCase
+    {
+        --(constructors)--
+        +ApacheLicenseHeaderTestCase()
+    }
+    
+    AbstractLicenseHeaderHandler <|-- CssLicenseHeaderHandler
+    class CssLicenseHeaderHandler
+    {
+        --(constructors)--
+        +CssLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|-- ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    class ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    {
+    }
+    
+    interface ApacheLicenseHeaderTestCase.FileVisitor
+    {
+        --(filesystem)--
+        +void visitFile(File)
+    }
+    
+    XmlLicenseHeaderHandler <|-- HtmlLicenseHeaderHandler
+    class HtmlLicenseHeaderHandler
+    {
+        --(constructors)--
+        +HtmlLicenseHeaderHandler(List<String>)
+    }
+    
+    interface ILicenseHeaderHandler
+    {
+        --
+        +boolean checkLicenseHeader(File)
+        +String getLicenseType(File)
+        --(collection)--
+        +boolean addLicenseHeader(File)
+        +List<String> getIgnoreFiles()
+        +List<String> getSuffixes()
+    }
+    
+    AbstractLicenseHeaderHandler <|-- JavaLicenseHeaderHandler
+    class JavaLicenseHeaderHandler
+    {
+        --(constructors)--
+        +JavaLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|-- JavaScriptLicenseHeaderHandler
+    class JavaScriptLicenseHeaderHandler
+    {
+        --(constructors)--
+        +JavaScriptLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|-- PropertiesLicenseHeaderHandler
+    class PropertiesLicenseHeaderHandler
+    {
+        --(constructors)--
+        +PropertiesLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|-- ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    class ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    {
+    }
+    
+    AbstractLicenseHeaderHandler <|-- VelocityLicenseHeaderHandler
+    class VelocityLicenseHeaderHandler
+    {
+        --(constructors)--
+        +VelocityLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|-- XmlLicenseHeaderHandler
+    class XmlLicenseHeaderHandler
+    {
+        --(constructors)--
+        +XmlLicenseHeaderHandler(List<String>)
+    }
+    
+    XmlLicenseHeaderHandler <|-- XmlPrologHeaderHandler
+    class XmlPrologHeaderHandler
+    {
+        --(constructors)--
+        +XmlPrologHeaderHandler(List<String>)
+    }
+    
+@enduml
+

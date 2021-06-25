@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="254.1667px" preserveAspectRatio="none" style="width:1903px;height:254px;background:#333333;" version="1.1" viewBox="0 0 1903 254" width="1903.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="483.3333" x="702.6042" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="460.4167" x="714.0625" y="30.5583">org.apache.wicket.metrics.aspects.component</text><!--MD5=[672a624f8e42a36992be6454a1413884]
+class WicketMetrics--><rect fill="#282828" height="48.055" id="WicketMetrics" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="127.0833" x="888.0208" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="127.0833" x="888.0208" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="127.0833" x="888.0208" y="76.7578"/><rect fill="none" height="48.055" id="WicketMetrics" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="127.0833" x="888.0208" y="53.7028"/><ellipse cx="902.6042" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M904.5146,73.822 Q904.0873,74.0417 903.6174,74.1516 Q903.1474,74.2615 902.6286,74.2615 Q900.7853,74.2615 899.8149,73.0469 Q898.8444,71.8323 898.8444,69.5374 Q898.8444,67.2363 899.8149,66.0217 Q900.7853,64.8071 902.6286,64.8071 Q903.1474,64.8071 903.6235,64.917 Q904.0995,65.0269 904.5146,65.2466 L904.5146,67.2485 Q904.0507,66.8213 903.6143,66.6229 Q903.1779,66.4246 902.714,66.4246 Q901.7253,66.4246 901.2217,67.2089 Q900.7182,67.9932 900.7182,69.5374 Q900.7182,71.0754 901.2217,71.8597 Q901.7253,72.644 902.714,72.644 Q903.1779,72.644 903.6143,72.4457 Q904.0507,72.2473 904.5146,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="89.5833" x="919.2708" y="74.1211">WicketMetrics</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="889.0625" x2="1014.0625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="889.0625" x2="1014.0625" y1="93.4245" y2="93.4245"/><!--MD5=[682113161b0ab3d82e393ddc628be944]
+class ComponentCreateAspect--><rect codeLine="7" fill="#282828" height="83.3781" id="ComponentCreateAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="255.2083" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="255.2083" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="255.2083" x="7.2917" y="187.1745"/><rect codeLine="7" fill="none" height="83.3781" id="ComponentCreateAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="255.2083" x="7.2917" y="164.1195"/><ellipse cx="47.1875" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M49.0979,184.2387 Q48.6707,184.4584 48.2007,184.5683 Q47.7307,184.6781 47.2119,184.6781 Q45.3687,184.6781 44.3982,183.4635 Q43.4277,182.2489 43.4277,179.954 Q43.4277,177.653 44.3982,176.4384 Q45.3687,175.2238 47.2119,175.2238 Q47.7307,175.2238 48.2068,175.3337 Q48.6829,175.4435 49.0979,175.6632 L49.0979,177.6652 Q48.634,177.238 48.1976,177.0396 Q47.7612,176.8412 47.2974,176.8412 Q46.3086,176.8412 45.8051,177.6255 Q45.3015,178.4098 45.3015,179.954 Q45.3015,181.4921 45.8051,182.2764 Q46.3086,183.0607 47.2974,183.0607 Q47.7612,183.0607 48.1976,182.8623 Q48.634,182.664 49.0979,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="69.4792" y="184.5378">ComponentCreateAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="261.4583" y1="195.5078" y2="195.5078"/><ellipse cx="18.75" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="30.2083" y="237.7889">Object aroundNew(ProceedingJoinPoint)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="107.8125" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="110.9375" y="217.5232">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="161.9792" x2="261.4583" y1="213.7136" y2="213.7136"/><!--MD5=[828ce37f06c19b983983662c5d82b691]
+class ComponentOnConfigureAspect--><rect codeLine="14" fill="#282828" height="67.7999" id="ComponentOnConfigureAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="305.2083" x="298.9583" y="171.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="305.2083" x="298.9583" y="171.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="305.2083" x="298.9583" y="194.987"/><rect codeLine="14" fill="none" height="67.7999" id="ComponentOnConfigureAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="305.2083" x="298.9583" y="171.932"/><ellipse cx="342.7083" cy="187.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M344.6187,192.0512 Q344.1915,192.2709 343.7215,192.3808 Q343.2515,192.4906 342.7327,192.4906 Q340.8895,192.4906 339.919,191.276 Q338.9486,190.0614 338.9486,187.7665 Q338.9486,185.4655 339.919,184.2509 Q340.8895,183.0363 342.7327,183.0363 Q343.2515,183.0363 343.7276,183.1462 Q344.2037,183.256 344.6187,183.4757 L344.6187,185.4777 Q344.1549,185.0505 343.7185,184.8521 Q343.2821,184.6537 342.8182,184.6537 Q341.8294,184.6537 341.3259,185.438 Q340.8223,186.2223 340.8223,187.7665 Q340.8223,189.3046 341.3259,190.0889 Q341.8294,190.8732 342.8182,190.8732 Q343.2821,190.8732 343.7185,190.6748 Q344.1549,190.4765 344.6187,190.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="203.125" x="365.625" y="192.3503">ComponentOnConfigureAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="300" x2="603.125" y1="203.3203" y2="203.3203"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="300" x2="603.125" y1="211.6536" y2="211.6536"/><ellipse cx="310.4167" cy="223.112" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="272.9167" x="321.875" y="230.0232">Object aroundOnConfigure(ProceedingJoinPoint)</text><!--MD5=[24a56d368e197b2b50972617314c2f71]
+class ComponentOnDetachAspect--><rect codeLine="21" fill="#282828" height="67.7999" id="ComponentOnDetachAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="292.7083" x="640.625" y="171.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="292.7083" x="640.625" y="171.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="292.7083" x="640.625" y="194.987"/><rect codeLine="21" fill="none" height="67.7999" id="ComponentOnDetachAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="292.7083" x="640.625" y="171.932"/><ellipse cx="688.0208" cy="187.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M689.9312,192.0512 Q689.504,192.2709 689.034,192.3808 Q688.564,192.4906 688.0452,192.4906 Q686.202,192.4906 685.2315,191.276 Q684.2611,190.0614 684.2611,187.7665 Q684.2611,185.4655 685.2315,184.2509 Q686.202,183.0363 688.0452,183.0363 Q688.564,183.0363 689.0401,183.1462 Q689.5162,183.256 689.9312,183.4757 L689.9312,185.4777 Q689.4674,185.0505 689.031,184.8521 Q688.5946,184.6537 688.1307,184.6537 Q687.1419,184.6537 686.6384,185.438 Q686.1348,186.2223 686.1348,187.7665 Q686.1348,189.3046 686.6384,190.0889 Q687.1419,190.8732 688.1307,190.8732 Q688.5946,190.8732 689.031,190.6748 Q689.4674,190.4765 689.9312,190.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="183.3333" x="710.9375" y="192.3503">ComponentOnDetachAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="641.6667" x2="932.2917" y1="203.3203" y2="203.3203"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="641.6667" x2="932.2917" y1="211.6536" y2="211.6536"/><ellipse cx="652.0833" cy="223.112" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="260.4167" x="663.5417" y="230.0232">Object arroundOnDetach(ProceedingJoinPoint)</text><!--MD5=[bc6b14e8ec2a7fce6358f23de45e9792]
+class ComponentOnInitializeAspect--><rect codeLine="28" fill="#282828" height="83.3781" id="ComponentOnInitializeAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="294.7917" x="969.7917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="294.7917" x="969.7917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="294.7917" x="969.7917" y="187.1745"/><rect codeLine="28" fill="none" height="83.3781" id="ComponentOnInitializeAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="294.7917" x="969.7917" y="164.1195"/><ellipse cx="1012.5" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1014.4104,184.2387 Q1013.9832,184.4584 1013.5132,184.5683 Q1013.0432,184.6781 1012.5244,184.6781 Q1010.6812,184.6781 1009.7107,183.4635 Q1008.7402,182.2489 1008.7402,179.954 Q1008.7402,177.653 1009.7107,176.4384 Q1010.6812,175.2238 1012.5244,175.2238 Q1013.0432,175.2238 1013.5193,175.3337 Q1013.9954,175.4435 1014.4104,175.6632 L1014.4104,177.6652 Q1013.9465,177.238 1013.5101,177.0396 Q1013.0737,176.8412 1012.6099,176.8412 Q1011.6211,176.8412 1011.1176,177.6255 Q1010.614,178.4098 1010.614,179.954 Q1010.614,181.4921 1011.1176,182.2764 Q1011.6211,183.0607 1012.6099,183.0607 Q1013.0737,183.0607 1013.5101,182.8623 Q1013.9465,182.664 1014.4104,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="194.7917" x="1035.4167" y="184.5378">ComponentOnInitializeAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="970.8333" x2="1263.5417" y1="195.5078" y2="195.5078"/><ellipse cx="981.25" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="262.5" x="992.7083" y="237.7889">Object aroundOnInitialize(ProceedingJoinPoint)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="970.8333" x2="1087.5" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1090.625" y="217.5232">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1146.875" x2="1263.5417" y1="213.7136" y2="213.7136"/><!--MD5=[effdfe3b3556d3307b324c2749fa4b4d]
+class ComponentOnRenderAspect--><rect codeLine="35" fill="#282828" height="67.7999" id="ComponentOnRenderAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="288.5417" x="1301.0417" y="171.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="288.5417" x="1301.0417" y="171.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="288.5417" x="1301.0417" y="194.987"/><rect codeLine="35" fill="none" height="67.7999" id="ComponentOnRenderAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="288.5417" x="1301.0417" y="171.932"/><ellipse cx="1346.3542" cy="187.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1348.2646,192.0512 Q1347.8373,192.2709 1347.3674,192.3808 Q1346.8974,192.4906 1346.3786,192.4906 Q1344.5353,192.4906 1343.5649,191.276 Q1342.5944,190.0614 1342.5944,187.7665 Q1342.5944,185.4655 1343.5649,184.2509 Q1344.5353,183.0363 1346.3786,183.0363 Q1346.8974,183.0363 1347.3735,183.1462 Q1347.8495,183.256 1348.2646,183.4757 L1348.2646,185.4777 Q1347.8007,185.0505 1347.3643,184.8521 Q1346.9279,184.6537 1346.464,184.6537 Q1345.4753,184.6537 1344.9717,185.438 Q1344.4682,186.2223 1344.4682,187.7665 Q1344.4682,189.3046 1344.9717,190.0889 Q1345.4753,190.8732 1346.464,190.8732 Q1346.9279,190.8732 1347.3643,190.6748 Q1347.8007,190.4765 1348.2646,190.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="183.3333" x="1369.2708" y="192.3503">ComponentOnRenderAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1302.0833" x2="1588.5417" y1="203.3203" y2="203.3203"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1302.0833" x2="1588.5417" y1="211.6536" y2="211.6536"/><ellipse cx="1312.5" cy="223.112" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="256.25" x="1323.9583" y="230.0232">Object aroundOnRender(ProceedingJoinPoint)</text><!--MD5=[73afe8a3d4f31d63f36eb6e65ea7e184]
+class ComponentSetResponsePageAspect--><rect codeLine="42" fill="#282828" height="67.7999" id="ComponentSetResponsePageAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="269.7917" x="1626.0417" y="171.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="269.7917" x="1626.0417" y="171.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="269.7917" x="1626.0417" y="194.987"/><rect codeLine="42" fill="none" height="67.7999" id="ComponentSetResponsePageAspect" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="269.7917" x="1626.0417" y="171.932"/><ellipse cx="1640.625" cy="187.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1642.5354,192.0512 Q1642.1082,192.2709 1641.6382,192.3808 Q1641.1682,192.4906 1640.6494,192.4906 Q1638.8062,192.4906 1637.8357,191.276 Q1636.8652,190.0614 1636.8652,187.7665 Q1636.8652,185.4655 1637.8357,184.2509 Q1638.8062,183.0363 1640.6494,183.0363 Q1641.1682,183.0363 1641.6443,183.1462 Q1642.1204,183.256 1642.5354,183.4757 L1642.5354,185.4777 Q1642.0715,185.0505 1641.6351,184.8521 Q1641.1987,184.6537 1640.7349,184.6537 Q1639.7461,184.6537 1639.2426,185.438 Q1638.739,186.2223 1638.739,187.7665 Q1638.739,189.3046 1639.2426,190.0889 Q1639.7461,190.8732 1640.7349,190.8732 Q1641.1987,190.8732 1641.6351,190.6748 Q1642.0715,190.4765 1642.5354,190.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="232.2917" x="1657.2917" y="192.3503">ComponentSetResponsePageAspect</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1627.0833" x2="1894.7917" y1="203.3203" y2="203.3203"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1627.0833" x2="1894.7917" y1="211.6536" y2="211.6536"/><ellipse cx="1637.5" cy="223.112" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="1648.9583" y="230.0232">void beforeResponsePage()</text><!--MD5=[31090b10158c8d2264586c5d36188e97]
+reverse link WicketMetrics to ComponentCreateAspect--><path codeLine="6" d="M866.7604,85.5257 C738.8542,96.7132 489.3333,122.0153 280.7292,164.1195 C274.8021,165.3174 268.7708,166.6195 262.6875,168.0153 " fill="none" id="WicketMetrics-backto-ComponentCreateAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="866.3229,78.2445,887.7083,83.7236,867.5729,92.7757,866.3229,78.2445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b1eff7f7aa9b083066c342f80f32b2fb]
+reverse link WicketMetrics to ComponentOnConfigureAspect--><path codeLine="13" d="M867.3021,99.9424 C789.25,119.6195 671.9896,149.182 581.875,171.8903 " fill="none" id="WicketMetrics-backto-ComponentOnConfigureAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="865.75,92.8174,887.7292,94.7965,869.3125,106.9528,865.75,92.8174" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[456cb7f26f43a6c73d1a1e4210a68e0c]
+reverse link WicketMetrics to ComponentOnDetachAspect--><path codeLine="20" d="M904.5208,114.734 C881.0521,132.7028 852.875,154.2757 829.9896,171.807 " fill="none" id="WicketMetrics-backto-ComponentOnDetachAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="900.4063,108.7028,921.375,101.8174,909.2708,120.2757,900.4063,108.7028" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[01c127d2b5c15cbe43f2f06f53e77641]
+reverse link WicketMetrics to ComponentOnInitializeAspect--><path codeLine="27" d="M998.6563,114.5361 C1018.8854,129.932 1042.6354,148.0153 1063.5417,163.9215 " fill="none" id="WicketMetrics-backto-ComponentOnInitializeAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="994.1042,120.2445,981.9375,101.8174,1002.9375,108.6299,994.1042,120.2445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c2ec495a8f4ffe2838e50f356327b8dd]
+reverse link WicketMetrics to ComponentOnRenderAspect--><path codeLine="34" d="M1035.8021,100.2028 C1112.8854,119.8799 1228.0833,149.2965 1316.6875,171.9111 " fill="none" id="WicketMetrics-backto-ComponentOnRenderAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1033.9896,107.2653,1015.6042,95.0465,1037.5938,93.1403,1033.9896,107.2653" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8014636f67c7970cba25b08bf3c4abc5]
+reverse link WicketMetrics to ComponentSetResponsePageAspect--><path codeLine="41" d="M1036.3125,86.182 C1161.9063,98.0674 1404.4792,124.0882 1607.8125,164.1195 C1619.4167,166.4007 1631.4375,169.0674 1643.4167,171.9215 " fill="none" id="WicketMetrics-backto-ComponentSetResponsePageAspect" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1035.4271,93.4215,1015.3542,84.2236,1036.7813,78.9007,1035.4271,93.4215" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[68bf7b1c77a0252453fafcffb079a5df]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.component"
+    
+    WicketMetrics <|- - ComponentCreateAspect
+    class ComponentCreateAspect
+    {
+        - -(factory)- -
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnConfigureAspect
+    class ComponentOnConfigureAspect
+    {
+        - -
+        +Object aroundOnConfigure(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnDetachAspect
+    class ComponentOnDetachAspect
+    {
+        - -
+        +Object arroundOnDetach(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnInitializeAspect
+    class ComponentOnInitializeAspect
+    {
+        - -(lifecycle)- -
+        +Object aroundOnInitialize(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnRenderAspect
+    class ComponentOnRenderAspect
+    {
+        - -
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentSetResponsePageAspect
+    class ComponentSetResponsePageAspect
+    {
+        - -
+        +void beforeResponsePage()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.metrics.aspects.component"
+    
+    WicketMetrics <|- - ComponentCreateAspect
+    class ComponentCreateAspect
+    {
+        - -(factory)- -
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnConfigureAspect
+    class ComponentOnConfigureAspect
+    {
+        - -
+        +Object aroundOnConfigure(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnDetachAspect
+    class ComponentOnDetachAspect
+    {
+        - -
+        +Object arroundOnDetach(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnInitializeAspect
+    class ComponentOnInitializeAspect
+    {
+        - -(lifecycle)- -
+        +Object aroundOnInitialize(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentOnRenderAspect
+    class ComponentOnRenderAspect
+    {
+        - -
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|- - ComponentSetResponsePageAspect
+    class ComponentSetResponsePageAspect
+    {
+        - -
+        +void beforeResponsePage()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

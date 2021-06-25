@@ -1,0 +1,64 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.request.handler.logger"
+    
+    interface ILogData
+    
+    PageLogData <|-- ListenerLogData
+    class ListenerLogData
+    {
+        --(constructors)--
+        +ListenerLogData(IPageAndComponentProvider, Integer)
+        --
+        +Class<? extends Behavior> getBehaviorClass()
+        +Class<? extends IRequestableComponent> getComponentClass()
+        +Class<? extends IRequestableComponent> getSubmittingComponentClass()
+        --(collection)--
+        +Integer getBehaviorIndex()
+        --(path)--
+        +String getComponentPath()
+        +String getSubmittingComponentPath()
+    }
+    
+    ILogData <|-- PageLogData
+    class PageLogData
+    {
+        --(constructors)--
+        +PageLogData(IPageProvider)
+        +PageLogData(Page)
+        --
+        +Class<? extends IRequestablePage> getPageClass()
+        +PageParameters getPageParameters()
+        --(collection)--
+        +Integer getRenderCount()
+        --(identity)--
+        +Integer getPageId()
+    }
+    
+    ResourceLogData <|-- ResourceReferenceLogData
+    class ResourceReferenceLogData
+    {
+        --(constructors)--
+        +ResourceReferenceLogData(ResourceReferenceRequestHandler)
+        --
+        +PageParameters getPageParameters()
+        +Class<? extends ResourceReference> getResourceReferenceClass()
+        +Class<?> getScope()
+    }
+    
+    ResourceLogData <|-- ResourceStreamLogData
+    class ResourceStreamLogData
+    {
+        --(constructors)--
+        +ResourceStreamLogData(ResourceStreamRequestHandler)
+        +ResourceStreamLogData(ResourceStreamRequestHandler, IResourceStream)
+        --
+        +ContentDisposition getContentDisposition()
+        +String getContentType()
+        +Class<? extends IResourceStream> getResourceStreamClass()
+    }
+    
+@enduml
+

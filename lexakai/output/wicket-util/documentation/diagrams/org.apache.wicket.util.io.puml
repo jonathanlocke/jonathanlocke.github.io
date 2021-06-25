@@ -1,0 +1,232 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.io"
+    
+    interface Serializable
+    
+    ProxyInputStream <|-- BOMInputStream
+    class BOMInputStream
+    {
+        --(constructors)--
+        +BOMInputStream(InputStream)
+        +BOMInputStream(InputStream, ByteOrderMark)
+        +BOMInputStream(InputStream, boolean)
+        +BOMInputStream(InputStream, boolean, ByteOrderMark)
+        --
+        +boolean hasBOM()
+        +boolean hasBOM(ByteOrderMark bom)
+        --(naming)--
+        +String getBOMCharsetName()
+        --(primitive)--
+        +ByteOrderMark getBOM()
+    }
+    
+    OutputStream <|-- ByteArrayOutputStream
+    class ByteArrayOutputStream
+    {
+        --(constructors)--
+        +ByteArrayOutputStream()
+        +ByteArrayOutputStream(int)
+        --(collection)--
+        +int size()
+        +byte[] toByteArray()
+        --(lifecycle)--
+        +void reset()
+        --(write)--
+        +void writeTo(OutputStream)
+    }
+    
+    OutputStream <|-- ByteCountingOutputStream
+    class ByteCountingOutputStream
+    {
+        --(collection)--
+        +long size()
+    }
+    
+    Serializable <|-- ByteOrderMark
+    class ByteOrderMark
+    {
+        --(constructors)--
+        +ByteOrderMark(String, int)
+        --
+        +int get(int pos)
+        +int length()
+        --(naming)--
+        +String getCharsetName()
+        --(primitive)--
+        +byte[] getBytes()
+    }
+    
+    class Connections
+    {
+        --(io)--
+        +void close(URLConnection)
+        +void closeQuietly(URLConnection)
+        --(time)--
+        +Instant getLastModified(URL)
+    }
+    
+    ThresholdingOutputStream <|-- DeferredFileOutputStream
+    class DeferredFileOutputStream
+    {
+        --(constructors)--
+        +DeferredFileOutputStream(int, File)
+        +DeferredFileOutputStream(int, FileFactory)
+        --
+        +byte[] getData()
+        --(checks)--
+        +boolean isInMemory()
+        --(filesystem)--
+        +File getFile()
+    }
+    
+    interface DeferredFileOutputStream.FileFactory
+    {
+        --(filesystem)--
+        +File createFile()
+    }
+    
+    class FullyBufferedReader
+    {
+        --(constructors)--
+        +FullyBufferedReader(String)
+        +FullyBufferedReader(Reader)
+        --
+        +int getColumnNumber()
+        +int getLineNumber()
+        +int getPosition()
+        +void setPosition(int pos)
+        +void setPositionMarker(int pos)
+        --(collection)--
+        +void countLinesTo(int end)
+        +int size()
+        --(primitive)--
+        +char charAt(int pos)
+        +CharSequence getSubstring(int toPos)
+        +CharSequence getSubstring(int fromPos, int toPos)
+        --(search)--
+        +int find(char)
+        +int find(String)
+        +int find(String, int startPos)
+        +int find(char, int startPos)
+        +int findOutOfQuotes(char, int startPos)
+        +int findOutOfQuotes(char, int startPos, char quotationChar)
+    }
+    
+    interface Serializable
+    Serializable <|-- IClusterable
+    interface IClusterable
+    {
+    }
+    
+    class IOUtils
+    {
+        --(constructors)--
+        +IOUtils()
+        --
+        +boolean contentEquals(Reader input1, Reader input2)
+        +boolean contentEquals(InputStream input1, InputStream input2)
+        --(filesystem)--
+        +int copy(InputStream, OutputStream)
+        +int copy(Reader input, Writer output)
+        +void copy(InputStream, Writer output, String encoding)
+        +void copy(Reader input, OutputStream, String encoding)
+        +void copy(Reader input, OutputStream)
+        +void copy(InputStream, Writer output)
+        --(io)--
+        +void close(Closeable)
+        +void closeQuietly(Closeable)
+        --(primitive)--
+        +byte[] toByteArray(Reader input)
+        +byte[] toByteArray(Reader input, String encoding)
+        +byte[] toByteArray(InputStream)
+        +char[] toCharArray(Reader input)
+        +char[] toCharArray(InputStream is)
+        +char[] toCharArray(InputStream is, String encoding)
+        --(write)--
+        +void write(byte[] data, OutputStream)
+        +void write(char[] data, OutputStream, String encoding)
+        +void write(char[] data, Writer output)
+        +void write(StringBuilder data, OutputStream, String encoding)
+        +void write(char[] data, OutputStream)
+        +void write(byte[] data, Writer output)
+        +void write(StringBuilder data, Writer output)
+        +void write(StringBuilder data, OutputStream)
+        +void write(String data, OutputStream)
+        +void write(byte[] data, Writer output, String encoding)
+        +void write(String data, OutputStream, String encoding)
+        +void write(String data, Writer output)
+    }
+    
+    FilterInputStream <|-- ProxyInputStream
+    abstract class ProxyInputStream
+    {
+        --(constructors)--
+        +ProxyInputStream(InputStream)
+        --
+        #void handleIOException(IOException)
+        --(read)--
+        #void afterRead(int)
+        #void beforeRead(int)
+    }
+    
+    class Streams
+    {
+        --(filesystem)--
+        +int copy(InputStream, OutputStream)
+        +int copy(InputStream, OutputStream, int bufSize)
+        +int copyAndClose(InputStream, OutputStream)
+        --(read)--
+        +void loadFromXml(Properties, InputStream)
+        +InputStream readNonCaching(URL)
+        +String readString(InputStream)
+        +String readString(Reader in)
+        +String readString(InputStream, CharSequence encoding)
+    }
+    
+    Writer <|-- StringBufferWriter
+    class StringBufferWriter
+    {
+        --(constructors)--
+        +StringBufferWriter()
+        --
+        +AppendingStringBuffer getStringBuffer()
+        +void setStringBuffer(AppendingStringBuffer)
+        --(lifecycle)--
+        +void reset()
+        --(write)--
+        +void write(char)
+    }
+    
+    OutputStream <|-- ThresholdingOutputStream
+    abstract class ThresholdingOutputStream
+    {
+        --(constructors)--
+        +ThresholdingOutputStream(int)
+        --
+        +int getThreshold()
+        #void checkThreshold(int count)
+        #void thresholdReached()
+        --(checks)--
+        +boolean isThresholdExceeded()
+        --(primitive)--
+        +long getByteCount()
+        --(write)--
+        #OutputStream getStream()
+    }
+    
+    Reader <|-- XmlReader
+    class XmlReader
+    {
+        --(constructors)--
+        +XmlReader(InputStream, String)
+        --
+        +String getEncoding()
+        --(lifecycle)--
+        +void init()
+    }
+    
+@enduml
+

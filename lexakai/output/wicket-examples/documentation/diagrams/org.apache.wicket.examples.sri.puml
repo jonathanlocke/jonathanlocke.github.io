@@ -1,0 +1,31 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.sri"
+    
+    class DynamicSubresourceIntegrity
+    {
+        --
+        +String getIntegrity(ISubresourceHeaderItem)
+        +IHeaderResponse wrap(IHeaderResponse)
+        --(collection)--
+        #String createHash(byte[] bytes)
+        --(primitive)--
+        #byte[] getBytes(IStaticCacheableResource, Url baseUrl)
+    }
+    
+    WicketExamplePage <|-- IntegrityDemoPage
+    class IntegrityDemoPage
+    {
+        --(constructors)--
+        +IntegrityDemoPage()
+    }
+    
+    WicketExampleApplication <|-- SriApplication
+    class SriApplication
+    {
+    }
+    
+@enduml
+

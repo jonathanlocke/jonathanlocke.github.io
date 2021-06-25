@@ -1,0 +1,21 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.repeater"
+    
+    Panel <|-- AjaxListPanel
+    class AjaxListPanel
+    {
+        --(constructors)--
+        +AjaxListPanel(String)
+        --
+        +T append(T component, AjaxRequestTarget)
+        --(factory)--
+        +String newChildId()
+        --(filesystem)--
+        +T delete(T component, AjaxRequestTarget)
+    }
+    
+@enduml
+

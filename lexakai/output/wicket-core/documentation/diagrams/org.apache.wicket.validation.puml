@@ -1,0 +1,115 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.validation"
+    
+    interface IValidator
+    interface IValidationError
+    interface IValidatable
+    
+    Behavior <|-- CompoundValidator
+    IValidator <|-- CompoundValidator
+    class CompoundValidator<T>
+    {
+        --(constructors)--
+        +CompoundValidator()
+        --(collection)--
+        +CompoundValidator<T> add(IValidator<T>)
+        +List<IValidator<T>> getValidators()
+    }
+    
+    interface IErrorMessageSource
+    {
+        --(messaging)--
+        +String getMessage(String key, Map<String,Object> vars)
+    }
+    
+    interface IValidator
+    IValidator <|-- INullAcceptingValidator
+    interface INullAcceptingValidator<T>
+    {
+    }
+    
+    interface IValidatable<T>
+    {
+        --
+        +IModel<T> getModel()
+        +T getValue()
+        --(checks)--
+        +boolean isValid()
+        --(status)--
+        +void error(IValidationError)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IValidationError
+    interface IValidationError
+    {
+        --(status)--
+        +Serializable getErrorMessage(IErrorMessageSource)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IValidator
+    interface IValidator<T>
+    {
+        --
+        +void validate(IValidatable<T>)
+    }
+    
+    IValidationError <|-- RawValidationError
+    class RawValidationError
+    {
+        --(constructors)--
+        +RawValidationError(Serializable)
+    }
+    
+    IValidatable <|-- Validatable
+    class Validatable<T>
+    {
+        --(constructors)--
+        +Validatable()
+        +Validatable(T)
+        --
+        +void setModel(IModel<T>)
+        +void setValue(T value)
+        --(collection)--
+        +List<IValidationError> getErrors()
+    }
+    
+    IValidationError <|-- ValidationError
+    class ValidationError
+    {
+        --(constructors)--
+        +ValidationError()
+        +ValidationError(IValidator<?>)
+        +ValidationError(IValidator<?>, String)
+        +ValidationError(String)
+        --(collection)--
+        +ValidationError addKey(String key)
+        +ValidationError addKey(IValidator<?>)
+        +ValidationError addKey(IValidator<?>, String variation)
+        +List<String> getKeys()
+        +Map<String,Object> getVariables()
+        +void setKeys(List<String> keys)
+        --(messaging)--
+        +String getMessage()
+        --(status)--
+        +ValidationError setMessage(String message)
+        +ValidationError setVariable(String name, Object value)
+        +ValidationError setVariables(Map<String,Object> vars)
+    }
+    
+    Behavior <|-- ValidatorAdapter
+    IValidator <|-- ValidatorAdapter
+    class ValidatorAdapter<T>
+    {
+        --(constructors)--
+        +ValidatorAdapter(IValidator<T>)
+        --
+        +IValidator<T> getValidator()
+    }
+    
+@enduml
+

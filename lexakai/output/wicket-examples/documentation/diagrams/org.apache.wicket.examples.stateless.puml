@@ -1,0 +1,74 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.stateless"
+    
+    interface IModel
+    
+    WicketExamplePage <|-- AjaxStatelessExample
+    class AjaxStatelessExample
+    {
+        --(constructors)--
+        +AjaxStatelessExample(PageParameters)
+        --
+        #void updateParams(PageParameters, int counter)
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    IModel <|-- SessionModel
+    class SessionModel
+    {
+    }
+    
+    WicketExamplePage <|-- StatefulPage
+    class StatefulPage
+    {
+        --(constructors)--
+        +StatefulPage()
+        --(collection)--
+        +int getLinkClickCount()
+        +void setLinkClickCount(int linkClickCount)
+    }
+    
+    WicketExampleApplication <|-- StatelessApplication
+    class StatelessApplication
+    {
+    }
+    
+    WicketExamplePage <|-- StatelessPage
+    class StatelessPage
+    {
+        --(constructors)--
+        +StatelessPage()
+    }
+    
+    WicketExamplePage <|-- StatelessPage1
+    class StatelessPage1
+    {
+        --(constructors)--
+        +StatelessPage1()
+    }
+    
+    WicketExamplePage <|-- StatelessPage2
+    class StatelessPage2
+    {
+        --(constructors)--
+        +StatelessPage2()
+    }
+    
+    WicketExamplePage <|-- StatelessPage3
+    class StatelessPage3
+    {
+        --(constructors)--
+        +StatelessPage3()
+    }
+    
+@enduml
+

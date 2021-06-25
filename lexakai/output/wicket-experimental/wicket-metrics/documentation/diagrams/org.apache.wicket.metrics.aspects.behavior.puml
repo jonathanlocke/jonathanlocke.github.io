@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.behavior"
+    
+    WicketMetrics <|-- BehaviorCreateAspect
+    class BehaviorCreateAspect
+    {
+        --(factory)--
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+@enduml
+

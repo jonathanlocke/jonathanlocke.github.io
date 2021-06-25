@@ -1,0 +1,66 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api.event"
+    
+    WebSocketPayload <|-- WebSocketAbortedPayload
+    class WebSocketAbortedPayload
+    {
+        --(constructors)--
+        +WebSocketAbortedPayload(AbortedMessage, WebSocketRequestHandler)
+    }
+    
+    WebSocketPayload <|-- WebSocketBinaryPayload
+    class WebSocketBinaryPayload
+    {
+        --(constructors)--
+        +WebSocketBinaryPayload(BinaryMessage, WebSocketRequestHandler)
+    }
+    
+    WebSocketPayload <|-- WebSocketClosedPayload
+    class WebSocketClosedPayload
+    {
+        --(constructors)--
+        +WebSocketClosedPayload(ClosedMessage, WebSocketRequestHandler)
+    }
+    
+    WebSocketPayload <|-- WebSocketConnectedPayload
+    class WebSocketConnectedPayload
+    {
+        --(constructors)--
+        +WebSocketConnectedPayload(ConnectedMessage, WebSocketRequestHandler)
+    }
+    
+    WebSocketPayload <|-- WebSocketErrorPayload
+    class WebSocketErrorPayload
+    {
+        --(constructors)--
+        +WebSocketErrorPayload(ErrorMessage, WebSocketRequestHandler)
+    }
+    
+    abstract class WebSocketPayload<T>
+    {
+        --(constructors)--
+        +WebSocketPayload(WebSocketRequestHandler)
+        --(messaging)--
+        +WebSocketRequestHandler getHandler()
+        +T getMessage()
+    }
+    
+    WebSocketPayload <|-- WebSocketPushPayload
+    class WebSocketPushPayload
+    {
+        --(constructors)--
+        +WebSocketPushPayload(IWebSocketPushMessage, WebSocketRequestHandler)
+    }
+    
+    WebSocketPayload <|-- WebSocketTextPayload
+    class WebSocketTextPayload
+    {
+        --(constructors)--
+        +WebSocketTextPayload(TextMessage, WebSocketRequestHandler)
+    }
+    
+@enduml
+

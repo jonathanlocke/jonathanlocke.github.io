@@ -1,0 +1,38 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.util.encoding"
+    
+    class CharSetMap
+    {
+        --(constructors)--
+        +CharSetMap()
+        +CharSetMap(File)
+        +CharSetMap(InputStream)
+        +CharSetMap(Properties)
+        +CharSetMap(String)
+        --(collection)--
+        #Map<String,String> loadFile(File)
+        #Map<String,String> loadPath(String path)
+        #Map<String,String> loadResource(String name)
+        #Map<String,String> loadStream(InputStream)
+        --(primitive)--
+        +String getCharSet(String key, String def)
+        +String getCharSet(Locale, String variant)
+        +String getCharSet(String key)
+        +String getCharSet(Locale)
+        +void setCharSet(String key, String charset)
+        #void setCommonCharSet(String key, String charset)
+    }
+    
+    class CharSetUtil
+    {
+        --(constructors)--
+        +CharSetUtil()
+        --
+        +String getEncoding(RequestCycle)
+    }
+    
+@enduml
+

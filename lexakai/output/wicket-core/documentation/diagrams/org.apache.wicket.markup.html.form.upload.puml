@@ -1,0 +1,90 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.form.upload"
+    
+    interface IModel
+    interface Serializable
+    
+    IModel <|-- MultiFileUploadField.CaptionModel
+    class MultiFileUploadField.CaptionModel
+    {
+    }
+    
+    Serializable <|-- FileDescription
+    class FileDescription
+    {
+        --(constructors)--
+        +FileDescription(JSONObject)
+        +FileDescription(String, long, long, String)
+        --
+        +String getMimeType()
+        --(filesystem)--
+        +String getFileName()
+        +long getFileSize()
+        --(time)--
+        +Date getLastModified()
+    }
+    
+    class FileUpload
+    {
+        --(constructors)--
+        +FileUpload(FileItem)
+        --
+        +String getContentType()
+        +byte[] getDigest(String algorithm)
+        +byte[] getMD5()
+        --(collection)--
+        +long getSize()
+        --(filesystem)--
+        +void delete()
+        +String getClientFileName()
+        +File writeToTempFile()
+        --(io)--
+        +void closeStreams()
+        --(primitive)--
+        +byte[] getBytes()
+        --(read)--
+        +InputStream getInputStream()
+        --(write)--
+        +void writeTo(File)
+    }
+    
+    FormComponent <|-- FileUploadField
+    class FileUploadField
+    {
+        --(constructors)--
+        +FileUploadField(String)
+        +FileUploadField(String, IModel<? extends List<FileUpload>>)
+        --(filesystem)--
+        +FileUpload getFileUpload()
+        +List<FileUpload> getFileUploads()
+        --(io)--
+        #boolean forceCloseStreamsOnDetach()
+    }
+    
+    OnChangeAjaxBehavior <|-- FilesSelectedBehavior
+    abstract class FilesSelectedBehavior
+    {
+        --
+        #void onSelected(AjaxRequestTarget, List<FileDescription> fileDescriptions)
+        --(filesystem)--
+        +FilesSelectedBehavior onSelected(SerializableBiConsumer<AjaxRequestTarget,List<FileDescription>> select)
+    }
+    
+    FormComponentPanel <|-- MultiFileUploadField
+    class MultiFileUploadField
+    {
+        --(constructors)--
+        +MultiFileUploadField(String)
+        +MultiFileUploadField(String, IModel<? extends Collection<FileUpload>>)
+        +MultiFileUploadField(String, IModel<? extends Collection<FileUpload>>, int)
+        +MultiFileUploadField(String, IModel<? extends Collection<FileUpload>>, int, boolean)
+        +MultiFileUploadField(String, int)
+        --(io)--
+        #boolean forceCloseStreamsOnDetach()
+    }
+    
+@enduml
+

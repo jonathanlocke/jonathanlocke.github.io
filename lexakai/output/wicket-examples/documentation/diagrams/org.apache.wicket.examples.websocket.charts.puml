@@ -1,0 +1,44 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.websocket.charts"
+    
+    interface Runnable
+    
+    class ChartUpdater
+    {
+        --(lifecycle)--
+        +void start(ConnectedMessage, ScheduledExecutorService)
+    }
+    
+    WebSocketResource <|-- ChartWebSocketResource
+    class ChartWebSocketResource
+    {
+    }
+    
+    JavaScriptResourceReference <|-- ChartsResourceReference
+    class ChartsResourceReference
+    {
+        --(constructors)--
+        +ChartsResourceReference()
+    }
+    
+    class ChartUpdater.Record
+    {
+    }
+    
+    Runnable <|-- ChartUpdater.UpdateTask
+    class ChartUpdater.UpdateTask
+    {
+    }
+    
+    Panel <|-- WebSocketChart
+    class WebSocketChart
+    {
+        --(constructors)--
+        +WebSocketChart(String)
+    }
+    
+@enduml
+

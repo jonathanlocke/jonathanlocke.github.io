@@ -1,0 +1,55 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.threadtest.apps.app2"
+    
+    interface Filter
+    
+    class Connection
+    {
+        --(constructors)--
+        +Connection(String)
+        --
+        +String getData()
+        --(identity)--
+        +String getId()
+    }
+    
+    WebPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+    }
+    
+    class Pool
+    {
+        --
+        +Connection getConnection()
+        +Pool getInstance()
+        +void release()
+    }
+    
+    WebApplication <|-- TestApp2
+    class TestApp2
+    {
+        --(constructors)--
+        +TestApp2()
+        --
+        +TestApp2 get()
+    }
+    
+    Filter <|-- TestFilter
+    class TestFilter
+    {
+        --
+        +void destroy()
+        --(configuration)--
+        +void init(FilterConfig)
+        --(filtering)--
+        +void doFilter(ServletRequest, ServletResponse, FilterChain)
+    }
+    
+@enduml
+

@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="282.2917px" preserveAspectRatio="none" style="width:1353px;height:282px;background:#333333;" version="1.1" viewBox="0 0 1353 282" width="1353.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="696.875" x="320.8333" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="673.9583" x="332.2917" y="30.5583">org.apache.wicket.extensions.ajax.markup.html.repeater.data.table</text><!--MD5=[0fd8cd9cfb9733999f48895b33059e7f]
+class DataTable--><rect fill="#282828" height="48.055" id="DataTable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="261.4583" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="261.4583" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="261.4583" y="76.7578"/><rect fill="none" height="48.055" id="DataTable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="261.4583" y="53.7028"/><ellipse cx="276.0417" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M277.9521,73.822 Q277.5248,74.0417 277.0549,74.1516 Q276.5849,74.2615 276.0661,74.2615 Q274.2228,74.2615 273.2524,73.0469 Q272.2819,71.8323 272.2819,69.5374 Q272.2819,67.2363 273.2524,66.0217 Q274.2228,64.8071 276.0661,64.8071 Q276.5849,64.8071 277.061,64.917 Q277.537,65.0269 277.9521,65.2466 L277.9521,67.2485 Q277.4882,66.8213 277.0518,66.6229 Q276.6154,66.4246 276.1515,66.4246 Q275.1628,66.4246 274.6592,67.2089 Q274.1557,67.9932 274.1557,69.5374 Q274.1557,71.0754 274.6592,71.8597 Q275.1628,72.644 276.1515,72.644 Q276.6154,72.644 277.0518,72.4457 Q277.4882,72.2473 277.9521,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="292.7083" y="74.1211">DataTable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="262.5" x2="363.5417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="262.5" x2="363.5417" y1="93.4245" y2="93.4245"/><!--MD5=[c902a8b06570a775480066741c36d2b7]
+class AjaxFallbackDefaultDataTable--><rect codeLine="7" fill="#282828" height="83.3781" id="AjaxFallbackDefaultDataTable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="611.4583" x="7.2917" y="178.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="611.4583" x="7.2917" y="178.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="611.4583" x="7.2917" y="201.237"/><rect codeLine="7" fill="none" height="83.3781" id="AjaxFallbackDefaultDataTable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="611.4583" x="7.2917" y="178.182"/><ellipse cx="191.6667" cy="193.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M193.5771,198.3012 Q193.1498,198.5209 192.6799,198.6308 Q192.2099,198.7406 191.6911,198.7406 Q189.8478,198.7406 188.8774,197.526 Q187.9069,196.3114 187.9069,194.0165 Q187.9069,191.7155 188.8774,190.5009 Q189.8478,189.2863 191.6911,189.2863 Q192.2099,189.2863 192.686,189.3962 Q193.162,189.506 193.5771,189.7257 L193.5771,191.7277 Q193.1132,191.3005 192.6768,191.1021 Q192.2404,190.9037 191.7765,190.9037 Q190.7878,190.9037 190.2842,191.688 Q189.7807,192.4723 189.7807,194.0165 Q189.7807,195.5546 190.2842,196.3389 Q190.7878,197.1232 191.7765,197.1232 Q192.2404,197.1232 192.6768,196.9248 Q193.1132,196.7265 193.5771,196.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="194.7917" x="214.5833" y="198.6003">AjaxFallbackDefaultDataTable</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="590.625" y="175.057"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="594.7917" y="191.3086">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="617.7083" y1="209.5703" y2="209.5703"/><ellipse cx="18.75" cy="244.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="579.1667" x="30.2083" y="251.8514">AjaxFallbackDefaultDataTable(String, List&lt;? extends IColumn&lt;T, S&gt;&gt;, ISortableDataProvider&lt;T, S&gt;, int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="269.2708" y1="227.7761" y2="227.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="272.3958" y="231.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="356.7708" x2="617.7083" y1="227.7761" y2="227.7761"/><!--MD5=[22a91a9ba29d20de6b86e3955d820fd0]
+class HeadersToolbar--><rect fill="#282828" height="48.055" id="HeadersToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="139.5833" x="782.8125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="139.5833" x="782.8125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="139.5833" x="782.8125" y="76.7578"/><rect fill="none" height="48.055" id="HeadersToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="139.5833" x="782.8125" y="53.7028"/><ellipse cx="797.3958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M799.3062,73.822 Q798.879,74.0417 798.409,74.1516 Q797.939,74.2615 797.4202,74.2615 Q795.577,74.2615 794.6065,73.0469 Q793.6361,71.8323 793.6361,69.5374 Q793.6361,67.2363 794.6065,66.0217 Q795.577,64.8071 797.4202,64.8071 Q797.939,64.8071 798.4151,64.917 Q798.8912,65.0269 799.3062,65.2466 L799.3062,67.2485 Q798.8424,66.8213 798.406,66.6229 Q797.9696,66.4246 797.5057,66.4246 Q796.5169,66.4246 796.0134,67.2089 Q795.5098,67.9932 795.5098,69.5374 Q795.5098,71.0754 796.0134,71.8597 Q796.5169,72.644 797.5057,72.644 Q797.9696,72.644 798.406,72.4457 Q798.8424,72.2473 799.3062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="814.0625" y="74.1211">HeadersToolbar</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="783.8542" x2="921.3542" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="783.8542" x2="921.3542" y1="93.4245" y2="93.4245"/><!--MD5=[d66ef6a7953da61835ee9da99f4c0b72]
+class AjaxFallbackHeadersToolbar--><rect codeLine="14" fill="#282828" height="111.4563" id="AjaxFallbackHeadersToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="393.75" x="655.7292" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="393.75" x="655.7292" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="393.75" x="655.7292" y="187.1745"/><rect codeLine="14" fill="none" height="111.4563" id="AjaxFallbackHeadersToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="393.75" x="655.7292" y="164.1195"/><ellipse cx="744.7917" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M746.7021,184.2387 Q746.2748,184.4584 745.8049,184.5683 Q745.3349,184.6781 744.8161,184.6781 Q742.9728,184.6781 742.0024,183.4635 Q741.0319,182.2489 741.0319,179.954 Q741.0319,177.653 742.0024,176.4384 Q742.9728,175.2238 744.8161,175.2238 Q745.3349,175.2238 745.811,175.3337 Q746.287,175.4435 746.7021,175.6632 L746.7021,177.6652 Q746.2382,177.238 745.8018,177.0396 Q745.3654,176.8412 744.9015,176.8412 Q743.9128,176.8412 743.4092,177.6255 Q742.9057,178.4098 742.9057,179.954 Q742.9057,181.4921 743.4092,182.2764 Q743.9128,183.0607 744.9015,183.0607 Q745.3654,183.0607 745.8018,182.8623 Q746.2382,182.664 746.7021,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="183.3333" x="767.7083" y="184.5378">AjaxFallbackHeadersToolbar</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="15.625" x="1036.9792" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="7.2917" x="1041.1458" y="177.2461">S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="656.7708" x2="1048.4375" y1="195.5078" y2="195.5078"/><ellipse cx="667.1875" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="357.2917" x="678.6458" y="237.7889">AjaxFallbackHeadersToolbar(DataTable&lt;?, S&gt;, ISortStateLocator</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="4.1667" x="1035.9375" y="237.7889">)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="656.7708" x2="808.8542" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="811.9792" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="896.3542" x2="1048.4375" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="656.7708" x2="1048.4375" y1="247.4976" y2="247.4976"/><polygon fill="#FFFF44" points="667.1875,253.7476,671.3542,257.9142,667.1875,262.0809,663.0208,257.9142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="678.6458" y="265.8671">void updateAjaxAttributes(AjaxRequestAttributes)</text><!--MD5=[75b303c1de771dcff71658a655a43c96]
+class NavigationToolbar--><rect fill="#282828" height="48.055" id="NavigationToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1137.5" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1137.5" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1137.5" y="76.7578"/><rect fill="none" height="48.055" id="NavigationToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1137.5" y="53.7028"/><ellipse cx="1152.0833" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1153.9937,73.822 Q1153.5665,74.0417 1153.0965,74.1516 Q1152.6265,74.2615 1152.1077,74.2615 Q1150.2645,74.2615 1149.294,73.0469 Q1148.3236,71.8323 1148.3236,69.5374 Q1148.3236,67.2363 1149.294,66.0217 Q1150.2645,64.8071 1152.1077,64.8071 Q1152.6265,64.8071 1153.1026,64.917 Q1153.5787,65.0269 1153.9937,65.2466 L1153.9937,67.2485 Q1153.5299,66.8213 1153.0935,66.6229 Q1152.6571,66.4246 1152.1932,66.4246 Q1151.2044,66.4246 1150.7009,67.2089 Q1150.1973,67.9932 1150.1973,69.5374 Q1150.1973,71.0754 1150.7009,71.8597 Q1151.2044,72.644 1152.1932,72.644 Q1152.6571,72.644 1153.0935,72.4457 Q1153.5299,72.2473 1153.9937,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="1168.75" y="74.1211">NavigationToolbar</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1138.5417" x2="1293.75" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1138.5417" x2="1293.75" y1="93.4245" y2="93.4245"/><!--MD5=[e699c0aa99ebbea1fb464042485e0ecd]
+class AjaxNavigationToolbar--><rect codeLine="23" fill="#282828" height="83.3781" id="AjaxNavigationToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="1086.4583" y="178.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="1086.4583" y="178.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="1086.4583" y="201.237"/><rect codeLine="23" fill="none" height="83.3781" id="AjaxNavigationToolbar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="1086.4583" y="178.182"/><ellipse cx="1134.8958" cy="193.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1136.8062,198.3012 Q1136.379,198.5209 1135.909,198.6308 Q1135.439,198.7406 1134.9202,198.7406 Q1133.077,198.7406 1132.1065,197.526 Q1131.1361,196.3114 1131.1361,194.0165 Q1131.1361,191.7155 1132.1065,190.5009 Q1133.077,189.2863 1134.9202,189.2863 Q1135.439,189.2863 1135.9151,189.3962 Q1136.3912,189.506 1136.8062,189.7257 L1136.8062,191.7277 Q1136.3424,191.3005 1135.906,191.1021 Q1135.4696,190.9037 1135.0057,190.9037 Q1134.0169,190.9037 1133.5134,191.688 Q1133.0098,192.4723 1133.0098,194.0165 Q1133.0098,195.5546 1133.5134,196.3389 Q1134.0169,197.1232 1135.0057,197.1232 Q1135.4696,197.1232 1135.906,196.9248 Q1136.3424,196.7265 1136.8062,196.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="1157.8125" y="198.6003">AjaxNavigationToolbar</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1087.5" x2="1344.7917" y1="209.5703" y2="209.5703"/><ellipse cx="1097.9167" cy="244.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="227.0833" x="1109.375" y="251.8514">AjaxNavigationToolbar(DataTable&lt;?, ?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1087.5" x2="1172.3958" y1="227.7761" y2="227.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1175.5208" y="231.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1259.8958" x2="1344.7917" y1="227.7761" y2="227.7761"/><!--MD5=[bba2302e07044118f2d7ccf0d337a18d]
+reverse link DataTable to AjaxFallbackDefaultDataTable--><path codeLine="6" d="M313.0208,122.7965 C313.0208,140.4736 313.0208,160.734 313.0208,178.0674 " fill="none" id="DataTable-backto-AjaxFallbackDefaultDataTable" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="305.7292,122.6715,313.0208,101.8382,320.3125,122.6715,305.7292,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8f2aef5103bf76540127711276e148c8]
+reverse link HeadersToolbar to AjaxFallbackHeadersToolbar--><path codeLine="13" d="M852.6042,122.7028 C852.6042,135.7549 852.6042,150.2028 852.6042,163.859 " fill="none" id="HeadersToolbar-backto-AjaxFallbackHeadersToolbar" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="845.3125,122.6715,852.6042,101.8382,859.8958,122.6715,845.3125,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2769ecdb33670e45f8134b76930dfe3d]
+reverse link NavigationToolbar to AjaxNavigationToolbar--><path codeLine="22" d="M1216.1458,122.7965 C1216.1458,140.4736 1216.1458,160.734 1216.1458,178.0674 " fill="none" id="NavigationToolbar-backto-AjaxNavigationToolbar" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1208.8542,122.6715,1216.1458,101.8382,1223.4375,122.6715,1208.8542,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[556d3730144e8af3ff1947df5e74fe21]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.repeater.data.table"
+    
+    DataTable <|- - AjaxFallbackDefaultDataTable
+    class AjaxFallbackDefaultDataTable<T, S>
+    {
+        - -(constructors)- -
+        +AjaxFallbackDefaultDataTable(String, List<? extends IColumn<T, S>>, ISortableDataProvider<T, S>, int)
+    }
+    
+    HeadersToolbar <|- - AjaxFallbackHeadersToolbar
+    class AjaxFallbackHeadersToolbar<S>
+    {
+        - -(constructors)- -
+        +AjaxFallbackHeadersToolbar(DataTable<?, S>, ISortStateLocator<S>)
+        - -
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    NavigationToolbar <|- - AjaxNavigationToolbar
+    class AjaxNavigationToolbar
+    {
+        - -(constructors)- -
+        +AjaxNavigationToolbar(DataTable<?, ?>)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.repeater.data.table"
+    
+    DataTable <|- - AjaxFallbackDefaultDataTable
+    class AjaxFallbackDefaultDataTable<T, S>
+    {
+        - -(constructors)- -
+        +AjaxFallbackDefaultDataTable(String, List<? extends IColumn<T, S>>, ISortableDataProvider<T, S>, int)
+    }
+    
+    HeadersToolbar <|- - AjaxFallbackHeadersToolbar
+    class AjaxFallbackHeadersToolbar<S>
+    {
+        - -(constructors)- -
+        +AjaxFallbackHeadersToolbar(DataTable<?, S>, ISortStateLocator<S>)
+        - -
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    NavigationToolbar <|- - AjaxNavigationToolbar
+    class AjaxNavigationToolbar
+    {
+        - -(constructors)- -
+        +AjaxNavigationToolbar(DataTable<?, ?>)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

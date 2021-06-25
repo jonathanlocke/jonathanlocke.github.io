@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="686.4583px" preserveAspectRatio="none" style="width:1141px;height:686px;background:#333333;" version="1.1" viewBox="0 0 1141 686" width="1141.6667px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="469.7917" x="328.9063" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="446.875" x="340.3646" y="30.5583">org.apache.wicket.examples.spring.common</text><!--MD5=[91ee8ac52140db181cce494dff7182a2]
+class ContactDao--><rect codeLine="30" fill="#282828" height="131.2012" id="ContactDao" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="601.0417" y="91.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="601.0417" y="91.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="601.0417" y="114.2578"/><rect codeLine="30" fill="none" height="131.2012" id="ContactDao" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="601.0417" y="91.2028"/><ellipse cx="683.8542" cy="106.897" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M681.2581,104.0588 L681.2581,102.4719 L686.6842,102.4719 L686.6842,104.0588 L684.8714,104.0588 L684.8714,109.9976 L686.6842,109.9976 L686.6842,111.5845 L681.2581,111.5845 L681.2581,109.9976 L683.0709,109.9976 L683.0709,104.0588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="706.7708" y="111.6211">ContactDao</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="602.0833" x2="856.25" y1="122.5911" y2="122.5911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="602.0833" x2="856.25" y1="130.9245" y2="130.9245"/><ellipse cx="612.5" cy="142.3828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="623.9583" y="149.294">Contact get(long id)</text><ellipse cx="612.5" cy="186.0392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="58.3333" x="623.9583" y="192.9504">int count()</text><ellipse cx="612.5" cy="205.7841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="223.9583" x="623.9583" y="212.6953">Iterator&lt;Contact&gt; find(QueryParam qp)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="602.0833" x2="694.7917" y1="168.8751" y2="168.8751"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="697.9167" y="172.6847">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="763.5417" x2="856.25" y1="168.8751" y2="168.8751"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="7" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="950.5208" y="132.8695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="950.5208" y="132.8695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="950.5208" y="155.9245"/><rect codeLine="7" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="950.5208" y="132.8695"/><ellipse cx="965.1042" cy="148.5636" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M962.5081,145.7255 L962.5081,144.1386 L967.9342,144.1386 L967.9342,145.7255 L966.1214,145.7255 L966.1214,151.6642 L967.9342,151.6642 L967.9342,153.2511 L962.5081,153.2511 L962.5081,151.6642 L964.3209,151.6642 L964.3209,145.7255 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="981.7708" y="153.2878">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="951.5625" x2="1065.1042" y1="164.2578" y2="164.2578"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="951.5625" x2="1065.1042" y1="172.5911" y2="172.5911"/><!--MD5=[72ce1314beffbcf60a64ee91fbbc10dc]
+class Contact--><rect codeLine="10" fill="#282828" height="356.7281" id="Contact" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="253.125" x="881.7708" y="322.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="253.125" x="881.7708" y="322.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="253.125" x="881.7708" y="345.5078"/><rect codeLine="10" fill="none" height="356.7281" id="Contact" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="253.125" x="881.7708" y="322.4528"/><ellipse cx="976.0417" cy="338.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M977.9521,342.572 Q977.5248,342.7917 977.0549,342.9016 Q976.5849,343.0115 976.0661,343.0115 Q974.2228,343.0115 973.2524,341.7969 Q972.2819,340.5823 972.2819,338.2874 Q972.2819,335.9863 973.2524,334.7717 Q974.2228,333.5571 976.0661,333.5571 Q976.5849,333.5571 977.061,333.667 Q977.537,333.7769 977.9521,333.9966 L977.9521,335.9985 Q977.4882,335.5713 977.0518,335.3729 Q976.6154,335.1746 976.1515,335.1746 Q975.1628,335.1746 974.6592,335.9589 Q974.1557,336.7432 974.1557,338.2874 Q974.1557,339.8254 974.6592,340.6097 Q975.1628,341.394 976.1515,341.394 Q976.6154,341.394 977.0518,341.1957 Q977.4882,340.9973 977.9521,340.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="50" x="998.9583" y="342.8711">Contact</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="882.8125" x2="1133.8542" y1="353.8411" y2="353.8411"/><ellipse cx="893.2292" cy="389.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="52.0833" x="904.6875" y="396.1222">Contact()</text><ellipse cx="893.2292" cy="408.9559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="904.6875" y="415.8671">Contact(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="882.8125" x2="964.5833" y1="372.0469" y2="372.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="967.7083" y="375.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1052.0833" x2="1133.8542" y1="372.0469" y2="372.0469"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="882.8125" x2="1133.8542" y1="425.5758" y2="425.5758"/><ellipse cx="893.2292" cy="437.0341" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="904.6875" y="443.9453">String getCellPhone()</text><ellipse cx="893.2292" cy="456.779" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="904.6875" y="463.6902">String getHomePhone()</text><ellipse cx="893.2292" cy="476.5238" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="904.6875" y="483.4351">void setCellPhone(String cellPhone)</text><ellipse cx="893.2292" cy="496.2687" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="220.8333" x="904.6875" y="503.1799">void setHomePhone(String homePhone)</text><ellipse cx="893.2292" cy="539.9251" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="118.75" x="904.6875" y="546.8363">String getFirstName()</text><ellipse cx="893.2292" cy="559.67" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="116.6667" x="904.6875" y="566.5812">String getLastName()</text><ellipse cx="893.2292" cy="579.4149" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="904.6875" y="586.3261">void setFirstName(String firstName)</text><ellipse cx="893.2292" cy="599.1597" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="904.6875" y="606.071">void setLastName(String lastName)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="882.8125" x2="973.9583" y1="522.761" y2="522.761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="977.0833" y="526.5706">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1042.7083" x2="1133.8542" y1="522.761" y2="522.761"/><ellipse cx="893.2292" cy="642.8162" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="904.6875" y="649.7274">long getId()</text><ellipse cx="893.2292" cy="662.561" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="101.0417" x="904.6875" y="669.4722">void setId(long id)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="882.8125" x2="980.2083" y1="625.6521" y2="625.6521"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="983.3333" y="629.4617">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1036.4583" x2="1133.8542" y1="625.6521" y2="625.6521"/><!--MD5=[75ba29a538411df99135400b4f8aacc9]
+class ContactDaoImpl--><rect codeLine="40" fill="#282828" height="234.0922" id="ContactDaoImpl" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="232.2917" x="613.0208" y="383.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="232.2917" x="613.0208" y="383.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="232.2917" x="613.0208" y="406.4453"/><rect codeLine="40" fill="none" height="234.0922" id="ContactDaoImpl" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="232.2917" x="613.0208" y="383.3903"/><ellipse cx="669.2708" cy="399.0845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M671.1812,403.5095 Q670.754,403.7292 670.284,403.8391 Q669.814,403.949 669.2952,403.949 Q667.452,403.949 666.4815,402.7344 Q665.5111,401.5198 665.5111,399.2249 Q665.5111,396.9238 666.4815,395.7092 Q667.452,394.4946 669.2952,394.4946 Q669.814,394.4946 670.2901,394.6045 Q670.7662,394.7144 671.1812,394.9341 L671.1812,396.936 Q670.7174,396.5088 670.281,396.3104 Q669.8446,396.1121 669.3807,396.1121 Q668.3919,396.1121 667.8884,396.8964 Q667.3848,397.6807 667.3848,399.2249 Q667.3848,400.7629 667.8884,401.5472 Q668.3919,402.3315 669.3807,402.3315 Q669.8446,402.3315 670.281,402.1332 Q670.7174,401.9348 671.1812,401.5076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="692.1875" y="403.8086">ContactDaoImpl</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="614.0625" x2="844.2708" y1="414.7786" y2="414.7786"/><ellipse cx="624.4792" cy="450.1485" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="635.9375" y="457.0597">ContactDaoImpl()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="614.0625" x2="685.4167" y1="432.9844" y2="432.9844"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="688.5417" y="436.794">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="772.9167" x2="844.2708" y1="432.9844" y2="432.9844"/><polygon fill="#FFFF44" points="624.4792,488.5966,628.6458,492.7633,624.4792,496.9299,620.3125,492.7633" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="100" x="635.9375" y="500.7161">void add(Contact)</text><polygon fill="#FFFF44" points="624.4792,508.3415,628.6458,512.5081,624.4792,516.6748,620.3125,512.5081" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="200" x="635.9375" y="520.461">List&lt;Contact&gt; getIndex(SortParam)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="614.0625" x2="694.7917" y1="476.6408" y2="476.6408"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="697.9167" y="480.4504">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="763.5417" x2="844.2708" y1="476.6408" y2="476.6408"/><ellipse cx="624.4792" cy="557.2062" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="112.5" x="635.9375" y="564.1174">void delete(Contact)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="614.0625" x2="693.75" y1="540.0421" y2="540.0421"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="696.875" y="543.8517">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="764.5833" x2="844.2708" y1="540.0421" y2="540.0421"/><ellipse cx="624.4792" cy="600.8626" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="635.9375" y="607.7738">void save(Contact)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="614.0625" x2="708.3333" y1="583.6985" y2="583.6985"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="35.4167" x="711.4583" y="587.5081">(write)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="750" x2="844.2708" y1="583.6985" y2="583.6985"/><!--MD5=[72f241f144d80f32affe85bc183dc030]
+class ContactGenerator--><rect codeLine="53" fill="#282828" height="150.946" id="ContactGenerator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="7.2917" y="81.307"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="7.2917" y="81.307"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="7.2917" y="104.362"/><rect codeLine="53" fill="none" height="150.946" id="ContactGenerator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="7.2917" y="81.307"/><ellipse cx="89.0625" cy="97.0011" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M90.9729,101.4262 Q90.5457,101.6459 90.0757,101.7558 Q89.6057,101.8656 89.0869,101.8656 Q87.2437,101.8656 86.2732,100.651 Q85.3027,99.4364 85.3027,97.1415 Q85.3027,94.8405 86.2732,93.6259 Q87.2437,92.4113 89.0869,92.4113 Q89.6057,92.4113 90.0818,92.5212 Q90.5579,92.631 90.9729,92.8507 L90.9729,94.8527 Q90.509,94.4255 90.0726,94.2271 Q89.6362,94.0287 89.1724,94.0287 Q88.1836,94.0287 87.6801,94.813 Q87.1765,95.5973 87.1765,97.1415 Q87.1765,98.6796 87.6801,99.4639 Q88.1836,100.2482 89.1724,100.2482 Q89.6362,100.2482 90.0726,100.0498 Q90.509,99.8515 90.9729,99.4242 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="113.5417" x="111.9792" y="101.7253">ContactGenerator</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="297.9167" y1="112.6953" y2="112.6953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="297.9167" y1="121.0286" y2="121.0286"/><ellipse cx="18.75" cy="132.487" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="30.2083" y="139.3982">Contact generate()</text><ellipse cx="18.75" cy="152.2319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="259.375" x="30.2083" y="159.1431">void generate(Collection&lt;Contact&gt;, int count)</text><ellipse cx="18.75" cy="171.9767" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="176.0417" x="30.2083" y="178.8879">ContactGenerator getInstance()</text><ellipse cx="18.75" cy="215.6331" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="30.2083" y="222.5444">long generateId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="125" y1="198.469" y2="198.469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="128.125" y="202.2786">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="181.25" x2="297.9167" y1="198.469" y2="198.469"/><!--MD5=[6c497da164973f4072ca9cb315db03da]
+class QueryParam--><rect codeLine="63" fill="#282828" height="206.014" id="QueryParam" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="229.1667" x="335.4167" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="229.1667" x="335.4167" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="229.1667" x="335.4167" y="76.7578"/><rect codeLine="63" fill="none" height="206.014" id="QueryParam" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="229.1667" x="335.4167" y="53.7028"/><ellipse cx="403.6458" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M405.5562,73.822 Q405.129,74.0417 404.659,74.1516 Q404.189,74.2615 403.6702,74.2615 Q401.827,74.2615 400.8565,73.0469 Q399.8861,71.8323 399.8861,69.5374 Q399.8861,67.2363 400.8565,66.0217 Q401.827,64.8071 403.6702,64.8071 Q404.189,64.8071 404.6651,64.917 Q405.1412,65.0269 405.5562,65.2466 L405.5562,67.2485 Q405.0924,66.8213 404.656,66.6229 Q404.2196,66.4246 403.7557,66.4246 Q402.7669,66.4246 402.2634,67.2089 Q401.7598,67.9932 401.7598,69.5374 Q401.7598,71.0754 402.2634,71.8597 Q402.7669,72.644 403.7557,72.644 Q404.2196,72.644 404.656,72.4457 Q405.0924,72.2473 405.5562,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="426.5625" y="74.1211">QueryParam</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="336.4583" x2="563.5417" y1="85.0911" y2="85.0911"/><ellipse cx="346.875" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="358.3333" y="127.3722">QueryParam(long, long)</text><ellipse cx="346.875" cy="140.2059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="358.3333" y="147.1171">QueryParam(long, long, SortParam)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="336.4583" x2="406.25" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="409.375" y="107.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="493.75" x2="563.5417" y1="103.2969" y2="103.2969"/><ellipse cx="346.875" cy="183.8623" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="358.3333" y="190.7735">long getCount()</text><ellipse cx="346.875" cy="203.6072" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="358.3333" y="210.5184">long getFirst()</text><ellipse cx="346.875" cy="223.3521" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="109.375" x="358.3333" y="230.2633">SortParam getSort()</text><ellipse cx="346.875" cy="243.0969" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="98.9583" x="358.3333" y="250.0081">boolean hasSort()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="336.4583" x2="415.625" y1="166.6982" y2="166.6982"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="418.75" y="170.5078">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="484.375" x2="563.5417" y1="166.6982" y2="166.6982"/><!--MD5=[8fef69610558728ec13448abae534e35]
+class SpringConfig--><rect codeLine="75" fill="#282828" height="87.5448" id="SpringConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="45.3125" y="456.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="45.3125" y="456.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="45.3125" y="479.8828"/><rect codeLine="75" fill="none" height="87.5448" id="SpringConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="45.3125" y="456.8278"/><ellipse cx="103.125" cy="472.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M105.0354,476.947 Q104.6082,477.1667 104.1382,477.2766 Q103.6682,477.3865 103.1494,477.3865 Q101.3062,477.3865 100.3357,476.1719 Q99.3652,474.9573 99.3652,472.6624 Q99.3652,470.3613 100.3357,469.1467 Q101.3062,467.9321 103.1494,467.9321 Q103.6682,467.9321 104.1443,468.042 Q104.6204,468.1519 105.0354,468.3716 L105.0354,470.3735 Q104.5715,469.9463 104.1351,469.7479 Q103.6987,469.5496 103.2349,469.5496 Q102.2461,469.5496 101.7426,470.3339 Q101.239,471.1182 101.239,472.6624 Q101.239,474.2004 101.7426,474.9847 Q102.2461,475.769 103.2349,475.769 Q103.6987,475.769 104.1351,475.5707 Q104.5715,475.3723 105.0354,474.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="85.4167" x="126.0417" y="477.2461">SpringConfig</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="46.3542" x2="259.8958" y1="488.2161" y2="488.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="46.3542" x2="259.8958" y1="496.5495" y2="496.5495"/><ellipse cx="56.7708" cy="508.0078" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="183.3333" x="68.2292" y="514.919">ExampleApplication application()</text><ellipse cx="56.7708" cy="527.7527" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="68.2292" y="534.6639">ContactDao contactDao()</text><!--MD5=[5d4ef04d9bb1f168a28452e5fef2f663]
+reverse link IClusterable to Contact--><path codeLine="9" d="M1008.3333,201.9736 C1008.3333,233.2028 1008.3333,277.3278 1008.3333,322.057 " fill="none" id="IClusterable-backto-Contact" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1001.0417,201.6507,1008.3333,180.8174,1015.625,201.6507,1001.0417,201.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[0e6900783090d344f9862cc6ca0dbc56]
+reverse link ContactDao to ContactDaoImpl--><path codeLine="39" d="M729.1667,243.4111 C729.1667,285.7236 729.1667,337.4215 729.1667,383.2653 " fill="none" id="ContactDao-backto-ContactDaoImpl" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="721.875,243.3695,729.1667,222.5361,736.4583,243.3695,721.875,243.3695" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3043439a901f753895582f89b085dbc4]
+link ContactGenerator to QueryParam--><!--MD5=[59567b4044be6dbbd775bcc6b8d4b609]
+link ContactGenerator to SpringConfig--><!--MD5=[67464080ef0ec66624c174c7a9d4e1ea]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.spring.common"
+    
+    interface ContactDao
+    interface IClusterable
+    
+    IClusterable <|- - Contact
+    class Contact
+    {
+        - -(constructors)- -
+        +Contact()
+        +Contact(String, String)
+        - -
+        +String getCellPhone()
+        +String getHomePhone()
+        +void setCellPhone(String cellPhone)
+        +void setHomePhone(String homePhone)
+        - -(collection)- -
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        - -(identity)- -
+        +long getId()
+        +void setId(long id)
+    }
+    
+    interface ContactDao
+    {
+        - -
+        +Contact get(long id)
+        - -(collection)- -
+        +int count()
+        +Iterator<Contact> find(QueryParam qp)
+    }
+    
+    ContactDao <|- - ContactDaoImpl
+    class ContactDaoImpl
+    {
+        - -(constructors)- -
+        +ContactDaoImpl()
+        - -(collection)- -
+        #void add(Contact)
+        #List<Contact> getIndex(SortParam)
+        - -(filesystem)- -
+        +void delete(Contact)
+        - -(write)- -
+        +void save(Contact)
+    }
+    
+    class ContactGenerator
+    {
+        - -
+        +Contact generate()
+        +void generate(Collection<Contact>, int count)
+        +ContactGenerator getInstance()
+        - -(identity)- -
+        +long generateId()
+    }
+    
+    class QueryParam
+    {
+        - -(constructors)- -
+        +QueryParam(long, long)
+        +QueryParam(long, long, SortParam)
+        - -(collection)- -
+        +long getCount()
+        +long getFirst()
+        +SortParam getSort()
+        +boolean hasSort()
+    }
+    
+    class SpringConfig
+    {
+        - -
+        +ExampleApplication application()
+        +ContactDao contactDao()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.spring.common"
+    
+    interface ContactDao
+    interface IClusterable
+    
+    IClusterable <|- - Contact
+    class Contact
+    {
+        - -(constructors)- -
+        +Contact()
+        +Contact(String, String)
+        - -
+        +String getCellPhone()
+        +String getHomePhone()
+        +void setCellPhone(String cellPhone)
+        +void setHomePhone(String homePhone)
+        - -(collection)- -
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        - -(identity)- -
+        +long getId()
+        +void setId(long id)
+    }
+    
+    interface ContactDao
+    {
+        - -
+        +Contact get(long id)
+        - -(collection)- -
+        +int count()
+        +Iterator<Contact> find(QueryParam qp)
+    }
+    
+    ContactDao <|- - ContactDaoImpl
+    class ContactDaoImpl
+    {
+        - -(constructors)- -
+        +ContactDaoImpl()
+        - -(collection)- -
+        #void add(Contact)
+        #List<Contact> getIndex(SortParam)
+        - -(filesystem)- -
+        +void delete(Contact)
+        - -(write)- -
+        +void save(Contact)
+    }
+    
+    class ContactGenerator
+    {
+        - -
+        +Contact generate()
+        +void generate(Collection<Contact>, int count)
+        +ContactGenerator getInstance()
+        - -(identity)- -
+        +long generateId()
+    }
+    
+    class QueryParam
+    {
+        - -(constructors)- -
+        +QueryParam(long, long)
+        +QueryParam(long, long, SortParam)
+        - -(collection)- -
+        +long getCount()
+        +long getFirst()
+        +SortParam getSort()
+        +boolean hasSort()
+    }
+    
+    class SpringConfig
+    {
+        - -
+        +ExampleApplication application()
+        +ContactDao contactDao()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

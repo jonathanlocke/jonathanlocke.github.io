@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.model"
+    
+    WicketMetrics <|-- LoadableDetachableModelLoadAspect
+    class LoadableDetachableModelLoadAspect
+    {
+        --
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+@enduml
+

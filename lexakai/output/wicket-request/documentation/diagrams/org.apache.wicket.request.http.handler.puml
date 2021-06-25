@@ -1,0 +1,43 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.http.handler"
+    
+    interface IRequestHandler
+    
+    IRequestHandler <|-- ErrorCodeRequestHandler
+    class ErrorCodeRequestHandler
+    {
+        --(constructors)--
+        +ErrorCodeRequestHandler(int)
+        +ErrorCodeRequestHandler(int, String)
+        --(messaging)--
+        +String getMessage()
+        --(status)--
+        +int getErrorCode()
+    }
+    
+    enum RedirectRequestHandler.Mode
+    {
+        AUTO
+        REDIRECT
+        STATUS
+    }
+    
+    IRequestHandler <|-- RedirectRequestHandler
+    class RedirectRequestHandler
+    {
+        --(constructors)--
+        +RedirectRequestHandler(String)
+        +RedirectRequestHandler(String, int)
+        --(messaging)--
+        +RedirectRequestHandler mode(Mode)
+        --(network)--
+        +String getRedirectUrl()
+        --(status)--
+        +int getStatus()
+    }
+    
+@enduml
+

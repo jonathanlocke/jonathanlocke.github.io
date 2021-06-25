@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="582.2917px" preserveAspectRatio="none" style="width:1607px;height:582px;background:#333333;" version="1.1" viewBox="0 0 1607 582" width="1607.2917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="341.6667" x="625.7813" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="318.75" x="637.2396" y="30.5583">org.apache.wicket.authorization</text><!--MD5=[7ba2854c80597957c8487a4ee5fd0d4c]
+class IAuthorizationStrategy--><rect codeLine="32" fill="#282828" height="122.8678" id="IAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="383.3333" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="383.3333" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="383.3333" x="7.2917" y="76.7578"/><rect codeLine="32" fill="none" height="122.8678" id="IAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="383.3333" x="7.2917" y="53.7028"/><ellipse cx="118.2292" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M115.6331,66.5588 L115.6331,64.9719 L121.0592,64.9719 L121.0592,66.5588 L119.2464,66.5588 L119.2464,72.4976 L121.0592,72.4976 L121.0592,74.0845 L115.6331,74.0845 L115.6331,72.4976 L117.4459,72.4976 L117.4459,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="146.875" x="141.1458" y="74.1211">IAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="389.5833" y1="85.0911" y2="85.0911"/><ellipse cx="18.75" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="272.9167" x="30.2083" y="127.3722">boolean isActionAuthorized(Component, Action)</text><ellipse cx="18.75" cy="140.2059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="351.0417" x="30.2083" y="147.1171">boolean isInstantiationAuthorized(Class&lt;T&gt; componentClass)</text><ellipse cx="18.75" cy="159.9508" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="330.2083" x="30.2083" y="166.862">boolean isResourceAuthorized(IResource, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="172.3958" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="175.5208" y="107.1065">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="225.5208" x2="389.5833" y1="103.2969" y2="103.2969"/><!--MD5=[b6cf9cf1d2e104f542601f81b687b094]
+class EnumeratedType--><rect fill="#282828" height="48.055" id="EnumeratedType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="427.0833" y="91.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="427.0833" y="91.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="427.0833" y="114.2578"/><rect fill="none" height="48.055" id="EnumeratedType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="427.0833" y="91.2028"/><ellipse cx="441.6667" cy="106.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M443.5771,111.322 Q443.1498,111.5417 442.6799,111.6516 Q442.2099,111.7615 441.6911,111.7615 Q439.8478,111.7615 438.8774,110.5469 Q437.9069,109.3323 437.9069,107.0374 Q437.9069,104.7363 438.8774,103.5217 Q439.8478,102.3071 441.6911,102.3071 Q442.2099,102.3071 442.686,102.417 Q443.162,102.5269 443.5771,102.7466 L443.5771,104.7485 Q443.1132,104.3213 442.6768,104.1229 Q442.2404,103.9246 441.7765,103.9246 Q440.7878,103.9246 440.2842,104.7089 Q439.7807,105.4932 439.7807,107.0374 Q439.7807,108.5754 440.2842,109.3597 Q440.7878,110.144 441.7765,110.144 Q442.2404,110.144 442.6768,109.9457 Q443.1132,109.7473 443.5771,109.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="458.3333" y="111.6211">EnumeratedType</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="428.125" x2="571.875" y1="122.5911" y2="122.5911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="428.125" x2="571.875" y1="130.9245" y2="130.9245"/><!--MD5=[f8e7078f77c005d15b486c0c98deb1e6]
+class Action--><rect codeLine="9" fill="#282828" height="127.0345" id="Action" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="126.0417" x="436.9792" y="246.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="126.0417" x="436.9792" y="246.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="126.0417" x="436.9792" y="269.987"/><rect codeLine="9" fill="none" height="127.0345" id="Action" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="126.0417" x="436.9792" y="246.932"/><ellipse cx="472.6563" cy="262.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M474.5667,267.0512 Q474.1394,267.2709 473.6694,267.3808 Q473.1995,267.4906 472.6807,267.4906 Q470.8374,267.4906 469.8669,266.276 Q468.8965,265.0614 468.8965,262.7665 Q468.8965,260.4655 469.8669,259.2509 Q470.8374,258.0363 472.6807,258.0363 Q473.1995,258.0363 473.6755,258.1462 Q474.1516,258.256 474.5667,258.4757 L474.5667,260.4777 Q474.1028,260.0505 473.6664,259.8521 Q473.23,259.6537 472.7661,259.6537 Q471.7773,259.6537 471.2738,260.438 Q470.7703,261.2223 470.7703,262.7665 Q470.7703,264.3046 471.2738,265.0889 Q471.7773,265.8732 472.7661,265.8732 Q473.23,265.8732 473.6664,265.6748 Q474.1028,265.4765 474.5667,265.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="41.6667" x="494.0104" y="267.3503">Action</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="438.0208" x2="561.9792" y1="278.3203" y2="278.3203"/><ellipse cx="448.4375" cy="313.6902" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="459.8958" y="320.6014">Action(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="438.0208" x2="456.25" y1="296.5261" y2="296.5261"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="459.375" y="300.3357">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="543.75" x2="561.9792" y1="296.5261" y2="296.5261"/><ellipse cx="448.4375" cy="357.3466" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="459.8958" y="364.2578">String getName()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="438.0208" x2="471.875" y1="340.1825" y2="340.1825"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="475" y="343.9921">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="528.125" x2="561.9792" y1="340.1825" y2="340.1825"/><!--MD5=[91a24da200d9ed1ee77dc6553255e763]
+class IAuthorizationStrategy.AllowAllAuthorizationStrategy--><rect codeLine="18" fill="#282828" height="48.055" id="IAuthorizationStrategy.AllowAllAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="234.375" x="81.7708" y="286.5153"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="234.375" x="81.7708" y="286.5153"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="234.375" x="81.7708" y="309.5703"/><rect codeLine="18" fill="none" height="48.055" id="IAuthorizationStrategy.AllowAllAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="234.375" x="81.7708" y="286.5153"/><ellipse cx="96.3542" cy="302.2095" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M98.2646,306.6345 Q97.8373,306.8542 97.3674,306.9641 Q96.8974,307.074 96.3786,307.074 Q94.5353,307.074 93.5649,305.8594 Q92.5944,304.6448 92.5944,302.3499 Q92.5944,300.0488 93.5649,298.8342 Q94.5353,297.6196 96.3786,297.6196 Q96.8974,297.6196 97.3735,297.7295 Q97.8495,297.8394 98.2646,298.0591 L98.2646,300.061 Q97.8007,299.6338 97.3643,299.4354 Q96.9279,299.2371 96.464,299.2371 Q95.4753,299.2371 94.9717,300.0214 Q94.4682,300.8057 94.4682,302.3499 Q94.4682,303.8879 94.9717,304.6722 Q95.4753,305.4565 96.464,305.4565 Q96.9279,305.4565 97.3643,305.2582 Q97.8007,305.0598 98.2646,304.6326 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="196.875" x="113.0208" y="306.9336">AllowAllAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="82.8125" x2="315.1042" y1="317.9036" y2="317.9036"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="82.8125" x2="315.1042" y1="326.237" y2="326.237"/><!--MD5=[45b2bb481767de2342fc072aa9ebeed7]
+class WicketRuntimeException--><rect fill="#282828" height="48.055" id="WicketRuntimeException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="636.9792" y="91.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="636.9792" y="91.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="636.9792" y="114.2578"/><rect fill="none" height="48.055" id="WicketRuntimeException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="636.9792" y="91.2028"/><ellipse cx="651.5625" cy="106.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M653.4729,111.322 Q653.0457,111.5417 652.5757,111.6516 Q652.1057,111.7615 651.5869,111.7615 Q649.7437,111.7615 648.7732,110.5469 Q647.8027,109.3323 647.8027,107.0374 Q647.8027,104.7363 648.7732,103.5217 Q649.7437,102.3071 651.5869,102.3071 Q652.1057,102.3071 652.5818,102.417 Q653.0579,102.5269 653.4729,102.7466 L653.4729,104.7485 Q653.009,104.3213 652.5726,104.1229 Q652.1362,103.9246 651.6724,103.9246 Q650.6836,103.9246 650.1801,104.7089 Q649.6765,105.4932 649.6765,107.0374 Q649.6765,108.5754 650.1801,109.3597 Q650.6836,110.144 651.6724,110.144 Q652.1362,110.144 652.5726,109.9457 Q653.009,109.7473 653.4729,109.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="668.2292" y="111.6211">WicketRuntimeException</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="832.8125" y1="122.5911" y2="122.5911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="832.8125" y1="130.9245" y2="130.9245"/><!--MD5=[31c5e4be895061522ab085888306d9de]
+class AuthorizationException--><rect codeLine="23" fill="#282828" height="142.6127" id="AuthorizationException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="270.8333" x="600" y="239.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="270.8333" x="600" y="239.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="270.8333" x="600" y="262.1745"/><rect codeLine="23" fill="none" height="142.6127" id="AuthorizationException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="270.8333" x="600" y="239.1195"/><ellipse cx="652.0833" cy="254.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M651.6764,251.5157 L650.828,255.245 L652.5309,255.245 Z M650.5778,249.8678 L652.7812,249.8678 L655.2409,258.9803 L653.4403,258.9803 L652.8788,256.7281 L650.4679,256.7281 L649.9186,258.9803 L648.1181,258.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="152.0833" x="675" y="259.5378">AuthorizationException</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="601.0417" x2="869.7917" y1="270.5078" y2="270.5078"/><ellipse cx="611.4583" cy="305.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="622.9167" y="312.7889">AuthorizationException()</text><ellipse cx="611.4583" cy="325.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="173.9583" x="622.9167" y="332.5338">AuthorizationException(String)</text><ellipse cx="611.4583" cy="345.3674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="622.9167" y="352.2786">AuthorizationException(String, Throwable)</text><ellipse cx="611.4583" cy="365.1123" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="622.9167" y="372.0235">AuthorizationException(Throwable)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="601.0417" x2="691.6667" y1="288.7136" y2="288.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="694.7917" y="292.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="779.1667" x2="869.7917" y1="288.7136" y2="288.7136"/><!--MD5=[86178844fac6d56ec9d85201b78465c8]
+class IUnauthorizedComponentInstantiationListener--><rect codeLine="40" fill="#282828" height="67.7999" id="IUnauthorizedComponentInstantiationListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="340.625" x="870.3125" y="81.307"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="340.625" x="870.3125" y="81.307"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="340.625" x="870.3125" y="104.362"/><rect codeLine="40" fill="none" height="67.7999" id="IUnauthorizedComponentInstantiationListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="340.625" x="870.3125" y="81.307"/><ellipse cx="884.8958" cy="97.0011" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M882.2998,94.163 L882.2998,92.5761 L887.7258,92.5761 L887.7258,94.163 L885.9131,94.163 L885.9131,100.1017 L887.7258,100.1017 L887.7258,101.6886 L882.2998,101.6886 L882.2998,100.1017 L884.1125,100.1017 L884.1125,94.163 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="303.125" x="901.5625" y="101.7253">IUnauthorizedComponentInstantiationListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="871.3542" x2="1209.8958" y1="112.6953" y2="112.6953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="871.3542" x2="1209.8958" y1="121.0286" y2="121.0286"/><ellipse cx="881.7708" cy="132.487" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="261.4583" x="893.2292" y="139.3982">void onUnauthorizedInstantiation(Component)</text><!--MD5=[5e97c9c5e8f4128edc91518c6b0b3bcc]
+class IUnauthorizedResourceRequestListener--><rect codeLine="46" fill="#282828" height="67.7999" id="IUnauthorizedResourceRequestListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="353.125" x="1247.3958" y="81.307"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="353.125" x="1247.3958" y="81.307"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="353.125" x="1247.3958" y="104.362"/><rect codeLine="46" fill="none" height="67.7999" id="IUnauthorizedResourceRequestListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="353.125" x="1247.3958" y="81.307"/><ellipse cx="1289.6354" cy="97.0011" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1287.0394,94.163 L1287.0394,92.5761 L1292.4654,92.5761 L1292.4654,94.163 L1290.6527,94.163 L1290.6527,100.1017 L1292.4654,100.1017 L1292.4654,101.6886 L1287.0394,101.6886 L1287.0394,100.1017 L1288.8521,100.1017 L1288.8521,94.163 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="254.1667" x="1312.4479" y="101.7253">IUnauthorizedResourceRequestListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1248.4375" x2="1599.4792" y1="112.6953" y2="112.6953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1248.4375" x2="1599.4792" y1="121.0286" y2="121.0286"/><ellipse cx="1258.8542" cy="132.487" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="320.8333" x="1270.3125" y="139.3982">void onUnauthorizedRequest(IResource, PageParameters)</text><!--MD5=[2a449c4f66f615dbcd96438a3f6315d0]
+class UnauthorizedActionException--><rect codeLine="53" fill="#282828" height="131.2012" id="UnauthorizedActionException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="379.1667" y="444.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="379.1667" y="444.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="379.1667" y="467.3828"/><rect codeLine="53" fill="none" height="131.2012" id="UnauthorizedActionException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="379.1667" y="444.3278"/><ellipse cx="434.375" cy="460.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M436.2854,464.447 Q435.8582,464.6667 435.3882,464.7766 Q434.9182,464.8865 434.3994,464.8865 Q432.5562,464.8865 431.5857,463.6719 Q430.6152,462.4573 430.6152,460.1624 Q430.6152,457.8613 431.5857,456.6467 Q432.5562,455.4321 434.3994,455.4321 Q434.9182,455.4321 435.3943,455.542 Q435.8704,455.6519 436.2854,455.8716 L436.2854,457.8735 Q435.8215,457.4463 435.3851,457.2479 Q434.9487,457.0496 434.4849,457.0496 Q433.4961,457.0496 432.9926,457.8339 Q432.489,458.6182 432.489,460.1624 Q432.489,461.7004 432.9926,462.4847 Q433.4961,463.269 434.4849,463.269 Q434.9487,463.269 435.3851,463.0707 Q435.8215,462.8723 436.2854,462.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="191.6667" x="457.2917" y="464.7461">UnauthorizedActionException</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="380.2083" x2="694.7917" y1="475.7161" y2="475.7161"/><ellipse cx="390.625" cy="511.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="284.375" x="402.0833" y="517.9972">UnauthorizedActionException(Component, Action)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="380.2083" x2="493.75" y1="493.9219" y2="493.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="496.875" y="497.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="581.25" x2="694.7917" y1="493.9219" y2="493.9219"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="380.2083" x2="694.7917" y1="527.7059" y2="527.7059"/><ellipse cx="390.625" cy="539.1642" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="402.0833" y="546.0754">Action getAction()</text><ellipse cx="390.625" cy="558.9091" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="402.0833" y="565.8203">Component getComponent()</text><!--MD5=[946f7654df63258ff3effbc3e973403f]
+class UnauthorizedInstantiationException--><rect codeLine="63" fill="#282828" height="111.4563" id="UnauthorizedInstantiationException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="398.9583" x="732.8125" y="454.2236"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="398.9583" x="732.8125" y="454.2236"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="398.9583" x="732.8125" y="477.2786"/><rect codeLine="63" fill="none" height="111.4563" id="UnauthorizedInstantiationException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="398.9583" x="732.8125" y="454.2236"/><ellipse cx="808.3333" cy="469.9178" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M810.2437,474.3429 Q809.8165,474.5626 809.3465,474.6724 Q808.8765,474.7823 808.3577,474.7823 Q806.5145,474.7823 805.544,473.5677 Q804.5736,472.3531 804.5736,470.0582 Q804.5736,467.7572 805.544,466.5426 Q806.5145,465.328 808.3577,465.328 Q808.8765,465.328 809.3526,465.4378 Q809.8287,465.5477 810.2437,465.7674 L810.2437,467.7694 Q809.7799,467.3421 809.3435,467.1438 Q808.9071,466.9454 808.4432,466.9454 Q807.4544,466.9454 806.9509,467.7297 Q806.4473,468.514 806.4473,470.0582 Q806.4473,471.5963 806.9509,472.3806 Q807.4544,473.1649 808.4432,473.1649 Q808.9071,473.1649 809.3435,472.9665 Q809.7799,472.7681 810.2437,472.3409 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="233.3333" x="831.25" y="474.6419">UnauthorizedInstantiationException</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="733.8542" x2="1130.7292" y1="485.612" y2="485.612"/><ellipse cx="744.2708" cy="520.9819" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="755.7292" y="527.8931">UnauthorizedInstantiationException(Class&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="733.8542" x2="888.5417" y1="503.8177" y2="503.8177"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="891.6667" y="507.6274">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="976.0417" x2="1130.7292" y1="503.8177" y2="503.8177"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="733.8542" x2="1130.7292" y1="537.6017" y2="537.6017"/><ellipse cx="744.2708" cy="549.0601" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="366.6667" x="755.7292" y="555.9713">Class&lt;? extends IRequestableComponent&gt; getComponentClass()</text><!--MD5=[3528fea92f7322c0033ab67561e358c4]
+reverse link EnumeratedType to Action--><path codeLine="8" d="M500,160.3278 C500,185.9424 500,218.6195 500,246.8486 " fill="none" id="EnumeratedType-backto-Action" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="492.7083,159.9632,500,139.1299,507.2917,159.9632,492.7083,159.9632" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[adde026f4c6c4d821daa650f5f23e71c]
+reverse link IAuthorizationStrategy to IAuthorizationStrategy.AllowAllAuthorizationStrategy--><path codeLine="17" d="M198.9583,197.9632 C198.9583,230.0778 198.9583,264.432 198.9583,286.3799 " fill="none" id="IAuthorizationStrategy-backto-IAuthorizationStrategy.AllowAllAuthorizationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="191.6667,197.6403,198.9583,176.807,206.25,197.6403,191.6667,197.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ecd2148e303b522c248b312bbdd55dd8]
+reverse link WicketRuntimeException to AuthorizationException--><path codeLine="22" d="M735.4167,160.0882 C735.4167,183.3382 735.4167,212.4424 735.4167,238.7757 " fill="none" id="WicketRuntimeException-backto-AuthorizationException" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="728.125,159.9632,735.4167,139.1299,742.7083,159.9632,728.125,159.9632" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[220c5967bdd5b761ae9698b1c0b3a0a2]
+reverse link AuthorizationException to UnauthorizedActionException--><path codeLine="52" d="M649.7917,396.9215 C633.9271,412.734 617.5938,429.0257 602.4688,444.109 " fill="none" id="AuthorizationException-backto-UnauthorizedActionException" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="644.9063,391.4945,664.8021,381.9424,655.1979,401.8174,644.9063,391.4945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[652273b763b5381eebeae2aafad22bda]
+reverse link AuthorizationException to UnauthorizedInstantiationException--><path codeLine="62" d="M820.5833,396.9111 C839.8958,416.2757 859.8958,436.3278 877.5521,454.0257 " fill="none" id="AuthorizationException-backto-UnauthorizedInstantiationException" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="815.2083,401.8486,805.6563,381.9424,825.5313,391.5465,815.2083,401.8486" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4c6329d043c90fc30313df158108da3e]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization"
+    
+    interface IAuthorizationStrategy
+    
+    EnumeratedType <|- - Action
+    class Action
+    {
+        - -(constructors)- -
+        +Action(String)
+        - -(naming)- -
+        +String getName()
+    }
+    
+    IAuthorizationStrategy <|- - IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    class IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    {
+    }
+    
+    WicketRuntimeException <|- - AuthorizationException
+    abstract class AuthorizationException
+    {
+        - -(constructors)- -
+        +AuthorizationException()
+        +AuthorizationException(String)
+        +AuthorizationException(String, Throwable)
+        +AuthorizationException(Throwable)
+    }
+    
+    interface IAuthorizationStrategy
+    {
+        - -(checks)- -
+        +boolean isActionAuthorized(Component, Action)
+        +boolean isInstantiationAuthorized(Class<T> componentClass)
+        +boolean isResourceAuthorized(IResource, PageParameters)
+    }
+    
+    interface IUnauthorizedComponentInstantiationListener
+    {
+        - -
+        +void onUnauthorizedInstantiation(Component)
+    }
+    
+    interface IUnauthorizedResourceRequestListener
+    {
+        - -
+        +void onUnauthorizedRequest(IResource, PageParameters)
+    }
+    
+    AuthorizationException <|- - UnauthorizedActionException
+    class UnauthorizedActionException
+    {
+        - -(constructors)- -
+        +UnauthorizedActionException(Component, Action)
+        - -
+        +Action getAction()
+        +Component getComponent()
+    }
+    
+    AuthorizationException <|- - UnauthorizedInstantiationException
+    class UnauthorizedInstantiationException
+    {
+        - -(constructors)- -
+        +UnauthorizedInstantiationException(Class<T>)
+        - -
+        +Class<? extends IRequestableComponent> getComponentClass()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.authorization"
+    
+    interface IAuthorizationStrategy
+    
+    EnumeratedType <|- - Action
+    class Action
+    {
+        - -(constructors)- -
+        +Action(String)
+        - -(naming)- -
+        +String getName()
+    }
+    
+    IAuthorizationStrategy <|- - IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    class IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    {
+    }
+    
+    WicketRuntimeException <|- - AuthorizationException
+    abstract class AuthorizationException
+    {
+        - -(constructors)- -
+        +AuthorizationException()
+        +AuthorizationException(String)
+        +AuthorizationException(String, Throwable)
+        +AuthorizationException(Throwable)
+    }
+    
+    interface IAuthorizationStrategy
+    {
+        - -(checks)- -
+        +boolean isActionAuthorized(Component, Action)
+        +boolean isInstantiationAuthorized(Class<T> componentClass)
+        +boolean isResourceAuthorized(IResource, PageParameters)
+    }
+    
+    interface IUnauthorizedComponentInstantiationListener
+    {
+        - -
+        +void onUnauthorizedInstantiation(Component)
+    }
+    
+    interface IUnauthorizedResourceRequestListener
+    {
+        - -
+        +void onUnauthorizedRequest(IResource, PageParameters)
+    }
+    
+    AuthorizationException <|- - UnauthorizedActionException
+    class UnauthorizedActionException
+    {
+        - -(constructors)- -
+        +UnauthorizedActionException(Component, Action)
+        - -
+        +Action getAction()
+        +Component getComponent()
+    }
+    
+    AuthorizationException <|- - UnauthorizedInstantiationException
+    class UnauthorizedInstantiationException
+    {
+        - -(constructors)- -
+        +UnauthorizedInstantiationException(Class<T>)
+        - -
+        +Class<? extends IRequestableComponent> getComponentClass()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

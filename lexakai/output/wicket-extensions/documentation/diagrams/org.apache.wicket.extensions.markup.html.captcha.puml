@@ -1,0 +1,38 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.captcha"
+    
+    interface IClusterable
+    
+    DynamicImageResource <|-- CaptchaImageResource
+    class CaptchaImageResource
+    {
+        --(constructors)--
+        +CaptchaImageResource()
+        +CaptchaImageResource(IModel<String>)
+        +CaptchaImageResource(IModel<String>, int, int)
+        +CaptchaImageResource(String)
+        +CaptchaImageResource(String, int, int)
+        --
+        +void invalidate()
+        #byte[] render()
+        --(factory)--
+        #Random newRandomNumberGenerator()
+        --(identity)--
+        +String getChallengeId()
+        +IModel<String> getChallengeIdModel()
+    }
+    
+    IClusterable <|-- CaptchaImageResource.CharAttributes
+    class CaptchaImageResource.CharAttributes
+    {
+    }
+    
+    class CaptchaImageResource.RandomNumberGeneratorFactory
+    {
+    }
+    
+@enduml
+

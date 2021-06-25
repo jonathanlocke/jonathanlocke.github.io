@@ -1,0 +1,440 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.tester"
+    
+    abstract BaseWicketTester
+    
+    interface IMetaDataBufferingWebResponse
+    interface IRequestMapperDelegate
+    interface IVisitor
+    interface TestExecutionExceptionHandler
+    interface BeforeTestExecutionCallback
+    interface IClusterable
+    interface IPageRendererProvider
+    interface FilterConfig
+    interface IExceptionMapper
+    interface IPageManagerProvider
+    interface AfterTestExecutionCallback
+    interface IRequestCycleProvider
+    
+    class BaseWicketTester
+    {
+        --(constructors)--
+        +BaseWicketTester()
+        +BaseWicketTester(Class<C>)
+        +BaseWicketTester(WebApplication)
+        +BaseWicketTester(WebApplication, String)
+        +BaseWicketTester(WebApplication, boolean)
+        +BaseWicketTester(WebApplication, ServletContext)
+        +BaseWicketTester(WebApplication, ServletContext, boolean)
+        --
+        +void applyRequest()
+        +void assertResultPage(Class<?> pageClass, String filename)
+        +void clickLink(String path)
+        +void clickLink(String path, boolean isAjax)
+        +void debugComponentTrees(String filter)
+        +void debugComponentTrees()
+        +void destroy()
+        +void dumpPage()
+        +void executeAllTimerBehaviors(MarkupContainer page)
+        +void executeBehavior(AbstractAjaxBehavior)
+        +WebApplication getApplication()
+        +String getContentDispositionFromResponseHeader()
+        +int getContentLengthFromResponseHeader()
+        +String getContentTypeFromResponseHeader()
+        +RequestCycle getRequestCycle()
+        +ServletContext getServletContext()
+        +Session getSession()
+        +boolean processRequest(MockHttpServletRequest)
+        +boolean processRequest(IRequestHandler forcedRequestHandler)
+        +boolean processRequest()
+        +boolean processRequest(MockHttpServletRequest, IRequestHandler forcedRequestHandler)
+        +void setExposeExceptions(boolean exposeExceptions)
+        +void setFollowRedirects(boolean followRedirects)
+        +void setRequest(MockHttpServletRequest)
+        +void submitForm(String path)
+        +void submitForm(Form<?>)
+        #Result checkUsability(Component, boolean throwException)
+        #String createOriginHeader()
+        #Page createPage()
+        #String createPageMarkup(String componentId)
+        #boolean processRequest(MockHttpServletRequest forcedRequest, IRequestHandler forcedRequestHandler, boolean redirect)
+        #Locale servletRequestLocale()
+        --(checks)--
+        +Component assertExists(String path)
+        +Result hasLabel(String path, String expectedLabelText)
+        +Result hasNoErrorMessage()
+        +Result hasNoFeedbackMessage(int level)
+        +Result hasNoInfoMessage()
+        +Result isComponent(String path, Class<C> expectedComponentClass)
+        +Result isComponentOnAjaxResponse(Component)
+        +Result isDisabled(String path)
+        +Result isEnabled(String path)
+        +boolean isExposeExceptions()
+        +boolean isFollowRedirects()
+        +Result isInvisible(String path)
+        +Result isNotRequired(FormComponent<?>)
+        +Result isNotRequired(String path)
+        +Result isRenderedPage(Class<C> expectedRenderedPageClass)
+        +Result isRequired(FormComponent<?>)
+        +Result isRequired(String path)
+        +Result isResultPage(String expectedDocument)
+        +boolean isUseRequestUrlAsBase()
+        +Result isVisible(String path)
+        #Result isEqual(Object expected, Object actual)
+        --(collection)--
+        +void addRequestHeader(String key, String value)
+        +void clearFeedbackMessages()
+        +Component getComponentFromLastRenderedPage(String path)
+        +Component getComponentFromLastRenderedPage(String path, boolean wantVisibleInHierarchy)
+        +Component getComponentFromLastRenderedPage(String path, boolean wantVisibleInHierarchy, boolean failOnAbsent)
+        +List<FeedbackMessage> getFeedbackMessages(IFeedbackMessageFilter)
+        +String getLastModifiedFromResponseHeader()
+        +Page getLastRenderedPage()
+        +MockHttpServletRequest getLastRequest()
+        +MockHttpServletResponse getLastResponse()
+        +String getLastResponseAsString()
+        +List<Serializable> getMessages(int level)
+        +List<MockHttpServletRequest> getPreviousRequests()
+        +List<MockHttpServletResponse> getPreviousResponses()
+        +List<TagTester> getTagsByWicketId(String wicketId)
+        +String getWicketAjaxBaseUrlEncodedInLastResponse()
+        +Result ifContains(String pattern)
+        +Result ifContainsNot(String pattern)
+        +void setLastResponse(MockHttpServletResponse)
+        --(factory)--
+        +FormTester newFormTester(String path, boolean fillBlankString)
+        +FormTester newFormTester(String path)
+        #Response newServletWebResponse(ServletWebRequest)
+        #IPageManagerProvider newTestPageManagerProvider()
+        --(filesystem)--
+        +void assertNotExists(String path)
+        --(identity)--
+        +TagTester getTagById(String id)
+        +TagTester getTagByWicketId(String wicketId)
+        --(lifecycle)--
+        +C startComponentInPage(Class<C> componentClass)
+        +C startComponentInPage(C component)
+        +C startComponentInPage(C component, IMarkupFragment pageMarkup)
+        +C startComponentInPage(Class<C> componentClass, IMarkupFragment pageMarkup)
+        +Page startPage(IPageProvider)
+        +T startPage(T page)
+        +C startPage(Class<C> pageClass)
+        +C startPage(Class<C> pageClass, PageParameters)
+        +ResourceReference startResource(IResource)
+        +ResourceReference startResourceReference(ResourceReference)
+        +ResourceReference startResourceReference(ResourceReference, PageParameters)
+        --(messaging)--
+        +void cleanupFeedbackMessages()
+        +void executeAjaxEvent(String componentPath, String event)
+        +void executeAjaxEvent(Component, String event)
+        +void executeListener(Component)
+        +void invokeListener(Component)
+        +void invokeListener(Component, Behavior)
+        #void cleanupFeedbackMessages(IFeedbackMessageFilter)
+        --(network)--
+        +void executeAjaxUrl(Url)
+        +void executeUrl(String _url)
+        +MockHttpSession getHttpSession()
+        +MockHttpServletRequest getRequest()
+        +MockHttpServletResponse getResponse()
+        +void setUseRequestUrlAsBase(boolean setBaseUrl)
+        +Url urlFor(AjaxLink<?>)
+        +String urlFor(Link<?>)
+        +Url urlFor(IRequestHandler)
+        --(time)--
+        #Duration getResourcePollFrequency()
+    }
+    
+    abstract class FormTester.ChoiceSelector
+    {
+        --(constructors)--
+        #ChoiceSelector(FormComponent<?>)
+        --
+        #void assignValueToFormComponent(FormComponent<?>, String value)
+        #void doSelect(int index)
+        --(collection)--
+        +String getChoiceValueForIndex(int index)
+    }
+    
+    class FormTester.ChoiceSelectorFactory
+    {
+        --
+        #ChoiceSelector create(FormComponent<?>)
+        #ChoiceSelector createForMultiple(FormComponent<?>)
+    }
+    
+    IClusterable <|-- WicketTesterHelper.ComponentData
+    class WicketTesterHelper.ComponentData
+    {
+    }
+    
+    class ComponentInPage
+    {
+    }
+    
+    class DiffUtil
+    {
+        --
+        +boolean validatePage(String document, Class<?> clazz, String file, boolean failWithAssert)
+        --(filesystem)--
+        +void replaceExpectedResultFile(String document, Class<?> clazz, String file)
+    }
+    
+    WebPage <|-- DummyHomePage
+    class DummyHomePage
+    {
+        --(constructors)--
+        +DummyHomePage()
+        --
+        +Link<?> getTestPageLink()
+        #Page getTestPage()
+    }
+    
+    WebPage <|-- DummyPanelPage
+    class DummyPanelPage
+    {
+        --
+        #Panel getTestPanel(String id)
+    }
+    
+    class FormTester
+    {
+        --(constructors)--
+        #FormTester(String, Form<?>, BaseWicketTester, boolean)
+        --
+        +Form<?> getForm()
+        +String getTextComponentValue(String id)
+        +FormTester select(String formComponentId, int index)
+        +FormTester selectMultiple(String formComponentId, int[] indexes, boolean replace)
+        +FormTester selectMultiple(String formComponentId, int[] indexes)
+        +FormTester setValue(String formComponentId, String value)
+        +FormTester setValue(String checkBoxId, boolean value)
+        +FormTester setValue(Component formComponent, String value)
+        +FormTester submit()
+        +FormTester submit(Component buttonComponent)
+        +FormTester submit(String buttonComponentId)
+        +FormTester submitLink(String path, boolean pageRelative)
+        --(collection)--
+        +boolean isClearFeedbackMessagesBeforeSubmit()
+        +FormTester setClearFeedbackMessagesBeforeSubmit(boolean clearFeedbackMessagesBeforeSubmit)
+        --(filesystem)--
+        +FormTester setFile(String formComponentId, File, String contentType)
+        --(read)--
+        +String[] getInputValue(FormComponent<?>)
+    }
+    
+    IPageRendererProvider <|-- BaseWicketTester.LastPageRecordingPageRendererProvider
+    class BaseWicketTester.LastPageRecordingPageRendererProvider
+    {
+    }
+    
+    FormTester.ChoiceSelector <|-- FormTester.ChoiceSelectorFactory.MultipleChoiceSelector
+    class FormTester.ChoiceSelectorFactory.MultipleChoiceSelector
+    {
+        --(constructors)--
+        #MultipleChoiceSelector(FormComponent<?>)
+    }
+    
+    class Result
+    {
+        --(constructors)--
+        +Result(boolean)
+        +Result(boolean, String)
+        --
+        +Result pass()
+        +boolean wasFailed()
+        --(messaging)--
+        +String getMessage()
+        --(status)--
+        +Result fail(String message)
+    }
+    
+    IVisitor <|-- FormTester.ChoiceSelector.SearchOptionByIndexVisitor
+    class FormTester.ChoiceSelector.SearchOptionByIndexVisitor
+    {
+    }
+    
+    FormTester.ChoiceSelector <|-- FormTester.ChoiceSelectorFactory.SingleChoiceSelector
+    class FormTester.ChoiceSelectorFactory.SingleChoiceSelector
+    {
+        --(constructors)--
+        #SingleChoiceSelector(FormComponent<?>)
+    }
+    
+    WebPage <|-- BaseWicketTester.StartComponentInPage
+    class BaseWicketTester.StartComponentInPage
+    {
+        --(constructors)--
+        +StartComponentInPage()
+        --
+        +void setPageMarkup(IMarkupFragment)
+    }
+    
+    class TagTester
+    {
+        --
+        +TagTester createTagByAttribute(String markup, String attribute, String value)
+        +String getAttribute(String attribute)
+        +boolean getAttributeEndsWith(String attribute, String expected)
+        +boolean getAttributeIs(String attribute, String expected)
+        +TagTester getChild(String tagName)
+        +TagTester getChild(String attribute, String value)
+        +String getMarkup()
+        +String getValue()
+        --(checks)--
+        +boolean hasAttribute(String attribute)
+        +boolean hasChildTag(String tagName)
+        --(collection)--
+        +List<TagTester> createTags(String markup, Function<XmlTag,Boolean> accept, boolean stopAfterFirst)
+        +List<TagTester> createTagsByAttribute(String markup, String attribute, String value, boolean stopAfterFirst)
+        +boolean getAttributeContains(String attribute, String partialValue)
+        --(naming)--
+        +TagTester createTagByName(String markup, String tagName)
+        +String getName()
+    }
+    
+    IExceptionMapper <|-- BaseWicketTester.TestExceptionMapper
+    class BaseWicketTester.TestExceptionMapper
+    {
+    }
+    
+    FilterConfig <|-- BaseWicketTester.TestFilterConfig
+    class BaseWicketTester.TestFilterConfig
+    {
+    }
+    
+    Link <|-- DummyHomePage.TestLink
+    class DummyHomePage.TestLink
+    {
+        --(constructors)--
+        +TestLink(String)
+    }
+    
+    IPageManagerProvider <|-- BaseWicketTester.TestPageManagerProvider
+    class BaseWicketTester.TestPageManagerProvider
+    {
+    }
+    
+    IRequestCycleProvider <|-- BaseWicketTester.TestRequestCycleProvider
+    class BaseWicketTester.TestRequestCycleProvider
+    {
+    }
+    
+    IRequestMapperDelegate <|-- BaseWicketTester.TestRequestMapper
+    class BaseWicketTester.TestRequestMapper
+    {
+    }
+    
+    abstract class WicketTestCase
+    {
+        --
+        +void commonAfter()
+        +void commonBefore()
+        +String getBasedir()
+        #void compareMarkupWithString(IMarkupFragment, String testMarkup)
+        #void executeBehavior(AbstractAjaxBehavior, String filename)
+        #void executeTest(Class<T> pageClass, String filename)
+        #void executeTest(Class<T> pageClass, PageParameters, String filename)
+        #void executeTest(Page, String filename)
+        --(factory)--
+        #WebApplication newApplication()
+        #WicketTester newWicketTester(WebApplication)
+        --(filesystem)--
+        #void compareMarkupWithFile(IMarkupFragment, String filename, Class<?> scopeClass)
+        --(messaging)--
+        #void executeListener(Component, String filename)
+    }
+    
+    BaseWicketTester <|-- WicketTester
+    class WicketTester
+    {
+        --(constructors)--
+        +WicketTester()
+        +WicketTester(WebApplication, ServletContext)
+        +WicketTester(WebApplication, ServletContext, boolean)
+        +WicketTester(WebApplication, boolean)
+        +WicketTester(Class<? extends Page>)
+        +WicketTester(WebApplication)
+        +WicketTester(WebApplication, String)
+        --
+        +void assertAjaxLocation()
+        +void assertBehavior(String path, Class<? extends Behavior> expectedBehaviorClass)
+        +void assertBookmarkablePageLink(String id, Class<? extends WebPage> pageClass, PageParameters)
+        +void assertComponent(String path, Class<? extends Component> expectedComponentClass)
+        +void assertComponentOnAjaxResponse(String componentPath)
+        +void assertComponentOnAjaxResponse(Component)
+        +void assertDisabled(String path)
+        +void assertEnabled(String path)
+        +void assertFeedback(String path, Serializable... messages)
+        +void assertInvisible(String path)
+        +void assertLabel(String path, String expectedLabelText)
+        +void assertMarkupLocale(Component, Locale expectedLocale)
+        +void assertMarkupStyle(Component, String expectedStyle)
+        +void assertMarkupVariation(Component, String expectedVariation)
+        +void assertModelValue(String path, Object expectedValue)
+        +void assertNotRequired(String path)
+        +void assertRenderedPage(Class<? extends Page> expectedRenderedPageClass)
+        +void assertRequired(String path)
+        +void assertResultPage(String expectedDocument)
+        +void assertUsability(Component)
+        +void assertVisible(String path)
+        +void clickLink(Component link)
+        +void executeBehavior(Class<?> testClass, AbstractAjaxBehavior, String filename)
+        +void executeTest(Class<?> testClass, Component, String filename)
+        +void executeTest(Class<?> testClass, Page, String filename)
+        +void executeTest(Class<?> testClass, Class<T> pageClass, String filename)
+        +void executeTest(Class<?> testClass, Class<T> pageClass, PageParameters, String filename)
+        +String getBasedir()
+        --(collection)--
+        +void assertContains(String pattern)
+        +void assertContainsNot(String pattern)
+        --(messaging)--
+        +void assertComponentFeedbackMessage(Component, String key, IModel<?>, IFeedbackMessageFilter)
+        +void assertErrorMessages(Serializable... expectedErrorMessages)
+        +void assertFeedbackMessages(IFeedbackMessageFilter, Serializable... expectedMessages)
+        +void assertInfoMessages(Serializable... expectedInfoMessages)
+        +void assertNoErrorMessage()
+        +void assertNoFeedbackMessage(int level)
+        +void assertNoInfoMessage()
+        +void executeListener(Class<?> testClass, Component, String filename)
+        --(network)--
+        +void assertRedirectUrl(String expectedRedirectUrl)
+    }
+    
+    BeforeTestExecutionCallback <|-- WicketTesterExtension
+    AfterTestExecutionCallback <|-- WicketTesterExtension
+    TestExecutionExceptionHandler <|-- WicketTesterExtension
+    class WicketTesterExtension
+    {
+        --
+        +WicketTester getTester()
+        #WicketTester create()
+    }
+    
+    class WicketTesterHelper
+    {
+        --
+        +void assertEquals(Collection<?> expects, Collection<?> actuals)
+        --(collection)--
+        +List<WicketTesterHelper.ComponentData> getComponentData(Page)
+        --(conversion)--
+        +String asLined(Collection<?> objects)
+        --(search)--
+        +AjaxEventBehavior findAjaxEventBehavior(Component, String event)
+        +List<AjaxEventBehavior> findAjaxEventBehaviors(Component, String event)
+        +Behavior findBehavior(Component, Class<? extends Behavior> behaviorClass)
+        --(status)--
+        +void failWithVerboseMessage(Collection<?> expects, Collection<?> actuals)
+    }
+    
+    ServletWebResponse <|-- BaseWicketTester.WicketTesterServletWebResponse
+    IMetaDataBufferingWebResponse <|-- BaseWicketTester.WicketTesterServletWebResponse
+    class BaseWicketTester.WicketTesterServletWebResponse
+    {
+    }
+    
+@enduml
+

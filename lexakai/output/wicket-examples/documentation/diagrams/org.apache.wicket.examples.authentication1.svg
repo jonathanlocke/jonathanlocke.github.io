@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="302.0833px" preserveAspectRatio="none" style="width:1142px;height:302px;background:#333333;" version="1.1" viewBox="0 0 1142 302" width="1142.7083px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="467.7083" x="330.4688" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="444.7917" x="341.9271" y="30.5583">org.apache.wicket.examples.authentication1</text><!--MD5=[42753d581174927358049f32fc967660]
+class AuthenticatedWebPage--><rect codeLine="8" fill="#282828" height="48.055" id="AuthenticatedWebPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="185.4167" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="185.4167" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="185.4167" x="7.2917" y="76.7578"/><rect codeLine="8" fill="none" height="48.055" id="AuthenticatedWebPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="185.4167" x="7.2917" y="53.7028"/><ellipse cx="21.875" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M19.279,66.5588 L19.279,64.9719 L24.705,64.9719 L24.705,66.5588 L22.8923,66.5588 L22.8923,72.4976 L24.705,72.4976 L24.705,74.0845 L19.279,74.0845 L19.279,72.4976 L21.0917,72.4976 L21.0917,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="38.5417" y="74.1211">AuthenticatedWebPage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="191.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="191.6667" y1="93.4245" y2="93.4245"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="229.1667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="229.1667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="229.1667" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="229.1667" y="53.7028"/><ellipse cx="243.75" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M245.6604,73.822 Q245.2332,74.0417 244.7632,74.1516 Q244.2932,74.2615 243.7744,74.2615 Q241.9312,74.2615 240.9607,73.0469 Q239.9902,71.8323 239.9902,69.5374 Q239.9902,67.2363 240.9607,66.0217 Q241.9312,64.8071 243.7744,64.8071 Q244.2932,64.8071 244.7693,64.917 Q245.2454,65.0269 245.6604,65.2466 L245.6604,67.2485 Q245.1965,66.8213 244.7601,66.6229 Q244.3237,66.4246 243.8599,66.4246 Q242.8711,66.4246 242.3676,67.2089 Q241.864,67.9932 241.864,69.5374 Q241.864,71.0754 242.3676,71.8597 Q242.8711,72.644 243.8599,72.644 Q244.3237,72.644 244.7601,72.4457 Q245.1965,72.2473 245.6604,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="260.4167" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="230.2083" x2="392.7083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="230.2083" x2="392.7083" y1="93.4245" y2="93.4245"/><!--MD5=[85bae912d113bb0b86a623a745020199]
+class Home--><rect codeLine="14" fill="#282828" height="48.055" id="Home" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="75" x="107.2917" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="75" x="107.2917" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="75" x="107.2917" y="228.8411"/><rect codeLine="14" fill="none" height="48.055" id="Home" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="75" x="107.2917" y="205.7861"/><ellipse cx="121.875" cy="221.4803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M123.7854,225.9054 Q123.3582,226.1251 122.8882,226.2349 Q122.4182,226.3448 121.8994,226.3448 Q120.0562,226.3448 119.0857,225.1302 Q118.1152,223.9156 118.1152,221.6207 Q118.1152,219.3197 119.0857,218.1051 Q120.0562,216.8905 121.8994,216.8905 Q122.4182,216.8905 122.8943,217.0003 Q123.3704,217.1102 123.7854,217.3299 L123.7854,219.3319 Q123.3215,218.9046 122.8851,218.7063 Q122.4487,218.5079 121.9849,218.5079 Q120.9961,218.5079 120.4926,219.2922 Q119.989,220.0765 119.989,221.6207 Q119.989,223.1588 120.4926,223.9431 Q120.9961,224.7274 121.9849,224.7274 Q122.4487,224.7274 122.8851,224.529 Q123.3215,224.3306 123.7854,223.9034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="37.5" x="138.5417" y="226.2044">Home</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="108.3333" x2="181.25" y1="237.1745" y2="237.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="108.3333" x2="181.25" y1="245.5078" y2="245.5078"/><!--MD5=[05f0738710ff64ff186a72f4e8320a3a]
+class SignIn--><rect codeLine="19" fill="#282828" height="83.3781" id="SignIn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="240.625" y="188.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="240.625" y="188.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="240.625" y="211.1328"/><rect codeLine="19" fill="none" height="83.3781" id="SignIn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="240.625" y="188.0778"/><ellipse cx="263.1771" cy="203.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M265.0875,208.197 Q264.6602,208.4167 264.1903,208.5266 Q263.7203,208.6365 263.2015,208.6365 Q261.3582,208.6365 260.3878,207.4219 Q259.4173,206.2073 259.4173,203.9124 Q259.4173,201.6113 260.3878,200.3967 Q261.3582,199.1821 263.2015,199.1821 Q263.7203,199.1821 264.1964,199.292 Q264.6724,199.4019 265.0875,199.6216 L265.0875,201.6235 Q264.6236,201.1963 264.1872,200.9979 Q263.7508,200.7996 263.2869,200.7996 Q262.2982,200.7996 261.7946,201.5839 Q261.2911,202.3682 261.2911,203.9124 Q261.2911,205.4504 261.7946,206.2347 Q262.2982,207.019 263.2869,207.019 Q263.7508,207.019 264.1872,206.8207 Q264.6236,206.6223 265.0875,206.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="40.625" x="281.6146" y="208.4961">SignIn</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="241.6667" x2="335.4167" y1="219.4661" y2="219.4661"/><ellipse cx="252.0833" cy="254.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="263.5417" y="261.7472">SignIn()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="241.6667" x2="244.7917" y1="237.6719" y2="237.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="247.9167" y="241.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="332.2917" x2="335.4167" y1="237.6719" y2="237.6719"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="556.25" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="556.25" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="556.25" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="556.25" y="53.7028"/><ellipse cx="570.8333" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M572.7437,73.822 Q572.3165,74.0417 571.8465,74.1516 Q571.3765,74.2615 570.8577,74.2615 Q569.0145,74.2615 568.044,73.0469 Q567.0736,71.8323 567.0736,69.5374 Q567.0736,67.2363 568.044,66.0217 Q569.0145,64.8071 570.8577,64.8071 Q571.3765,64.8071 571.8526,64.917 Q572.3287,65.0269 572.7437,65.2466 L572.7437,67.2485 Q572.2799,66.8213 571.8435,66.6229 Q571.4071,66.4246 570.9432,66.4246 Q569.9544,66.4246 569.4509,67.2089 Q568.9473,67.9932 568.9473,69.5374 Q568.9473,71.0754 569.4509,71.8597 Q569.9544,72.644 570.9432,72.644 Q571.4071,72.644 571.8435,72.4457 Q572.2799,72.2473 572.7437,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="587.5" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="557.2917" x2="763.5417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="557.2917" x2="763.5417" y1="93.4245" y2="93.4245"/><!--MD5=[2b4cfd15b94415f2ddc58251cde505da]
+class SignInApplication--><rect codeLine="26" fill="#282828" height="48.055" id="SignInApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="152.0833" x="584.375" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="152.0833" x="584.375" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="152.0833" x="584.375" y="228.8411"/><rect codeLine="26" fill="none" height="48.055" id="SignInApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="152.0833" x="584.375" y="205.7861"/><ellipse cx="598.9583" cy="221.4803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M600.8687,225.9054 Q600.4415,226.1251 599.9715,226.2349 Q599.5015,226.3448 598.9827,226.3448 Q597.1395,226.3448 596.169,225.1302 Q595.1986,223.9156 595.1986,221.6207 Q595.1986,219.3197 596.169,218.1051 Q597.1395,216.8905 598.9827,216.8905 Q599.5015,216.8905 599.9776,217.0003 Q600.4537,217.1102 600.8687,217.3299 L600.8687,219.3319 Q600.4049,218.9046 599.9685,218.7063 Q599.5321,218.5079 599.0682,218.5079 Q598.0794,218.5079 597.5759,219.2922 Q597.0723,220.0765 597.0723,221.6207 Q597.0723,223.1588 597.5759,223.9431 Q598.0794,224.7274 599.0682,224.7274 Q599.5321,224.7274 599.9685,224.529 Q600.4049,224.3306 600.8687,223.9034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="114.5833" x="615.625" y="226.2044">SignInApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="585.4167" x2="735.4167" y1="237.1745" y2="237.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="585.4167" x2="735.4167" y1="245.5078" y2="245.5078"/><!--MD5=[6f29f313cd4199edbf91b9ce3a4faa98]
+class Form--><rect fill="#282828" height="48.055" id="Form" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="70.8333" x="806.25" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="70.8333" x="806.25" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="70.8333" x="806.25" y="76.7578"/><rect fill="none" height="48.055" id="Form" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="70.8333" x="806.25" y="53.7028"/><ellipse cx="820.8333" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M822.7437,73.822 Q822.3165,74.0417 821.8465,74.1516 Q821.3765,74.2615 820.8577,74.2615 Q819.0145,74.2615 818.044,73.0469 Q817.0736,71.8323 817.0736,69.5374 Q817.0736,67.2363 818.044,66.0217 Q819.0145,64.8071 820.8577,64.8071 Q821.3765,64.8071 821.8526,64.917 Q822.3287,65.0269 822.7437,65.2466 L822.7437,67.2485 Q822.2799,66.8213 821.8435,66.6229 Q821.4071,66.4246 820.9432,66.4246 Q819.9544,66.4246 819.4509,67.2089 Q818.9473,67.9932 818.9473,69.5374 Q818.9473,71.0754 819.4509,71.8597 Q819.9544,72.644 820.9432,72.644 Q821.4071,72.644 821.8435,72.4457 Q822.2799,72.2473 822.7437,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="33.3333" x="837.5" y="74.1211">Form</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="807.2917" x2="876.0417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="807.2917" x2="876.0417" y1="93.4245" y2="93.4245"/><!--MD5=[11f216aef8df88c33fad57b537e14242]
+class SignIn.SignInForm--><rect codeLine="31" fill="#282828" height="83.3781" id="SignIn.SignInForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="137.5" x="772.9167" y="188.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="137.5" x="772.9167" y="188.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="137.5" x="772.9167" y="211.1328"/><rect codeLine="31" fill="none" height="83.3781" id="SignIn.SignInForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="137.5" x="772.9167" y="188.0778"/><ellipse cx="799.2188" cy="203.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M801.1292,208.197 Q800.7019,208.4167 800.2319,208.5266 Q799.762,208.6365 799.2432,208.6365 Q797.3999,208.6365 796.4294,207.4219 Q795.459,206.2073 795.459,203.9124 Q795.459,201.6113 796.4294,200.3967 Q797.3999,199.1821 799.2432,199.1821 Q799.762,199.1821 800.238,199.292 Q800.7141,199.4019 801.1292,199.6216 L801.1292,201.6235 Q800.6653,201.1963 800.2289,200.9979 Q799.7925,200.7996 799.3286,200.7996 Q798.3398,200.7996 797.8363,201.5839 Q797.3328,202.3682 797.3328,203.9124 Q797.3328,205.4504 797.8363,206.2347 Q798.3398,207.019 799.3286,207.019 Q799.7925,207.019 800.2289,206.8207 Q800.6653,206.6223 801.1292,206.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="73.9583" x="818.4896" y="208.4961">SignInForm</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="773.9583" x2="909.375" y1="219.4661" y2="219.4661"/><ellipse cx="784.375" cy="254.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="105.2083" x="795.8333" y="261.7472">SignInForm(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="773.9583" x2="797.9167" y1="237.6719" y2="237.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="801.0417" y="241.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="885.4167" x2="909.375" y1="237.6719" y2="237.6719"/><!--MD5=[2261d145199e4c178076f207be0d1b0d]
+class AuthenticatedWebSession--><rect fill="#282828" height="48.055" id="AuthenticatedWebSession" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="205.2083" x="930.7292" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="205.2083" x="930.7292" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="205.2083" x="930.7292" y="76.7578"/><rect fill="none" height="48.055" id="AuthenticatedWebSession" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="205.2083" x="930.7292" y="53.7028"/><ellipse cx="945.3125" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M947.2229,73.822 Q946.7957,74.0417 946.3257,74.1516 Q945.8557,74.2615 945.3369,74.2615 Q943.4937,74.2615 942.5232,73.0469 Q941.5527,71.8323 941.5527,69.5374 Q941.5527,67.2363 942.5232,66.0217 Q943.4937,64.8071 945.3369,64.8071 Q945.8557,64.8071 946.3318,64.917 Q946.8079,65.0269 947.2229,65.2466 L947.2229,67.2485 Q946.759,66.8213 946.3226,66.6229 Q945.8862,66.4246 945.4224,66.4246 Q944.4336,66.4246 943.9301,67.2089 Q943.4265,67.9932 943.4265,69.5374 Q943.4265,71.0754 943.9301,71.8597 Q944.4336,72.644 945.4224,72.644 Q945.8862,72.644 946.3226,72.4457 Q946.759,72.2473 947.2229,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="167.7083" x="961.9792" y="74.1211">AuthenticatedWebSession</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="931.7708" x2="1134.8958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="931.7708" x2="1134.8958" y1="93.4245" y2="93.4245"/><!--MD5=[f0a2d4e27bcd779258e9b271c32f44a2]
+class SignInSession--><rect codeLine="38" fill="#282828" height="131.2012" id="SignInSession" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="947.3958" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="947.3958" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="947.3958" y="187.1745"/><rect codeLine="38" fill="none" height="131.2012" id="SignInSession" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="947.3958" y="164.1195"/><ellipse cx="981.6667" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M983.5771,184.2387 Q983.1498,184.4584 982.6799,184.5683 Q982.2099,184.6781 981.6911,184.6781 Q979.8478,184.6781 978.8774,183.4635 Q977.9069,182.2489 977.9069,179.954 Q977.9069,177.653 978.8774,176.4384 Q979.8478,175.2238 981.6911,175.2238 Q982.2099,175.2238 982.686,175.3337 Q983.162,175.4435 983.5771,175.6632 L983.5771,177.6652 Q983.1132,177.238 982.6768,177.0396 Q982.2404,176.8412 981.7765,176.8412 Q980.7878,176.8412 980.2842,177.6255 Q979.7807,178.4098 979.7807,179.954 Q979.7807,181.4921 980.2842,182.2764 Q980.7878,183.0607 981.7765,183.0607 Q982.2404,183.0607 982.6768,182.8623 Q983.1132,182.664 983.5771,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="1002.7083" y="184.5378">SignInSession</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="948.4375" x2="1118.2292" y1="195.5078" y2="195.5078"/><polygon fill="#FFFF44" points="958.8542,225.6694,963.0208,229.836,958.8542,234.0027,954.6875,229.836" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="130.2083" x="970.3125" y="237.7889">SignInSession(Request)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="948.4375" x2="989.5833" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="992.7083" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1077.0833" x2="1118.2292" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="948.4375" x2="1118.2292" y1="247.4976" y2="247.4976"/><ellipse cx="958.8542" cy="258.9559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="970.3125" y="265.8671">String getUser()</text><ellipse cx="958.8542" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="970.3125" y="285.612">void setUser(String user)</text><!--MD5=[332b16b983090505f662b4bf3639251c]
+class SignOut--><rect codeLine="48" fill="#282828" height="83.3781" id="SignOut" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="373.4375" y="188.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="373.4375" y="188.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="373.4375" y="211.1328"/><rect codeLine="48" fill="none" height="83.3781" id="SignOut" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="373.4375" y="188.0778"/><ellipse cx="427.0833" cy="203.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M428.9937,208.197 Q428.5665,208.4167 428.0965,208.5266 Q427.6265,208.6365 427.1077,208.6365 Q425.2645,208.6365 424.294,207.4219 Q423.3236,206.2073 423.3236,203.9124 Q423.3236,201.6113 424.294,200.3967 Q425.2645,199.1821 427.1077,199.1821 Q427.6265,199.1821 428.1026,199.292 Q428.5787,199.4019 428.9937,199.6216 L428.9937,201.6235 Q428.5299,201.1963 428.0935,200.9979 Q427.6571,200.7996 427.1932,200.7996 Q426.2044,200.7996 425.7009,201.5839 Q425.1973,202.3682 425.1973,203.9124 Q425.1973,205.4504 425.7009,206.2347 Q426.2044,207.019 427.1932,207.019 Q427.6571,207.019 428.0935,206.8207 Q428.5299,206.6223 428.9937,206.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="52.0833" x="450" y="208.4961">SignOut</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="374.4792" x2="546.3542" y1="219.4661" y2="219.4661"/><ellipse cx="384.8958" cy="254.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="396.3542" y="261.7472">SignOut(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="374.4792" x2="416.6667" y1="237.6719" y2="237.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="419.7917" y="241.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="504.1667" x2="546.3542" y1="237.6719" y2="237.6719"/><!--MD5=[b3756feba97c3508453d5d50a0aaead8]
+reverse link WicketExamplePage to Home--><path codeLine="12" d="M270.1354,115.8903 C238.9167,143.984 197.0521,181.6611 170.5,205.5674 " fill="none" id="WicketExamplePage-backto-Home" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="265.4167,110.3278,285.7813,101.807,275.1771,121.1715,265.4167,110.3278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[69bc428132b730bc560724a920d3b5ee]
+reverse link AuthenticatedWebPage to Home--><path codeLine="13" d="M112.8646,121.7861 C120.9896,148.9736 131.1563,183.0465 137.8125,205.3174 " fill="none" id="AuthenticatedWebPage-backto-Home" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="105.875,123.859,106.8958,101.807,119.8438,119.6924,105.875,123.859" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7ec5fc1f4c8f47df9a9ad2bbc86f116b]
+reverse link WicketExamplePage to SignIn--><path codeLine="18" d="M304.7396,122.7132 C301.5833,143.359 297.8438,167.8174 294.7604,188.0257 " fill="none" id="WicketExamplePage-backto-SignIn" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="297.5729,121.307,307.9271,101.807,311.9896,123.5049,297.5729,121.307" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[0a8fe0766ce9f0d712ddd40d6a66f84c]
+reverse link WicketExampleApplication to SignInApplication--><path codeLine="25" d="M660.4167,123.0049 C660.4167,149.984 660.4167,183.3799 660.4167,205.3174 " fill="none" id="WicketExampleApplication-backto-SignInApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="653.125,122.6403,660.4167,101.807,667.7083,122.6403,653.125,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[88009fbca1e04251530a112f31c9cd54]
+reverse link Form to SignIn.SignInForm--><path codeLine="30" d="M841.6667,122.7132 C841.6667,143.359 841.6667,167.8174 841.6667,188.0257 " fill="none" id="Form-backto-SignIn.SignInForm" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="834.375,122.6403,841.6667,101.807,848.9583,122.6403,834.375,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5fc36782d30263bd94bde0da43791544]
+reverse link AuthenticatedWebSession to SignInSession--><path codeLine="37" d="M1033.3333,122.9945 C1033.3333,135.8695 1033.3333,150.2132 1033.3333,164.0674 " fill="none" id="AuthenticatedWebSession-backto-SignInSession" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1026.0417,122.6403,1033.3333,101.807,1040.625,122.6403,1026.0417,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[037bdd816831c29eb75d9f5f4bd72edc]
+reverse link WicketExamplePage to SignOut--><path codeLine="47" d="M349.3542,116.859 C370.9583,138.6195 398.0208,165.8695 420.0208,188.0257 " fill="none" id="WicketExamplePage-backto-SignOut" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="343.9167,121.734,334.4063,101.807,354.2604,111.4528,343.9167,121.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c734af25e5dac9b8bc946dc819e0eede]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.authentication1"
+    
+    interface AuthenticatedWebPage
+    
+    interface AuthenticatedWebPage
+    {
+    }
+    
+    WicketExamplePage <|- - Home
+    AuthenticatedWebPage <|- - Home
+    class Home
+    {
+    }
+    
+    WicketExamplePage <|- - SignIn
+    class SignIn
+    {
+        - -(constructors)- -
+        +SignIn()
+    }
+    
+    WicketExampleApplication <|- - SignInApplication
+    class SignInApplication
+    {
+    }
+    
+    Form <|- - SignIn.SignInForm
+    class SignIn.SignInForm
+    {
+        - -(constructors)- -
+        +SignInForm(String)
+    }
+    
+    AuthenticatedWebSession <|- - SignInSession
+    class SignInSession
+    {
+        - -(constructors)- -
+        #SignInSession(Request)
+        - -
+        +String getUser()
+        +void setUser(String user)
+    }
+    
+    WicketExamplePage <|- - SignOut
+    class SignOut
+    {
+        - -(constructors)- -
+        +SignOut(PageParameters)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.authentication1"
+    
+    interface AuthenticatedWebPage
+    
+    interface AuthenticatedWebPage
+    {
+    }
+    
+    WicketExamplePage <|- - Home
+    AuthenticatedWebPage <|- - Home
+    class Home
+    {
+    }
+    
+    WicketExamplePage <|- - SignIn
+    class SignIn
+    {
+        - -(constructors)- -
+        +SignIn()
+    }
+    
+    WicketExampleApplication <|- - SignInApplication
+    class SignInApplication
+    {
+    }
+    
+    Form <|- - SignIn.SignInForm
+    class SignIn.SignInForm
+    {
+        - -(constructors)- -
+        +SignInForm(String)
+    }
+    
+    AuthenticatedWebSession <|- - SignInSession
+    class SignInSession
+    {
+        - -(constructors)- -
+        #SignInSession(Request)
+        - -
+        +String getUser()
+        +void setUser(String user)
+    }
+    
+    WicketExamplePage <|- - SignOut
+    class SignOut
+    {
+        - -(constructors)- -
+        +SignOut(PageParameters)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,28 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.ajaxhellobrowser"
+    
+    WicketExamplePage <|-- AjaxHelloBrowser
+    class AjaxHelloBrowser
+    {
+        --(constructors)--
+        +AjaxHelloBrowser()
+    }
+    
+    ClientProperties <|-- ExtendedClientProperties
+    class ExtendedClientProperties
+    {
+        --
+        +String getExtendedProperty()
+        +void setExtendedProperty(String extendedProperty)
+    }
+    
+    WicketExampleApplication <|-- HelloBrowserApplication
+    class HelloBrowserApplication
+    {
+    }
+    
+@enduml
+

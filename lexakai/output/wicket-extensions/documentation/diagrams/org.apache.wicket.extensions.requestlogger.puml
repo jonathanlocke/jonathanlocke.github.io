@@ -1,0 +1,37 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.requestlogger"
+    
+    abstract AbstractRequestLogger
+    
+    interface Serializable
+    
+    JacksonAnnotationIntrospector <|-- JsonRequestLogger.FilteredIntrospector
+    class JsonRequestLogger.FilteredIntrospector
+    {
+    }
+    
+    AbstractRequestLogger <|-- JsonRequestLogger
+    class JsonRequestLogger
+    {
+        --(constructors)--
+        +JsonRequestLogger()
+        --
+        #String getLogString(RequestData rd, SessionData sd)
+        #ObjectMapper getMapper()
+    }
+    
+    Serializable <|-- JsonRequestLogger.RequestSessionTuple
+    class JsonRequestLogger.RequestSessionTuple
+    {
+        --(constructors)--
+        +RequestSessionTuple(RequestData, SessionData)
+        --
+        +RequestData getRequest()
+        +SessionData getSession()
+    }
+    
+@enduml
+

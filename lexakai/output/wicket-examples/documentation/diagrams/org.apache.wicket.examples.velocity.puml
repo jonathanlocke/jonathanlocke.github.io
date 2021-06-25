@@ -1,0 +1,73 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.velocity"
+    
+    interface Serializable
+    
+    WicketExamplePage <|-- DynamicPage
+    class DynamicPage
+    {
+        --(constructors)--
+        +DynamicPage(PageParameters)
+    }
+    
+    Serializable <|-- Field
+    class Field
+    {
+        --(constructors)--
+        +Field(String, int)
+        --(collection)--
+        +int getFieldSize()
+        --(naming)--
+        +String getFieldName()
+    }
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+    }
+    
+    Serializable <|-- Person
+    class Person
+    {
+        --(constructors)--
+        +Person()
+        +Person(String, String)
+        --(collection)--
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+    }
+    
+    Form <|-- TemplatePage.TemplateForm
+    class TemplatePage.TemplateForm
+    {
+        --(constructors)--
+        +TemplateForm(String)
+    }
+    
+    WicketExamplePage <|-- TemplatePage
+    class TemplatePage
+    {
+        --(constructors)--
+        +TemplatePage(PageParameters)
+        --
+        +String getTemplate()
+        +void setTemplate(String template)
+    }
+    
+    WicketExampleApplication <|-- VelocityTemplateApplication
+    class VelocityTemplateApplication
+    {
+        --(constructors)--
+        +VelocityTemplateApplication()
+        --(collection)--
+        +List<Field> getFields()
+        +List<Person> getPersons()
+    }
+    
+@enduml
+

@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="381.25px" preserveAspectRatio="none" style="width:630px;height:381px;background:#333333;" version="1.1" viewBox="0 0 630 381" width="630.2083px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="436.4583" x="89.5833" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="413.5417" x="101.0417" y="30.5583">org.apache.wicket.authentication.strategy</text><!--MD5=[1608e8f79d44fe4fa0b671187ad5e140]
+class IAuthenticationStrategy--><rect codeLine="6" fill="#282828" height="48.055" id="IAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="253.6458" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="253.6458" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="253.6458" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="IAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="253.6458" y="53.7028"/><ellipse cx="268.2292" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M265.6331,66.5588 L265.6331,64.9719 L271.0592,64.9719 L271.0592,66.5588 L269.2464,66.5588 L269.2464,72.4976 L271.0592,72.4976 L271.0592,74.0845 L265.6331,74.0845 L265.6331,72.4976 L267.4459,72.4976 L267.4459,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="153.125" x="284.8958" y="74.1211">IAuthenticationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="254.6875" x2="443.2292" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="254.6875" x2="443.2292" y1="93.4245" y2="93.4245"/><!--MD5=[60f80e114b02466beab189ee98f59245]
+class DefaultAuthenticationStrategy--><rect codeLine="9" fill="#282828" height="210.1807" id="DefaultAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="354.1667" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="354.1667" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="354.1667" x="9.375" y="187.1745"/><rect codeLine="9" fill="none" height="210.1807" id="DefaultAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="354.1667" x="9.375" y="164.1195"/><ellipse cx="80.7292" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M82.6396,184.2387 Q82.2123,184.4584 81.7424,184.5683 Q81.2724,184.6781 80.7536,184.6781 Q78.9103,184.6781 77.9399,183.4635 Q76.9694,182.2489 76.9694,179.954 Q76.9694,177.653 77.9399,176.4384 Q78.9103,175.2238 80.7536,175.2238 Q81.2724,175.2238 81.7485,175.3337 Q82.2245,175.4435 82.6396,175.6632 L82.6396,177.6652 Q82.1757,177.238 81.7393,177.0396 Q81.3029,176.8412 80.839,176.8412 Q79.8503,176.8412 79.3467,177.6255 Q78.8432,178.4098 78.8432,179.954 Q78.8432,181.4921 79.3467,182.2764 Q79.8503,183.0607 80.839,183.0607 Q81.3029,183.0607 81.7393,182.8623 Q82.1757,182.664 82.6396,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="196.875" x="103.6458" y="184.5378">DefaultAuthenticationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="362.5" y1="195.5078" y2="195.5078"/><ellipse cx="20.8333" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="32.2917" y="237.7889">DefaultAuthenticationStrategy(String)</text><ellipse cx="20.8333" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="250" x="32.2917" y="257.5338">DefaultAuthenticationStrategy(String, ICrypt)</text><ellipse cx="20.8333" cy="270.3674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="32.2917" y="277.2786">DefaultAuthenticationStrategy(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="142.7083" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="145.8333" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="230.2083" x2="362.5" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="362.5" y1="286.9873" y2="286.9873"/><polygon fill="#FFFF44" points="20.8333,293.2373,25,297.404,20.8333,301.5706,16.6667,297.404" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="32.2917" y="305.3569">String[] decode(String value)</text><polygon fill="#FFFF44" points="20.8333,312.9822,25,317.1488,20.8333,321.3155,16.6667,317.1488" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="321.875" x="32.2917" y="325.1017">String encode(String credential, String... extraCredentials)</text><polygon fill="#FFFF44" points="20.8333,332.7271,25,336.8937,20.8333,341.0604,16.6667,336.8937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="156.25" x="32.2917" y="344.8466">CookieUtils getCookieUtils()</text><polygon fill="#FFFF44" points="20.8333,352.4719,25,356.6386,20.8333,360.8053,16.6667,356.6386" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="32.2917" y="364.5915">ICrypt getCrypt()</text><!--MD5=[906e13ecbca2820020a85edb90cb19f1]
+class NoOpAuthenticationStrategy--><rect codeLine="23" fill="#282828" height="48.055" id="NoOpAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="222.9167" x="400" y="245.3695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="222.9167" x="400" y="245.3695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="222.9167" x="400" y="268.4245"/><rect codeLine="23" fill="none" height="48.055" id="NoOpAuthenticationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="222.9167" x="400" y="245.3695"/><ellipse cx="414.5833" cy="261.0636" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M416.4937,265.4887 Q416.0665,265.7084 415.5965,265.8183 Q415.1265,265.9281 414.6077,265.9281 Q412.7645,265.9281 411.794,264.7135 Q410.8236,263.4989 410.8236,261.204 Q410.8236,258.903 411.794,257.6884 Q412.7645,256.4738 414.6077,256.4738 Q415.1265,256.4738 415.6026,256.5837 Q416.0787,256.6935 416.4937,256.9132 L416.4937,258.9152 Q416.0299,258.488 415.5935,258.2896 Q415.1571,258.0912 414.6932,258.0912 Q413.7044,258.0912 413.2009,258.8755 Q412.6973,259.6598 412.6973,261.204 Q412.6973,262.7421 413.2009,263.5264 Q413.7044,264.3107 414.6932,264.3107 Q415.1571,264.3107 415.5935,264.1123 Q416.0299,263.914 416.4937,263.4867 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="185.4167" x="431.25" y="265.7878">NoOpAuthenticationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="401.0417" x2="621.875" y1="276.7578" y2="276.7578"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="401.0417" x2="621.875" y1="285.0911" y2="285.0911"/><!--MD5=[51b2bd6fcb1d5cf862de8199520969be]
+reverse link IAuthenticationStrategy to DefaultAuthenticationStrategy--><path codeLine="8" d="M315.4583,117.7861 C303.7708,131.4215 290.0521,147.4215 276,163.8278 " fill="none" id="IAuthenticationStrategy-backto-DefaultAuthenticationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="309.9375,113.0257,329.0313,101.9528,321.0104,122.5153,309.9375,113.0257" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3da41b160f115b9b1483d7a3c25d8fca]
+reverse link IAuthenticationStrategy to NoOpAuthenticationStrategy--><path codeLine="22" d="M382.7396,118.1195 C415.6458,156.5049 464.5521,213.5674 491.625,245.1507 " fill="none" id="IAuthenticationStrategy-backto-NoOpAuthenticationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="376.9063,122.5153,368.8854,101.9528,387.9792,113.0257,376.9063,122.5153" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b13510ad701e4a98edee6bdcc4c8faf6]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authentication.strategy"
+    
+    interface IAuthenticationStrategy
+    
+    IAuthenticationStrategy <|- - DefaultAuthenticationStrategy
+    class DefaultAuthenticationStrategy
+    {
+        - -(constructors)- -
+        +DefaultAuthenticationStrategy(String)
+        +DefaultAuthenticationStrategy(String, ICrypt)
+        +DefaultAuthenticationStrategy(String, String)
+        - -
+        #String[] decode(String value)
+        #String encode(String credential, String... extraCredentials)
+        #CookieUtils getCookieUtils()
+        #ICrypt getCrypt()
+    }
+    
+    IAuthenticationStrategy <|- - NoOpAuthenticationStrategy
+    class NoOpAuthenticationStrategy
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.authentication.strategy"
+    
+    interface IAuthenticationStrategy
+    
+    IAuthenticationStrategy <|- - DefaultAuthenticationStrategy
+    class DefaultAuthenticationStrategy
+    {
+        - -(constructors)- -
+        +DefaultAuthenticationStrategy(String)
+        +DefaultAuthenticationStrategy(String, ICrypt)
+        +DefaultAuthenticationStrategy(String, String)
+        - -
+        #String[] decode(String value)
+        #String encode(String credential, String... extraCredentials)
+        #CookieUtils getCookieUtils()
+        #ICrypt getCrypt()
+    }
+    
+    IAuthenticationStrategy <|- - NoOpAuthenticationStrategy
+    class NoOpAuthenticationStrategy
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

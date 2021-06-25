@@ -1,0 +1,23 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.echo"
+    
+    WicketExamplePage <|-- Echo
+    class Echo
+    {
+        --(constructors)--
+        +Echo()
+        --(messaging)--
+        +String getMessage()
+        +void setMessage(String message)
+    }
+    
+    WicketExampleApplication <|-- EchoApplication
+    class EchoApplication
+    {
+    }
+    
+@enduml
+

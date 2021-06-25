@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.handler.render"
+    
+    abstract class PageRenderer
+    {
+        --(constructors)--
+        +PageRenderer(RenderPageRequestHandler)
+        --
+        +void respond(RequestCycle)
+        #boolean enableRedirectForStatelessPage()
+        #IRequestablePage getPage()
+        #IPageProvider getPageProvider()
+        --(checks)--
+        #boolean isOnePassRender()
+        #boolean isRedirectToBuffer()
+        #boolean isRedirectToRender()
+        #boolean isSessionTemporary()
+        --(identity)--
+        #String getSessionId()
+        --(messaging)--
+        #RedirectPolicy getRedirectPolicy()
+        #RenderPageRequestHandler getRenderPageRequestHandler()
+    }
+    
+    PageRenderer <|-- WebPageRenderer
+    class WebPageRenderer
+    {
+        --(constructors)--
+        +WebPageRenderer(RenderPageRequestHandler)
+        --
+        #boolean compatibleProtocols(String p1, String p2)
+        #void redirectTo(Url, RequestCycle)
+        #BufferedWebResponse renderPage(Url targetUrl, RequestCycle)
+        #void storeBufferedResponse(Url, BufferedWebResponse)
+        --(checks)--
+        #boolean isAjax(RequestCycle)
+        #boolean isNewPageInstance()
+        #boolean isPageStateless()
+        #boolean shouldPreserveClientUrl(RequestCycle)
+        #boolean shouldRedirectToTargetUrl(RequestCycle, Url currentUrl, Url targetUrl)
+        #boolean shouldRenderPageAndWriteResponse(RequestCycle, Url currentUrl, Url targetUrl)
+    }
+    
+@enduml
+

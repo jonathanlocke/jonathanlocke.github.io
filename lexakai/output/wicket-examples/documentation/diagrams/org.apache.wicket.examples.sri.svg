@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="381.25px" preserveAspectRatio="none" style="width:796px;height:381px;background:#333333;" version="1.1" viewBox="0 0 796 381" width="796.875px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="337.5" x="222.6563" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="314.5833" x="234.1146" y="30.5583">org.apache.wicket.examples.sri</text><!--MD5=[ba74663ae8f84720e38e176fa8d59a39]
+class DynamicSubresourceIntegrity--><rect codeLine="6" fill="#282828" height="174.8576" id="DynamicSubresourceIntegrity" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="334.375" x="9.375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="334.375" x="9.375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="334.375" x="9.375" y="76.7578"/><rect codeLine="6" fill="none" height="174.8576" id="DynamicSubresourceIntegrity" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="334.375" x="9.375" y="53.7028"/><ellipse cx="73.9583" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M75.8687,73.822 Q75.4415,74.0417 74.9715,74.1516 Q74.5015,74.2615 73.9827,74.2615 Q72.1395,74.2615 71.169,73.0469 Q70.1986,71.8323 70.1986,69.5374 Q70.1986,67.2363 71.169,66.0217 Q72.1395,64.8071 73.9827,64.8071 Q74.5015,64.8071 74.9776,64.917 Q75.4537,65.0269 75.8687,65.2466 L75.8687,67.2485 Q75.4049,66.8213 74.9685,66.6229 Q74.5321,66.4246 74.0682,66.4246 Q73.0794,66.4246 72.5759,67.2089 Q72.0723,67.9932 72.0723,69.5374 Q72.0723,71.0754 72.5759,71.8597 Q73.0794,72.644 74.0682,72.644 Q74.5321,72.644 74.9685,72.4457 Q75.4049,72.2473 75.8687,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="190.625" x="96.875" y="74.1211">DynamicSubresourceIntegrity</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="342.7083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="342.7083" y1="93.4245" y2="93.4245"/><ellipse cx="20.8333" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="246.875" x="32.2917" y="111.794">String getIntegrity(ISubresourceHeaderItem)</text><ellipse cx="20.8333" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="232.2917" x="32.2917" y="131.5389">IHeaderResponse wrap(IHeaderResponse)</text><polygon fill="#FFFF44" points="20.8333,163.0758,25,167.2424,20.8333,171.4091,16.6667,167.2424" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="172.9167" x="32.2917" y="175.1953">String createHash(byte[] bytes)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="142.1875" y1="151.12" y2="151.12"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="145.3125" y="154.9296">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="210.9375" x2="342.7083" y1="151.12" y2="151.12"/><polygon fill="#FFFF44" points="20.8333,206.7322,25,210.8988,20.8333,215.0655,16.6667,210.8988" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="302.0833" x="32.2917" y="218.8517">byte[] getBytes(IStaticCacheableResource, Url baseUrl)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="144.7917" y1="194.7764" y2="194.7764"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="147.9167" y="198.586">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="208.3333" x2="342.7083" y1="194.7764" y2="194.7764"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="380.7292" y="117.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="380.7292" y="117.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="380.7292" y="140.2995"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="380.7292" y="117.2445"/><ellipse cx="395.3125" cy="132.9386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M397.2229,137.3637 Q396.7957,137.5834 396.3257,137.6933 Q395.8557,137.8031 395.3369,137.8031 Q393.4937,137.8031 392.5232,136.5885 Q391.5527,135.3739 391.5527,133.079 Q391.5527,130.778 392.5232,129.5634 Q393.4937,128.3488 395.3369,128.3488 Q395.8557,128.3488 396.3318,128.4587 Q396.8079,128.5685 397.2229,128.7882 L397.2229,130.7902 Q396.759,130.363 396.3226,130.1646 Q395.8862,129.9662 395.4224,129.9662 Q394.4336,129.9662 393.9301,130.7505 Q393.4265,131.5348 393.4265,133.079 Q393.4265,134.6171 393.9301,135.4014 Q394.4336,136.1857 395.4224,136.1857 Q395.8862,136.1857 396.3226,135.9873 Q396.759,135.789 397.2229,135.3617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="411.9792" y="137.6628">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="381.7708" x2="544.2708" y1="148.6328" y2="148.6328"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="381.7708" x2="544.2708" y1="156.9661" y2="156.9661"/><!--MD5=[ab7c0b294f39b6a30e42db8bc63ed15c]
+class IntegrityDemoPage--><rect codeLine="18" fill="#282828" height="83.3781" id="IntegrityDemoPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="161.4583" x="382.2917" y="291.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="161.4583" x="382.2917" y="291.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="161.4583" x="382.2917" y="314.2578"/><rect codeLine="18" fill="none" height="83.3781" id="IntegrityDemoPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="161.4583" x="382.2917" y="291.2028"/><ellipse cx="396.875" cy="306.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M398.7854,311.322 Q398.3582,311.5417 397.8882,311.6516 Q397.4182,311.7615 396.8994,311.7615 Q395.0562,311.7615 394.0857,310.5469 Q393.1152,309.3323 393.1152,307.0374 Q393.1152,304.7363 394.0857,303.5217 Q395.0562,302.3071 396.8994,302.3071 Q397.4182,302.3071 397.8943,302.417 Q398.3704,302.5269 398.7854,302.7466 L398.7854,304.7485 Q398.3215,304.3213 397.8851,304.1229 Q397.4487,303.9246 396.9849,303.9246 Q395.9961,303.9246 395.4926,304.7089 Q394.989,305.4932 394.989,307.0374 Q394.989,308.5754 395.4926,309.3597 Q395.9961,310.144 396.9849,310.144 Q397.4487,310.144 397.8851,309.9457 Q398.3215,309.7473 398.7854,309.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="123.9583" x="413.5417" y="311.6211">IntegrityDemoPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="383.3333" x2="542.7083" y1="322.5911" y2="322.5911"/><ellipse cx="393.75" cy="357.961" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="113.5417" x="405.2083" y="364.8722">IntegrityDemoPage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="383.3333" x2="419.2708" y1="340.7969" y2="340.7969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="422.3958" y="344.6065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="506.7708" x2="542.7083" y1="340.7969" y2="340.7969"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="581.7708" y="117.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="581.7708" y="117.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="581.7708" y="140.2995"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="581.7708" y="117.2445"/><ellipse cx="596.3542" cy="132.9386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M598.2646,137.3637 Q597.8373,137.5834 597.3674,137.6933 Q596.8974,137.8031 596.3786,137.8031 Q594.5353,137.8031 593.5649,136.5885 Q592.5944,135.3739 592.5944,133.079 Q592.5944,130.778 593.5649,129.5634 Q594.5353,128.3488 596.3786,128.3488 Q596.8974,128.3488 597.3735,128.4587 Q597.8495,128.5685 598.2646,128.7882 L598.2646,130.7902 Q597.8007,130.363 597.3643,130.1646 Q596.9279,129.9662 596.464,129.9662 Q595.4753,129.9662 594.9717,130.7505 Q594.4682,131.5348 594.4682,133.079 Q594.4682,134.6171 594.9717,135.4014 Q595.4753,136.1857 596.464,136.1857 Q596.9279,136.1857 597.3643,135.9873 Q597.8007,135.789 598.2646,135.3617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="613.0208" y="137.6628">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="582.8125" x2="789.0625" y1="148.6328" y2="148.6328"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="582.8125" x2="789.0625" y1="156.9661" y2="156.9661"/><!--MD5=[4990d46f1721fc8e380375a5fc5ad623]
+class SriApplication--><rect codeLine="25" fill="#282828" height="48.055" id="SriApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="621.875" y="308.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="621.875" y="308.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="621.875" y="331.9661"/><rect codeLine="25" fill="none" height="48.055" id="SriApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="621.875" y="308.9111"/><ellipse cx="636.4583" cy="324.6053" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M638.3687,329.0304 Q637.9415,329.2501 637.4715,329.3599 Q637.0015,329.4698 636.4827,329.4698 Q634.6395,329.4698 633.669,328.2552 Q632.6986,327.0406 632.6986,324.7457 Q632.6986,322.4447 633.669,321.2301 Q634.6395,320.0155 636.4827,320.0155 Q637.0015,320.0155 637.4776,320.1253 Q637.9537,320.2352 638.3687,320.4549 L638.3687,322.4569 Q637.9049,322.0296 637.4685,321.8313 Q637.0321,321.6329 636.5682,321.6329 Q635.5794,321.6329 635.0759,322.4172 Q634.5723,323.2015 634.5723,324.7457 Q634.5723,326.2838 635.0759,327.0681 Q635.5794,327.8524 636.5682,327.8524 Q637.0321,327.8524 637.4685,327.654 Q637.9049,327.4556 638.3687,327.0284 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="653.125" y="329.3294">SriApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="622.9167" x2="748.9583" y1="340.2995" y2="340.2995"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="622.9167" x2="748.9583" y1="348.6328" y2="348.6328"/><!--MD5=[30e4ac673e7dce863d267acc2e500a3a]
+reverse link WicketExamplePage to IntegrityDemoPage--><path codeLine="17" d="M463.0208,186.7757 C463.0208,218.359 463.0208,260.4111 463.0208,291.0986 " fill="none" id="WicketExamplePage-backto-IntegrityDemoPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="455.7292,186.3278,463.0208,165.4945,470.3125,186.3278,455.7292,186.3278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[22d2a059c371d4d1152b33bcbc813ddc]
+reverse link WicketExampleApplication to SriApplication--><path codeLine="24" d="M685.9375,186.4215 C685.9375,224.6299 685.9375,278.3903 685.9375,308.6924 " fill="none" id="WicketExampleApplication-backto-SriApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="678.6458,186.3278,685.9375,165.4945,693.2292,186.3278,678.6458,186.3278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[61fb4d3a6d14dffb17730f25caa4e0e2]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.sri"
+    
+    class DynamicSubresourceIntegrity
+    {
+        - -
+        +String getIntegrity(ISubresourceHeaderItem)
+        +IHeaderResponse wrap(IHeaderResponse)
+        - -(collection)- -
+        #String createHash(byte[] bytes)
+        - -(primitive)- -
+        #byte[] getBytes(IStaticCacheableResource, Url baseUrl)
+    }
+    
+    WicketExamplePage <|- - IntegrityDemoPage
+    class IntegrityDemoPage
+    {
+        - -(constructors)- -
+        +IntegrityDemoPage()
+    }
+    
+    WicketExampleApplication <|- - SriApplication
+    class SriApplication
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.sri"
+    
+    class DynamicSubresourceIntegrity
+    {
+        - -
+        +String getIntegrity(ISubresourceHeaderItem)
+        +IHeaderResponse wrap(IHeaderResponse)
+        - -(collection)- -
+        #String createHash(byte[] bytes)
+        - -(primitive)- -
+        #byte[] getBytes(IStaticCacheableResource, Url baseUrl)
+    }
+    
+    WicketExamplePage <|- - IntegrityDemoPage
+    class IntegrityDemoPage
+    {
+        - -(constructors)- -
+        +IntegrityDemoPage()
+    }
+    
+    WicketExampleApplication <|- - SriApplication
+    class SriApplication
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

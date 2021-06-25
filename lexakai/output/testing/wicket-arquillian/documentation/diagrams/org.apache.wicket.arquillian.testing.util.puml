@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.arquillian.testing.util"
+    
+    interface IResourceFinder
+    
+    IResourceFinder <|-- ResourceWebApplicationPath
+    class ResourceWebApplicationPath
+    {
+        --(constructors)--
+        +ResourceWebApplicationPath(String, ServletContext)
+    }
+    
+@enduml
+

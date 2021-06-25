@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="587.5px" preserveAspectRatio="none" style="width:1595px;height:587px;background:#333333;" version="1.1" viewBox="0 0 1595 587" width="1595.8333px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="364.5833" x="608.3333" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="341.6667" x="619.7917" y="30.5583">org.apache.wicket.extensions.ajax</text><!--MD5=[c44f484162ce826c46954ab096a868bc]
+class AbstractDefaultAjaxBehavior--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="223.9583" x="82.8125" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="223.9583" x="82.8125" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="223.9583" x="82.8125" y="116.3411"/><rect codeLine="6" fill="none" height="48.055" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="223.9583" x="82.8125" y="93.2861"/><ellipse cx="97.3958" cy="108.9803" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M96.9889,105.6824 L96.1405,109.4116 L97.8434,109.4116 Z M95.8903,104.0344 L98.0937,104.0344 L100.5534,113.147 L98.7528,113.147 L98.1913,110.8948 L95.7804,110.8948 L95.2311,113.147 L93.4306,113.147 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="186.4583" x="114.0625" y="113.7044">AbstractDefaultAjaxBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="83.8542" x2="305.7292" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="83.8542" x2="305.7292" y1="133.0078" y2="133.0078"/><!--MD5=[a0efafd522c0c260ee9fad58e714a70b]
+class IRequestListener--><rect codeLine="8" fill="#282828" height="48.055" id="IRequestListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="383.3333" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="383.3333" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="383.3333" y="116.3411"/><rect codeLine="8" fill="none" height="48.055" id="IRequestListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="383.3333" y="93.2861"/><ellipse cx="397.9167" cy="108.9803" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M395.3206,106.1422 L395.3206,104.5553 L400.7467,104.5553 L400.7467,106.1422 L398.9339,106.1422 L398.9339,112.0809 L400.7467,112.0809 L400.7467,113.6678 L395.3206,113.6678 L395.3206,112.0809 L397.1334,112.0809 L397.1334,106.1422 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="414.5833" y="113.7044">IRequestListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="384.375" x2="528.125" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="384.375" x2="528.125" y1="133.0078" y2="133.0078"/><!--MD5=[8b8ae94e6965fd6a41852b1b6c5c9a3a]
+class AjaxCallListener--><rect fill="#282828" height="48.055" id="AjaxCallListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="735.9375" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="735.9375" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="735.9375" y="116.3411"/><rect fill="none" height="48.055" id="AjaxCallListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="735.9375" y="93.2861"/><ellipse cx="750.5208" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M752.4312,113.4054 Q752.004,113.6251 751.534,113.7349 Q751.064,113.8448 750.5452,113.8448 Q748.702,113.8448 747.7315,112.6302 Q746.7611,111.4156 746.7611,109.1207 Q746.7611,106.8197 747.7315,105.6051 Q748.702,104.3905 750.5452,104.3905 Q751.064,104.3905 751.5401,104.5003 Q752.0162,104.6102 752.4312,104.8299 L752.4312,106.8319 Q751.9674,106.4046 751.531,106.2063 Q751.0946,106.0079 750.6307,106.0079 Q749.6419,106.0079 749.1384,106.7922 Q748.6348,107.5765 748.6348,109.1207 Q748.6348,110.6588 749.1384,111.4431 Q749.6419,112.2274 750.6307,112.2274 Q751.0946,112.2274 751.531,112.029 Q751.9674,111.8306 752.4312,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="767.1875" y="113.7044">AjaxCallListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="736.9792" x2="877.6042" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="736.9792" x2="877.6042" y1="133.0078" y2="133.0078"/><!--MD5=[d40c5ca5ce9407bb4a9991b276a7d75d]
+class AjaxDisableComponentListener--><rect codeLine="11" fill="#282828" height="83.3781" id="AjaxDisableComponentListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="390.625" x="611.9792" y="370.3695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="390.625" x="611.9792" y="370.3695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="390.625" x="611.9792" y="393.4245"/><rect codeLine="11" fill="none" height="83.3781" id="AjaxDisableComponentListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="390.625" x="611.9792" y="370.3695"/><ellipse cx="697.3958" cy="386.0636" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M699.3062,390.4887 Q698.879,390.7084 698.409,390.8183 Q697.939,390.9281 697.4202,390.9281 Q695.577,390.9281 694.6065,389.7135 Q693.6361,388.4989 693.6361,386.204 Q693.6361,383.903 694.6065,382.6884 Q695.577,381.4738 697.4202,381.4738 Q697.939,381.4738 698.4151,381.5837 Q698.8912,381.6935 699.3062,381.9132 L699.3062,383.9152 Q698.8424,383.488 698.406,383.2896 Q697.9696,383.0912 697.5057,383.0912 Q696.5169,383.0912 696.0134,383.8755 Q695.5098,384.6598 695.5098,386.204 Q695.5098,387.7421 696.0134,388.5264 Q696.5169,389.3107 697.5057,389.3107 Q697.9696,389.3107 698.406,389.1123 Q698.8424,388.914 699.3062,388.4867 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="205.2083" x="720.3125" y="390.7878">AjaxDisableComponentListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="613.0208" x2="1001.5625" y1="401.7578" y2="401.7578"/><polygon fill="#FFFF44" points="623.4375,431.9194,627.6042,436.086,623.4375,440.2527,619.2708,436.086" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="358.3333" x="634.8958" y="444.0389">String generateHandlerJavaScript(Component, boolean disabled)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="613.0208" x2="769.7917" y1="419.9636" y2="419.9636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="772.9167" y="423.7732">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="844.7917" x2="1001.5625" y1="419.9636" y2="419.9636"/><!--MD5=[637064ec8634a2c1cb032d31eb6732af]
+class AjaxDownloadBehavior--><rect codeLine="18" fill="#282828" height="336.9832" id="AjaxDownloadBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="370.8333" x="9.375" y="243.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="370.8333" x="9.375" y="243.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="370.8333" x="9.375" y="266.3411"/><rect codeLine="18" fill="none" height="336.9832" id="AjaxDownloadBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="370.8333" x="9.375" y="243.2861"/><ellipse cx="112.5" cy="258.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M114.4104,263.4054 Q113.9832,263.6251 113.5132,263.7349 Q113.0432,263.8448 112.5244,263.8448 Q110.6812,263.8448 109.7107,262.6302 Q108.7402,261.4156 108.7402,259.1207 Q108.7402,256.8197 109.7107,255.6051 Q110.6812,254.3905 112.5244,254.3905 Q113.0432,254.3905 113.5193,254.5003 Q113.9954,254.6102 114.4104,254.8299 L114.4104,256.8319 Q113.9465,256.4046 113.5101,256.2063 Q113.0737,256.0079 112.6099,256.0079 Q111.6211,256.0079 111.1176,256.7922 Q110.614,257.5765 110.614,259.1207 Q110.614,260.6588 111.1176,261.4431 Q111.6211,262.2274 112.6099,262.2274 Q113.0737,262.2274 113.5101,262.029 Q113.9465,261.8306 114.4104,261.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="150" x="135.4167" y="263.7044">AjaxDownloadBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="379.1667" y1="274.6745" y2="274.6745"/><ellipse cx="20.8333" cy="310.0444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="32.2917" y="316.9556">AjaxDownloadBehavior(IResource)</text><ellipse cx="20.8333" cy="329.7892" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="32.2917" y="336.7004">AjaxDownloadBehavior(ResourceReference)</text><ellipse cx="20.8333" cy="349.5341" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="338.5417" x="32.2917" y="356.4453">AjaxDownloadBehavior(ResourceReference, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="151.0417" y1="292.8802" y2="292.8802"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="154.1667" y="296.6899">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="238.5417" x2="379.1667" y1="292.8802" y2="292.8802"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="379.1667" y1="366.154" y2="366.154"/><ellipse cx="20.8333" cy="377.6123" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="32.2917" y="384.5235">Location getLocation()</text><ellipse cx="20.8333" cy="397.3572" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="225" x="32.2917" y="404.2684">void initiate(IPartialPageRequestHandler)</text><ellipse cx="20.8333" cy="417.1021" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="252.0833" x="32.2917" y="424.0133">AjaxDownloadBehavior setLocation(Location)</text><polygon fill="#FFFF44" points="20.8333,431.6386,25,435.8053,20.8333,439.9719,16.6667,435.8053" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="292.7083" x="32.2917" y="443.7581">void onBeforeDownload(IPartialPageRequestHandler)</text><polygon fill="#FFFF44" points="20.8333,451.3835,25,455.5501,20.8333,459.7168,16.6667,455.5501" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="32.2917" y="463.503">void onDownloadFailed(AjaxRequestTarget)</text><ellipse cx="20.8333" cy="500.2482" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="32.2917" y="507.1594">void markCompleted(IResource.Attributes)</text><polygon fill="#FFFF44" points="20.8333,514.7847,25,518.9514,20.8333,523.1181,16.6667,518.9514" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="271.875" x="32.2917" y="526.9043">void onDownloadCompleted(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="165.1042" y1="483.0841" y2="483.0841"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="168.2292" y="486.8937">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="224.4792" x2="379.1667" y1="483.0841" y2="483.0841"/><polygon fill="#FFFF44" points="20.8333,558.4412,25,562.6078,20.8333,566.7745,16.6667,562.6078" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="256.25" x="32.2917" y="570.5607">void onDownloadSuccess(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="170.3125" y1="546.4854" y2="546.4854"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="173.4375" y="550.295">(status)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="219.2708" x2="379.1667" y1="546.4854" y2="546.4854"/><!--MD5=[61e09d85732d081f20ec5ea1cc80f915]
+class AjaxEventBehavior--><rect fill="#282828" height="48.055" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1148.4375" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1148.4375" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1148.4375" y="116.3411"/><rect fill="none" height="48.055" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1148.4375" y="93.2861"/><ellipse cx="1163.0208" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1164.9312,113.4054 Q1164.504,113.6251 1164.034,113.7349 Q1163.564,113.8448 1163.0452,113.8448 Q1161.202,113.8448 1160.2315,112.6302 Q1159.2611,111.4156 1159.2611,109.1207 Q1159.2611,106.8197 1160.2315,105.6051 Q1161.202,104.3905 1163.0452,104.3905 Q1163.564,104.3905 1164.0401,104.5003 Q1164.5162,104.6102 1164.9312,104.8299 L1164.9312,106.8319 Q1164.4674,106.4046 1164.031,106.2063 Q1163.5946,106.0079 1163.1307,106.0079 Q1162.1419,106.0079 1161.6384,106.7922 Q1161.1348,107.5765 1161.1348,109.1207 Q1161.1348,110.6588 1161.6384,111.4431 Q1162.1419,112.2274 1163.1307,112.2274 Q1163.5946,112.2274 1164.031,112.029 Q1164.4674,111.8306 1164.9312,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="1179.6875" y="113.7044">AjaxEventBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1149.4792" x2="1304.6875" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1149.4792" x2="1304.6875" y1="133.0078" y2="133.0078"/><!--MD5=[387d55f0c04d3a0317aadd0174774ac0]
+class AjaxFileDropBehavior--><rect codeLine="38" fill="#282828" height="273.5819" id="AjaxFileDropBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="376.0417" x="1039.0625" y="275.057"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="376.0417" x="1039.0625" y="275.057"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="376.0417" x="1039.0625" y="298.112"/><rect codeLine="38" fill="none" height="273.5819" id="AjaxFileDropBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="376.0417" x="1039.0625" y="275.057"/><ellipse cx="1150" cy="290.7511" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1151.9104,295.1762 Q1151.4832,295.3959 1151.0132,295.5058 Q1150.5432,295.6156 1150.0244,295.6156 Q1148.1812,295.6156 1147.2107,294.401 Q1146.2402,293.1864 1146.2402,290.8915 Q1146.2402,288.5905 1147.2107,287.3759 Q1148.1812,286.1613 1150.0244,286.1613 Q1150.5432,286.1613 1151.0193,286.2712 Q1151.4954,286.381 1151.9104,286.6007 L1151.9104,288.6027 Q1151.4465,288.1755 1151.0101,287.9771 Q1150.5737,287.7787 1150.1099,287.7787 Q1149.1211,287.7787 1148.6176,288.563 Q1148.114,289.3473 1148.114,290.8915 Q1148.114,292.4296 1148.6176,293.2139 Q1149.1211,293.9982 1150.1099,293.9982 Q1150.5737,293.9982 1151.0101,293.7998 Q1151.4465,293.6015 1151.9104,293.1742 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="139.5833" x="1172.9167" y="295.4753">AjaxFileDropBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1040.1042" x2="1414.0625" y1="306.4453" y2="306.4453"/><ellipse cx="1050.5208" cy="341.8152" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="1061.9792" y="348.7264">AjaxFileDropBehavior()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1040.1042" x2="1183.3333" y1="324.6511" y2="324.6511"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1186.4583" y="328.4607">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1270.8333" x2="1414.0625" y1="324.6511" y2="324.6511"/><ellipse cx="1050.5208" cy="385.4716" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="1061.9792" y="392.3828">Bytes getFileMaxSize()</text><ellipse cx="1050.5208" cy="405.2165" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="103.125" x="1061.9792" y="412.1277">Bytes getMaxSize()</text><ellipse cx="1050.5208" cy="424.9613" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="1061.9792" y="431.8726">void setFileMaxSize(Bytes fileMaxSize)</text><ellipse cx="1050.5208" cy="444.7062" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="1061.9792" y="451.6174">void setMaxSize(Bytes maxSize)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1040.1042" x2="1192.7083" y1="368.3075" y2="368.3075"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1195.8333" y="372.1171">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1261.4583" x2="1414.0625" y1="368.3075" y2="368.3075"/><polygon fill="#FFFF44" points="1050.5208,483.1543,1054.6875,487.321,1050.5208,491.4876,1046.3542,487.321" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="343.75" x="1061.9792" y="495.2738">void onFileUpload(AjaxRequestTarget, List&lt;FileUpload&gt; files)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1040.1042" x2="1191.6667" y1="471.1985" y2="471.1985"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="1194.7917" y="475.0081">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1262.5" x2="1414.0625" y1="471.1985" y2="471.1985"/><polygon fill="#FFFF44" points="1050.5208,526.8107,1054.6875,530.9774,1050.5208,535.144,1046.3542,530.9774" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="327.0833" x="1061.9792" y="538.9303">void onError(AjaxRequestTarget, FileUploadException fux)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1040.1042" x2="1202.6042" y1="514.8549" y2="514.8549"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="42.7083" x="1205.7292" y="518.6646">(status)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1251.5625" x2="1414.0625" y1="514.8549" y2="514.8549"/><!--MD5=[a757b1aceb1a2947d68dc26979268822]
+class AjaxDownloadBehavior.Location--><rect codeLine="53" fill="#282828" height="127.0345" id="AjaxDownloadBehavior.Location" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="245.8333" x="1342.7083" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="245.8333" x="1342.7083" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="245.8333" x="1342.7083" y="76.7578"/><rect codeLine="53" fill="none" height="127.0345" id="AjaxDownloadBehavior.Location" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="245.8333" x="1342.7083" y="53.7028"/><ellipse cx="1357.2917" cy="69.397" fill="#CF6300" rx="10.4167" ry="10.4167" style="stroke:#EF8300;stroke-width:1.0416666666666667;"/><path d="M1360.3475,74.0845 L1354.6712,74.0845 L1354.6712,64.9719 L1360.3475,64.9719 L1360.3475,66.5588 L1356.4718,66.5588 L1356.4718,68.5242 L1359.9813,68.5242 L1359.9813,70.1111 L1356.4718,70.1111 L1356.4718,72.4976 L1360.3475,72.4976 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="208.3333" x="1373.9583" y="74.1211">AjaxDownloadBehavior.Location</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1343.75" x2="1587.5" y1="85.0911" y2="85.0911"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="23.9583" x="1352.0833" y="103.4607">Blob</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="37.5" x="1352.0833" y="123.2056">IFrame</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="65.625" x="1352.0833" y="142.9504">NewWindow</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="1352.0833" y="162.6953">SameWindow</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1343.75" x2="1587.5" y1="172.404" y2="172.404"/><!--MD5=[9ec104ddfc62073059e345d4e82bb5a8]
+class Behavior--><rect fill="#282828" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="565.625" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="565.625" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="565.625" y="116.3411"/><rect fill="none" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="565.625" y="93.2861"/><ellipse cx="580.2083" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M582.1187,113.4054 Q581.6915,113.6251 581.2215,113.7349 Q580.7515,113.8448 580.2327,113.8448 Q578.3895,113.8448 577.419,112.6302 Q576.4486,111.4156 576.4486,109.1207 Q576.4486,106.8197 577.419,105.6051 Q578.3895,104.3905 580.2327,104.3905 Q580.7515,104.3905 581.2276,104.5003 Q581.7037,104.6102 582.1187,104.8299 L582.1187,106.8319 Q581.6549,106.4046 581.2185,106.2063 Q580.7821,106.0079 580.3182,106.0079 Q579.3294,106.0079 578.8259,106.7922 Q578.3223,107.5765 578.3223,109.1207 Q578.3223,110.6588 578.8259,111.4431 Q579.3294,112.2274 580.3182,112.2274 Q580.7821,112.2274 581.2185,112.029 Q581.6549,111.8306 582.1187,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="56.25" x="596.875" y="113.7044">Behavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="566.6667" x2="658.3333" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="566.6667" x2="658.3333" y1="133.0078" y2="133.0078"/><!--MD5=[1ef0159b33ea5125d8a721b7fefabc95]
+class AjaxDownloadBehavior.ResourceBehavior--><rect codeLine="63" fill="#282828" height="83.3781" id="AjaxDownloadBehavior.ResourceBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="158.3333" x="416.6667" y="370.3695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="158.3333" x="416.6667" y="370.3695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="158.3333" x="416.6667" y="393.4245"/><rect codeLine="63" fill="none" height="83.3781" id="AjaxDownloadBehavior.ResourceBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="158.3333" x="416.6667" y="370.3695"/><ellipse cx="434.0625" cy="386.0636" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M435.9729,390.4887 Q435.5457,390.7084 435.0757,390.8183 Q434.6057,390.9281 434.0869,390.9281 Q432.2437,390.9281 431.2732,389.7135 Q430.3027,388.4989 430.3027,386.204 Q430.3027,383.903 431.2732,382.6884 Q432.2437,381.4738 434.0869,381.4738 Q434.6057,381.4738 435.0818,381.5837 Q435.5579,381.6935 435.9729,381.9132 L435.9729,383.9152 Q435.509,383.488 435.0726,383.2896 Q434.6362,383.0912 434.1724,383.0912 Q433.1836,383.0912 432.6801,383.8755 Q432.1765,384.6598 432.1765,386.204 Q432.1765,387.7421 432.6801,388.5264 Q433.1836,389.3107 434.1724,389.3107 Q434.6362,389.3107 435.0726,389.1123 Q435.509,388.914 435.9729,388.4867 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="114.5833" x="451.3542" y="390.7878">ResourceBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="417.7083" x2="573.9583" y1="401.7578" y2="401.7578"/><ellipse cx="428.125" cy="437.1277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="439.5833" y="444.0389">CharSequence getUrl()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="417.7083" x2="464.0625" y1="419.9636" y2="419.9636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="467.1875" y="423.7732">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="527.6042" x2="573.9583" y1="419.9636" y2="419.9636"/><!--MD5=[3e89370d1f90cc5f483e091aa2fbdc85]
+reverse link AjaxCallListener to AjaxDisableComponentListener--><path codeLine="10" d="M807.2917,162.359 C807.2917,218.7132 807.2917,315.5361 807.2917,370.2445 " fill="none" id="AjaxCallListener-backto-AjaxDisableComponentListener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="800,162.0882,807.2917,141.2549,814.5833,162.0882,800,162.0882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[69d794a709ea9c5ff42c05c2c77c19c8]
+reverse link AbstractDefaultAjaxBehavior to AjaxDownloadBehavior--><path codeLine="17" d="M194.7917,162.3486 C194.7917,184.6507 194.7917,213.2861 194.7917,243.1403 " fill="none" id="AbstractDefaultAjaxBehavior-backto-AjaxDownloadBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="187.5,162.0882,194.7917,141.2549,202.0833,162.0882,187.5,162.0882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[42ceed1bc811af4298324b042e1cc08c]
+reverse link AjaxEventBehavior to AjaxFileDropBehavior--><path codeLine="37" d="M1227.0833,162.2861 C1227.0833,192.4736 1227.0833,234.2861 1227.0833,275.0257 " fill="none" id="AjaxEventBehavior-backto-AjaxFileDropBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1219.7917,162.0882,1227.0833,141.2549,1234.375,162.0882,1219.7917,162.0882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[682d2b7c56b9fb670d472623310ea1c8]
+reverse link Behavior to AjaxDownloadBehavior.ResourceBehavior--><path codeLine="61" d="M595.5313,160.859 C573.1563,216.984 534.0729,315.0465 512.0729,370.2445 " fill="none" id="Behavior-backto-AjaxDownloadBehavior.ResourceBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="588.8542,157.9111,603.3438,141.2549,602.4063,163.307,588.8542,157.9111" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9bc2246ed42d84b0e852308a62788b56]
+reverse link IRequestListener to AjaxDownloadBehavior.ResourceBehavior--><path codeLine="62" d="M462.1563,161.984 C469.7708,218.2861 482.9063,315.4111 490.3229,370.2445 " fill="none" id="IRequestListener-backto-AjaxDownloadBehavior.ResourceBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="454.9271,162.8799,459.3542,141.2549,469.375,160.9215,454.9271,162.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e33e2ad8282c2efd0330f4a8d74a9443]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    interface IRequestListener
+    
+    AjaxCallListener <|- - AjaxDisableComponentListener
+    class AjaxDisableComponentListener
+    {
+        - -(messaging)- -
+        #String generateHandlerJavaScript(Component, boolean disabled)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxDownloadBehavior
+    class AjaxDownloadBehavior
+    {
+        - -(constructors)- -
+        +AjaxDownloadBehavior(IResource)
+        +AjaxDownloadBehavior(ResourceReference)
+        +AjaxDownloadBehavior(ResourceReference, PageParameters)
+        - -
+        +Location getLocation()
+        +void initiate(IPartialPageRequestHandler)
+        +AjaxDownloadBehavior setLocation(Location)
+        #void onBeforeDownload(IPartialPageRequestHandler)
+        #void onDownloadFailed(AjaxRequestTarget)
+        - -(lifecycle)- -
+        +void markCompleted(IResource.Attributes)
+        #void onDownloadCompleted(AjaxRequestTarget)
+        - -(status)- -
+        #void onDownloadSuccess(AjaxRequestTarget)
+    }
+    
+    AjaxEventBehavior <|- - AjaxFileDropBehavior
+    class AjaxFileDropBehavior
+    {
+        - -(constructors)- -
+        +AjaxFileDropBehavior()
+        - -(collection)- -
+        +Bytes getFileMaxSize()
+        +Bytes getMaxSize()
+        +void setFileMaxSize(Bytes fileMaxSize)
+        +void setMaxSize(Bytes maxSize)
+        - -(filesystem)- -
+        #void onFileUpload(AjaxRequestTarget, List<FileUpload> files)
+        - -(status)- -
+        #void onError(AjaxRequestTarget, FileUploadException fux)
+    }
+    
+    enum AjaxDownloadBehavior.Location
+    {
+        Blob
+        IFrame
+        NewWindow
+        SameWindow
+    }
+    
+    Behavior <|- - AjaxDownloadBehavior.ResourceBehavior
+    IRequestListener <|- - AjaxDownloadBehavior.ResourceBehavior
+    class AjaxDownloadBehavior.ResourceBehavior
+    {
+        - -(primitive)- -
+        +CharSequence getUrl()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    interface IRequestListener
+    
+    AjaxCallListener <|- - AjaxDisableComponentListener
+    class AjaxDisableComponentListener
+    {
+        - -(messaging)- -
+        #String generateHandlerJavaScript(Component, boolean disabled)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxDownloadBehavior
+    class AjaxDownloadBehavior
+    {
+        - -(constructors)- -
+        +AjaxDownloadBehavior(IResource)
+        +AjaxDownloadBehavior(ResourceReference)
+        +AjaxDownloadBehavior(ResourceReference, PageParameters)
+        - -
+        +Location getLocation()
+        +void initiate(IPartialPageRequestHandler)
+        +AjaxDownloadBehavior setLocation(Location)
+        #void onBeforeDownload(IPartialPageRequestHandler)
+        #void onDownloadFailed(AjaxRequestTarget)
+        - -(lifecycle)- -
+        +void markCompleted(IResource.Attributes)
+        #void onDownloadCompleted(AjaxRequestTarget)
+        - -(status)- -
+        #void onDownloadSuccess(AjaxRequestTarget)
+    }
+    
+    AjaxEventBehavior <|- - AjaxFileDropBehavior
+    class AjaxFileDropBehavior
+    {
+        - -(constructors)- -
+        +AjaxFileDropBehavior()
+        - -(collection)- -
+        +Bytes getFileMaxSize()
+        +Bytes getMaxSize()
+        +void setFileMaxSize(Bytes fileMaxSize)
+        +void setMaxSize(Bytes maxSize)
+        - -(filesystem)- -
+        #void onFileUpload(AjaxRequestTarget, List<FileUpload> files)
+        - -(status)- -
+        #void onError(AjaxRequestTarget, FileUploadException fux)
+    }
+    
+    enum AjaxDownloadBehavior.Location
+    {
+        Blob
+        IFrame
+        NewWindow
+        SameWindow
+    }
+    
+    Behavior <|- - AjaxDownloadBehavior.ResourceBehavior
+    IRequestListener <|- - AjaxDownloadBehavior.ResourceBehavior
+    class AjaxDownloadBehavior.ResourceBehavior
+    {
+        - -(primitive)- -
+        +CharSequence getUrl()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

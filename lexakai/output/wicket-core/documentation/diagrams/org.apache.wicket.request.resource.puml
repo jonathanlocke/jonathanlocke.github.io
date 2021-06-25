@@ -1,0 +1,472 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.resource"
+    
+    abstract AbstractResource
+    abstract BaseDataResource
+    
+    interface IStaticCacheableResource
+    interface Serializable
+    interface IWicketInternalException
+    interface IResourceReferenceFactory
+    interface IClusterable
+    interface IResource
+    interface IUrlRenderer
+    
+    IResource <|-- AbstractResource
+    abstract class AbstractResource
+    {
+        --(constructors)--
+        +AbstractResource()
+        --
+        #void configureCache(ResourceResponse data, Attributes)
+        #IResourceCachingStrategy getCachingStrategy()
+        #void setRequestMetaData(Attributes)
+        #void setRequestRangeMetaData(WebRequest)
+        #boolean setResponseContentRangeHeaderFields(WebResponse, Attributes, long contentLength)
+        #void setResponseHeaders(ResourceResponse, Attributes)
+        --(factory)--
+        #ResourceResponse newResourceResponse(Attributes)
+    }
+    
+    class IResource.Attributes
+    {
+        --(constructors)--
+        +Attributes(Request, Response)
+        +Attributes(Request, Response, PageParameters)
+        --
+        +PageParameters getParameters()
+        +Request getRequest()
+        +Response getResponse()
+    }
+    
+    AbstractResource <|-- BaseDataResource
+    abstract class BaseDataResource<T>
+    {
+        --(constructors)--
+        +BaseDataResource(String)
+        +BaseDataResource(String, T)
+        +BaseDataResource(String, T, String)
+        --
+        #void configureResponse(ResourceResponse, Attributes)
+        #T getData(Attributes)
+        #Long getLength(T data)
+        --(filesystem)--
+        #String getFilename()
+        --(write)--
+        #void writeData(Response, T data)
+    }
+    
+    BaseDataResource <|-- ByteArrayResource
+    class ByteArrayResource
+    {
+        --(constructors)--
+        +ByteArrayResource(String)
+        +ByteArrayResource(String, byte[])
+        +ByteArrayResource(String, byte[], String)
+    }
+    
+    Serializable <|-- PackageResource.CacheKey
+    class PackageResource.CacheKey
+    {
+        --(constructors)--
+        +CacheKey(String, String, Locale, String, String)
+    }
+    
+    Url <|-- UrlResourceReference.CalculatedUrl
+    IUrlRenderer <|-- UrlResourceReference.CalculatedUrl
+    class UrlResourceReference.CalculatedUrl
+    {
+    }
+    
+    BaseDataResource <|-- CharSequenceResource
+    class CharSequenceResource
+    {
+        --(constructors)--
+        +CharSequenceResource(String)
+        +CharSequenceResource(String, CharSequence)
+        +CharSequenceResource(String, CharSequence, String)
+        --
+        +void setCharset(Charset)
+        #Charset getCharset()
+    }
+    
+    abstract class ClassScanner
+    {
+        --
+        +int scanClass(Class<?> klass)
+        --(collection)--
+        +void clearCache()
+    }
+    
+    enum ContentDisposition
+    {
+        ATTACHMENT
+        INLINE
+    }
+    
+    enum AbstractResource.ContentRangeType
+    {
+        BYTES
+        NONE
+    }
+    
+    AbstractResource <|-- ContextRelativeResource
+    IStaticCacheableResource <|-- ContextRelativeResource
+    class ContextRelativeResource
+    {
+        --(constructors)--
+        +ContextRelativeResource(String)
+        --
+        +void setCachingEnabled(boolean enabled)
+    }
+    
+    ResourceReference <|-- ContextRelativeResourceReference
+    ContextRelativeResourceReference --> ContextRelativeResource : "creates"
+    class ContextRelativeResourceReference
+    {
+        --(constructors)--
+        +ContextRelativeResourceReference(String)
+        +ContextRelativeResourceReference(String, String)
+        +ContextRelativeResourceReference(String, String, boolean)
+        +ContextRelativeResourceReference(String, boolean)
+        --
+        +String getMinPostfix()
+        --(building)--
+        #ContextRelativeResource buildContextRelativeResource(String name, String minPostfix)
+        --(checks)--
+        +boolean isMinifyIt()
+        #boolean canBeMinified()
+    }
+    
+    PackageResource <|-- CssPackageResource
+    class CssPackageResource
+    {
+        --(constructors)--
+        +CssPackageResource(Class<?>, String, Locale, String, String)
+        --
+        #ICssCompressor getCompressor()
+    }
+    
+    PackageResourceReference <|-- CssResourceReference
+    class CssResourceReference
+    {
+        --(constructors)--
+        +CssResourceReference(Class<?>, String)
+        +CssResourceReference(Class<?>, String, Locale, String, String)
+        +CssResourceReference(Key)
+    }
+    
+    IResourceReferenceFactory <|-- ResourceReferenceRegistry.DefaultResourceReferenceFactory
+    class ResourceReferenceRegistry.DefaultResourceReferenceFactory
+    {
+    }
+    
+    AbstractResource <|-- DynamicImageResource
+    abstract class DynamicImageResource
+    {
+        --(constructors)--
+        +DynamicImageResource()
+        +DynamicImageResource(String)
+        --
+        +String getFormat()
+        +void setFormat(String format)
+        #void configureResponse(ResourceResponse, Attributes)
+        #byte[] getImageData(Attributes)
+        #byte[] toImageData(BufferedImage)
+        --(time)--
+        #void setLastModifiedTime(Instant time)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IResource
+    interface IResource
+    {
+        --
+        +void respond(Attributes)
+    }
+    
+    interface IResourceReferenceFactory
+    {
+        --
+        +ResourceReference create(ResourceReference.Key)
+    }
+    
+    PackageResource <|-- JavaScriptPackageResource
+    class JavaScriptPackageResource
+    {
+        --(constructors)--
+        +JavaScriptPackageResource(Class<?>, String, Locale, String, String)
+    }
+    
+    PackageResourceReference <|-- JavaScriptResourceReference
+    class JavaScriptResourceReference
+    {
+        --(constructors)--
+        +JavaScriptResourceReference(Class<?>, String)
+        +JavaScriptResourceReference(Class<?>, String, Locale, String, String)
+        +JavaScriptResourceReference(Key)
+    }
+    
+    Serializable <|-- ResourceReference.Key
+    class ResourceReference.Key
+    {
+        --(constructors)--
+        +Key(ResourceReference)
+        +Key(String, String, Locale, String, String)
+        --
+        +Locale getLocale()
+        +String getScope()
+        +Class<?> getScopeClass()
+        +String getStyle()
+        +String getVariation()
+        --(naming)--
+        +String getName()
+    }
+    
+    ResourceReference <|-- ResourceReference.LambdaResourceReference
+    class ResourceReference.LambdaResourceReference
+    {
+        --(constructors)--
+        +LambdaResourceReference(Key, SerializableSupplier<IResource>)
+        +LambdaResourceReference(String, SerializableSupplier<IResource>)
+    }
+    
+    PackageResourceReference <|-- MetaInfStaticResourceReference
+    class MetaInfStaticResourceReference
+    {
+        --(constructors)--
+        +MetaInfStaticResourceReference(Class<?>, String)
+        --(checks)--
+        #boolean isMetaInfResourcesSupported()
+        --(collection)--
+        +Url mapHandler(IRequestHandler)
+    }
+    
+    AbstractResource <|-- PackageResource
+    IStaticCacheableResource <|-- PackageResource
+    class PackageResource
+    {
+        --(constructors)--
+        #PackageResource(Class<?>, String, Locale, String, String)
+        --
+        +boolean getCompress()
+        +Class<?> getScope()
+        +String getStyle()
+        +String getTextEncoding()
+        +void setCachingEnabled(boolean enabled)
+        +void setCompress(boolean compress)
+        +void setTextEncoding(String textEncoding)
+        #byte[] compressResponse(Attributes, byte[] original)
+        #ITextResourceCompressor getCompressor()
+        #Charset getProcessingEncoding()
+        #byte[] processResponse(Attributes, byte[] original)
+        --(filesystem)--
+        +boolean exists(ResourceReference.Key)
+        +boolean exists(Class<?> scope, String path, Locale, String style, String variation)
+        --(filtering)--
+        #boolean accept(String path)
+        --(functional)--
+        +PackageResource readBuffered(boolean readBuffered)
+        --(naming)--
+        +String getName()
+    }
+    
+    WicketRuntimeException <|-- PackageResource.PackageResourceBlockedException
+    IWicketInternalException <|-- PackageResource.PackageResourceBlockedException
+    class PackageResource.PackageResourceBlockedException
+    {
+        --(constructors)--
+        +PackageResourceBlockedException(String)
+    }
+    
+    ResourceReference <|-- PackageResourceReference
+    class PackageResourceReference
+    {
+        --(constructors)--
+        +PackageResourceReference(Class<?>, String)
+        +PackageResourceReference(Class<?>, String, Locale, String, String)
+        +PackageResourceReference(ResourceReference.Key)
+        +PackageResourceReference(String)
+        --(collection)--
+        #void removeCompressFlagIfUnnecessary(PackageResource)
+        --(functional)--
+        +PackageResourceReference readBuffered(boolean readBuffered)
+        --(naming)--
+        #String getMinifiedName()
+    }
+    
+    AbstractResource.WriteCallback <|-- PartWriterCallback
+    class PartWriterCallback
+    {
+        --(constructors)--
+        +PartWriterCallback(InputStream, Long, Long, Long)
+        --(collection)--
+        +int getBufferSize()
+        +PartWriterCallback setBufferSize(int bufferSize)
+        --(io)--
+        +boolean isClose()
+        +PartWriterCallback setClose(boolean close)
+    }
+    
+    ResourceStreamWrapper <|-- PackageResource.ProcessingResourceStream
+    class PackageResource.ProcessingResourceStream
+    {
+    }
+    
+    IClusterable <|-- ResourceReference
+    abstract class ResourceReference
+    {
+        --(constructors)--
+        +ResourceReference(Class<?>, String)
+        +ResourceReference(Class<?>, String, Locale, String, String)
+        +ResourceReference(String)
+        +ResourceReference(Key)
+        --
+        +Locale getLocale()
+        +IResource getResource()
+        +Class<?> getScope()
+        +String getStyle()
+        +String getVariation()
+        +ResourceReference of(String name, SerializableSupplier<IResource> resourceSupplier)
+        +ResourceReference of(Key, SerializableSupplier<IResource> resourceSupplier)
+        --(checks)--
+        +boolean canBeRegistered()
+        --(collection)--
+        +List<HeaderItem> getDependencies()
+        +Key getKey()
+        --(filesystem)--
+        +String getExtension()
+        --(naming)--
+        +String getName()
+        --(network)--
+        +UrlAttributes getUrlAttributes()
+    }
+    
+    class ResourceReferenceRegistry
+    {
+        --(constructors)--
+        +ResourceReferenceRegistry()
+        +ResourceReferenceRegistry(IResourceReferenceFactory)
+        --
+        +int getAutoAddedCapacity()
+        +ResourceReference getResourceReference(Key, boolean strict, boolean createIfNotFound)
+        +ResourceReference getResourceReference(Class<?> scope, String name, Locale, String style, String variation, boolean strict, boolean createIfNotFound)
+        +void setAutoAddedCapacity(int autoAddedCapacity)
+        +ResourceReference unregisterResourceReference(Key)
+        #ResourceReference createDefaultResourceReference(Key)
+        --(collection)--
+        +void clearAutoAddedEntries()
+        +int getAutoAddedCacheSize()
+        +int getSize()
+        --(factory)--
+        +IResourceReferenceFactory getResourceReferenceFactory()
+        +void setResourceReferenceFactory(IResourceReferenceFactory)
+        --(lookup)--
+        +boolean registerResourceReference(ResourceReference)
+    }
+    
+    class AbstractResource.ResourceResponse
+    {
+        --(constructors)--
+        +ResourceResponse()
+        --
+        +boolean dataNeedsToBeWritten(Attributes)
+        +ResourceResponse disableCaching()
+        +WebResponse.CacheScope getCacheScope()
+        +ContentDisposition getContentDisposition()
+        +long getContentLength()
+        +String getContentRange()
+        +String getContentType()
+        +ResourceResponse setCacheScope(WebResponse.CacheScope)
+        +ResourceResponse setContentDisposition(ContentDisposition)
+        +ResourceResponse setContentLength(long contentLength)
+        +void setContentRange(String contentRange)
+        +ResourceResponse setContentType(String contentType)
+        +ResourceResponse setTextEncoding(String textEncoding)
+        #String getTextEncoding()
+        --(filesystem)--
+        +String getFileName()
+        +ResourceResponse setFileName(String fileName)
+        --(filtering)--
+        +ContentRangeType getAcceptRange()
+        +void setAcceptRange(ContentRangeType)
+        --(network)--
+        +HttpHeaderCollection getHeaders()
+        --(status)--
+        +Integer getErrorCode()
+        +String getErrorMessage()
+        +Integer getStatusCode()
+        +ResourceResponse setError(Integer errorCode)
+        +ResourceResponse setError(Integer errorCode, String errorMessage)
+        +ResourceResponse setStatusCode(Integer statusCode)
+        --(time)--
+        +Duration getCacheDuration()
+        +Instant getLastModified()
+        +ResourceResponse setCacheDuration(Duration)
+        +ResourceResponse setCacheDurationToMaximum()
+        +ResourceResponse setLastModified(Instant lastModified)
+        --(write)--
+        +WriteCallback getWriteCallback()
+        +ResourceResponse setWriteCallback(WriteCallback)
+    }
+    
+    AbstractResource <|-- ResourceStreamResource
+    class ResourceStreamResource
+    {
+        --(constructors)--
+        +ResourceStreamResource()
+        +ResourceStreamResource(IResourceStream)
+        --
+        +ResourceStreamResource setContentDisposition(ContentDisposition)
+        +ResourceStreamResource setTextEncoding(String textEncoding)
+        #IResourceStream getResourceStream(Attributes)
+        --(filesystem)--
+        +ResourceStreamResource setFileName(String fileName)
+        --(time)--
+        +Duration getCacheDuration()
+        +ResourceStreamResource setCacheDuration(Duration cacheDuration)
+    }
+    
+    ResourceReference <|-- SharedResourceReference
+    class SharedResourceReference
+    {
+        --(constructors)--
+        +SharedResourceReference(Class<?>, String)
+        +SharedResourceReference(Class<?>, String, Locale, String, String)
+        +SharedResourceReference(String)
+    }
+    
+    class ResourceReference.UrlAttributes
+    {
+        --(constructors)--
+        +UrlAttributes(Locale, String, String)
+        --
+        +Locale getLocale()
+        +String getStyle()
+        +String getVariation()
+    }
+    
+    ResourceReference <|-- UrlResourceReference
+    class UrlResourceReference
+    {
+        --(constructors)--
+        +UrlResourceReference(Url)
+        --(checks)--
+        +boolean isContextRelative()
+        --(network)--
+        +Url getUrl()
+        +UrlResourceReference setContextRelative(boolean contextRelative)
+    }
+    
+    abstract class AbstractResource.WriteCallback
+    {
+        --(write)--
+        +void writeData(Attributes)
+        #void writeStream(Attributes, InputStream)
+    }
+    
+@enduml
+

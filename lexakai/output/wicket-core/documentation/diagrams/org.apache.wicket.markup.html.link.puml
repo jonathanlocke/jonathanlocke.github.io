@@ -1,0 +1,188 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.link"
+    
+    abstract AbstractLink
+    
+    interface IRequestListener
+    interface IClusterable
+    interface IGenericComponent
+    
+    WebMarkupContainer <|-- AbstractLink
+    abstract class AbstractLink
+    {
+        --(constructors)--
+        +AbstractLink(String)
+        +AbstractLink(String, IModel<?>)
+        --
+        +IModel<?> getBody()
+        +AbstractLink setBody(IModel<?> bodyModel)
+        #void disableLink(ComponentTag)
+    }
+    
+    Behavior <|-- ClientSideImageMap.Area
+    class ClientSideImageMap.Area
+    {
+        --(constructors)--
+        #Area(String, String)
+    }
+    
+    Link <|-- BookmarkablePageLink
+    class BookmarkablePageLink<T>
+    {
+        --(constructors)--
+        +BookmarkablePageLink(String, Class<C>)
+        +BookmarkablePageLink(String, Class<C>, PageParameters)
+        --
+        +Class<? extends Page> getPageClass()
+        +PageParameters getPageParameters()
+    }
+    
+    Panel <|-- ClientSideImageMap
+    class ClientSideImageMap
+    {
+        --(constructors)--
+        +ClientSideImageMap(String, Image)
+        --(collection)--
+        +ClientSideImageMap addCircleArea(AbstractLink, int x, int y, int radius)
+        +ClientSideImageMap addPolygonArea(AbstractLink, int... coordinates)
+        +ClientSideImageMap addRectangleArea(AbstractLink, int x1, int y1, int x2, int y2)
+        +ClientSideImageMap addShapeArea(AbstractLink, Shape)
+        --(factory)--
+        +String newChildId()
+    }
+    
+    WebPage <|-- PopupCloseLink.ClosePopupPage
+    class PopupCloseLink.ClosePopupPage
+    {
+    }
+    
+    Behavior <|-- DisabledAttributeLinkBehavior
+    class DisabledAttributeLinkBehavior
+    {
+    }
+    
+    Link <|-- DownloadLink
+    class DownloadLink
+    {
+        --(constructors)--
+        +DownloadLink(String, File)
+        +DownloadLink(String, File, String)
+        +DownloadLink(String, IModel<File>, IModel<String>)
+        +DownloadLink(String, IModel<File>)
+        +DownloadLink(String, IModel<File>, String)
+        --
+        +DownloadLink setContentDisposition(ContentDisposition)
+        --(filesystem)--
+        +DownloadLink setDeleteAfterDownload(boolean deleteAfter)
+        --(time)--
+        +DownloadLink setCacheDuration(Duration)
+    }
+    
+    AbstractLink <|-- ExternalLink
+    class ExternalLink
+    {
+        --(constructors)--
+        +ExternalLink(String, IModel<String>)
+        +ExternalLink(String, IModel<String>, IModel<?>)
+        +ExternalLink(String, String)
+        +ExternalLink(String, String, String)
+        --
+        +PopupSettings getPopupSettings()
+        +ExternalLink setContextRelative(boolean contextRelative)
+        +ExternalLink setPopupSettings(PopupSettings)
+        --(checks)--
+        +boolean isContextRelative()
+    }
+    
+    WebMarkupContainer <|-- InlineFrame
+    IRequestListener <|-- InlineFrame
+    class InlineFrame
+    {
+        --(constructors)--
+        +InlineFrame(String, IPageProvider)
+        +InlineFrame(String, Class<C>)
+        +InlineFrame(String, Class<C>, PageParameters)
+        +InlineFrame(String, Page)
+        --(primitive)--
+        #CharSequence getURL()
+    }
+    
+    AbstractLink <|-- Link
+    IRequestListener <|-- Link
+    IGenericComponent <|-- Link
+    abstract class Link<T>
+    {
+        --(constructors)--
+        +Link(String)
+        +Link(String, IModel<T>)
+        --
+        +Component getAnchor()
+        +boolean getAutoEnable()
+        +PopupSettings getPopupSettings()
+        +void onClick()
+        +Link<T> setAnchor(Component anchor)
+        +Link<T> setAutoEnable(boolean autoEnable)
+        +Link<T> setPopupSettings(PopupSettings)
+        #boolean linksTo(Page)
+        --(messaging)--
+        #boolean useJSEventBindingWhenNeeded()
+        --(primitive)--
+        #CharSequence appendAnchor(ComponentTag, CharSequence url)
+        #CharSequence getOnClickScript(CharSequence url)
+        #CharSequence getURL()
+    }
+    
+    Link <|-- PopupCloseLink
+    class PopupCloseLink<T>
+    {
+        --(constructors)--
+        +PopupCloseLink(String)
+        +PopupCloseLink(String, IModel<T>)
+    }
+    
+    IClusterable <|-- PopupSettings
+    class PopupSettings
+    {
+        --(constructors)--
+        +PopupSettings()
+        +PopupSettings(String)
+        +PopupSettings(String, int)
+        +PopupSettings(int)
+        --
+        +String getPopupJavaScript()
+        +PopupSettings setHeight(int popupHeight)
+        +PopupSettings setLeft(int popupPositionLeft)
+        +void setTarget(String target)
+        +PopupSettings setTop(int popupPositionTop)
+        +PopupSettings setWidth(int popupWidth)
+        --(naming)--
+        +PopupSettings setWindowName(String popupWindowName)
+    }
+    
+    Link <|-- ResourceLink
+    IRequestListener <|-- ResourceLink
+    class ResourceLink<T>
+    {
+        --(constructors)--
+        +ResourceLink(String, IResource)
+        +ResourceLink(String, ResourceReference)
+        +ResourceLink(String, ResourceReference, PageParameters)
+    }
+    
+    Link <|-- StatelessLink
+    abstract class StatelessLink<T>
+    {
+        --(constructors)--
+        +StatelessLink(String)
+    }
+    
+    Model <|-- ClientSideImageMap.UsemapModel
+    class ClientSideImageMap.UsemapModel
+    {
+    }
+    
+@enduml
+

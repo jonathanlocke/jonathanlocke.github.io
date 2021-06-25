@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.captcha.kittens"
+    
+    interface Serializable
+    
+    class KittenCaptchaPanel.Animal
+    {
+    }
+    
+    DynamicImageResource <|-- KittenCaptchaPanel.CaptchaImageResource
+    class KittenCaptchaPanel.CaptchaImageResource
+    {
+        --
+        #void invalidate()
+    }
+    
+    Panel <|-- KittenCaptchaPanel
+    class KittenCaptchaPanel
+    {
+        --(constructors)--
+        +KittenCaptchaPanel(String, Dimension)
+        --
+        +boolean allKittensSelected()
+        --(lifecycle)--
+        +void reset()
+    }
+    
+    class OpaqueRegion
+    {
+    }
+    
+    Serializable <|-- KittenCaptchaPanel.PlacedAnimal
+    class KittenCaptchaPanel.PlacedAnimal
+    {
+        --(constructors)--
+        +PlacedAnimal(Animal, Point)
+    }
+    
+    Serializable <|-- KittenCaptchaPanel.PlacedAnimalList
+    class KittenCaptchaPanel.PlacedAnimalList
+    {
+    }
+    
+@enduml
+

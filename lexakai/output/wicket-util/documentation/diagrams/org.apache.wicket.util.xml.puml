@@ -1,0 +1,35 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.xml"
+    
+    interface EntityLocator
+    interface EntityResolver
+    
+    EntityResolver <|-- CustomEntityResolver
+    class CustomEntityResolver
+    {
+        --(collection)--
+        +void put(EntityKey, EntityLocator)
+        --(functional)--
+        +CustomEntityResolver getPreloaded()
+    }
+    
+    class CustomEntityResolver.EntityKey
+    {
+    }
+    
+    interface CustomEntityResolver.EntityLocator
+    {
+        --(search)--
+        +InputSource locateInputSource()
+    }
+    
+    CustomEntityResolver.EntityLocator <|-- CustomEntityResolver.ServletApiEntityLocator
+    class CustomEntityResolver.ServletApiEntityLocator
+    {
+    }
+    
+@enduml
+

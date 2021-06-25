@@ -1,0 +1,170 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.validation.validator"
+    
+    abstract AbstractRangeValidator
+    
+    interface IValidator
+    
+    Behavior <|-- AbstractRangeValidator
+    IValidator <|-- AbstractRangeValidator
+    abstract class AbstractRangeValidator<R, V>
+    {
+        --(constructors)--
+        #AbstractRangeValidator()
+        +AbstractRangeValidator(R, R)
+        --
+        +Mode getMode()
+        #R getValue(IValidatable<V>)
+        #void setRange(R minimum, R maximum)
+        --(math)--
+        +R getMaximum()
+        +R getMinimum()
+        --(status)--
+        #IValidationError decorate(IValidationError, IValidatable<V>)
+    }
+    
+    enum CreditCardValidator.CreditCard
+    {
+        AMERICAN_EXPRESS
+        CHINA_UNIONPAY
+        DINERS_CLUB_CARTE_BLANCHE
+        DINERS_CLUB_INTERNATIONAL
+        DINERS_CLUB_US_AND_CANADA
+        DISCOVER_CARD
+        INVALID
+        JCB
+        LASER
+        MAESTRO
+        MASTERCARD
+        SOLO
+        SWITCH
+        VISA
+        VISA_ELECTRON
+    }
+    
+    IValidator <|-- CreditCardValidator
+    class CreditCardValidator
+    {
+        --(constructors)--
+        +CreditCardValidator()
+        +CreditCardValidator(boolean)
+        --
+        #CreditCard isUnknown(String creditCardNumber)
+        --(checks)--
+        #boolean isChecksumCorrect(String creditCardNumber)
+        #boolean isLengthAndPrefixCorrect(String creditCardNumber)
+        --(identity)--
+        +CreditCard determineCardId(String creditCardNumber)
+        +CreditCard getCardId()
+        #void setCardId(CreditCard cardId)
+        --(status)--
+        #IValidationError decorate(IValidationError, IValidatable<String>)
+    }
+    
+    RangeValidator <|-- DateValidator
+    class DateValidator
+    {
+        --(constructors)--
+        #DateValidator()
+        +DateValidator(Date, Date)
+        +DateValidator(Date, Date, String)
+        --
+        +DateValidator range(Date minimum, Date maximum, String format)
+        +DateValidator range(Date minimum, Date maximum)
+        --(math)--
+        +DateValidator maximum(Date maximum, String format)
+        +DateValidator maximum(Date maximum)
+        +DateValidator minimum(Date minimum)
+        +DateValidator minimum(Date minimum, String format)
+    }
+    
+    PatternValidator <|-- EmailAddressValidator
+    class EmailAddressValidator
+    {
+        --(constructors)--
+        #EmailAddressValidator()
+        --(network)--
+        +EmailAddressValidator getInstance()
+    }
+    
+    enum AbstractRangeValidator.Mode
+    {
+        EXACT
+        MAXIMUM
+        MINIMUM
+        RANGE
+    }
+    
+    IValidator <|-- PatternValidator
+    class PatternValidator
+    {
+        --(constructors)--
+        +PatternValidator(MetaPattern)
+        +PatternValidator(Pattern)
+        +PatternValidator(String)
+        +PatternValidator(String, int)
+        --
+        +Pattern getPattern()
+        +PatternValidator setReverse(boolean reverse)
+        --(status)--
+        #IValidationError decorate(IValidationError, IValidatable<String>)
+    }
+    
+    AbstractRangeValidator <|-- RangeValidator
+    class RangeValidator<Z>
+    {
+        --(constructors)--
+        #RangeValidator()
+        +RangeValidator(Z, Z)
+        --
+        +RangeValidator<T> range(T minimum, T maximum)
+        --(math)--
+        +RangeValidator<T> maximum(T maximum)
+        +RangeValidator<T> minimum(T minimum)
+    }
+    
+    AbstractRangeValidator <|-- StringValidator
+    class StringValidator
+    {
+        --(constructors)--
+        #StringValidator()
+        +StringValidator(Integer, Integer)
+        --
+        +StringValidator exactLength(int length)
+        +StringValidator lengthBetween(int minimum, int maximum)
+        --(checks)--
+        #boolean hasLengthAttribute(String tagName)
+        --(math)--
+        +StringValidator maximumLength(int length)
+        +StringValidator minimumLength(int length)
+    }
+    
+    IValidator <|-- UrlValidator
+    class UrlValidator
+    {
+        --(constructors)--
+        +UrlValidator()
+        +UrlValidator(String[])
+        +UrlValidator(String[], int)
+        +UrlValidator(int)
+        --(checks)--
+        +boolean isBlankOrNull(String value)
+        +boolean isOff(long flag)
+        +boolean isOn(long flag)
+        +boolean isValid(String value)
+        #boolean isValidAuthority(String authority)
+        #boolean isValidFragment(String fragment)
+        #boolean isValidPath(String path)
+        #boolean isValidQuery(String query)
+        #boolean isValidScheme(String scheme)
+        --(collection)--
+        #int countToken(String token, String target)
+        --(status)--
+        #IValidationError decorate(IValidationError, IValidatable<String>)
+    }
+    
+@enduml
+

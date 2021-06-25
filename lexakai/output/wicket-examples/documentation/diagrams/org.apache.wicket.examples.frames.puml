@@ -1,0 +1,89 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.frames"
+    
+    interface IClusterable
+    
+    WebPage <|-- BodyFrame
+    class BodyFrame
+    {
+        --(constructors)--
+        +BodyFrame()
+        --
+        +FrameTarget getFrameTarget()
+    }
+    
+    Link <|-- LeftFrame.ChangeFramePageLink
+    class LeftFrame.ChangeFramePageLink
+    {
+        --(constructors)--
+        +ChangeFramePageLink(String, BodyFrame, Class<C>)
+    }
+    
+    WebComponent <|-- ExampleFrame
+    class ExampleFrame
+    {
+        --(constructors)--
+        +ExampleFrame(String)
+        +ExampleFrame(String, CharSequence)
+        +ExampleFrame(String, IRequestHandler)
+        --(primitive)--
+        #CharSequence getUrl()
+    }
+    
+    IClusterable <|-- FrameTarget
+    class FrameTarget
+    {
+        --(constructors)--
+        +FrameTarget(Class<C>)
+        --
+        +Class<? extends Page> getFrameClass()
+        +void setFrameClass(Class<C> frameClass)
+        --(primitive)--
+        +CharSequence getUrl()
+    }
+    
+    WicketExampleApplication <|-- FramesApplication
+    class FramesApplication
+    {
+    }
+    
+    WebPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+    }
+    
+    WebPage <|-- LeftFrame
+    class LeftFrame
+    {
+        --(constructors)--
+        +LeftFrame(BodyFrame)
+    }
+    
+    WebPage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1()
+    }
+    
+    WebPage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2()
+    }
+    
+    WicketExamplePage <|-- TopFrame
+    class TopFrame
+    {
+        --(constructors)--
+        +TopFrame()
+    }
+    
+@enduml
+

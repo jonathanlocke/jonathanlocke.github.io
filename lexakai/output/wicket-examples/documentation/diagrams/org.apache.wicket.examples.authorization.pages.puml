@@ -1,0 +1,115 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.authorization.pages"
+    
+    abstract BasePage
+    
+    BasePage <|-- AdminAnnotationsBookmarkablePage
+    class AdminAnnotationsBookmarkablePage
+    {
+        --(constructors)--
+        +AdminAnnotationsBookmarkablePage()
+    }
+    
+    BasePage <|-- AdminAnnotationsInternalPage
+    class AdminAnnotationsInternalPage
+    {
+        --(constructors)--
+        +AdminAnnotationsInternalPage(String)
+    }
+    
+    BasePage <|-- AdminBookmarkablePage
+    class AdminBookmarkablePage
+    {
+        --(constructors)--
+        +AdminBookmarkablePage()
+    }
+    
+    BasePage <|-- AdminInternalPage
+    class AdminInternalPage
+    {
+        --(constructors)--
+        +AdminInternalPage(String)
+    }
+    
+    Label <|-- AnnotationsPanelsPage.AdminLabel
+    class AnnotationsPanelsPage.AdminLabel
+    {
+        --(constructors)--
+        +AdminLabel(String, String)
+    }
+    
+    BasePage <|-- AnnotationsPanelsPage
+    class AnnotationsPanelsPage
+    {
+        --(constructors)--
+        +AnnotationsPanelsPage()
+    }
+    
+    Panel <|-- PanelsPage.ForAdmins
+    class PanelsPage.ForAdmins
+    {
+        --(constructors)--
+        +ForAdmins(String)
+    }
+    
+    Panel <|-- AnnotationsPanelsPage.ForAdmins
+    class AnnotationsPanelsPage.ForAdmins
+    {
+        --(constructors)--
+        +ForAdmins(String)
+    }
+    
+    Panel <|-- PanelsPage.ForAdminsAndUsers
+    class PanelsPage.ForAdminsAndUsers
+    {
+        --(constructors)--
+        +ForAdminsAndUsers(String)
+    }
+    
+    Panel <|-- AnnotationsPanelsPage.ForAdminsAndUsers
+    class AnnotationsPanelsPage.ForAdminsAndUsers
+    {
+        --(constructors)--
+        +ForAdminsAndUsers(String)
+    }
+    
+    Panel <|-- PanelsPage.ForAllUsers
+    class PanelsPage.ForAllUsers
+    {
+        --(constructors)--
+        +ForAllUsers(String)
+    }
+    
+    Panel <|-- AnnotationsPanelsPage.ForAllUsers
+    class AnnotationsPanelsPage.ForAllUsers
+    {
+        --(constructors)--
+        +ForAllUsers(String)
+    }
+    
+    BasePage <|-- PanelsPage
+    class PanelsPage
+    {
+        --(constructors)--
+        +PanelsPage()
+    }
+    
+    Panel <|-- AnnotationsPanelsPage.Test
+    class AnnotationsPanelsPage.Test
+    {
+        --(constructors)--
+        +Test(String)
+    }
+    
+    Label <|-- AnnotationsPanelsPage.UserLabel
+    class AnnotationsPanelsPage.UserLabel
+    {
+        --(constructors)--
+        +UserLabel(String, String)
+    }
+    
+@enduml
+

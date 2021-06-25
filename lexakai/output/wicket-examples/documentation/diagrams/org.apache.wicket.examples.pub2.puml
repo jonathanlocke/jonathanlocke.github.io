@@ -1,0 +1,25 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.pub2"
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home(PageParameters)
+    }
+    
+    WicketExampleApplication <|-- PubApplication
+    class PubApplication
+    {
+    }
+    
+    Link <|-- Home.SetLocaleLink
+    class Home.SetLocaleLink
+    {
+    }
+    
+@enduml
+

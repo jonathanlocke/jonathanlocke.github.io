@@ -1,0 +1,159 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.collections"
+    
+    abstract AbstractCollection
+    abstract AbstractSet
+    
+    interface Serializable
+    interface Iterable
+    interface Iterator
+    interface Cloneable
+    interface Map
+    interface Comparator
+    
+    class ClassMetaCache<T>
+    {
+        --
+        +T get(Class<?> key)
+        --(collection)--
+        +T put(Class<?> key, T value)
+    }
+    
+    class IntHashMap.Entry<V>
+    {
+        --
+        +V getValue()
+        +V setValue(V newValue)
+        --(collection)--
+        +int getKey()
+    }
+    
+    IntHashMap.HashIterator <|-- IntHashMap.EntryIterator
+    class IntHashMap.EntryIterator
+    {
+    }
+    
+    AbstractSet <|-- IntHashMap.EntrySet
+    class IntHashMap.EntrySet
+    {
+    }
+    
+    Iterator <|-- IntHashMap.HashIterator
+    abstract class IntHashMap.HashIterator<H>
+    {
+    }
+    
+    Cloneable <|-- IntHashMap
+    Serializable <|-- IntHashMap
+    class IntHashMap<V>
+    {
+        --(constructors)--
+        +IntHashMap()
+        +IntHashMap(int)
+        +IntHashMap(int, float)
+        --
+        +V get(int key)
+        --(collection)--
+        +void clear()
+        +boolean containsKey(int key)
+        +boolean containsValue(Object value)
+        +Set<Entry<V>> entrySet()
+        +boolean isEmpty()
+        +Set<Integer> keySet()
+        +V put(int key, V value)
+        +void putAll(IntHashMap<V>)
+        +V remove(int key)
+        +int size()
+        +Collection<V> values()
+    }
+    
+    HashIterator <|-- IntHashMap.KeyIterator
+    class IntHashMap.KeyIterator
+    {
+    }
+    
+    AbstractSet <|-- IntHashMap.KeySet
+    class IntHashMap.KeySet
+    {
+    }
+    
+    Map <|-- MicroMap
+    Serializable <|-- MicroMap
+    class MicroMap<K, V>
+    {
+        --(constructors)--
+        +MicroMap()
+        +MicroMap(K, V)
+        --(checks)--
+        +boolean isFull()
+    }
+    
+    Map <|-- MiniMap
+    Serializable <|-- MiniMap
+    class MiniMap<K, V>
+    {
+        --(constructors)--
+        +MiniMap(Map<? extends K, ? extends V>, int)
+        +MiniMap(int)
+        --(checks)--
+        +boolean isFull()
+    }
+    
+    LinkedHashMap <|-- MostRecentlyUsedMap
+    class MostRecentlyUsedMap<K, V>
+    {
+        --(constructors)--
+        +MostRecentlyUsedMap(int)
+        --(functional)--
+        +V getRemovedValue()
+    }
+    
+    HashMap <|-- MultiMap
+    class MultiMap<K, V>
+    {
+        --(constructors)--
+        +MultiMap()
+        +MultiMap(Map<? extends K, ? extends List<V>>)
+        +MultiMap(int)
+        +MultiMap(int, float)
+        --(collection)--
+        +void addValue(K key, V value)
+        +V getFirstValue(K key)
+        +void removeValue(K key, V value)
+        +void replaceValues(K key, V value)
+    }
+    
+    Iterator <|-- ReadOnlyIterator
+    abstract class ReadOnlyIterator<T>
+    {
+    }
+    
+    Iterator <|-- ReverseListIterator
+    Iterable <|-- ReverseListIterator
+    class ReverseListIterator<E>
+    {
+        --(constructors)--
+        +ReverseListIterator(List<E>)
+    }
+    
+    Comparator <|-- UrlExternalFormComparator
+    Serializable <|-- UrlExternalFormComparator
+    class UrlExternalFormComparator
+    {
+    }
+    
+    IntHashMap.HashIterator <|-- IntHashMap.ValueIterator
+    class IntHashMap.ValueIterator
+    {
+    }
+    
+    AbstractCollection <|-- IntHashMap.Values
+    class IntHashMap.Values
+    {
+    }
+    
+@enduml
+

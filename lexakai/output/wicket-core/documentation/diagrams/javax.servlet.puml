@@ -1,0 +1,25 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "javax.servlet"
+    
+    interface ServletContext
+    
+    ServletContext <|-- ServletContext.Impl
+    class ServletContext.Impl
+    {
+        --(constructors)--
+        +Impl(jakarta.servlet.ServletContext)
+    }
+    
+    interface jakarta.servlet.ServletContext
+    ServletContext <|-- ServletContext
+    interface ServletContext
+    {
+        --
+        +jakarta.servlet.ServletContext getDelegate()
+    }
+    
+@enduml
+

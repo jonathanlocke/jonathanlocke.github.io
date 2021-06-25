@@ -1,0 +1,38 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.string.interpolator"
+    
+    interface IClusterable
+    
+    VariableInterpolator <|-- MapVariableInterpolator
+    class MapVariableInterpolator
+    {
+        --(constructors)--
+        +MapVariableInterpolator(String, Map<?, ?>)
+        +MapVariableInterpolator(String, Map<?, ?>, boolean)
+        --
+        +String interpolate(String, Map<?,?> variables)
+        +void setVariables(Map<?,?> variables)
+    }
+    
+    MapVariableInterpolator <|-- SystemVariableInterpolator
+    class SystemVariableInterpolator
+    {
+        --(constructors)--
+        +SystemVariableInterpolator(String)
+    }
+    
+    IClusterable <|-- VariableInterpolator
+    abstract class VariableInterpolator
+    {
+        --(constructors)--
+        +VariableInterpolator(String)
+        +VariableInterpolator(String, boolean)
+        --
+        #String getValue(String variableName)
+    }
+    
+@enduml
+

@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="570.8333px" preserveAspectRatio="none" style="width:837px;height:570px;background:#333333;" version="1.1" viewBox="0 0 837 570" width="837.5px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="381.25" x="221.0938" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="358.3333" x="232.5521" y="30.5583">org.apache.wicket.extensions.rating</text><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="303.125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="303.125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="303.125" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="303.125" y="53.7028"/><ellipse cx="317.7083" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M319.6187,73.822 Q319.1915,74.0417 318.7215,74.1516 Q318.2515,74.2615 317.7327,74.2615 Q315.8895,74.2615 314.919,73.0469 Q313.9486,71.8323 313.9486,69.5374 Q313.9486,67.2363 314.919,66.0217 Q315.8895,64.8071 317.7327,64.8071 Q318.2515,64.8071 318.7276,64.917 Q319.2037,65.0269 319.6187,65.2466 L319.6187,67.2485 Q319.1549,66.8213 318.7185,66.6229 Q318.2821,66.4246 317.8182,66.4246 Q316.8294,66.4246 316.3259,67.2089 Q315.8223,67.9932 315.8223,69.5374 Q315.8223,71.0754 316.3259,71.8597 Q316.8294,72.644 317.8182,72.644 Q318.2821,72.644 318.7185,72.4457 Q319.1549,72.2473 319.6187,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="334.375" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="304.1667" x2="373.9583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="304.1667" x2="373.9583" y1="93.4245" y2="93.4245"/><!--MD5=[f4ef67357d59957a7475dbf38d4e40a8]
+class RatingPanel--><rect codeLine="7" fill="#282828" height="400.3845" id="RatingPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="659.375" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="659.375" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="659.375" x="9.375" y="187.1745"/><rect codeLine="7" fill="none" height="400.3845" id="RatingPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="659.375" x="9.375" y="164.1195"/><ellipse cx="293.75" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M293.3431,176.5157 L292.4947,180.245 L294.1976,180.245 Z M292.2445,174.8678 L294.4478,174.8678 L296.9076,183.9803 L295.107,183.9803 L294.5455,181.7281 L292.1346,181.7281 L291.5853,183.9803 L289.7847,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="316.6667" y="184.5378">RatingPanel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="667.7083" y1="195.5078" y2="195.5078"/><ellipse cx="20.8333" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="106.25" x="32.2917" y="237.7889">RatingPanel(String)</text><ellipse cx="20.8333" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="268.75" x="32.2917" y="257.5338">RatingPanel(String, IModel&lt;? extends Number&gt;)</text><ellipse cx="20.8333" cy="270.3674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="627.0833" x="32.2917" y="277.2786">RatingPanel(String, IModel&lt;? extends Number&gt;, IModel&lt;Integer&gt;, IModel&lt;Integer&gt;, IModel&lt;Boolean&gt;, boolean)</text><ellipse cx="20.8333" cy="290.1123" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="441.6667" x="32.2917" y="297.0235">RatingPanel(String, IModel&lt;? extends Number&gt;, int, IModel&lt;Integer&gt;, boolean)</text><ellipse cx="20.8333" cy="309.8572" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="340.625" x="32.2917" y="316.7684">RatingPanel(String, IModel&lt;? extends Number&gt;, int, boolean)</text><ellipse cx="20.8333" cy="329.6021" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="32.2917" y="336.5133">RatingPanel(String, int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="295.3125" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="298.4375" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="382.8125" x2="667.7083" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="667.7083" y1="346.2219" y2="346.2219"/><ellipse cx="20.8333" cy="357.6803" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="277.0833" x="32.2917" y="364.5915">RatingPanel setRatingLabelVisible(boolean visible)</text><polygon fill="#FFFF44" points="20.8333,372.2168,25,376.3835,20.8333,380.5501,16.6667,376.3835" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="311.4583" x="32.2917" y="384.3363">void onRated(int rating, Optional&lt;AjaxRequestTarget&gt;)</text><polygon fill="#FFFF44" points="20.8333,415.8732,25,420.0399,20.8333,424.2065,16.6667,420.0399" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="176.0417" x="32.2917" y="427.9928">boolean onIsStarActive(int star)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="284.8958" y1="403.9174" y2="403.9174"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="288.0208" y="407.7271">(extension points)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="393.2292" x2="667.7083" y1="403.9174" y2="403.9174"/><polygon fill="#FFFF44" points="20.8333,459.5296,25,463.6963,20.8333,467.863,16.6667,463.6963" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="570.8333" x="32.2917" y="471.6492">Component newRatingLabel(String id, IModel&lt;? extends Number&gt; rating, IModel&lt;Integer&gt; nrOfVotes)</text><polygon fill="#FFFF44" points="20.8333,479.2745,25,483.4412,20.8333,487.6078,16.6667,483.4412" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="379.1667" x="32.2917" y="491.394">Component newRatingStarBar(String id, IModel&lt;Integer&gt; nrOfStars)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="311.9792" y1="447.5739" y2="447.5739"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="315.1042" y="451.3835">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="366.1458" x2="667.7083" y1="447.5739" y2="447.5739"/><polygon fill="#FFFF44" points="20.8333,522.9309,25,527.0976,20.8333,531.2642,16.6667,527.0976" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="200" x="32.2917" y="535.0505">String getActiveStarUrl(int iteration)</text><polygon fill="#FFFF44" points="20.8333,542.6758,25,546.8424,20.8333,551.0091,16.6667,546.8424" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="208.3333" x="32.2917" y="554.7953">String getInactiveStarUrl(int iteration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="309.375" y1="510.9751" y2="510.9751"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="312.5" y="514.7847">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="368.75" x2="667.7083" y1="510.9751" y2="510.9751"/><!--MD5=[168599adde66fac5d6d0e2a770d680c5]
+class Loop--><rect fill="#282828" height="48.055" id="Loop" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="69.7917" x="733.3333" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="69.7917" x="733.3333" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="69.7917" x="733.3333" y="76.7578"/><rect fill="none" height="48.055" id="Loop" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="69.7917" x="733.3333" y="53.7028"/><ellipse cx="747.9167" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M749.8271,73.822 Q749.3998,74.0417 748.9299,74.1516 Q748.4599,74.2615 747.9411,74.2615 Q746.0978,74.2615 745.1274,73.0469 Q744.1569,71.8323 744.1569,69.5374 Q744.1569,67.2363 745.1274,66.0217 Q746.0978,64.8071 747.9411,64.8071 Q748.4599,64.8071 748.936,64.917 Q749.412,65.0269 749.8271,65.2466 L749.8271,67.2485 Q749.3632,66.8213 748.9268,66.6229 Q748.4904,66.4246 748.0265,66.4246 Q747.0378,66.4246 746.5342,67.2089 Q746.0307,67.9932 746.0307,69.5374 Q746.0307,71.0754 746.5342,71.8597 Q747.0378,72.644 748.0265,72.644 Q748.4904,72.644 748.9268,72.4457 Q749.3632,72.2473 749.8271,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="32.2917" x="764.5833" y="74.1211">Loop</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="734.375" x2="802.0833" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="734.375" x2="802.0833" y1="93.4245" y2="93.4245"/><!--MD5=[096c084dc5a5bb2231600a6cc2b5580a]
+class RatingPanel.RatingStarBar--><rect codeLine="30" fill="#282828" height="48.055" id="RatingPanel.RatingStarBar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="125" x="705.7292" y="340.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="125" x="705.7292" y="340.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="125" x="705.7292" y="363.2161"/><rect codeLine="30" fill="none" height="48.055" id="RatingPanel.RatingStarBar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="125" x="705.7292" y="340.1611"/><ellipse cx="720.3125" cy="355.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M722.2229,360.2804 Q721.7957,360.5001 721.3257,360.6099 Q720.8557,360.7198 720.3369,360.7198 Q718.4937,360.7198 717.5232,359.5052 Q716.5527,358.2906 716.5527,355.9957 Q716.5527,353.6947 717.5232,352.4801 Q718.4937,351.2655 720.3369,351.2655 Q720.8557,351.2655 721.3318,351.3753 Q721.8079,351.4852 722.2229,351.7049 L722.2229,353.7069 Q721.759,353.2796 721.3226,353.0813 Q720.8862,352.8829 720.4224,352.8829 Q719.4336,352.8829 718.9301,353.6672 Q718.4265,354.4515 718.4265,355.9957 Q718.4265,357.5338 718.9301,358.3181 Q719.4336,359.1024 720.4224,359.1024 Q720.8862,359.1024 721.3226,358.904 Q721.759,358.7056 722.2229,358.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="736.9792" y="360.5794">RatingStarBar</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="706.7708" x2="829.6875" y1="371.5495" y2="371.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="706.7708" x2="829.6875" y1="379.8828" y2="379.8828"/><!--MD5=[80af22dd3b4f24f1fd152111ed2bf3e4]
+reverse link Panel to RatingPanel--><path codeLine="6" d="M339.0625,122.8278 C339.0625,134.984 339.0625,149.0049 339.0625,164.0361 " fill="none" id="Panel-backto-RatingPanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="331.7708,122.807,339.0625,101.9736,346.3542,122.807,331.7708,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[836a1ea68faedb7ad074fab9c6f3fd08]
+reverse link Loop to RatingPanel.RatingStarBar--><path codeLine="29" d="M768.2292,122.9007 C768.2292,184.1299 768.2292,292.5465 768.2292,339.8799 " fill="none" id="Loop-backto-RatingPanel.RatingStarBar" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="760.9375,122.807,768.2292,101.9736,775.5208,122.807,760.9375,122.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[96ec0b65f7edad6ffb973414525c010a]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.rating"
+    
+    Panel <|- - RatingPanel
+    abstract class RatingPanel
+    {
+        - -(constructors)- -
+        +RatingPanel(String)
+        +RatingPanel(String, IModel<? extends Number>)
+        +RatingPanel(String, IModel<? extends Number>, IModel<Integer>, IModel<Integer>, IModel<Boolean>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, IModel<Integer>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, boolean)
+        +RatingPanel(String, int)
+        - -
+        +RatingPanel setRatingLabelVisible(boolean visible)
+        #void onRated(int rating, Optional<AjaxRequestTarget>)
+        - -(extension points)- -
+        #boolean onIsStarActive(int star)
+        - -(factory)- -
+        #Component newRatingLabel(String id, IModel<? extends Number> rating, IModel<Integer> nrOfVotes)
+        #Component newRatingStarBar(String id, IModel<Integer> nrOfStars)
+        - -(network)- -
+        #String getActiveStarUrl(int iteration)
+        #String getInactiveStarUrl(int iteration)
+    }
+    
+    Loop <|- - RatingPanel.RatingStarBar
+    class RatingPanel.RatingStarBar
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.rating"
+    
+    Panel <|- - RatingPanel
+    abstract class RatingPanel
+    {
+        - -(constructors)- -
+        +RatingPanel(String)
+        +RatingPanel(String, IModel<? extends Number>)
+        +RatingPanel(String, IModel<? extends Number>, IModel<Integer>, IModel<Integer>, IModel<Boolean>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, IModel<Integer>, boolean)
+        +RatingPanel(String, IModel<? extends Number>, int, boolean)
+        +RatingPanel(String, int)
+        - -
+        +RatingPanel setRatingLabelVisible(boolean visible)
+        #void onRated(int rating, Optional<AjaxRequestTarget>)
+        - -(extension points)- -
+        #boolean onIsStarActive(int star)
+        - -(factory)- -
+        #Component newRatingLabel(String id, IModel<? extends Number> rating, IModel<Integer> nrOfVotes)
+        #Component newRatingStarBar(String id, IModel<Integer> nrOfStars)
+        - -(network)- -
+        #String getActiveStarUrl(int iteration)
+        #String getInactiveStarUrl(int iteration)
+    }
+    
+    Loop <|- - RatingPanel.RatingStarBar
+    class RatingPanel.RatingStarBar
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

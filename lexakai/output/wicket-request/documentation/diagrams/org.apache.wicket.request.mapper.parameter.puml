@@ -1,0 +1,103 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.mapper.parameter"
+    
+    interface INamedParameters
+    interface IPageParametersEncoder
+    interface IClusterable
+    interface IIndexedParameters
+    
+    interface IIndexedParameters
+    {
+        --
+        +StringValue get(int index)
+        +IIndexedParameters set(int index, Object)
+        --(collection)--
+        +IIndexedParameters clearIndexed()
+        +IIndexedParameters remove(int index)
+    }
+    
+    interface INamedParameters
+    {
+        --
+        +StringValue get(String name)
+        +int getPosition(String name)
+        --(collection)--
+        +List<StringValue> getValues(String name)
+        --(naming)--
+        +INamedParameters add(String name, Object value, Type)
+        +INamedParameters add(String name, Object value, int index, Type)
+        +INamedParameters clearNamed()
+        +List<NamedPair> getAllNamed()
+        +List<NamedPair> getAllNamedByType(Type)
+        +Set<String> getNamedKeys()
+        +INamedParameters remove(String name, String... values)
+        +INamedParameters set(String name, Object value, Type)
+        +INamedParameters set(String name, Object value, int index, Type)
+    }
+    
+    interface IPageParametersEncoder
+    {
+        --
+        +PageParameters decodePageParameters(Url)
+        --(network)--
+        +Url encodePageParameters(PageParameters)
+    }
+    
+    IClusterable <|-- INamedParameters.NamedPair
+    class INamedParameters.NamedPair
+    {
+        --(constructors)--
+        +NamedPair(String, String)
+        +NamedPair(String, String, Type)
+        --
+        +String getValue()
+        --(collection)--
+        +String getKey()
+        --(naming)--
+        +Type getType()
+    }
+    
+    IClusterable <|-- PageParameters
+    IIndexedParameters <|-- PageParameters
+    INamedParameters <|-- PageParameters
+    class PageParameters
+    {
+        --(constructors)--
+        +PageParameters()
+        +PageParameters(PageParameters)
+        --
+        +PageParameters mergeWith(PageParameters other)
+        +PageParameters overwriteWith(PageParameters other)
+        +PageParameters set(String name, Object value, int index)
+        +PageParameters set(String name, Object value)
+        +PageParameters setLocale(Locale)
+        --(collection)--
+        +PageParameters add(String name, Object value)
+        +int getIndexedCount()
+        +boolean isEmpty()
+    }
+    
+    IPageParametersEncoder <|-- PageParametersEncoder
+    class PageParametersEncoder
+    {
+        --(constructors)--
+        +PageParametersEncoder()
+    }
+    
+    enum INamedParameters.Type
+    {
+        MANUAL
+        PATH
+        QUERY_STRING
+    }
+    
+    IPageParametersEncoder <|-- UrlPathPageParametersEncoder
+    class UrlPathPageParametersEncoder
+    {
+    }
+    
+@enduml
+

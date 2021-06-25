@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="689.5833px" preserveAspectRatio="none" style="width:1350px;height:689px;background:#333333;" version="1.1" viewBox="0 0 1350 689" width="1350px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="364.5833" x="485.6771" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="341.6667" x="497.1354" y="30.5583">org.apache.wicket.resource.loader</text><!--MD5=[35d61d36b80b64ab8ab14749b1be1f9f]
+class IStringResourceLoader--><rect codeLine="37" fill="#282828" height="103.123" id="IStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="535.4167" x="332.8125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="535.4167" x="332.8125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="535.4167" x="332.8125" y="76.7578"/><rect codeLine="37" fill="none" height="103.123" id="IStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="535.4167" x="332.8125" y="53.7028"/><ellipse cx="520.8333" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M518.2373,66.5588 L518.2373,64.9719 L523.6633,64.9719 L523.6633,66.5588 L521.8506,66.5588 L521.8506,72.4976 L523.6633,72.4976 L523.6633,74.0845 L518.2373,74.0845 L518.2373,72.4976 L520.05,72.4976 L520.05,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="144.7917" x="543.75" y="74.1211">IStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="333.8542" x2="867.1875" y1="85.0911" y2="85.0911"/><ellipse cx="344.2708" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="483.3333" x="355.7292" y="127.3722">String loadStringResource(Component, String key, Locale, String style, String variation)</text><ellipse cx="344.2708" cy="140.2059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="503.125" x="355.7292" y="147.1171">String loadStringResource(Class&lt;?&gt; clazz, String key, Locale, String style, String variation)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="333.8542" x2="580.7292" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="583.8542" y="107.1065">(read)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="620.3125" x2="867.1875" y1="103.2969" y2="103.2969"/><!--MD5=[38b4fe1c0c1f826374552925ef48c3c0]
+class BundleStringResourceLoader--><rect codeLine="9" fill="#282828" height="83.3781" id="BundleStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="235.4167" x="36.9792" y="304.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="235.4167" x="36.9792" y="304.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="235.4167" x="36.9792" y="327.7995"/><rect codeLine="9" fill="none" height="83.3781" id="BundleStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="235.4167" x="36.9792" y="304.7445"/><ellipse cx="57.1875" cy="320.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M59.0979,324.8637 Q58.6707,325.0834 58.2007,325.1933 Q57.7307,325.3031 57.2119,325.3031 Q55.3687,325.3031 54.3982,324.0885 Q53.4277,322.8739 53.4277,320.579 Q53.4277,318.278 54.3982,317.0634 Q55.3687,315.8488 57.2119,315.8488 Q57.7307,315.8488 58.2068,315.9587 Q58.6829,316.0685 59.0979,316.2882 L59.0979,318.2902 Q58.634,317.863 58.1976,317.6646 Q57.7612,317.4662 57.2974,317.4662 Q56.3086,317.4662 55.8051,318.2505 Q55.3015,319.0348 55.3015,320.579 Q55.3015,322.1171 55.8051,322.9014 Q56.3086,323.6857 57.2974,323.6857 Q57.7612,323.6857 58.1976,323.4873 Q58.634,323.289 59.0979,322.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="185.4167" x="75.1042" y="325.1628">BundleStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="38.0208" x2="271.3542" y1="336.1328" y2="336.1328"/><ellipse cx="48.4375" cy="371.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="203.125" x="59.8958" y="378.4139">BundleStringResourceLoader(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="38.0208" x2="110.9375" y1="354.3386" y2="354.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="114.0625" y="358.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="198.4375" x2="271.3542" y1="354.3386" y2="354.3386"/><!--MD5=[989656e983c9acfb7935c182cbb3790a]
+class ComponentStringResourceLoader--><rect codeLine="23" fill="#282828" height="253.8371" id="ComponentStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="582.2917" x="309.375" y="219.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="582.2917" x="309.375" y="219.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="582.2917" x="309.375" y="242.3828"/><rect codeLine="23" fill="none" height="253.8371" id="ComponentStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="582.2917" x="309.375" y="219.3278"/><ellipse cx="484.8958" cy="235.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M486.8062,239.447 Q486.379,239.6667 485.909,239.7766 Q485.439,239.8865 484.9202,239.8865 Q483.077,239.8865 482.1065,238.6719 Q481.1361,237.4573 481.1361,235.1624 Q481.1361,232.8613 482.1065,231.6467 Q483.077,230.4321 484.9202,230.4321 Q485.439,230.4321 485.9151,230.542 Q486.3912,230.6519 486.8062,230.8716 L486.8062,232.8735 Q486.3424,232.4463 485.906,232.2479 Q485.4696,232.0496 485.0057,232.0496 Q484.0169,232.0496 483.5134,232.8339 Q483.0098,233.6182 483.0098,235.1624 Q483.0098,236.7004 483.5134,237.4847 Q484.0169,238.269 485.0057,238.269 Q485.4696,238.269 485.906,238.0707 Q486.3424,237.8723 486.8062,237.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="216.6667" x="507.8125" y="239.7461">ComponentStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="310.4167" x2="890.625" y1="250.7161" y2="250.7161"/><ellipse cx="320.8333" cy="286.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="197.9167" x="332.2917" y="292.9972">ComponentStringResourceLoader()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="310.4167" x2="556.7708" y1="268.9219" y2="268.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="559.8958" y="272.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="644.2708" x2="890.625" y1="268.9219" y2="268.9219"/><polygon fill="#FFFF44" points="320.8333,324.5341,325,328.7008,320.8333,332.8674,316.6667,328.7008" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="230.2083" x="332.2917" y="336.6536">IPropertiesFactory getPropertiesFactory()</text><polygon fill="#FFFF44" points="320.8333,344.279,325,348.4456,320.8333,352.6123,316.6667,348.4456" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="550" x="332.2917" y="356.3985">IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="310.4167" x2="573.4375" y1="312.5783" y2="312.5783"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="576.5625" y="316.3879">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="627.6042" x2="890.625" y1="312.5783" y2="312.5783"/><polygon fill="#FFFF44" points="320.8333,387.9354,325,392.1021,320.8333,396.2687,316.6667,392.1021" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="204.1667" x="332.2917" y="400.0549">String getResourcePath(Component)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="310.4167" x2="580.7292" y1="375.9796" y2="375.9796"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="583.8542" y="379.7892">(path)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="620.3125" x2="890.625" y1="375.9796" y2="375.9796"/><polygon fill="#FFFF44" points="320.8333,431.5918,325,435.7585,320.8333,439.9251,316.6667,435.7585" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="245.8333" x="332.2917" y="443.7113">boolean isStopResourceSearch(Component)</text><polygon fill="#FFFF44" points="320.8333,451.3367,325,455.5033,320.8333,459.67,316.6667,455.5033" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="332.2917" y="463.4562">boolean isStopResourceSearch(Class&lt;?&gt; clazz)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="310.4167" x2="574.4792" y1="419.636" y2="419.636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="45.8333" x="577.6042" y="423.4456">(search)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="626.5625" x2="890.625" y1="419.636" y2="419.636"/><!--MD5=[96030ce46a19046450650a28bfc67ae6]
+class ClassStringResourceLoader--><rect codeLine="16" fill="#282828" height="83.3781" id="ClassStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="248.9583" x="7.2917" y="567.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="248.9583" x="7.2917" y="567.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="248.9583" x="7.2917" y="590.8203"/><rect codeLine="16" fill="none" height="83.3781" id="ClassStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="248.9583" x="7.2917" y="567.7653"/><ellipse cx="37.8125" cy="583.4595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M39.7229,587.8845 Q39.2957,588.1042 38.8257,588.2141 Q38.3557,588.324 37.8369,588.324 Q35.9937,588.324 35.0232,587.1094 Q34.0527,585.8948 34.0527,583.5999 Q34.0527,581.2988 35.0232,580.0842 Q35.9937,578.8696 37.8369,578.8696 Q38.3557,578.8696 38.8318,578.9795 Q39.3079,579.0894 39.7229,579.3091 L39.7229,581.311 Q39.259,580.8838 38.8226,580.6854 Q38.3862,580.4871 37.9224,580.4871 Q36.9336,580.4871 36.4301,581.2714 Q35.9265,582.0557 35.9265,583.5999 Q35.9265,585.1379 36.4301,585.9222 Q36.9336,586.7065 37.9224,586.7065 Q38.3862,586.7065 38.8226,586.5082 Q39.259,586.3098 39.7229,585.8826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="176.0417" x="58.0208" y="588.1836">ClassStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="255.2083" y1="599.1536" y2="599.1536"/><ellipse cx="18.75" cy="634.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="216.6667" x="30.2083" y="641.4347">ClassStringResourceLoader(Class&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="88.0208" y1="617.3594" y2="617.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="91.1458" y="621.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="175.5208" x2="255.2083" y1="617.3594" y2="617.3594"/><!--MD5=[f842912e11031b0bbb8e92218f7128a9]
+class InitializerStringResourceLoader--><rect codeLine="45" fill="#282828" height="83.3781" id="InitializerStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="308.3333" x="293.2292" y="567.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="308.3333" x="293.2292" y="567.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="308.3333" x="293.2292" y="590.8203"/><rect codeLine="45" fill="none" height="83.3781" id="InitializerStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="308.3333" x="293.2292" y="567.7653"/><ellipse cx="339.0625" cy="583.4595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M340.9729,587.8845 Q340.5457,588.1042 340.0757,588.2141 Q339.6057,588.324 339.0869,588.324 Q337.2437,588.324 336.2732,587.1094 Q335.3027,585.8948 335.3027,583.5999 Q335.3027,581.2988 336.2732,580.0842 Q337.2437,578.8696 339.0869,578.8696 Q339.6057,578.8696 340.0818,578.9795 Q340.5579,579.0894 340.9729,579.3091 L340.9729,581.311 Q340.509,580.8838 340.0726,580.6854 Q339.6362,580.4871 339.1724,580.4871 Q338.1836,580.4871 337.6801,581.2714 Q337.1765,582.0557 337.1765,583.5999 Q337.1765,585.1379 337.6801,585.9222 Q338.1836,586.7065 339.1724,586.7065 Q339.6362,586.7065 340.0726,586.5082 Q340.509,586.3098 340.9729,585.8826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="202.0833" x="361.9792" y="588.1836">InitializerStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="294.2708" x2="600.5208" y1="599.1536" y2="599.1536"/><ellipse cx="304.6875" cy="634.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="276.0417" x="316.1458" y="641.4347">InitializerStringResourceLoader(List&lt;IInitializer&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="294.2708" x2="403.6458" y1="617.3594" y2="617.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="406.7708" y="621.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="491.1458" x2="600.5208" y1="617.3594" y2="617.3594"/><!--MD5=[463d0eabb2b5512dc173cfc7ab32b49b]
+class NestedStringResourceLoader--><rect codeLine="52" fill="#282828" height="83.3781" id="NestedStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="414.5833" x="928.6458" y="304.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="414.5833" x="928.6458" y="304.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="414.5833" x="928.6458" y="327.7995"/><rect codeLine="52" fill="none" height="83.3781" id="NestedStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="414.5833" x="928.6458" y="304.7445"/><ellipse cx="1035.9375" cy="320.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1037.8479,324.8637 Q1037.4207,325.0834 1036.9507,325.1933 Q1036.4807,325.3031 1035.9619,325.3031 Q1034.1187,325.3031 1033.1482,324.0885 Q1032.1777,322.8739 1032.1777,320.579 Q1032.1777,318.278 1033.1482,317.0634 Q1034.1187,315.8488 1035.9619,315.8488 Q1036.4807,315.8488 1036.9568,315.9587 Q1037.4329,316.0685 1037.8479,316.2882 L1037.8479,318.2902 Q1037.384,317.863 1036.9476,317.6646 Q1036.5112,317.4662 1036.0474,317.4662 Q1035.0586,317.4662 1034.5551,318.2505 Q1034.0515,319.0348 1034.0515,320.579 Q1034.0515,322.1171 1034.5551,322.9014 Q1035.0586,323.6857 1036.0474,323.6857 Q1036.5112,323.6857 1036.9476,323.4873 Q1037.384,323.289 1037.8479,322.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="185.4167" x="1058.8542" y="325.1628">NestedStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="929.6875" x2="1342.1875" y1="336.1328" y2="336.1328"/><ellipse cx="940.1042" cy="371.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="382.2917" x="951.5625" y="378.4139">NestedStringResourceLoader(List&lt;IStringResourceLoader&gt;, Pattern)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="929.6875" x2="1092.1875" y1="354.3386" y2="354.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1095.3125" y="358.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1179.6875" x2="1342.1875" y1="354.3386" y2="354.3386"/><!--MD5=[325a7f69bffecd60b4c10d14776db4e3]
+class PackageStringResourceLoader--><rect codeLine="59" fill="#282828" height="146.7794" id="PackageStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="230.2083" x="638.5417" y="535.9945"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="230.2083" x="638.5417" y="535.9945"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="230.2083" x="638.5417" y="559.0495"/><rect codeLine="59" fill="none" height="146.7794" id="PackageStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="230.2083" x="638.5417" y="535.9945"/><ellipse cx="653.125" cy="551.6886" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M655.0354,556.1137 Q654.6082,556.3334 654.1382,556.4433 Q653.6682,556.5531 653.1494,556.5531 Q651.3062,556.5531 650.3357,555.3385 Q649.3652,554.1239 649.3652,551.829 Q649.3652,549.528 650.3357,548.3134 Q651.3062,547.0988 653.1494,547.0988 Q653.6682,547.0988 654.1443,547.2087 Q654.6204,547.3185 655.0354,547.5382 L655.0354,549.5402 Q654.5715,549.113 654.1351,548.9146 Q653.6987,548.7162 653.2349,548.7162 Q652.2461,548.7162 651.7426,549.5005 Q651.239,550.2848 651.239,551.829 Q651.239,553.3671 651.7426,554.1514 Q652.2461,554.9357 653.2349,554.9357 Q653.6987,554.9357 654.1351,554.7373 Q654.5715,554.539 655.0354,554.1117 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="192.7083" x="669.7917" y="556.4128">PackageStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="639.5833" x2="867.7083" y1="567.3828" y2="567.3828"/><ellipse cx="650" cy="602.7527" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="177.0833" x="661.4583" y="609.6639">PackageStringResourceLoader()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="639.5833" x2="709.8958" y1="585.5886" y2="585.5886"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="713.0208" y="589.3982">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="797.3958" x2="867.7083" y1="585.5886" y2="585.5886"/><ellipse cx="650" cy="646.4091" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="661.4583" y="653.3203">String getFilename()</text><ellipse cx="650" cy="666.154" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="184.375" x="661.4583" y="673.0652">void setFilename(String filename)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="639.5833" x2="718.2292" y1="629.245" y2="629.245"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="721.3542" y="633.0546">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="789.0625" x2="867.7083" y1="629.245" y2="629.245"/><!--MD5=[b0f622186bf2c10c8019e7bc8edf158d]
+class ValidatorStringResourceLoader--><rect codeLine="69" fill="#282828" height="83.3781" id="ValidatorStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="236.4583" x="905.2083" y="567.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="236.4583" x="905.2083" y="567.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="236.4583" x="905.2083" y="590.8203"/><rect codeLine="69" fill="none" height="83.3781" id="ValidatorStringResourceLoader" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="236.4583" x="905.2083" y="567.7653"/><ellipse cx="919.7917" cy="583.4595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M921.7021,587.8845 Q921.2748,588.1042 920.8049,588.2141 Q920.3349,588.324 919.8161,588.324 Q917.9728,588.324 917.0024,587.1094 Q916.0319,585.8948 916.0319,583.5999 Q916.0319,581.2988 917.0024,580.0842 Q917.9728,578.8696 919.8161,578.8696 Q920.3349,578.8696 920.811,578.9795 Q921.287,579.0894 921.7021,579.3091 L921.7021,581.311 Q921.2382,580.8838 920.8018,580.6854 Q920.3654,580.4871 919.9015,580.4871 Q918.9128,580.4871 918.4092,581.2714 Q917.9057,582.0557 917.9057,583.5999 Q917.9057,585.1379 918.4092,585.9222 Q918.9128,586.7065 919.9015,586.7065 Q920.3654,586.7065 920.8018,586.5082 Q921.2382,586.3098 921.7021,585.8826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="198.9583" x="936.4583" y="588.1836">ValidatorStringResourceLoader</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="906.25" x2="1140.625" y1="599.1536" y2="599.1536"/><ellipse cx="916.6667" cy="634.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="928.125" y="641.4347">ValidatorStringResourceLoader()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="906.25" x2="979.6875" y1="617.3594" y2="617.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="982.8125" y="621.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1067.1875" x2="1140.625" y1="617.3594" y2="617.3594"/><!--MD5=[dc57c5e7d8dc0e570d93146eddf5c18e]
+reverse link IStringResourceLoader to BundleStringResourceLoader--><path codeLine="8" d="M405.0313,164.3799 C365.9792,179.6299 326.2188,197.9215 291.1458,219.3278 C253.1563,242.5153 216.4688,277.3278 190.7188,304.4945 " fill="none" id="IStringResourceLoader-backto-BundleStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="402.6771,157.484,424.7396,156.9215,407.8438,171.1195,402.6771,157.484" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[26738ccc484b7b7d34a334a2d75e881f]
+reverse link ComponentStringResourceLoader to ClassStringResourceLoader--><path codeLine="15" d="M355.7188,483.7236 C300.5625,514.432 246.1771,544.7028 204.8125,567.734 " fill="none" id="ComponentStringResourceLoader-backto-ClassStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="352.2917,477.2861,374.0417,473.5257,359.3854,490.0257,352.2917,477.2861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3e7ec1b29f09c810ca32c8a839aa49c5]
+reverse link IStringResourceLoader to ComponentStringResourceLoader--><path codeLine="22" d="M600.5208,177.9424 C600.5208,190.9736 600.5208,204.9215 600.5208,218.9945 " fill="none" id="IStringResourceLoader-backto-ComponentStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="593.2292,177.8382,600.5208,157.0049,607.8125,177.8382,593.2292,177.8382" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e71c4e6fa03291d8f52f46ff39127dda]
+reverse link ComponentStringResourceLoader to InitializerStringResourceLoader--><path codeLine="44" d="M515.6979,492.0049 C499.4271,519.7236 483.6667,546.5882 471.3854,567.5049 " fill="none" id="ComponentStringResourceLoader-backto-InitializerStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="509.5938,487.9945,526.4271,473.7132,522.1667,495.3799,509.5938,487.9945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bcfc64b6d9992a9144e52dda9241767e]
+reverse link IStringResourceLoader to NestedStringResourceLoader--><path codeLine="51" d="M773.6458,164.0778 C818.5833,180.557 866.5313,199.4736 909.8958,219.3278 C965.25,244.682 1025.3333,278.5049 1069.6354,304.734 " fill="none" id="IStringResourceLoader-backto-NestedStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="771.0104,170.8799,753.9167,156.9215,775.9896,157.1715,771.0104,170.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[118d991379f04ad92cd164587dff4e37]
+reverse link ComponentStringResourceLoader to PackageStringResourceLoader--><path codeLine="58" d="M685.1667,491.7028 C694.125,506.9632 702.9375,521.9736 711.0938,535.8903 " fill="none" id="ComponentStringResourceLoader-backto-PackageStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="678.875,495.3799,674.6146,473.7132,691.4479,487.9945,678.875,495.3799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1239f80287b092dc5bc7ca7362bf848d]
+reverse link ComponentStringResourceLoader to ValidatorStringResourceLoader--><path codeLine="68" d="M822.6771,484.5257 C872,514.9528 920.5417,544.9007 957.5313,567.734 " fill="none" id="ComponentStringResourceLoader-backto-ValidatorStringResourceLoader" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="818.7604,490.6715,804.8542,473.5257,826.4167,478.2653,818.7604,490.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[415fe6e94e4e083f3bf0a024f9b74ad2]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.resource.loader"
+    
+    interface IStringResourceLoader
+    
+    IStringResourceLoader <|- - BundleStringResourceLoader
+    class BundleStringResourceLoader
+    {
+        - -(constructors)- -
+        +BundleStringResourceLoader(String)
+    }
+    
+    ComponentStringResourceLoader <|- - ClassStringResourceLoader
+    class ClassStringResourceLoader
+    {
+        - -(constructors)- -
+        +ClassStringResourceLoader(Class<?>)
+    }
+    
+    IStringResourceLoader <|- - ComponentStringResourceLoader
+    class ComponentStringResourceLoader
+    {
+        - -(constructors)- -
+        +ComponentStringResourceLoader()
+        - -(factory)- -
+        #IPropertiesFactory getPropertiesFactory()
+        #IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation)
+        - -(path)- -
+        #String getResourcePath(Component)
+        - -(search)- -
+        #boolean isStopResourceSearch(Component)
+        #boolean isStopResourceSearch(Class<?> clazz)
+    }
+    
+    interface IStringResourceLoader
+    {
+        - -(read)- -
+        +String loadStringResource(Component, String key, Locale, String style, String variation)
+        +String loadStringResource(Class<?> clazz, String key, Locale, String style, String variation)
+    }
+    
+    ComponentStringResourceLoader <|- - InitializerStringResourceLoader
+    class InitializerStringResourceLoader
+    {
+        - -(constructors)- -
+        +InitializerStringResourceLoader(List<IInitializer>)
+    }
+    
+    IStringResourceLoader <|- - NestedStringResourceLoader
+    class NestedStringResourceLoader
+    {
+        - -(constructors)- -
+        +NestedStringResourceLoader(List<IStringResourceLoader>, Pattern)
+    }
+    
+    ComponentStringResourceLoader <|- - PackageStringResourceLoader
+    class PackageStringResourceLoader
+    {
+        - -(constructors)- -
+        +PackageStringResourceLoader()
+        - -(filesystem)- -
+        +String getFilename()
+        +void setFilename(String filename)
+    }
+    
+    ComponentStringResourceLoader <|- - ValidatorStringResourceLoader
+    class ValidatorStringResourceLoader
+    {
+        - -(constructors)- -
+        +ValidatorStringResourceLoader()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.resource.loader"
+    
+    interface IStringResourceLoader
+    
+    IStringResourceLoader <|- - BundleStringResourceLoader
+    class BundleStringResourceLoader
+    {
+        - -(constructors)- -
+        +BundleStringResourceLoader(String)
+    }
+    
+    ComponentStringResourceLoader <|- - ClassStringResourceLoader
+    class ClassStringResourceLoader
+    {
+        - -(constructors)- -
+        +ClassStringResourceLoader(Class<?>)
+    }
+    
+    IStringResourceLoader <|- - ComponentStringResourceLoader
+    class ComponentStringResourceLoader
+    {
+        - -(constructors)- -
+        +ComponentStringResourceLoader()
+        - -(factory)- -
+        #IPropertiesFactory getPropertiesFactory()
+        #IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation)
+        - -(path)- -
+        #String getResourcePath(Component)
+        - -(search)- -
+        #boolean isStopResourceSearch(Component)
+        #boolean isStopResourceSearch(Class<?> clazz)
+    }
+    
+    interface IStringResourceLoader
+    {
+        - -(read)- -
+        +String loadStringResource(Component, String key, Locale, String style, String variation)
+        +String loadStringResource(Class<?> clazz, String key, Locale, String style, String variation)
+    }
+    
+    ComponentStringResourceLoader <|- - InitializerStringResourceLoader
+    class InitializerStringResourceLoader
+    {
+        - -(constructors)- -
+        +InitializerStringResourceLoader(List<IInitializer>)
+    }
+    
+    IStringResourceLoader <|- - NestedStringResourceLoader
+    class NestedStringResourceLoader
+    {
+        - -(constructors)- -
+        +NestedStringResourceLoader(List<IStringResourceLoader>, Pattern)
+    }
+    
+    ComponentStringResourceLoader <|- - PackageStringResourceLoader
+    class PackageStringResourceLoader
+    {
+        - -(constructors)- -
+        +PackageStringResourceLoader()
+        - -(filesystem)- -
+        +String getFilename()
+        +void setFilename(String filename)
+    }
+    
+    ComponentStringResourceLoader <|- - ValidatorStringResourceLoader
+    class ValidatorStringResourceLoader
+    {
+        - -(constructors)- -
+        +ValidatorStringResourceLoader()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

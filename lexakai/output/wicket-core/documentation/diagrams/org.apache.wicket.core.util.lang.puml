@@ -1,0 +1,149 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.lang"
+    
+    abstract AbstractGetAndSet
+    
+    interface IPropertyLocator
+    interface IGetAndSet
+    interface IClusterable
+    interface IObjectSizeOfStrategy
+    
+    PropertyResolver.IGetAndSet <|-- PropertyResolver.AbstractGetAndSet
+    abstract class PropertyResolver.AbstractGetAndSet
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.ArrayGetAndSet
+    class PropertyResolver.ArrayGetAndSet
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.ArrayLengthGetAndSet
+    class PropertyResolver.ArrayLengthGetAndSet
+    {
+    }
+    
+    PropertyResolver.IPropertyLocator <|-- PropertyResolver.CachingPropertyLocator
+    class PropertyResolver.CachingPropertyLocator
+    {
+        --(constructors)--
+        +CachingPropertyLocator(IPropertyLocator)
+    }
+    
+    PropertyResolver.IPropertyLocator <|-- PropertyResolver.DefaultPropertyLocator
+    class PropertyResolver.DefaultPropertyLocator
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.FieldGetAndSet
+    class PropertyResolver.FieldGetAndSet
+    {
+        --(constructors)--
+        +FieldGetAndSet(Field)
+    }
+    
+    interface PropertyResolver.IGetAndSet
+    {
+        --
+        +Field getField()
+        +Method getGetter()
+        +Method getSetter()
+        +Class<?> getTargetClass()
+        +Object getValue(Object)
+        +void setValue(Object, Object value, PropertyResolverConverter)
+        --(factory)--
+        +Object newValue(Object)
+    }
+    
+    interface WicketObjects.IObjectSizeOfStrategy
+    {
+        --(collection)--
+        +long sizeOf(Serializable object)
+    }
+    
+    interface PropertyResolver.IPropertyLocator
+    {
+        --
+        +IGetAndSet get(Class<?> clz, String exp)
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.IndexedPropertyGetAndSet
+    class PropertyResolver.IndexedPropertyGetAndSet
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.ListGetAndSet
+    class PropertyResolver.ListGetAndSet
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.MapGetAndSet
+    class PropertyResolver.MapGetAndSet
+    {
+    }
+    
+    PropertyResolver.AbstractGetAndSet <|-- PropertyResolver.MethodGetAndSet
+    class PropertyResolver.MethodGetAndSet
+    {
+    }
+    
+    class PropertyResolver.ObjectWithGetAndSet
+    {
+        --(constructors)--
+        +ObjectWithGetAndSet(IGetAndSet, Object)
+        --
+        +Field getField()
+        +Method getGetter()
+        +Method getSetter()
+        +Class<?> getTargetClass()
+        +Object getValue()
+        +void setValue(Object value, PropertyResolverConverter)
+    }
+    
+    class PropertyResolver
+    {
+        --
+        +void destroy(Application)
+        +IPropertyLocator getLocator()
+        +Class<?> getPropertyClass(String expression, Object)
+        +Class<T> getPropertyClass(String expression, Class<?> clz)
+        +Field getPropertyField(String expression, Object)
+        +Method getPropertyGetter(String expression, Object)
+        +Method getPropertySetter(String expression, Object)
+        +Object getValue(String expression, Object)
+        +void setLocator(Application, IPropertyLocator)
+        +void setValue(String expression, Object, Object value, PropertyResolverConverter)
+    }
+    
+    IClusterable <|-- PropertyResolverConverter
+    class PropertyResolverConverter
+    {
+        --(constructors)--
+        +PropertyResolverConverter(IConverterLocator, Locale)
+        --
+        +T convert(Object, Class<T> clz)
+        #String convertToString(C object, Locale)
+    }
+    
+    WicketObjects.IObjectSizeOfStrategy <|-- WicketObjects.SerializingObjectSizeOfStrategy
+    class WicketObjects.SerializingObjectSizeOfStrategy
+    {
+    }
+    
+    class WicketObjects
+    {
+        --
+        +T cloneObject(T object)
+        +Class<T> resolveClass(String className)
+        +long sizeof(Serializable object)
+        --(collection)--
+        +void setObjectSizeOfStrategy(IObjectSizeOfStrategy)
+        --(factory)--
+        +T newInstance(String className)
+    }
+    
+@enduml
+

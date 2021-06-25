@@ -1,0 +1,67 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.tabs"
+    
+    interface ITab
+    
+    ITab <|-- AbstractTab
+    abstract class AbstractTab
+    {
+        --(constructors)--
+        +AbstractTab(IModel<String>)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ITab
+    interface ITab
+    {
+        --
+        +WebMarkupContainer getPanel(String containerId)
+        +IModel<String> getTitle()
+        --(checks)--
+        +boolean isVisible()
+    }
+    
+    ITab <|-- PanelCachingTab
+    class PanelCachingTab
+    {
+        --(constructors)--
+        +PanelCachingTab(ITab)
+    }
+    
+    Panel <|-- TabbedPanel
+    class TabbedPanel<T>
+    {
+        --(constructors)--
+        +TabbedPanel(String, List<T>)
+        +TabbedPanel(String, List<T>, IModel<Integer>)
+        --
+        +int getSelectedTab()
+        #String getSelectedTabCssClass()
+        #String getTabContainerCssClass()
+        --(collection)--
+        +List<T> getTabs()
+        #String getLastTabCssClass()
+        --(factory)--
+        #WebMarkupContainer newLink(String linkId, int index)
+        #LoopItem newTabContainer(int tabIndex)
+        #WebMarkupContainer newTabsContainer(String id)
+        #Component newTitle(String titleId, IModel<?> titleModel, int index)
+        --(functional)--
+        +TabbedPanel<T> setSelectedTab(int index)
+    }
+    
+    class TabbedPanel.VisibilityCache
+    {
+        --(constructors)--
+        +VisibilityCache()
+        --(checks)--
+        +boolean isVisible(int index)
+        --(collection)--
+        +int getLastVisible()
+    }
+    
+@enduml
+

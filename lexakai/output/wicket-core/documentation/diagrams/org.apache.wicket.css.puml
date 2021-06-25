@@ -1,0 +1,14 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.css"
+    
+    interface ITextResourceCompressor
+    ITextResourceCompressor <|-- ICssCompressor
+    interface ICssCompressor
+    {
+    }
+    
+@enduml
+

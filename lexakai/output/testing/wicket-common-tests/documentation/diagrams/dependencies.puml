@@ -1,0 +1,135 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-common-tests"
+    
+    artifact aopalliance
+    artifact cglib
+    artifact openjson
+    artifact jsr305
+    artifact error_prone_annotations
+    artifact failureaccess
+    artifact guava
+    artifact listenablefuture
+    artifact guice
+    artifact j2objc_annotations
+    artifact commons_fileupload
+    artifact commons_io
+    artifact jakarta_inject_api
+    artifact jakarta_servlet_api
+    artifact javax_inject
+    artifact log4j
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact commons_collections4
+    artifact commons_lang3
+    artifact velocity_engine_core
+    artifact wicket_http2_core
+    artifact wicket_http2_jetty
+    artifact wicket_http2_servlet4
+    artifact wicket_http2_tomcat
+    artifact wicket_http2_undertow
+    artifact wicket_auth_roles
+    artifact wicket_bean_validation
+    artifact wicket_cdi
+    artifact wicket_common_tests
+    artifact wicket_core
+    artifact wicket_devutils
+    artifact wicket_extensions
+    artifact wicket_guice
+    artifact wicket_ioc
+    artifact wicket_jmx
+    artifact wicket_native_websocket_core
+    artifact wicket_native_websocket_javax
+    artifact wicket_objectsizeof_agent
+    artifact wicket_request
+    artifact wicket_spring
+    artifact wicket_util
+    artifact wicket_velocity
+    artifact apiguardian_api
+    artifact checker_qual
+    artifact animal_sniffer_annotations
+    artifact jdk_serializable_functional
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact asm
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    artifact spring_aop
+    artifact spring_beans
+    artifact spring_context
+    artifact spring_core
+    artifact spring_expression
+    artifact spring_jcl
+    guava --> animal_sniffer_annotations
+    guava --> checker_qual
+    guava --> error_prone_annotations
+    guava --> failureaccess
+    guava --> j2objc_annotations
+    guava --> jsr305
+    guava --> listenablefuture
+    guice --> aopalliance
+    guice --> guava
+    guice --> javax_inject
+    junit_jupiter_engine --> apiguardian_api
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_jupiter_engine --> junit_platform_engine
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    slf4j_log4j12 --> log4j
+    spring_context --> spring_aop
+    spring_context --> spring_beans
+    spring_context --> spring_core
+    spring_context --> spring_expression
+    spring_core --> spring_jcl
+    velocity_engine_core --> commons_lang3
+    wicket_common_tests --> jakarta_servlet_api
+    wicket_common_tests --> jcl_over_slf4j
+    wicket_common_tests --> junit_jupiter_engine
+    wicket_common_tests --> mockito_core
+    wicket_common_tests --> slf4j_api
+    wicket_common_tests --> slf4j_log4j12
+    wicket_common_tests --> wicket_auth_roles
+    wicket_common_tests --> wicket_bean_validation
+    wicket_common_tests --> wicket_cdi
+    wicket_common_tests --> wicket_core
+    wicket_common_tests --> wicket_devutils
+    wicket_common_tests --> wicket_extensions
+    wicket_common_tests --> wicket_guice
+    wicket_common_tests --> wicket_http2_core
+    wicket_common_tests --> wicket_http2_jetty
+    wicket_common_tests --> wicket_http2_servlet4
+    wicket_common_tests --> wicket_http2_tomcat
+    wicket_common_tests --> wicket_http2_undertow
+    wicket_common_tests --> wicket_ioc
+    wicket_common_tests --> wicket_jmx
+    wicket_common_tests --> wicket_native_websocket_core
+    wicket_common_tests --> wicket_native_websocket_javax
+    wicket_common_tests --> wicket_objectsizeof_agent
+    wicket_common_tests --> wicket_spring
+    wicket_common_tests --> wicket_velocity
+    wicket_core --> jdk_serializable_functional
+    wicket_core --> openjson
+    wicket_core --> wicket_request
+    wicket_core --> wicket_util
+    wicket_guice --> guice
+    wicket_ioc --> asm
+    wicket_ioc --> cglib
+    wicket_ioc --> jakarta_inject_api
+    wicket_spring --> spring_context
+    wicket_util --> commons_collections4
+    wicket_util --> commons_fileupload
+    wicket_util --> commons_io
+    wicket_velocity --> velocity_engine_core
+    
+@enduml

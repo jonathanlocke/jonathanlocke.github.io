@@ -1,0 +1,35 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.thread"
+    
+    interface ICode
+    {
+        --(lifecycle)--
+        +void run(Logger)
+    }
+    
+    class Lock
+    {
+    }
+    
+    class Task
+    {
+        --(constructors)--
+        +Task(String)
+        --
+        +int getPriority()
+        +void setDaemon(boolean daemon)
+        +void setLog(Logger)
+        +void setPriority(int prio)
+        #Logger getLog()
+        --(lifecycle)--
+        +void interrupt()
+        +void run(Duration frequency, ICode)
+        +void setStartTime(Instant startTime)
+        +void stop()
+    }
+    
+@enduml
+

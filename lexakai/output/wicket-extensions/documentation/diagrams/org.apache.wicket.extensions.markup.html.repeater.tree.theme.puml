@@ -1,0 +1,18 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.tree.theme"
+    
+    Behavior <|-- HumanTheme
+    class HumanTheme
+    {
+    }
+    
+    Behavior <|-- WindowsTheme
+    class WindowsTheme
+    {
+    }
+    
+@enduml
+

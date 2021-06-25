@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "javax.servlet.http"
+    
+    interface HttpServletRequest
+    interface HttpSession
+    
+    interface jakarta.servlet.http.HttpServletRequest
+    HttpServletRequest <|-- HttpServletRequest
+    interface HttpServletRequest
+    {
+        --(network)--
+        +jakarta.servlet.http.HttpServletRequest getDelegate()
+    }
+    
+    interface jakarta.servlet.http.HttpSession
+    HttpSession <|-- HttpSession
+    interface HttpSession
+    {
+        --(network)--
+        +jakarta.servlet.http.HttpSession getDelegate()
+    }
+    
+    HttpServletRequest <|-- HttpServletRequest.Impl
+    class HttpServletRequest.Impl
+    {
+        --(constructors)--
+        +Impl(jakarta.servlet.http.HttpServletRequest)
+    }
+    
+    HttpSession <|-- HttpSession.Impl
+    class HttpSession.Impl
+    {
+        --(constructors)--
+        +Impl(jakarta.servlet.http.HttpSession)
+    }
+    
+@enduml
+

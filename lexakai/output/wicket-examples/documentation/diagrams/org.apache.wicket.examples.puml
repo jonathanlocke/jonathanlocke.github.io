@@ -1,0 +1,40 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples"
+    
+    HttpServlet <|-- HelloWorldServlet
+    class HelloWorldServlet
+    {
+    }
+    
+    WebApplication <|-- WicketExampleApplication
+    abstract class WicketExampleApplication
+    {
+    }
+    
+    Panel <|-- WicketExampleHeader
+    class WicketExampleHeader
+    {
+        --(constructors)--
+        +WicketExampleHeader(String)
+    }
+    
+    WebPage <|-- WicketExamplePage
+    WicketExamplePage --> Panel : "creates"
+    class WicketExamplePage
+    {
+        --(constructors)--
+        +WicketExamplePage()
+        +WicketExamplePage(IModel<?>)
+        +WicketExamplePage(PageParameters)
+        --
+        #void explain()
+        #boolean showSourceButton()
+        --(building)--
+        #Panel buildHeader(String id)
+    }
+    
+@enduml
+

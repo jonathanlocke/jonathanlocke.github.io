@@ -1,0 +1,51 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authentication"
+    
+    abstract AbstractAuthenticatedWebSession
+    
+    interface IUnauthorizedComponentInstantiationListener
+    interface IRoleCheckingStrategy
+    
+    WebSession <|-- AbstractAuthenticatedWebSession
+    abstract class AbstractAuthenticatedWebSession
+    {
+        --(constructors)--
+        +AbstractAuthenticatedWebSession(Request)
+        --
+        +AbstractAuthenticatedWebSession get()
+        +Roles getRoles()
+        --(checks)--
+        +boolean isSignedIn()
+    }
+    
+    WebApplication <|-- AuthenticatedWebApplication
+    IRoleCheckingStrategy <|-- AuthenticatedWebApplication
+    IUnauthorizedComponentInstantiationListener <|-- AuthenticatedWebApplication
+    abstract class AuthenticatedWebApplication
+    {
+        --
+        #Class<? extends WebPage> getSignInPageClass()
+        #Class<? extends AbstractAuthenticatedWebSession> getWebSessionClass()
+        #void onUnauthorizedPage(Component page)
+        --(lifecycle)--
+        +void restartResponseAtSignInPage()
+    }
+    
+    AbstractAuthenticatedWebSession <|-- AuthenticatedWebSession
+    abstract class AuthenticatedWebSession
+    {
+        --(constructors)--
+        +AuthenticatedWebSession(Request)
+        --
+        +AuthenticatedWebSession get()
+        +boolean signIn(String username, String password)
+        +void signOut()
+        #boolean authenticate(String username, String password)
+        #void signIn(boolean value)
+    }
+    
+@enduml
+

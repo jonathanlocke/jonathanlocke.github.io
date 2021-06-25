@@ -1,0 +1,97 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws"
+    
+    interface ThreadFactory
+    interface Executor
+    
+    WicketFilter <|-- AbstractUpgradeFilter
+    class AbstractUpgradeFilter
+    {
+        --(constructors)--
+        +AbstractUpgradeFilter()
+        +AbstractUpgradeFilter(WebApplication)
+        --
+        #boolean verifyOrigin(String origin)
+        --(collection)--
+        #List<String> getTokensFromHeader(HttpServletRequest, String headerName)
+        --(filtering)--
+        #boolean acceptWebSocket(HttpServletRequest, HttpServletResponse)
+        --(network)--
+        #String selectSubProtocol(List<String> subProtocols)
+    }
+    
+    class WebSocketSettings.Holder
+    {
+        --
+        +WebSocketSettings get(Application)
+        +void set(Application, WebSocketSettings)
+    }
+    
+    Executor <|-- WebSocketSettings.SameThreadExecutor
+    class WebSocketSettings.SameThreadExecutor
+    {
+    }
+    
+    ThreadFactory <|-- WebSocketSettings.ThreadFactory
+    class WebSocketSettings.ThreadFactory
+    {
+    }
+    
+    CsrfPreventionRequestCycleListener <|-- WebSocketAwareCsrfPreventionRequestCycleListener
+    class WebSocketAwareCsrfPreventionRequestCycleListener
+    {
+    }
+    
+    ResourceIsolationRequestCycleListener <|-- WebSocketAwareResourceIsolationRequestCycleListener
+    class WebSocketAwareResourceIsolationRequestCycleListener
+    {
+    }
+    
+    Executor <|-- WebSocketSettings.WebSocketPushMessageExecutor
+    class WebSocketSettings.WebSocketPushMessageExecutor
+    {
+        --(constructors)--
+        +WebSocketPushMessageExecutor()
+        +WebSocketPushMessageExecutor(java.util.concurrent.Executor, java.util.concurrent.Executor)
+    }
+    
+    class WebSocketSettings
+    {
+        --
+        +IWebSocketConnectionRegistry getConnectionRegistry()
+        +WebSocketSettings setConnectionRegistry(IWebSocketConnectionRegistry)
+        --(factory)--
+        +WebRequest newWebSocketRequest(HttpServletRequest, String filterPath)
+        +WebResponse newWebSocketResponse(IWebSocketConnection)
+        --(filtering)--
+        +IWebSocketConnectionFilter getConnectionFilter()
+        +CharSequence getFilterPrefix()
+        +void setConnectionFilter(IWebSocketConnectionFilter)
+        +void setFilterPrefix(CharSequence filterPrefix)
+        --(messaging)--
+        +Executor getSendPayloadExecutor()
+        +Executor getWebSocketPushMessageExecutor()
+        +WebSocketRequestHandler newWebSocketRequestHandler(Page, IWebSocketConnection)
+        +void setNotifyOnCloseEvent(Function<Integer,Boolean> notifyOnCloseEvent)
+        +void setNotifyOnErrorEvent(Function<Throwable,Boolean> notifyOnErrorEvent)
+        +WebSocketSettings setSendPayloadExecutor(Executor sendPayloadExecutor)
+        +WebSocketSettings setWebSocketPushMessageExecutor(Executor)
+        +boolean shouldNotifyOnCloseEvent(int closeCode)
+        +boolean shouldNotifyOnErrorEvent(Throwable)
+        --(network)--
+        +CharSequence getBaseUrl()
+        +Integer getPort()
+        +Integer getSecurePort()
+        +void setBaseUrl(CharSequence baseUrl)
+        +void setPort(int wsPort)
+        +void setSecurePort(int wssPort)
+        --(path)--
+        +CharSequence getContextPath()
+        +void setContextPath(CharSequence contextPath)
+    }
+    
+@enduml
+

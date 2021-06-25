@@ -1,0 +1,51 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authorization.strategies.role.metadata"
+    
+    abstract AbstractRoleAuthorizationStrategy
+    
+    interface IClusterable
+    
+    IClusterable <|-- ActionPermissions
+    class ActionPermissions
+    {
+        --
+        +void authorize(Action, Roles rolesToAdd)
+        +void authorizeAll(Action)
+        +Roles rolesFor(Action)
+        +void unauthorize(Action, Roles rolesToRemove)
+    }
+    
+    IClusterable <|-- InstantiationPermissions
+    class InstantiationPermissions
+    {
+        --
+        +void authorize(Class<T> componentClass, Roles rolesToAdd)
+        +void authorizeAll(Class<T> componentClass)
+        +void unauthorize(Class<T> componentClass, Roles rolesToRemove)
+        --(collection)--
+        #Map<Class<? extends Component>,Roles> getRolesForComponentClass()
+        --(functional)--
+        +Roles authorizedRoles(Class<T> componentClass)
+    }
+    
+    AbstractRoleAuthorizationStrategy <|-- MetaDataRoleAuthorizationStrategy
+    class MetaDataRoleAuthorizationStrategy
+    {
+        --(constructors)--
+        +MetaDataRoleAuthorizationStrategy(IRoleCheckingStrategy)
+        --
+        +void authorize(Component, Action, String roles)
+        +void authorize(Class<T> componentClass, String roles)
+        +void authorizeAll(Class<T> componentClass)
+        +void authorizeAll(Component, Action)
+        +void unauthorize(Component, Action, String roles)
+        +void unauthorize(Class<T> componentClass, String roles)
+        +void unauthorizeAll(Class<T> componentClass)
+        +void unauthorizeAll(Component, Action)
+    }
+    
+@enduml
+

@@ -1,0 +1,103 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.jmx.wrapper"
+    
+    interface DebugSettingsMBean
+    interface RequestCycleSettingsMBean
+    interface RequestLoggerMBean
+    interface SessionSettingsMBean
+    interface PageSettingsMBean
+    interface ResourceSettingsMBean
+    interface ApplicationMBean
+    interface MarkupSettingsMBean
+    interface SecuritySettingsMBean
+    interface ApplicationSettingsMBean
+    interface StoreSettingsMBean
+    
+    ApplicationMBean <|-- Application
+    class Application
+    {
+        --(constructors)--
+        +Application(org.apache.wicket.Application)
+    }
+    
+    ApplicationSettingsMBean <|-- ApplicationSettings
+    class ApplicationSettings
+    {
+        --(constructors)--
+        +ApplicationSettings(Application)
+    }
+    
+    DebugSettingsMBean <|-- DebugSettings
+    class DebugSettings
+    {
+        --(constructors)--
+        +DebugSettings(Application)
+    }
+    
+    MarkupSettingsMBean <|-- MarkupSettings
+    class MarkupSettings
+    {
+        --(constructors)--
+        +MarkupSettings(Application)
+    }
+    
+    PageSettingsMBean <|-- PageSettings
+    class PageSettings
+    {
+        --(constructors)--
+        +PageSettings(Application)
+    }
+    
+    RequestCycleSettingsMBean <|-- RequestCycleSettings
+    class RequestCycleSettings
+    {
+        --(constructors)--
+        +RequestCycleSettings(Application)
+    }
+    
+    RequestLoggerMBean <|-- RequestLogger
+    class RequestLogger
+    {
+        --(constructors)--
+        +RequestLogger(Application)
+        --(network)--
+        #org.apache.wicket.protocol.http.IRequestLogger getRequestLogger()
+    }
+    
+    ResourceSettingsMBean <|-- ResourceSettings
+    class ResourceSettings
+    {
+        --(constructors)--
+        +ResourceSettings(Application)
+    }
+    
+    SecuritySettingsMBean <|-- SecuritySettings
+    class SecuritySettings
+    {
+        --(constructors)--
+        +SecuritySettings(Application)
+    }
+    
+    SessionSettingsMBean <|-- SessionSettings
+    class SessionSettings
+    {
+        --(constructors)--
+        +SessionSettings(Application)
+    }
+    
+    StoreSettingsMBean <|-- StoreSettings
+    class StoreSettings
+    {
+        --(constructors)--
+        +StoreSettings(Application)
+    }
+    
+    class Stringz
+    {
+    }
+    
+@enduml
+

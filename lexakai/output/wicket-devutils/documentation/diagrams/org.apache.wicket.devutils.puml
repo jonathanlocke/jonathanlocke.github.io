@@ -1,0 +1,34 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils"
+    
+    WebPage <|-- DevUtilsPage
+    class DevUtilsPage
+    {
+        --(constructors)--
+        +DevUtilsPage()
+        +DevUtilsPage(IModel<?>)
+        +DevUtilsPage(PageParameters)
+    }
+    
+    Panel <|-- DevUtilsPanel
+    class DevUtilsPanel
+    {
+        --(constructors)--
+        +DevUtilsPanel(String)
+        +DevUtilsPanel(String, IModel<?>)
+    }
+    
+    WicketRuntimeException <|-- DevelopmentUtilitiesNotEnabledException
+    class DevelopmentUtilitiesNotEnabledException
+    {
+        --(constructors)--
+        +DevelopmentUtilitiesNotEnabledException()
+        --
+        +void check()
+    }
+    
+@enduml
+

@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="258.3333px" preserveAspectRatio="none" style="width:769px;height:258px;background:#333333;" version="1.1" viewBox="0 0 769 258" width="769.7917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="483.3333" x="135.9375" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="460.4167" x="147.3958" y="30.5583">org.apache.wicket.examples.ajaxhellobrowser</text><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="7.2917" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="7.2917" y="53.7028"/><ellipse cx="21.875" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M23.7854,73.822 Q23.3582,74.0417 22.8882,74.1516 Q22.4182,74.2615 21.8994,74.2615 Q20.0562,74.2615 19.0857,73.0469 Q18.1152,71.8323 18.1152,69.5374 Q18.1152,67.2363 19.0857,66.0217 Q20.0562,64.8071 21.8994,64.8071 Q22.4182,64.8071 22.8943,64.917 Q23.3704,65.0269 23.7854,65.2466 L23.7854,67.2485 Q23.3215,66.8213 22.8851,66.6229 Q22.4487,66.4246 21.9849,66.4246 Q20.9961,66.4246 20.4926,67.2089 Q19.989,67.9932 19.989,69.5374 Q19.989,71.0754 20.4926,71.8597 Q20.9961,72.644 21.9849,72.644 Q22.4487,72.644 22.8851,72.4457 Q23.3215,72.2473 23.7854,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="38.5417" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="170.8333" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="170.8333" y1="93.4245" y2="93.4245"/><!--MD5=[a379b226ea23f64dd2ad3ba82ebbe4d7]
+class AjaxHelloBrowser--><rect codeLine="7" fill="#282828" height="83.3781" id="AjaxHelloBrowser" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="151.0417" x="14.0625" y="166.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="151.0417" x="14.0625" y="166.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="151.0417" x="14.0625" y="189.2578"/><rect codeLine="7" fill="none" height="83.3781" id="AjaxHelloBrowser" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="151.0417" x="14.0625" y="166.2028"/><ellipse cx="28.6458" cy="181.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M30.5562,186.322 Q30.129,186.5417 29.659,186.6516 Q29.189,186.7615 28.6702,186.7615 Q26.827,186.7615 25.8565,185.5469 Q24.8861,184.3323 24.8861,182.0374 Q24.8861,179.7363 25.8565,178.5217 Q26.827,177.3071 28.6702,177.3071 Q29.189,177.3071 29.6651,177.417 Q30.1412,177.5269 30.5562,177.7466 L30.5562,179.7485 Q30.0924,179.3213 29.656,179.1229 Q29.2196,178.9246 28.7557,178.9246 Q27.7669,178.9246 27.2634,179.7089 Q26.7598,180.4932 26.7598,182.0374 Q26.7598,183.5754 27.2634,184.3597 Q27.7669,185.144 28.7557,185.144 Q29.2196,185.144 29.656,184.9457 Q30.0924,184.7473 30.5562,184.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="113.5417" x="45.3125" y="186.6211">AjaxHelloBrowser</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="15.1042" x2="164.0625" y1="197.5911" y2="197.5911"/><ellipse cx="25.5208" cy="232.961" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="106.25" x="36.9792" y="239.8722">AjaxHelloBrowser()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="15.1042" x2="45.8333" y1="215.7969" y2="215.7969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="48.9583" y="219.6065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="133.3333" x2="164.0625" y1="215.7969" y2="215.7969"/><!--MD5=[f2547a48c174d8163b580946a956f848]
+class ClientProperties--><rect fill="#282828" height="48.055" id="ClientProperties" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="141.6667" x="291.6667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="141.6667" x="291.6667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="141.6667" x="291.6667" y="76.7578"/><rect fill="none" height="48.055" id="ClientProperties" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="141.6667" x="291.6667" y="53.7028"/><ellipse cx="306.25" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M308.1604,73.822 Q307.7332,74.0417 307.2632,74.1516 Q306.7932,74.2615 306.2744,74.2615 Q304.4312,74.2615 303.4607,73.0469 Q302.4902,71.8323 302.4902,69.5374 Q302.4902,67.2363 303.4607,66.0217 Q304.4312,64.8071 306.2744,64.8071 Q306.7932,64.8071 307.2693,64.917 Q307.7454,65.0269 308.1604,65.2466 L308.1604,67.2485 Q307.6965,66.8213 307.2601,66.6229 Q306.8237,66.4246 306.3599,66.4246 Q305.3711,66.4246 304.8676,67.2089 Q304.364,67.9932 304.364,69.5374 Q304.364,71.0754 304.8676,71.8597 Q305.3711,72.644 306.3599,72.644 Q306.8237,72.644 307.2601,72.4457 Q307.6965,72.2473 308.1604,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="104.1667" x="322.9167" y="74.1211">ClientProperties</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="292.7083" x2="432.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="292.7083" x2="432.2917" y1="93.4245" y2="93.4245"/><!--MD5=[61a5257738e8798c6a3ecdabb8fec5bb]
+class ExtendedClientProperties--><rect codeLine="14" fill="#282828" height="87.5448" id="ExtendedClientProperties" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="320.8333" x="202.0833" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="320.8333" x="202.0833" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="320.8333" x="202.0833" y="187.1745"/><rect codeLine="14" fill="none" height="87.5448" id="ExtendedClientProperties" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="320.8333" x="202.0833" y="164.1195"/><ellipse cx="273.4375" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M275.3479,184.2387 Q274.9207,184.4584 274.4507,184.5683 Q273.9807,184.6781 273.4619,184.6781 Q271.6187,184.6781 270.6482,183.4635 Q269.6777,182.2489 269.6777,179.954 Q269.6777,177.653 270.6482,176.4384 Q271.6187,175.2238 273.4619,175.2238 Q273.9807,175.2238 274.4568,175.3337 Q274.9329,175.4435 275.3479,175.6632 L275.3479,177.6652 Q274.884,177.238 274.4476,177.0396 Q274.0112,176.8412 273.5474,176.8412 Q272.5586,176.8412 272.0551,177.6255 Q271.5515,178.4098 271.5515,179.954 Q271.5515,181.4921 272.0551,182.2764 Q272.5586,183.0607 273.5474,183.0607 Q274.0112,183.0607 274.4476,182.8623 Q274.884,182.664 275.3479,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="163.5417" x="296.3542" y="184.5378">ExtendedClientProperties</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="203.125" x2="521.875" y1="195.5078" y2="195.5078"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="203.125" x2="521.875" y1="203.8411" y2="203.8411"/><ellipse cx="213.5417" cy="215.2995" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="225" y="222.2107">String getExtendedProperty()</text><ellipse cx="213.5417" cy="235.0444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="288.5417" x="225" y="241.9556">void setExtendedProperty(String extendedProperty)</text><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="554.1667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="554.1667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="554.1667" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="554.1667" y="53.7028"/><ellipse cx="568.75" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M570.6604,73.822 Q570.2332,74.0417 569.7632,74.1516 Q569.2932,74.2615 568.7744,74.2615 Q566.9312,74.2615 565.9607,73.0469 Q564.9902,71.8323 564.9902,69.5374 Q564.9902,67.2363 565.9607,66.0217 Q566.9312,64.8071 568.7744,64.8071 Q569.2932,64.8071 569.7693,64.917 Q570.2454,65.0269 570.6604,65.2466 L570.6604,67.2485 Q570.1965,66.8213 569.7601,66.6229 Q569.3237,66.4246 568.8599,66.4246 Q567.8711,66.4246 567.3676,67.2089 Q566.864,67.9932 566.864,69.5374 Q566.864,71.0754 567.3676,71.8597 Q567.8711,72.644 568.8599,72.644 Q569.3237,72.644 569.7601,72.4457 Q570.1965,72.2473 570.6604,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="585.4167" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="555.2083" x2="761.4583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="555.2083" x2="761.4583" y1="93.4245" y2="93.4245"/><!--MD5=[d175d1276e97d2c698e1b419ec82cc24]
+class HelloBrowserApplication--><rect codeLine="22" fill="#282828" height="48.055" id="HelloBrowserApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="559.8958" y="183.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="559.8958" y="183.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="559.8958" y="206.9661"/><rect codeLine="22" fill="none" height="48.055" id="HelloBrowserApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="559.8958" y="183.9111"/><ellipse cx="574.4792" cy="199.6053" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M576.3896,204.0304 Q575.9623,204.2501 575.4924,204.3599 Q575.0224,204.4698 574.5036,204.4698 Q572.6603,204.4698 571.6899,203.2552 Q570.7194,202.0406 570.7194,199.7457 Q570.7194,197.4447 571.6899,196.2301 Q572.6603,195.0155 574.5036,195.0155 Q575.0224,195.0155 575.4985,195.1253 Q575.9745,195.2352 576.3896,195.4549 L576.3896,197.4569 Q575.9257,197.0296 575.4893,196.8313 Q575.0529,196.6329 574.589,196.6329 Q573.6003,196.6329 573.0967,197.4172 Q572.5932,198.2015 572.5932,199.7457 Q572.5932,201.2838 573.0967,202.0681 Q573.6003,202.8524 574.589,202.8524 Q575.0529,202.8524 575.4893,202.654 Q575.9257,202.4556 576.3896,202.0284 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="591.1458" y="204.3294">HelloBrowserApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="560.9375" x2="755.7292" y1="215.2995" y2="215.2995"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="560.9375" x2="755.7292" y1="223.6328" y2="223.6328"/><!--MD5=[30dcdc66375178117139c6b64d482fd9]
+reverse link WicketExamplePage to AjaxHelloBrowser--><path codeLine="6" d="M89.5833,122.984 C89.5833,137.0049 89.5833,152.4215 89.5833,166.1715 " fill="none" id="WicketExamplePage-backto-AjaxHelloBrowser" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="82.2917,122.734,89.5833,101.9007,96.875,122.734,82.2917,122.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5e0f0126e05262f0225aa1f0e863670b]
+reverse link ClientProperties to ExtendedClientProperties--><path codeLine="13" d="M362.5,123.2236 C362.5,136.484 362.5,150.9736 362.5,164.109 " fill="none" id="ClientProperties-backto-ExtendedClientProperties" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="355.2083,122.734,362.5,101.9007,369.7917,122.734,355.2083,122.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[186f71cb7cd007d7b27ac2c44b749ae5]
+reverse link WicketExampleApplication to HelloBrowserApplication--><path codeLine="21" d="M658.3333,122.8799 C658.3333,143.3695 658.3333,166.8799 658.3333,183.7965 " fill="none" id="WicketExampleApplication-backto-HelloBrowserApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="651.0417,122.734,658.3333,101.9007,665.625,122.734,651.0417,122.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8e4f3e07733ed096661632e35e0ea721]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.ajaxhellobrowser"
+    
+    WicketExamplePage <|- - AjaxHelloBrowser
+    class AjaxHelloBrowser
+    {
+        - -(constructors)- -
+        +AjaxHelloBrowser()
+    }
+    
+    ClientProperties <|- - ExtendedClientProperties
+    class ExtendedClientProperties
+    {
+        - -
+        +String getExtendedProperty()
+        +void setExtendedProperty(String extendedProperty)
+    }
+    
+    WicketExampleApplication <|- - HelloBrowserApplication
+    class HelloBrowserApplication
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.ajaxhellobrowser"
+    
+    WicketExamplePage <|- - AjaxHelloBrowser
+    class AjaxHelloBrowser
+    {
+        - -(constructors)- -
+        +AjaxHelloBrowser()
+    }
+    
+    ClientProperties <|- - ExtendedClientProperties
+    class ExtendedClientProperties
+    {
+        - -
+        +String getExtendedProperty()
+        +void setExtendedProperty(String extendedProperty)
+    }
+    
+    WicketExampleApplication <|- - HelloBrowserApplication
+    class HelloBrowserApplication
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

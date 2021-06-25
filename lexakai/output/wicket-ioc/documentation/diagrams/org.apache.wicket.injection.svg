@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="416.6667px" preserveAspectRatio="none" style="width:807px;height:416px;background:#333333;" version="1.1" viewBox="0 0 807 416" width="807.2917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="294.7917" x="249.2188" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="271.875" x="260.6771" y="30.5583">org.apache.wicket.injection</text><!--MD5=[12726614715adeed2a97f79df58791d3]
+class IFieldValueFactory--><rect codeLine="19" fill="#282828" height="87.5448" id="IFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="286.4583" x="235.4167" y="73.4945"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="286.4583" x="235.4167" y="73.4945"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="286.4583" x="235.4167" y="96.5495"/><rect codeLine="19" fill="none" height="87.5448" id="IFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="286.4583" x="235.4167" y="73.4945"/><ellipse cx="312.5" cy="89.1886" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M309.904,86.3505 L309.904,84.7636 L315.33,84.7636 L315.33,86.3505 L313.5173,86.3505 L313.5173,92.2892 L315.33,92.2892 L315.33,93.8761 L309.904,93.8761 L309.904,92.2892 L311.7167,92.2892 L311.7167,86.3505 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="335.4167" y="93.9128">IFieldValueFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="236.4583" x2="520.8333" y1="104.8828" y2="104.8828"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="236.4583" x2="520.8333" y1="113.2161" y2="113.2161"/><ellipse cx="246.875" cy="124.6745" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="254.1667" x="258.3333" y="131.5857">Object getFieldValue(Field, Object fieldOwner)</text><ellipse cx="246.875" cy="144.4194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="258.3333" y="151.3306">boolean supportsField(Field)</text><!--MD5=[7bf0162c05c036ec5c643c5774e1452a]
+class CompoundFieldValueFactory--><rect codeLine="9" fill="#282828" height="166.5243" id="CompoundFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="409.375" x="7.2917" y="243.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="409.375" x="7.2917" y="243.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="409.375" x="7.2917" y="266.3411"/><rect codeLine="9" fill="none" height="166.5243" id="CompoundFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="409.375" x="7.2917" y="243.2861"/><ellipse cx="111.9792" cy="258.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M113.8896,263.4054 Q113.4623,263.6251 112.9924,263.7349 Q112.5224,263.8448 112.0036,263.8448 Q110.1603,263.8448 109.1899,262.6302 Q108.2194,261.4156 108.2194,259.1207 Q108.2194,256.8197 109.1899,255.6051 Q110.1603,254.3905 112.0036,254.3905 Q112.5224,254.3905 112.9985,254.5003 Q113.4745,254.6102 113.8896,254.8299 L113.8896,256.8319 Q113.4257,256.4046 112.9893,256.2063 Q112.5529,256.0079 112.089,256.0079 Q111.1003,256.0079 110.5967,256.7922 Q110.0932,257.5765 110.0932,259.1207 Q110.0932,260.6588 110.5967,261.4431 Q111.1003,262.2274 112.089,262.2274 Q112.5529,262.2274 112.9893,262.029 Q113.4257,261.8306 113.8896,261.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="185.4167" x="134.8958" y="263.7044">CompoundFieldValueFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="415.625" y1="274.6745" y2="274.6745"/><ellipse cx="18.75" cy="310.0444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="377.0833" x="30.2083" y="316.9556">CompoundFieldValueFactory(IFieldValueFactory, IFieldValueFactory)</text><ellipse cx="18.75" cy="329.7892" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="278.125" x="30.2083" y="336.7004">CompoundFieldValueFactory(IFieldValueFactory[])</text><ellipse cx="18.75" cy="349.5341" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="308.3333" x="30.2083" y="356.4453">CompoundFieldValueFactory(List&lt;IFieldValueFactory&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="168.2292" y1="292.8802" y2="292.8802"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="171.3542" y="296.6899">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="255.7292" x2="415.625" y1="292.8802" y2="292.8802"/><ellipse cx="18.75" cy="393.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="30.2083" y="400.1017">void addFactory(IFieldValueFactory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="177.6042" y1="376.0264" y2="376.0264"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="180.7292" y="379.836">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="246.3542" x2="415.625" y1="376.0264" y2="376.0264"/><!--MD5=[0b751655c2c1ffbfbd2272aa0ecbc96a]
+class Injector--><rect codeLine="26" fill="#282828" height="127.0345" id="Injector" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="241.6667" x="558.8542" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="241.6667" x="558.8542" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="241.6667" x="558.8542" y="76.7578"/><rect codeLine="26" fill="none" height="127.0345" id="Injector" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="241.6667" x="558.8542" y="53.7028"/><ellipse cx="647.9167" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M647.5098,66.099 L646.6614,69.8283 L648.3643,69.8283 Z M646.4111,64.4511 L648.6145,64.4511 L651.0742,73.5636 L649.2737,73.5636 L648.7122,71.3114 L646.3013,71.3114 L645.752,73.5636 L643.9514,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="48.9583" x="670.8333" y="74.1211">Injector</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="559.8958" x2="799.4792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="559.8958" x2="799.4792" y1="93.4245" y2="93.4245"/><ellipse cx="570.3125" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="581.7708" y="111.794">void bind(Application)</text><ellipse cx="570.3125" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="581.7708" y="131.5389">Injector get()</text><ellipse cx="570.3125" cy="144.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="581.7708" y="151.2838">void inject(Object)</text><polygon fill="#FFFF44" points="570.3125,158.9091,574.4792,163.0758,570.3125,167.2424,566.1458,163.0758" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="581.7708" y="171.0286">void inject(Object, IFieldValueFactory)</text><!--MD5=[de55e67d8984b043407b44d2830cdacc]
+class NoopFieldValueFactory--><rect codeLine="36" fill="#282828" height="48.055" id="NoopFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="185.4167" x="453.6458" y="302.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="185.4167" x="453.6458" y="302.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="185.4167" x="453.6458" y="325.7161"/><rect codeLine="36" fill="none" height="48.055" id="NoopFieldValueFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="185.4167" x="453.6458" y="302.6611"/><ellipse cx="468.2292" cy="318.3553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M470.1396,322.7804 Q469.7123,323.0001 469.2424,323.1099 Q468.7724,323.2198 468.2536,323.2198 Q466.4103,323.2198 465.4399,322.0052 Q464.4694,320.7906 464.4694,318.4957 Q464.4694,316.1947 465.4399,314.9801 Q466.4103,313.7655 468.2536,313.7655 Q468.7724,313.7655 469.2485,313.8753 Q469.7245,313.9852 470.1396,314.2049 L470.1396,316.2069 Q469.6757,315.7796 469.2393,315.5813 Q468.8029,315.3829 468.339,315.3829 Q467.3503,315.3829 466.8467,316.1672 Q466.3432,316.9515 466.3432,318.4957 Q466.3432,320.0338 466.8467,320.8181 Q467.3503,321.6024 468.339,321.6024 Q468.8029,321.6024 469.2393,321.404 Q469.6757,321.2056 470.1396,320.7784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="484.8958" y="323.0794">NoopFieldValueFactory</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="454.6875" x2="638.0208" y1="334.0495" y2="334.0495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="454.6875" x2="638.0208" y1="342.3828" y2="342.3828"/><!--MD5=[ff72c63c78bbbeeecfa56f5988dc534a]
+reverse link IFieldValueFactory to CompoundFieldValueFactory--><path codeLine="8" d="M330.9896,177.5674 C314.6354,197.8903 296.0313,221.0361 278.4688,242.8799 " fill="none" id="IFieldValueFactory-backto-CompoundFieldValueFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="325.375,172.9007,344.1146,161.234,336.7396,182.0465,325.375,172.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[25fb267b963bbad3fc3c7b376895cbf1]
+reverse link IFieldValueFactory to NoopFieldValueFactory--><path codeLine="35" d="M426.6979,177.682 C460.3854,219.3174 503.5417,272.6611 527.75,302.5778 " fill="none" id="IFieldValueFactory-backto-NoopFieldValueFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="420.8333,182.0153,413.3958,161.234,432.1667,172.8486,420.8333,182.0153" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[28a2976880dd75cd2b943c28cd7a2e4a]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.injection"
+    
+    interface IFieldValueFactory
+    
+    IFieldValueFactory <|- - CompoundFieldValueFactory
+    class CompoundFieldValueFactory
+    {
+        - -(constructors)- -
+        +CompoundFieldValueFactory(IFieldValueFactory, IFieldValueFactory)
+        +CompoundFieldValueFactory(IFieldValueFactory[])
+        +CompoundFieldValueFactory(List<IFieldValueFactory>)
+        - -(collection)- -
+        +void addFactory(IFieldValueFactory)
+    }
+    
+    interface IFieldValueFactory
+    {
+        - -
+        +Object getFieldValue(Field, Object fieldOwner)
+        +boolean supportsField(Field)
+    }
+    
+    abstract class Injector
+    {
+        - -
+        +void bind(Application)
+        +Injector get()
+        +void inject(Object)
+        #void inject(Object, IFieldValueFactory)
+    }
+    
+    IFieldValueFactory <|- - NoopFieldValueFactory
+    class NoopFieldValueFactory
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.injection"
+    
+    interface IFieldValueFactory
+    
+    IFieldValueFactory <|- - CompoundFieldValueFactory
+    class CompoundFieldValueFactory
+    {
+        - -(constructors)- -
+        +CompoundFieldValueFactory(IFieldValueFactory, IFieldValueFactory)
+        +CompoundFieldValueFactory(IFieldValueFactory[])
+        +CompoundFieldValueFactory(List<IFieldValueFactory>)
+        - -(collection)- -
+        +void addFactory(IFieldValueFactory)
+    }
+    
+    interface IFieldValueFactory
+    {
+        - -
+        +Object getFieldValue(Field, Object fieldOwner)
+        +boolean supportsField(Field)
+    }
+    
+    abstract class Injector
+    {
+        - -
+        +void bind(Application)
+        +Injector get()
+        +void inject(Object)
+        #void inject(Object, IFieldValueFactory)
+    }
+    
+    IFieldValueFactory <|- - NoopFieldValueFactory
+    class NoopFieldValueFactory
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

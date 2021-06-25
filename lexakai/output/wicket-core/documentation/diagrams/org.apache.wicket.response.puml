@@ -1,0 +1,34 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.response"
+    
+    Response <|-- ByteArrayResponse
+    class ByteArrayResponse
+    {
+        --(constructors)--
+        +ByteArrayResponse()
+        +ByteArrayResponse(Response)
+        --(primitive)--
+        +byte[] getBytes()
+    }
+    
+    Response <|-- NullResponse
+    class NullResponse
+    {
+        --
+        +NullResponse getInstance()
+    }
+    
+    Response <|-- StringResponse
+    class StringResponse
+    {
+        --(constructors)--
+        +StringResponse()
+        --(primitive)--
+        +CharSequence getBuffer()
+    }
+    
+@enduml
+

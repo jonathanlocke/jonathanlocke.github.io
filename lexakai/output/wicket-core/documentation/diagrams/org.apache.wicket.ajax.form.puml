@@ -1,0 +1,98 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.form"
+    
+    interface IVisitor
+    interface IClusterable
+    interface IFormSubmitter
+    
+    AjaxFormComponentUpdatingBehavior <|-- AjaxFormChoiceComponentUpdatingBehavior
+    abstract class AjaxFormChoiceComponentUpdatingBehavior
+    {
+        --(constructors)--
+        +AjaxFormChoiceComponentUpdatingBehavior()
+        --(extension points)--
+        +AjaxFormChoiceComponentUpdatingBehavior onUpdateChoice(SerializableConsumer<AjaxRequestTarget> onUpdateChoice)
+    }
+    
+    AjaxEventBehavior <|-- AjaxFormComponentUpdatingBehavior
+    abstract class AjaxFormComponentUpdatingBehavior
+    {
+        --(constructors)--
+        +AjaxFormComponentUpdatingBehavior(String)
+        --
+        #void checkComponent(FormComponent<?>)
+        #boolean disableFocusOnBlur()
+        #FormComponent<?> getFormComponent()
+        #boolean getUpdateModel()
+        #void onUpdate(AjaxRequestTarget)
+        --(extension points)--
+        +AjaxFormComponentUpdatingBehavior onUpdate(String eventName, SerializableConsumer<AjaxRequestTarget> onUpdate)
+        --(status)--
+        #void onError(AjaxRequestTarget, RuntimeException)
+    }
+    
+    AjaxEventBehavior <|-- AjaxFormSubmitBehavior
+    abstract class AjaxFormSubmitBehavior
+    {
+        --(constructors)--
+        +AjaxFormSubmitBehavior(Form<?>, String)
+        +AjaxFormSubmitBehavior(String)
+        --
+        +boolean getDefaultProcessing()
+        +Form<?> getForm()
+        +void setDefaultProcessing(boolean defaultProcessing)
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        --(extension points)--
+        +AjaxFormSubmitBehavior onSubmit(String eventName, SerializableConsumer<AjaxRequestTarget> onSubmit)
+        --(messaging)--
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        --(search)--
+        #Form<?> findForm()
+        --(status)--
+        #void onError(AjaxRequestTarget)
+    }
+    
+    IFormSubmitter <|-- AjaxFormSubmitBehavior.AjaxFormSubmitter
+    class AjaxFormSubmitBehavior.AjaxFormSubmitter
+    {
+        --
+        +IFormSubmittingComponent getFormSubmittingComponent()
+    }
+    
+    Behavior <|-- AjaxFormValidatingBehavior
+    class AjaxFormValidatingBehavior
+    {
+        --(constructors)--
+        +AjaxFormValidatingBehavior(String)
+        +AjaxFormValidatingBehavior(String, Duration)
+        --
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(collection)--
+        #void addFeedbackPanels(AjaxRequestTarget)
+        --(status)--
+        #void onError(AjaxRequestTarget)
+    }
+    
+    IVisitor <|-- AjaxFormValidatingBehavior.FormValidateVisitor
+    IClusterable <|-- AjaxFormValidatingBehavior.FormValidateVisitor
+    class AjaxFormValidatingBehavior.FormValidateVisitor
+    {
+    }
+    
+    AjaxFormComponentUpdatingBehavior <|-- OnChangeAjaxBehavior
+    abstract class OnChangeAjaxBehavior
+    {
+        --(constructors)--
+        +OnChangeAjaxBehavior()
+        --(extension points)--
+        +OnChangeAjaxBehavior onChange(SerializableConsumer<AjaxRequestTarget> onChange)
+    }
+    
+@enduml
+

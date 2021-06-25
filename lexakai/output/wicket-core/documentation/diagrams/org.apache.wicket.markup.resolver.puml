@@ -1,0 +1,157 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.resolver"
+    
+    abstract AbstractAutolinkResolverDelegate
+    
+    interface IVisitor
+    interface ITagReferenceResolver
+    interface IAutolinkResolverDelegate
+    interface IComponentResolver
+    
+    AutoLinkResolver.IAutolinkResolverDelegate <|-- AutoLinkResolver.AbstractAutolinkResolverDelegate
+    abstract class AutoLinkResolver.AbstractAutolinkResolverDelegate
+    {
+        --(factory)--
+        #Component newPackageResourceReferenceAutoComponent(String autoId, PathInfo, String attribute)
+    }
+    
+    AutoLinkResolver.AbstractAutolinkResolverDelegate <|-- AutoLinkResolver.AnchorResolverDelegate
+    class AutoLinkResolver.AnchorResolverDelegate
+    {
+        --(constructors)--
+        +AnchorResolverDelegate()
+    }
+    
+    IComponentResolver <|-- AutoLinkResolver
+    class AutoLinkResolver
+    {
+        --(constructors)--
+        +AutoLinkResolver()
+        --
+        +IAutolinkResolverDelegate getAutolinkResolverDelegate(String tagName)
+        --(collection)--
+        +void addTagReferenceResolver(String tagName, String attributeName, IAutolinkResolverDelegate)
+    }
+    
+    BookmarkablePageLink <|-- AutoLinkResolver.AutolinkBookmarkablePageLink
+    IComponentResolver <|-- AutoLinkResolver.AutolinkBookmarkablePageLink
+    class AutoLinkResolver.AutolinkBookmarkablePageLink<T>
+    {
+        --(constructors)--
+        +AutolinkBookmarkablePageLink(String, Class<C>, PageParameters, String)
+    }
+    
+    class ComponentResolvers
+    {
+        --
+        +Component resolve(MarkupContainer, MarkupStream, ComponentTag, ResolverFilter)
+        +Component resolveByApplication(MarkupContainer, MarkupStream, ComponentTag, ResolverFilter)
+        +Component resolveByComponentHierarchy(MarkupContainer, MarkupStream, ComponentTag)
+    }
+    
+    IVisitor <|-- HtmlHeaderResolver.FindWicketHeadContainer
+    class HtmlHeaderResolver.FindWicketHeadContainer
+    {
+    }
+    
+    IComponentResolver <|-- HtmlHeaderResolver
+    class HtmlHeaderResolver
+    {
+        --(factory)--
+        #HtmlHeaderContainer newHtmlHeaderContainer(String id, ComponentTag)
+    }
+    
+    interface AutoLinkResolver.IAutolinkResolverDelegate
+    {
+        --(factory)--
+        +Component newAutoComponent(String autoId, PathInfo)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IComponentResolver
+    interface IComponentResolver
+    {
+        --
+        +Component resolve(MarkupContainer, MarkupStream, ComponentTag)
+    }
+    
+    interface AutoLinkResolver.ITagReferenceResolver
+    {
+        --
+        +String getReference(ComponentTag)
+    }
+    
+    MarkupContainer <|-- WicketMessageResolver.MessageContainer
+    IComponentResolver <|-- WicketMessageResolver.MessageContainer
+    class WicketMessageResolver.MessageContainer
+    {
+    }
+    
+    class AutoLinkResolver.PathInfo
+    {
+        --(constructors)--
+        +PathInfo(String, MarkupContainer, MarkupStream)
+        --
+        +String getAnchor()
+        +MarkupContainer getContainer()
+        +MarkupStream getMarkupStream()
+        +PageParameters getPageParameters()
+        +String getReference()
+        --(checks)--
+        +boolean isAbsolute()
+        --(filesystem)--
+        +String getExtension()
+        --(path)--
+        +String getPath()
+    }
+    
+    interface ComponentResolvers.ResolverFilter
+    {
+        --
+        +boolean ignoreResolver(IComponentResolver)
+    }
+    
+    WebMarkupContainer <|-- AutoLinkResolver.ResourceReferenceAutolink
+    IComponentResolver <|-- AutoLinkResolver.ResourceReferenceAutolink
+    class AutoLinkResolver.ResourceReferenceAutolink
+    {
+        --(constructors)--
+        +ResourceReferenceAutolink(String, Class<?>, String, String, MarkupContainer)
+    }
+    
+    AutoLinkResolver.AbstractAutolinkResolverDelegate <|-- AutoLinkResolver.ResourceReferenceResolverDelegate
+    class AutoLinkResolver.ResourceReferenceResolverDelegate
+    {
+        --(constructors)--
+        +ResourceReferenceResolverDelegate(String)
+    }
+    
+    AutoLinkResolver.ITagReferenceResolver <|-- AutoLinkResolver.TagReferenceResolver
+    class AutoLinkResolver.TagReferenceResolver
+    {
+        --(constructors)--
+        +TagReferenceResolver(String)
+    }
+    
+    IComponentResolver <|-- WicketContainerResolver
+    class WicketContainerResolver
+    {
+    }
+    
+    WebMarkupContainer <|-- HtmlHeaderResolver.WicketHeadContainer
+    class HtmlHeaderResolver.WicketHeadContainer
+    {
+        --(constructors)--
+        +WicketHeadContainer()
+    }
+    
+    IComponentResolver <|-- WicketMessageResolver
+    class WicketMessageResolver
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="456.25px" preserveAspectRatio="none" style="width:1046px;height:456px;background:#333333;" version="1.1" viewBox="0 0 1046 456" width="1046.875px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="516.6667" x="258.0729" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="493.75" x="269.5313" y="30.5583">org.apache.wicket.examples.spring.common.web</text><!--MD5=[8389d11c23920d0ab7b28af5b7904b5d]
+class BasePage--><rect codeLine="9" fill="#282828" height="83.3781" id="BasePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="97.9167" x="191.1458" y="178.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="97.9167" x="191.1458" y="178.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="97.9167" x="191.1458" y="201.237"/><rect codeLine="9" fill="none" height="83.3781" id="BasePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="97.9167" x="191.1458" y="178.182"/><ellipse cx="205.7292" cy="193.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M207.6396,198.3012 Q207.2123,198.5209 206.7424,198.6308 Q206.2724,198.7406 205.7536,198.7406 Q203.9103,198.7406 202.9399,197.526 Q201.9694,196.3114 201.9694,194.0165 Q201.9694,191.7155 202.9399,190.5009 Q203.9103,189.2863 205.7536,189.2863 Q206.2724,189.2863 206.7485,189.3962 Q207.2245,189.506 207.6396,189.7257 L207.6396,191.7277 Q207.1757,191.3005 206.7393,191.1021 Q206.3029,190.9037 205.839,190.9037 Q204.8503,190.9037 204.3467,191.688 Q203.8432,192.4723 203.8432,194.0165 Q203.8432,195.5546 204.3467,196.3389 Q204.8503,197.1232 205.839,197.1232 Q206.3029,197.1232 206.7393,196.9248 Q207.1757,196.7265 207.6396,196.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="60.4167" x="222.3958" y="198.6003">BasePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="192.1875" x2="288.0208" y1="209.5703" y2="209.5703"/><ellipse cx="202.6042" cy="244.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="59.375" x="214.0625" y="251.8514">BasePage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="192.1875" x2="196.3542" y1="227.7761" y2="227.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="199.4792" y="231.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="283.8542" x2="288.0208" y1="227.7761" y2="227.7761"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="157.8125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="157.8125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="157.8125" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="157.8125" y="53.7028"/><ellipse cx="172.3958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M174.3062,73.822 Q173.879,74.0417 173.409,74.1516 Q172.939,74.2615 172.4202,74.2615 Q170.577,74.2615 169.6065,73.0469 Q168.6361,71.8323 168.6361,69.5374 Q168.6361,67.2363 169.6065,66.0217 Q170.577,64.8071 172.4202,64.8071 Q172.939,64.8071 173.4151,64.917 Q173.8912,65.0269 174.3062,65.2466 L174.3062,67.2485 Q173.8424,66.8213 173.406,66.6229 Q172.9696,66.4246 172.5057,66.4246 Q171.5169,66.4246 171.0134,67.2089 Q170.5098,67.9932 170.5098,69.5374 Q170.5098,71.0754 171.0134,71.8597 Q171.5169,72.644 172.5057,72.644 Q172.9696,72.644 173.406,72.4457 Q173.8424,72.2473 174.3062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="189.0625" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="158.8542" x2="321.3542" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="158.8542" x2="321.3542" y1="93.4245" y2="93.4245"/><!--MD5=[99d4dce5ceb66cd06eaae208e7a97d5b]
+class SortableDataProvider--><rect fill="#282828" height="48.055" id="SortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="359.375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="359.375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="359.375" y="76.7578"/><rect fill="none" height="48.055" id="SortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="359.375" y="53.7028"/><ellipse cx="373.9583" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M375.8687,73.822 Q375.4415,74.0417 374.9715,74.1516 Q374.5015,74.2615 373.9827,74.2615 Q372.1395,74.2615 371.169,73.0469 Q370.1986,71.8323 370.1986,69.5374 Q370.1986,67.2363 371.169,66.0217 Q372.1395,64.8071 373.9827,64.8071 Q374.5015,64.8071 374.9776,64.917 Q375.4537,65.0269 375.8687,65.2466 L375.8687,67.2485 Q375.4049,66.8213 374.9685,66.6229 Q374.5321,66.4246 374.0682,66.4246 Q373.0794,66.4246 372.5759,67.2089 Q372.0723,67.9932 372.0723,69.5374 Q372.0723,71.0754 372.5759,71.8597 Q373.0794,72.644 374.0682,72.644 Q374.5321,72.644 374.9685,72.4457 Q375.4049,72.2473 375.8687,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="390.625" y="74.1211">SortableDataProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="360.4167" x2="532.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="360.4167" x2="532.2917" y1="93.4245" y2="93.4245"/><!--MD5=[9ee654b249f70a188c9760d3d2035225]
+class ContactDataProvider--><rect codeLine="16" fill="#282828" height="111.4563" id="ContactDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="192.7083" x="350" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="192.7083" x="350" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="192.7083" x="350" y="187.1745"/><rect codeLine="16" fill="none" height="111.4563" id="ContactDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="192.7083" x="350" y="164.1195"/><ellipse cx="374.4271" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M374.0202,176.5157 L373.1718,180.245 L374.8747,180.245 Z M372.9215,174.8678 L375.1249,174.8678 L377.5846,183.9803 L375.7841,183.9803 L375.2226,181.7281 L372.8117,181.7281 L372.2624,183.9803 L370.4618,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="133.3333" x="393.2813" y="184.5378">ContactDataProvider</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="351.0417" x2="541.6667" y1="195.5078" y2="195.5078"/><ellipse cx="361.4583" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="372.9167" y="237.7889">ContactDataProvider()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="402.6042" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="405.7292" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="490.1042" x2="541.6667" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="541.6667" y1="247.4976" y2="247.4976"/><polygon fill="#FFFF44" points="361.4583,253.7476,365.625,257.9142,361.4583,262.0809,357.2917,257.9142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="372.9167" y="265.8671">ContactDao getContactDao()</text><!--MD5=[af80e25d1d74a9b89426ee81519c936e]
+class LoadableDetachableModel--><rect fill="#282828" height="48.055" id="LoadableDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="587.5" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="587.5" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="587.5" y="76.7578"/><rect fill="none" height="48.055" id="LoadableDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="587.5" y="53.7028"/><ellipse cx="602.0833" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M603.9937,73.822 Q603.5665,74.0417 603.0965,74.1516 Q602.6265,74.2615 602.1077,74.2615 Q600.2645,74.2615 599.294,73.0469 Q598.3236,71.8323 598.3236,69.5374 Q598.3236,67.2363 599.294,66.0217 Q600.2645,64.8071 602.1077,64.8071 Q602.6265,64.8071 603.1026,64.917 Q603.5787,65.0269 603.9937,65.2466 L603.9937,67.2485 Q603.5299,66.8213 603.0935,66.6229 Q602.6571,66.4246 602.1932,66.4246 Q601.2044,66.4246 600.7009,67.2089 Q600.1973,67.9932 600.1973,69.5374 Q600.1973,71.0754 600.7009,71.8597 Q601.2044,72.644 602.1932,72.644 Q602.6571,72.644 603.0935,72.4457 Q603.5299,72.2473 603.9937,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="169.7917" x="618.75" y="74.1211">LoadableDetachableModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="588.5417" x2="793.75" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="588.5417" x2="793.75" y1="93.4245" y2="93.4245"/><!--MD5=[3f5b0edcc40abf00216aee710911d75f]
+class ContactDetachableModel--><rect codeLine="25" fill="#282828" height="111.4563" id="ContactDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="222.9167" x="579.6875" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="222.9167" x="579.6875" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="222.9167" x="579.6875" y="187.1745"/><rect codeLine="25" fill="none" height="111.4563" id="ContactDetachableModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="222.9167" x="579.6875" y="164.1195"/><ellipse cx="605.0521" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M604.6452,176.5157 L603.7968,180.245 L605.4997,180.245 Z M603.5465,174.8678 L605.7499,174.8678 L608.2096,183.9803 L606.4091,183.9803 L605.8476,181.7281 L603.4367,181.7281 L602.8874,183.9803 L601.0868,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="624.1146" y="184.5378">ContactDetachableModel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="580.7292" x2="801.5625" y1="195.5078" y2="195.5078"/><ellipse cx="591.1458" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="602.6042" y="237.7889">ContactDetachableModel(Contact)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="580.7292" x2="647.3958" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="650.5208" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="734.8958" x2="801.5625" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="580.7292" x2="801.5625" y1="247.4976" y2="247.4976"/><polygon fill="#FFFF44" points="591.1458,253.7476,595.3125,257.9142,591.1458,262.0809,586.9792,257.9142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="602.6042" y="265.8671">ContactDao getContactDao()</text><!--MD5=[816da445f1ea0e331b18ac201f1572bd]
+class ContactsDisplayPage--><rect codeLine="34" fill="#282828" height="111.4563" id="ContactsDisplayPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="248.9583" x="9.375" y="338.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="248.9583" x="9.375" y="338.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="248.9583" x="9.375" y="361.1328"/><rect codeLine="34" fill="none" height="111.4563" id="ContactsDisplayPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="248.9583" x="9.375" y="338.0778"/><ellipse cx="58.3333" cy="353.772" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M57.9264,350.474 L57.078,354.2033 L58.7809,354.2033 Z M56.8278,348.8261 L59.0312,348.8261 L61.4909,357.9386 L59.6903,357.9386 L59.1288,355.6864 L56.7179,355.6864 L56.1686,357.9386 L54.3681,357.9386 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="81.25" y="358.4961">ContactsDisplayPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="257.2917" y1="369.4661" y2="369.4661"/><ellipse cx="20.8333" cy="404.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="32.2917" y="411.7472">ContactsDisplayPage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="90.1042" y1="387.6719" y2="387.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="93.2292" y="391.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="177.6042" x2="257.2917" y1="387.6719" y2="387.6719"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="257.2917" y1="421.4559" y2="421.4559"/><polygon fill="#FFFF44" points="20.8333,427.7059,25,431.8726,20.8333,436.0392,16.6667,431.8726" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="216.6667" x="32.2917" y="439.8254">ContactDataProvider getDataProvider()</text><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="831.7708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="831.7708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="831.7708" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="831.7708" y="53.7028"/><ellipse cx="846.3542" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M848.2646,73.822 Q847.8373,74.0417 847.3674,74.1516 Q846.8974,74.2615 846.3786,74.2615 Q844.5353,74.2615 843.5649,73.0469 Q842.5944,71.8323 842.5944,69.5374 Q842.5944,67.2363 843.5649,66.0217 Q844.5353,64.8071 846.3786,64.8071 Q846.8974,64.8071 847.3735,64.917 Q847.8495,65.0269 848.2646,65.2466 L848.2646,67.2485 Q847.8007,66.8213 847.3643,66.6229 Q846.9279,66.4246 846.464,66.4246 Q845.4753,66.4246 844.9717,67.2089 Q844.4682,67.9932 844.4682,69.5374 Q844.4682,71.0754 844.9717,71.8597 Q845.4753,72.644 846.464,72.644 Q846.9279,72.644 847.3643,72.4457 Q847.8007,72.2473 848.2646,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="863.0208" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="832.8125" x2="1039.0625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="832.8125" x2="1039.0625" y1="93.4245" y2="93.4245"/><!--MD5=[de04aaf61143136bceea66cd7fd412d3]
+class ExampleApplication--><rect codeLine="43" fill="#282828" height="48.055" id="ExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="165.625" x="853.125" y="195.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="165.625" x="853.125" y="195.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="165.625" x="853.125" y="218.9453"/><rect codeLine="43" fill="none" height="48.055" id="ExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="165.625" x="853.125" y="195.8903"/><ellipse cx="867.7083" cy="211.5845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M869.6187,216.0095 Q869.1915,216.2292 868.7215,216.3391 Q868.2515,216.449 867.7327,216.449 Q865.8895,216.449 864.919,215.2344 Q863.9486,214.0198 863.9486,211.7249 Q863.9486,209.4238 864.919,208.2092 Q865.8895,206.9946 867.7327,206.9946 Q868.2515,206.9946 868.7276,207.1045 Q869.2037,207.2144 869.6187,207.4341 L869.6187,209.436 Q869.1549,209.0088 868.7185,208.8104 Q868.2821,208.6121 867.8182,208.6121 Q866.8294,208.6121 866.3259,209.3964 Q865.8223,210.1807 865.8223,211.7249 Q865.8223,213.2629 866.3259,214.0472 Q866.8294,214.8315 867.8182,214.8315 Q868.2821,214.8315 868.7185,214.6332 Q869.1549,214.4348 869.6187,214.0076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="128.125" x="884.375" y="216.3086">ExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="854.1667" x2="1017.7083" y1="227.2786" y2="227.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="854.1667" x2="1017.7083" y1="235.612" y2="235.612"/><!--MD5=[5aff5c50255f67a7089db77a52aaa125]
+class HomePage--><rect codeLine="48" fill="#282828" height="83.3781" id="HomePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="294.7917" y="352.1403"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="294.7917" y="352.1403"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="294.7917" y="375.1953"/><rect codeLine="48" fill="none" height="83.3781" id="HomePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="294.7917" y="352.1403"/><ellipse cx="309.375" cy="367.8345" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M311.2854,372.2595 Q310.8582,372.4792 310.3882,372.5891 Q309.9182,372.699 309.3994,372.699 Q307.5562,372.699 306.5857,371.4844 Q305.6152,370.2698 305.6152,367.9749 Q305.6152,365.6738 306.5857,364.4592 Q307.5562,363.2446 309.3994,363.2446 Q309.9182,363.2446 310.3943,363.3545 Q310.8704,363.4644 311.2854,363.6841 L311.2854,365.686 Q310.8215,365.2588 310.3851,365.0604 Q309.9487,364.8621 309.4849,364.8621 Q308.4961,364.8621 307.9926,365.6464 Q307.489,366.4307 307.489,367.9749 Q307.489,369.5129 307.9926,370.2972 Q308.4961,371.0815 309.4849,371.0815 Q309.9487,371.0815 310.3851,370.8832 Q310.8215,370.6848 311.2854,370.2576 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="67.7083" x="326.0417" y="372.5586">HomePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="295.8333" x2="398.9583" y1="383.5286" y2="383.5286"/><ellipse cx="306.25" cy="418.8985" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="66.6667" x="317.7083" y="425.8097">HomePage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="295.8333" x2="303.6458" y1="401.7344" y2="401.7344"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="306.7708" y="405.544">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="391.1458" x2="398.9583" y1="401.7344" y2="401.7344"/><!--MD5=[2ff6515e7481edfef2a1531fcf5e5c2e]
+reverse link WicketExamplePage to BasePage--><path codeLine="8" d="M240.1042,122.7965 C240.1042,140.4736 240.1042,160.734 240.1042,178.0674 " fill="none" id="WicketExamplePage-backto-BasePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="232.8125,122.6715,240.1042,101.8382,247.3958,122.6715,232.8125,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1ff9d916d78e0707c8c52237b7476f02]
+reverse link SortableDataProvider to ContactDataProvider--><path codeLine="15" d="M446.3542,122.7028 C446.3542,135.7549 446.3542,150.2028 446.3542,163.859 " fill="none" id="SortableDataProvider-backto-ContactDataProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="439.0625,122.6715,446.3542,101.8382,453.6458,122.6715,439.0625,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[6b5f39352c8782be7e1628ba8c0a46c5]
+reverse link LoadableDetachableModel to ContactDetachableModel--><path codeLine="24" d="M691.1458,122.7028 C691.1458,135.7549 691.1458,150.2028 691.1458,163.859 " fill="none" id="LoadableDetachableModel-backto-ContactDetachableModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="683.8542,122.6715,691.1458,101.8382,698.4375,122.6715,683.8542,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[49627cb263e62b67a5cd17c5e7f810ef]
+reverse link BasePage to ContactsDisplayPage--><path codeLine="33" d="M203.9271,279.4111 C192.1979,298.3799 179.25,319.3382 167.6979,338.0153 " fill="none" id="BasePage-backto-ContactsDisplayPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="197.7708,275.5049,214.9271,261.6195,210.1771,283.182,197.7708,275.5049" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5f0cbb16ec231cc0181129ccb07c7e2f]
+reverse link WicketExampleApplication to ExampleApplication--><path codeLine="42" d="M935.9375,122.6715 C935.9375,146.8486 935.9375,175.8486 935.9375,195.6403 " fill="none" id="WicketExampleApplication-backto-ExampleApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="928.6458,122.6715,935.9375,101.8382,943.2292,122.6715,928.6458,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5ae6498f74f508ac92a3799a89bffdb5]
+reverse link BasePage to HomePage--><path codeLine="47" d="M276.7083,279.5257 C291.6042,303.3799 308.4479,330.3799 321.9688,352.0257 " fill="none" id="BasePage-backto-HomePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="270.375,283.1611,265.5313,261.6195,282.75,275.432,270.375,283.1611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9691f2e7f10a4ffd91f7c977cb887ee3]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.spring.common.web"
+    
+    abstract BasePage
+    
+    WicketExamplePage <|- - BasePage
+    class BasePage
+    {
+        - -(constructors)- -
+        +BasePage()
+    }
+    
+    SortableDataProvider <|- - ContactDataProvider
+    abstract class ContactDataProvider
+    {
+        - -(constructors)- -
+        +ContactDataProvider()
+        - -
+        #ContactDao getContactDao()
+    }
+    
+    LoadableDetachableModel <|- - ContactDetachableModel
+    abstract class ContactDetachableModel
+    {
+        - -(constructors)- -
+        +ContactDetachableModel(Contact)
+        - -
+        #ContactDao getContactDao()
+    }
+    
+    BasePage <|- - ContactsDisplayPage
+    abstract class ContactsDisplayPage
+    {
+        - -(constructors)- -
+        +ContactsDisplayPage()
+        - -
+        #ContactDataProvider getDataProvider()
+    }
+    
+    WicketExampleApplication <|- - ExampleApplication
+    class ExampleApplication
+    {
+    }
+    
+    BasePage <|- - HomePage
+    class HomePage
+    {
+        - -(constructors)- -
+        +HomePage()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.spring.common.web"
+    
+    abstract BasePage
+    
+    WicketExamplePage <|- - BasePage
+    class BasePage
+    {
+        - -(constructors)- -
+        +BasePage()
+    }
+    
+    SortableDataProvider <|- - ContactDataProvider
+    abstract class ContactDataProvider
+    {
+        - -(constructors)- -
+        +ContactDataProvider()
+        - -
+        #ContactDao getContactDao()
+    }
+    
+    LoadableDetachableModel <|- - ContactDetachableModel
+    abstract class ContactDetachableModel
+    {
+        - -(constructors)- -
+        +ContactDetachableModel(Contact)
+        - -
+        #ContactDao getContactDao()
+    }
+    
+    BasePage <|- - ContactsDisplayPage
+    abstract class ContactsDisplayPage
+    {
+        - -(constructors)- -
+        +ContactsDisplayPage()
+        - -
+        #ContactDataProvider getDataProvider()
+    }
+    
+    WicketExampleApplication <|- - ExampleApplication
+    class ExampleApplication
+    {
+    }
+    
+    BasePage <|- - HomePage
+    class HomePage
+    {
+        - -(constructors)- -
+        +HomePage()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

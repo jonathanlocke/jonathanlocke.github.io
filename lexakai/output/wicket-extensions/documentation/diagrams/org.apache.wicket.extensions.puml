@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions"
+    
+    interface IInitializer
+    
+    IInitializer <|-- Initializer
+    class Initializer
+    {
+    }
+    
+@enduml
+

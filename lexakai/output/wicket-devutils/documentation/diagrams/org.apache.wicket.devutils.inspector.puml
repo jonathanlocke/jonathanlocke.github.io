@@ -1,0 +1,120 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils.inspector"
+    
+    interface IModel
+    interface Set
+    interface IClusterable
+    interface IComponentInstantiationListener
+    
+    DevUtilsPanel <|-- ApplicationView
+    class ApplicationView
+    {
+        --(constructors)--
+        +ApplicationView(String, Application)
+    }
+    
+    GenericPanel <|-- EnhancedPageView
+    class EnhancedPageView
+    {
+        --(constructors)--
+        +EnhancedPageView(String, IModel<Page>)
+    }
+    
+    Set <|-- EnhancedPageView.ExpandState
+    IClusterable <|-- EnhancedPageView.ExpandState
+    class EnhancedPageView.ExpandState
+    {
+        --
+        +void collapseAll()
+        +void expandAll()
+    }
+    
+    DevUtilsPage <|-- InspectorPage
+    class InspectorPage
+    {
+        --(constructors)--
+        +InspectorPage(PageReference)
+        +InspectorPage(PageParameters)
+    }
+    
+    DevUtilsPage <|-- LiveSessionsPage
+    class LiveSessionsPage
+    {
+        --(constructors)--
+        +LiveSessionsPage()
+    }
+    
+    Behavior <|-- RenderPerformanceListener.RenderMeasuringBehavior
+    class RenderPerformanceListener.RenderMeasuringBehavior
+    {
+    }
+    
+    IComponentInstantiationListener <|-- RenderPerformanceListener
+    class RenderPerformanceListener
+    {
+        --(filtering)--
+        #boolean accepts(Component)
+    }
+    
+    DevUtilsPage <|-- RequestsPage
+    class RequestsPage
+    {
+        --(constructors)--
+        +RequestsPage(SessionData)
+    }
+    
+    IModel <|-- SessionSizeModel
+    class SessionSizeModel
+    {
+        --(constructors)--
+        +SessionSizeModel()
+    }
+    
+    DevUtilsPanel <|-- SessionView
+    class SessionView
+    {
+        --(constructors)--
+        +SessionView(String, Session)
+    }
+    
+    LoadableDetachableModel <|-- EnhancedPageView.TreeProvider.TreeModel
+    class EnhancedPageView.TreeProvider.TreeModel
+    {
+    }
+    
+    class EnhancedPageView.TreeNode
+    {
+        --(constructors)--
+        +TreeNode(IClusterable, TreeNode)
+        --
+        +String getModel()
+        +String getType()
+        --(checks)--
+        +boolean hasChildren()
+        +boolean isStateless()
+        --(collection)--
+        +List<Integer> getPathIndexes()
+        +long getSize()
+        --(path)--
+        +String getPath()
+        --(time)--
+        +String getRenderTime()
+    }
+    
+    LoadableDetachableModel <|-- EnhancedPageView.TreeProvider.TreeNodeModel
+    class EnhancedPageView.TreeProvider.TreeNodeModel
+    {
+        --(constructors)--
+        +TreeNodeModel(TreeNode)
+    }
+    
+    SortableTreeProvider <|-- EnhancedPageView.TreeProvider
+    class EnhancedPageView.TreeProvider
+    {
+    }
+    
+@enduml
+

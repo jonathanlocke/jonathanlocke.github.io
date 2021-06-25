@@ -1,0 +1,73 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization"
+    
+    interface IAuthorizationStrategy
+    
+    EnumeratedType <|-- Action
+    class Action
+    {
+        --(constructors)--
+        +Action(String)
+        --(naming)--
+        +String getName()
+    }
+    
+    IAuthorizationStrategy <|-- IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    class IAuthorizationStrategy.AllowAllAuthorizationStrategy
+    {
+    }
+    
+    WicketRuntimeException <|-- AuthorizationException
+    abstract class AuthorizationException
+    {
+        --(constructors)--
+        +AuthorizationException()
+        +AuthorizationException(String)
+        +AuthorizationException(String, Throwable)
+        +AuthorizationException(Throwable)
+    }
+    
+    interface IAuthorizationStrategy
+    {
+        --(checks)--
+        +boolean isActionAuthorized(Component, Action)
+        +boolean isInstantiationAuthorized(Class<T> componentClass)
+        +boolean isResourceAuthorized(IResource, PageParameters)
+    }
+    
+    interface IUnauthorizedComponentInstantiationListener
+    {
+        --
+        +void onUnauthorizedInstantiation(Component)
+    }
+    
+    interface IUnauthorizedResourceRequestListener
+    {
+        --
+        +void onUnauthorizedRequest(IResource, PageParameters)
+    }
+    
+    AuthorizationException <|-- UnauthorizedActionException
+    class UnauthorizedActionException
+    {
+        --(constructors)--
+        +UnauthorizedActionException(Component, Action)
+        --
+        +Action getAction()
+        +Component getComponent()
+    }
+    
+    AuthorizationException <|-- UnauthorizedInstantiationException
+    class UnauthorizedInstantiationException
+    {
+        --(constructors)--
+        +UnauthorizedInstantiationException(Class<T>)
+        --
+        +Class<? extends IRequestableComponent> getComponentClass()
+    }
+    
+@enduml
+

@@ -1,0 +1,142 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.image"
+    
+    interface IRequestListener
+    
+    WebComponent <|-- ContextImage
+    class ContextImage
+    {
+        --(constructors)--
+        +ContextImage(String)
+        +ContextImage(String, IModel<String>)
+        +ContextImage(String, String)
+    }
+    
+    Behavior <|-- ContextPathGenerator
+    class ContextPathGenerator
+    {
+        --(constructors)--
+        +ContextPathGenerator(IModel<String>)
+        +ContextPathGenerator(String)
+    }
+    
+    WebComponent <|-- ExternalImage
+    class ExternalImage
+    {
+        --(constructors)--
+        +ExternalImage(String)
+        +ExternalImage(String, IModel<Serializable>)
+        +ExternalImage(String, IModel<Serializable>, IModel<List<Serializable>>)
+        +ExternalImage(String, Serializable)
+        +ExternalImage(String, Serializable, List<Serializable>)
+        --
+        +CrossOrigin getCrossOrigin()
+        +void setCrossOrigin(CrossOrigin)
+        +void setSizes(String... sizes)
+        +void setSrcSetModel(IModel<List<Serializable>> srcSetModel)
+        --(building)--
+        #void buildSizesAttribute(ComponentTag)
+        #void buildSrcAttribute(ComponentTag, IModel<?> srcModel)
+        #void buildSrcSetAttribute(ComponentTag, IModel<List<Serializable>> srcSetModel)
+        --(collection)--
+        +IModel<List<Serializable>> getSrcSetModel()
+        +void removeSizes()
+        +void removeXValues()
+        +void setXValues(String... values)
+    }
+    
+    ExternalImage <|-- ExternalSource
+    class ExternalSource
+    {
+        --(constructors)--
+        +ExternalSource(String)
+        +ExternalSource(String, IModel<List<Serializable>>)
+        +ExternalSource(String, List<Serializable>)
+        --
+        +String getMedia()
+        +void setMedia(String media)
+    }
+    
+    WebComponent <|-- Image
+    IRequestListener <|-- Image
+    Image --> String : "creates"
+    class Image
+    {
+        --(constructors)--
+        #Image(String)
+        +Image(String, IModel<?>)
+        +Image(String, IResource, IResource)
+        +Image(String, ResourceReference, PageParameters, ResourceReference)
+        +Image(String, ResourceReference, ResourceReference)
+        +Image(String, String)
+        --
+        +CrossOrigin getCrossOrigin()
+        +void setCrossOrigin(CrossOrigin)
+        +void setImageResource(IResource imageResource)
+        +void setImageResourceReference(ResourceReference)
+        +void setImageResourceReference(ResourceReference, PageParameters)
+        +void setImageResourceReferences(PageParameters, ResourceReference... resourceReferences)
+        +void setImageResources(IResource... imageResources)
+        +void setSizes(String... sizes)
+        #IResource getImageResource()
+        #ResourceReference getImageResourceReference()
+        --(building)--
+        #void buildSizesAttribute(ComponentTag)
+        #String buildSrcAttribute(ComponentTag)
+        #void buildSrcSetAttribute(ComponentTag)
+        --(collection)--
+        +void removeSizes()
+        +void removeXValues()
+        +void setXValues(String... values)
+        #void addAntiCacheParameter(ComponentTag)
+        #boolean shouldAddAntiCacheParameter()
+    }
+    
+    WebComponent <|-- InlineImage
+    class InlineImage
+    {
+        --(constructors)--
+        +InlineImage(String, IModel<?>, PackageResourceReference)
+        +InlineImage(String, PackageResourceReference)
+    }
+    
+    Image <|-- NonCachingImage
+    class NonCachingImage
+    {
+        --(constructors)--
+        +NonCachingImage(String)
+        +NonCachingImage(String, IModel<?>)
+        +NonCachingImage(String, IResource)
+        +NonCachingImage(String, ResourceReference)
+        +NonCachingImage(String, ResourceReference, PageParameters)
+        +NonCachingImage(String, String)
+    }
+    
+    WebMarkupContainer <|-- Picture
+    class Picture
+    {
+        --(constructors)--
+        +Picture(String)
+        +Picture(String, IModel<?>)
+    }
+    
+    Image <|-- Source
+    class Source
+    {
+        --(constructors)--
+        #Source(String)
+        +Source(String, PageParameters, ResourceReference)
+        +Source(String, IModel<?>)
+        +Source(String, IResource)
+        +Source(String, ResourceReference)
+        +Source(String, String)
+        --
+        +String getMedia()
+        +void setMedia(String media)
+    }
+    
+@enduml
+

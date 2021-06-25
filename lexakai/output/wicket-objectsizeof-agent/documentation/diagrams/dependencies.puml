@@ -1,0 +1,55 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-objectsizeof-agent"
+    
+    artifact openjson
+    artifact commons_fileupload
+    artifact commons_io
+    artifact jakarta_servlet_api
+    artifact log4j
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact commons_collections4
+    artifact wicket_core
+    artifact wicket_objectsizeof_agent
+    artifact wicket_request
+    artifact wicket_util
+    artifact apiguardian_api
+    artifact jdk_serializable_functional
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    junit_jupiter_engine --> apiguardian_api
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_jupiter_engine --> junit_platform_engine
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    slf4j_log4j12 --> log4j
+    wicket_core --> jdk_serializable_functional
+    wicket_core --> openjson
+    wicket_core --> wicket_request
+    wicket_core --> wicket_util
+    wicket_objectsizeof_agent --> jakarta_servlet_api
+    wicket_objectsizeof_agent --> jcl_over_slf4j
+    wicket_objectsizeof_agent --> junit_jupiter_engine
+    wicket_objectsizeof_agent --> mockito_core
+    wicket_objectsizeof_agent --> slf4j_api
+    wicket_objectsizeof_agent --> slf4j_log4j12
+    wicket_objectsizeof_agent --> wicket_core
+    wicket_util --> commons_collections4
+    wicket_util --> commons_fileupload
+    wicket_util --> commons_io
+    
+@enduml

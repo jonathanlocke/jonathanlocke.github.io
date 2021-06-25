@@ -1,0 +1,118 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.image.resource"
+    
+    interface IClusterable
+    interface IResourceFactory
+    
+    DynamicImageResource <|-- BlobImageResource
+    abstract class BlobImageResource
+    {
+        --(constructors)--
+        +BlobImageResource()
+        +BlobImageResource(String)
+        --
+        #Blob getBlob(Attributes)
+    }
+    
+    DynamicImageResource <|-- BufferedDynamicImageResource
+    class BufferedDynamicImageResource
+    {
+        --(constructors)--
+        +BufferedDynamicImageResource()
+        +BufferedDynamicImageResource(String)
+        --
+        +void setImage(BufferedImage)
+    }
+    
+    RenderedDynamicImageResource <|-- DefaultButtonImageResource
+    class DefaultButtonImageResource
+    {
+        --(constructors)--
+        +DefaultButtonImageResource(String)
+        +DefaultButtonImageResource(int, int, String)
+        --
+        +int getArcHeight()
+        +int getArcWidth()
+        +Color getBackgroundColor()
+        +Color getColor()
+        +Font getFont()
+        +Color getTextColor()
+        +void setArcHeight(int arcHeight)
+        +void setArcWidth(int arcWidth)
+        +void setBackgroundColor(Color backgroundColor)
+        +void setColor(Color)
+        +void setDefaultHeight(int defaultHeight)
+        +void setDefaultWidth(int defaultWidth)
+        +void setFont(Font)
+        +void setTextColor(Color textColor)
+    }
+    
+    IResourceFactory <|-- DefaultButtonImageResourceFactory
+    class DefaultButtonImageResourceFactory
+    {
+    }
+    
+    MetaPatternParser <|-- LocalizedImageResource.ImageValueParser
+    class LocalizedImageResource.ImageValueParser
+    {
+    }
+    
+    IClusterable <|-- LocalizedImageResource
+    class LocalizedImageResource
+    {
+        --(constructors)--
+        +LocalizedImageResource(Component)
+        --
+        +void bind()
+        +IResource getResource()
+        +ResourceReference getResourceReference()
+        +void onResourceRequested(PageParameters)
+        +void setResource(IResource)
+        +void setResourceReference(ResourceReference)
+        +void setResourceReference(ResourceReference, PageParameters resourceParameters)
+        +void setSrcAttribute(ComponentTag)
+        --(checks)--
+        +boolean isStateless()
+    }
+    
+    MetaPatternParser <|-- DefaultButtonImageResourceFactory.Parser
+    class DefaultButtonImageResourceFactory.Parser
+    {
+        --(constructors)--
+        +Parser(CharSequence)
+        --
+        +int getHeight()
+        +String getLabel()
+        +int getWidth()
+    }
+    
+    DynamicImageResource <|-- RenderedDynamicImageResource
+    abstract class RenderedDynamicImageResource
+    {
+        --(constructors)--
+        +RenderedDynamicImageResource(int, int)
+        +RenderedDynamicImageResource(int, int, String)
+        --
+        +int getHeight()
+        +int getType()
+        +int getWidth()
+        +void invalidate()
+        +void setHeight(int height)
+        +void setType(int type)
+        +void setWidth(int width)
+        #boolean render(Graphics2D, Attributes)
+        #byte[] render(Attributes)
+    }
+    
+    ResourceReference <|-- LocalizedImageResource.SimpleStaticResourceReference
+    class LocalizedImageResource.SimpleStaticResourceReference
+    {
+        --(constructors)--
+        +SimpleStaticResourceReference(Class<?>, String, Locale, String, String, IResource)
+    }
+    
+@enduml
+

@@ -1,0 +1,35 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authentication.panel"
+    
+    StatelessForm <|-- SignInPanel.SignInForm
+    class SignInPanel.SignInForm
+    {
+        --(constructors)--
+        +SignInForm(String)
+    }
+    
+    Panel <|-- SignInPanel
+    class SignInPanel
+    {
+        --(constructors)--
+        +SignInPanel(String)
+        +SignInPanel(String, boolean)
+        --
+        +String getPassword()
+        +boolean getRememberMe()
+        +String getUsername()
+        +void setPassword(String password)
+        +void setRememberMe(boolean rememberMe)
+        +void setUsername(String username)
+        #SignInForm getForm()
+        #void onSignInFailed()
+        #void onSignInRemembered()
+        --(status)--
+        #void onSignInSucceeded()
+    }
+    
+@enduml
+

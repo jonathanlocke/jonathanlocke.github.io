@@ -1,0 +1,111 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.navigation.paging"
+    
+    interface IClusterable
+    IClusterable <|-- IPageable
+    interface IPageable
+    {
+        --
+        +long getCurrentPage()
+        +void setCurrentPage(long page)
+        --(collection)--
+        +long getPageCount()
+    }
+    
+    interface IPageable
+    IPageable <|-- IPageableItems
+    interface IPageableItems
+    {
+        --
+        +long getItemsPerPage()
+        +void setItemsPerPage(long itemsPerPage)
+        --(collection)--
+        +long getItemCount()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IPagingLabelProvider
+    interface IPagingLabelProvider
+    {
+        --
+        +String getPageLabel(long page)
+    }
+    
+    Loop <|-- PagingNavigation
+    class PagingNavigation
+    {
+        --(constructors)--
+        +PagingNavigation(String, IPageable)
+        +PagingNavigation(String, IPageable, IPagingLabelProvider)
+        --
+        +long getMargin()
+        +String getSeparator()
+        +void setMargin(int margin)
+        +void setSeparator(String separator)
+        --(collection)--
+        +int getViewSize()
+        +void setViewSize(int size)
+        #long getStartIndex()
+        --(factory)--
+        #AbstractLink newPagingNavigationLink(String id, IPageable, long pageIndex)
+    }
+    
+    Link <|-- PagingNavigationIncrementLink
+    class PagingNavigationIncrementLink<T>
+    {
+        --(constructors)--
+        +PagingNavigationIncrementLink(String, IPageable, int)
+        --
+        +long getPageNumber()
+        --(collection)--
+        +boolean isFirst()
+        +boolean isLast()
+    }
+    
+    Link <|-- PagingNavigationLink
+    class PagingNavigationLink<T>
+    {
+        --(constructors)--
+        +PagingNavigationLink(String, IPageable, long)
+        --
+        +long getPageNumber()
+        #long cullPageNumber(long pageNumber)
+        --(collection)--
+        +boolean isFirst()
+        +boolean isLast()
+    }
+    
+    Panel <|-- PagingNavigator
+    class PagingNavigator
+    {
+        --(constructors)--
+        +PagingNavigator(String, IPageable)
+        +PagingNavigator(String, IPageable, IPagingLabelProvider)
+        --
+        +IPageable getPageable()
+        +PagingNavigation getPagingNavigation()
+        --(factory)--
+        #PagingNavigation newNavigation(String id, IPageable, IPagingLabelProvider)
+        #AbstractLink newPagingNavigationIncrementLink(String id, IPageable, int increment)
+        #AbstractLink newPagingNavigationLink(String id, IPageable, int pageNumber)
+    }
+    
+    Behavior <|-- PagingNavigator.TitleAppender
+    class PagingNavigator.TitleAppender
+    {
+        --(constructors)--
+        +TitleAppender(String)
+    }
+    
+    Behavior <|-- PagingNavigation.TitleAppender
+    class PagingNavigation.TitleAppender
+    {
+        --(constructors)--
+        +TitleAppender(long)
+    }
+    
+@enduml
+

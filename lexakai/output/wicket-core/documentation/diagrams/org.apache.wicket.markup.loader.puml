@@ -1,0 +1,37 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.loader"
+    
+    interface IMarkupLoader
+    
+    IMarkupLoader <|-- DefaultMarkupLoader
+    class DefaultMarkupLoader
+    {
+        --(constructors)--
+        +DefaultMarkupLoader()
+    }
+    
+    interface IMarkupLoader
+    {
+        --(read)--
+        +Markup loadMarkup(MarkupContainer, MarkupResourceStream, IMarkupLoader baseLoader, boolean enforceReload)
+    }
+    
+    IMarkupLoader <|-- InheritedMarkupMarkupLoader
+    class InheritedMarkupMarkupLoader
+    {
+        --(constructors)--
+        +InheritedMarkupMarkupLoader()
+    }
+    
+    IMarkupLoader <|-- SimpleMarkupLoader
+    class SimpleMarkupLoader
+    {
+        --(constructors)--
+        +SimpleMarkupLoader()
+    }
+    
+@enduml
+

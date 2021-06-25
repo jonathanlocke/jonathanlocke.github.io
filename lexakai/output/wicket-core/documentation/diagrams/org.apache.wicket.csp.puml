@@ -1,0 +1,154 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.csp"
+    
+    abstract AbstractMapper
+    
+    interface IRequestCycleListener
+    interface CSPRenderable
+    
+    enum CSPDirective
+    {
+        BASE_URI
+        CHILD_SRC
+        CONNECT_SRC
+        DEFAULT_SRC
+        FONT_SRC
+        FRAME_ANCESTORS
+        FRAME_SRC
+        IMG_SRC
+        MANIFEST_SRC
+        MEDIA_SRC
+        OBJECT_SRC
+        REPORT_URI
+        SANDBOX
+        SCRIPT_SRC
+        STYLE_SRC
+        WORKER_SRC
+    }
+    
+    enum CSPDirectiveSandboxValue
+    {
+        ALLOW_FORMS
+        ALLOW_SAME_ORIGIN
+        ALLOW_SCRIPTS
+        ALLOW_TOP_NAVIGATION
+        EMPTY
+    }
+    
+    enum CSPDirectiveSrcValue
+    {
+        NONCE
+        NONE
+        SELF
+        STRICT_DYNAMIC
+        UNSAFE_EVAL
+        UNSAFE_INLINE
+        WILDCARD
+    }
+    
+    class CSPHeaderConfiguration
+    {
+        --
+        +String renderHeaderValue(ContentSecurityPolicySettings, RequestCycle)
+        --(checks)--
+        +boolean isAddLegacyHeaders()
+        +boolean isNonceEnabled()
+        +boolean isSet()
+        --(collection)--
+        +Map<CSPDirective,List<CSPRenderable>> getDirectives()
+        --(configuration)--
+        +CSPHeaderConfiguration add(CSPDirective, String... values)
+        +CSPHeaderConfiguration add(CSPDirective, CSPRenderable... values)
+        +CSPHeaderConfiguration clear()
+        +CSPHeaderConfiguration disabled()
+        +CSPHeaderConfiguration remove(CSPDirective)
+        +CSPHeaderConfiguration reportBack()
+        +CSPHeaderConfiguration reportBackAt(String mountPath)
+        +CSPHeaderConfiguration setAddLegacyHeaders(boolean addLegacyHeaders)
+        +CSPHeaderConfiguration strict()
+        +CSPHeaderConfiguration unsafeInline()
+    }
+    
+    enum CSPHeaderMode
+    {
+        BLOCKING
+        REPORT_ONLY
+    }
+    
+    DecoratingHeaderResponse <|-- CSPNonceHeaderResponseDecorator
+    class CSPNonceHeaderResponseDecorator
+    {
+        --(constructors)--
+        +CSPNonceHeaderResponseDecorator(IHeaderResponse, ContentSecurityPolicySettings)
+    }
+    
+    interface CSPRenderable
+    {
+        --
+        +void checkValidityForSrc()
+        +String render(ContentSecurityPolicySettings, RequestCycle)
+    }
+    
+    IRequestCycleListener <|-- CSPRequestCycleListener
+    class CSPRequestCycleListener
+    {
+        --(constructors)--
+        +CSPRequestCycleListener(ContentSecurityPolicySettings)
+        --
+        #boolean mustProtect(IRequestHandler)
+    }
+    
+    CSPRenderable <|-- ClonedCSPValue
+    class ClonedCSPValue
+    {
+        --(constructors)--
+        +ClonedCSPValue(CSPHeaderConfiguration, CSPDirective)
+    }
+    
+    class ContentSecurityPolicySettings
+    {
+        --(constructors)--
+        +ContentSecurityPolicySettings(Application)
+        --
+        +void enforce(WebApplication)
+        +String getNonce(RequestCycle)
+        +ContentSecurityPolicySettings setNonceCreator(Supplier<String> nonceCreator)
+        #String createNonce()
+        #boolean mustProtectRequest(IRequestHandler)
+        --(checks)--
+        +boolean isEnabled()
+        +boolean isNonceEnabled()
+        --(configuration)--
+        +CSPHeaderConfiguration blocking()
+        +Map<CSPHeaderMode,CSPHeaderConfiguration> getConfiguration()
+        +CSPHeaderConfiguration reporting()
+        --(functional)--
+        +ContentSecurityPolicySettings setProtectedFilter(Predicate<IRequestHandler> protectedFilter)
+    }
+    
+    CSPRenderable <|-- FixedCSPValue
+    class FixedCSPValue
+    {
+        --(constructors)--
+        +FixedCSPValue(String)
+    }
+    
+    CSPRenderable <|-- RelativeURICSPValue
+    class RelativeURICSPValue
+    {
+        --(constructors)--
+        +RelativeURICSPValue(String)
+    }
+    
+    AbstractMapper <|-- ReportCSPViolationMapper
+    class ReportCSPViolationMapper
+    {
+        --(constructors)--
+        +ReportCSPViolationMapper(ContentSecurityPolicySettings)
+    }
+    
+@enduml
+

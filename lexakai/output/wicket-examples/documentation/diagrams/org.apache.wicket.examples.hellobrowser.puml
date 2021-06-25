@@ -1,0 +1,20 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.hellobrowser"
+    
+    WicketExamplePage <|-- HelloBrowser
+    class HelloBrowser
+    {
+        --(constructors)--
+        +HelloBrowser()
+    }
+    
+    WicketExampleApplication <|-- HelloBrowserApplication
+    class HelloBrowserApplication
+    {
+    }
+    
+@enduml
+

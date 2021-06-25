@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.homepage"
+    
+    WicketExamplePage <|-- HomePage
+    class HomePage
+    {
+        --(constructors)--
+        +HomePage()
+    }
+    
+    WicketExampleApplication <|-- HomePageApplication
+    class HomePageApplication
+    {
+    }
+    
+    Panel <|-- HomePageHeader
+    class HomePageHeader
+    {
+        --(constructors)--
+        +HomePageHeader(String)
+    }
+    
+@enduml
+

@@ -1,0 +1,31 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.spring.test"
+    
+    abstract AbstractApplicationContext
+    
+    interface Serializable
+    interface ISpringContextLocator
+    
+    AbstractApplicationContext <|-- ApplicationContextMock
+    Serializable <|-- ApplicationContextMock
+    class ApplicationContextMock
+    {
+        --(constructors)--
+        +ApplicationContextMock()
+        --(collection)--
+        +void putBean(Object bean)
+        +void putBean(String name, T bean)
+    }
+    
+    ISpringContextLocator <|-- SpringContextLocatorMock
+    class SpringContextLocatorMock
+    {
+        --(constructors)--
+        +SpringContextLocatorMock(ApplicationContext)
+    }
+    
+@enduml
+

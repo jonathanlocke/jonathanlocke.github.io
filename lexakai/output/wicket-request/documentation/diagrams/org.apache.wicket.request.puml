@@ -1,0 +1,287 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request"
+    
+    interface Serializable
+    
+    class HttpHeaderCollection.HeaderKey
+    {
+        --(naming)--
+        +String getName()
+    }
+    
+    class HttpHeaderCollection
+    {
+        --(constructors)--
+        +HttpHeaderCollection()
+        --
+        +Instant getDateHeader(String name)
+        +String getHeader(String name)
+        +Set<String> getHeaderNames()
+        +void setDateHeader(String name, Instant time)
+        +void setHeader(String name, String value)
+        --(collection)--
+        +void addDateHeader(String name, Instant time)
+        +void addHeader(String name, String value)
+        +void clear()
+        +boolean containsHeader(String name)
+        +int getCount()
+        +String[] getHeaderValues(String name)
+        +boolean isEmpty()
+        +void removeHeader(String name)
+    }
+    
+    interface IExceptionMapper
+    {
+        --(collection)--
+        +IRequestHandler map(Exception)
+    }
+    
+    interface Serializable
+    Serializable <|-- ILogData
+    interface ILogData
+    {
+    }
+    
+    interface IRequestHandler
+    IRequestHandler <|-- ILoggableRequestHandler
+    interface ILoggableRequestHandler
+    {
+        --
+        +ILogData getLogData()
+    }
+    
+    interface IRequestCycle
+    {
+        --
+        +Request getRequest()
+        +Response getResponse()
+        +Response setResponse(Response)
+        --(messaging)--
+        +void scheduleRequestHandlerAfterCurrent(IRequestHandler)
+        --(network)--
+        +UrlRenderer getUrlRenderer()
+    }
+    
+    interface IRequestHandler
+    {
+        --
+        +void detach(IRequestCycle)
+        +void respond(IRequestCycle)
+    }
+    
+    interface IRequestHandler
+    IRequestHandler <|-- IRequestHandlerDelegate
+    interface IRequestHandlerDelegate
+    {
+        --(messaging)--
+        +IRequestHandler getDelegateHandler()
+    }
+    
+    interface IRequestMapper
+    {
+        --
+        +int getCompatibilityScore(Request)
+        --(collection)--
+        +Url mapHandler(IRequestHandler)
+        +IRequestHandler mapRequest(Request)
+    }
+    
+    interface IRequestParameters
+    {
+        --
+        +Set<String> getParameterNames()
+        +StringValue getParameterValue(String name)
+        --(collection)--
+        +List<StringValue> getParameterValues(String name)
+    }
+    
+    interface IUrlRenderer
+    {
+        --(network)--
+        +String renderFullUrl(Url, Url baseUrl)
+        +String renderRelativeUrl(Url, Url baseUrl)
+    }
+    
+    interface IRequestParameters
+    IRequestParameters <|-- IWritableRequestParameters
+    interface IWritableRequestParameters
+    {
+        --(collection)--
+        +void setParameterValues(String key, List<StringValue> values)
+        --(lifecycle)--
+        +void reset()
+    }
+    
+    Serializable <|-- Url.QueryParameter
+    class Url.QueryParameter
+    {
+        --(constructors)--
+        +QueryParameter(String, String)
+        --
+        +String getValue()
+        --(naming)--
+        +String getName()
+    }
+    
+    RuntimeException <|-- RequestHandlerExecutor.ReplaceHandlerException
+    class RequestHandlerExecutor.ReplaceHandlerException
+    {
+        --(constructors)--
+        +ReplaceHandlerException(IRequestHandler, boolean)
+        --(collection)--
+        +boolean getRemoveScheduled()
+        --(messaging)--
+        +IRequestHandler getReplacementRequestHandler()
+    }
+    
+    abstract class Request
+    {
+        --
+        +Charset getCharset()
+        +Object getContainerRequest()
+        +Locale getLocale()
+        +IRequestParameters getPostParameters()
+        +IRequestParameters getRequestParameters()
+        --(network)--
+        +Request cloneWithUrl(Url)
+        +Url getClientUrl()
+        +Url getOriginalUrl()
+        +Url getUrl()
+        --(path)--
+        +String getContextPath()
+        +String getFilterPath()
+        +String getPrefixToContextPath()
+        --(search)--
+        +IRequestParameters getQueryParameters()
+    }
+    
+    abstract class RequestHandlerExecutor
+    {
+        --
+        +void detach()
+        +void replaceAll(IRequestHandler)
+        +void schedule(IRequestHandler)
+        #void detach(IRequestHandler)
+        #void respond(IRequestHandler)
+        --(messaging)--
+        +IRequestHandler execute(IRequestHandler)
+        +IRequestHandler getActive()
+        +IRequestHandler next()
+    }
+    
+    abstract class Response
+    {
+        --
+        +String encodeURL(CharSequence url)
+        +Object getContainerResponse()
+        --(io)--
+        +void close()
+        --(lifecycle)--
+        +void reset()
+        --(write)--
+        +OutputStream getOutputStream()
+        +void write(CharSequence)
+        +void write(byte[] array, int offset, int length)
+        +void write(byte[] array)
+    }
+    
+    OutputStream <|-- Response.StreamAdapter
+    class Response.StreamAdapter
+    {
+        --(constructors)--
+        +StreamAdapter(Response)
+    }
+    
+    enum Url.StringMode
+    {
+        FULL
+        LOCAL
+    }
+    
+    Serializable <|-- Url
+    class Url
+    {
+        --(constructors)--
+        +Url()
+        +Url(Charset)
+        +Url(List<String>, Charset)
+        +Url(List<String>, List<QueryParameter>)
+        +Url(List<String>, List<QueryParameter>, Charset)
+        +Url(Url)
+        --
+        +void concatSegments(List<String> segments)
+        +Charset getCharset()
+        +String getFragment()
+        +void prependLeadingSegments(List<String> newSegments)
+        +void resolveRelative(Url relative)
+        +void setContextRelative(boolean contextRelative)
+        +void setFragment(String fragment)
+        --(checks)--
+        +boolean isContextAbsolute()
+        +boolean isContextRelative()
+        +boolean isFull()
+        +boolean shouldRenderAsFull()
+        --(collection)--
+        +List<String> getSegments()
+        +void removeLeadingSegments(int count)
+        --(network)--
+        +Url canonical()
+        +String getHost()
+        +Integer getPort()
+        +String getProtocol()
+        +QueryParameter getQueryParameter(String name)
+        +boolean isDataUrl()
+        +Url parse(CharSequence url)
+        +Url parse(CharSequence _url, Charset)
+        +Url parse(CharSequence _url, Charset, boolean isFullHint)
+        +void setHost(String host)
+        +void setPort(Integer port)
+        +void setProtocol(String protocol)
+        --(path)--
+        +String getPath(Charset)
+        +String getPath()
+        --(search)--
+        +void addQueryParameter(String name, Object value)
+        +StringValue getQueryParameterValue(String name)
+        +List<QueryParameter> getQueryParameters()
+        +String getQueryString()
+        +String getQueryString(Charset)
+        +void removeQueryParameters(String name)
+        +void setQueryParameter(String name, Object value)
+    }
+    
+    class UrlRenderer
+    {
+        --(constructors)--
+        +UrlRenderer(Request)
+        --(checks)--
+        #boolean shouldRenderAsFull(Url)
+        --(network)--
+        +Url getBaseUrl()
+        +String renderContextRelativeUrl(String url)
+        +String renderFullUrl(Url)
+        +String renderRelativeUrl(Url)
+        +String renderUrl(Url)
+        +Url setBaseUrl(Url base)
+        #String resolveHost(Url)
+        #Integer resolvePort(Url)
+        #String resolveProtocol(Url)
+    }
+    
+    class UrlUtils
+    {
+        --(constructors)--
+        #UrlUtils()
+        --
+        +String rewriteToContextRelative(String url, IRequestCycle)
+        --(checks)--
+        +boolean isRelative(String url)
+        --(path)--
+        +String normalizePath(String path)
+    }
+    
+@enduml
+

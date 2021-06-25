@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="780.2083px" preserveAspectRatio="none" style="width:1934px;height:780px;background:#333333;" version="1.1" viewBox="0 0 1934 780" width="1934.375px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="316.6667" x="801.8229" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="293.75" x="813.2813" y="30.5583">org.apache.wicket.util.license</text><!--MD5=[79be36ddd0a3cd72f5ca88561c5eadf6]
+class AbstractLicenseHeaderHandler--><rect codeLine="12" fill="#282828" height="194.6025" id="AbstractLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="326.0417" x="720.3125" y="287.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="326.0417" x="720.3125" y="287.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="326.0417" x="720.3125" y="310.0911"/><rect codeLine="12" fill="none" height="194.6025" id="AbstractLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="326.0417" x="720.3125" y="287.0361"/><ellipse cx="777.6042" cy="302.7303" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M777.1973,299.4324 L776.3489,303.1616 L778.0518,303.1616 Z M776.0986,297.7844 L778.302,297.7844 L780.7617,306.897 L778.9612,306.897 L778.3997,304.6448 L775.9888,304.6448 L775.4395,306.897 L773.6389,306.897 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="196.875" x="800.5208" y="307.4544">AbstractLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="721.3542" x2="1045.3125" y1="318.4245" y2="318.4245"/><ellipse cx="731.7708" cy="353.7944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="743.2292" y="360.7056">AbstractLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="721.3542" x2="839.5833" y1="336.6302" y2="336.6302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="842.7083" y="340.4399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="927.0833" x2="1045.3125" y1="336.6302" y2="336.6302"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="721.3542" x2="1045.3125" y1="370.4142" y2="370.4142"/><polygon fill="#FFFF44" points="731.7708,376.6642,735.9375,380.8309,731.7708,384.9976,727.6042,380.8309" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="293.75" x="743.2292" y="388.7838">String extractLicenseHeader(File, int start, int length)</text><polygon fill="#FFFF44" points="731.7708,396.4091,735.9375,400.5758,731.7708,404.7424,727.6042,400.5758" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="143.75" x="743.2292" y="408.5286">String getLicenseHeader()</text><polygon fill="#FFFF44" points="731.7708,416.154,735.9375,420.3206,731.7708,424.4873,727.6042,420.3206" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="743.2292" y="428.2735">void prependLicenseHeader(File)</text><polygon fill="#FFFF44" points="731.7708,459.8104,735.9375,463.9771,731.7708,468.1437,727.6042,463.9771" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="743.2292" y="471.9299">String getLicenseHeaderFilename()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="721.3542" x2="847.9167" y1="447.8546" y2="447.8546"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="851.0417" y="451.6642">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="918.75" x2="1045.3125" y1="447.8546" y2="447.8546"/><!--MD5=[899a429583c57562f52a56f5e25b5868]
+class FileFilter--><rect codeLine="8" fill="#282828" height="48.055" id="FileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="1218.75" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="1218.75" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="1218.75" y="138.2161"/><rect codeLine="8" fill="none" height="48.055" id="FileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="1218.75" y="115.1611"/><ellipse cx="1233.3333" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1230.7373,128.0172 L1230.7373,126.4303 L1236.1633,126.4303 L1236.1633,128.0172 L1234.3506,128.0172 L1234.3506,133.9559 L1236.1633,133.9559 L1236.1633,135.5428 L1230.7373,135.5428 L1230.7373,133.9559 L1232.55,133.9559 L1232.55,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="56.25" x="1250" y="135.5794">FileFilter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1219.7917" x2="1311.4583" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1219.7917" x2="1311.4583" y1="154.8828" y2="154.8828"/><!--MD5=[dd3b175c241d4008a408763cbf69ffc8]
+class ILicenseHeaderHandler--><rect codeLine="55" fill="#282828" height="170.6909" id="ILicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="220.8333" x="772.9167" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="220.8333" x="772.9167" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="220.8333" x="772.9167" y="76.7578"/><rect codeLine="55" fill="none" height="170.6909" id="ILicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="220.8333" x="772.9167" y="53.7028"/><ellipse cx="803.9063" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M801.3102,66.5588 L801.3102,64.9719 L806.7362,64.9719 L806.7362,66.5588 L804.9235,66.5588 L804.9235,72.4976 L806.7362,72.4976 L806.7362,74.0845 L801.3102,74.0845 L801.3102,72.4976 L803.123,72.4976 L803.123,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="146.875" x="824.2188" y="74.1211">ILicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="773.9583" x2="992.7083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="773.9583" x2="992.7083" y1="93.4245" y2="93.4245"/><ellipse cx="784.375" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="795.8333" y="111.794">boolean checkLicenseHeader(File)</text><ellipse cx="784.375" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="150" x="795.8333" y="131.5389">String getLicenseType(File)</text><ellipse cx="784.375" cy="168.2841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="177.0833" x="795.8333" y="175.1953">boolean addLicenseHeader(File)</text><ellipse cx="784.375" cy="188.029" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="795.8333" y="194.9402">List&lt;String&gt; getIgnoreFiles()</text><ellipse cx="784.375" cy="207.7738" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="795.8333" y="214.6851">List&lt;String&gt; getSuffixes()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="773.9583" x2="848.9583" y1="151.12" y2="151.12"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="852.0833" y="154.9296">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="917.7083" x2="992.7083" y1="151.12" y2="151.12"/><!--MD5=[f1852f4a47b485f798d47d6d94732360]
+class ApacheLicenseHeaderTestCase--><rect codeLine="24" fill="#282828" height="83.3781" id="ApacheLicenseHeaderTestCase" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="236.4583" x="1349.4792" y="97.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="236.4583" x="1349.4792" y="97.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="236.4583" x="1349.4792" y="120.5078"/><rect codeLine="24" fill="none" height="83.3781" id="ApacheLicenseHeaderTestCase" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="236.4583" x="1349.4792" y="97.4528"/><ellipse cx="1364.0625" cy="113.147" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1363.6556,109.849 L1362.8072,113.5783 L1364.5101,113.5783 Z M1362.557,108.2011 L1364.7603,108.2011 L1367.2201,117.3136 L1365.4195,117.3136 L1364.858,115.0614 L1362.4471,115.0614 L1361.8978,117.3136 L1360.0972,117.3136 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="198.9583" x="1380.7292" y="117.8711">ApacheLicenseHeaderTestCase</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1350.5208" x2="1584.8958" y1="128.8411" y2="128.8411"/><ellipse cx="1360.9375" cy="164.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="1372.3958" y="171.1222">ApacheLicenseHeaderTestCase()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1350.5208" x2="1423.9583" y1="147.0469" y2="147.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1427.0833" y="150.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1511.4583" x2="1584.8958" y1="147.0469" y2="147.0469"/><!--MD5=[6b93692db538b0d6603f2536d4c56d0d]
+class CssLicenseHeaderHandler--><rect codeLine="31" fill="#282828" height="83.3781" id="CssLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="7.2917" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="7.2917" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="7.2917" y="567.3828"/><rect codeLine="31" fill="none" height="83.3781" id="CssLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="7.2917" y="544.3278"/><ellipse cx="46.25" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M48.1604,564.447 Q47.7332,564.6667 47.2632,564.7766 Q46.7932,564.8865 46.2744,564.8865 Q44.4312,564.8865 43.4607,563.6719 Q42.4902,562.4573 42.4902,560.1624 Q42.4902,557.8613 43.4607,556.6467 Q44.4312,555.4321 46.2744,555.4321 Q46.7932,555.4321 47.2693,555.542 Q47.7454,555.6519 48.1604,555.8716 L48.1604,557.8735 Q47.6965,557.4463 47.2601,557.2479 Q46.8237,557.0496 46.3599,557.0496 Q45.3711,557.0496 44.8676,557.8339 Q44.364,558.6182 44.364,560.1624 Q44.364,561.7004 44.8676,562.4847 Q45.3711,563.269 46.3599,563.269 Q46.8237,563.269 47.2601,563.0707 Q47.6965,562.8723 48.1604,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="166.6667" x="68.3333" y="564.7461">CssLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="264.5833" y1="575.7161" y2="575.7161"/><ellipse cx="18.75" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="226.0417" x="30.2083" y="617.9972">CssLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="92.7083" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="95.8333" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="180.2083" x2="264.5833" y1="593.9219" y2="593.9219"/><!--MD5=[a2db62011499065ef2fc91d07d875fe8]
+class ApacheLicenseHeaderTestCase.DirectoryFileFilter--><rect codeLine="38" fill="#282828" height="48.055" id="ApacheLicenseHeaderTestCase.DirectoryFileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="1082.8125" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="1082.8125" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="1082.8125" y="383.5286"/><rect codeLine="38" fill="none" height="48.055" id="ApacheLicenseHeaderTestCase.DirectoryFileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="1082.8125" y="360.4736"/><ellipse cx="1097.3958" cy="376.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1099.3062,380.5929 Q1098.879,380.8126 1098.409,380.9224 Q1097.939,381.0323 1097.4202,381.0323 Q1095.577,381.0323 1094.6065,379.8177 Q1093.6361,378.6031 1093.6361,376.3082 Q1093.6361,374.0072 1094.6065,372.7926 Q1095.577,371.578 1097.4202,371.578 Q1097.939,371.578 1098.4151,371.6878 Q1098.8912,371.7977 1099.3062,372.0174 L1099.3062,374.0194 Q1098.8424,373.5921 1098.406,373.3938 Q1097.9696,373.1954 1097.5057,373.1954 Q1096.5169,373.1954 1096.0134,373.9797 Q1095.5098,374.764 1095.5098,376.3082 Q1095.5098,377.8463 1096.0134,378.6306 Q1096.5169,379.4149 1097.5057,379.4149 Q1097.9696,379.4149 1098.406,379.2165 Q1098.8424,379.0181 1099.3062,378.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="1114.0625" y="380.8919">DirectoryFileFilter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1083.8542" x2="1234.8958" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1083.8542" x2="1234.8958" y1="400.1953" y2="400.1953"/><!--MD5=[0509051fea17ce882eda0a66855e825f]
+class ApacheLicenseHeaderTestCase.FileVisitor--><rect codeLine="42" fill="#282828" height="83.3781" id="ApacheLicenseHeaderTestCase.FileVisitor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="305.2083" x="1622.3958" y="97.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="305.2083" x="1622.3958" y="97.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="305.2083" x="1622.3958" y="120.5078"/><rect codeLine="42" fill="none" height="83.3781" id="ApacheLicenseHeaderTestCase.FileVisitor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="305.2083" x="1622.3958" y="97.4528"/><ellipse cx="1636.9792" cy="113.147" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1634.3831,110.3088 L1634.3831,108.7219 L1639.8092,108.7219 L1639.8092,110.3088 L1637.9964,110.3088 L1637.9964,116.2476 L1639.8092,116.2476 L1639.8092,117.8345 L1634.3831,117.8345 L1634.3831,116.2476 L1636.1959,116.2476 L1636.1959,110.3088 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="267.7083" x="1653.6458" y="117.8711">ApacheLicenseHeaderTestCase.FileVisitor</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1623.4375" x2="1926.5625" y1="128.8411" y2="128.8411"/><ellipse cx="1633.8542" cy="164.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="1645.3125" y="171.1222">void visitFile(File)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1623.4375" x2="1739.5833" y1="147.0469" y2="147.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="1742.7083" y="150.8565">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1810.4167" x2="1926.5625" y1="147.0469" y2="147.0469"/><!--MD5=[2d53ad1aa49fa31fc9a99e0cbf28f22b]
+class XmlLicenseHeaderHandler--><rect codeLine="100" fill="#282828" height="83.3781" id="XmlLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="302.0833" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="302.0833" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="302.0833" y="567.3828"/><rect codeLine="100" fill="none" height="83.3781" id="XmlLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="302.0833" y="544.3278"/><ellipse cx="340.5729" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M342.4833,564.447 Q342.0561,564.6667 341.5861,564.7766 Q341.1161,564.8865 340.5973,564.8865 Q338.7541,564.8865 337.7836,563.6719 Q336.8132,562.4573 336.8132,560.1624 Q336.8132,557.8613 337.7836,556.6467 Q338.7541,555.4321 340.5973,555.4321 Q341.1161,555.4321 341.5922,555.542 Q342.0683,555.6519 342.4833,555.8716 L342.4833,557.8735 Q342.0194,557.4463 341.583,557.2479 Q341.1466,557.0496 340.6828,557.0496 Q339.694,557.0496 339.1905,557.8339 Q338.6869,558.6182 338.6869,560.1624 Q338.6869,561.7004 339.1905,562.4847 Q339.694,563.269 340.6828,563.269 Q341.1466,563.269 341.583,563.0707 Q342.0194,562.8723 342.4833,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="167.7083" x="362.5521" y="564.7461">XmlLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="303.125" x2="559.375" y1="575.7161" y2="575.7161"/><ellipse cx="313.5417" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="226.0417" x="325" y="617.9972">XmlLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="303.125" x2="387.5" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="390.625" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="475" x2="559.375" y1="593.9219" y2="593.9219"/><!--MD5=[87bb2d9c12c627d16abb70423c4edd12]
+class HtmlLicenseHeaderHandler--><rect codeLine="49" fill="#282828" height="83.3781" id="HtmlLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="263.5417" x="152.6042" y="690.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="263.5417" x="152.6042" y="690.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="263.5417" x="152.6042" y="713.2161"/><rect codeLine="49" fill="none" height="83.3781" id="HtmlLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="263.5417" x="152.6042" y="690.1611"/><ellipse cx="190.625" cy="705.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M192.5354,710.2804 Q192.1082,710.5001 191.6382,710.6099 Q191.1682,710.7198 190.6494,710.7198 Q188.8062,710.7198 187.8357,709.5052 Q186.8652,708.2906 186.8652,705.9957 Q186.8652,703.6947 187.8357,702.4801 Q188.8062,701.2655 190.6494,701.2655 Q191.1682,701.2655 191.6443,701.3753 Q192.1204,701.4852 192.5354,701.7049 L192.5354,703.7069 Q192.0715,703.2796 191.6351,703.0813 Q191.1987,702.8829 190.7349,702.8829 Q189.7461,702.8829 189.2426,703.6672 Q188.739,704.4515 188.739,705.9957 Q188.739,707.5338 189.2426,708.3181 Q189.7461,709.1024 190.7349,709.1024 Q191.1987,709.1024 191.6351,708.904 Q192.0715,708.7056 192.5354,708.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="173.9583" x="212.5" y="710.5794">HtmlLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="153.6458" x2="415.1042" y1="721.5495" y2="721.5495"/><ellipse cx="164.0625" cy="756.9194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="175.5208" y="763.8306">HtmlLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="153.6458" x2="240.625" y1="739.7552" y2="739.7552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="243.75" y="743.5649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="328.125" x2="415.1042" y1="739.7552" y2="739.7552"/><!--MD5=[3903ed0799f248d51428b5f04b452a33]
+class JavaLicenseHeaderHandler--><rect codeLine="67" fill="#282828" height="83.3781" id="JavaLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="597.3958" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="597.3958" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="597.3958" y="567.3828"/><rect codeLine="67" fill="none" height="83.3781" id="JavaLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="597.3958" y="544.3278"/><ellipse cx="635.4167" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M637.3271,564.447 Q636.8998,564.6667 636.4299,564.7766 Q635.9599,564.8865 635.4411,564.8865 Q633.5978,564.8865 632.6274,563.6719 Q631.6569,562.4573 631.6569,560.1624 Q631.6569,557.8613 632.6274,556.6467 Q633.5978,555.4321 635.4411,555.4321 Q635.9599,555.4321 636.436,555.542 Q636.912,555.6519 637.3271,555.8716 L637.3271,557.8735 Q636.8632,557.4463 636.4268,557.2479 Q635.9904,557.0496 635.5265,557.0496 Q634.5378,557.0496 634.0342,557.8339 Q633.5307,558.6182 633.5307,560.1624 Q633.5307,561.7004 634.0342,562.4847 Q634.5378,563.269 635.5265,563.269 Q635.9904,563.269 636.4268,563.0707 Q636.8632,562.8723 637.3271,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="169.7917" x="657.2917" y="564.7461">JavaLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="598.4375" x2="855.7292" y1="575.7161" y2="575.7161"/><ellipse cx="608.8542" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="227.0833" x="620.3125" y="617.9972">JavaLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="598.4375" x2="683.3333" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="686.4583" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="770.8333" x2="855.7292" y1="593.9219" y2="593.9219"/><!--MD5=[0e3656758c8eab2f9ceaa6099fc32861]
+class JavaScriptLicenseHeaderHandler--><rect codeLine="74" fill="#282828" height="83.3781" id="JavaScriptLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="893.75" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="893.75" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="893.75" y="567.3828"/><rect codeLine="74" fill="none" height="83.3781" id="JavaScriptLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="893.75" y="544.3278"/><ellipse cx="929.8958" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M931.8062,564.447 Q931.379,564.6667 930.909,564.7766 Q930.439,564.8865 929.9202,564.8865 Q928.077,564.8865 927.1065,563.6719 Q926.1361,562.4573 926.1361,560.1624 Q926.1361,557.8613 927.1065,556.6467 Q928.077,555.4321 929.9202,555.4321 Q930.439,555.4321 930.9151,555.542 Q931.3912,555.6519 931.8062,555.8716 L931.8062,557.8735 Q931.3424,557.4463 930.906,557.2479 Q930.4696,557.0496 930.0057,557.0496 Q929.0169,557.0496 928.5134,557.8339 Q928.0098,558.6182 928.0098,560.1624 Q928.0098,561.7004 928.5134,562.4847 Q929.0169,563.269 930.0057,563.269 Q930.4696,563.269 930.906,563.0707 Q931.3424,562.8723 931.8062,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="206.25" x="951.3542" y="564.7461">JavaScriptLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="894.7917" x2="1184.375" y1="575.7161" y2="575.7161"/><ellipse cx="905.2083" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="259.375" x="916.6667" y="617.9972">JavaScriptLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="894.7917" x2="995.8333" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="998.9583" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1083.3333" x2="1184.375" y1="593.9219" y2="593.9219"/><!--MD5=[2e362376fbdc15e8a86f593d1e7879ff]
+class PropertiesLicenseHeaderHandler--><rect codeLine="81" fill="#282828" height="83.3781" id="PropertiesLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="294.7917" x="1222.3958" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="294.7917" x="1222.3958" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="294.7917" x="1222.3958" y="567.3828"/><rect codeLine="81" fill="none" height="83.3781" id="PropertiesLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="294.7917" x="1222.3958" y="544.3278"/><ellipse cx="1259.0104" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1260.9208,564.447 Q1260.4936,564.6667 1260.0236,564.7766 Q1259.5536,564.8865 1259.0348,564.8865 Q1257.1916,564.8865 1256.2211,563.6719 Q1255.2507,562.4573 1255.2507,560.1624 Q1255.2507,557.8613 1256.2211,556.6467 Q1257.1916,555.4321 1259.0348,555.4321 Q1259.5536,555.4321 1260.0297,555.542 Q1260.5058,555.6519 1260.9208,555.8716 L1260.9208,557.8735 Q1260.4569,557.4463 1260.0205,557.2479 Q1259.5841,557.0496 1259.1203,557.0496 Q1258.1315,557.0496 1257.628,557.8339 Q1257.1244,558.6182 1257.1244,560.1624 Q1257.1244,561.7004 1257.628,562.4847 Q1258.1315,563.269 1259.1203,563.269 Q1259.5841,563.269 1260.0205,563.0707 Q1260.4569,562.8723 1260.9208,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="208.3333" x="1280.5729" y="564.7461">PropertiesLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1223.4375" x2="1516.1458" y1="575.7161" y2="575.7161"/><ellipse cx="1233.8542" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="262.5" x="1245.3125" y="617.9972">PropertiesLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1223.4375" x2="1326.0417" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1329.1667" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1413.5417" x2="1516.1458" y1="593.9219" y2="593.9219"/><!--MD5=[85455f8cb72f3b0b0e22a25c505f1b91]
+class ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter--><rect codeLine="88" fill="#282828" height="48.055" id="ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="1272.3958" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="1272.3958" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="1272.3958" y="383.5286"/><rect codeLine="88" fill="none" height="48.055" id="ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="1272.3958" y="360.4736"/><ellipse cx="1286.9792" cy="376.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1288.8896,380.5929 Q1288.4623,380.8126 1287.9924,380.9224 Q1287.5224,381.0323 1287.0036,381.0323 Q1285.1603,381.0323 1284.1899,379.8177 Q1283.2194,378.6031 1283.2194,376.3082 Q1283.2194,374.0072 1284.1899,372.7926 Q1285.1603,371.578 1287.0036,371.578 Q1287.5224,371.578 1287.9985,371.6878 Q1288.4745,371.7977 1288.8896,372.0174 L1288.8896,374.0194 Q1288.4257,373.5921 1287.9893,373.3938 Q1287.5529,373.1954 1287.089,373.1954 Q1286.1003,373.1954 1285.5967,373.9797 Q1285.0932,374.764 1285.0932,376.3082 Q1285.0932,377.8463 1285.5967,378.6306 Q1286.1003,379.4149 1287.089,379.4149 Q1287.5529,379.4149 1287.9893,379.2165 Q1288.4257,379.0181 1288.8896,378.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="1303.6458" y="380.8919">SuffixAndIgnoreFileFilter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1273.4375" x2="1470.3125" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1273.4375" x2="1470.3125" y1="400.1953" y2="400.1953"/><!--MD5=[775ff36ade788efa8a95bac5310095f2]
+class VelocityLicenseHeaderHandler--><rect codeLine="93" fill="#282828" height="83.3781" id="VelocityLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="281.25" x="1554.1667" y="544.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="281.25" x="1554.1667" y="544.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="281.25" x="1554.1667" y="567.3828"/><rect codeLine="93" fill="none" height="83.3781" id="VelocityLicenseHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="281.25" x="1554.1667" y="544.3278"/><ellipse cx="1591.25" cy="560.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1593.1604,564.447 Q1592.7332,564.6667 1592.2632,564.7766 Q1591.7932,564.8865 1591.2744,564.8865 Q1589.4312,564.8865 1588.4607,563.6719 Q1587.4902,562.4573 1587.4902,560.1624 Q1587.4902,557.8613 1588.4607,556.6467 Q1589.4312,555.4321 1591.2744,555.4321 Q1591.7932,555.4321 1592.2693,555.542 Q1592.7454,555.6519 1593.1604,555.8716 L1593.1604,557.8735 Q1592.6965,557.4463 1592.2601,557.2479 Q1591.8237,557.0496 1591.3599,557.0496 Q1590.3711,557.0496 1589.8676,557.8339 Q1589.364,558.6182 1589.364,560.1624 Q1589.364,561.7004 1589.8676,562.4847 Q1590.3711,563.269 1591.3599,563.269 Q1591.8237,563.269 1592.2601,563.0707 Q1592.6965,562.8723 1593.1604,562.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="193.75" x="1612.9167" y="564.7461">VelocityLicenseHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1555.2083" x2="1834.375" y1="575.7161" y2="575.7161"/><ellipse cx="1565.625" cy="611.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="1577.0833" y="617.9972">VelocityLicenseHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1555.2083" x2="1651.0417" y1="593.9219" y2="593.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1654.1667" y="597.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1738.5417" x2="1834.375" y1="593.9219" y2="593.9219"/><!--MD5=[21c6b33d923827998bbec38740da3e07]
+class XmlPrologHeaderHandler--><rect codeLine="107" fill="#282828" height="83.3781" id="XmlPrologHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="253.125" x="452.6042" y="690.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="253.125" x="452.6042" y="690.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="253.125" x="452.6042" y="713.2161"/><rect codeLine="107" fill="none" height="83.3781" id="XmlPrologHeaderHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="253.125" x="452.6042" y="690.1611"/><ellipse cx="491.5625" cy="705.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M493.4729,710.2804 Q493.0457,710.5001 492.5757,710.6099 Q492.1057,710.7198 491.5869,710.7198 Q489.7437,710.7198 488.7732,709.5052 Q487.8027,708.2906 487.8027,705.9957 Q487.8027,703.6947 488.7732,702.4801 Q489.7437,701.2655 491.5869,701.2655 Q492.1057,701.2655 492.5818,701.3753 Q493.0579,701.4852 493.4729,701.7049 L493.4729,703.7069 Q493.009,703.2796 492.5726,703.0813 Q492.1362,702.8829 491.6724,702.8829 Q490.6836,702.8829 490.1801,703.6672 Q489.6765,704.4515 489.6765,705.9957 Q489.6765,707.5338 490.1801,708.3181 Q490.6836,709.1024 491.6724,709.1024 Q492.1362,709.1024 492.5726,708.904 Q493.009,708.7056 493.4729,708.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="513.6458" y="710.5794">XmlPrologHeaderHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="453.6458" x2="704.6875" y1="721.5495" y2="721.5495"/><ellipse cx="464.0625" cy="756.9194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="220.8333" x="475.5208" y="763.8306">XmlPrologHeaderHandler(List&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="453.6458" x2="535.4167" y1="739.7552" y2="739.7552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="538.5417" y="743.5649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="622.9167" x2="704.6875" y1="739.7552" y2="739.7552"/><!--MD5=[3877a840a219cbcfe7adae3eee3672fa]
+reverse link ILicenseHeaderHandler to AbstractLicenseHeaderHandler--><path codeLine="11" d="M883.3333,245.6299 C883.3333,259.2653 883.3333,273.1611 883.3333,286.6403 " fill="none" id="ILicenseHeaderHandler-backto-AbstractLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="876.0417,245.3799,883.3333,224.5465,890.625,245.3799,876.0417,245.3799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2c53f94a01c76cb9adb4f2ed6ca35e1a]
+reverse link AbstractLicenseHeaderHandler to CssLicenseHeaderHandler--><path codeLine="30" d="M700,433.4528 C581.125,464.7028 422.9583,506.5361 283.3333,544.3278 C277.5833,545.8799 271.7188,547.4736 265.7917,549.0986 " fill="none" id="AbstractLicenseHeaderHandler-backto-CssLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="698.2188,426.3799,720.2188,428.1403,701.9271,440.484,698.2188,426.3799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[29a89163c6dc4a99e2fe5eec5b6b08db]
+reverse link FileFilter to ApacheLicenseHeaderTestCase.DirectoryFileFilter--><path codeLine="37" d="M1247.0521,182.682 C1224.5208,234.2549 1187.3542,319.3278 1169.5313,360.1403 " fill="none" id="FileFilter-backto-ApacheLicenseHeaderTestCase.DirectoryFileFilter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1240.4167,179.6507,1255.4375,163.484,1253.7813,185.4945,1240.4167,179.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3c026357bfc1d746b3dce07400c0b472]
+reverse link XmlLicenseHeaderHandler to HtmlLicenseHeaderHandler--><path codeLine="48" d="M374.5729,642.5049 C358.4688,658.2757 341.2292,675.1507 326.1771,689.8799 " fill="none" id="XmlLicenseHeaderHandler-backto-HtmlLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="369.5625,637.2028,389.5521,627.8486,379.7708,647.6299,369.5625,637.2028" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9ce7153bed2397d790b3b29d9078bd62]
+reverse link AbstractLicenseHeaderHandler to JavaLicenseHeaderHandler--><path codeLine="66" d="M794.5,498.8903 C781.875,514.9945 769.6354,530.6195 759.1354,544.0361 " fill="none" id="AbstractLicenseHeaderHandler-backto-JavaLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="789.1354,493.9007,807.7292,481.9945,800.6146,502.9007,789.1354,493.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[59c8af870161b21ff02909c0a6e0286d]
+reverse link AbstractLicenseHeaderHandler to JavaScriptLicenseHeaderHandler--><path codeLine="73" d="M972.1667,498.8903 C984.7917,514.9945 997.0313,530.6195 1007.5313,544.0361 " fill="none" id="AbstractLicenseHeaderHandler-backto-JavaScriptLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="966.0521,502.9007,958.9375,481.9945,977.5313,493.9007,966.0521,502.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[cdff9538a7e2ee974dbfeee92af734c3]
+reverse link AbstractLicenseHeaderHandler to PropertiesLicenseHeaderHandler--><path codeLine="80" d="M1065.9375,482.0986 C1129.8854,509.109 1185.2188,528.484 1233.9167,544.2861 " fill="none" id="AbstractLicenseHeaderHandler-backto-PropertiesLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1063.0208,488.7861,1046.75,473.8799,1068.7708,475.3799,1063.0208,488.7861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9cda62f420f47046a45ab4920d998c5d]
+reverse link FileFilter to ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter--><path codeLine="87" d="M1284.1979,182.682 C1306.7292,234.2549 1343.8958,319.3278 1361.7188,360.1403 " fill="none" id="FileFilter-backto-ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1277.4688,185.4945,1275.8125,163.484,1290.8333,179.6507,1277.4688,185.4945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[609193e527b440329bf83b12b5493004]
+reverse link AbstractLicenseHeaderHandler to VelocityLicenseHeaderHandler--><path codeLine="92" d="M1066.7708,481.8799 C1269.6458,543.734 1334.625,505.5465 1535.4167,544.3278 C1541.4479,545.4945 1547.5833,546.7445 1553.7708,548.0674 " fill="none" id="AbstractLicenseHeaderHandler-backto-VelocityLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1064.3854,488.7757,1046.6979,475.5778,1068.7604,474.8695,1064.3854,488.7757" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[66b2ad39e5e47ff700ba74a1f5900e49]
+reverse link AbstractLicenseHeaderHandler to XmlLicenseHeaderHandler--><path codeLine="99" d="M700.9375,465.9528 C639.9896,492.8486 574.6458,521.682 523.5417,544.234 " fill="none" id="AbstractLicenseHeaderHandler-backto-XmlLicenseHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="698.1146,459.234,720.125,457.4945,704,472.5674,698.1146,459.234" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1ac1828720011ccf29428baf5b7b9db1]
+reverse link XmlLicenseHeaderHandler to XmlPrologHeaderHandler--><path codeLine="106" d="M488.3333,642.5049 C504.5521,658.2757 521.9167,675.1507 537.0729,689.8799 " fill="none" id="XmlLicenseHeaderHandler-backto-XmlPrologHeaderHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="483.1042,647.5882,473.2396,627.8486,493.2604,637.1299,483.1042,647.5882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e338a47778e197f0f043c37141cb23e8]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.license"
+    
+    abstract AbstractLicenseHeaderHandler
+    
+    interface FileFilter
+    interface ILicenseHeaderHandler
+    
+    ILicenseHeaderHandler <|- - AbstractLicenseHeaderHandler
+    abstract class AbstractLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +AbstractLicenseHeaderHandler(List<String>)
+        - -
+        #String extractLicenseHeader(File, int start, int length)
+        #String getLicenseHeader()
+        #void prependLicenseHeader(File)
+        - -(filesystem)- -
+        #String getLicenseHeaderFilename()
+    }
+    
+    abstract class ApacheLicenseHeaderTestCase
+    {
+        - -(constructors)- -
+        +ApacheLicenseHeaderTestCase()
+    }
+    
+    AbstractLicenseHeaderHandler <|- - CssLicenseHeaderHandler
+    class CssLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +CssLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|- - ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    class ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    {
+    }
+    
+    interface ApacheLicenseHeaderTestCase.FileVisitor
+    {
+        - -(filesystem)- -
+        +void visitFile(File)
+    }
+    
+    XmlLicenseHeaderHandler <|- - HtmlLicenseHeaderHandler
+    class HtmlLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +HtmlLicenseHeaderHandler(List<String>)
+    }
+    
+    interface ILicenseHeaderHandler
+    {
+        - -
+        +boolean checkLicenseHeader(File)
+        +String getLicenseType(File)
+        - -(collection)- -
+        +boolean addLicenseHeader(File)
+        +List<String> getIgnoreFiles()
+        +List<String> getSuffixes()
+    }
+    
+    AbstractLicenseHeaderHandler <|- - JavaLicenseHeaderHandler
+    class JavaLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +JavaLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - JavaScriptLicenseHeaderHandler
+    class JavaScriptLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +JavaScriptLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - PropertiesLicenseHeaderHandler
+    class PropertiesLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +PropertiesLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|- - ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    class ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    {
+    }
+    
+    AbstractLicenseHeaderHandler <|- - VelocityLicenseHeaderHandler
+    class VelocityLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +VelocityLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - XmlLicenseHeaderHandler
+    class XmlLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +XmlLicenseHeaderHandler(List<String>)
+    }
+    
+    XmlLicenseHeaderHandler <|- - XmlPrologHeaderHandler
+    class XmlPrologHeaderHandler
+    {
+        - -(constructors)- -
+        +XmlPrologHeaderHandler(List<String>)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.util.license"
+    
+    abstract AbstractLicenseHeaderHandler
+    
+    interface FileFilter
+    interface ILicenseHeaderHandler
+    
+    ILicenseHeaderHandler <|- - AbstractLicenseHeaderHandler
+    abstract class AbstractLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +AbstractLicenseHeaderHandler(List<String>)
+        - -
+        #String extractLicenseHeader(File, int start, int length)
+        #String getLicenseHeader()
+        #void prependLicenseHeader(File)
+        - -(filesystem)- -
+        #String getLicenseHeaderFilename()
+    }
+    
+    abstract class ApacheLicenseHeaderTestCase
+    {
+        - -(constructors)- -
+        +ApacheLicenseHeaderTestCase()
+    }
+    
+    AbstractLicenseHeaderHandler <|- - CssLicenseHeaderHandler
+    class CssLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +CssLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|- - ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    class ApacheLicenseHeaderTestCase.DirectoryFileFilter
+    {
+    }
+    
+    interface ApacheLicenseHeaderTestCase.FileVisitor
+    {
+        - -(filesystem)- -
+        +void visitFile(File)
+    }
+    
+    XmlLicenseHeaderHandler <|- - HtmlLicenseHeaderHandler
+    class HtmlLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +HtmlLicenseHeaderHandler(List<String>)
+    }
+    
+    interface ILicenseHeaderHandler
+    {
+        - -
+        +boolean checkLicenseHeader(File)
+        +String getLicenseType(File)
+        - -(collection)- -
+        +boolean addLicenseHeader(File)
+        +List<String> getIgnoreFiles()
+        +List<String> getSuffixes()
+    }
+    
+    AbstractLicenseHeaderHandler <|- - JavaLicenseHeaderHandler
+    class JavaLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +JavaLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - JavaScriptLicenseHeaderHandler
+    class JavaScriptLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +JavaScriptLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - PropertiesLicenseHeaderHandler
+    class PropertiesLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +PropertiesLicenseHeaderHandler(List<String>)
+    }
+    
+    FileFilter <|- - ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    class ApacheLicenseHeaderTestCase.SuffixAndIgnoreFileFilter
+    {
+    }
+    
+    AbstractLicenseHeaderHandler <|- - VelocityLicenseHeaderHandler
+    class VelocityLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +VelocityLicenseHeaderHandler(List<String>)
+    }
+    
+    AbstractLicenseHeaderHandler <|- - XmlLicenseHeaderHandler
+    class XmlLicenseHeaderHandler
+    {
+        - -(constructors)- -
+        +XmlLicenseHeaderHandler(List<String>)
+    }
+    
+    XmlLicenseHeaderHandler <|- - XmlPrologHeaderHandler
+    class XmlPrologHeaderHandler
+    {
+        - -(constructors)- -
+        +XmlPrologHeaderHandler(List<String>)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

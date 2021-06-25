@@ -1,0 +1,23 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.watch"
+    
+    ModificationWatcher <|-- Nio2ModificationWatcher
+    class Nio2ModificationWatcher
+    {
+        --(constructors)--
+        +Nio2ModificationWatcher(Application, Duration)
+        --
+        #void checkCreated(Logger)
+        #void entryCreated(Path, Logger)
+        #void entryDeleted(Path, Logger)
+        --(messaging)--
+        #WatchEvent.Kind[] getWatchedKinds(Path folder)
+        --(time)--
+        #void entryModified(Path, Logger)
+    }
+    
+@enduml
+

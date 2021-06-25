@@ -1,0 +1,56 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.cookies"
+    
+    interface IClusterable
+    
+    IClusterable <|-- CookieDefaults
+    class CookieDefaults
+    {
+        --
+        +String getComment()
+        +String getDomain()
+        +boolean getSecure()
+        +void setComment(String comment)
+        +void setDomain(String domain)
+        +void setSecure(boolean secure)
+        --(identity)--
+        +int getVersion()
+        +void setVersion(int version)
+        --(network)--
+        +boolean isHttpOnly()
+        +void setHttpOnly(boolean httpOnly)
+        --(time)--
+        +int getMaxAge()
+        +void setMaxAge(int maxAge)
+    }
+    
+    class CookieUtils
+    {
+        --(constructors)--
+        +CookieUtils()
+        +CookieUtils(CookieDefaults)
+        --
+        +Cookie getCookie(String name)
+        +CookieDefaults getSettings()
+        --(collection)--
+        +void remove(FormComponent<?>)
+        +void remove(String key)
+        #String getKey(FormComponent<?>)
+        #String getSaveKey(String key)
+        --(lifecycle)--
+        #void initializeCookie(Cookie)
+        --(naming)--
+        +String getSessionIdCookieName(WebApplication)
+        --(read)--
+        +String load(FormComponent<?>)
+        +String load(String key)
+        --(write)--
+        +void save(String name, String value)
+        +void save(FormComponent<?>)
+    }
+    
+@enduml
+

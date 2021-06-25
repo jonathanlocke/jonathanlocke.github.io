@@ -1,0 +1,44 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.guestbook"
+    
+    interface IClusterable
+    
+    IClusterable <|-- Comment
+    class Comment
+    {
+        --(constructors)--
+        +Comment()
+        +Comment(Comment)
+        --
+        +Date getDate()
+        +String getText()
+        +void setDate(Date)
+        +void setText(String text)
+    }
+    
+    Form <|-- GuestBook.CommentForm
+    class GuestBook.CommentForm
+    {
+        --(constructors)--
+        +CommentForm(String)
+    }
+    
+    WicketExamplePage <|-- GuestBook
+    class GuestBook
+    {
+        --(constructors)--
+        +GuestBook()
+        --(collection)--
+        +void clear()
+    }
+    
+    WicketExampleApplication <|-- GuestBookApplication
+    class GuestBookApplication
+    {
+    }
+    
+@enduml
+

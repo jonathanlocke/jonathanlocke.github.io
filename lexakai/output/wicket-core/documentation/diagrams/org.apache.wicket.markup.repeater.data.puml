@@ -1,0 +1,92 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.repeater.data"
+    
+    abstract AbstractPageableView
+    
+    interface Iterator
+    interface IDataProvider
+    
+    DataViewBase <|-- DataView
+    abstract class DataView<T>
+    {
+        --(constructors)--
+        #DataView(String, IDataProvider<T>)
+        #DataView(String, IDataProvider<T>, long)
+        --
+        +IDataProvider<T> getDataProvider()
+    }
+    
+    AbstractPageableView <|-- DataViewBase
+    abstract class DataViewBase<T>
+    {
+        --(constructors)--
+        +DataViewBase(String, IDataProvider<T>)
+        --
+        #IDataProvider<T> internalGetDataProvider()
+    }
+    
+    IDataProvider <|-- EmptyDataProvider
+    class EmptyDataProvider<T>
+    {
+        --(collection)--
+        +EmptyDataProvider<T> getInstance()
+    }
+    
+    DataViewBase <|-- GridView
+    abstract class GridView<T>
+    {
+        --(constructors)--
+        +GridView(String, IDataProvider<T>)
+        --
+        +int getColumns()
+        +IDataProvider<T> getDataProvider()
+        +int getRows()
+        +GridView<T> setColumns(int cols)
+        +GridView<T> setRows(int rows)
+        --(collection)--
+        #Item<T> newEmptyItem(String id, int index)
+        #void populateEmptyItem(Item<T>)
+        --(factory)--
+        #Item<?> newRowItem(String id, int index)
+    }
+    
+    interface IDetachable
+    IDetachable <|-- IDataProvider
+    interface IDataProvider<T>
+    {
+        --
+        +IModel<T> model(T object)
+        --(collection)--
+        +Iterator<? extends T> iterator(long first, long count)
+        +long size()
+    }
+    
+    Iterator <|-- GridView.ItemsIterator
+    class GridView.ItemsIterator<T>
+    {
+        --(constructors)--
+        +ItemsIterator(Iterator<MarkupContainer>)
+    }
+    
+    IDataProvider <|-- ListDataProvider
+    class ListDataProvider<T>
+    {
+        --(constructors)--
+        +ListDataProvider()
+        +ListDataProvider(List<T>)
+        --(collection)--
+        #List<T> getData()
+    }
+    
+    Iterator <|-- DataViewBase.ModelIterator
+    class DataViewBase.ModelIterator<T>
+    {
+        --(constructors)--
+        +ModelIterator(IDataProvider<T>, long, long)
+    }
+    
+@enduml
+

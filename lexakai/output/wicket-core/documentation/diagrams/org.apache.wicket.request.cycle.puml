@@ -1,0 +1,109 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.cycle"
+    
+    interface IRequestCycleListener
+    interface IMetadataContext
+    interface IEventSink
+    interface IRequestCycle
+    
+    RequestHandlerExecutor <|-- RequestCycle.HandlerExecutor
+    class RequestCycle.HandlerExecutor
+    {
+    }
+    
+    interface IRequestCycleListener
+    {
+        --
+        +void onDetach(RequestCycle)
+        --(lifecycle)--
+        +void onBeginRequest(RequestCycle)
+        +void onEndRequest(RequestCycle)
+        --(messaging)--
+        +IRequestHandler onException(RequestCycle, Exception)
+        +void onExceptionRequestHandlerResolved(RequestCycle, IRequestHandler, Exception)
+        +void onRequestHandlerExecuted(RequestCycle, IRequestHandler)
+        +void onRequestHandlerResolved(RequestCycle, IRequestHandler)
+        +void onRequestHandlerScheduled(RequestCycle, IRequestHandler)
+        --(network)--
+        +void onUrlMapped(RequestCycle, IRequestHandler, Url)
+    }
+    
+    IRequestCycleListener <|-- PageRequestHandlerTracker
+    class PageRequestHandlerTracker
+    {
+        --(collection)--
+        +IPageRequestHandler getFirstHandler(RequestCycle)
+        +IPageRequestHandler getLastHandler(RequestCycle)
+    }
+    
+    IRequestCycle <|-- RequestCycle
+    IEventSink <|-- RequestCycle
+    IMetadataContext <|-- RequestCycle
+    class RequestCycle
+    {
+        --(constructors)--
+        +RequestCycle(RequestCycleContext)
+        --
+        +void detach()
+        +RequestCycle get()
+        +Response getOriginalResponse()
+        +void onDetach()
+        +boolean processRequest()
+        +boolean processRequestAndDetach()
+        +void replaceAllRequestHandlers(IRequestHandler)
+        +void setRequest(Request)
+        +void setResponsePage(IRequestablePage)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, RenderPageRequestHandler.RedirectPolicy)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters, RenderPageRequestHandler.RedirectPolicy)
+        --(collection)--
+        #int getExceptionRetryCount()
+        --(lifecycle)--
+        +long getStartTime()
+        #void onBeginRequest()
+        #void onEndRequest()
+        --(messaging)--
+        +IRequestHandler getActiveRequestHandler()
+        +RequestCycleListenerCollection getListeners()
+        +IRequestHandler getRequestHandlerScheduledAfterCurrent()
+        #IRequestHandler handleException(Exception)
+        #IRequestHandler resolveRequestHandler()
+        --(network)--
+        +Url mapUrlFor(IRequestHandler)
+        +Url mapUrlFor(Class<C> pageClass, PageParameters)
+        +Url mapUrlFor(ResourceReference, PageParameters params)
+        +CharSequence urlFor(IRequestHandler)
+        +CharSequence urlFor(Class<C> pageClass, PageParameters)
+        +CharSequence urlFor(ResourceReference, PageParameters params)
+        #UrlRenderer newUrlRenderer()
+        --(search)--
+        +Optional<T> find(Class<T> type)
+    }
+    
+    class RequestCycleContext
+    {
+        --(constructors)--
+        +RequestCycleContext(Request, Response, IRequestMapper, IExceptionMapper)
+        --
+        +IExceptionMapper getExceptionMapper()
+        +Request getRequest()
+        +IRequestMapper getRequestMapper()
+        +Response getResponse()
+        +void setExceptionMapper(IExceptionMapper)
+        +void setRequest(Request)
+        +void setRequestMapper(IRequestMapper)
+        +void setResponse(Response)
+    }
+    
+    ListenerCollection <|-- RequestCycleListenerCollection
+    IRequestCycleListener <|-- RequestCycleListenerCollection
+    class RequestCycleListenerCollection
+    {
+    }
+    
+@enduml
+

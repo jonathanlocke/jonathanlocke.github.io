@@ -1,0 +1,31 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.repeater.util"
+    
+    interface Iterator
+    
+    Iterator <|-- ArrayIteratorAdapter
+    abstract class ArrayIteratorAdapter<T>
+    {
+        --(constructors)--
+        +ArrayIteratorAdapter(T[])
+        --
+        #IModel<T> model(T object)
+        --(lifecycle)--
+        +void reset()
+    }
+    
+    Iterator <|-- ModelIteratorAdapter
+    abstract class ModelIteratorAdapter<T>
+    {
+        --(constructors)--
+        +ModelIteratorAdapter(Iterable<T>)
+        +ModelIteratorAdapter(Iterator<T>)
+        --
+        #IModel<T> model(T object)
+    }
+    
+@enduml
+

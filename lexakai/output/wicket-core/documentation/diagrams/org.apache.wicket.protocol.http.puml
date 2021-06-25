@@ -1,0 +1,516 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.http"
+    
+    abstract AbstractRequestLogger
+    
+    interface IRequestLogger
+    interface Comparable
+    interface IMetaDataBufferingWebResponse
+    interface IRequestCycleListener
+    interface Filter
+    interface IListener
+    interface IClusterable
+    interface IWebApplicationFactory
+    interface HttpServletResponse
+    interface IResourceIsolationPolicy
+    
+    IRequestLogger <|-- AbstractRequestLogger
+    abstract class AbstractRequestLogger
+    {
+        --(constructors)--
+        +AbstractRequestLogger()
+        --
+        #String formatDate(Date)
+        #void log(RequestData rd, SessionData sd)
+        --(collection)--
+        #void addRequest(RequestData rd)
+    }
+    
+    Comparable <|-- BufferedWebResponse.Action
+    class BufferedWebResponse.Action
+    {
+        --
+        #ActionType getType()
+        #void invoke(WebResponse)
+    }
+    
+    enum BufferedWebResponse.ActionType
+    {
+        DATA
+        HEADER
+        NORMAL
+        REDIRECT
+    }
+    
+    AjaxRequestTarget.IListener <|-- AjaxEnclosureListener
+    class AjaxEnclosureListener
+    {
+        --(constructors)--
+        +AjaxEnclosureListener()
+        --(checks)--
+        +boolean isControllerOfEnclosure(Component, Enclosure)
+    }
+    
+    HttpServletResponse <|-- BufferedHttpServletResponse
+    class BufferedHttpServletResponse
+    {
+        --(constructors)--
+        +BufferedHttpServletResponse(HttpServletResponse)
+        --
+        +int getContentLength()
+        --(io)--
+        +void close()
+        --(network)--
+        +String getRedirectUrl()
+        --(write)--
+        +void writeTo(HttpServletResponse)
+    }
+    
+    WebResponse <|-- BufferedWebResponse
+    IMetaDataBufferingWebResponse <|-- BufferedWebResponse
+    class BufferedWebResponse
+    {
+        --(constructors)--
+        +BufferedWebResponse(WebResponse)
+        --
+        +void setText(CharSequence text)
+        --(primitive)--
+        +CharSequence getText()
+        --(write)--
+        +void writeTo(WebResponse)
+    }
+    
+    IClusterable <|-- ClientProperties
+    class ClientProperties
+    {
+        --
+        +int getBrowserHeight()
+        +int getBrowserWidth()
+        +String getHostname()
+        +String getNavigatorLanguage()
+        +String getNavigatorPlatform()
+        +String getNavigatorUserAgent()
+        +String getRemoteAddress()
+        +int getScreenColorDepth()
+        +int getScreenHeight()
+        +int getScreenWidth()
+        +String getUtcDSTOffset()
+        +String getUtcOffset()
+        +void setBrowserHeight(int browserHeight)
+        +void setBrowserWidth(int browserWidth)
+        +void setHostname(String hostname)
+        +void setJavaScriptEnabled(boolean javaScriptEnabled)
+        +void setNavigatorCookieEnabled(boolean cookiesEnabled)
+        +void setNavigatorJavaEnabled(boolean navigatorJavaEnabled)
+        +void setNavigatorLanguage(String navigatorLanguage)
+        +void setNavigatorPlatform(String navigatorPlatform)
+        +void setNavigatorUserAgent(String navigatorUserAgent)
+        +void setRemoteAddress(String remoteAddress)
+        +void setScreenColorDepth(int screenColorDepth)
+        +void setScreenHeight(int screenHeight)
+        +void setScreenWidth(int screenWidth)
+        +void setUtcDSTOffset(String utcDSTOffset)
+        +void setUtcOffset(String utcOffset)
+        --(checks)--
+        +boolean isJavaScriptEnabled()
+        +boolean isNavigatorCookieEnabled()
+        +boolean isNavigatorJavaEnabled()
+        --(identity)--
+        +String getNavigatorAppVersion()
+        +void setNavigatorAppVersion(String navigatorAppVersion)
+        --(naming)--
+        +String getNavigatorAppCodeName()
+        +String getNavigatorAppName()
+        +void setNavigatorAppCodeName(String navigatorAppCodeName)
+        +void setNavigatorAppName(String navigatorAppName)
+        --(read)--
+        +void read(IRequestParameters)
+        --(time)--
+        +TimeZone getTimeZone()
+        +void setJsTimeZone(String jsTimeZone)
+        +void setTimeZone(TimeZone)
+    }
+    
+    IWebApplicationFactory <|-- ContextParamWebApplicationFactory
+    class ContextParamWebApplicationFactory
+    {
+        --
+        #WebApplication createApplication(String applicationClassName)
+    }
+    
+    enum CsrfPreventionRequestCycleListener.CsrfAction
+    {
+        ABORT
+        ALLOW
+        SUPPRESS
+    }
+    
+    enum ResourceIsolationRequestCycleListener.CsrfAction
+    {
+        ABORT
+        ALLOW
+        SUPPRESS
+    }
+    
+    OriginResourceIsolationPolicy <|-- CsrfPreventionRequestCycleListener
+    IRequestCycleListener <|-- CsrfPreventionRequestCycleListener
+    class CsrfPreventionRequestCycleListener
+    {
+        --
+        #void checkRequest(HttpServletRequest, String sourceUri, IRequestablePage)
+        #void matchingOrigin(HttpServletRequest, String origin, IRequestablePage)
+        #void onAborted(HttpServletRequest, String origin, IRequestablePage)
+        #void onAllowed(HttpServletRequest, String origin, IRequestablePage)
+        #void onMatchingOrigin(HttpServletRequest, String origin, IRequestablePage)
+        #void onSuppressed(HttpServletRequest, String origin, IRequestablePage)
+        #void onWhitelisted(HttpServletRequest, String origin, IRequestablePage)
+        --(checks)--
+        #boolean isChecked(IRequestablePage targetedPage)
+        #boolean isChecked(IRequestHandler)
+        #boolean isEnabled()
+        --(messaging)--
+        +CsrfPreventionRequestCycleListener setConflictingOriginAction(CsrfAction)
+        +CsrfPreventionRequestCycleListener setErrorCode(int errorCode)
+        +CsrfPreventionRequestCycleListener setErrorMessage(String errorMessage)
+        +CsrfPreventionRequestCycleListener setNoOriginAction(CsrfAction)
+        #void abortHandler(HttpServletRequest, String origin, IRequestablePage)
+        #void allowHandler(HttpServletRequest, String origin, IRequestablePage)
+        #void suppressHandler(HttpServletRequest, String origin, IRequestablePage)
+        #IRequestHandler unwrap(IRequestHandler)
+        #void whitelistedHandler(HttpServletRequest, String origin, IRequestablePage)
+        --(network)--
+        #String getSourceUri(HttpServletRequest containerRequest)
+    }
+    
+    IResourceIsolationPolicy <|-- FetchMetadataResourceIsolationPolicy
+    class FetchMetadataResourceIsolationPolicy
+    {
+    }
+    
+    WebResponse <|-- HeaderBufferingWebResponse
+    IMetaDataBufferingWebResponse <|-- HeaderBufferingWebResponse
+    class HeaderBufferingWebResponse
+    {
+        --(constructors)--
+        +HeaderBufferingWebResponse(WebResponse)
+    }
+    
+    interface IMetaDataBufferingWebResponse
+    {
+        --(write)--
+        +void writeMetaData(WebResponse)
+    }
+    
+    interface IMultipartWebRequest
+    {
+        --(filesystem)--
+        +List<FileItem> getFile(String fieldName)
+        +Map<String,List<FileItem>> getFiles()
+    }
+    
+    interface IRequestLogger
+    {
+        --
+        +RequestData getCurrentRequest()
+        +SessionData[] getLiveSessions()
+        +int getPeakSessions()
+        +int getTotalCreatedSessions()
+        +void logResponseTarget(IRequestHandler target)
+        +void objectCreated(Object value)
+        +void objectRemoved(Object value)
+        +void objectUpdated(Object value)
+        +void performLogging()
+        +void sessionCreated(String id)
+        +void sessionDestroyed(String sessionId)
+        --(collection)--
+        +int getCurrentActiveRequestCount()
+        +int getPeakActiveRequestCount()
+        +List<RequestData> getRequests()
+        --(messaging)--
+        +void logEventTarget(IRequestHandler target)
+        --(network)--
+        +void logRequestedUrl(String url)
+        --(time)--
+        +long getAverageRequestTime()
+        +long getRequestsPerMinute()
+        +void requestTime(long timeTaken)
+    }
+    
+    interface IResourceIsolationPolicy
+    {
+        --
+        +ResourceIsolationOutcome isRequestAllowed(HttpServletRequest, IRequestablePage targetPage)
+        +void setHeaders(HttpServletResponse)
+    }
+    
+    interface IRequestLogger.ISessionLogInfo
+    {
+        --(messaging)--
+        +Object getSessionInfo()
+    }
+    
+    interface IWebApplicationFactory
+    {
+        --
+        +WebApplication createApplication(WicketFilter)
+        +void destroy(WicketFilter)
+    }
+    
+    IResourceIsolationPolicy <|-- OriginResourceIsolationPolicy
+    class OriginResourceIsolationPolicy
+    {
+        --(checks)--
+        #boolean isLocalOrigin(HttpServletRequest containerRequest, String originHeader)
+        --(collection)--
+        +OriginResourceIsolationPolicy addAcceptedOrigin(String acceptedOrigin)
+        --(network)--
+        #String getTargetUriFromRequest(HttpServletRequest)
+        #boolean isWhitelistedHost(String sourceUri)
+        #String normalizeUri(String uri)
+    }
+    
+    WicketRuntimeException <|-- PageExpiredException
+    class PageExpiredException
+    {
+        --(constructors)--
+        +PageExpiredException(String)
+        +PageExpiredException(String, Exception)
+    }
+    
+    WicketFilter <|-- ReloadingWicketFilter
+    class ReloadingWicketFilter
+    {
+        --(constructors)--
+        +ReloadingWicketFilter()
+    }
+    
+    WicketServlet <|-- ReloadingWicketServlet
+    class ReloadingWicketServlet
+    {
+    }
+    
+    IClusterable <|-- IRequestLogger.RequestData
+    class IRequestLogger.RequestData
+    {
+        --
+        +int getActiveRequest()
+        +String getAlteredObjects()
+        +ILogData getResponseTargetLog()
+        +Object getUserData(String key)
+        +void setActiveRequest(int activeRequest)
+        +void setResponseTarget(IRequestHandler target)
+        --(collection)--
+        +void addEntry(String)
+        +void addUserData(String key, Object value)
+        +Long getSessionSize()
+        +Map<String,Object> getUserData()
+        +void setSessionSize(long sizeInBytes)
+        --(identity)--
+        +String getSessionId()
+        +void setSessionId(String id)
+        --(lifecycle)--
+        +Date getStartDate()
+        --(messaging)--
+        +IRequestHandler getEventTarget()
+        +Class<? extends IRequestHandler> getEventTargetClass()
+        +ILogData getEventTargetLog()
+        +IRequestHandler getResponseTarget()
+        +Class<? extends IRequestHandler> getResponseTargetClass()
+        +Object getSessionInfo()
+        +void setEventTarget(IRequestHandler target)
+        +void setSessionInfo(Object sessionInfo)
+        --(network)--
+        +String getRequestedUrl()
+        +void setRequestedUrl(String requestedUrl)
+        --(time)--
+        +Long getTimeTaken()
+        +void setTimeTaken(long timeTaken)
+    }
+    
+    AbstractRequestLogger <|-- RequestLogger
+    class RequestLogger
+    {
+    }
+    
+    IRequestCycleListener <|-- RequestLoggerRequestCycleListener
+    class RequestLoggerRequestCycleListener
+    {
+    }
+    
+    class RequestUtils
+    {
+        --
+        +void decodeParameters(String queryString, PageParameters params)
+        +Charset getCharset(HttpServletRequest)
+        --(path)--
+        +String toAbsolutePath(String requestPath, String relativePagePath)
+        --(primitive)--
+        +String removeDoubleDots(String path)
+    }
+    
+    enum IResourceIsolationPolicy.ResourceIsolationOutcome
+    {
+        ALLOWED
+        DISALLOWED
+        UNKNOWN
+    }
+    
+    IRequestCycleListener <|-- ResourceIsolationRequestCycleListener
+    class ResourceIsolationRequestCycleListener
+    {
+        --(constructors)--
+        +ResourceIsolationRequestCycleListener(IResourceIsolationPolicy)
+        --(checks)--
+        #boolean isChecked(IRequestablePage targetedPage)
+        #boolean isChecked(IRequestHandler)
+        #boolean isEnabled()
+        --(collection)--
+        +void addExemptedPaths(String... exemptions)
+        --(messaging)--
+        +ResourceIsolationRequestCycleListener setDisallowedOutcomeAction(CsrfAction)
+        +ResourceIsolationRequestCycleListener setErrorCode(int errorCode)
+        +ResourceIsolationRequestCycleListener setErrorMessage(String errorMessage)
+        +ResourceIsolationRequestCycleListener setUnknownOutcomeAction(CsrfAction)
+        #void abortHandler(HttpServletRequest, IRequestablePage)
+        #void allowHandler(HttpServletRequest, IRequestablePage)
+        #void suppressHandler(HttpServletRequest, IRequestablePage)
+    }
+    
+    IClusterable <|-- IRequestLogger.SessionData
+    Comparable <|-- IRequestLogger.SessionData
+    class IRequestLogger.SessionData
+    {
+        --(constructors)--
+        +SessionData(String)
+        --
+        +long getNumberOfRequests()
+        --(collection)--
+        +void addTimeTaken(long time)
+        +Date getLastActive()
+        +long getSessionSize()
+        +void setSessionSize(long size)
+        --(identity)--
+        +String getSessionId()
+        --(lifecycle)--
+        +Date getStartDate()
+        --(messaging)--
+        +Object getSessionInfo()
+        +void setSessionInfo(Object sessionInfo)
+        --(time)--
+        +long getTotalTimeTaken()
+    }
+    
+    MostRecentlyUsedMap <|-- StoredResponsesMap
+    class StoredResponsesMap
+    {
+        --(constructors)--
+        +StoredResponsesMap(int, Duration)
+    }
+    
+    class StoredResponsesMap.Value
+    {
+    }
+    
+    Application <|-- WebApplication
+    abstract class WebApplication
+    {
+        --(constructors)--
+        +WebApplication()
+        --
+        +WebApplication get()
+        +Function<Page,AjaxRequestTarget> getAjaxRequestTargetProvider()
+        +ContentSecurityPolicySettings getCspSettings()
+        +ServletContext getServletContext()
+        +String getSessionAttributePrefix(WebRequest, String filterName)
+        +void mount(IRequestMapper)
+        +PackageMapper mountPackage(String path, Class<P> pageClass)
+        +MountedMapper mountPage(String path, Class<T> pageClass)
+        +ResourceMapper mountResource(String path, ResourceReference)
+        +void renderXmlDecl(WebPage, boolean insert)
+        +Application setAjaxRequestTargetProvider(Function<Page,AjaxRequestTarget> ajaxRequestTargetProvider)
+        +void setCspSettings(ContentSecurityPolicySettings cspSettings)
+        +void setServletContext(ServletContext)
+        +void storeBufferedResponse(String sessionId, Url, BufferedWebResponse)
+        +void unmount(String path)
+        --(checks)--
+        +boolean hasBufferedResponse(String sessionId, Url)
+        --(collection)--
+        +void addResourceReplacement(CssResourceReference base, ResourceReference replacement)
+        +void addResourceReplacement(JavaScriptResourceReference base, ResourceReference replacement)
+        +BufferedWebResponse getAndRemoveBufferedResponse(String sessionId, Url)
+        --(configuration)--
+        +Application setConfigurationType(RuntimeConfigurationType)
+        --(factory)--
+        +FilterFactoryManager getFilterFactoryManager()
+        +boolean hasFilterFactoryManager()
+        +AjaxRequestTarget newAjaxRequestTarget(Page)
+        +WebRequest newWebRequest(HttpServletRequest, String filterPath)
+        #ContentSecurityPolicySettings newCspSettings()
+        #WebResponse newWebResponse(WebRequest, HttpServletResponse)
+        --(filtering)--
+        +WicketFilter getWicketFilter()
+        +void setWicketFilter(WicketFilter)
+        --(lifecycle)--
+        +String getInitParameter(String key)
+        --(messaging)--
+        +AjaxRequestTargetListenerCollection getAjaxRequestTargetListeners()
+        #void outputDevelopmentModeWarning()
+    }
+    
+    WicketRuntimeException <|-- WebApplicationFactoryCreationException
+    class WebApplicationFactoryCreationException
+    {
+        --(constructors)--
+        +WebApplicationFactoryCreationException(String, Exception)
+    }
+    
+    Session <|-- WebSession
+    class WebSession
+    {
+        --(constructors)--
+        +WebSession(Request)
+        --
+        +WebSession get()
+        --(messaging)--
+        #WebPage newBrowserInfoPage()
+    }
+    
+    Filter <|-- WicketFilter
+    class WicketFilter
+    {
+        --(constructors)--
+        +WicketFilter()
+        +WicketFilter(WebApplication)
+        --
+        #String checkIfRedirectRequired(String requestURI, String contextPath)
+        #WebApplication getApplication()
+        #ClassLoader getClassLoader()
+        #boolean processRequestCycle(RequestCycle, WebResponse, HttpServletRequest, HttpServletResponse, FilterChain)
+        --(configuration)--
+        +void init(boolean isServlet, FilterConfig)
+        --(factory)--
+        #IWebApplicationFactory getApplicationFactory()
+        --(filtering)--
+        +FilterConfig getFilterConfig()
+        +String getFilterPath()
+        +void setFilterPath(String filterPath)
+        #String getFilterPath(HttpServletRequest)
+        #String getFilterPathFromAnnotation(boolean isServlet)
+        #String getFilterPathFromConfig(FilterConfig)
+        #String getFilterPathFromWebXml(boolean isServlet, FilterConfig)
+        --(path)--
+        +String getRelativePath(HttpServletRequest)
+    }
+    
+    HttpServlet <|-- WicketServlet
+    class WicketServlet
+    {
+        --(filtering)--
+        #WicketFilter newWicketFilter()
+    }
+    
+@enduml
+

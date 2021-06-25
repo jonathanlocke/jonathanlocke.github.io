@@ -1,0 +1,492 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="334.375px" preserveAspectRatio="none" style="width:1900px;height:334px;background:#333333;" version="1.1" viewBox="0 0 1900 334" width="1900px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="382.2917" x="751.5625" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="359.375" x="763.0208" y="30.5583">org.apache.wicket.examples.upload</text><!--MD5=[e84408739b61741db363fbb15188eeb3]
+cluster UploadPage--><polygon fill="#333333" points="16.6667,148.4945,105.2083,148.4945,112.5,175.7161,541.6667,175.7161,541.6667,305.7861,16.6667,305.7861,16.6667,148.4945" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="16.6667" x2="112.5" y1="175.7161" y2="175.7161"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="23.9583" y="165.7878">UploadPage</text><!--MD5=[fd3c43247f54de95daa3ed4216eecc32]
+cluster MultiUploadPage--><polygon fill="#333333" points="583.3333,126.6195,705.2083,126.6195,712.5,153.8411,1187.5,153.8411,1187.5,327.6611,583.3333,327.6611,583.3333,126.6195" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="583.3333" x2="712.5" y1="153.8411" y2="153.8411"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="109.375" x="590.625" y="143.9128">MultiUploadPage</text><!--MD5=[092680fb8ce6bb47d1131d431c026459]
+class UploadPage.FileListView--><rect codeLine="7" fill="#282828" height="83.3781" id="UploadPage.FileListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="61.4583" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="61.4583" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="61.4583" y="220.5078"/><rect codeLine="7" fill="none" height="83.3781" id="UploadPage.FileListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="61.4583" y="197.4528"/><ellipse cx="143.75" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M145.6604,217.572 Q145.2332,217.7917 144.7632,217.9016 Q144.2932,218.0115 143.7744,218.0115 Q141.9312,218.0115 140.9607,216.7969 Q139.9902,215.5823 139.9902,213.2874 Q139.9902,210.9863 140.9607,209.7717 Q141.9312,208.5571 143.7744,208.5571 Q144.2932,208.5571 144.7693,208.667 Q145.2454,208.7769 145.6604,208.9966 L145.6604,210.9985 Q145.1965,210.5713 144.7601,210.3729 Q144.3237,210.1746 143.8599,210.1746 Q142.8711,210.1746 142.3676,210.9589 Q141.864,211.7432 141.864,213.2874 Q141.864,214.8254 142.3676,215.6097 Q142.8711,216.394 143.8599,216.394 Q144.3237,216.394 144.7601,216.1957 Q145.1965,215.9973 145.6604,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="166.6667" y="217.8711">FileListView</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="62.5" x2="316.6667" y1="228.8411" y2="228.8411"/><ellipse cx="72.9167" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="223.9583" x="84.375" y="271.1222">FileListView(String, IModel&lt;List&lt;File&gt;&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="62.5" x2="145.8333" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="148.9583" y="250.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="233.3333" x2="316.6667" y1="247.0469" y2="247.0469"/><!--MD5=[1e24729c4028f283fbd5e6b6371503ca]
+class UploadPage.FileUploadForm--><rect codeLine="21" fill="#282828" height="83.3781" id="UploadPage.FileUploadForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="161.4583" x="354.6875" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="161.4583" x="354.6875" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="161.4583" x="354.6875" y="220.5078"/><rect codeLine="21" fill="none" height="83.3781" id="UploadPage.FileUploadForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="161.4583" x="354.6875" y="197.4528"/><ellipse cx="379.1146" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M381.025,217.572 Q380.5977,217.7917 380.1278,217.9016 Q379.6578,218.0115 379.139,218.0115 Q377.2957,218.0115 376.3253,216.7969 Q375.3548,215.5823 375.3548,213.2874 Q375.3548,210.9863 376.3253,209.7717 Q377.2957,208.5571 379.139,208.5571 Q379.6578,208.5571 380.1339,208.667 Q380.6099,208.7769 381.025,208.9966 L381.025,210.9985 Q380.5611,210.5713 380.1247,210.3729 Q379.6883,210.1746 379.2244,210.1746 Q378.2357,210.1746 377.7321,210.9589 Q377.2286,211.7432 377.2286,213.2874 Q377.2286,214.8254 377.7321,215.6097 Q378.2357,216.394 379.2244,216.394 Q379.6883,216.394 380.1247,216.1957 Q380.5611,215.9973 381.025,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="397.9688" y="217.8711">FileUploadForm</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="355.7292" x2="515.1042" y1="228.8411" y2="228.8411"/><ellipse cx="366.1458" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="377.6042" y="271.1222">FileUploadForm(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="355.7292" x2="391.6667" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="394.7917" y="250.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="479.1667" x2="515.1042" y1="247.0469" y2="247.0469"/><!--MD5=[ecea28d4628e718e4c448a21928a95a9]
+class MultiUploadPage.FileListView--><rect codeLine="14" fill="#282828" height="83.3781" id="MultiUploadPage.FileListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="628.125" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="628.125" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="628.125" y="220.5078"/><rect codeLine="14" fill="none" height="83.3781" id="MultiUploadPage.FileListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="628.125" y="197.4528"/><ellipse cx="710.4167" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M712.3271,217.572 Q711.8998,217.7917 711.4299,217.9016 Q710.9599,218.0115 710.4411,218.0115 Q708.5978,218.0115 707.6274,216.7969 Q706.6569,215.5823 706.6569,213.2874 Q706.6569,210.9863 707.6274,209.7717 Q708.5978,208.5571 710.4411,208.5571 Q710.9599,208.5571 711.436,208.667 Q711.912,208.7769 712.3271,208.9966 L712.3271,210.9985 Q711.8632,210.5713 711.4268,210.3729 Q710.9904,210.1746 710.5265,210.1746 Q709.5378,210.1746 709.0342,210.9589 Q708.5307,211.7432 708.5307,213.2874 Q708.5307,214.8254 709.0342,215.6097 Q709.5378,216.394 710.5265,216.394 Q710.9904,216.394 711.4268,216.1957 Q711.8632,215.9973 712.3271,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="733.3333" y="217.8711">FileListView</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="629.1667" x2="883.3333" y1="228.8411" y2="228.8411"/><ellipse cx="639.5833" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="223.9583" x="651.0417" y="271.1222">FileListView(String, IModel&lt;List&lt;File&gt;&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="629.1667" x2="712.5" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="715.625" y="250.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="800" x2="883.3333" y1="247.0469" y2="247.0469"/><!--MD5=[a7b676cd9001a35c827b7c4db90b9121]
+class MultiUploadPage.FileUploadForm--><rect codeLine="28" fill="#282828" height="127.0345" id="MultiUploadPage.FileUploadForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="240.625" x="921.3542" y="175.5778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="240.625" x="921.3542" y="175.5778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="240.625" x="921.3542" y="198.6328"/><rect codeLine="28" fill="none" height="127.0345" id="MultiUploadPage.FileUploadForm" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="240.625" x="921.3542" y="175.5778"/><ellipse cx="983.3333" cy="191.272" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M985.2437,195.697 Q984.8165,195.9167 984.3465,196.0266 Q983.8765,196.1365 983.3577,196.1365 Q981.5145,196.1365 980.544,194.9219 Q979.5736,193.7073 979.5736,191.4124 Q979.5736,189.1113 980.544,187.8967 Q981.5145,186.6821 983.3577,186.6821 Q983.8765,186.6821 984.3526,186.792 Q984.8287,186.9019 985.2437,187.1216 L985.2437,189.1235 Q984.7799,188.6963 984.3435,188.4979 Q983.9071,188.2996 983.4432,188.2996 Q982.4544,188.2996 981.9509,189.0839 Q981.4473,189.8682 981.4473,191.4124 Q981.4473,192.9504 981.9509,193.7347 Q982.4544,194.519 983.4432,194.519 Q983.9071,194.519 984.3435,194.3207 Q984.7799,194.1223 985.2437,193.6951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="1006.25" y="195.9961">FileUploadForm</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="922.3958" x2="1160.9375" y1="206.9661" y2="206.9661"/><ellipse cx="932.8125" cy="242.336" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="944.2708" y="249.2472">FileUploadForm(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="922.3958" x2="997.9167" y1="225.1719" y2="225.1719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1001.0417" y="228.9815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1085.4167" x2="1160.9375" y1="225.1719" y2="225.1719"/><ellipse cx="932.8125" cy="285.9924" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="208.3333" x="944.2708" y="292.9036">Collection&lt;FileUpload&gt; getUploads()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="922.3958" x2="1006.25" y1="268.8283" y2="268.8283"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="1009.375" y="272.6379">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1077.0833" x2="1160.9375" y1="268.8283" y2="268.8283"/><!--MD5=[bab795b3e255e4ea4a2af0f54c137233]
+class ListView--><rect fill="#282828" height="48.055" id="ListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="91.6667" x="459.375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="91.6667" x="459.375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="91.6667" x="459.375" y="76.7578"/><rect fill="none" height="48.055" id="ListView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="91.6667" x="459.375" y="53.7028"/><ellipse cx="473.9583" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M475.8687,73.822 Q475.4415,74.0417 474.9715,74.1516 Q474.5015,74.2615 473.9827,74.2615 Q472.1395,74.2615 471.169,73.0469 Q470.1986,71.8323 470.1986,69.5374 Q470.1986,67.2363 471.169,66.0217 Q472.1395,64.8071 473.9827,64.8071 Q474.5015,64.8071 474.9776,64.917 Q475.4537,65.0269 475.8687,65.2466 L475.8687,67.2485 Q475.4049,66.8213 474.9685,66.6229 Q474.5321,66.4246 474.0682,66.4246 Q473.0794,66.4246 472.5759,67.2089 Q472.0723,67.9932 472.0723,69.5374 Q472.0723,71.0754 472.5759,71.8597 Q473.0794,72.644 474.0682,72.644 Q474.5321,72.644 474.9685,72.4457 Q475.4049,72.2473 475.8687,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="54.1667" x="490.625" y="74.1211">ListView</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="550" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="460.4167" x2="550" y1="93.4245" y2="93.4245"/><!--MD5=[6f29f313cd4199edbf91b9ce3a4faa98]
+class Form--><rect fill="#282828" height="48.055" id="Form" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="70.8333" x="651.0417" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="70.8333" x="651.0417" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="70.8333" x="651.0417" y="76.7578"/><rect fill="none" height="48.055" id="Form" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="70.8333" x="651.0417" y="53.7028"/><ellipse cx="665.625" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M667.5354,73.822 Q667.1082,74.0417 666.6382,74.1516 Q666.1682,74.2615 665.6494,74.2615 Q663.8062,74.2615 662.8357,73.0469 Q661.8652,71.8323 661.8652,69.5374 Q661.8652,67.2363 662.8357,66.0217 Q663.8062,64.8071 665.6494,64.8071 Q666.1682,64.8071 666.6443,64.917 Q667.1204,65.0269 667.5354,65.2466 L667.5354,67.2485 Q667.0715,66.8213 666.6351,66.6229 Q666.1987,66.4246 665.7349,66.4246 Q664.7461,66.4246 664.2426,67.2089 Q663.739,67.9932 663.739,69.5374 Q663.739,71.0754 664.2426,71.8597 Q664.7461,72.644 665.7349,72.644 Q666.1987,72.644 666.6351,72.4457 Q667.0715,72.2473 667.5354,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="33.3333" x="682.2917" y="74.1211">Form</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="652.0833" x2="720.8333" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="652.0833" x2="720.8333" y1="93.4245" y2="93.4245"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="1362.5" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="1362.5" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="1362.5" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="1362.5" y="53.7028"/><ellipse cx="1377.0833" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1378.9937,73.822 Q1378.5665,74.0417 1378.0965,74.1516 Q1377.6265,74.2615 1377.1077,74.2615 Q1375.2645,74.2615 1374.294,73.0469 Q1373.3236,71.8323 1373.3236,69.5374 Q1373.3236,67.2363 1374.294,66.0217 Q1375.2645,64.8071 1377.1077,64.8071 Q1377.6265,64.8071 1378.1026,64.917 Q1378.5787,65.0269 1378.9937,65.2466 L1378.9937,67.2485 Q1378.5299,66.8213 1378.0935,66.6229 Q1377.6571,66.4246 1377.1932,66.4246 Q1376.2044,66.4246 1375.7009,67.2089 Q1375.1973,67.9932 1375.1973,69.5374 Q1375.1973,71.0754 1375.7009,71.8597 Q1376.2044,72.644 1377.1932,72.644 Q1377.6571,72.644 1378.0935,72.4457 Q1378.5299,72.2473 1378.9937,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="1393.75" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1363.5417" x2="1526.0417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1363.5417" x2="1526.0417" y1="93.4245" y2="93.4245"/><!--MD5=[594e37ec8cb60572afabc44dbe413f70]
+class MultiUploadPage--><rect codeLine="37" fill="#282828" height="83.3781" id="MultiUploadPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="1213.0208" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="1213.0208" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="1213.0208" y="220.5078"/><rect codeLine="37" fill="none" height="83.3781" id="MultiUploadPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="1213.0208" y="197.4528"/><ellipse cx="1261.9792" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1263.8896,217.572 Q1263.4623,217.7917 1262.9924,217.9016 Q1262.5224,218.0115 1262.0036,218.0115 Q1260.1603,218.0115 1259.1899,216.7969 Q1258.2194,215.5823 1258.2194,213.2874 Q1258.2194,210.9863 1259.1899,209.7717 Q1260.1603,208.5571 1262.0036,208.5571 Q1262.5224,208.5571 1262.9985,208.667 Q1263.4745,208.7769 1263.8896,208.9966 L1263.8896,210.9985 Q1263.4257,210.5713 1262.9893,210.3729 Q1262.5529,210.1746 1262.089,210.1746 Q1261.1003,210.1746 1260.5967,210.9589 Q1260.0932,211.7432 1260.0932,213.2874 Q1260.0932,214.8254 1260.5967,215.6097 Q1261.1003,216.394 1262.089,216.394 Q1262.5529,216.394 1262.9893,216.1957 Q1263.4257,215.9973 1263.8896,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="109.375" x="1284.8958" y="217.8711">MultiUploadPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1214.0625" x2="1433.8542" y1="228.8411" y2="228.8411"/><ellipse cx="1224.4792" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="1235.9375" y="271.1222">MultiUploadPage(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1214.0625" x2="1280.2083" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1283.3333" y="250.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1367.7083" x2="1433.8542" y1="247.0469" y2="247.0469"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1684.375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1684.375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1684.375" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1684.375" y="53.7028"/><ellipse cx="1698.9583" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1700.8687,73.822 Q1700.4415,74.0417 1699.9715,74.1516 Q1699.5015,74.2615 1698.9827,74.2615 Q1697.1395,74.2615 1696.169,73.0469 Q1695.1986,71.8323 1695.1986,69.5374 Q1695.1986,67.2363 1696.169,66.0217 Q1697.1395,64.8071 1698.9827,64.8071 Q1699.5015,64.8071 1699.9776,64.917 Q1700.4537,65.0269 1700.8687,65.2466 L1700.8687,67.2485 Q1700.4049,66.8213 1699.9685,66.6229 Q1699.5321,66.4246 1699.0682,66.4246 Q1698.0794,66.4246 1697.5759,67.2089 Q1697.0723,67.9932 1697.0723,69.5374 Q1697.0723,71.0754 1697.5759,71.8597 Q1698.0794,72.644 1699.0682,72.644 Q1699.5321,72.644 1699.9685,72.4457 Q1700.4049,72.2473 1700.8687,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="1715.625" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1685.4167" x2="1891.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1685.4167" x2="1891.6667" y1="93.4245" y2="93.4245"/><!--MD5=[11eab9f0e1c9df5630dafc8151d0b1ce]
+class UploadApplication--><rect codeLine="44" fill="#282828" height="83.3781" id="UploadApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="1702.6042" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="1702.6042" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="1702.6042" y="220.5078"/><rect codeLine="44" fill="none" height="83.3781" id="UploadApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="1702.6042" y="197.4528"/><ellipse cx="1723.75" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1725.6604,217.572 Q1725.2332,217.7917 1724.7632,217.9016 Q1724.2932,218.0115 1723.7744,218.0115 Q1721.9312,218.0115 1720.9607,216.7969 Q1719.9902,215.5823 1719.9902,213.2874 Q1719.9902,210.9863 1720.9607,209.7717 Q1721.9312,208.5571 1723.7744,208.5571 Q1724.2932,208.5571 1724.7693,208.667 Q1725.2454,208.7769 1725.6604,208.9966 L1725.6604,210.9985 Q1725.1965,210.5713 1724.7601,210.3729 Q1724.3237,210.1746 1723.8599,210.1746 Q1722.8711,210.1746 1722.3676,210.9589 Q1721.864,211.7432 1721.864,213.2874 Q1721.864,214.8254 1722.3676,215.6097 Q1722.8711,216.394 1723.8599,216.394 Q1724.3237,216.394 1724.7601,216.1957 Q1725.1965,215.9973 1725.6604,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="1741.875" y="217.8711">UploadApplication</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1703.6458" x2="1873.4375" y1="228.8411" y2="228.8411"/><ellipse cx="1714.0625" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="1725.5208" y="271.1222">Folder getUploadFolder()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1703.6458" x2="1753.125" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="1756.25" y="250.8565">(filesystem)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1823.9583" x2="1873.4375" y1="247.0469" y2="247.0469"/><!--MD5=[0e47140b9286bb05dd780e43cf54a6eb]
+class UploadPage--><rect codeLine="51" fill="#282828" height="83.3781" id="UploadPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="1471.3542" y="197.4528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="1471.3542" y="197.4528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="1471.3542" y="220.5078"/><rect codeLine="51" fill="none" height="83.3781" id="UploadPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="1471.3542" y="197.4528"/><ellipse cx="1523.4375" cy="213.147" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1525.3479,217.572 Q1524.9207,217.7917 1524.4507,217.9016 Q1523.9807,218.0115 1523.4619,218.0115 Q1521.6187,218.0115 1520.6482,216.7969 Q1519.6777,215.5823 1519.6777,213.2874 Q1519.6777,210.9863 1520.6482,209.7717 Q1521.6187,208.5571 1523.4619,208.5571 Q1523.9807,208.5571 1524.4568,208.667 Q1524.9329,208.7769 1525.3479,208.9966 L1525.3479,210.9985 Q1524.884,210.5713 1524.4476,210.3729 Q1524.0112,210.1746 1523.5474,210.1746 Q1522.5586,210.1746 1522.0551,210.9589 Q1521.5515,211.7432 1521.5515,213.2874 Q1521.5515,214.8254 1522.0551,215.6097 Q1522.5586,216.394 1523.5474,216.394 Q1524.0112,216.394 1524.4476,216.1957 Q1524.884,215.9973 1525.3479,215.5701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="1546.3542" y="217.8711">UploadPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1472.3958" x2="1665.1042" y1="228.8411" y2="228.8411"/><ellipse cx="1482.8125" cy="264.211" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="1494.2708" y="271.1222">UploadPage(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1472.3958" x2="1525" y1="247.0469" y2="247.0469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1528.125" y="250.8565">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1612.5" x2="1665.1042" y1="247.0469" y2="247.0469"/><!--MD5=[35f88dc77ef4209031623eeec3f64529]
+reverse link ListView to UploadPage.FileListView--><path codeLine="6" d="M438.0729,82.8799 C406.0521,86.9007 367.9583,94.734 336.4583,109.9528 C293.0417,130.932 252.4583,168.2549 224.9896,197.2236 " fill="none" id="ListView-backto-UploadPage.FileListView" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="437.6354,75.5882,459.1146,80.6611,439.1667,90.0986,437.6354,75.5882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[86975ed7989f03595f9258d19315b739]
+reverse link ListView to MultiUploadPage.FileListView--><path codeLine="13" d="M571.7604,89.8695 C589.4375,94.5049 608.0313,100.9736 623.9583,109.9528 C663.3646,132.1715 699.625,168.9736 724.1771,197.4424 " fill="none" id="ListView-backto-MultiUploadPage.FileListView" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="569.9479,96.932,551.2708,85.1507,573.2083,82.7132,569.9479,96.932" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3c8050c47a7e49281a74353f2bf31396]
+reverse link Form to UploadPage.FileUploadForm--><path codeLine="20" d="M630.1979,89.0257 C611.875,93.7861 591.9063,100.5361 575,109.9528 C534.4792,132.5153 496.25,169.0882 470.0833,197.4007 " fill="none" id="Form-backto-UploadPage.FileUploadForm" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="628.7396,81.8799,650.6771,84.307,632.0104,96.0882,628.7396,81.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[21f4eb1193165658676da1399a74b64e]
+reverse link Form to MultiUploadPage.FileUploadForm--><path codeLine="27" d="M743.0208,83.0361 C797.5208,87.8903 875.6146,96.8382 903.125,109.9528 C935.5104,125.3903 965.5313,151.057 989.3021,175.3903 " fill="none" id="Form-backto-MultiUploadPage.FileUploadForm" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="742.1875,90.2861,722.0417,81.2653,743.4167,75.7549,742.1875,90.2861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e484a030cc777c5f0501503d79b9e49d]
+reverse link WicketExamplePage to MultiUploadPage--><path codeLine="36" d="M1414.4271,118.7549 C1396.2396,142.7445 1373.1771,173.1507 1354.8958,197.2757 " fill="none" id="WicketExamplePage-backto-MultiUploadPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1408.8229,114.0778,1427.2188,101.8799,1420.4479,122.8799,1408.8229,114.0778" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[635f03d5890b3e196c55e0bc24b56830]
+reverse link WicketExampleApplication to UploadApplication--><path codeLine="43" d="M1788.5417,123.057 C1788.5417,146.2965 1788.5417,174.5674 1788.5417,197.2757 " fill="none" id="WicketExampleApplication-backto-UploadApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1781.25,122.7132,1788.5417,101.8799,1795.8333,122.7132,1781.25,122.7132" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e41657ab055f13e4149396aad660ab6a]
+reverse link WicketExamplePage to UploadPage--><path codeLine="50" d="M1475.6667,118.4007 C1494.3646,142.4424 1518.1563,173.0361 1537.0104,197.2757 " fill="none" id="WicketExamplePage-backto-UploadPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1469.8542,122.7965,1462.8125,101.8799,1481.3646,113.8486,1469.8542,122.7965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e74b566a1cd46c7619c255fe826a0d41]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.upload"
+    
+    ListView <|- - UploadPage.FileListView
+    class UploadPage.FileListView
+    {
+        - -(constructors)- -
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    ListView <|- - MultiUploadPage.FileListView
+    class MultiUploadPage.FileListView
+    {
+        - -(constructors)- -
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    Form <|- - UploadPage.FileUploadForm
+    class UploadPage.FileUploadForm
+    {
+        - -(constructors)- -
+        +FileUploadForm(String)
+    }
+    
+    Form <|- - MultiUploadPage.FileUploadForm
+    class MultiUploadPage.FileUploadForm
+    {
+        - -(constructors)- -
+        +FileUploadForm(String)
+        - -(filesystem)- -
+        +Collection<FileUpload> getUploads()
+    }
+    
+    WicketExamplePage <|- - MultiUploadPage
+    class MultiUploadPage
+    {
+        - -(constructors)- -
+        +MultiUploadPage(PageParameters)
+    }
+    
+    WicketExampleApplication <|- - UploadApplication
+    class UploadApplication
+    {
+        - -(filesystem)- -
+        +Folder getUploadFolder()
+    }
+    
+    WicketExamplePage <|- - UploadPage
+    class UploadPage
+    {
+        - -(constructors)- -
+        +UploadPage(PageParameters)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.upload"
+    
+    ListView <|- - UploadPage.FileListView
+    class UploadPage.FileListView
+    {
+        - -(constructors)- -
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    ListView <|- - MultiUploadPage.FileListView
+    class MultiUploadPage.FileListView
+    {
+        - -(constructors)- -
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    Form <|- - UploadPage.FileUploadForm
+    class UploadPage.FileUploadForm
+    {
+        - -(constructors)- -
+        +FileUploadForm(String)
+    }
+    
+    Form <|- - MultiUploadPage.FileUploadForm
+    class MultiUploadPage.FileUploadForm
+    {
+        - -(constructors)- -
+        +FileUploadForm(String)
+        - -(filesystem)- -
+        +Collection<FileUpload> getUploads()
+    }
+    
+    WicketExamplePage <|- - MultiUploadPage
+    class MultiUploadPage
+    {
+        - -(constructors)- -
+        +MultiUploadPage(PageParameters)
+    }
+    
+    WicketExampleApplication <|- - UploadApplication
+    class UploadApplication
+    {
+        - -(filesystem)- -
+        +Folder getUploadFolder()
+    }
+    
+    WicketExamplePage <|- - UploadPage
+    class UploadPage
+    {
+        - -(constructors)- -
+        +UploadPage(PageParameters)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

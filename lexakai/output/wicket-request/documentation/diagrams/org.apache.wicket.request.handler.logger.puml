@@ -1,0 +1,24 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.handler.logger"
+    
+    interface ILogData
+    
+    ILogData <|-- DelegateLogData
+    class DelegateLogData
+    {
+        --(constructors)--
+        +DelegateLogData(ILogData)
+        --
+        +ILogData getDelegateData()
+    }
+    
+    ILogData <|-- NoLogData
+    class NoLogData
+    {
+    }
+    
+@enduml
+

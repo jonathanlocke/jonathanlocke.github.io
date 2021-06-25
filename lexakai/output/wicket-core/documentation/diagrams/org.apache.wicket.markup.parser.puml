@@ -1,0 +1,153 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.parser"
+    
+    interface IXmlPullParser
+    interface IMarkupFilter
+    
+    IMarkupFilter <|-- AbstractMarkupFilter
+    abstract class AbstractMarkupFilter
+    {
+        --(constructors)--
+        +AbstractMarkupFilter()
+        +AbstractMarkupFilter(MarkupResourceStream)
+        --
+        #MarkupResourceStream getMarkupResourceStream()
+        #String getWicketNamespace()
+        #String getWicketNamespace(MarkupStream)
+        --(extension points)--
+        #MarkupElement onComponentTag(ComponentTag)
+        #MarkupElement onSpecialTag(HtmlSpecialTag)
+        --(identity)--
+        #int getRequestUniqueId()
+    }
+    
+    enum IXmlPullParser.HttpTagType
+    {
+        BODY
+        CDATA
+        COMMENT
+        CONDITIONAL_COMMENT
+        CONDITIONAL_COMMENT_ENDIF
+        DOCTYPE
+        NOT_INITIALIZED
+        PROCESSING_INSTRUCTION
+        SPECIAL_TAG
+        TAG
+    }
+    
+    interface IMarkupFilter
+    {
+        --
+        +void postProcess(Markup)
+        --(iteration)--
+        +IMarkupFilter getNextFilter()
+        +MarkupElement nextElement()
+        +void setNextFilter(IMarkupFilter parent)
+    }
+    
+    interface IXmlPullParser
+    {
+        --
+        +XmlTag getElement()
+        +String getEncoding()
+        +void setPositionMarker()
+        +void setPositionMarker(int pos)
+        --(parsing)--
+        +HttpTagType next()
+        +void parse(InputStream, String encoding)
+        +void parse(InputStream)
+        +void parse(CharSequence string)
+        --(primitive)--
+        +CharSequence getDoctype()
+        +CharSequence getInput(int fromPos, int toPos)
+        +CharSequence getInputFromPositionMarker(int toPos)
+        +CharSequence getString()
+    }
+    
+    class TagStack
+    {
+        --
+        +void assertValidInStack(ComponentTag)
+        +void debug()
+        --(io)--
+        +ComponentTag getNotClosedTag()
+        +boolean requiresCloseTag(String name)
+        --(naming)--
+        +boolean hasEqualTagName(ComponentTag tag1, ComponentTag tag2)
+    }
+    
+    enum XmlTag.TagType
+    {
+        CLOSE
+        OPEN
+        OPEN_CLOSE
+    }
+    
+    class XmlTag.TextSegment
+    {
+        --(primitive)--
+        +CharSequence getText()
+    }
+    
+    IXmlPullParser <|-- XmlPullParser
+    class XmlPullParser
+    {
+        --(constructors)--
+        +XmlPullParser()
+        --
+        #void specialTagHandling(String tagText, int openBracketIndex, int closeBracketIndex)
+        --(iteration)--
+        +XmlTag nextTag()
+    }
+    
+    class XmlTag
+    {
+        --(constructors)--
+        +XmlTag()
+        +XmlTag(TextSegment, TagType)
+        --
+        +boolean closes(XmlTag open)
+        +boolean equalTo(XmlTag element)
+        +int getColumnNumber()
+        +int getLength()
+        +int getLineNumber()
+        +String getNamespace()
+        +XmlTag getOpenTag()
+        +int getPos()
+        +TagType getType()
+        +XmlTag makeImmutable()
+        +XmlTag mutable()
+        +void setNamespace(String namespace)
+        +void setOpenTag(XmlTag)
+        +void setType(TagType)
+        --(checks)--
+        +boolean hasAttributes()
+        +boolean isClose()
+        +boolean isMutable()
+        +boolean isOpen()
+        +boolean isOpenClose()
+        --(collection)--
+        +IValueMap getAttributes()
+        +Object put(String key, CharSequence value)
+        +Object put(String key, int value)
+        +Object put(String key, boolean value)
+        +Object put(String key, StringValue)
+        +void putAll(Map<String,Object>)
+        +void remove(String key)
+        --(conversion)--
+        +CharSequence toCharSequence()
+        +String toDebugString()
+        +String toUserDebugString()
+        +CharSequence toXmlString()
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(primitive)--
+        +CharSequence getAttribute(String key)
+    }
+    
+@enduml
+

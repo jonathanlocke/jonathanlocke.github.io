@@ -1,0 +1,62 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.https"
+    
+    interface IRequestMapperDelegate
+    interface IRequestHandler
+    
+    class HttpsConfig
+    {
+        --(constructors)--
+        +HttpsConfig()
+        +HttpsConfig(int, int)
+        --
+        +void setPreferStateful(boolean preferStateful)
+        --(checks)--
+        +boolean isPreferStateful()
+        --(network)--
+        +int getHttpPort()
+        +int getHttpsPort()
+        +void setHttpPort(int httpPort)
+        +void setHttpsPort(int httpsPort)
+    }
+    
+    IRequestMapperDelegate <|-- HttpsMapper
+    class HttpsMapper
+    {
+        --(constructors)--
+        +HttpsMapper(IRequestMapper, HttpsConfig)
+        --
+        #Scheme getSchemeOf(Request)
+        --(functional)--
+        #Scheme getDesiredSchemeFor(IRequestHandler)
+        #Scheme getDesiredSchemeFor(Class<? extends IRequestablePage> pageClass)
+        --(messaging)--
+        #IRequestHandler createRedirectHandler(String url)
+        --(network)--
+        +HttpsConfig getConfig()
+        #String createRedirectUrl(IRequestHandler, Request, Scheme)
+    }
+    
+    IRequestHandler <|-- HttpsMapper.RedirectHandler
+    class HttpsMapper.RedirectHandler
+    {
+        --(constructors)--
+        +RedirectHandler(String, HttpsConfig)
+        --(network)--
+        +String getUrl()
+    }
+    
+    annotation RequireHttps
+    
+    enum Scheme
+    {
+        ANY
+        HTTP
+        HTTPS
+    }
+    
+@enduml
+

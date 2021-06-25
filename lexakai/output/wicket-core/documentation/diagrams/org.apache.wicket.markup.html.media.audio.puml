@@ -1,0 +1,24 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.media.audio"
+    
+    MediaComponent <|-- Audio
+    class Audio
+    {
+        --(constructors)--
+        +Audio(String)
+        +Audio(String, IModel<?>)
+        +Audio(String, IModel<?>, ResourceReference)
+        +Audio(String, IModel<?>, ResourceReference, PageParameters)
+        +Audio(String, IModel<?>, String)
+        +Audio(String, IModel<?>, String, PageParameters)
+        +Audio(String, ResourceReference)
+        +Audio(String, ResourceReference, PageParameters)
+        +Audio(String, String)
+        +Audio(String, String, PageParameters)
+    }
+    
+@enduml
+

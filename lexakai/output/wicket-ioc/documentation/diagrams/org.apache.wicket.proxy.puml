@@ -1,0 +1,103 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.proxy"
+    
+    abstract AbstractCGLibInterceptor
+    
+    interface Serializable
+    interface MethodInterceptor
+    interface IClusterable
+    interface NoOp
+    interface ILazyInitProxy
+    interface CallbackFilter
+    interface InvocationHandler
+    interface IWriteReplace
+    
+    MethodInterceptor <|-- LazyInitProxyFactory.AbstractCGLibInterceptor
+    ILazyInitProxy <|-- LazyInitProxyFactory.AbstractCGLibInterceptor
+    Serializable <|-- LazyInitProxyFactory.AbstractCGLibInterceptor
+    LazyInitProxyFactory.IWriteReplace <|-- LazyInitProxyFactory.AbstractCGLibInterceptor
+    abstract class LazyInitProxyFactory.AbstractCGLibInterceptor
+    {
+        --(constructors)--
+        +AbstractCGLibInterceptor(Class<?>, IProxyTargetLocator)
+    }
+    
+    LazyInitProxyFactory.AbstractCGLibInterceptor <|-- LazyInitProxyFactory.CGLibInterceptor
+    class LazyInitProxyFactory.CGLibInterceptor
+    {
+        --(constructors)--
+        +CGLibInterceptor(Class<?>, IProxyTargetLocator)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ILazyInitProxy
+    interface ILazyInitProxy
+    {
+        --
+        +IProxyTargetLocator getObjectLocator()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IProxyTargetLocator
+    interface IProxyTargetLocator
+    {
+        --(search)--
+        +Object locateProxyTarget()
+    }
+    
+    interface LazyInitProxyFactory.IWriteReplace
+    {
+        --(write)--
+        +Object writeReplace()
+    }
+    
+    InvocationHandler <|-- LazyInitProxyFactory.JdkHandler
+    ILazyInitProxy <|-- LazyInitProxyFactory.JdkHandler
+    Serializable <|-- LazyInitProxyFactory.JdkHandler
+    LazyInitProxyFactory.IWriteReplace <|-- LazyInitProxyFactory.JdkHandler
+    class LazyInitProxyFactory.JdkHandler
+    {
+        --(constructors)--
+        +JdkHandler(Class<?>, IProxyTargetLocator)
+    }
+    
+    class LazyInitProxyFactory
+    {
+        --
+        +Object createProxy(Class<?> type, IProxyTargetLocator)
+        --(checks)--
+        +boolean isEqualsMethod(Method)
+        +boolean isFinalizeMethod(Method)
+        +boolean isHashCodeMethod(Method)
+        +boolean isToStringMethod(Method)
+        +boolean isWriteReplaceMethod(Method)
+    }
+    
+    CallbackFilter <|-- LazyInitProxyFactory.NoOpForProtectedMethodsCGLibCallbackFilter
+    class LazyInitProxyFactory.NoOpForProtectedMethodsCGLibCallbackFilter
+    {
+    }
+    
+    IClusterable <|-- LazyInitProxyFactory.ProxyReplacement
+    class LazyInitProxyFactory.ProxyReplacement
+    {
+        --(constructors)--
+        +ProxyReplacement(String, IProxyTargetLocator)
+    }
+    
+    NoOp <|-- LazyInitProxyFactory.SerializableNoOpCallback
+    Serializable <|-- LazyInitProxyFactory.SerializableNoOpCallback
+    class LazyInitProxyFactory.SerializableNoOpCallback
+    {
+    }
+    
+    DefaultNamingPolicy <|-- LazyInitProxyFactory.WicketNamingPolicy
+    class LazyInitProxyFactory.WicketNamingPolicy
+    {
+    }
+    
+@enduml
+

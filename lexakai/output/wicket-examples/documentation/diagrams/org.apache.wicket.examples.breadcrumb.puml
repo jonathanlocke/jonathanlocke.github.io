@@ -1,0 +1,65 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.breadcrumb"
+    
+    WicketExampleApplication <|-- BreadCrumbApplication
+    class BreadCrumbApplication
+    {
+    }
+    
+    BreadCrumbPanel <|-- FirstPanel
+    class FirstPanel
+    {
+        --(constructors)--
+        +FirstPanel(String, IBreadCrumbModel)
+    }
+    
+    BreadCrumbPanel <|-- FourthPanel
+    class FourthPanel
+    {
+        --(constructors)--
+        +FourthPanel(String, IBreadCrumbModel)
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    Form <|-- SecondPanel.InputForm
+    class SecondPanel.InputForm
+    {
+        --(constructors)--
+        +InputForm(String)
+        --(read)--
+        +String getInput()
+        +void setInput(String input)
+    }
+    
+    BreadCrumbPanel <|-- ResultPanel
+    class ResultPanel
+    {
+        --(constructors)--
+        +ResultPanel(String, IBreadCrumbModel, String)
+    }
+    
+    BreadCrumbPanel <|-- SecondPanel
+    class SecondPanel
+    {
+        --(constructors)--
+        +SecondPanel(String, IBreadCrumbModel)
+    }
+    
+    BreadCrumbPanel <|-- ThirdPanel
+    class ThirdPanel
+    {
+        --(constructors)--
+        +ThirdPanel(String, IBreadCrumbModel)
+    }
+    
+@enduml
+

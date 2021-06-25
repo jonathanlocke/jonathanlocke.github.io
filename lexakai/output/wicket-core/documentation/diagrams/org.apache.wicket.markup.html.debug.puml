@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.debug"
+    
+    interface IClusterable
+    
+    IClusterable <|-- PageView.ComponentData
+    class PageView.ComponentData
+    {
+    }
+    
+    Panel <|-- PageView
+    class PageView
+    {
+        --(constructors)--
+        +PageView(String, Page)
+    }
+    
+@enduml
+

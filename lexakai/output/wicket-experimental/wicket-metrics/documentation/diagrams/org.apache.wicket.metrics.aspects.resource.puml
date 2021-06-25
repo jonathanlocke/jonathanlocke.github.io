@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.resource"
+    
+    WicketMetrics <|-- IResourceCreateAspect
+    class IResourceCreateAspect
+    {
+        --(factory)--
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ResourceReferenceCreateAspect
+    class ResourceReferenceCreateAspect
+    {
+        --(factory)--
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+@enduml
+

@@ -1,0 +1,18 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authentication"
+    
+    interface IAuthenticationStrategy
+    {
+        --(collection)--
+        +void remove()
+        --(read)--
+        +String[] load()
+        --(write)--
+        +void save(String credential, String... extraCredentials)
+    }
+    
+@enduml
+

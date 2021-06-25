@@ -1,0 +1,43 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.source"
+    
+    interface IModel
+    
+    WebMarkupContainer <|-- SourcesPage.CodePanel
+    class SourcesPage.CodePanel
+    {
+    }
+    
+    WebMarkupContainer <|-- SourcesPage.FilesBrowser
+    class SourcesPage.FilesBrowser
+    {
+    }
+    
+    LoadableDetachableModel <|-- SourcesPage.PackagedResourcesModel
+    class SourcesPage.PackagedResourcesModel
+    {
+    }
+    
+    IModel <|-- SourcesPage.SourceModel
+    class SourcesPage.SourceModel
+    {
+    }
+    
+    WebPage <|-- SourcesPage
+    class SourcesPage
+    {
+        --(constructors)--
+        +SourcesPage(PageParameters)
+        --
+        +PageParameters generatePageParameters(Class<? extends Page> clazz, String fileName)
+        +PageParameters generatePageParameters(Page)
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+    }
+    
+@enduml
+

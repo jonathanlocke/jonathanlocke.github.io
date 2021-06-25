@@ -1,0 +1,84 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.spring.common"
+    
+    interface ContactDao
+    interface IClusterable
+    
+    IClusterable <|-- Contact
+    class Contact
+    {
+        --(constructors)--
+        +Contact()
+        +Contact(String, String)
+        --
+        +String getCellPhone()
+        +String getHomePhone()
+        +void setCellPhone(String cellPhone)
+        +void setHomePhone(String homePhone)
+        --(collection)--
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        --(identity)--
+        +long getId()
+        +void setId(long id)
+    }
+    
+    interface ContactDao
+    {
+        --
+        +Contact get(long id)
+        --(collection)--
+        +int count()
+        +Iterator<Contact> find(QueryParam qp)
+    }
+    
+    ContactDao <|-- ContactDaoImpl
+    class ContactDaoImpl
+    {
+        --(constructors)--
+        +ContactDaoImpl()
+        --(collection)--
+        #void add(Contact)
+        #List<Contact> getIndex(SortParam)
+        --(filesystem)--
+        +void delete(Contact)
+        --(write)--
+        +void save(Contact)
+    }
+    
+    class ContactGenerator
+    {
+        --
+        +Contact generate()
+        +void generate(Collection<Contact>, int count)
+        +ContactGenerator getInstance()
+        --(identity)--
+        +long generateId()
+    }
+    
+    class QueryParam
+    {
+        --(constructors)--
+        +QueryParam(long, long)
+        +QueryParam(long, long, SortParam)
+        --(collection)--
+        +long getCount()
+        +long getFirst()
+        +SortParam getSort()
+        +boolean hasSort()
+    }
+    
+    class SpringConfig
+    {
+        --
+        +ExampleApplication application()
+        +ContactDao contactDao()
+    }
+    
+@enduml
+

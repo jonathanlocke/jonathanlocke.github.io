@@ -1,0 +1,55 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.crypt"
+    
+    abstract AbstractJceCrypt
+    abstract AbstractKeyInSessionCryptFactory
+    
+    interface ICryptFactory
+    interface ICrypt
+    interface IClusterable
+    
+    AbstractJceCrypt <|-- AESCrypt
+    class AESCrypt
+    {
+        --(constructors)--
+        +AESCrypt(SecretKey, ISecureRandomSupplier)
+        +AESCrypt(SecretKey, String, ISecureRandomSupplier)
+    }
+    
+    ICrypt <|-- AbstractJceCrypt
+    abstract class AbstractJceCrypt
+    {
+        --
+        #byte[] decrypt(byte[] encrypted)
+        #byte[] encrypt(byte[] plainBytes)
+    }
+    
+    ICryptFactory <|-- AbstractKeyInSessionCryptFactory
+    abstract class AbstractKeyInSessionCryptFactory<T>
+    {
+        --
+        #ICrypt createCrypt(T key)
+        --(collection)--
+        #T generateKey(Session)
+    }
+    
+    IClusterable <|-- KeyInSessionSunJceCryptFactory.CryptData
+    class KeyInSessionSunJceCryptFactory.CryptData
+    {
+    }
+    
+    AbstractKeyInSessionCryptFactory <|-- KeyInSessionSunJceCryptFactory
+    class KeyInSessionSunJceCryptFactory
+    {
+        --(constructors)--
+        +KeyInSessionSunJceCryptFactory()
+        +KeyInSessionSunJceCryptFactory(String)
+        --
+        #ICrypt createCrypt()
+    }
+    
+@enduml
+

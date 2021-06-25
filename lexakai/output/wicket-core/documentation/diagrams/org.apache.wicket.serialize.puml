@@ -1,0 +1,15 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.serialize"
+    
+    interface ISerializer
+    {
+        --
+        +Object deserialize(byte[] data)
+        +byte[] serialize(Object)
+    }
+    
+@enduml
+

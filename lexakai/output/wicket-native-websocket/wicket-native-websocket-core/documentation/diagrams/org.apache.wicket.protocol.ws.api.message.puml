@@ -1,0 +1,91 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api.message"
+    
+    abstract AbstractClientMessage
+    
+    interface IWebSocketMessage
+    
+    AbstractClientMessage <|-- AbortedMessage
+    class AbortedMessage
+    {
+        --(constructors)--
+        +AbortedMessage(Application, String, IKey)
+    }
+    
+    IWebSocketMessage <|-- AbstractClientMessage
+    abstract class AbstractClientMessage
+    {
+        --(constructors)--
+        +AbstractClientMessage(Application, String, IKey)
+        --
+        +Application getApplication()
+        --(collection)--
+        +IKey getKey()
+        --(identity)--
+        +String getSessionId()
+    }
+    
+    AbstractClientMessage <|-- BinaryMessage
+    class BinaryMessage
+    {
+        --(constructors)--
+        +BinaryMessage(WebApplication, String, IKey, byte[], int, int)
+        --
+        +byte[] getData()
+        +int getLength()
+        +int getOffset()
+    }
+    
+    AbstractClientMessage <|-- ClosedMessage
+    class ClosedMessage
+    {
+        --(constructors)--
+        +ClosedMessage(Application, String, IKey, int, String)
+        --(io)--
+        +int getCloseCode()
+        --(messaging)--
+        +String getMessage()
+    }
+    
+    AbstractClientMessage <|-- ConnectedMessage
+    class ConnectedMessage
+    {
+        --(constructors)--
+        +ConnectedMessage(Application, String, IKey)
+    }
+    
+    AbstractClientMessage <|-- ErrorMessage
+    class ErrorMessage
+    {
+        --(constructors)--
+        +ErrorMessage(Application, String, IKey, Throwable)
+        --
+        +Throwable getThrowable()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IWebSocketMessage
+    interface IWebSocketMessage
+    {
+    }
+    
+    interface IWebSocketMessage
+    IWebSocketMessage <|-- IWebSocketPushMessage
+    interface IWebSocketPushMessage
+    {
+    }
+    
+    AbstractClientMessage <|-- TextMessage
+    class TextMessage
+    {
+        --(constructors)--
+        +TextMessage(Application, String, IKey, CharSequence)
+        --
+        +String getText()
+    }
+    
+@enduml
+

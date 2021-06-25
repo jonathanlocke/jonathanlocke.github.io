@@ -1,0 +1,64 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.requestmapper"
+    
+    abstract AbstractComponentMapper
+    
+    HomePageMapper <|-- CustomHomeMapper
+    class CustomHomeMapper
+    {
+        --(constructors)--
+        +CustomHomeMapper(Class<? extends IRequestablePage>)
+    }
+    
+    WicketExamplePage <|-- HttpsPage
+    class HttpsPage
+    {
+    }
+    
+    HttpsConfig <|-- RequestMapperApplication.LazyHttpsConfig
+    class RequestMapperApplication.LazyHttpsConfig
+    {
+    }
+    
+    AbstractComponentMapper <|-- LocaleFirstMapper
+    class LocaleFirstMapper
+    {
+        --(constructors)--
+        +LocaleFirstMapper(IRequestMapper)
+    }
+    
+    class LocaleHelper
+    {
+    }
+    
+    WicketExamplePage <|-- LocalizedPage
+    class LocalizedPage
+    {
+        --(constructors)--
+        +LocalizedPage(PageParameters)
+    }
+    
+    ResourceReference <|-- MapperDemoResourceReference
+    class MapperDemoResourceReference
+    {
+        --(constructors)--
+        +MapperDemoResourceReference()
+    }
+    
+    WicketExampleApplication <|-- RequestMapperApplication
+    class RequestMapperApplication
+    {
+    }
+    
+    WicketExamplePage <|-- RequestMapperHomePage
+    class RequestMapperHomePage
+    {
+        --(constructors)--
+        +RequestMapperHomePage(PageParameters)
+    }
+    
+@enduml
+

@@ -1,0 +1,73 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.spring"
+    
+    interface IWebApplicationFactory
+    interface IProxyTargetLocator
+    
+    SpringWebApplicationFactory <|-- AnnotationConfigSpringWebApplicationFactory
+    class AnnotationConfigSpringWebApplicationFactory
+    {
+    }
+    
+    class FieldBeansCollector
+    {
+        --(constructors)--
+        +FieldBeansCollector(ResolvableType)
+        --
+        +Object getBeansToInject()
+        +FieldType getFieldType()
+        --(collection)--
+        +void addBean(String beanName, Object bean)
+    }
+    
+    enum FieldBeansCollector.FieldType
+    {
+        LIST
+        MAP
+        NONE
+        SET
+    }
+    
+    interface IClusterable
+    IClusterable <|-- ISpringContextLocator
+    interface ISpringContextLocator
+    {
+        --
+        +ApplicationContext getSpringContext()
+    }
+    
+    IProxyTargetLocator <|-- SpringBeanLocator
+    class SpringBeanLocator
+    {
+        --(constructors)--
+        +SpringBeanLocator(Class<?>, Field, ISpringContextLocator)
+        +SpringBeanLocator(Class<?>, ISpringContextLocator)
+        +SpringBeanLocator(String, Class<?>, Field, ISpringContextLocator)
+        +SpringBeanLocator(String, Class<?>, ISpringContextLocator)
+        --
+        +RootBeanDefinition getBeanDefinition(ApplicationContext ctx, String name)
+        +Class<?> getBeanType()
+        +ISpringContextLocator getSpringContextLocator()
+        --(checks)--
+        +boolean isSingletonBean()
+        --(naming)--
+        +String getBeanName()
+    }
+    
+    IWebApplicationFactory <|-- SpringWebApplicationFactory
+    class SpringWebApplicationFactory
+    {
+        --
+        #ConfigurableWebApplicationContext createWebApplicationContext(WebApplicationContext parent, WicketFilter)
+        #void postProcessWebApplicationContext(ConfigurableWebApplicationContext wac, WicketFilter)
+        --(configuration)--
+        #String getContextConfigLocation(WicketFilter)
+        --(factory)--
+        #ConfigurableWebApplicationContext newApplicationContext()
+    }
+    
+@enduml
+

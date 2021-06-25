@@ -1,0 +1,171 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.data.table.filter"
+    
+    abstract AbstractFilter
+    abstract AbstractColumn
+    abstract AbstractToolbar
+    
+    interface IModel
+    interface IFilteredColumn
+    
+    Panel <|-- AbstractFilter
+    class AbstractFilter
+    {
+        --(constructors)--
+        +AbstractFilter(String, FilterForm<?>)
+        --
+        #void enableFocusTracking(FormComponent<?> fc)
+        #Object getState()
+        #IModel<?> getStateModel()
+        --(filtering)--
+        #IFilterStateLocator<?> getStateLocator()
+    }
+    
+    AbstractFilter <|-- ChoiceFilter
+    class ChoiceFilter<T>
+    {
+        --(constructors)--
+        +ChoiceFilter(String, IModel<T>, FilterForm<?>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>, boolean)
+        +ChoiceFilter(String, IModel<T>, FilterForm<?>, IModel<? extends List<? extends T>>, boolean)
+        +ChoiceFilter(String, IModel<T>, FilterForm<?>, List<? extends T>, IChoiceRenderer<? super T>, boolean)
+        +ChoiceFilter(String, IModel<T>, FilterForm<?>, List<? extends T>, boolean)
+        --
+        +DropDownChoice<T> getChoice()
+        --(factory)--
+        #DropDownChoice<T> newDropDownChoice(String id, IModel<T>, IModel<? extends List<? extends T>> choices, IChoiceRenderer<? super T>)
+    }
+    
+    FilteredPropertyColumn <|-- ChoiceFilteredPropertyColumn
+    class ChoiceFilteredPropertyColumn<T, Y, S>
+    {
+        --(constructors)--
+        +ChoiceFilteredPropertyColumn(IModel<String>, S, String, IModel<? extends List<? extends Y>>)
+        +ChoiceFilteredPropertyColumn(IModel<String>, String, IModel<? extends List<? extends Y>>)
+        --
+        #boolean enableAutoSubmit()
+        #IChoiceRenderer<Y> getChoiceRenderer()
+        --(filtering)--
+        #IModel<? extends List<? extends Y>> getFilterChoices()
+        #IModel<Y> getFilterModel(FilterForm<?>)
+    }
+    
+    Form <|-- FilterForm
+    class FilterForm<T>
+    {
+        --(constructors)--
+        +FilterForm(String, IFilterStateLocator<T>)
+        --
+        +void enableFocusTracking(FormComponent<?> fc)
+        --(filtering)--
+        +IFilterStateLocator<T> getStateLocator()
+        --(identity)--
+        +String getFocusTrackerFieldCssId()
+        --(messaging)--
+        +String getFocusTrackingHandler(Component)
+        --(read)--
+        #String generateHiddenInputMarkup()
+    }
+    
+    IModel <|-- FilterStateModel
+    class FilterStateModel<T>
+    {
+        --(constructors)--
+        +FilterStateModel(IFilterStateLocator<T>)
+    }
+    
+    AbstractToolbar <|-- FilterToolbar
+    class FilterToolbar
+    {
+        --(constructors)--
+        +FilterToolbar(DataTable<T, S>, FilterForm<F>)
+    }
+    
+    AbstractColumn <|-- FilteredAbstractColumn
+    IFilteredColumn <|-- FilteredAbstractColumn
+    abstract class FilteredAbstractColumn<T, S>
+    {
+        --(constructors)--
+        +FilteredAbstractColumn(IModel<String>)
+        +FilteredAbstractColumn(IModel<String>, S)
+    }
+    
+    PropertyColumn <|-- FilteredPropertyColumn
+    IFilteredColumn <|-- FilteredPropertyColumn
+    abstract class FilteredPropertyColumn<T, S>
+    {
+        --(constructors)--
+        +FilteredPropertyColumn(IModel<String>, S, String)
+        +FilteredPropertyColumn(IModel<String>, String)
+    }
+    
+    GoFilter <|-- GoAndClearFilter
+    class GoAndClearFilter
+    {
+        --(constructors)--
+        +GoAndClearFilter(String, FilterForm<?>)
+        +GoAndClearFilter(String, FilterForm<?>, IModel<String>, IModel<String>)
+        +GoAndClearFilter(String, IModel<String>, IModel<String>, Object)
+        --(collection)--
+        #Button getClearButton()
+        #void onClearSubmit(Button)
+    }
+    
+    Panel <|-- GoFilter
+    class GoFilter
+    {
+        --(constructors)--
+        +GoFilter(String)
+        +GoFilter(String, IModel<String>)
+        --
+        #Button getGoButton()
+        #void onGoSubmit(Button)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IFilterStateLocator
+    interface IFilterStateLocator<T>
+    {
+        --(filtering)--
+        +T getFilterState()
+        +void setFilterState(T state)
+    }
+    
+    interface IColumn
+    IColumn <|-- IFilteredColumn
+    interface IFilteredColumn<T, S>
+    {
+        --(filtering)--
+        +Component getFilter(String componentId, FilterForm<?>)
+    }
+    
+    Panel <|-- NoFilter
+    class NoFilter
+    {
+        --(constructors)--
+        +NoFilter(String)
+    }
+    
+    AbstractFilter <|-- TextFilter
+    class TextFilter<T>
+    {
+        --(constructors)--
+        +TextFilter(String, IModel<T>, FilterForm<?>)
+        --(filtering)--
+        +TextField<T> getFilter()
+    }
+    
+    FilteredPropertyColumn <|-- TextFilteredPropertyColumn
+    class TextFilteredPropertyColumn<T, F, S>
+    {
+        --(constructors)--
+        +TextFilteredPropertyColumn(IModel<String>, S, String)
+        +TextFilteredPropertyColumn(IModel<String>, String)
+        --(filtering)--
+        #IModel<F> getFilterModel(FilterForm<?>)
+    }
+    
+@enduml
+

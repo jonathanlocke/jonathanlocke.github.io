@@ -1,0 +1,125 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.hangman"
+    
+    interface IClusterable
+    interface IResource
+    
+    IResource <|-- Letter.ButtonResource
+    class Letter.ButtonResource
+    {
+        --
+        +void respond(Attributes)
+    }
+    
+    IClusterable <|-- Game
+    class Game
+    {
+        --
+        +int getGuessesRemaining()
+        +Word getWord()
+        +boolean guess(Letter)
+        --(checks)--
+        +boolean isLost()
+        +boolean isWon()
+        --(collection)--
+        +List<Letter> getLetters()
+        --(factory)--
+        +void newGame()
+        +void newGame(int guessesAllowed, WordGenerator)
+    }
+    
+    HangmanPage <|-- Guess
+    class Guess
+    {
+        --(constructors)--
+        +Guess()
+    }
+    
+    WicketExampleApplication <|-- HangmanApplication
+    class HangmanApplication
+    {
+    }
+    
+    WicketExamplePage <|-- HangmanPage
+    class HangmanPage
+    {
+        --
+        +Game getGame()
+    }
+    
+    WebSession <|-- HangmanSession
+    class HangmanSession
+    {
+        --(constructors)--
+        #HangmanSession(Request)
+        --
+        +Game getGame()
+    }
+    
+    HangmanPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home(PageParameters)
+    }
+    
+    IClusterable <|-- Letter
+    class Letter
+    {
+        --(constructors)--
+        +Letter(char)
+        --
+        +void guess()
+        --(checks)--
+        +boolean isGuessed()
+        --(conversion)--
+        +String asString()
+        --(lifecycle)--
+        +void reset()
+    }
+    
+    HangmanPage <|-- Lose
+    class Lose
+    {
+        --(constructors)--
+        +Lose()
+    }
+    
+    HangmanPage <|-- Win
+    class Win
+    {
+        --(constructors)--
+        +Win()
+    }
+    
+    IClusterable <|-- Word
+    class Word
+    {
+        --(constructors)--
+        +Word(String)
+        --
+        +boolean guess(Letter)
+        --(checks)--
+        +boolean isGuessed()
+        --(conversion)--
+        +String asString(boolean hideUnguessed)
+        +String asString()
+    }
+    
+    IClusterable <|-- WordGenerator
+    class WordGenerator
+    {
+        --(constructors)--
+        +WordGenerator()
+        +WordGenerator(String[])
+        --(collection)--
+        +int size()
+        --(iteration)--
+        +Word next()
+    }
+    
+@enduml
+

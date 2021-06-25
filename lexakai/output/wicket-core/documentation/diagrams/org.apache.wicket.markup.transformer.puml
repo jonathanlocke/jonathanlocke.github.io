@@ -1,0 +1,73 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.transformer"
+    
+    abstract AbstractTransformerBehavior
+    abstract AbstractOutputTransformerContainer
+    
+    interface ITransformer
+    
+    MarkupContainer <|-- AbstractOutputTransformerContainer
+    ITransformer <|-- AbstractOutputTransformerContainer
+    abstract class AbstractOutputTransformerContainer
+    {
+        --(constructors)--
+        +AbstractOutputTransformerContainer(String)
+        +AbstractOutputTransformerContainer(String, IModel<?>)
+        --
+        +MarkupContainer setTransformBodyOnly(boolean value)
+        --(factory)--
+        #Response newResponse()
+    }
+    
+    Behavior <|-- AbstractTransformerBehavior
+    ITransformer <|-- AbstractTransformerBehavior
+    abstract class AbstractTransformerBehavior
+    {
+        --(factory)--
+        #BufferedWebResponse newResponse(WebResponse originalResponse)
+    }
+    
+    interface ITransformer
+    {
+        --(primitive)--
+        +CharSequence transform(Component, CharSequence output)
+    }
+    
+    AbstractOutputTransformerContainer <|-- NoopOutputTransformerContainer
+    class NoopOutputTransformerContainer
+    {
+        --(constructors)--
+        +NoopOutputTransformerContainer(String)
+        +NoopOutputTransformerContainer(String, IModel<?>)
+    }
+    
+    AbstractOutputTransformerContainer <|-- XsltOutputTransformerContainer
+    class XsltOutputTransformerContainer
+    {
+        --(constructors)--
+        +XsltOutputTransformerContainer(String)
+        +XsltOutputTransformerContainer(String, IModel<?>)
+        +XsltOutputTransformerContainer(String, IModel<?>, String)
+    }
+    
+    ITransformer <|-- XsltTransformer
+    class XsltTransformer
+    {
+        --(constructors)--
+        +XsltTransformer()
+        +XsltTransformer(String)
+    }
+    
+    AbstractTransformerBehavior <|-- XsltTransformerBehavior
+    class XsltTransformerBehavior
+    {
+        --(constructors)--
+        +XsltTransformerBehavior()
+        +XsltTransformerBehavior(String)
+    }
+    
+@enduml
+

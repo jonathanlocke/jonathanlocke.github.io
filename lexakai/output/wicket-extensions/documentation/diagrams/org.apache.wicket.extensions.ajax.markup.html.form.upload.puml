@@ -1,0 +1,37 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.form.upload"
+    
+    abstract AbstractResource
+    
+    interface IInitializer
+    
+    IInitializer <|-- UploadProgressBar.ComponentInitializer
+    class UploadProgressBar.ComponentInitializer
+    {
+    }
+    
+    Panel <|-- UploadProgressBar
+    class UploadProgressBar
+    {
+        --(constructors)--
+        +UploadProgressBar(String, Form<?>)
+        +UploadProgressBar(String, Form<?>, FileUploadField)
+        --
+        #ResourceReference getCss()
+        --(factory)--
+        #MarkupContainer newBarComponent(String id)
+        #MarkupContainer newStatusComponent(String id)
+    }
+    
+    AbstractResource <|-- UploadStatusResource
+    class UploadStatusResource
+    {
+        --(factory)--
+        +PageParameters newParameter(String upload)
+    }
+    
+@enduml
+

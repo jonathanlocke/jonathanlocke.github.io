@@ -1,0 +1,83 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.parse.metapattern.parsers"
+    
+    ListParser <|-- CommaSeparatedVariableParser
+    class CommaSeparatedVariableParser
+    {
+        --(constructors)--
+        +CommaSeparatedVariableParser(CharSequence)
+    }
+    
+    MetaPatternParser <|-- IntegerVariableAssignmentParser
+    class IntegerVariableAssignmentParser
+    {
+        --(constructors)--
+        +IntegerVariableAssignmentParser(CharSequence)
+        --
+        +String getVariable()
+        --(primitive)--
+        +int getIntValue()
+        +long getLongValue()
+    }
+    
+    MetaPatternParser <|-- ListParser
+    class ListParser
+    {
+        --(constructors)--
+        +ListParser(MetaPattern, MetaPattern, CharSequence)
+        --(collection)--
+        +List<String> getValues()
+    }
+    
+    abstract class MetaPatternParser
+    {
+        --(constructors)--
+        +MetaPatternParser(CharSequence)
+        +MetaPatternParser(MetaPattern, CharSequence)
+        --
+        +boolean matches()
+        +void setPattern(MetaPattern)
+        #boolean advance(MetaPattern)
+        --(lifecycle)--
+        +boolean atEnd()
+        --(matching)--
+        +Matcher matcher()
+    }
+    
+    MetaPatternParser <|-- TagNameParser
+    class TagNameParser
+    {
+        --(constructors)--
+        +TagNameParser(CharSequence)
+        --
+        +String getNamespace()
+        --(naming)--
+        +String getName()
+    }
+    
+    MetaPatternParser <|-- VariableAssignmentParser
+    class VariableAssignmentParser
+    {
+        --(constructors)--
+        +VariableAssignmentParser(CharSequence)
+        +VariableAssignmentParser(CharSequence, MetaPattern)
+        --
+        +String getValue()
+        --(collection)--
+        +String getKey()
+    }
+    
+    MetaPatternParser <|-- WordParser
+    class WordParser
+    {
+        --(constructors)--
+        +WordParser(CharSequence)
+        --
+        +String getWord()
+    }
+    
+@enduml
+

@@ -1,0 +1,230 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html"
+    
+    interface IPackageResourceGuard
+    interface IHeaderResponse
+    interface IGenericComponent
+    interface IHeaderResponseDecorator
+    interface IComponentResolver
+    interface IComponentInstantiationListener
+    
+    enum CrossOrigin
+    {
+        ANONYMOUS
+        NO_CORS
+        USE_CREDENTIALS
+    }
+    
+    IHeaderResponse <|-- DecoratingHeaderResponse
+    abstract class DecoratingHeaderResponse
+    {
+        --(constructors)--
+        +DecoratingHeaderResponse(IHeaderResponse)
+        --
+        #IHeaderResponse getRealResponse()
+    }
+    
+    WebMarkupContainer <|-- GenericWebMarkupContainer
+    IGenericComponent <|-- GenericWebMarkupContainer
+    class GenericWebMarkupContainer<T>
+    {
+        --(constructors)--
+        +GenericWebMarkupContainer(String)
+        +GenericWebMarkupContainer(String, IModel<?>)
+    }
+    
+    WebPage <|-- GenericWebPage
+    IGenericComponent <|-- GenericWebPage
+    class GenericWebPage<T>
+    {
+        --(constructors)--
+        #GenericWebPage()
+        #GenericWebPage(IModel<T>)
+        #GenericWebPage(PageParameters)
+    }
+    
+    Behavior <|-- HTML5Attributes
+    class HTML5Attributes
+    {
+        --
+        #void onButton(Button, ComponentTag)
+        --(read)--
+        #void onInput(AbstractTextComponent<?> input, ComponentTag)
+    }
+    
+    WebMarkupContainer <|-- HeaderPartContainer
+    IComponentResolver <|-- HeaderPartContainer
+    class HeaderPartContainer
+    {
+        --(constructors)--
+        +HeaderPartContainer(String, MarkupContainer, IMarkupFragment)
+        --
+        +String getScope()
+    }
+    
+    IHeaderResponseDecorator <|-- HeaderResponseDecoratorCollection
+    class HeaderResponseDecoratorCollection
+    {
+        --(constructors)--
+        +HeaderResponseDecoratorCollection()
+        --
+        +HeaderResponseDecoratorCollection replaceAll(IHeaderResponseDecorator)
+        --(collection)--
+        +HeaderResponseDecoratorCollection add(IHeaderResponseDecorator)
+        +HeaderResponseDecoratorCollection addPostProcessingDecorator(IHeaderResponseDecorator)
+        +HeaderResponseDecoratorCollection addPreResourceAggregationDecorator(IHeaderResponseDecorator)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IComponentAwareHeaderContributor
+    interface IComponentAwareHeaderContributor
+    {
+        --
+        +void renderHead(Component, IHeaderResponse)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IHeaderContributor
+    interface IHeaderContributor
+    {
+        --
+        +void renderHead(IHeaderResponse)
+    }
+    
+    interface IHeaderResponseDecorator
+    {
+        --
+        +IHeaderResponse decorate(IHeaderResponse)
+    }
+    
+    interface IPackageResourceGuard
+    {
+        --(filtering)--
+        +boolean accept(String absolutePath)
+    }
+    
+    IComponentInstantiationListener <|-- HTML5Attributes.InstantiationListener
+    class HTML5Attributes.InstantiationListener
+    {
+    }
+    
+    class MarkupUtil
+    {
+        --(checks)--
+        +boolean isMarkupHtml5Compliant(MarkupContainer)
+        --(search)--
+        +IMarkupFragment findStartTag(IMarkupFragment, String tagName)
+    }
+    
+    IPackageResourceGuard <|-- PackageResourceGuard
+    class PackageResourceGuard
+    {
+        --(constructors)--
+        +PackageResourceGuard()
+        --
+        +void setAllowAccessToRootResources(boolean allowAccessToRootResources)
+        #Set<String> getBlockedExtensions()
+        #void setBlockedExtensions(Set<String> blockedExtensions)
+        --(checks)--
+        +boolean isAllowAccessToRootResources()
+        --(filesystem)--
+        #boolean acceptExtension(String extension)
+        #boolean acceptFile(String file)
+        #Set<String> getBlockedFiles()
+        #void setBlockedFiles(Set<String> blockedFiles)
+    }
+    
+    class SecurePackageResourceGuard.SearchPattern
+    {
+        --(constructors)--
+        +SearchPattern(String)
+        --
+        +String getPattern()
+        +Pattern getRegex()
+        +boolean matches(String path)
+        +void setActive(boolean active)
+        +void setPattern(String pattern)
+        --(checks)--
+        +boolean isActive()
+        --(filtering)--
+        +boolean isInclude()
+        +void setInclude(boolean include)
+    }
+    
+    PackageResourceGuard <|-- SecurePackageResourceGuard
+    class SecurePackageResourceGuard
+    {
+        --(constructors)--
+        +SecurePackageResourceGuard()
+        +SecurePackageResourceGuard(ConcurrentMap<String, Boolean>)
+        --
+        +void setPattern(List<SearchPattern>)
+        --(collection)--
+        +void addPattern(String pattern)
+        +void clearCache()
+        +List<SearchPattern> getPattern()
+    }
+    
+    ConcurrentHashMap <|-- SecurePackageResourceGuard.SimpleCache
+    class SecurePackageResourceGuard.SimpleCache
+    {
+        --(constructors)--
+        +SimpleCache(int)
+    }
+    
+    WebMarkupContainer <|-- TransparentWebMarkupContainer
+    IComponentResolver <|-- TransparentWebMarkupContainer
+    class TransparentWebMarkupContainer
+    {
+        --(constructors)--
+        +TransparentWebMarkupContainer(String)
+    }
+    
+    Component <|-- WebComponent
+    class WebComponent
+    {
+        --(constructors)--
+        +WebComponent(String)
+        +WebComponent(String, IModel<?>)
+        --
+        +WebApplication getWebApplication()
+        +WebPage getWebPage()
+        +WebRequest getWebRequest()
+        +WebResponse getWebResponse()
+        +WebSession getWebSession()
+    }
+    
+    MarkupContainer <|-- WebMarkupContainer
+    class WebMarkupContainer
+    {
+        --(constructors)--
+        +WebMarkupContainer(String)
+        +WebMarkupContainer(String, IModel<?>)
+        --
+        +WebApplication getWebApplication()
+        +WebPage getWebPage()
+        +WebRequest getWebRequest()
+        +WebResponse getWebResponse()
+        +WebSession getWebSession()
+    }
+    
+    Page <|-- WebPage
+    class WebPage
+    {
+        --(constructors)--
+        #WebPage()
+        #WebPage(IModel<?>)
+        #WebPage(PageParameters)
+        --
+        #void configureResponse(WebResponse)
+        #BookmarkablePageLink<Void> homePageLink(String id)
+        #void renderXmlDecl()
+        #void reportMissingHead(CharSequence collectedHeaderOutput)
+        #void setHeaders(WebResponse)
+    }
+    
+@enduml
+

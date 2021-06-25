@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="361.4583px" preserveAspectRatio="none" style="width:1969px;height:361px;background:#333333;" version="1.1" viewBox="0 0 1969 361" width="1969.7917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="581.25" x="686.9792" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="558.3333" x="698.4375" y="30.5583">org.apache.wicket.extensions.markup.html.repeater.util</text><!--MD5=[4f821e20a74b7f15f2116b3e47a89659]
+cluster TreeModelProvider--><polygon fill="#333333" points="27.6042,186.5153,160.9375,186.5153,168.2292,213.737,186.9792,213.737,186.9792,308.3903,27.6042,308.3903,27.6042,186.5153" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="27.6042" x2="168.2292" y1="213.737" y2="213.737"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="120.8333" x="34.8958" y="203.8086">TreeModelProvider</text><!--MD5=[2bf8c4c629920d66d5c036d6c466b0a5]
+class TreeModelProvider.Listener--><rect codeLine="18" fill="#282828" height="48.055" id="TreeModelProvider.Listener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="89.5833" x="72.3958" y="235.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="89.5833" x="72.3958" y="235.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="89.5833" x="72.3958" y="258.5286"/><rect codeLine="18" fill="none" height="48.055" id="TreeModelProvider.Listener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="89.5833" x="72.3958" y="235.4736"/><ellipse cx="86.9792" cy="251.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M88.8896,255.5929 Q88.4623,255.8126 87.9924,255.9224 Q87.5224,256.0323 87.0036,256.0323 Q85.1603,256.0323 84.1899,254.8177 Q83.2194,253.6031 83.2194,251.3082 Q83.2194,249.0072 84.1899,247.7926 Q85.1603,246.578 87.0036,246.578 Q87.5224,246.578 87.9985,246.6878 Q88.4745,246.7977 88.8896,247.0174 L88.8896,249.0194 Q88.4257,248.5921 87.9893,248.3938 Q87.5529,248.1954 87.089,248.1954 Q86.1003,248.1954 85.5967,248.9797 Q85.0932,249.764 85.0932,251.3082 Q85.0932,252.8463 85.5967,253.6306 Q86.1003,254.4149 87.089,254.4149 Q87.5529,254.4149 87.9893,254.2165 Q88.4257,254.0181 88.8896,253.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="52.0833" x="103.6458" y="255.8919">Listener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="73.4375" x2="160.9375" y1="266.862" y2="266.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="73.4375" x2="160.9375" y1="275.1953" y2="275.1953"/><!--MD5=[cc3de0a176daa3c4ec875deafdf5ddd1]
+class Serializable--><rect codeLine="6" fill="#282828" height="48.055" id="Serializable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="111.4583" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="111.4583" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="111.4583" x="7.2917" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="Serializable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="111.4583" x="7.2917" y="53.7028"/><ellipse cx="21.875" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M19.279,66.5588 L19.279,64.9719 L24.705,64.9719 L24.705,66.5588 L22.8923,66.5588 L22.8923,72.4976 L24.705,72.4976 L24.705,74.0845 L19.279,74.0845 L19.279,72.4976 L21.0917,72.4976 L21.0917,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="73.9583" x="38.5417" y="74.1211">Serializable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="117.7083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="117.7083" y1="93.4245" y2="93.4245"/><!--MD5=[6c5faf02b7d93ed54cf7f7e04f65e50c]
+class IDetachable--><rect codeLine="7" fill="#282828" height="48.055" id="IDetachable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="348.9583" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="348.9583" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="348.9583" y="76.7578"/><rect codeLine="7" fill="none" height="48.055" id="IDetachable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="348.9583" y="53.7028"/><ellipse cx="363.5417" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M360.9456,66.5588 L360.9456,64.9719 L366.3717,64.9719 L366.3717,66.5588 L364.5589,66.5588 L364.5589,72.4976 L366.3717,72.4976 L366.3717,74.0845 L360.9456,74.0845 L360.9456,72.4976 L362.7584,72.4976 L362.7584,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="380.2083" y="74.1211">IDetachable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="350" x2="461.4583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="350" x2="461.4583" y1="93.4245" y2="93.4245"/><!--MD5=[73145e46247802284b2f7aaef1fa1797]
+class Set--><rect codeLine="8" fill="#282828" height="48.055" id="Set" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="57.2917" x="498.9583" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="57.2917" x="498.9583" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="57.2917" x="498.9583" y="76.7578"/><rect codeLine="8" fill="none" height="48.055" id="Set" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="57.2917" x="498.9583" y="53.7028"/><ellipse cx="513.5417" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M510.9456,66.5588 L510.9456,64.9719 L516.3717,64.9719 L516.3717,66.5588 L514.5589,66.5588 L514.5589,72.4976 L516.3717,72.4976 L516.3717,74.0845 L510.9456,74.0845 L510.9456,72.4976 L512.7584,72.4976 L512.7584,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="19.7917" x="530.2083" y="74.1211">Set</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="500" x2="555.2083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="500" x2="555.2083" y1="93.4245" y2="93.4245"/><!--MD5=[a6eaa1493da2f291df4d08865003311e]
+class ISortableTreeProvider--><rect codeLine="9" fill="#282828" height="48.055" id="ISortableTreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="691.6667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="691.6667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="691.6667" y="76.7578"/><rect codeLine="9" fill="none" height="48.055" id="ISortableTreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="691.6667" y="53.7028"/><ellipse cx="706.25" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M703.654,66.5588 L703.654,64.9719 L709.08,64.9719 L709.08,66.5588 L707.2673,66.5588 L707.2673,72.4976 L709.08,72.4976 L709.08,74.0845 L703.654,74.0845 L703.654,72.4976 L705.4667,72.4976 L705.4667,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="138.5417" x="722.9167" y="74.1211">ISortableTreeProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="692.7083" x2="866.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="692.7083" x2="866.6667" y1="93.4245" y2="93.4245"/><!--MD5=[d4624efee650c7d067cbfe10d1626677]
+class TreeModelListener--><rect codeLine="10" fill="#282828" height="48.055" id="TreeModelListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="155.2083" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="155.2083" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="155.2083" y="76.7578"/><rect codeLine="10" fill="none" height="48.055" id="TreeModelListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="155.2083" y="53.7028"/><ellipse cx="169.7917" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M167.1956,66.5588 L167.1956,64.9719 L172.6217,64.9719 L172.6217,66.5588 L170.8089,66.5588 L170.8089,72.4976 L172.6217,72.4976 L172.6217,74.0845 L167.1956,74.0845 L167.1956,72.4976 L169.0084,72.4976 L169.0084,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="186.4583" y="74.1211">TreeModelListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.25" x2="311.4583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.25" x2="311.4583" y1="93.4245" y2="93.4245"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="11" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1170.8333" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1170.8333" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1170.8333" y="76.7578"/><rect codeLine="11" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1170.8333" y="53.7028"/><ellipse cx="1185.4167" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1182.8206,66.5588 L1182.8206,64.9719 L1188.2467,64.9719 L1188.2467,66.5588 L1186.4339,66.5588 L1186.4339,72.4976 L1188.2467,72.4976 L1188.2467,74.0845 L1182.8206,74.0845 L1182.8206,72.4976 L1184.6334,72.4976 L1184.6334,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="1202.0833" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1171.875" x2="1285.4167" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1171.875" x2="1285.4167" y1="93.4245" y2="93.4245"/><!--MD5=[3b9eaed4206009c03e55f5341548eed8]
+class ISortableDataProvider--><rect codeLine="12" fill="#282828" height="48.055" id="ISortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="178.125" x="1401.0417" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="178.125" x="1401.0417" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="178.125" x="1401.0417" y="76.7578"/><rect codeLine="12" fill="none" height="48.055" id="ISortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="178.125" x="1401.0417" y="53.7028"/><ellipse cx="1415.625" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1413.029,66.5588 L1413.029,64.9719 L1418.455,64.9719 L1418.455,66.5588 L1416.6423,66.5588 L1416.6423,72.4976 L1418.455,72.4976 L1418.455,74.0845 L1413.029,74.0845 L1413.029,72.4976 L1414.8417,72.4976 L1414.8417,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="140.625" x="1432.2917" y="74.1211">ISortableDataProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1402.0833" x2="1578.125" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1402.0833" x2="1578.125" y1="93.4245" y2="93.4245"/><!--MD5=[38dd32ac1b4eee822902e06711cd5b2a]
+class ISortState--><rect codeLine="13" fill="#282828" height="48.055" id="ISortState" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="100" x="1000.5208" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="100" x="1000.5208" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="100" x="1000.5208" y="76.7578"/><rect codeLine="13" fill="none" height="48.055" id="ISortState" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="100" x="1000.5208" y="53.7028"/><ellipse cx="1015.1042" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1012.5081,66.5588 L1012.5081,64.9719 L1017.9342,64.9719 L1017.9342,66.5588 L1016.1214,66.5588 L1016.1214,72.4976 L1017.9342,72.4976 L1017.9342,74.0845 L1012.5081,74.0845 L1012.5081,72.4976 L1014.3209,72.4976 L1014.3209,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="62.5" x="1031.7708" y="74.1211">ISortState</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1001.5625" x2="1099.4792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1001.5625" x2="1099.4792" y1="93.4245" y2="93.4245"/><!--MD5=[d0544bceff2b2110b3cbf0bde36d565f]
+class ITreeProvider--><rect codeLine="14" fill="#282828" height="48.055" id="ITreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="122.9167" x="1738.0208" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="122.9167" x="1738.0208" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="122.9167" x="1738.0208" y="76.7578"/><rect codeLine="14" fill="none" height="48.055" id="ITreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="122.9167" x="1738.0208" y="53.7028"/><ellipse cx="1752.6042" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1750.0081,66.5588 L1750.0081,64.9719 L1755.4342,64.9719 L1755.4342,66.5588 L1753.6214,66.5588 L1753.6214,72.4976 L1755.4342,72.4976 L1755.4342,74.0845 L1750.0081,74.0845 L1750.0081,72.4976 L1751.8209,72.4976 L1751.8209,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="85.4167" x="1769.2708" y="74.1211">ITreeProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.0625" x2="1859.8958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.0625" x2="1859.8958" y1="93.4245" y2="93.4245"/><!--MD5=[21b74deb71759f5b6458488484caa5b6]
+class ProviderSubset--><rect codeLine="24" fill="#282828" height="131.2012" id="ProviderSubset" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="327.6042" y="193.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="327.6042" y="193.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="327.6042" y="216.862"/><rect codeLine="24" fill="none" height="131.2012" id="ProviderSubset" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="327.6042" y="193.807"/><ellipse cx="401.0417" cy="209.5011" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M402.9521,213.9262 Q402.5248,214.1459 402.0549,214.2558 Q401.5849,214.3656 401.0661,214.3656 Q399.2228,214.3656 398.2524,213.151 Q397.2819,211.9364 397.2819,209.6415 Q397.2819,207.3405 398.2524,206.1259 Q399.2228,204.9113 401.0661,204.9113 Q401.5849,204.9113 402.061,205.0212 Q402.537,205.131 402.9521,205.3507 L402.9521,207.3527 Q402.4882,206.9255 402.0518,206.7271 Q401.6154,206.5287 401.1515,206.5287 Q400.1628,206.5287 399.6592,207.313 Q399.1557,208.0973 399.1557,209.6415 Q399.1557,211.1796 399.6592,211.9639 Q400.1628,212.7482 401.1515,212.7482 Q401.6154,212.7482 402.0518,212.5498 Q402.4882,212.3515 402.9521,211.9242 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="96.875" x="423.9583" y="214.2253">ProviderSubset</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="591.1458" y="190.682"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="595.3125" y="206.9336">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="328.6458" x2="603.6458" y1="225.1953" y2="225.1953"/><ellipse cx="339.0625" cy="260.5652" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="350.5208" y="267.4764">ProviderSubset(ITreeProvider&lt;T&gt;)</text><ellipse cx="339.0625" cy="280.3101" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="244.7917" x="350.5208" y="287.2213">ProviderSubset(ITreeProvider&lt;T&gt;, boolean)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="328.6458" x2="422.3958" y1="243.4011" y2="243.4011"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="425.5208" y="247.2107">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="509.8958" x2="603.6458" y1="243.4011" y2="243.4011"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="328.6458" x2="603.6458" y1="296.9299" y2="296.9299"/><ellipse cx="339.0625" cy="308.3883" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="177.0833" x="350.5208" y="315.2995">IModel&lt;Set&lt;T&gt;&gt; createModel()</text><!--MD5=[291ea9e3d9487d747b536323234ad495]
+class SingleSortState--><rect codeLine="35" fill="#282828" height="103.123" id="SingleSortState" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="955.2083" y="207.8695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="955.2083" y="207.8695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="955.2083" y="230.9245"/><rect codeLine="35" fill="none" height="103.123" id="SingleSortState" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="955.2083" y="207.8695"/><ellipse cx="986.1979" cy="223.5636" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M988.1083,227.9887 Q987.6811,228.2084 987.2111,228.3183 Q986.7411,228.4281 986.2223,228.4281 Q984.3791,228.4281 983.4086,227.2135 Q982.4382,225.9989 982.4382,223.704 Q982.4382,221.403 983.4086,220.1884 Q984.3791,218.9738 986.2223,218.9738 Q986.7411,218.9738 987.2172,219.0837 Q987.6933,219.1935 988.1083,219.4132 L988.1083,221.4152 Q987.6444,220.988 987.208,220.7896 Q986.7716,220.5912 986.3078,220.5912 Q985.319,220.5912 984.8155,221.3755 Q984.3119,222.1598 984.3119,223.704 Q984.3119,225.2421 984.8155,226.0264 Q985.319,226.8107 986.3078,226.8107 Q986.7716,226.8107 987.208,226.6123 Q987.6444,226.414 988.1083,225.9867 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="97.9167" x="1006.5104" y="228.2878">SingleSortState</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1132.2917" y="204.7445"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1136.4583" y="220.9961">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="956.25" x2="1144.7917" y1="239.2578" y2="239.2578"/><ellipse cx="966.6667" cy="274.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="978.125" y="281.5389">SortParam&lt;T&gt; getSort()</text><ellipse cx="966.6667" cy="294.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="158.3333" x="978.125" y="301.2838">void setSort(SortParam&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="956.25" x2="1016.1458" y1="257.4636" y2="257.4636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1019.2708" y="261.2732">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1084.8958" x2="1144.7917" y1="257.4636" y2="257.4636"/><!--MD5=[fa5d7d8dd7f7d57a724174008302e562]
+class SortParam--><rect codeLine="43" fill="#282828" height="155.1127" id="SortParam" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1182.2917" y="181.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1182.2917" y="181.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1182.2917" y="204.8828"/><rect codeLine="43" fill="none" height="155.1127" id="SortParam" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1182.2917" y="181.8278"/><ellipse cx="1212.8125" cy="197.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1214.7229,201.947 Q1214.2957,202.1667 1213.8257,202.2766 Q1213.3557,202.3865 1212.8369,202.3865 Q1210.9937,202.3865 1210.0232,201.1719 Q1209.0527,199.9573 1209.0527,197.6624 Q1209.0527,195.3613 1210.0232,194.1467 Q1210.9937,192.9321 1212.8369,192.9321 Q1213.3557,192.9321 1213.8318,193.042 Q1214.3079,193.1519 1214.7229,193.3716 L1214.7229,195.3735 Q1214.259,194.9463 1213.8226,194.7479 Q1213.3862,194.5496 1212.9224,194.5496 Q1211.9336,194.5496 1211.4301,195.3339 Q1210.9265,196.1182 1210.9265,197.6624 Q1210.9265,199.2004 1211.4301,199.9847 Q1211.9336,200.769 1212.9224,200.769 Q1213.3862,200.769 1213.8226,200.5707 Q1214.259,200.3723 1214.7229,199.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="1233.0208" y="202.2461">SortParam</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1326.0417" y="178.7028"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1330.2083" y="194.9544">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1183.3333" x2="1338.5417" y1="213.2161" y2="213.2161"/><ellipse cx="1193.75" cy="248.586" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="1205.2083" y="255.4972">SortParam(T, boolean)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1183.3333" x2="1217.1875" y1="231.4219" y2="231.4219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1220.3125" y="235.2315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1304.6875" x2="1338.5417" y1="231.4219" y2="231.4219"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1183.3333" x2="1338.5417" y1="265.2059" y2="265.2059"/><ellipse cx="1193.75" cy="276.6642" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="84.375" x="1205.2083" y="283.5754">T getProperty()</text><ellipse cx="1193.75" cy="320.3206" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="1205.2083" y="327.2319">boolean isAscending()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1183.3333" x2="1234.375" y1="303.1565" y2="303.1565"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="1237.5" y="306.9661">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1287.5" x2="1338.5417" y1="303.1565" y2="303.1565"/><!--MD5=[99d4dce5ceb66cd06eaae208e7a97d5b]
+class SortableDataProvider--><rect codeLine="54" fill="#282828" height="122.8678" id="SortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="228.125" x="1376.0417" y="197.9736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="228.125" x="1376.0417" y="197.9736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="228.125" x="1376.0417" y="221.0286"/><rect codeLine="54" fill="none" height="122.8678" id="SortableDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="228.125" x="1376.0417" y="197.9736"/><ellipse cx="1400" cy="213.6678" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1399.5931,210.3699 L1398.7447,214.0991 L1400.4476,214.0991 Z M1398.4945,208.7219 L1400.6978,208.7219 L1403.1576,217.8345 L1401.357,217.8345 L1400.7955,215.5823 L1398.3846,215.5823 L1397.8353,217.8345 L1396.0347,217.8345 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="1418.75" y="218.3919">SortableDataProvider</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="1576.0417" y="194.8486"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="1580.2083" y="211.1003">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1377.0833" x2="1603.125" y1="229.362" y2="229.362"/><ellipse cx="1387.5" cy="264.7319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="1398.9583" y="271.6431">SortParam</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="48.9583" x="1459.375" y="271.6431">getSort()</text><ellipse cx="1387.5" cy="284.4767" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="1398.9583" y="291.3879">void setSort(SortParam</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="4.1667" x="1527.0833" y="291.3879">)</text><ellipse cx="1387.5" cy="304.2216" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="195.8333" x="1398.9583" y="311.1328">void setSort(S property, SortOrder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1377.0833" x2="1455.7292" y1="247.5677" y2="247.5677"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1458.8542" y="251.3774">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1524.4792" x2="1603.125" y1="247.5677" y2="247.5677"/><!--MD5=[095c770a72d60c0de2f6d5134a87066c]
+class SortableTreeProvider--><rect codeLine="63" fill="#282828" height="122.8678" id="SortableTreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="641.1458" y="197.9736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="641.1458" y="197.9736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="641.1458" y="221.0286"/><rect codeLine="63" fill="none" height="122.8678" id="SortableTreeProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="641.1458" y="197.9736"/><ellipse cx="688.5417" cy="213.6678" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M688.1348,210.3699 L687.2864,214.0991 L688.9893,214.0991 Z M687.0361,208.7219 L689.2395,208.7219 L691.6992,217.8345 L689.8987,217.8345 L689.3372,215.5823 L686.9263,215.5823 L686.377,217.8345 L684.5764,217.8345 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="134.375" x="711.4583" y="218.3919">SortableTreeProvider</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="890.1042" y="194.8486"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="894.2708" y="211.1003">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="642.1875" x2="917.1875" y1="229.362" y2="229.362"/><ellipse cx="652.6042" cy="264.7319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="664.0625" y="271.6431">SortParam</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="48.9583" x="724.4792" y="271.6431">getSort()</text><ellipse cx="652.6042" cy="284.4767" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="664.0625" y="291.3879">void setSort(SortParam</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="4.1667" x="792.1875" y="291.3879">)</text><ellipse cx="652.6042" cy="304.2216" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="244.7917" x="664.0625" y="311.1328">void setSort(S property, boolean ascending)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="642.1875" x2="745.3125" y1="247.5677" y2="247.5677"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="748.4375" y="251.3774">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="814.0625" x2="917.1875" y1="247.5677" y2="247.5677"/><!--MD5=[584f3c083af959e3b40350041b999032]
+class TreeModelProvider--><rect codeLine="72" fill="#282828" height="190.4358" id="TreeModelProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="317.7083" x="1640.625" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="317.7083" x="1640.625" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="317.7083" x="1640.625" y="187.1745"/><rect codeLine="72" fill="none" height="190.4358" id="TreeModelProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="317.7083" x="1640.625" y="164.1195"/><ellipse cx="1722.3958" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1721.9889,176.5157 L1721.1405,180.245 L1722.8434,180.245 Z M1720.8903,174.8678 L1723.0937,174.8678 L1725.5534,183.9803 L1723.7528,183.9803 L1723.1913,181.7281 L1720.7804,181.7281 L1720.2311,183.9803 L1718.4306,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="120.8333" x="1745.3125" y="184.5378">TreeModelProvider</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1944.7917" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1948.9583" y="177.2461">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1641.6667" x2="1957.2917" y1="195.5078" y2="195.5078"/><ellipse cx="1652.0833" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="171.875" x="1663.5417" y="237.7889">TreeModelProvider(TreeModel)</text><ellipse cx="1652.0833" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="1663.5417" y="257.5338">TreeModelProvider(TreeModel, boolean)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1641.6667" x2="1755.7292" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1758.8542" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1843.2292" x2="1957.2917" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1641.6667" x2="1957.2917" y1="267.2424" y2="267.2424"/><ellipse cx="1652.0833" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="285.4167" x="1663.5417" y="285.612">void update(AbstractTree&lt;T&gt;, AjaxRequestTarget)</text><polygon fill="#FFFF44" points="1652.0833,293.2373,1656.25,297.404,1652.0833,301.5706,1647.9167,297.404" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="1663.5417" y="305.3569">void branchUpdate(Object branch)</text><polygon fill="#FFFF44" points="1652.0833,312.9822,1656.25,317.1488,1652.0833,321.3155,1647.9167,317.1488" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="1663.5417" y="325.1017">T cast(Object)</text><polygon fill="#FFFF44" points="1652.0833,332.7271,1656.25,336.8937,1652.0833,341.0604,1647.9167,336.8937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="1663.5417" y="344.8466">void nodeUpdate(Object[] nodes)</text><!--MD5=[21838106d601d71dff2d5b26f14a7284]
+reverse link TreeModelListener to TreeModelProvider.Listener--><path codeLine="16" d="M207.3854,119.4736 C184.1146,155.307 151.1042,206.1507 132.1458,235.359 " fill="none" id="TreeModelListener-backto-TreeModelProvider.Listener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="201.375,115.3278,218.8438,101.8278,213.6146,123.2653,201.375,115.3278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[133cafd2575ae78c47f6fca7886ba182]
+reverse link Serializable to TreeModelProvider.Listener--><path codeLine="17" d="M76.0625,121.9736 C86.8125,157.6403 101.6458,206.8278 110.2396,235.359 " fill="none" id="Serializable-backto-TreeModelProvider.Listener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="69.0208,123.8799,69.9896,101.8278,82.9896,119.6715,69.0208,123.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ff5278b7eab1742dab78260324e576d8]
+reverse link Set to ProviderSubset--><path codeLine="22" d="M512.875,121.7549 C505.5208,143.2653 496.4688,169.7236 488.3021,193.6195 " fill="none" id="Set-backto-ProviderSubset" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="506.0521,119.182,519.6979,101.8278,519.8542,123.9007,506.0521,119.182" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[d8d41f1b5ffa3a7b5d46649471562b54]
+reverse link IDetachable to ProviderSubset--><path codeLine="23" d="M420.2083,121.7549 C427.4375,143.2653 436.3333,169.7236 444.3646,193.6195 " fill="none" id="IDetachable-backto-ProviderSubset" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="413.2292,123.9007,413.5,101.8278,427.0521,119.2445,413.2292,123.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4d27fe1841eefb48e92395fdceef8150]
+reverse link ISortState to SingleSortState--><path codeLine="33" d="M1050.5208,122.7549 C1050.5208,148.484 1050.5208,181.0361 1050.5208,207.807 " fill="none" id="ISortState-backto-SingleSortState" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1043.2292,122.6611,1050.5208,101.8278,1057.8125,122.6611,1043.2292,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5b25cff44d046074dbb048c7a96b55c3]
+reverse link IClusterable to SingleSortState--><path codeLine="34" d="M1191.0417,116.6299 C1164.75,143.1507 1129.3542,178.859 1100.6667,207.807 " fill="none" id="IClusterable-backto-SingleSortState" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1185.875,111.484,1205.7188,101.8278,1196.2396,121.7549,1185.875,111.484" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[a3c56f180aa717b2560c4f9ac4536178]
+reverse link IClusterable to SortParam--><path codeLine="42" d="M1236.5417,122.6195 C1239.7292,140.4007 1243.5208,161.4632 1247.1458,181.6299 " fill="none" id="IClusterable-backto-SortParam" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1229.3125,123.6195,1232.8021,101.8278,1243.6667,121.0361,1229.3125,123.6195" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[cc994be6030d46bb8d5ff7cb5c0718af]
+reverse link ISortableDataProvider to SortableDataProvider--><path codeLine="53" d="M1490.1042,122.7549 C1490.1042,145.3799 1490.1042,173.307 1490.1042,197.9215 " fill="none" id="ISortableDataProvider-backto-SortableDataProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1482.8125,122.6611,1490.1042,101.8278,1497.3958,122.6611,1482.8125,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bd8654489e3b399d4d70a099f96fe150]
+reverse link ISortableTreeProvider to SortableTreeProvider--><path codeLine="62" d="M779.6875,122.7549 C779.6875,145.3799 779.6875,173.307 779.6875,197.9215 " fill="none" id="ISortableTreeProvider-backto-SortableTreeProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="772.3958,122.6611,779.6875,101.8278,786.9792,122.6611,772.3958,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8dc2055848f00eca2eb119ba8011b309]
+reverse link ITreeProvider to TreeModelProvider--><path codeLine="71" d="M1799.4792,122.8695 C1799.4792,135.359 1799.4792,149.4528 1799.4792,163.7132 " fill="none" id="ITreeProvider-backto-TreeModelProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1792.1875,122.6611,1799.4792,101.8278,1806.7708,122.6611,1792.1875,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[0db321ad3ff962a9b2d8a3c6a4284484]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.util"
+    
+    interface Serializable
+    interface IDetachable
+    interface Set
+    interface ISortableTreeProvider
+    interface TreeModelListener
+    interface IClusterable
+    interface ISortableDataProvider
+    interface ISortState
+    interface ITreeProvider
+    
+    TreeModelListener <|- - TreeModelProvider.Listener
+    Serializable <|- - TreeModelProvider.Listener
+    class TreeModelProvider.Listener
+    {
+    }
+    
+    Set <|- - ProviderSubset
+    IDetachable <|- - ProviderSubset
+    class ProviderSubset<T>
+    {
+        - -(constructors)- -
+        +ProviderSubset(ITreeProvider<T>)
+        +ProviderSubset(ITreeProvider<T>, boolean)
+        - -
+        +IModel<Set<T>> createModel()
+    }
+    
+    ISortState <|- - SingleSortState
+    IClusterable <|- - SingleSortState
+    class SingleSortState<T>
+    {
+        - -(collection)- -
+        +SortParam<T> getSort()
+        +void setSort(SortParam<T>)
+    }
+    
+    IClusterable <|- - SortParam
+    class SortParam<T>
+    {
+        - -(constructors)- -
+        +SortParam(T, boolean)
+        - -
+        +T getProperty()
+        - -(checks)- -
+        +boolean isAscending()
+    }
+    
+    ISortableDataProvider <|- - SortableDataProvider
+    abstract class SortableDataProvider<T, S>
+    {
+        - -(collection)- -
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, SortOrder)
+    }
+    
+    ISortableTreeProvider <|- - SortableTreeProvider
+    abstract class SortableTreeProvider<T, S>
+    {
+        - -(collection)- -
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, boolean ascending)
+    }
+    
+    ITreeProvider <|- - TreeModelProvider
+    abstract class TreeModelProvider<T>
+    {
+        - -(constructors)- -
+        +TreeModelProvider(TreeModel)
+        +TreeModelProvider(TreeModel, boolean)
+        - -
+        +void update(AbstractTree<T>, AjaxRequestTarget)
+        #void branchUpdate(Object branch)
+        #T cast(Object)
+        #void nodeUpdate(Object[] nodes)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.util"
+    
+    interface Serializable
+    interface IDetachable
+    interface Set
+    interface ISortableTreeProvider
+    interface TreeModelListener
+    interface IClusterable
+    interface ISortableDataProvider
+    interface ISortState
+    interface ITreeProvider
+    
+    TreeModelListener <|- - TreeModelProvider.Listener
+    Serializable <|- - TreeModelProvider.Listener
+    class TreeModelProvider.Listener
+    {
+    }
+    
+    Set <|- - ProviderSubset
+    IDetachable <|- - ProviderSubset
+    class ProviderSubset<T>
+    {
+        - -(constructors)- -
+        +ProviderSubset(ITreeProvider<T>)
+        +ProviderSubset(ITreeProvider<T>, boolean)
+        - -
+        +IModel<Set<T>> createModel()
+    }
+    
+    ISortState <|- - SingleSortState
+    IClusterable <|- - SingleSortState
+    class SingleSortState<T>
+    {
+        - -(collection)- -
+        +SortParam<T> getSort()
+        +void setSort(SortParam<T>)
+    }
+    
+    IClusterable <|- - SortParam
+    class SortParam<T>
+    {
+        - -(constructors)- -
+        +SortParam(T, boolean)
+        - -
+        +T getProperty()
+        - -(checks)- -
+        +boolean isAscending()
+    }
+    
+    ISortableDataProvider <|- - SortableDataProvider
+    abstract class SortableDataProvider<T, S>
+    {
+        - -(collection)- -
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, SortOrder)
+    }
+    
+    ISortableTreeProvider <|- - SortableTreeProvider
+    abstract class SortableTreeProvider<T, S>
+    {
+        - -(collection)- -
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, boolean ascending)
+    }
+    
+    ITreeProvider <|- - TreeModelProvider
+    abstract class TreeModelProvider<T>
+    {
+        - -(constructors)- -
+        +TreeModelProvider(TreeModel)
+        +TreeModelProvider(TreeModel, boolean)
+        - -
+        +void update(AbstractTree<T>, AjaxRequestTarget)
+        #void branchUpdate(Object branch)
+        #T cast(Object)
+        #void nodeUpdate(Object[] nodes)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

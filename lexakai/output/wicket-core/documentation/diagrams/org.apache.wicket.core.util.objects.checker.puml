@@ -1,0 +1,110 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.objects.checker"
+    
+    abstract AbstractObjectChecker
+    
+    interface ObjectOutput
+    interface IObjectChecker
+    
+    IObjectChecker <|-- AbstractObjectChecker
+    abstract class AbstractObjectChecker
+    {
+        --(constructors)--
+        #AbstractObjectChecker()
+        #AbstractObjectChecker(List<Class<?>>)
+        --
+        #Result doCheck(Object)
+    }
+    
+    ObjectOutputStream <|-- CheckingObjectOutputStream
+    class CheckingObjectOutputStream
+    {
+        --(constructors)--
+        +CheckingObjectOutputStream(OutputStream, IObjectChecker)
+        --(checks)--
+        +boolean isAvailable()
+        --(conversion)--
+        #String toPrettyPrintedStack(String type)
+    }
+    
+    AbstractObjectChecker <|-- DifferentPageChecker
+    class DifferentPageChecker
+    {
+    }
+    
+    interface IObjectChecker
+    {
+        --
+        +Result check(Object)
+        --(collection)--
+        +List<Class<?>> getExclusions()
+    }
+    
+    OutputStream <|-- CheckingObjectOutputStream.NoopOutputStream
+    class CheckingObjectOutputStream.NoopOutputStream
+    {
+    }
+    
+    AbstractObjectChecker <|-- NotDetachedModelChecker
+    class NotDetachedModelChecker
+    {
+        --(constructors)--
+        +NotDetachedModelChecker()
+        +NotDetachedModelChecker(List<Class<?>>)
+    }
+    
+    WicketRuntimeException <|-- CheckingObjectOutputStream.ObjectCheckException
+    class CheckingObjectOutputStream.ObjectCheckException
+    {
+        --(constructors)--
+        +ObjectCheckException(String, Throwable)
+    }
+    
+    ObjectOutput <|-- CheckingObjectOutputStream.ObjectOutputAdaptor
+    abstract class CheckingObjectOutputStream.ObjectOutputAdaptor
+    {
+    }
+    
+    AbstractObjectChecker <|-- ObjectSerializationChecker
+    class ObjectSerializationChecker
+    {
+        --(constructors)--
+        +ObjectSerializationChecker()
+        +ObjectSerializationChecker(NotSerializableException)
+    }
+    
+    AbstractObjectChecker <|-- OrphanComponentChecker
+    class OrphanComponentChecker
+    {
+        --(constructors)--
+        +OrphanComponentChecker()
+        +OrphanComponentChecker(List<Class<?>>)
+    }
+    
+    class IObjectChecker.Result
+    {
+        --(constructors)--
+        +Result(Status, String)
+        +Result(Status, String, Throwable)
+    }
+    
+    AbstractObjectChecker <|-- SessionChecker
+    class SessionChecker
+    {
+    }
+    
+    enum IObjectChecker.Result.Status
+    {
+        FAILURE
+        SUCCESS
+    }
+    
+    class CheckingObjectOutputStream.TraceSlot
+    {
+    }
+    
+@enduml
+

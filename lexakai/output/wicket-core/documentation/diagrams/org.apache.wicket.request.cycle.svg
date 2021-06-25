@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1225px" preserveAspectRatio="none" style="width:2281px;height:1225px;background:#333333;" version="1.1" viewBox="0 0 2281 1225" width="2281.25px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="339.5833" x="963.8021" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="316.6667" x="975.2604" y="30.5583">org.apache.wicket.request.cycle</text><!--MD5=[0e74026734ed406f930c946777883862]
+cluster RequestCycle--><polygon fill="#333333" points="1556.25,742.7653,1655.2083,742.7653,1662.5,769.987,1769.7917,769.987,1769.7917,864.6403,1556.25,864.6403,1556.25,742.7653" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="1556.25" x2="1662.5" y1="769.987" y2="769.987"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="86.4583" x="1563.5417" y="760.0586">RequestCycle</text><!--MD5=[53f6b09e7f86d47714cd4878a0ab6165]
+class RequestCycle.HandlerExecutor--><rect codeLine="12" fill="#282828" height="48.055" id="RequestCycle.HandlerExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="1601.5625" y="791.7236"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="1601.5625" y="791.7236"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="1601.5625" y="814.7786"/><rect codeLine="12" fill="none" height="48.055" id="RequestCycle.HandlerExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="1601.5625" y="791.7236"/><ellipse cx="1616.1458" cy="807.4178" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1618.0562,811.8429 Q1617.629,812.0626 1617.159,812.1724 Q1616.689,812.2823 1616.1702,812.2823 Q1614.327,812.2823 1613.3565,811.0677 Q1612.3861,809.8531 1612.3861,807.5582 Q1612.3861,805.2572 1613.3565,804.0426 Q1614.327,802.828 1616.1702,802.828 Q1616.689,802.828 1617.1651,802.9378 Q1617.6412,803.0477 1618.0562,803.2674 L1618.0562,805.2694 Q1617.5924,804.8421 1617.156,804.6438 Q1616.7196,804.4454 1616.2557,804.4454 Q1615.2669,804.4454 1614.7634,805.2297 Q1614.2598,806.014 1614.2598,807.5582 Q1614.2598,809.0963 1614.7634,809.8806 Q1615.2669,810.6649 1616.2557,810.6649 Q1616.7196,810.6649 1617.156,810.4665 Q1617.5924,810.2681 1618.0562,809.8409 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="1632.8125" y="812.1419">HandlerExecutor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1602.6042" x2="1743.2292" y1="823.112" y2="823.112"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1602.6042" x2="1743.2292" y1="831.4453" y2="831.4453"/><!--MD5=[4417c04c1223864b8a650c166322a8a7]
+class IRequestCycleListener--><rect codeLine="16" fill="#282828" height="297.4935" id="IRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="510.4167" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="510.4167" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="510.4167" x="7.2917" y="76.7578"/><rect codeLine="16" fill="none" height="297.4935" id="IRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="510.4167" x="7.2917" y="53.7028"/><ellipse cx="183.8542" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M181.2581,66.5588 L181.2581,64.9719 L186.6842,64.9719 L186.6842,66.5588 L184.8714,66.5588 L184.8714,72.4976 L186.6842,72.4976 L186.6842,74.0845 L181.2581,74.0845 L181.2581,72.4976 L183.0709,72.4976 L183.0709,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="142.7083" x="206.7708" y="74.1211">IRequestCycleListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="516.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="516.6667" y1="93.4245" y2="93.4245"/><ellipse cx="18.75" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="163.5417" x="30.2083" y="111.794">void onDetach(RequestCycle)</text><ellipse cx="18.75" cy="148.5392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="200" x="30.2083" y="155.4504">void onBeginRequest(RequestCycle)</text><ellipse cx="18.75" cy="168.2841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="30.2083" y="175.1953">void onEndRequest(RequestCycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="232.8125" y1="131.3751" y2="131.3751"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="235.9375" y="135.1847">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="292.1875" x2="516.6667" y1="131.3751" y2="131.3751"/><ellipse cx="18.75" cy="211.9405" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="309.375" x="30.2083" y="218.8517">IRequestHandler onException(RequestCycle, Exception)</text><ellipse cx="18.75" cy="231.6854" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="478.125" x="30.2083" y="238.5966">void onExceptionRequestHandlerResolved(RequestCycle, IRequestHandler, Exception)</text><ellipse cx="18.75" cy="251.4303" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="362.5" x="30.2083" y="258.3415">void onRequestHandlerExecuted(RequestCycle, IRequestHandler)</text><ellipse cx="18.75" cy="271.1751" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="361.4583" x="30.2083" y="278.0863">void onRequestHandlerResolved(RequestCycle, IRequestHandler)</text><ellipse cx="18.75" cy="290.92" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="368.75" x="30.2083" y="297.8312">void onRequestHandlerScheduled(RequestCycle, IRequestHandler)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="225" y1="194.7764" y2="194.7764"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="228.125" y="198.586">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="300" x2="516.6667" y1="194.7764" y2="194.7764"/><ellipse cx="18.75" cy="334.5764" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="306.25" x="30.2083" y="341.4876">void onUrlMapped(RequestCycle, IRequestHandler, Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="232.8125" y1="317.4123" y2="317.4123"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="235.9375" y="321.2219">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="292.1875" x2="516.6667" y1="317.4123" y2="317.4123"/><!--MD5=[be2daaf30ddd6cbcb499946388558bf1]
+class IMetadataContext--><rect codeLine="7" fill="#282828" height="48.055" id="IMetadataContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="152.0833" x="904.1667" y="178.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="152.0833" x="904.1667" y="178.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="152.0833" x="904.1667" y="201.7578"/><rect codeLine="7" fill="none" height="48.055" id="IMetadataContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="152.0833" x="904.1667" y="178.7028"/><ellipse cx="918.75" cy="194.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M916.154,191.5588 L916.154,189.9719 L921.58,189.9719 L921.58,191.5588 L919.7673,191.5588 L919.7673,197.4976 L921.58,197.4976 L921.58,199.0845 L916.154,199.0845 L916.154,197.4976 L917.9667,197.4976 L917.9667,191.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="114.5833" x="935.4167" y="199.1211">IMetadataContext</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="905.2083" x2="1055.2083" y1="210.0911" y2="210.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="905.2083" x2="1055.2083" y1="218.4245" y2="218.4245"/><!--MD5=[a8ac5aa05a1aaa9295ee9e898c7f95f8]
+class IEventSink--><rect codeLine="8" fill="#282828" height="48.055" id="IEventSink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="1093.2292" y="178.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="1093.2292" y="178.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="105.2083" x="1093.2292" y="201.7578"/><rect codeLine="8" fill="none" height="48.055" id="IEventSink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="105.2083" x="1093.2292" y="178.7028"/><ellipse cx="1107.8125" cy="194.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1105.2165,191.5588 L1105.2165,189.9719 L1110.6425,189.9719 L1110.6425,191.5588 L1108.8298,191.5588 L1108.8298,197.4976 L1110.6425,197.4976 L1110.6425,199.0845 L1105.2165,199.0845 L1105.2165,197.4976 L1107.0292,197.4976 L1107.0292,191.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="67.7083" x="1124.4792" y="199.1211">IEventSink</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1094.2708" x2="1197.3958" y1="210.0911" y2="210.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1094.2708" x2="1197.3958" y1="218.4245" y2="218.4245"/><!--MD5=[ee28fdcb078f26ec06aee79f9d987771]
+class IRequestCycle--><rect codeLine="9" fill="#282828" height="48.055" id="IRequestCycle" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="1234.8958" y="178.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="1234.8958" y="178.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="1234.8958" y="201.7578"/><rect codeLine="9" fill="none" height="48.055" id="IRequestCycle" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="1234.8958" y="178.7028"/><ellipse cx="1249.4792" cy="194.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1246.8831,191.5588 L1246.8831,189.9719 L1252.3092,189.9719 L1252.3092,191.5588 L1250.4964,191.5588 L1250.4964,197.4976 L1252.3092,197.4976 L1252.3092,199.0845 L1246.8831,199.0845 L1246.8831,197.4976 L1248.6959,197.4976 L1248.6959,191.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="1266.1458" y="199.1211">IRequestCycle</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1235.9375" x2="1361.9792" y1="210.0911" y2="210.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1235.9375" x2="1361.9792" y1="218.4245" y2="218.4245"/><!--MD5=[337fe740f018600725f7e3ceb34cdbad]
+class RequestHandlerExecutor--><rect fill="#282828" height="48.055" id="RequestHandlerExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="1575.5208" y="178.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="1575.5208" y="178.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="1575.5208" y="201.7578"/><rect fill="none" height="48.055" id="RequestHandlerExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="1575.5208" y="178.7028"/><ellipse cx="1590.1042" cy="194.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1592.0146,198.822 Q1591.5873,199.0417 1591.1174,199.1516 Q1590.6474,199.2615 1590.1286,199.2615 Q1588.2853,199.2615 1587.3149,198.0469 Q1586.3444,196.8323 1586.3444,194.5374 Q1586.3444,192.2363 1587.3149,191.0217 Q1588.2853,189.8071 1590.1286,189.8071 Q1590.6474,189.8071 1591.1235,189.917 Q1591.5995,190.0269 1592.0146,190.2466 L1592.0146,192.2485 Q1591.5507,191.8213 1591.1143,191.6229 Q1590.6779,191.4246 1590.214,191.4246 Q1589.2253,191.4246 1588.7217,192.2089 Q1588.2182,192.9932 1588.2182,194.5374 Q1588.2182,196.0754 1588.7217,196.8597 Q1589.2253,197.644 1590.214,197.644 Q1590.6779,197.644 1591.1143,197.4457 Q1591.5507,197.2473 1592.0146,196.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="157.2917" x="1606.7708" y="199.1211">RequestHandlerExecutor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1576.5625" x2="1769.2708" y1="210.0911" y2="210.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1576.5625" x2="1769.2708" y1="218.4245" y2="218.4245"/><!--MD5=[15421ba7e10be930f62352a3434a3bd7]
+class PageRequestHandlerTracker--><rect codeLine="34" fill="#282828" height="103.123" id="PageRequestHandlerTracker" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="322.9167" x="101.0417" y="764.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="322.9167" x="101.0417" y="764.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="322.9167" x="101.0417" y="787.1745"/><rect codeLine="34" fill="none" height="103.123" id="PageRequestHandlerTracker" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="322.9167" x="101.0417" y="764.1195"/><ellipse cx="165.1042" cy="779.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M167.0146,784.2387 Q166.5873,784.4584 166.1174,784.5683 Q165.6474,784.6781 165.1286,784.6781 Q163.2853,784.6781 162.3149,783.4635 Q161.3444,782.2489 161.3444,779.954 Q161.3444,777.653 162.3149,776.4384 Q163.2853,775.2238 165.1286,775.2238 Q165.6474,775.2238 166.1235,775.3337 Q166.5995,775.4435 167.0146,775.6632 L167.0146,777.6652 Q166.5507,777.238 166.1143,777.0396 Q165.6779,776.8412 165.214,776.8412 Q164.2253,776.8412 163.7217,777.6255 Q163.2182,778.4098 163.2182,779.954 Q163.2182,781.4921 163.7217,782.2764 Q164.2253,783.0607 165.214,783.0607 Q165.6779,783.0607 166.1143,782.8623 Q166.5507,782.664 167.0146,782.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="180.2083" x="188.0208" y="784.5378">PageRequestHandlerTracker</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="102.0833" x2="422.9167" y1="795.5078" y2="795.5078"/><ellipse cx="112.5" cy="830.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="290.625" x="123.9583" y="837.7889">IPageRequestHandler getFirstHandler(RequestCycle)</text><ellipse cx="112.5" cy="850.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="288.5417" x="123.9583" y="857.5338">IPageRequestHandler getLastHandler(RequestCycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="102.0833" x2="228.125" y1="813.7136" y2="813.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="231.25" y="817.5232">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="296.875" x2="422.9167" y1="813.7136" y2="813.7136"/><!--MD5=[a634fb443711a05941b3ddecf36110b1]
+class RequestCycle--><rect codeLine="44" fill="#282828" height="803.6153" id="RequestCycle" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="763.5417" x="764.0625" y="414.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="763.5417" x="764.0625" y="414.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="763.5417" x="764.0625" y="437.1745"/><rect codeLine="44" fill="none" height="803.6153" id="RequestCycle" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="763.5417" x="764.0625" y="414.1195"/><ellipse cx="1095.3125" cy="429.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1097.2229,434.2387 Q1096.7957,434.4584 1096.3257,434.5683 Q1095.8557,434.6781 1095.3369,434.6781 Q1093.4937,434.6781 1092.5232,433.4635 Q1091.5527,432.2489 1091.5527,429.954 Q1091.5527,427.653 1092.5232,426.4384 Q1093.4937,425.2238 1095.3369,425.2238 Q1095.8557,425.2238 1096.3318,425.3337 Q1096.8079,425.4435 1097.2229,425.6632 L1097.2229,427.6652 Q1096.759,427.238 1096.3226,427.0396 Q1095.8862,426.8412 1095.4224,426.8412 Q1094.4336,426.8412 1093.9301,427.6255 Q1093.4265,428.4098 1093.4265,429.954 Q1093.4265,431.4921 1093.9301,432.2764 Q1094.4336,433.0607 1095.4224,433.0607 Q1095.8862,433.0607 1096.3226,432.8623 Q1096.759,432.664 1097.2229,432.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="86.4583" x="1118.2292" y="434.5378">RequestCycle</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="765.1042" x2="1526.5625" y1="445.5078" y2="445.5078"/><ellipse cx="775.5208" cy="480.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="203.125" x="786.9792" y="487.7889">RequestCycle(RequestCycleContext)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1102.0833" y1="463.7136" y2="463.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1105.2083" y="467.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1189.5833" x2="1526.5625" y1="463.7136" y2="463.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1526.5625" y1="497.4976" y2="497.4976"/><ellipse cx="775.5208" cy="508.9559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="786.9792" y="515.8671">void detach()</text><ellipse cx="775.5208" cy="528.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="786.9792" y="535.612">RequestCycle get()</text><ellipse cx="775.5208" cy="548.4456" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="182.2917" x="786.9792" y="555.3569">Response getOriginalResponse()</text><ellipse cx="775.5208" cy="568.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="88.5417" x="786.9792" y="575.1017">void onDetach()</text><ellipse cx="775.5208" cy="587.9354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="786.9792" y="594.8466">boolean processRequest()</text><ellipse cx="775.5208" cy="607.6803" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="786.9792" y="614.5915">boolean processRequestAndDetach()</text><ellipse cx="775.5208" cy="627.4251" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="277.0833" x="786.9792" y="634.3363">void replaceAllRequestHandlers(IRequestHandler)</text><ellipse cx="775.5208" cy="647.17" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="786.9792" y="654.0812">void setRequest(Request)</text><ellipse cx="775.5208" cy="666.9149" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="229.1667" x="786.9792" y="673.8261">void setResponsePage(IRequestablePage)</text><ellipse cx="775.5208" cy="686.6597" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="489.5833" x="786.9792" y="693.571">void setResponsePage(Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters)</text><ellipse cx="775.5208" cy="706.4046" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="394.7917" x="786.9792" y="713.3158">void setResponsePage(Class&lt;? extends IRequestablePage&gt; pageClass)</text><ellipse cx="775.5208" cy="726.1495" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="636.4583" x="786.9792" y="733.0607">void setResponsePage(Class&lt;? extends IRequestablePage&gt; pageClass, RenderPageRequestHandler.RedirectPolicy)</text><ellipse cx="775.5208" cy="745.8944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="731.25" x="786.9792" y="752.8056">void setResponsePage(Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters, RenderPageRequestHandler.RedirectPolicy)</text><polygon fill="#FFFF44" points="775.5208,784.3424,779.6875,788.5091,775.5208,792.6758,771.3542,788.5091" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="786.9792" y="796.462">int getExceptionRetryCount()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1111.4583" y1="772.3867" y2="772.3867"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1114.5833" y="776.1963">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1180.2083" x2="1526.5625" y1="772.3867" y2="772.3867"/><ellipse cx="775.5208" cy="833.2072" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="107.2917" x="786.9792" y="840.1184">long getStartTime()</text><polygon fill="#FFFF44" points="775.5208,847.7437,779.6875,851.9104,775.5208,856.0771,771.3542,851.9104" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="125" x="786.9792" y="859.8633">void onBeginRequest()</text><polygon fill="#FFFF44" points="775.5208,867.4886,779.6875,871.6553,775.5208,875.8219,771.3542,871.6553" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="786.9792" y="879.6082">void onEndRequest()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1116.1458" y1="816.0431" y2="816.0431"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1119.2708" y="819.8527">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1175.5208" x2="1526.5625" y1="816.0431" y2="816.0431"/><ellipse cx="775.5208" cy="916.3534" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="786.9792" y="923.2646">IRequestHandler getActiveRequestHandler()</text><ellipse cx="775.5208" cy="936.0982" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="256.25" x="786.9792" y="943.0094">RequestCycleListenerCollection getListeners()</text><ellipse cx="775.5208" cy="955.8431" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="338.5417" x="786.9792" y="962.7543">IRequestHandler getRequestHandlerScheduledAfterCurrent()</text><polygon fill="#FFFF44" points="775.5208,970.3796,779.6875,974.5463,775.5208,978.713,771.3542,974.5463" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="786.9792" y="982.4992">IRequestHandler handleException(Exception)</text><polygon fill="#FFFF44" points="775.5208,990.1245,779.6875,994.2912,775.5208,998.4578,771.3542,994.2912" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="232.2917" x="786.9792" y="1002.2441">IRequestHandler resolveRequestHandler()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1108.3333" y1="899.1892" y2="899.1892"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1111.4583" y="902.9989">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1183.3333" x2="1526.5625" y1="899.1892" y2="899.1892"/><ellipse cx="775.5208" cy="1038.9893" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="179.1667" x="786.9792" y="1045.9005">Url mapUrlFor(IRequestHandler)</text><ellipse cx="775.5208" cy="1058.7341" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="300" x="786.9792" y="1065.6453">Url mapUrlFor(Class&lt;C&gt; pageClass, PageParameters)</text><ellipse cx="775.5208" cy="1078.479" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="334.375" x="786.9792" y="1085.3902">Url mapUrlFor(ResourceReference, PageParameters params)</text><ellipse cx="775.5208" cy="1098.2239" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="217.7083" x="786.9792" y="1105.1351">CharSequence urlFor(IRequestHandler)</text><ellipse cx="775.5208" cy="1117.9688" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="338.5417" x="786.9792" y="1124.88">CharSequence urlFor(Class&lt;C&gt; pageClass, PageParameters)</text><ellipse cx="775.5208" cy="1137.7136" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="372.9167" x="786.9792" y="1144.6248">CharSequence urlFor(ResourceReference, PageParameters params)</text><polygon fill="#FFFF44" points="775.5208,1152.2502,779.6875,1156.4168,775.5208,1160.5835,771.3542,1156.4168" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="168.75" x="786.9792" y="1164.3697">UrlRenderer newUrlRenderer()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1116.1458" y1="1021.8252" y2="1021.8252"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1119.2708" y="1025.6348">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1175.5208" x2="1526.5625" y1="1021.8252" y2="1021.8252"/><ellipse cx="775.5208" cy="1201.1149" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="786.9792" y="1208.0261">Optional&lt;T&gt; find(Class&lt;T&gt; type)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="765.1042" x2="1119.7917" y1="1183.9508" y2="1183.9508"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="45.8333" x="1122.9167" y="1187.7604">(search)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1171.875" x2="1526.5625" y1="1183.9508" y2="1183.9508"/><!--MD5=[2b052e3c2b401d5e217d7a9e57d1d419]
+class RequestCycleContext--><rect codeLine="86" fill="#282828" height="249.6704" id="RequestCycleContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="467.7083" x="1806.7708" y="77.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="467.7083" x="1806.7708" y="77.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="467.7083" x="1806.7708" y="100.7161"/><rect codeLine="86" fill="none" height="249.6704" id="RequestCycleContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="467.7083" x="1806.7708" y="77.6611"/><ellipse cx="1964.5833" cy="93.3553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1966.4937,97.7804 Q1966.0665,98.0001 1965.5965,98.1099 Q1965.1265,98.2198 1964.6077,98.2198 Q1962.7645,98.2198 1961.794,97.0052 Q1960.8236,95.7906 1960.8236,93.4957 Q1960.8236,91.1947 1961.794,89.9801 Q1962.7645,88.7655 1964.6077,88.7655 Q1965.1265,88.7655 1965.6026,88.8753 Q1966.0787,88.9852 1966.4937,89.2049 L1966.4937,91.2069 Q1966.0299,90.7796 1965.5935,90.5813 Q1965.1571,90.3829 1964.6932,90.3829 Q1963.7044,90.3829 1963.2009,91.1672 Q1962.6973,91.9515 1962.6973,93.4957 Q1962.6973,95.0338 1963.2009,95.8181 Q1963.7044,96.6024 1964.6932,96.6024 Q1965.1571,96.6024 1965.5935,96.404 Q1966.0299,96.2056 1966.4937,95.7784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="137.5" x="1987.5" y="98.0794">RequestCycleContext</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1807.8125" x2="2273.4375" y1="109.0495" y2="109.0495"/><ellipse cx="1818.2292" cy="144.4194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="435.4167" x="1829.6875" y="151.3306">RequestCycleContext(Request, Response, IRequestMapper, IExceptionMapper)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1807.8125" x2="1996.875" y1="127.2552" y2="127.2552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2000" y="131.0649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2084.375" x2="2273.4375" y1="127.2552" y2="127.2552"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1807.8125" x2="2273.4375" y1="161.0392" y2="161.0392"/><ellipse cx="1818.2292" cy="172.4976" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="226.0417" x="1829.6875" y="179.4088">IExceptionMapper getExceptionMapper()</text><ellipse cx="1818.2292" cy="192.2424" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="118.75" x="1829.6875" y="199.1536">Request getRequest()</text><ellipse cx="1818.2292" cy="211.9873" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="205.2083" x="1829.6875" y="218.8985">IRequestMapper getRequestMapper()</text><ellipse cx="1818.2292" cy="231.7322" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="137.5" x="1829.6875" y="238.6434">Response getResponse()</text><ellipse cx="1818.2292" cy="251.4771" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="1829.6875" y="258.3883">void setExceptionMapper(IExceptionMapper)</text><ellipse cx="1818.2292" cy="271.2219" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="1829.6875" y="278.1331">void setRequest(Request)</text><ellipse cx="1818.2292" cy="290.9668" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="228.125" x="1829.6875" y="297.878">void setRequestMapper(IRequestMapper)</text><ellipse cx="1818.2292" cy="310.7117" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="1829.6875" y="317.6229">void setResponse(Response)</text><!--MD5=[c01fea171677a7c84bbab5710f80df76]
+class ListenerCollection--><rect fill="#282828" height="48.055" id="ListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="155.2083" x="554.6875" y="178.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="155.2083" x="554.6875" y="178.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="155.2083" x="554.6875" y="201.7578"/><rect fill="none" height="48.055" id="ListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="155.2083" x="554.6875" y="178.7028"/><ellipse cx="569.2708" cy="194.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M571.1812,198.822 Q570.754,199.0417 570.284,199.1516 Q569.814,199.2615 569.2952,199.2615 Q567.452,199.2615 566.4815,198.0469 Q565.5111,196.8323 565.5111,194.5374 Q565.5111,192.2363 566.4815,191.0217 Q567.452,189.8071 569.2952,189.8071 Q569.814,189.8071 570.2901,189.917 Q570.7662,190.0269 571.1812,190.2466 L571.1812,192.2485 Q570.7174,191.8213 570.281,191.6229 Q569.8446,191.4246 569.3807,191.4246 Q568.3919,191.4246 567.8884,192.2089 Q567.3848,192.9932 567.3848,194.5374 Q567.3848,196.0754 567.8884,196.8597 Q568.3919,197.644 569.3807,197.644 Q569.8446,197.644 570.281,197.4457 Q570.7174,197.2473 571.1812,196.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="585.9375" y="199.1211">ListenerCollection</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="555.7292" x2="708.8542" y1="210.0911" y2="210.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="555.7292" x2="708.8542" y1="218.4245" y2="218.4245"/><!--MD5=[a54a9095af23233ff885452727ae300c]
+class RequestCycleListenerCollection--><rect codeLine="103" fill="#282828" height="48.055" id="RequestCycleListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="241.6667" x="485.4167" y="791.7236"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="241.6667" x="485.4167" y="791.7236"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="241.6667" x="485.4167" y="814.7786"/><rect codeLine="103" fill="none" height="48.055" id="RequestCycleListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="241.6667" x="485.4167" y="791.7236"/><ellipse cx="500" cy="807.4178" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M501.9104,811.8429 Q501.4832,812.0626 501.0132,812.1724 Q500.5432,812.2823 500.0244,812.2823 Q498.1812,812.2823 497.2107,811.0677 Q496.2402,809.8531 496.2402,807.5582 Q496.2402,805.2572 497.2107,804.0426 Q498.1812,802.828 500.0244,802.828 Q500.5432,802.828 501.0193,802.9378 Q501.4954,803.0477 501.9104,803.2674 L501.9104,805.2694 Q501.4465,804.8421 501.0101,804.6438 Q500.5737,804.4454 500.1099,804.4454 Q499.1211,804.4454 498.6176,805.2297 Q498.114,806.014 498.114,807.5582 Q498.114,809.0963 498.6176,809.8806 Q499.1211,810.6649 500.1099,810.6649 Q500.5737,810.6649 501.0101,810.4665 Q501.4465,810.2681 501.9104,809.8409 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="204.1667" x="516.6667" y="812.1419">RequestCycleListenerCollection</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="486.4583" x2="726.0417" y1="823.112" y2="823.112"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="486.4583" x2="726.0417" y1="831.4453" y2="831.4453"/><!--MD5=[7540aa3a183e0836772f0c606c9ab2c0]
+reverse link RequestHandlerExecutor to RequestCycle.HandlerExecutor--><path codeLine="11" d="M1672.9167,247.7549 C1672.9167,368.2861 1672.9167,700.557 1672.9167,791.4111 " fill="none" id="RequestHandlerExecutor-backto-RequestCycle.HandlerExecutor" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1665.625,247.7445,1672.9167,226.9111,1680.2083,247.7445,1665.625,247.7445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f635a304834fabf9a51a442ed8099087]
+reverse link IRequestCycleListener to PageRequestHandlerTracker--><path codeLine="33" d="M262.5,373.1611 C262.5,504.9424 262.5,679.1611 262.5,763.9424 " fill="none" id="IRequestCycleListener-backto-PageRequestHandlerTracker" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="255.2083,372.8174,262.5,351.984,269.7917,372.8174,255.2083,372.8174" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bc8ea151a677caf0476434c79e719a56]
+reverse link IRequestCycle to RequestCycle--><path codeLine="41" d="M1288.0521,247.2132 C1278.3854,285.7861 1263.2083,346.3382 1246.3021,413.807 " fill="none" id="IRequestCycle-backto-RequestCycle" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1281,245.3382,1293.1458,226.9111,1295.1458,248.8903,1281,245.3382" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2da2dc4645de95967778e269367c012e]
+reverse link IEventSink to RequestCycle--><path codeLine="42" d="M1145.8333,247.7549 C1145.8333,286.3486 1145.8333,346.6611 1145.8333,413.807 " fill="none" id="IEventSink-backto-RequestCycle" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1138.5417,247.7445,1145.8333,226.9111,1153.125,247.7445,1138.5417,247.7445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[fe42b1c22ad6cf09a4fdab55ee0ba00e]
+reverse link IMetadataContext to RequestCycle--><path codeLine="43" d="M992,247.2132 C1002.4583,285.7861 1018.875,346.3382 1037.1667,413.807 " fill="none" id="IMetadataContext-backto-RequestCycle" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="984.9167,248.9215,986.5,226.9111,998.9896,245.109,984.9167,248.9215" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[95e10bb4d2f45751015aa1c26e447b3c]
+reverse link ListenerCollection to RequestCycleListenerCollection--><path codeLine="101" d="M630.4167,247.7549 C625.2813,368.2861 611.1146,700.557 607.2396,791.4111 " fill="none" id="ListenerCollection-backto-RequestCycleListenerCollection" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="623.1354,247.4111,631.3021,226.9111,637.6979,248.0361,623.1354,247.4111" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c7e25b21cbd378f03e932d3ffa801fe6]
+reverse link IRequestCycleListener to RequestCycleListenerCollection--><path codeLine="102" d="M411.0208,368.6403 C421.9792,383.5986 432.3646,398.8695 441.6667,414.1195 C522.8854,547.2965 580.5729,727.7236 599.5104,791.2965 " fill="none" id="IRequestCycleListener-backto-RequestCycleListenerCollection" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="405.125,372.9424,398.4271,351.9111,416.7813,364.1715,405.125,372.9424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[a531f7739610ccc37a8f9c3eec4991a5]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.cycle"
+    
+    interface IRequestCycleListener
+    interface IMetadataContext
+    interface IEventSink
+    interface IRequestCycle
+    
+    RequestHandlerExecutor <|- - RequestCycle.HandlerExecutor
+    class RequestCycle.HandlerExecutor
+    {
+    }
+    
+    interface IRequestCycleListener
+    {
+        - -
+        +void onDetach(RequestCycle)
+        - -(lifecycle)- -
+        +void onBeginRequest(RequestCycle)
+        +void onEndRequest(RequestCycle)
+        - -(messaging)- -
+        +IRequestHandler onException(RequestCycle, Exception)
+        +void onExceptionRequestHandlerResolved(RequestCycle, IRequestHandler, Exception)
+        +void onRequestHandlerExecuted(RequestCycle, IRequestHandler)
+        +void onRequestHandlerResolved(RequestCycle, IRequestHandler)
+        +void onRequestHandlerScheduled(RequestCycle, IRequestHandler)
+        - -(network)- -
+        +void onUrlMapped(RequestCycle, IRequestHandler, Url)
+    }
+    
+    IRequestCycleListener <|- - PageRequestHandlerTracker
+    class PageRequestHandlerTracker
+    {
+        - -(collection)- -
+        +IPageRequestHandler getFirstHandler(RequestCycle)
+        +IPageRequestHandler getLastHandler(RequestCycle)
+    }
+    
+    IRequestCycle <|- - RequestCycle
+    IEventSink <|- - RequestCycle
+    IMetadataContext <|- - RequestCycle
+    class RequestCycle
+    {
+        - -(constructors)- -
+        +RequestCycle(RequestCycleContext)
+        - -
+        +void detach()
+        +RequestCycle get()
+        +Response getOriginalResponse()
+        +void onDetach()
+        +boolean processRequest()
+        +boolean processRequestAndDetach()
+        +void replaceAllRequestHandlers(IRequestHandler)
+        +void setRequest(Request)
+        +void setResponsePage(IRequestablePage)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, RenderPageRequestHandler.RedirectPolicy)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters, RenderPageRequestHandler.RedirectPolicy)
+        - -(collection)- -
+        #int getExceptionRetryCount()
+        - -(lifecycle)- -
+        +long getStartTime()
+        #void onBeginRequest()
+        #void onEndRequest()
+        - -(messaging)- -
+        +IRequestHandler getActiveRequestHandler()
+        +RequestCycleListenerCollection getListeners()
+        +IRequestHandler getRequestHandlerScheduledAfterCurrent()
+        #IRequestHandler handleException(Exception)
+        #IRequestHandler resolveRequestHandler()
+        - -(network)- -
+        +Url mapUrlFor(IRequestHandler)
+        +Url mapUrlFor(Class<C> pageClass, PageParameters)
+        +Url mapUrlFor(ResourceReference, PageParameters params)
+        +CharSequence urlFor(IRequestHandler)
+        +CharSequence urlFor(Class<C> pageClass, PageParameters)
+        +CharSequence urlFor(ResourceReference, PageParameters params)
+        #UrlRenderer newUrlRenderer()
+        - -(search)- -
+        +Optional<T> find(Class<T> type)
+    }
+    
+    class RequestCycleContext
+    {
+        - -(constructors)- -
+        +RequestCycleContext(Request, Response, IRequestMapper, IExceptionMapper)
+        - -
+        +IExceptionMapper getExceptionMapper()
+        +Request getRequest()
+        +IRequestMapper getRequestMapper()
+        +Response getResponse()
+        +void setExceptionMapper(IExceptionMapper)
+        +void setRequest(Request)
+        +void setRequestMapper(IRequestMapper)
+        +void setResponse(Response)
+    }
+    
+    ListenerCollection <|- - RequestCycleListenerCollection
+    IRequestCycleListener <|- - RequestCycleListenerCollection
+    class RequestCycleListenerCollection
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.request.cycle"
+    
+    interface IRequestCycleListener
+    interface IMetadataContext
+    interface IEventSink
+    interface IRequestCycle
+    
+    RequestHandlerExecutor <|- - RequestCycle.HandlerExecutor
+    class RequestCycle.HandlerExecutor
+    {
+    }
+    
+    interface IRequestCycleListener
+    {
+        - -
+        +void onDetach(RequestCycle)
+        - -(lifecycle)- -
+        +void onBeginRequest(RequestCycle)
+        +void onEndRequest(RequestCycle)
+        - -(messaging)- -
+        +IRequestHandler onException(RequestCycle, Exception)
+        +void onExceptionRequestHandlerResolved(RequestCycle, IRequestHandler, Exception)
+        +void onRequestHandlerExecuted(RequestCycle, IRequestHandler)
+        +void onRequestHandlerResolved(RequestCycle, IRequestHandler)
+        +void onRequestHandlerScheduled(RequestCycle, IRequestHandler)
+        - -(network)- -
+        +void onUrlMapped(RequestCycle, IRequestHandler, Url)
+    }
+    
+    IRequestCycleListener <|- - PageRequestHandlerTracker
+    class PageRequestHandlerTracker
+    {
+        - -(collection)- -
+        +IPageRequestHandler getFirstHandler(RequestCycle)
+        +IPageRequestHandler getLastHandler(RequestCycle)
+    }
+    
+    IRequestCycle <|- - RequestCycle
+    IEventSink <|- - RequestCycle
+    IMetadataContext <|- - RequestCycle
+    class RequestCycle
+    {
+        - -(constructors)- -
+        +RequestCycle(RequestCycleContext)
+        - -
+        +void detach()
+        +RequestCycle get()
+        +Response getOriginalResponse()
+        +void onDetach()
+        +boolean processRequest()
+        +boolean processRequestAndDetach()
+        +void replaceAllRequestHandlers(IRequestHandler)
+        +void setRequest(Request)
+        +void setResponsePage(IRequestablePage)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, RenderPageRequestHandler.RedirectPolicy)
+        +void setResponsePage(Class<? extends IRequestablePage> pageClass, PageParameters, RenderPageRequestHandler.RedirectPolicy)
+        - -(collection)- -
+        #int getExceptionRetryCount()
+        - -(lifecycle)- -
+        +long getStartTime()
+        #void onBeginRequest()
+        #void onEndRequest()
+        - -(messaging)- -
+        +IRequestHandler getActiveRequestHandler()
+        +RequestCycleListenerCollection getListeners()
+        +IRequestHandler getRequestHandlerScheduledAfterCurrent()
+        #IRequestHandler handleException(Exception)
+        #IRequestHandler resolveRequestHandler()
+        - -(network)- -
+        +Url mapUrlFor(IRequestHandler)
+        +Url mapUrlFor(Class<C> pageClass, PageParameters)
+        +Url mapUrlFor(ResourceReference, PageParameters params)
+        +CharSequence urlFor(IRequestHandler)
+        +CharSequence urlFor(Class<C> pageClass, PageParameters)
+        +CharSequence urlFor(ResourceReference, PageParameters params)
+        #UrlRenderer newUrlRenderer()
+        - -(search)- -
+        +Optional<T> find(Class<T> type)
+    }
+    
+    class RequestCycleContext
+    {
+        - -(constructors)- -
+        +RequestCycleContext(Request, Response, IRequestMapper, IExceptionMapper)
+        - -
+        +IExceptionMapper getExceptionMapper()
+        +Request getRequest()
+        +IRequestMapper getRequestMapper()
+        +Response getResponse()
+        +void setExceptionMapper(IExceptionMapper)
+        +void setRequest(Request)
+        +void setRequestMapper(IRequestMapper)
+        +void setResponse(Response)
+    }
+    
+    ListenerCollection <|- - RequestCycleListenerCollection
+    IRequestCycleListener <|- - RequestCycleListenerCollection
+    class RequestCycleListenerCollection
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

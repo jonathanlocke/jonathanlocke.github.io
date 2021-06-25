@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.response.filter"
+    
+    interface IResponseFilter
+    
+    IResponseFilter <|-- AjaxServerAndClientTimeFilter
+    class AjaxServerAndClientTimeFilter
+    {
+    }
+    
+    IResponseFilter <|-- EmptySrcAttributeCheckFilter
+    class EmptySrcAttributeCheckFilter
+    {
+    }
+    
+    interface IResponseFilter
+    {
+        --(filtering)--
+        +AppendingStringBuffer filter(AppendingStringBuffer responseBuffer)
+    }
+    
+    IResponseFilter <|-- ServerAndClientTimeFilter
+    class ServerAndClientTimeFilter
+    {
+    }
+    
+    IResponseFilter <|-- XmlCleaningResponseFilter
+    class XmlCleaningResponseFilter
+    {
+        --(filtering)--
+        #boolean shouldFilter(AppendingStringBuffer responseBuffer)
+        --(primitive)--
+        +AppendingStringBuffer stripNonValidXMLCharacters(AppendingStringBuffer input)
+        #boolean isValidXmlChar(int codePoint)
+    }
+    
+@enduml
+

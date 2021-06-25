@@ -1,0 +1,20 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.encodings"
+    
+    WicketExampleApplication <|-- EncodingsApplication
+    class EncodingsApplication
+    {
+    }
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home(PageParameters)
+    }
+    
+@enduml
+

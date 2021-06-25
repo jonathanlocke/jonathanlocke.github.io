@@ -1,0 +1,30 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.unicodeconverter"
+    
+    Model <|-- UnicodeConverter.ConverterModel
+    class UnicodeConverter.ConverterModel
+    {
+    }
+    
+    WicketExamplePage <|-- UnicodeConverter
+    class UnicodeConverter
+    {
+        --(constructors)--
+        +UnicodeConverter()
+        --
+        +String getSource()
+        +String getTranslationType()
+        +void setSource(String source)
+        +void setTranslationType(String translationType)
+    }
+    
+    WicketExampleApplication <|-- UnicodeConverterApplication
+    class UnicodeConverterApplication
+    {
+    }
+    
+@enduml
+

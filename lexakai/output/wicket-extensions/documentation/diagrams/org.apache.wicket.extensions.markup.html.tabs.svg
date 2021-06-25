@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="819.7917px" preserveAspectRatio="none" style="width:905px;height:819px;background:#333333;" version="1.1" viewBox="0 0 905 819" width="905.2083px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="502.0833" x="194.2708" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="479.1667" x="205.7292" y="30.5583">org.apache.wicket.extensions.markup.html.tabs</text><!--MD5=[11274fa450550843097943f6f31ed2f7]
+class ITab--><rect codeLine="17" fill="#282828" height="131.2012" id="ITab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="310.4167" x="58.3333" y="411.5153"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="310.4167" x="58.3333" y="411.5153"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="310.4167" x="58.3333" y="434.5703"/><rect codeLine="17" fill="none" height="131.2012" id="ITab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="310.4167" x="58.3333" y="411.5153"/><ellipse cx="192.1875" cy="427.2095" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M189.5915,424.3713 L189.5915,422.7844 L195.0175,422.7844 L195.0175,424.3713 L193.2048,424.3713 L193.2048,430.3101 L195.0175,430.3101 L195.0175,431.897 L189.5915,431.897 L189.5915,430.3101 L191.4042,430.3101 L191.4042,424.3713 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="28.125" x="215.1042" y="431.9336">ITab</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="59.375" x2="367.7083" y1="442.9036" y2="442.9036"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="59.375" x2="367.7083" y1="451.237" y2="451.237"/><ellipse cx="69.7917" cy="462.6953" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="278.125" x="81.25" y="469.6065">WebMarkupContainer getPanel(String containerId)</text><ellipse cx="69.7917" cy="482.4402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="81.25" y="489.3514">IModel&lt;String&gt; getTitle()</text><ellipse cx="69.7917" cy="526.0966" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="81.25" y="533.0078">boolean isVisible()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="59.375" x2="186.9792" y1="508.9325" y2="508.9325"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="190.1042" y="512.7421">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="240.1042" x2="367.7083" y1="508.9325" y2="508.9325"/><!--MD5=[dedef6d4120ef396a7e0c65cb0d43536]
+class AbstractTab--><rect codeLine="9" fill="#282828" height="83.3781" id="AbstractTab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="197.9167" x="7.2917" y="729.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="197.9167" x="7.2917" y="729.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="197.9167" x="7.2917" y="752.7995"/><rect codeLine="9" fill="none" height="83.3781" id="AbstractTab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="197.9167" x="7.2917" y="729.7445"/><ellipse cx="59.8958" cy="745.4386" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M59.4889,742.1407 L58.6405,745.87 L60.3434,745.87 Z M58.3903,740.4928 L60.5937,740.4928 L63.0534,749.6053 L61.2528,749.6053 L60.6913,747.3531 L58.2804,747.3531 L57.7311,749.6053 L55.9306,749.6053 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="82.8125" y="750.1628">AbstractTab</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="204.1667" y1="761.1328" y2="761.1328"/><ellipse cx="18.75" cy="796.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="165.625" x="30.2083" y="803.4139">AbstractTab(IModel&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="62.5" y1="779.3386" y2="779.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="65.625" y="783.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="150" x2="204.1667" y1="779.3386" y2="779.3386"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="15" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="155.7292" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="155.7292" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="155.7292" y="138.2161"/><rect codeLine="15" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="155.7292" y="115.1611"/><ellipse cx="170.3125" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M167.7165,128.0172 L167.7165,126.4303 L173.1425,126.4303 L173.1425,128.0172 L171.3298,128.0172 L171.3298,133.9559 L173.1425,133.9559 L173.1425,135.5428 L167.7165,135.5428 L167.7165,133.9559 L169.5292,133.9559 L169.5292,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="186.9792" y="135.5794">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.7708" x2="270.3125" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.7708" x2="270.3125" y1="154.8828" y2="154.8828"/><!--MD5=[5d3e655a5354299c2a463b06886b0084]
+class PanelCachingTab--><rect codeLine="27" fill="#282828" height="83.3781" id="PanelCachingTab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="241.6667" y="729.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="241.6667" y="729.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="241.6667" y="752.7995"/><rect codeLine="27" fill="none" height="83.3781" id="PanelCachingTab" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="241.6667" y="729.7445"/><ellipse cx="261.875" cy="745.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M263.7854,749.8637 Q263.3582,750.0834 262.8882,750.1933 Q262.4182,750.3031 261.8994,750.3031 Q260.0562,750.3031 259.0857,749.0885 Q258.1152,747.8739 258.1152,745.579 Q258.1152,743.278 259.0857,742.0634 Q260.0562,740.8488 261.8994,740.8488 Q262.4182,740.8488 262.8943,740.9587 Q263.3704,741.0685 263.7854,741.2882 L263.7854,743.2902 Q263.3215,742.863 262.8851,742.6646 Q262.4487,742.4662 261.9849,742.4662 Q260.9961,742.4662 260.4926,743.2505 Q259.989,744.0348 259.989,745.579 Q259.989,747.1171 260.4926,747.9014 Q260.9961,748.6857 261.9849,748.6857 Q262.4487,748.6857 262.8851,748.4873 Q263.3215,748.289 263.7854,747.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="110.4167" x="279.7917" y="750.1628">PanelCachingTab</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="242.7083" x2="401.0417" y1="761.1328" y2="761.1328"/><ellipse cx="253.125" cy="796.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="264.5833" y="803.4139">PanelCachingTab(ITab)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="242.7083" x2="278.125" y1="779.3386" y2="779.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="281.25" y="783.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="365.625" x2="401.0417" y1="779.3386" y2="779.3386"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="570.3125" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="570.3125" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="570.3125" y="138.2161"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="570.3125" y="115.1611"/><ellipse cx="584.8958" cy="130.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M586.8062,135.2804 Q586.379,135.5001 585.909,135.6099 Q585.439,135.7198 584.9202,135.7198 Q583.077,135.7198 582.1065,134.5052 Q581.1361,133.2906 581.1361,130.9957 Q581.1361,128.6947 582.1065,127.4801 Q583.077,126.2655 584.9202,126.2655 Q585.439,126.2655 585.9151,126.3753 Q586.3912,126.4852 586.8062,126.7049 L586.8062,128.7069 Q586.3424,128.2796 585.906,128.0813 Q585.4696,127.8829 585.0057,127.8829 Q584.0169,127.8829 583.5134,128.6672 Q583.0098,129.4515 583.0098,130.9957 Q583.0098,132.5338 583.5134,133.3181 Q584.0169,134.1024 585.0057,134.1024 Q585.4696,134.1024 585.906,133.904 Q586.3424,133.7056 586.8062,133.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="601.5625" y="135.5794">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="571.3542" x2="641.1458" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="571.3542" x2="641.1458" y1="154.8828" y2="154.8828"/><!--MD5=[06b93273ed743c5bc6337bf7677ac2fa]
+class TabbedPanel--><rect codeLine="34" fill="#282828" height="380.6396" id="TabbedPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="402.0833" x="405.2083" y="287.0361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="402.0833" x="405.2083" y="287.0361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="402.0833" x="405.2083" y="310.0911"/><rect codeLine="34" fill="none" height="380.6396" id="TabbedPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="402.0833" x="405.2083" y="287.0361"/><ellipse cx="548.4375" cy="302.7303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M550.3479,307.1554 Q549.9207,307.3751 549.4507,307.4849 Q548.9807,307.5948 548.4619,307.5948 Q546.6187,307.5948 545.6482,306.3802 Q544.6777,305.1656 544.6777,302.8707 Q544.6777,300.5697 545.6482,299.3551 Q546.6187,298.1405 548.4619,298.1405 Q548.9807,298.1405 549.4568,298.2503 Q549.9329,298.3602 550.3479,298.5799 L550.3479,300.5819 Q549.884,300.1546 549.4476,299.9563 Q549.0112,299.7579 548.5474,299.7579 Q547.5586,299.7579 547.0551,300.5422 Q546.5515,301.3265 546.5515,302.8707 Q546.5515,304.4088 547.0551,305.1931 Q547.5586,305.9774 548.5474,305.9774 Q549.0112,305.9774 549.4476,305.779 Q549.884,305.5806 550.3479,305.1534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="82.2917" x="571.3542" y="307.4544">TabbedPanel</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="793.75" y="283.9111"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="797.9167" y="300.1628">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="406.25" x2="806.25" y1="318.4245" y2="318.4245"/><ellipse cx="416.6667" cy="353.7944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="164.5833" x="428.125" y="360.7056">TabbedPanel(String, List&lt;T&gt;)</text><ellipse cx="416.6667" cy="373.5392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="428.125" y="380.4504">TabbedPanel(String, List&lt;T&gt;, IModel&lt;Integer&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="406.25" x2="562.5" y1="336.6302" y2="336.6302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="565.625" y="340.4399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="650" x2="806.25" y1="336.6302" y2="336.6302"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="406.25" x2="806.25" y1="390.1591" y2="390.1591"/><ellipse cx="416.6667" cy="401.6174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="428.125" y="408.5286">int getSelectedTab()</text><polygon fill="#FFFF44" points="416.6667,416.154,420.8333,420.3206,416.6667,424.4873,412.5,420.3206" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="180.2083" x="428.125" y="428.2735">String getSelectedTabCssClass()</text><polygon fill="#FFFF44" points="416.6667,435.8988,420.8333,440.0655,416.6667,444.2322,412.5,440.0655" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="428.125" y="448.0184">String getTabContainerCssClass()</text><ellipse cx="416.6667" cy="484.7636" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="428.125" y="491.6748">List&lt;T&gt; getTabs()</text><polygon fill="#FFFF44" points="416.6667,499.3001,420.8333,503.4668,416.6667,507.6335,412.5,503.4668" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="157.2917" x="428.125" y="511.4197">String getLastTabCssClass()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="406.25" x2="571.875" y1="467.5995" y2="467.5995"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="575" y="471.4091">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="640.625" x2="806.25" y1="467.5995" y2="467.5995"/><polygon fill="#FFFF44" points="416.6667,542.9565,420.8333,547.1232,416.6667,551.2899,412.5,547.1232" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="297.9167" x="428.125" y="555.0761">WebMarkupContainer newLink(String linkId, int index)</text><polygon fill="#FFFF44" points="416.6667,562.7014,420.8333,566.8681,416.6667,571.0347,412.5,566.8681" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="228.125" x="428.125" y="574.821">LoopItem newTabContainer(int tabIndex)</text><polygon fill="#FFFF44" points="416.6667,582.4463,420.8333,586.613,416.6667,590.7796,412.5,586.613" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="282.2917" x="428.125" y="594.5658">WebMarkupContainer newTabsContainer(String id)</text><polygon fill="#FFFF44" points="416.6667,602.1912,420.8333,606.3578,416.6667,610.5245,412.5,606.3578" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="369.7917" x="428.125" y="614.3107">Component newTitle(String titleId, IModel&lt;?&gt; titleModel, int index)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="406.25" x2="579.1667" y1="531.0008" y2="531.0008"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="582.2917" y="534.8104">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="633.3333" x2="806.25" y1="531.0008" y2="531.0008"/><ellipse cx="416.6667" cy="651.0559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="240.625" x="428.125" y="657.9671">TabbedPanel&lt;T&gt; setSelectedTab(int index)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="406.25" x2="570.8333" y1="633.8918" y2="633.8918"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="573.9583" y="637.7014">(functional)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="641.6667" x2="806.25" y1="633.8918" y2="633.8918"/><!--MD5=[a70bd3a9591a35fe37f360b8d5bba359]
+class TabbedPanel.VisibilityCache--><rect codeLine="55" fill="#282828" height="170.6909" id="TabbedPanel.VisibilityCache" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="218.75" x="679.1667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="218.75" x="679.1667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="218.75" x="679.1667" y="76.7578"/><rect codeLine="55" fill="none" height="170.6909" id="TabbedPanel.VisibilityCache" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="218.75" x="679.1667" y="53.7028"/><ellipse cx="693.75" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M695.6604,73.822 Q695.2332,74.0417 694.7632,74.1516 Q694.2932,74.2615 693.7744,74.2615 Q691.9312,74.2615 690.9607,73.0469 Q689.9902,71.8323 689.9902,69.5374 Q689.9902,67.2363 690.9607,66.0217 Q691.9312,64.8071 693.7744,64.8071 Q694.2932,64.8071 694.7693,64.917 Q695.2454,65.0269 695.6604,65.2466 L695.6604,67.2485 Q695.1965,66.8213 694.7601,66.6229 Q694.3237,66.4246 693.8599,66.4246 Q692.8711,66.4246 692.3676,67.2089 Q691.864,67.9932 691.864,69.5374 Q691.864,71.0754 692.3676,71.8597 Q692.8711,72.644 693.8599,72.644 Q694.3237,72.644 694.7601,72.4457 Q695.1965,72.2473 695.6604,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="181.25" x="710.4167" y="74.1211">TabbedPanel.VisibilityCache</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="680.2083" x2="896.875" y1="85.0911" y2="85.0911"/><ellipse cx="690.625" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="89.5833" x="702.0833" y="127.3722">VisibilityCache()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="680.2083" x2="744.7917" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="747.9167" y="107.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="832.2917" x2="896.875" y1="103.2969" y2="103.2969"/><ellipse cx="690.625" cy="164.1174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="151.0417" x="702.0833" y="171.0286">boolean isVisible(int index)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="680.2083" x2="761.9792" y1="146.9533" y2="146.9533"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="765.1042" y="150.7629">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="815.1042" x2="896.875" y1="146.9533" y2="146.9533"/><ellipse cx="690.625" cy="207.7738" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="103.125" x="702.0833" y="214.6851">int getLastVisible()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="680.2083" x2="754.1667" y1="190.6097" y2="190.6097"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="757.2917" y="194.4194">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="822.9167" x2="896.875" y1="190.6097" y2="190.6097"/><!--MD5=[468619756b9127c6662495b78f6414f5]
+reverse link ITab to AbstractTab--><path codeLine="8" d="M182.4375,562.8799 C162.3125,617.6924 137.0104,686.5882 121.2292,729.5674 " fill="none" id="ITab-backto-AbstractTab" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="175.7083,560.0674,189.7292,543.0257,189.3958,565.0986,175.7083,560.0674" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[182f933980a7d846698f6374f35c2478]
+reverse link IClusterable to ITab--><path codeLine="16" d="M213.5417,184.1299 C213.5417,242.0778 213.5417,344.4736 213.5417,411.2965 " fill="none" id="IClusterable-backto-ITab" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="206.25,184.0882,213.5417,163.2549,220.8333,184.0882,206.25,184.0882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ff76c0aa5931737885448aab7a14ad86]
+reverse link ITab to PanelCachingTab--><path codeLine="26" d="M244.9479,562.8799 C265.2708,617.6924 290.8125,686.5882 306.75,729.5674 " fill="none" id="ITab-backto-PanelCachingTab" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="237.9896,565.0986,237.5833,543.0257,251.6667,560.0257,237.9896,565.0986" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3add7fa6c3db8772844b72928c289854]
+reverse link Panel to TabbedPanel--><path codeLine="33" d="M606.25,184.4528 C606.25,211.6507 606.25,248.5465 606.25,286.9528 " fill="none" id="Panel-backto-TabbedPanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="598.9583,184.0882,606.25,163.2549,613.5417,184.0882,598.9583,184.0882" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c8d364d00f1b55d1bf7497f7d654d9e6]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.tabs"
+    
+    interface ITab
+    
+    ITab <|- - AbstractTab
+    abstract class AbstractTab
+    {
+        - -(constructors)- -
+        +AbstractTab(IModel<String>)
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ITab
+    interface ITab
+    {
+        - -
+        +WebMarkupContainer getPanel(String containerId)
+        +IModel<String> getTitle()
+        - -(checks)- -
+        +boolean isVisible()
+    }
+    
+    ITab <|- - PanelCachingTab
+    class PanelCachingTab
+    {
+        - -(constructors)- -
+        +PanelCachingTab(ITab)
+    }
+    
+    Panel <|- - TabbedPanel
+    class TabbedPanel<T>
+    {
+        - -(constructors)- -
+        +TabbedPanel(String, List<T>)
+        +TabbedPanel(String, List<T>, IModel<Integer>)
+        - -
+        +int getSelectedTab()
+        #String getSelectedTabCssClass()
+        #String getTabContainerCssClass()
+        - -(collection)- -
+        +List<T> getTabs()
+        #String getLastTabCssClass()
+        - -(factory)- -
+        #WebMarkupContainer newLink(String linkId, int index)
+        #LoopItem newTabContainer(int tabIndex)
+        #WebMarkupContainer newTabsContainer(String id)
+        #Component newTitle(String titleId, IModel<?> titleModel, int index)
+        - -(functional)- -
+        +TabbedPanel<T> setSelectedTab(int index)
+    }
+    
+    class TabbedPanel.VisibilityCache
+    {
+        - -(constructors)- -
+        +VisibilityCache()
+        - -(checks)- -
+        +boolean isVisible(int index)
+        - -(collection)- -
+        +int getLastVisible()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.markup.html.tabs"
+    
+    interface ITab
+    
+    ITab <|- - AbstractTab
+    abstract class AbstractTab
+    {
+        - -(constructors)- -
+        +AbstractTab(IModel<String>)
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ITab
+    interface ITab
+    {
+        - -
+        +WebMarkupContainer getPanel(String containerId)
+        +IModel<String> getTitle()
+        - -(checks)- -
+        +boolean isVisible()
+    }
+    
+    ITab <|- - PanelCachingTab
+    class PanelCachingTab
+    {
+        - -(constructors)- -
+        +PanelCachingTab(ITab)
+    }
+    
+    Panel <|- - TabbedPanel
+    class TabbedPanel<T>
+    {
+        - -(constructors)- -
+        +TabbedPanel(String, List<T>)
+        +TabbedPanel(String, List<T>, IModel<Integer>)
+        - -
+        +int getSelectedTab()
+        #String getSelectedTabCssClass()
+        #String getTabContainerCssClass()
+        - -(collection)- -
+        +List<T> getTabs()
+        #String getLastTabCssClass()
+        - -(factory)- -
+        #WebMarkupContainer newLink(String linkId, int index)
+        #LoopItem newTabContainer(int tabIndex)
+        #WebMarkupContainer newTabsContainer(String id)
+        #Component newTitle(String titleId, IModel<?> titleModel, int index)
+        - -(functional)- -
+        +TabbedPanel<T> setSelectedTab(int index)
+    }
+    
+    class TabbedPanel.VisibilityCache
+    {
+        - -(constructors)- -
+        +VisibilityCache()
+        - -(checks)- -
+        +boolean isVisible(int index)
+        - -(collection)- -
+        +int getLastVisible()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

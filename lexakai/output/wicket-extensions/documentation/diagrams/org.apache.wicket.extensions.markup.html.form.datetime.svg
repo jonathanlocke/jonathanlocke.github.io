@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="693.75px" preserveAspectRatio="none" style="width:4532px;height:693px;background:#333333;" version="1.1" viewBox="0 0 4532 693" width="4532.2917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="602.0833" x="1957.8125" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="579.1667" x="1969.2708" y="30.5583">org.apache.wicket.extensions.markup.html.form.datetime</text><!--MD5=[3d631f9b86289b8c78ca220379b9aadc]
+cluster TimeField--><polygon fill="#333333" points="1867.1875,269.8486,1943.2292,269.8486,1950.5208,297.0703,2494.2708,297.0703,2494.2708,431.307,1867.1875,431.307,1867.1875,269.8486" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="1867.1875" x2="1950.5208" y1="297.0703" y2="297.0703"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="63.5417" x="1874.4792" y="287.1419">TimeField</text><!--MD5=[379fe41f7eeccef801cff31b97e0ad42]
+cluster AbstractTextComponent--><polygon fill="#333333" points="3218.2292,52.6611,3389.0625,52.6611,3396.3542,79.8828,3420.3125,79.8828,3420.3125,157.8695,3218.2292,157.8695,3218.2292,52.6611" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="3218.2292" x2="3396.3542" y1="79.8828" y2="79.8828"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="158.3333" x="3225.5208" y="69.9544">AbstractTextComponent</text><!--MD5=[e58e4f0015b540dc1e007c77928d91a8]
+class TimeField.AM_PM--><rect codeLine="11" fill="#282828" height="87.5448" id="TimeField.AM_PM" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="83.3333" x="2385.9375" y="318.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="83.3333" x="2385.9375" y="318.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="83.3333" x="2385.9375" y="341.862"/><rect codeLine="11" fill="none" height="87.5448" id="TimeField.AM_PM" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="83.3333" x="2385.9375" y="318.807"/><ellipse cx="2400.5208" cy="334.5011" fill="#CF6300" rx="10.4167" ry="10.4167" style="stroke:#EF8300;stroke-width:1.0416666666666667;"/><path d="M2403.5767,339.1886 L2397.9004,339.1886 L2397.9004,330.0761 L2403.5767,330.0761 L2403.5767,331.663 L2399.7009,331.663 L2399.7009,333.6283 L2403.2104,333.6283 L2403.2104,335.2153 L2399.7009,335.2153 L2399.7009,337.6017 L2403.5767,337.6017 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="45.8333" x="2417.1875" y="339.2253">AM_PM</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2386.9792" x2="2468.2292" y1="350.1953" y2="350.1953"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="17.7083" x="2395.3125" y="368.5649">AM</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="15.625" x="2395.3125" y="388.3097">PM</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2386.9792" x2="2468.2292" y1="398.0184" y2="398.0184"/><!--MD5=[d713f974f49a682dd6b00872bbd6ab27]
+class TimeField.AmPmModel--><rect codeLine="37" fill="#282828" height="48.055" id="TimeField.AmPmModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="118.75" x="2065.1042" y="338.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="118.75" x="2065.1042" y="338.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="118.75" x="2065.1042" y="361.6536"/><rect codeLine="37" fill="none" height="48.055" id="TimeField.AmPmModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="118.75" x="2065.1042" y="338.5986"/><ellipse cx="2079.6875" cy="354.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2081.5979,358.7179 Q2081.1707,358.9376 2080.7007,359.0474 Q2080.2307,359.1573 2079.7119,359.1573 Q2077.8687,359.1573 2076.8982,357.9427 Q2075.9277,356.7281 2075.9277,354.4332 Q2075.9277,352.1322 2076.8982,350.9176 Q2077.8687,349.703 2079.7119,349.703 Q2080.2307,349.703 2080.7068,349.8128 Q2081.1829,349.9227 2081.5979,350.1424 L2081.5979,352.1444 Q2081.134,351.7171 2080.6976,351.5188 Q2080.2612,351.3204 2079.7974,351.3204 Q2078.8086,351.3204 2078.3051,352.1047 Q2077.8015,352.889 2077.8015,354.4332 Q2077.8015,355.9713 2078.3051,356.7556 Q2078.8086,357.5399 2079.7974,357.5399 Q2080.2612,357.5399 2080.6976,357.3415 Q2081.134,357.1431 2081.5979,356.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="2096.3542" y="359.0169">AmPmModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2066.1458" x2="2182.8125" y1="369.987" y2="369.987"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2066.1458" x2="2182.8125" y1="378.3203" y2="378.3203"/><!--MD5=[bf58ae7ecd99af681dc3de8dd8db4b08]
+class TimeField.HoursModel--><rect codeLine="47" fill="#282828" height="48.055" id="TimeField.HoursModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1912.5" y="338.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1912.5" y="338.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1912.5" y="361.6536"/><rect codeLine="47" fill="none" height="48.055" id="TimeField.HoursModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1912.5" y="338.5986"/><ellipse cx="1927.0833" cy="354.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1928.9937,358.7179 Q1928.5665,358.9376 1928.0965,359.0474 Q1927.6265,359.1573 1927.1077,359.1573 Q1925.2645,359.1573 1924.294,357.9427 Q1923.3236,356.7281 1923.3236,354.4332 Q1923.3236,352.1322 1924.294,350.9176 Q1925.2645,349.703 1927.1077,349.703 Q1927.6265,349.703 1928.1026,349.8128 Q1928.5787,349.9227 1928.9937,350.1424 L1928.9937,352.1444 Q1928.5299,351.7171 1928.0935,351.5188 Q1927.6571,351.3204 1927.1932,351.3204 Q1926.2044,351.3204 1925.7009,352.1047 Q1925.1973,352.889 1925.1973,354.4332 Q1925.1973,355.9713 1925.7009,356.7556 Q1926.2044,357.5399 1927.1932,357.5399 Q1927.6571,357.5399 1928.0935,357.3415 Q1928.5299,357.1431 1928.9937,356.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="1943.75" y="359.0169">HoursModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1913.5417" x2="2027.0833" y1="369.987" y2="369.987"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1913.5417" x2="2027.0833" y1="378.3203" y2="378.3203"/><!--MD5=[2f437eb67d2b790d111b919ff2b1cfce]
+class TimeField.MinutesModel--><rect codeLine="94" fill="#282828" height="48.055" id="TimeField.MinutesModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="2220.3125" y="338.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="2220.3125" y="338.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="2220.3125" y="361.6536"/><rect codeLine="94" fill="none" height="48.055" id="TimeField.MinutesModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="2220.3125" y="338.5986"/><ellipse cx="2234.8958" cy="354.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2236.8062,358.7179 Q2236.379,358.9376 2235.909,359.0474 Q2235.439,359.1573 2234.9202,359.1573 Q2233.077,359.1573 2232.1065,357.9427 Q2231.1361,356.7281 2231.1361,354.4332 Q2231.1361,352.1322 2232.1065,350.9176 Q2233.077,349.703 2234.9202,349.703 Q2235.439,349.703 2235.9151,349.8128 Q2236.3912,349.9227 2236.8062,350.1424 L2236.8062,352.1444 Q2236.3424,351.7171 2235.906,351.5188 Q2235.4696,351.3204 2235.0057,351.3204 Q2234.0169,351.3204 2233.5134,352.1047 Q2233.0098,352.889 2233.0098,354.4332 Q2233.0098,355.9713 2233.5134,356.7556 Q2234.0169,357.5399 2235.0057,357.5399 Q2235.4696,357.5399 2235.906,357.3415 Q2236.3424,357.1431 2236.8062,356.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="2251.5625" y="359.0169">MinutesModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2221.3542" x2="2348.4375" y1="369.987" y2="369.987"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2221.3542" x2="2348.4375" y1="378.3203" y2="378.3203"/><!--MD5=[bbbfb298b833dc4d5e3ea779bc454d46]
+class AbstractTextComponent.ITextFormatProvider--><rect fill="#282828" height="48.055" id="AbstractTextComponent.ITextFormatProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="168.75" x="3234.8958" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="168.75" x="3234.8958" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="168.75" x="3234.8958" y="116.3411"/><rect fill="none" height="48.055" id="AbstractTextComponent.ITextFormatProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="168.75" x="3234.8958" y="93.2861"/><ellipse cx="3249.4792" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3251.3896,113.4054 Q3250.9623,113.6251 3250.4924,113.7349 Q3250.0224,113.8448 3249.5036,113.8448 Q3247.6603,113.8448 3246.6899,112.6302 Q3245.7194,111.4156 3245.7194,109.1207 Q3245.7194,106.8197 3246.6899,105.6051 Q3247.6603,104.3905 3249.5036,104.3905 Q3250.0224,104.3905 3250.4985,104.5003 Q3250.9745,104.6102 3251.3896,104.8299 L3251.3896,106.8319 Q3250.9257,106.4046 3250.4893,106.2063 Q3250.0529,106.0079 3249.589,106.0079 Q3248.6003,106.0079 3248.0967,106.7922 Q3247.5932,107.5765 3247.5932,109.1207 Q3247.5932,110.6588 3248.0967,111.4431 Q3248.6003,112.2274 3249.589,112.2274 Q3250.0529,112.2274 3250.4893,112.029 Q3250.9257,111.8306 3251.3896,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="131.25" x="3266.1458" y="113.7044">ITextFormatProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3235.9375" x2="3402.6042" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3235.9375" x2="3402.6042" y1="133.0078" y2="133.0078"/><!--MD5=[aa142a7a4877597895941fe98f5e028b]
+class AbstractDateTimeField--><rect codeLine="18" fill="#282828" height="317.2384" id="AbstractDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="470.8333" x="117.1875" y="203.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="470.8333" x="117.1875" y="203.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="470.8333" x="117.1875" y="226.7578"/><rect codeLine="18" fill="none" height="317.2384" id="AbstractDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="470.8333" x="117.1875" y="203.7028"/><ellipse cx="261.9792" cy="219.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M261.5723,216.099 L260.7239,219.8283 L262.4268,219.8283 Z M260.4736,214.4511 L262.677,214.4511 L265.1367,223.5636 L263.3362,223.5636 L262.7747,221.3114 L260.3638,221.3114 L259.8145,223.5636 L258.0139,223.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="284.8958" y="224.1211">AbstractDateTimeField</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="574.4792" y="200.5778"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="578.6458" y="216.8294">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="118.2292" x2="586.9792" y1="235.0911" y2="235.0911"/><ellipse cx="128.6458" cy="270.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="140.1042" y="277.3722">AbstractDateTimeField(String)</text><ellipse cx="128.6458" cy="290.2059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="236.4583" x="140.1042" y="297.1171">AbstractDateTimeField(String, IModel&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="118.2292" x2="308.8542" y1="253.2969" y2="253.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="311.9792" y="257.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="396.3542" x2="586.9792" y1="253.2969" y2="253.2969"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="118.2292" x2="586.9792" y1="306.8258" y2="306.8258"/><polygon fill="#FFFF44" points="128.6458,313.0758,132.8125,317.2424,128.6458,321.4091,124.4792,317.2424" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="140.1042" y="325.1953">T createTemporal(LocalDate, LocalTime)</text><polygon fill="#FFFF44" points="128.6458,332.8206,132.8125,336.9873,128.6458,341.154,124.4792,336.9873" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="140.1042" y="344.9402">LocalDateTextField getDateField()</text><polygon fill="#FFFF44" points="128.6458,352.5655,132.8125,356.7322,128.6458,360.8988,124.4792,356.7322" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="197.9167" x="140.1042" y="364.6851">LocalDate getLocalDate(T temporal)</text><polygon fill="#FFFF44" points="128.6458,396.2219,132.8125,400.3886,128.6458,404.5553,124.4792,400.3886" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="438.5417" x="140.1042" y="408.3415">LocalDateTextField newDateField(String id, IModel&lt;LocalDate&gt; dateFieldModel)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="118.2292" x2="325.5208" y1="384.2662" y2="384.2662"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="328.6458" y="388.0758">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="379.6875" x2="586.9792" y1="384.2662" y2="384.2662"/><polygon fill="#FFFF44" points="128.6458,439.8783,132.8125,444.045,128.6458,448.2117,124.4792,444.045" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="140.1042" y="451.9979">LocalTime getDefaultTime()</text><polygon fill="#FFFF44" points="128.6458,459.6232,132.8125,463.7899,128.6458,467.9565,124.4792,463.7899" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="202.0833" x="140.1042" y="471.7428">LocalTime getLocalTime(T temporal)</text><polygon fill="#FFFF44" points="128.6458,479.3681,132.8125,483.5347,128.6458,487.7014,124.4792,483.5347" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="140.1042" y="491.4876">TimeField getTimeField()</text><polygon fill="#FFFF44" points="128.6458,499.113,132.8125,503.2796,128.6458,507.4463,124.4792,503.2796" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="390.625" x="140.1042" y="511.2325">TimeField newTimeField(String id, IModel&lt;LocalTime&gt; timeFieldModel)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="118.2292" x2="333.3333" y1="427.9226" y2="427.9226"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="336.4583" y="431.7322">(time)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="371.875" x2="586.9792" y1="427.9226" y2="427.9226"/><!--MD5=[6ba6ebbfde90f18b91d79409d3fac0bd]
+class IModel--><rect codeLine="8" fill="#282828" height="48.055" id="IModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="1835.9375" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="1835.9375" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="81.25" x="1835.9375" y="116.3411"/><rect codeLine="8" fill="none" height="48.055" id="IModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="81.25" x="1835.9375" y="93.2861"/><ellipse cx="1850.5208" cy="108.9803" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1847.9248,106.1422 L1847.9248,104.5553 L1853.3508,104.5553 L1853.3508,106.1422 L1851.5381,106.1422 L1851.5381,112.0809 L1853.3508,112.0809 L1853.3508,113.6678 L1847.9248,113.6678 L1847.9248,112.0809 L1849.7375,112.0809 L1849.7375,106.1422 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="43.75" x="1867.1875" y="113.7044">IModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1836.9792" x2="1916.1458" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1836.9792" x2="1916.1458" y1="133.0078" y2="133.0078"/><!--MD5=[a78beddb7d8c3308d673eb4844f1e7f6]
+class ITextFormatProvider--><rect codeLine="9" fill="#282828" height="48.055" id="ITextFormatProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="168.75" x="2420.3125" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="168.75" x="2420.3125" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="168.75" x="2420.3125" y="116.3411"/><rect codeLine="9" fill="none" height="48.055" id="ITextFormatProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="168.75" x="2420.3125" y="93.2861"/><ellipse cx="2434.8958" cy="108.9803" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2432.2998,106.1422 L2432.2998,104.5553 L2437.7258,104.5553 L2437.7258,106.1422 L2435.9131,106.1422 L2435.9131,112.0809 L2437.7258,112.0809 L2437.7258,113.6678 L2432.2998,113.6678 L2432.2998,112.0809 L2434.1125,112.0809 L2434.1125,106.1422 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="131.25" x="2451.5625" y="113.7044">ITextFormatProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2421.3542" x2="2588.0208" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2421.3542" x2="2588.0208" y1="133.0078" y2="133.0078"/><!--MD5=[d4ec88956c7b774b52e436661b2d25fc]
+class FormComponentPanel--><rect fill="#282828" height="48.055" id="FormComponentPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="181.25" x="532.8125" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="181.25" x="532.8125" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="181.25" x="532.8125" y="116.3411"/><rect fill="none" height="48.055" id="FormComponentPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="181.25" x="532.8125" y="93.2861"/><ellipse cx="547.3958" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M549.3062,113.4054 Q548.879,113.6251 548.409,113.7349 Q547.939,113.8448 547.4202,113.8448 Q545.577,113.8448 544.6065,112.6302 Q543.6361,111.4156 543.6361,109.1207 Q543.6361,106.8197 544.6065,105.6051 Q545.577,104.3905 547.4202,104.3905 Q547.939,104.3905 548.4151,104.5003 Q548.8912,104.6102 549.3062,104.8299 L549.3062,106.8319 Q548.8424,106.4046 548.406,106.2063 Q547.9696,106.0079 547.5057,106.0079 Q546.5169,106.0079 546.0134,106.7922 Q545.5098,107.5765 545.5098,109.1207 Q545.5098,110.6588 546.0134,111.4431 Q546.5169,112.2274 547.5057,112.2274 Q547.9696,112.2274 548.406,112.029 Q548.8424,111.8306 549.3062,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="143.75" x="564.0625" y="113.7044">FormComponentPanel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="533.8542" x2="713.0208" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="533.8542" x2="713.0208" y1="133.0078" y2="133.0078"/><!--MD5=[5c2f0286659f4a235ec25ec2899bf096]
+class AbstractDateTimeField.DateModel--><rect codeLine="42" fill="#282828" height="48.055" id="AbstractDateTimeField.DateModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="107.2917" x="1585.4167" y="338.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="107.2917" x="1585.4167" y="338.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="107.2917" x="1585.4167" y="361.6536"/><rect codeLine="42" fill="none" height="48.055" id="AbstractDateTimeField.DateModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="107.2917" x="1585.4167" y="338.5986"/><ellipse cx="1600" cy="354.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1601.9104,358.7179 Q1601.4832,358.9376 1601.0132,359.0474 Q1600.5432,359.1573 1600.0244,359.1573 Q1598.1812,359.1573 1597.2107,357.9427 Q1596.2402,356.7281 1596.2402,354.4332 Q1596.2402,352.1322 1597.2107,350.9176 Q1598.1812,349.703 1600.0244,349.703 Q1600.5432,349.703 1601.0193,349.8128 Q1601.4954,349.9227 1601.9104,350.1424 L1601.9104,352.1444 Q1601.4465,351.7171 1601.0101,351.5188 Q1600.5737,351.3204 1600.1099,351.3204 Q1599.1211,351.3204 1598.6176,352.1047 Q1598.114,352.889 1598.114,354.4332 Q1598.114,355.9713 1598.6176,356.7556 Q1599.1211,357.5399 1600.1099,357.5399 Q1600.5737,357.5399 1601.0101,357.3415 Q1601.4465,357.1431 1601.9104,356.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="69.7917" x="1616.6667" y="359.0169">DateModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1586.4583" x2="1691.6667" y1="369.987" y2="369.987"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1586.4583" x2="1691.6667" y1="378.3203" y2="378.3203"/><!--MD5=[08f17f19c0d70a0e7c16ecefbdd21d1c]
+class TextField--><rect fill="#282828" height="48.055" id="TextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="96.875" x="3101.0417" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="96.875" x="3101.0417" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="96.875" x="3101.0417" y="116.3411"/><rect fill="none" height="48.055" id="TextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="96.875" x="3101.0417" y="93.2861"/><ellipse cx="3115.625" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3117.5354,113.4054 Q3117.1082,113.6251 3116.6382,113.7349 Q3116.1682,113.8448 3115.6494,113.8448 Q3113.8062,113.8448 3112.8357,112.6302 Q3111.8652,111.4156 3111.8652,109.1207 Q3111.8652,106.8197 3112.8357,105.6051 Q3113.8062,104.3905 3115.6494,104.3905 Q3116.1682,104.3905 3116.6443,104.5003 Q3117.1204,104.6102 3117.5354,104.8299 L3117.5354,106.8319 Q3117.0715,106.4046 3116.6351,106.2063 Q3116.1987,106.0079 3115.7349,106.0079 Q3114.7461,106.0079 3114.2426,106.7922 Q3113.739,107.5765 3113.739,109.1207 Q3113.739,110.6588 3114.2426,111.4431 Q3114.7461,112.2274 3115.7349,112.2274 Q3116.1987,112.2274 3116.6351,112.029 Q3117.0715,111.8306 3117.5354,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="59.375" x="3132.2917" y="113.7044">TextField</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3102.0833" x2="3196.875" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3102.0833" x2="3196.875" y1="133.0078" y2="133.0078"/><!--MD5=[05e593e1a34828b5d44dca74a9be7706]
+class LocalDateTextField--><rect codeLine="53" fill="#282828" height="162.3576" id="LocalDateTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="373.9583" x="3457.2917" y="281.307"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="373.9583" x="3457.2917" y="281.307"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="373.9583" x="3457.2917" y="304.362"/><rect codeLine="53" fill="none" height="162.3576" id="LocalDateTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="373.9583" x="3457.2917" y="281.307"/><ellipse cx="3575.5208" cy="297.0011" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3577.4312,301.4262 Q3577.004,301.6459 3576.534,301.7558 Q3576.064,301.8656 3575.5452,301.8656 Q3573.702,301.8656 3572.7315,300.651 Q3571.7611,299.4364 3571.7611,297.1415 Q3571.7611,294.8405 3572.7315,293.6259 Q3573.702,292.4113 3575.5452,292.4113 Q3576.064,292.4113 3576.5401,292.5212 Q3577.0162,292.631 3577.4312,292.8507 L3577.4312,294.8527 Q3576.9674,294.4255 3576.531,294.2271 Q3576.0946,294.0287 3575.6307,294.0287 Q3574.6419,294.0287 3574.1384,294.813 Q3573.6348,295.5973 3573.6348,297.1415 Q3573.6348,298.6796 3574.1384,299.4639 Q3574.6419,300.2482 3575.6307,300.2482 Q3576.0946,300.2482 3576.531,300.0498 Q3576.9674,299.8515 3577.4312,299.4242 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="3598.4375" y="301.7253">LocalDateTextField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3458.3333" x2="3830.2083" y1="312.6953" y2="312.6953"/><ellipse cx="3468.75" cy="348.0652" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="218.75" x="3480.2083" y="354.9764">LocalDateTextField(String, FormatStyle)</text><ellipse cx="3468.75" cy="367.8101" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="334.375" x="3480.2083" y="374.7213">LocalDateTextField(String, IModel&lt;LocalDate&gt;, FormatStyle)</text><ellipse cx="3468.75" cy="387.5549" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="341.6667" x="3480.2083" y="394.4661">LocalDateTextField(String, IModel&lt;LocalDate&gt;, String, String)</text><ellipse cx="3468.75" cy="407.2998" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="302.0833" x="3480.2083" y="414.211">LocalDateTextField(String, IModel&lt;LocalDate&gt;, String)</text><ellipse cx="3468.75" cy="427.0447" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="3480.2083" y="433.9559">LocalDateTextField(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3458.3333" x2="3600.5208" y1="330.9011" y2="330.9011"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="3603.6458" y="334.7107">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3688.0208" x2="3830.2083" y1="330.9011" y2="330.9011"/><!--MD5=[ed06a7ce76369decc43f54fae5bce0ec]
+class LocalDateTimeField--><rect codeLine="64" fill="#282828" height="103.123" id="LocalDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="323.9583" x="7.2917" y="583.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="323.9583" x="7.2917" y="583.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="323.9583" x="7.2917" y="606.9661"/><rect codeLine="64" fill="none" height="103.123" id="LocalDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="323.9583" x="7.2917" y="583.9111"/><ellipse cx="98.4375" cy="599.6053" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M100.3479,604.0304 Q99.9207,604.2501 99.4507,604.3599 Q98.9807,604.4698 98.4619,604.4698 Q96.6187,604.4698 95.6482,603.2552 Q94.6777,602.0406 94.6777,599.7457 Q94.6777,597.4447 95.6482,596.2301 Q96.6187,595.0155 98.4619,595.0155 Q98.9807,595.0155 99.4568,595.1253 Q99.9329,595.2352 100.3479,595.4549 L100.3479,597.4569 Q99.884,597.0296 99.4476,596.8313 Q99.0112,596.6329 98.5474,596.6329 Q97.5586,596.6329 97.0551,597.4172 Q96.5515,598.2015 96.5515,599.7457 Q96.5515,601.2838 97.0551,602.0681 Q97.5586,602.8524 98.5474,602.8524 Q99.0112,602.8524 99.4476,602.654 Q99.884,602.4556 100.3479,602.0284 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="121.3542" y="604.3294">LocalDateTimeField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="330.2083" y1="615.2995" y2="615.2995"/><ellipse cx="18.75" cy="650.6694" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="148.9583" x="30.2083" y="657.5806">LocalDateTimeField(String)</text><ellipse cx="18.75" cy="670.4142" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="291.6667" x="30.2083" y="677.3254">LocalDateTimeField(String, IModel&lt;LocalDateTime&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="125.5208" y1="633.5052" y2="633.5052"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="128.6458" y="637.3149">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="213.0208" x2="330.2083" y1="633.5052" y2="633.5052"/><!--MD5=[fbcf4af62cac65a793e99320c47c5007]
+class LocalDateTimeTextField--><rect codeLine="73" fill="#282828" height="142.6127" id="LocalDateTimeTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="492.7083" x="2519.7917" y="291.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="492.7083" x="2519.7917" y="291.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="492.7083" x="2519.7917" y="314.2578"/><rect codeLine="73" fill="none" height="142.6127" id="LocalDateTimeTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="492.7083" x="2519.7917" y="291.2028"/><ellipse cx="2681.25" cy="306.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2683.1604,311.322 Q2682.7332,311.5417 2682.2632,311.6516 Q2681.7932,311.7615 2681.2744,311.7615 Q2679.4312,311.7615 2678.4607,310.5469 Q2677.4902,309.3323 2677.4902,307.0374 Q2677.4902,304.7363 2678.4607,303.5217 Q2679.4312,302.3071 2681.2744,302.3071 Q2681.7932,302.3071 2682.2693,302.417 Q2682.7454,302.5269 2683.1604,302.7466 L2683.1604,304.7485 Q2682.6965,304.3213 2682.2601,304.1229 Q2681.8237,303.9246 2681.3599,303.9246 Q2680.3711,303.9246 2679.8676,304.7089 Q2679.364,305.4932 2679.364,307.0374 Q2679.364,308.5754 2679.8676,309.3597 Q2680.3711,310.144 2681.3599,310.144 Q2681.8237,310.144 2682.2601,309.9457 Q2682.6965,309.7473 2683.1604,309.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="155.2083" x="2704.1667" y="311.6211">LocalDateTimeTextField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2520.8333" x2="3011.4583" y1="322.5911" y2="322.5911"/><ellipse cx="2531.25" cy="357.961" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="317.7083" x="2542.7083" y="364.8722">LocalDateTimeTextField(String, FormatStyle, FormatStyle)</text><ellipse cx="2531.25" cy="377.7059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="460.4167" x="2542.7083" y="384.6171">LocalDateTimeTextField(String, IModel&lt;LocalDateTime&gt;, FormatStyle, FormatStyle)</text><ellipse cx="2531.25" cy="397.4508" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="356.25" x="2542.7083" y="404.362">LocalDateTimeTextField(String, IModel&lt;LocalDateTime&gt;, String)</text><ellipse cx="2531.25" cy="417.1956" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="2542.7083" y="424.1069">LocalDateTimeTextField(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2520.8333" x2="2722.3958" y1="340.7969" y2="340.7969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2725.5208" y="344.6065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2809.8958" x2="3011.4583" y1="340.7969" y2="340.7969"/><!--MD5=[1226675356aeafd896fc9c6cd86bdf2c]
+class LocalTimeTextField--><rect codeLine="84" fill="#282828" height="142.6127" id="LocalTimeTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="370.8333" x="3049.4792" y="291.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="370.8333" x="3049.4792" y="291.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="370.8333" x="3049.4792" y="314.2578"/><rect codeLine="84" fill="none" height="142.6127" id="LocalTimeTextField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="370.8333" x="3049.4792" y="291.2028"/><ellipse cx="3165.1042" cy="306.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3167.0146,311.322 Q3166.5873,311.5417 3166.1174,311.6516 Q3165.6474,311.7615 3165.1286,311.7615 Q3163.2853,311.7615 3162.3149,310.5469 Q3161.3444,309.3323 3161.3444,307.0374 Q3161.3444,304.7363 3162.3149,303.5217 Q3163.2853,302.3071 3165.1286,302.3071 Q3165.6474,302.3071 3166.1235,302.417 Q3166.5995,302.5269 3167.0146,302.7466 L3167.0146,304.7485 Q3166.5507,304.3213 3166.1143,304.1229 Q3165.6779,303.9246 3165.214,303.9246 Q3164.2253,303.9246 3163.7217,304.7089 Q3163.2182,305.4932 3163.2182,307.0374 Q3163.2182,308.5754 3163.7217,309.3597 Q3164.2253,310.144 3165.214,310.144 Q3165.6779,310.144 3166.1143,309.9457 Q3166.5507,309.7473 3167.0146,309.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="125" x="3188.0208" y="311.6211">LocalTimeTextField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3050.5208" x2="3419.2708" y1="322.5911" y2="322.5911"/><ellipse cx="3060.9375" cy="357.961" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="220.8333" x="3072.3958" y="364.8722">LocalTimeTextField(String, FormatStyle)</text><ellipse cx="3060.9375" cy="377.7059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="338.5417" x="3072.3958" y="384.6171">LocalTimeTextField(String, IModel&lt;LocalTime&gt;, FormatStyle)</text><ellipse cx="3060.9375" cy="397.4508" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="306.25" x="3072.3958" y="404.362">LocalTimeTextField(String, IModel&lt;LocalTime&gt;, String)</text><ellipse cx="3060.9375" cy="417.1956" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="3072.3958" y="424.1069">LocalTimeTextField(String, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3050.5208" x2="3191.1458" y1="340.7969" y2="340.7969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="3194.2708" y="344.6065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3278.6458" x2="3419.2708" y1="340.7969" y2="340.7969"/><!--MD5=[18ae419b4f55cafd1f2720e05c001aaa]
+class LocalDateTimeConverter--><rect fill="#282828" height="48.055" id="LocalDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="3866.6667" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="3866.6667" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="3866.6667" y="116.3411"/><rect fill="none" height="48.055" id="LocalDateTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="3866.6667" y="93.2861"/><ellipse cx="3881.25" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3883.1604,113.4054 Q3882.7332,113.6251 3882.2632,113.7349 Q3881.7932,113.8448 3881.2744,113.8448 Q3879.4312,113.8448 3878.4607,112.6302 Q3877.4902,111.4156 3877.4902,109.1207 Q3877.4902,106.8197 3878.4607,105.6051 Q3879.4312,104.3905 3881.2744,104.3905 Q3881.7932,104.3905 3882.2693,104.5003 Q3882.7454,104.6102 3883.1604,104.8299 L3883.1604,106.8319 Q3882.6965,106.4046 3882.2601,106.2063 Q3881.8237,106.0079 3881.3599,106.0079 Q3880.3711,106.0079 3879.8676,106.7922 Q3879.364,107.5765 3879.364,109.1207 Q3879.364,110.6588 3879.8676,111.4431 Q3880.3711,112.2274 3881.3599,112.2274 Q3881.8237,112.2274 3882.2601,112.029 Q3882.6965,111.8306 3883.1604,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="3897.9167" y="113.7044">LocalDateTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3867.7083" x2="4062.5" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3867.7083" x2="4062.5" y1="133.0078" y2="133.0078"/><!--MD5=[58937a5a580e644a771eb35563b17edf]
+class LocalDateTimeTextField.TextFormatConverter--><rect codeLine="99" fill="#282828" height="67.7999" id="LocalDateTimeTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="3867.7083" y="328.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="3867.7083" y="328.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="3867.7083" y="351.7578"/><rect codeLine="99" fill="none" height="67.7999" id="LocalDateTimeTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="3867.7083" y="328.7028"/><ellipse cx="3891.1979" cy="344.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M3890.791,341.099 L3889.9426,344.8283 L3891.6455,344.8283 Z M3889.6924,339.4511 L3891.8958,339.4511 L3894.3555,348.5636 L3892.5549,348.5636 L3891.9934,346.3114 L3889.5825,346.3114 L3889.0332,348.5636 L3887.2327,348.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="137.5" x="3909.8438" y="349.1211">TextFormatConverter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3868.75" x2="4061.4583" y1="360.0911" y2="360.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3868.75" x2="4061.4583" y1="368.4245" y2="368.4245"/><ellipse cx="3879.1667" cy="379.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="3890.625" y="386.794">String getTextFormat(Locale)</text><!--MD5=[4921c59f79b438eee3203467cdc1356d]
+class LocalTimeConverter--><rect fill="#282828" height="48.055" id="LocalTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="166.6667" x="4113.0208" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="166.6667" x="4113.0208" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="166.6667" x="4113.0208" y="116.3411"/><rect fill="none" height="48.055" id="LocalTimeConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="166.6667" x="4113.0208" y="93.2861"/><ellipse cx="4127.6042" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4129.5146,113.4054 Q4129.0873,113.6251 4128.6174,113.7349 Q4128.1474,113.8448 4127.6286,113.8448 Q4125.7853,113.8448 4124.8149,112.6302 Q4123.8444,111.4156 4123.8444,109.1207 Q4123.8444,106.8197 4124.8149,105.6051 Q4125.7853,104.3905 4127.6286,104.3905 Q4128.1474,104.3905 4128.6235,104.5003 Q4129.0995,104.6102 4129.5146,104.8299 L4129.5146,106.8319 Q4129.0507,106.4046 4128.6143,106.2063 Q4128.1779,106.0079 4127.714,106.0079 Q4126.7253,106.0079 4126.2217,106.7922 Q4125.7182,107.5765 4125.7182,109.1207 Q4125.7182,110.6588 4126.2217,111.4431 Q4126.7253,112.2274 4127.714,112.2274 Q4128.1779,112.2274 4128.6143,112.029 Q4129.0507,111.8306 4129.5146,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="129.1667" x="4144.2708" y="113.7044">LocalTimeConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4114.0625" x2="4278.6458" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4114.0625" x2="4278.6458" y1="133.0078" y2="133.0078"/><!--MD5=[87dc40fe3b36f8c7f47034ec6a50dad3]
+class LocalTimeTextField.TextFormatConverter--><rect codeLine="106" fill="#282828" height="67.7999" id="LocalTimeTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="4098.9583" y="328.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="4098.9583" y="328.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="4098.9583" y="351.7578"/><rect codeLine="106" fill="none" height="67.7999" id="LocalTimeTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="4098.9583" y="328.7028"/><ellipse cx="4122.4479" cy="344.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M4122.041,341.099 L4121.1926,344.8283 L4122.8955,344.8283 Z M4120.9424,339.4511 L4123.1458,339.4511 L4125.6055,348.5636 L4123.8049,348.5636 L4123.2434,346.3114 L4120.8325,346.3114 L4120.2832,348.5636 L4118.4827,348.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="137.5" x="4141.0938" y="349.1211">TextFormatConverter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="4100" x2="4292.7083" y1="360.0911" y2="360.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4100" x2="4292.7083" y1="368.4245" y2="368.4245"/><ellipse cx="4110.4167" cy="379.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="4121.875" y="386.794">String getTextFormat(Locale)</text><!--MD5=[17f137dfa24b805223a5423e10618b0c]
+class LocalDateConverter--><rect fill="#282828" height="48.055" id="LocalDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="4345.3125" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="4345.3125" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="4345.3125" y="116.3411"/><rect fill="none" height="48.055" id="LocalDateConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="4345.3125" y="93.2861"/><ellipse cx="4359.8958" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4361.8062,113.4054 Q4361.379,113.6251 4360.909,113.7349 Q4360.439,113.8448 4359.9202,113.8448 Q4358.077,113.8448 4357.1065,112.6302 Q4356.1361,111.4156 4356.1361,109.1207 Q4356.1361,106.8197 4357.1065,105.6051 Q4358.077,104.3905 4359.9202,104.3905 Q4360.439,104.3905 4360.9151,104.5003 Q4361.3912,104.6102 4361.8062,104.8299 L4361.8062,106.8319 Q4361.3424,106.4046 4360.906,106.2063 Q4360.4696,106.0079 4360.0057,106.0079 Q4359.0169,106.0079 4358.5134,106.7922 Q4358.0098,107.5765 4358.0098,109.1207 Q4358.0098,110.6588 4358.5134,111.4431 Q4359.0169,112.2274 4360.0057,112.2274 Q4360.4696,112.2274 4360.906,112.029 Q4361.3424,111.8306 4361.8062,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="4376.5625" y="113.7044">LocalDateConverter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4346.3542" x2="4508.8542" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4346.3542" x2="4508.8542" y1="133.0078" y2="133.0078"/><!--MD5=[28929b554443885bfeccc9536df1c360]
+class LocalDateTextField.TextFormatConverter--><rect codeLine="113" fill="#282828" height="67.7999" id="LocalDateTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="4330.2083" y="328.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="4330.2083" y="328.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="194.7917" x="4330.2083" y="351.7578"/><rect codeLine="113" fill="none" height="67.7999" id="LocalDateTextField.TextFormatConverter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="194.7917" x="4330.2083" y="328.7028"/><ellipse cx="4353.6979" cy="344.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M4353.291,341.099 L4352.4426,344.8283 L4354.1455,344.8283 Z M4352.1924,339.4511 L4354.3958,339.4511 L4356.8555,348.5636 L4355.0549,348.5636 L4354.4934,346.3114 L4352.0825,346.3114 L4351.5332,348.5636 L4349.7327,348.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="137.5" x="4372.3438" y="349.1211">TextFormatConverter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="4331.25" x2="4523.9583" y1="360.0911" y2="360.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4331.25" x2="4523.9583" y1="368.4245" y2="368.4245"/><ellipse cx="4341.6667" cy="379.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="4353.125" y="386.794">String getTextFormat(Locale)</text><!--MD5=[f4775373c69533e9a8901c154c611737]
+class TimeField--><rect codeLine="120" fill="#282828" height="186.2691" id="TimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="539.5833" x="624.4792" y="269.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="539.5833" x="624.4792" y="269.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="539.5833" x="624.4792" y="292.3828"/><rect codeLine="120" fill="none" height="186.2691" id="TimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="539.5833" x="624.4792" y="269.3278"/><ellipse cx="855.2083" cy="285.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M857.1187,289.447 Q856.6915,289.6667 856.2215,289.7766 Q855.7515,289.8865 855.2327,289.8865 Q853.3895,289.8865 852.419,288.6719 Q851.4486,287.4573 851.4486,285.1624 Q851.4486,282.8613 852.419,281.6467 Q853.3895,280.4321 855.2327,280.4321 Q855.7515,280.4321 856.2276,280.542 Q856.7037,280.6519 857.1187,280.8716 L857.1187,282.8735 Q856.6549,282.4463 856.2185,282.2479 Q855.7821,282.0496 855.3182,282.0496 Q854.3294,282.0496 853.8259,282.8339 Q853.3223,283.6182 853.3223,285.1624 Q853.3223,286.7004 853.8259,287.4847 Q854.3294,288.269 855.3182,288.269 Q855.7821,288.269 856.2185,288.0707 Q856.6549,287.8723 857.1187,287.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="63.5417" x="878.125" y="289.7461">TimeField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="625.5208" x2="1163.0208" y1="300.7161" y2="300.7161"/><ellipse cx="635.9375" cy="336.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="647.3958" y="342.9972">TimeField(String)</text><ellipse cx="635.9375" cy="355.8309" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="212.5" x="647.3958" y="362.7421">TimeField(String, IModel&lt;LocalTime&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="625.5208" x2="850.5208" y1="318.9219" y2="318.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="853.6458" y="322.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="938.0208" x2="1163.0208" y1="318.9219" y2="318.9219"/><polygon fill="#FFFF44" points="635.9375,394.279,640.1042,398.4456,635.9375,402.6123,631.7708,398.4456" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="497.9167" x="647.3958" y="406.3985">TextField&lt;Integer&gt; newHoursTextField(String id, IModel&lt;Integer&gt;, Class&lt;Integer&gt; type)</text><polygon fill="#FFFF44" points="635.9375,414.0238,640.1042,418.1905,635.9375,422.3572,631.7708,418.1905" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="507.2917" x="647.3958" y="426.1434">TextField&lt;Integer&gt; newMinutesTextField(String id, IModel&lt;Integer&gt;, Class&lt;Integer&gt; type)</text><polygon fill="#FFFF44" points="635.9375,433.7687,640.1042,437.9354,635.9375,442.1021,631.7708,437.9354" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="158.3333" x="647.3958" y="445.8883">boolean use12HourFormat()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="625.5208" x2="875" y1="382.3232" y2="382.3232"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="878.125" y="386.1328">(time)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="913.5417" x2="1163.0208" y1="382.3232" y2="382.3232"/><!--MD5=[6a8846fe7eca02efc37c11b5e137d7b0]
+class AbstractDateTimeField.TimeModel--><rect codeLine="132" fill="#282828" height="48.055" id="AbstractDateTimeField.TimeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="109.375" x="1729.1667" y="338.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="109.375" x="1729.1667" y="338.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="109.375" x="1729.1667" y="361.6536"/><rect codeLine="132" fill="none" height="48.055" id="AbstractDateTimeField.TimeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="109.375" x="1729.1667" y="338.5986"/><ellipse cx="1743.75" cy="354.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1745.6604,358.7179 Q1745.2332,358.9376 1744.7632,359.0474 Q1744.2932,359.1573 1743.7744,359.1573 Q1741.9312,359.1573 1740.9607,357.9427 Q1739.9902,356.7281 1739.9902,354.4332 Q1739.9902,352.1322 1740.9607,350.9176 Q1741.9312,349.703 1743.7744,349.703 Q1744.2932,349.703 1744.7693,349.8128 Q1745.2454,349.9227 1745.6604,350.1424 L1745.6604,352.1444 Q1745.1965,351.7171 1744.7601,351.5188 Q1744.3237,351.3204 1743.8599,351.3204 Q1742.8711,351.3204 1742.3676,352.1047 Q1741.864,352.889 1741.864,354.4332 Q1741.864,355.9713 1742.3676,356.7556 Q1742.8711,357.5399 1743.8599,357.5399 Q1744.3237,357.5399 1744.7601,357.3415 Q1745.1965,357.1431 1745.6604,356.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="71.875" x="1760.4167" y="359.0169">TimeModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1730.2083" x2="1837.5" y1="369.987" y2="369.987"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1730.2083" x2="1837.5" y1="378.3203" y2="378.3203"/><!--MD5=[fd9ecacb55517a03346ec622ec2a738b]
+class ZonedDateTimeField--><rect codeLine="137" fill="#282828" height="103.123" id="ZonedDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="336.4583" x="367.7083" y="583.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="336.4583" x="367.7083" y="583.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="336.4583" x="367.7083" y="606.9661"/><rect codeLine="137" fill="none" height="103.123" id="ZonedDateTimeField" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="336.4583" x="367.7083" y="583.9111"/><ellipse cx="461.4583" cy="599.6053" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M463.3687,604.0304 Q462.9415,604.2501 462.4715,604.3599 Q462.0015,604.4698 461.4827,604.4698 Q459.6395,604.4698 458.669,603.2552 Q457.6986,602.0406 457.6986,599.7457 Q457.6986,597.4447 458.669,596.2301 Q459.6395,595.0155 461.4827,595.0155 Q462.0015,595.0155 462.4776,595.1253 Q462.9537,595.2352 463.3687,595.4549 L463.3687,597.4569 Q462.9049,597.0296 462.4685,596.8313 Q462.0321,596.6329 461.5682,596.6329 Q460.5794,596.6329 460.0759,597.4172 Q459.5723,598.2015 459.5723,599.7457 Q459.5723,601.2838 460.0759,602.0681 Q460.5794,602.8524 461.5682,602.8524 Q462.0321,602.8524 462.4685,602.654 Q462.9049,602.4556 463.3687,602.0284 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="134.375" x="484.375" y="604.3294">ZonedDateTimeField</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="368.75" x2="703.125" y1="615.2995" y2="615.2995"/><ellipse cx="379.1667" cy="650.6694" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="155.2083" x="390.625" y="657.5806">ZonedDateTimeField(String)</text><ellipse cx="379.1667" cy="670.4142" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="304.1667" x="390.625" y="677.3254">ZonedDateTimeField(String, IModel&lt;ZonedDateTime&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="368.75" x2="492.1875" y1="633.5052" y2="633.5052"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="495.3125" y="637.3149">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="579.6875" x2="703.125" y1="633.5052" y2="633.5052"/><!--MD5=[359ebbc04a995198ee7099b48f391ab6]
+class ZonedToLocalDateTimeModel--><rect codeLine="145" fill="#282828" height="146.7794" id="ZonedToLocalDateTimeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="347.9167" x="1200.5208" y="289.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="347.9167" x="1200.5208" y="289.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="347.9167" x="1200.5208" y="312.1745"/><rect codeLine="145" fill="none" height="146.7794" id="ZonedToLocalDateTimeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="347.9167" x="1200.5208" y="289.1195"/><ellipse cx="1270.8333" cy="304.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1272.7437,309.2387 Q1272.3165,309.4584 1271.8465,309.5683 Q1271.3765,309.6781 1270.8577,309.6781 Q1269.0145,309.6781 1268.044,308.4635 Q1267.0736,307.2489 1267.0736,304.954 Q1267.0736,302.653 1268.044,301.4384 Q1269.0145,300.2238 1270.8577,300.2238 Q1271.3765,300.2238 1271.8526,300.3337 Q1272.3287,300.4435 1272.7437,300.6632 L1272.7437,302.6652 Q1272.2799,302.238 1271.8435,302.0396 Q1271.4071,301.8412 1270.9432,301.8412 Q1269.9544,301.8412 1269.4509,302.6255 Q1268.9473,303.4098 1268.9473,304.954 Q1268.9473,306.4921 1269.4509,307.2764 Q1269.9544,308.0607 1270.9432,308.0607 Q1271.4071,308.0607 1271.8435,307.8623 Q1272.2799,307.664 1272.7437,307.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="192.7083" x="1293.75" y="309.5378">ZonedToLocalDateTimeModel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1201.5625" x2="1547.3958" y1="320.5078" y2="320.5078"/><ellipse cx="1211.9792" cy="355.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="315.625" x="1223.4375" y="362.7889">ZonedToLocalDateTimeModel(IModel&lt;ZonedDateTime&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1201.5625" x2="1330.7292" y1="338.7136" y2="338.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1333.8542" y="342.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1418.2292" x2="1547.3958" y1="338.7136" y2="338.7136"/><polygon fill="#FFFF44" points="1211.9792,394.3258,1216.1458,398.4924,1211.9792,402.6591,1207.8125,398.4924" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="155.2083" x="1223.4375" y="406.4453">ZoneId getClientTimeZone()</text><polygon fill="#FFFF44" points="1211.9792,414.0706,1216.1458,418.2373,1211.9792,422.404,1207.8125,418.2373" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="1223.4375" y="426.1902">ZoneId getTargetTimeZone()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1201.5625" x2="1355.2083" y1="382.37" y2="382.37"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="1358.3333" y="386.1796">(time)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1393.75" x2="1547.3958" y1="382.37" y2="382.37"/><!--MD5=[3c570d965d173b9690f05865c8e86930]
+reverse link FormComponentPanel to AbstractDateTimeField--><path codeLine="17" d="M581.6667,155.7965 C566.4167,169.4945 548.0625,185.9736 528.4583,203.5778 " fill="none" id="FormComponentPanel-backto-AbstractDateTimeField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="577.0938,150.0986,597.4688,141.609,586.8438,160.9528,577.0938,150.0986" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[79f97066cd0070fb4fbea4fda088eeb1]
+reverse link IModel to TimeField.AmPmModel--><path codeLine="36" d="M1937.1667,137.7445 C1972.5313,151.5882 2016.0208,173.182 2046.3542,203.7028 C2085.1354,242.734 2108.0104,304.9007 2118.1667,338.3695 " fill="none" id="IModel-backto-TimeField.AmPmModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1934.4688,144.5257,1917.4375,130.484,1939.5104,130.8382,1934.4688,144.5257" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c2af2409d79eca9d80e1995b44683b42]
+reverse link IModel to AbstractDateTimeField.DateModel--><path codeLine="41" d="M1815.9479,138.1924 C1781.5313,152.0361 1739.7083,173.484 1710.9375,203.7028 C1673.5625,242.9424 1653.2188,305.0257 1644.4271,338.4215 " fill="none" id="IModel-backto-AbstractDateTimeField.DateModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1813.6458,131.2653,1835.7083,130.7236,1818.8021,144.9111,1813.6458,131.2653" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b91cd953c2d47e822a6383993d026222]
+reverse link IModel to TimeField.HoursModel--><path codeLine="46" d="M1893.0833,161.1611 C1912.9792,212.7549 1945.6563,297.5465 1961.3542,338.2653 " fill="none" id="IModel-backto-TimeField.HoursModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1886.2396,163.6715,1885.5521,141.609,1899.8438,158.4215,1886.2396,163.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3f77f4704daae20c2c6dcb73bf802e92]
+reverse link TextField to LocalDateTextField--><path codeLine="51" d="M3193.75,153.2757 C3201.5729,158.234 3209.8958,162.7965 3218.2292,166.2028 C3310.3646,203.9111 3347.8333,163.8486 3439.0625,203.7028 C3482.3021,222.5986 3524.5938,252.5361 3559.4479,281.2861 " fill="none" id="TextField-backto-LocalDateTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3189.5417,159.234,3176.6042,141.3486,3197.875,147.2653,3189.5417,159.234" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[84b977d2a3eb7cfe8ca9f1a4bf762599]
+reverse link AbstractTextComponent.ITextFormatProvider to LocalDateTextField--><path codeLine="52" d="M3369.5938,153.557 C3391.125,168.807 3416.4479,186.9528 3439.0625,203.7028 C3472.5625,228.5153 3508.7188,256.057 3541.2188,281.109 " fill="none" id="AbstractTextComponent.ITextFormatProvider-backto-LocalDateTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3365.3646,159.5049,3352.5521,141.5361,3373.7813,147.5882,3365.3646,159.5049" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[37d439f1e578f729494c059143991e6d]
+reverse link AbstractDateTimeField to LocalDateTimeField--><path codeLine="63" d="M233.7604,539.1611 C222.9375,555.1507 212.6771,570.3174 203.6458,583.6507 " fill="none" id="AbstractDateTimeField-backto-LocalDateTimeField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="227.9792,534.7028,245.6979,521.5361,240.0521,542.8799,227.9792,534.7028" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3fe51810aa7e8bb4c9ebacc8f5b856e8]
+reverse link TextField to LocalDateTimeTextField--><path codeLine="71" d="M3095.2917,152.6715 C3038.8438,188.484 2948.8229,245.609 2877.1771,291.0674 " fill="none" id="TextField-backto-LocalDateTimeTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3091.5729,146.3903,3113.0729,141.3903,3099.3854,158.7028,3091.5729,146.3903" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2448f36f3722a5a3a90e56ac45538fbd]
+reverse link AbstractTextComponent.ITextFormatProvider to LocalDateTimeTextField--><path codeLine="72" d="M3256.4375,150.3174 C3243.3438,156.182 3229.4688,161.8174 3216.1458,166.2028 C3136.7083,192.3382 3109.7813,173.5882 3031.7708,203.7028 C2974.0938,225.9632 2914.5208,260.1611 2866.4375,291.0465 " fill="none" id="AbstractTextComponent.ITextFormatProvider-backto-LocalDateTimeTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3253.5625,143.609,3275.5208,141.3799,3259.75,156.8174,3253.5625,143.609" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bb4f03cb4c0a0a12ca9d17b1543b0550]
+reverse link TextField to LocalTimeTextField--><path codeLine="82" d="M3164.7188,161.6715 C3177.3021,197.5257 3195.4375,249.1507 3210.1146,290.9424 " fill="none" id="TextField-backto-LocalTimeTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3157.6875,163.682,3157.6667,141.609,3171.4479,158.8486,3157.6875,163.682" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[014c581bbcd548818921751f36db33ac]
+reverse link AbstractTextComponent.ITextFormatProvider to LocalTimeTextField--><path codeLine="83" d="M3304.2188,161.6715 C3291.7813,197.5257 3273.875,249.1507 3259.375,290.9424 " fill="none" id="AbstractTextComponent.ITextFormatProvider-backto-LocalTimeTextField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3297.4688,158.9007,3311.1771,141.609,3311.2396,163.682,3297.4688,158.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[145ac678fdf5bf284ac18d2b1084991c]
+reverse link IModel to TimeField.MinutesModel--><path codeLine="93" d="M1938.1563,119.8799 C2009.0729,124.734 2125.6563,142.3382 2202.6042,203.7028 C2246.5729,238.7653 2269.6146,303.734 2279.2604,338.3695 " fill="none" id="IModel-backto-TimeField.MinutesModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1937.6771,127.1611,1917.2813,118.734,1938.4792,112.5986,1937.6771,127.1611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1df946595998d5ba60152bb236c2bbc9]
+reverse link LocalDateTimeConverter to LocalDateTimeTextField.TextFormatConverter--><path codeLine="98" d="M3965.1042,162.682 C3965.1042,210.609 3965.1042,285.8174 3965.1042,328.682 " fill="none" id="LocalDateTimeConverter-backto-LocalDateTimeTextField.TextFormatConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3957.8125,162.4424,3965.1042,141.609,3972.3958,162.4424,3957.8125,162.4424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[01c0b62fbc0e7b3d05363e6e71e0ae6c]
+reverse link LocalTimeConverter to LocalTimeTextField.TextFormatConverter--><path codeLine="105" d="M4196.3542,162.682 C4196.3542,210.609 4196.3542,285.8174 4196.3542,328.682 " fill="none" id="LocalTimeConverter-backto-LocalTimeTextField.TextFormatConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="4189.0625,162.4424,4196.3542,141.609,4203.6458,162.4424,4189.0625,162.4424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[99ea1e1174fc4cfb1d884bc36b34864b]
+reverse link LocalDateConverter to LocalDateTextField.TextFormatConverter--><path codeLine="112" d="M4427.6042,162.682 C4427.6042,210.609 4427.6042,285.8174 4427.6042,328.682 " fill="none" id="LocalDateConverter-backto-LocalDateTextField.TextFormatConverter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="4420.3125,162.4424,4427.6042,141.609,4434.8958,162.4424,4420.3125,162.4424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8adbd2f9b08cbd26538308f511a77e4c]
+reverse link FormComponentPanel to TimeField--><path codeLine="119" d="M665.0521,155.6507 C698.6563,185.8382 747.4271,229.6403 791.3542,269.0882 " fill="none" id="FormComponentPanel-backto-TimeField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="660.0313,160.9528,649.4063,141.609,669.7813,150.0986,660.0313,160.9528" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c745ed7cc1fb8529a382b8dd95dcbbaf]
+reverse link IModel to AbstractDateTimeField.TimeModel--><path codeLine="131" d="M1860.2188,161.1611 C1840.5521,212.7549 1808.2396,297.5465 1792.7188,338.2653 " fill="none" id="IModel-backto-AbstractDateTimeField.TimeModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1853.4375,158.4736,1867.6771,141.609,1867.0625,163.6715,1853.4375,158.4736" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2dec5d7c9325aea74670e8a19ed0e312]
+reverse link AbstractDateTimeField to ZonedDateTimeField--><path codeLine="136" d="M471.4479,539.1611 C482.2708,555.1507 492.5313,570.3174 501.5625,583.6507 " fill="none" id="AbstractDateTimeField-backto-ZonedDateTimeField" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="465.1563,542.8799,459.5104,521.5361,477.2292,534.7028,465.1563,542.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[092db9c2904912204f24691d56d9625e]
+reverse link IModel to ZonedToLocalDateTimeModel--><path codeLine="144" d="M1814.7917,127.5361 C1750.2813,138.9424 1647.4792,162.1299 1567.1875,203.7028 C1524.1771,225.9736 1481.9167,258.9632 1447.9792,289.0257 " fill="none" id="IModel-backto-ZonedToLocalDateTimeModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1813.7708,120.3174,1835.5208,124.0465,1816.1875,134.6924,1813.7708,120.3174" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[affba3bed3d348cc791e1700f4965a1e]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.form.datetime"
+    
+    abstract AbstractDateTimeField
+    
+    interface IModel
+    interface ITextFormatProvider
+    
+    enum TimeField.AM_PM
+    {
+        AM
+        PM
+    }
+    
+    FormComponentPanel <|- - AbstractDateTimeField
+    abstract class AbstractDateTimeField<T>
+    {
+        - -(constructors)- -
+        +AbstractDateTimeField(String)
+        +AbstractDateTimeField(String, IModel<T>)
+        - -
+        #T createTemporal(LocalDate, LocalTime)
+        #LocalDateTextField getDateField()
+        #LocalDate getLocalDate(T temporal)
+        - -(factory)- -
+        #LocalDateTextField newDateField(String id, IModel<LocalDate> dateFieldModel)
+        - -(time)- -
+        #LocalTime getDefaultTime()
+        #LocalTime getLocalTime(T temporal)
+        #TimeField getTimeField()
+        #TimeField newTimeField(String id, IModel<LocalTime> timeFieldModel)
+    }
+    
+    IModel <|- - TimeField.AmPmModel
+    class TimeField.AmPmModel
+    {
+    }
+    
+    IModel <|- - AbstractDateTimeField.DateModel
+    class AbstractDateTimeField.DateModel
+    {
+    }
+    
+    IModel <|- - TimeField.HoursModel
+    class TimeField.HoursModel
+    {
+    }
+    
+    TextField <|- - LocalDateTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalDateTextField
+    class LocalDateTextField
+    {
+        - -(constructors)- -
+        +LocalDateTextField(String, FormatStyle)
+        +LocalDateTextField(String, IModel<LocalDate>, FormatStyle)
+        +LocalDateTextField(String, IModel<LocalDate>, String, String)
+        +LocalDateTextField(String, IModel<LocalDate>, String)
+        +LocalDateTextField(String, String)
+    }
+    
+    AbstractDateTimeField <|- - LocalDateTimeField
+    class LocalDateTimeField
+    {
+        - -(constructors)- -
+        +LocalDateTimeField(String)
+        +LocalDateTimeField(String, IModel<LocalDateTime>)
+    }
+    
+    TextField <|- - LocalDateTimeTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalDateTimeTextField
+    class LocalDateTimeTextField
+    {
+        - -(constructors)- -
+        +LocalDateTimeTextField(String, FormatStyle, FormatStyle)
+        +LocalDateTimeTextField(String, IModel<LocalDateTime>, FormatStyle, FormatStyle)
+        +LocalDateTimeTextField(String, IModel<LocalDateTime>, String)
+        +LocalDateTimeTextField(String, String)
+    }
+    
+    TextField <|- - LocalTimeTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalTimeTextField
+    class LocalTimeTextField
+    {
+        - -(constructors)- -
+        +LocalTimeTextField(String, FormatStyle)
+        +LocalTimeTextField(String, IModel<LocalTime>, FormatStyle)
+        +LocalTimeTextField(String, IModel<LocalTime>, String)
+        +LocalTimeTextField(String, String)
+    }
+    
+    IModel <|- - TimeField.MinutesModel
+    class TimeField.MinutesModel
+    {
+    }
+    
+    LocalDateTimeConverter <|- - LocalDateTimeTextField.TextFormatConverter
+    abstract class LocalDateTimeTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    LocalTimeConverter <|- - LocalTimeTextField.TextFormatConverter
+    abstract class LocalTimeTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    LocalDateConverter <|- - LocalDateTextField.TextFormatConverter
+    abstract class LocalDateTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    FormComponentPanel <|- - TimeField
+    class TimeField
+    {
+        - -(constructors)- -
+        +TimeField(String)
+        +TimeField(String, IModel<LocalTime>)
+        - -(time)- -
+        #TextField<Integer> newHoursTextField(String id, IModel<Integer>, Class<Integer> type)
+        #TextField<Integer> newMinutesTextField(String id, IModel<Integer>, Class<Integer> type)
+        #boolean use12HourFormat()
+    }
+    
+    IModel <|- - AbstractDateTimeField.TimeModel
+    class AbstractDateTimeField.TimeModel
+    {
+    }
+    
+    AbstractDateTimeField <|- - ZonedDateTimeField
+    class ZonedDateTimeField
+    {
+        - -(constructors)- -
+        +ZonedDateTimeField(String)
+        +ZonedDateTimeField(String, IModel<ZonedDateTime>)
+    }
+    
+    IModel <|- - ZonedToLocalDateTimeModel
+    class ZonedToLocalDateTimeModel
+    {
+        - -(constructors)- -
+        +ZonedToLocalDateTimeModel(IModel<ZonedDateTime>)
+        - -(time)- -
+        #ZoneId getClientTimeZone()
+        #ZoneId getTargetTimeZone()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.markup.html.form.datetime"
+    
+    abstract AbstractDateTimeField
+    
+    interface IModel
+    interface ITextFormatProvider
+    
+    enum TimeField.AM_PM
+    {
+        AM
+        PM
+    }
+    
+    FormComponentPanel <|- - AbstractDateTimeField
+    abstract class AbstractDateTimeField<T>
+    {
+        - -(constructors)- -
+        +AbstractDateTimeField(String)
+        +AbstractDateTimeField(String, IModel<T>)
+        - -
+        #T createTemporal(LocalDate, LocalTime)
+        #LocalDateTextField getDateField()
+        #LocalDate getLocalDate(T temporal)
+        - -(factory)- -
+        #LocalDateTextField newDateField(String id, IModel<LocalDate> dateFieldModel)
+        - -(time)- -
+        #LocalTime getDefaultTime()
+        #LocalTime getLocalTime(T temporal)
+        #TimeField getTimeField()
+        #TimeField newTimeField(String id, IModel<LocalTime> timeFieldModel)
+    }
+    
+    IModel <|- - TimeField.AmPmModel
+    class TimeField.AmPmModel
+    {
+    }
+    
+    IModel <|- - AbstractDateTimeField.DateModel
+    class AbstractDateTimeField.DateModel
+    {
+    }
+    
+    IModel <|- - TimeField.HoursModel
+    class TimeField.HoursModel
+    {
+    }
+    
+    TextField <|- - LocalDateTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalDateTextField
+    class LocalDateTextField
+    {
+        - -(constructors)- -
+        +LocalDateTextField(String, FormatStyle)
+        +LocalDateTextField(String, IModel<LocalDate>, FormatStyle)
+        +LocalDateTextField(String, IModel<LocalDate>, String, String)
+        +LocalDateTextField(String, IModel<LocalDate>, String)
+        +LocalDateTextField(String, String)
+    }
+    
+    AbstractDateTimeField <|- - LocalDateTimeField
+    class LocalDateTimeField
+    {
+        - -(constructors)- -
+        +LocalDateTimeField(String)
+        +LocalDateTimeField(String, IModel<LocalDateTime>)
+    }
+    
+    TextField <|- - LocalDateTimeTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalDateTimeTextField
+    class LocalDateTimeTextField
+    {
+        - -(constructors)- -
+        +LocalDateTimeTextField(String, FormatStyle, FormatStyle)
+        +LocalDateTimeTextField(String, IModel<LocalDateTime>, FormatStyle, FormatStyle)
+        +LocalDateTimeTextField(String, IModel<LocalDateTime>, String)
+        +LocalDateTimeTextField(String, String)
+    }
+    
+    TextField <|- - LocalTimeTextField
+    AbstractTextComponent.ITextFormatProvider <|- - LocalTimeTextField
+    class LocalTimeTextField
+    {
+        - -(constructors)- -
+        +LocalTimeTextField(String, FormatStyle)
+        +LocalTimeTextField(String, IModel<LocalTime>, FormatStyle)
+        +LocalTimeTextField(String, IModel<LocalTime>, String)
+        +LocalTimeTextField(String, String)
+    }
+    
+    IModel <|- - TimeField.MinutesModel
+    class TimeField.MinutesModel
+    {
+    }
+    
+    LocalDateTimeConverter <|- - LocalDateTimeTextField.TextFormatConverter
+    abstract class LocalDateTimeTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    LocalTimeConverter <|- - LocalTimeTextField.TextFormatConverter
+    abstract class LocalTimeTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    LocalDateConverter <|- - LocalDateTextField.TextFormatConverter
+    abstract class LocalDateTextField.TextFormatConverter
+    {
+        - -
+        +String getTextFormat(Locale)
+    }
+    
+    FormComponentPanel <|- - TimeField
+    class TimeField
+    {
+        - -(constructors)- -
+        +TimeField(String)
+        +TimeField(String, IModel<LocalTime>)
+        - -(time)- -
+        #TextField<Integer> newHoursTextField(String id, IModel<Integer>, Class<Integer> type)
+        #TextField<Integer> newMinutesTextField(String id, IModel<Integer>, Class<Integer> type)
+        #boolean use12HourFormat()
+    }
+    
+    IModel <|- - AbstractDateTimeField.TimeModel
+    class AbstractDateTimeField.TimeModel
+    {
+    }
+    
+    AbstractDateTimeField <|- - ZonedDateTimeField
+    class ZonedDateTimeField
+    {
+        - -(constructors)- -
+        +ZonedDateTimeField(String)
+        +ZonedDateTimeField(String, IModel<ZonedDateTime>)
+    }
+    
+    IModel <|- - ZonedToLocalDateTimeModel
+    class ZonedToLocalDateTimeModel
+    {
+        - -(constructors)- -
+        +ZonedToLocalDateTimeModel(IModel<ZonedDateTime>)
+        - -(time)- -
+        #ZoneId getClientTimeZone()
+        #ZoneId getTargetTimeZone()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,76 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.session"
+    
+    interface Serializable
+    interface ISessionStore
+    interface IPageFactory
+    interface HttpSessionBindingListener
+    
+    interface ISessionStore.BindListener
+    {
+        --
+        +void bindingSession(Request, Session newSession)
+    }
+    
+    IPageFactory <|-- DefaultPageFactory
+    class DefaultPageFactory
+    {
+    }
+    
+    ISessionStore <|-- HttpSessionStore
+    class HttpSessionStore
+    {
+        --
+        #Session getWicketSession(Request)
+        #void onBind(Request, Session newSession)
+        #void onUnbind(String sessionId)
+        #void setWicketSession(Request, Session)
+        --(network)--
+        #HttpServletRequest getHttpServletRequest(Request)
+    }
+    
+    interface ISessionStore
+    {
+        --
+        +void bind(Request, Session newSession)
+        +void destroy()
+        +Serializable getAttribute(Request, String name)
+        +void invalidate(Request)
+        +void setAttribute(Request, String name, Serializable value)
+        --(collection)--
+        +List<String> getAttributeNames(Request)
+        +void removeAttribute(Request, String name)
+        --(identity)--
+        +String getSessionId(Request, boolean create)
+        --(io)--
+        +void flushSession(Request, Session)
+        --(messaging)--
+        +Set<BindListener> getBindListeners()
+        +Set<UnboundListener> getUnboundListener()
+        +void registerBindListener(BindListener)
+        +void registerUnboundListener(UnboundListener)
+        +void unregisterBindListener(BindListener)
+        +void unregisterUnboundListener(UnboundListener)
+        --(search)--
+        +Session lookup(Request)
+    }
+    
+    HttpSessionBindingListener <|-- HttpSessionStore.SessionBindingListener
+    Serializable <|-- HttpSessionStore.SessionBindingListener
+    class HttpSessionStore.SessionBindingListener
+    {
+        --(constructors)--
+        +SessionBindingListener(String, Session)
+    }
+    
+    interface ISessionStore.UnboundListener
+    {
+        --
+        +void sessionUnbound(String sessionId)
+    }
+    
+@enduml
+

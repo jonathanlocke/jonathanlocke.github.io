@@ -1,0 +1,30 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils.stateless"
+    
+    interface IComponentOnBeforeRenderListener
+    
+    WicketRuntimeException <|-- StatelessCheckFailureException
+    class StatelessCheckFailureException
+    {
+        --(constructors)--
+        +StatelessCheckFailureException(Component, String)
+        --
+        +Component getComponent()
+    }
+    
+    IComponentOnBeforeRenderListener <|-- StatelessChecker
+    class StatelessChecker
+    {
+        --
+        #boolean mustCheck(Component)
+        --(status)--
+        #void fail(StatelessCheckFailureException)
+    }
+    
+    annotation StatelessComponent
+    
+@enduml
+

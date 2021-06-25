@@ -1,0 +1,21 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.reference"
+    
+    interface Serializable
+    interface Supplier
+    
+    Serializable <|-- ClassReference
+    Supplier <|-- ClassReference
+    class ClassReference<T>
+    {
+        --(constructors)--
+        +ClassReference(Class<T>)
+        --
+        +ClassReference<T> of(Class<T> clazz)
+    }
+    
+@enduml
+

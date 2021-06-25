@@ -1,0 +1,25 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.arquillian.testing.dao"
+    
+    interface ContactDao
+    
+    interface ContactDao
+    {
+        --
+        +Contact getContact(Long id)
+        --(collection)--
+        +void addContact(String name, String email)
+        +List<Contact> getContacts()
+        +void remove(Contact modelObject)
+    }
+    
+    ContactDao <|-- ContactDaoBean
+    class ContactDaoBean
+    {
+    }
+    
+@enduml
+

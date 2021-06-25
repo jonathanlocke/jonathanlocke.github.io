@@ -1,0 +1,44 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.template"
+    
+    Panel <|-- Banner
+    abstract class Banner
+    {
+        --(constructors)--
+        +Banner(String)
+        +Banner(String, IModel<?>)
+    }
+    
+    Banner <|-- Banner1
+    class Banner1<T>
+    {
+        --(constructors)--
+        +Banner1(String)
+        +Banner1(String, IModel<?>)
+    }
+    
+    Banner <|-- Banner2
+    class Banner2<T>
+    {
+        --(constructors)--
+        +Banner2(String)
+        +Banner2(String, IModel<?>)
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    WicketExampleApplication <|-- TemplateApplication
+    class TemplateApplication
+    {
+    }
+    
+@enduml
+

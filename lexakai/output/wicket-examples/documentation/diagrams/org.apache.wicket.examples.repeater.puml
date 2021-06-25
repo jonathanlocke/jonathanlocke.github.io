@@ -1,0 +1,248 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.repeater"
+    
+    abstract BasePage
+    
+    interface Serializable
+    interface IClusterable
+    interface IFilterStateLocator
+    interface IDataProvider
+    
+    Panel <|-- FormPage.ActionPanel
+    class FormPage.ActionPanel
+    {
+        --(constructors)--
+        +ActionPanel(String, IModel<Contact>)
+    }
+    
+    Panel <|-- BasePage.ActionPanel
+    class BasePage.ActionPanel
+    {
+        --(constructors)--
+        +ActionPanel(String, IModel<Contact>)
+    }
+    
+    BasePage <|-- AjaxDataTablePage
+    class AjaxDataTablePage
+    {
+        --(constructors)--
+        +AjaxDataTablePage()
+    }
+    
+    ExamplePage <|-- BasePage
+    class BasePage
+    {
+        --(constructors)--
+        +BasePage()
+        --
+        +String getSelectedContactLabel()
+        +void setSelected(Contact selected)
+        --(functional)--
+        +Contact getSelected()
+    }
+    
+    IClusterable <|-- Contact
+    class Contact
+    {
+        --(constructors)--
+        +Contact()
+        +Contact(String, String)
+        --
+        +Date getBornDate()
+        +String getCellPhone()
+        +String getHomePhone()
+        +void setBornDate(Date bornDate)
+        +void setCellPhone(String cellPhone)
+        +void setHomePhone(String homePhone)
+        --(collection)--
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        --(identity)--
+        +long getId()
+        +void setId(long id)
+    }
+    
+    IDataProvider <|-- ContactDataProvider
+    class ContactDataProvider
+    {
+        --
+        #ContactsDatabase getContactsDB()
+    }
+    
+    Serializable <|-- ContactFilter
+    class ContactFilter
+    {
+        --
+        +Date getDateFrom()
+        +Date getDateTo()
+        +void setDateFrom(Date dateFrom)
+        +void setDateTo(Date dateTo)
+    }
+    
+    class ContactGenerator
+    {
+        --
+        +Contact generate()
+        +void generate(Collection<Contact>, int count)
+        +ContactGenerator getInstance()
+        --(identity)--
+        +long generateId()
+    }
+    
+    class ContactsDatabase
+    {
+        --(constructors)--
+        +ContactsDatabase(int)
+        --
+        +Contact get(long id)
+        --(collection)--
+        +List<Contact> find(long first, long count, SortParam)
+        +int getCount()
+        +List<Contact> getIndex(SortParam)
+        #void add(Contact)
+        --(filesystem)--
+        +void delete(Contact)
+        --(write)--
+        +void save(Contact)
+    }
+    
+    BasePage <|-- DataGridPage
+    class DataGridPage
+    {
+        --(constructors)--
+        +DataGridPage()
+    }
+    
+    ExamplePage <|-- DataTableFilterToolbarPage
+    class DataTableFilterToolbarPage
+    {
+        --(constructors)--
+        +DataTableFilterToolbarPage()
+    }
+    
+    BasePage <|-- DataTablePage
+    class DataTablePage
+    {
+        --(constructors)--
+        +DataTablePage()
+    }
+    
+    class DatabaseLocator
+    {
+        --
+        +ContactsDatabase getDatabase()
+    }
+    
+    LoadableDetachableModel <|-- DetachableContactModel
+    class DetachableContactModel
+    {
+        --(constructors)--
+        +DetachableContactModel(Contact)
+        +DetachableContactModel(long)
+        --
+        #ContactsDatabase getContactsDB()
+    }
+    
+    WicketExamplePage <|-- ExamplePage
+    abstract class ExamplePage
+    {
+        --
+        +ContactsDatabase getContactsDB()
+    }
+    
+    BasePage <|-- FormPage
+    class FormPage
+    {
+        --(constructors)--
+        +FormPage()
+    }
+    
+    BasePage <|-- GridViewPage
+    class GridViewPage
+    {
+        --(constructors)--
+        +GridViewPage()
+    }
+    
+    Item <|-- OIRPage.HighlitableDataItem
+    class OIRPage.HighlitableDataItem<T>
+    {
+        --(constructors)--
+        +HighlitableDataItem(String, int, IModel<T>)
+        --
+        +void toggleHighlite()
+    }
+    
+    ExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    BasePage <|-- OIRPage
+    class OIRPage
+    {
+        --(constructors)--
+        +OIRPage()
+    }
+    
+    BasePage <|-- PagingPage
+    class PagingPage
+    {
+        --(constructors)--
+        +PagingPage()
+    }
+    
+    BasePage <|-- RefreshingPage
+    class RefreshingPage
+    {
+        --(constructors)--
+        +RefreshingPage()
+    }
+    
+    WicketExampleApplication <|-- RepeaterApplication
+    class RepeaterApplication
+    {
+        --
+        +ContactsDatabase getContactsDB()
+    }
+    
+    BasePage <|-- RepeatingPage
+    class RepeatingPage
+    {
+        --(constructors)--
+        +RepeatingPage()
+    }
+    
+    BasePage <|-- SimplePage
+    class SimplePage
+    {
+        --(constructors)--
+        +SimplePage()
+    }
+    
+    SortableDataProvider <|-- SortableContactDataProvider
+    IFilterStateLocator <|-- SortableContactDataProvider
+    class SortableContactDataProvider
+    {
+        --(constructors)--
+        +SortableContactDataProvider()
+        --
+        #ContactsDatabase getContactsDB()
+    }
+    
+    BasePage <|-- SortingPage
+    class SortingPage
+    {
+        --(constructors)--
+        +SortingPage()
+    }
+    
+@enduml
+

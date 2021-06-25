@@ -1,0 +1,60 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.form.select"
+    
+    interface IGenericComponent
+    
+    interface IDetachable
+    IDetachable <|-- IOptionRenderer
+    interface IOptionRenderer<T>
+    {
+        --
+        +String getDisplayValue(T object)
+        +IModel<T> getModel(T value)
+    }
+    
+    FormComponent <|-- Select
+    class Select<T>
+    {
+        --(constructors)--
+        +Select(String)
+        +Select(String, IModel<T>)
+        --(checks)--
+        #boolean isSelected(IModel<?>)
+    }
+    
+    WebMarkupContainer <|-- SelectOption
+    IGenericComponent <|-- SelectOption
+    class SelectOption<T>
+    {
+        --(constructors)--
+        +SelectOption(String)
+        +SelectOption(String, IModel<T>)
+        --
+        +String getValue()
+    }
+    
+    RepeatingView <|-- SelectOptions
+    class SelectOptions<T>
+    {
+        --(constructors)--
+        +SelectOptions(String, Collection<? extends T>, IOptionRenderer<T>)
+        +SelectOptions(String, IModel<? extends Collection<? extends T>>, IOptionRenderer<T>)
+        --
+        +SelectOptions<T> setRecreateChoices(boolean refresh)
+        --(factory)--
+        #SelectOption<T> newOption(String text, IModel<T>)
+        #SelectOption<T> newOption(String id, String text, IModel<T>)
+    }
+    
+    SelectOption <|-- SelectOptions.SimpleSelectOption
+    class SelectOptions.SimpleSelectOption<V>
+    {
+        --(constructors)--
+        +SimpleSelectOption(String, IModel<V>, String)
+    }
+    
+@enduml
+

@@ -1,0 +1,98 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.string"
+    
+    interface IMarkupCacheKeyProvider
+    interface ISessionStore
+    interface ISerializer
+    interface IMarkupResourceStreamProvider
+    
+    class ComponentRenderer
+    {
+        --(constructors)--
+        +ComponentRenderer()
+        +ComponentRenderer(Application)
+        --
+        +void destroy()
+        --(factory)--
+        #Request newRequest()
+        --(primitive)--
+        +CharSequence renderComponent(Supplier<Component>)
+        +CharSequence renderComponent(Component)
+        +CharSequence renderPage(PageProvider)
+        +CharSequence renderPage(Supplier<? extends Page>)
+    }
+    
+    class ComponentStrings
+    {
+    }
+    
+    class CssUtils
+    {
+        --(collection)--
+        +String key(Class<?> scope, String facet)
+        --(write)--
+        +void writeCloseTag(Response)
+        +void writeCss(Response, CharSequence text, String id)
+        +void writeInlineStyle(Response, CharSequence text, AttributeMap attributes)
+        +void writeLink(Response, AttributeMap attributes)
+        +void writeLinkUrl(Response, CharSequence url, CharSequence media, String markupId)
+        +void writeLinkUrl(Response, CharSequence url, CharSequence media, String markupId, String rel)
+        +void writeOpenTag(Response, String id)
+        +void writeOpenTag(Response, AttributeMap attributes)
+    }
+    
+    class JavaScriptStripper
+    {
+        --
+        +String stripCommentsAndWhitespace(String original)
+    }
+    
+    class JavaScriptUtils
+    {
+        --(constructors)--
+        +JavaScriptUtils(Response)
+        +JavaScriptUtils(Response, String)
+        --
+        +void println(CharSequence script)
+        --(io)--
+        +void close()
+        --(primitive)--
+        +CharSequence escapeQuotes(CharSequence input)
+        --(write)--
+        +void write(CharSequence script)
+        +void writeCloseTag(Response)
+        +void writeInlineScript(Response, CharSequence text, AttributeMap attributes)
+        +void writeJavaScript(Response, CharSequence text)
+        +void writeJavaScript(Response, CharSequence text, String id)
+        +void writeJavaScriptUrl(Response, CharSequence url)
+        +void writeJavaScriptUrl(Response, CharSequence url, String id, boolean defer, String charset)
+        +void writeJavaScriptUrl(Response, CharSequence url, String id, boolean defer, String charset, boolean async)
+        +void writeJavaScriptUrl(Response, CharSequence url, String id)
+        +void writeOpenTag(Response, String id)
+        +void writeOpenTag(Response, AttributeMap attributes)
+        +void writeOpenTag(Response)
+        +void writeScript(Response, AttributeMap attributes)
+    }
+    
+    ISerializer <|-- ComponentRenderer.NeverSerializer
+    class ComponentRenderer.NeverSerializer
+    {
+    }
+    
+    ISessionStore <|-- ComponentRenderer.NeverSessionStore
+    class ComponentRenderer.NeverSessionStore
+    {
+    }
+    
+    WebPage <|-- ComponentRenderer.RenderPage
+    IMarkupResourceStreamProvider <|-- ComponentRenderer.RenderPage
+    IMarkupCacheKeyProvider <|-- ComponentRenderer.RenderPage
+    class ComponentRenderer.RenderPage
+    {
+    }
+    
+@enduml
+

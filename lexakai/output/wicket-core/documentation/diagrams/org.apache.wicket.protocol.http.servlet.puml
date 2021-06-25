@@ -1,0 +1,251 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.http.servlet"
+    
+    abstract AbstractRequestWrapperFactory
+    
+    interface FileItem
+    interface IMultipartWebRequest
+    interface IWicketInternalException
+    interface Iterable
+    interface Filter
+    interface IClusterable
+    
+    abstract class AbstractRequestWrapperFactory
+    {
+        --(constructors)--
+        +AbstractRequestWrapperFactory()
+        --
+        +boolean matchesOne(String, Pattern... patterns)
+        +void setEnabled(boolean enabled)
+        #boolean needsWrapper(HttpServletRequest)
+        --(checks)--
+        +boolean isEnabled()
+        --(collection)--
+        +Pattern[] commaDelimitedListToPatternArray(String commaDelimitedPatterns)
+        +String[] commaDelimitedListToStringArray(String commaDelimitedStrings)
+        +String listToCommaDelimitedString(List<String> stringList)
+        --(network)--
+        +HttpServletRequest getWrapper(HttpServletRequest)
+        +HttpServletRequest newRequestWrapper(HttpServletRequest)
+    }
+    
+    class SecuredRemoteAddressRequestWrapperFactory.Config
+    {
+        --
+        +void setSecuredRemoteAdresses(String comaDelimitedSecuredRemoteAddresses)
+    }
+    
+    class XForwardedRequestWrapperFactory.Config
+    {
+        --
+        +void setAllowedInternalProxies(String allowedInternalProxies)
+        +void setEnabled(boolean enable)
+        +void setProxiesHeader(String proxiesHeader)
+        +void setRemoteIPHeader(String remoteIPHeader)
+        +void setTrustedProxies(String trustedProxies)
+        --(checks)--
+        +boolean isEnabled()
+        --(network)--
+        +void setHttpServerPort(int httpServerPort)
+        +void setHttpsServerPort(int httpsServerPort)
+        +void setProtocolHeader(String protocolHeader)
+        +void setProtocolHeaderSslValue(String protocolHeaderSslValue)
+    }
+    
+    InputStream <|-- MultipartServletWebRequestImpl.CountingInputStream
+    class MultipartServletWebRequestImpl.CountingInputStream
+    {
+        --(constructors)--
+        +CountingInputStream(InputStream)
+    }
+    
+    class DispatchedRequestUtils
+    {
+    }
+    
+    class ErrorAttributes
+    {
+        --
+        +Throwable getException()
+        +Class<? extends Throwable> getExceptionType()
+        --(messaging)--
+        +String getMessage()
+        --(naming)--
+        +String getServletName()
+        --(network)--
+        +String getRequestUri()
+        --(status)--
+        +Integer getStatusCode()
+        +ErrorAttributes of(HttpServletRequest, String filterPrefix)
+    }
+    
+    Iterable <|-- FilterFactoryManager
+    class FilterFactoryManager
+    {
+        --(constructors)--
+        +FilterFactoryManager()
+        --(filtering)--
+        +FilterFactoryManager add(AbstractRequestWrapperFactory)
+        +FilterFactoryManager addSecuredRemoteAddressRequestWrapperFactory(FilterConfig)
+        +FilterFactoryManager addXForwardedRequestWrapperFactory(FilterConfig)
+    }
+    
+    class ForwardAttributes
+    {
+        --
+        +ForwardAttributes of(HttpServletRequest, String filterPrefix)
+        --(network)--
+        +String getRequestUri()
+        --(path)--
+        +String getContextPath()
+        +String getPathInfo()
+        +String getServletPath()
+        --(search)--
+        +String getQueryString()
+    }
+    
+    ServletWebRequest <|-- MultipartServletWebRequest
+    IMultipartWebRequest <|-- MultipartServletWebRequest
+    abstract class MultipartServletWebRequest
+    {
+        --(constructors)--
+        +MultipartServletWebRequest(HttpServletRequest, String)
+        +MultipartServletWebRequest(HttpServletRequest, String, Url)
+        --(collection)--
+        +Bytes getFileMaxSize()
+        +Bytes getMaxSize()
+        +void setFileMaxSize(Bytes fileMaxSize)
+        +void setMaxSize(Bytes maxSize)
+        --(filesystem)--
+        +void parseFileParts()
+    }
+    
+    MultipartServletWebRequest <|-- MultipartServletWebRequestImpl
+    class MultipartServletWebRequestImpl
+    {
+        --(constructors)--
+        +MultipartServletWebRequestImpl(HttpServletRequest, String, Bytes, String)
+        +MultipartServletWebRequestImpl(HttpServletRequest, String, Bytes, String, FileItemFactory)
+        --
+        #void onUploadStarted(int totalBytes)
+        #void onUploadUpdate(int bytesUploaded, int total)
+        #boolean wantUploadProgressUpdates()
+        --(filesystem)--
+        #FileUploadBase newFileUpload(String encoding)
+        --(lifecycle)--
+        #void onUploadCompleted()
+        --(messaging)--
+        +void clearUploadInfo(HttpServletRequest, String upload)
+        +UploadInfo getUploadInfo(HttpServletRequest, String upload)
+        +void setUploadInfo(HttpServletRequest, String upload, UploadInfo)
+    }
+    
+    WicketRuntimeException <|-- ResponseIOException
+    IWicketInternalException <|-- ResponseIOException
+    class ResponseIOException
+    {
+        --(constructors)--
+        +ResponseIOException(IOException)
+    }
+    
+    AbstractRequestWrapperFactory <|-- SecuredRemoteAddressRequestWrapperFactory
+    class SecuredRemoteAddressRequestWrapperFactory
+    {
+        --(constructors)--
+        +SecuredRemoteAddressRequestWrapperFactory()
+        --(configuration)--
+        +Config getConfig()
+        +void init(FilterConfig)
+        +void setConfig(Config)
+    }
+    
+    FileItem <|-- ServletPartFileItem
+    class ServletPartFileItem
+    {
+    }
+    
+    WebRequest <|-- ServletWebRequest
+    class ServletWebRequest
+    {
+        --(constructors)--
+        +ServletWebRequest(HttpServletRequest, String)
+        +ServletWebRequest(HttpServletRequest, String, Url)
+        --(collection)--
+        #Map<String,List<StringValue>> generatePostParameters()
+        --(factory)--
+        +MultipartServletWebRequest newMultipartWebRequest(Bytes maxSize, String upload)
+        +MultipartServletWebRequest newMultipartWebRequest(Bytes maxSize, String upload, FileItemFactory)
+        --(filtering)--
+        +String getFilterPrefix()
+    }
+    
+    WebResponse <|-- ServletWebResponse
+    class ServletWebResponse
+    {
+        --(constructors)--
+        +ServletWebResponse(ServletWebRequest, HttpServletResponse)
+    }
+    
+    IClusterable <|-- UploadInfo
+    class UploadInfo
+    {
+        --(constructors)--
+        +UploadInfo(int)
+        --
+        +long getTransferRateBPS()
+        +String getTransferRateString()
+        --(math)--
+        +int getPercentageComplete()
+        --(primitive)--
+        +long getBytesUploaded()
+        +String getBytesUploadedString()
+        +long getTotalBytes()
+        +String getTotalBytesString()
+        +void setBytesUploaded(long bytesUploaded)
+        --(time)--
+        +long getElapsedMilliseconds()
+        +long getElapsedSeconds()
+        +long getRemainingMilliseconds()
+        +String getRemainingTimeString()
+    }
+    
+    Filter <|-- WicketSessionFilter
+    class WicketSessionFilter
+    {
+        --(constructors)--
+        +WicketSessionFilter()
+    }
+    
+    HttpServletRequestWrapper <|-- XForwardedRequestWrapper
+    class XForwardedRequestWrapper
+    {
+        --(constructors)--
+        +XForwardedRequestWrapper(HttpServletRequest)
+        --
+        +void setHeader(String name, String value)
+        +void setRemoteAddr(String remoteAddr)
+        +void setScheme(String scheme)
+        +void setSecure(boolean secure)
+        --(collection)--
+        +void removeHeader(String name)
+        --(network)--
+        +void setRemoteHost(String remoteHost)
+        +void setServerPort(int serverPort)
+    }
+    
+    AbstractRequestWrapperFactory <|-- XForwardedRequestWrapperFactory
+    class XForwardedRequestWrapperFactory
+    {
+        --(constructors)--
+        +XForwardedRequestWrapperFactory()
+        --(configuration)--
+        +Config getConfig()
+        +void init(FilterConfig)
+        +void setConfig(Config)
+    }
+    
+@enduml
+

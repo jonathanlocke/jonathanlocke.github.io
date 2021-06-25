@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.websocket"
+    
+    WicketExamplePage <|-- HomePage
+    class HomePage
+    {
+    }
+    
+    WicketExampleApplication <|-- JSR356Application
+    class JSR356Application
+    {
+        --
+        +JSR356Application get()
+        --(functional)--
+        +ScheduledExecutorService getScheduledExecutorService()
+    }
+    
+    WicketExamplePage <|-- WebSocketBehaviorDemoPage
+    class WebSocketBehaviorDemoPage
+    {
+    }
+    
+    WicketExamplePage <|-- WebSocketMultiTabResourceDemoPage
+    class WebSocketMultiTabResourceDemoPage
+    {
+        --(constructors)--
+        +WebSocketMultiTabResourceDemoPage()
+    }
+    
+    WicketExamplePage <|-- WebSocketResourceDemoPage
+    class WebSocketResourceDemoPage
+    {
+        --(constructors)--
+        +WebSocketResourceDemoPage()
+    }
+    
+@enduml
+

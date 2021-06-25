@@ -1,0 +1,13 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.modal.theme"
+    
+    Behavior <|-- DefaultTheme
+    class DefaultTheme
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1855.2083px" preserveAspectRatio="none" style="width:3737px;height:1855px;background:#333333;" version="1.1" viewBox="0 0 3737 1855" width="3737.5px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="417.7083" x="1652.8646" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="394.7917" x="1664.3229" y="30.5583">org.apache.wicket.core.request.mapper</text><!--MD5=[0f535704465bf77bc280bf5c834b4b3d]
+class AbstractMapper--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="139.5833" x="1179.1667" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="139.5833" x="1179.1667" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="139.5833" x="1179.1667" y="138.2161"/><rect codeLine="6" fill="none" height="48.055" id="AbstractMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="139.5833" x="1179.1667" y="115.1611"/><ellipse cx="1193.75" cy="130.8553" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1193.3431,127.5574 L1192.4947,131.2866 L1194.1976,131.2866 Z M1192.2445,125.9094 L1194.4478,125.9094 L1196.9076,135.022 L1195.107,135.022 L1194.5455,132.7698 L1192.1346,132.7698 L1191.5853,135.022 L1189.7847,135.022 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="1210.4167" y="135.5794">AbstractMapper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1180.2083" x2="1317.7083" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1180.2083" x2="1317.7083" y1="154.8828" y2="154.8828"/><!--MD5=[31193e28adafc59aabc220d2e2a8b678]
+class AbstractComponentMapper--><rect codeLine="53" fill="#282828" height="238.2589" id="AbstractComponentMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="386.4583" x="1055.7292" y="346.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="386.4583" x="1055.7292" y="346.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="386.4583" x="1055.7292" y="369.987"/><rect codeLine="53" fill="none" height="238.2589" id="AbstractComponentMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="386.4583" x="1055.7292" y="346.932"/><ellipse cx="1152.6042" cy="362.6261" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1152.1973,359.3282 L1151.3489,363.0575 L1153.0518,363.0575 Z M1151.0986,357.6803 L1153.302,357.6803 L1155.7617,366.7928 L1153.9612,366.7928 L1153.3997,364.5406 L1150.9888,364.5406 L1150.4395,366.7928 L1148.6389,366.7928 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="178.125" x="1175.5208" y="367.3503">AbstractComponentMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1056.7708" x2="1441.1458" y1="378.3203" y2="378.3203"/><ellipse cx="1067.1875" cy="413.6902" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="163.5417" x="1078.6458" y="420.6014">AbstractComponentMapper()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1056.7708" x2="1205.2083" y1="396.5261" y2="396.5261"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1208.3333" y="400.3357">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1292.7083" x2="1441.1458" y1="396.5261" y2="396.5261"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1056.7708" x2="1441.1458" y1="430.3101" y2="430.3101"/><polygon fill="#FFFF44" points="1067.1875,436.5601,1071.3542,440.7267,1067.1875,444.8934,1063.0208,440.7267" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="163.5417" x="1078.6458" y="448.6796">IMapperContext getContext()</text><polygon fill="#FFFF44" points="1067.1875,456.3049,1071.3542,460.4716,1067.1875,464.6383,1063.0208,460.4716" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="354.1667" x="1078.6458" y="468.4245">Class&lt;? extends IRequestablePage&gt; getPageClass(String name)</text><polygon fill="#FFFF44" points="1067.1875,499.9613,1071.3542,504.128,1067.1875,508.2947,1063.0208,504.128" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="326.0417" x="1078.6458" y="512.0809">void encodePageComponentInfo(Url, PageComponentInfo)</text><polygon fill="#FFFF44" points="1067.1875,519.7062,1071.3542,523.8729,1067.1875,528.0396,1063.0208,523.8729" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="272.9167" x="1078.6458" y="531.8258">PageComponentInfo getPageComponentInfo(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1056.7708" x2="1211.4583" y1="488.0056" y2="488.0056"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1214.5833" y="491.8152">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1286.4583" x2="1441.1458" y1="488.0056" y2="488.0056"/><polygon fill="#FFFF44" points="1067.1875,563.3626,1071.3542,567.5293,1067.1875,571.696,1063.0208,567.5293" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="1078.6458" y="575.4822">String cleanClassName(String className)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1056.7708" x2="1220.8333" y1="551.4069" y2="551.4069"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="1223.9583" y="555.2165">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1277.0833" x2="1441.1458" y1="551.4069" y2="551.4069"/><!--MD5=[649fd249d3211b9b93751cdcd9a6d9b4]
+class AbstractResourceReferenceMapper--><rect codeLine="68" fill="#282828" height="48.055" id="AbstractResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="260.4167" x="270.8333" y="1008.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="260.4167" x="270.8333" y="1008.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="260.4167" x="270.8333" y="1031.9661"/><rect codeLine="68" fill="none" height="48.055" id="AbstractResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="260.4167" x="270.8333" y="1008.9111"/><ellipse cx="285.4167" cy="1024.6053" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M285.0098,1021.3074 L284.1614,1025.0366 L285.8643,1025.0366 Z M283.9111,1019.6594 L286.1145,1019.6594 L288.5742,1028.772 L286.7737,1028.772 L286.2122,1026.5198 L283.8013,1026.5198 L283.252,1028.772 L281.4514,1028.772 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="222.9167" x="302.0833" y="1029.3294">AbstractResourceReferenceMapper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="271.875" x2="530.2083" y1="1040.2995" y2="1040.2995"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="271.875" x2="530.2083" y1="1048.6328" y2="1048.6328"/><!--MD5=[546b716dd37da044a5d65b0c3e22ea56]
+class AbstractBookmarkableMapper--><rect codeLine="17" fill="#282828" height="649.823" id="AbstractBookmarkableMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="750" x="873.9583" y="707.8695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="750" x="873.9583" y="707.8695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="750" x="873.9583" y="730.9245"/><rect codeLine="17" fill="none" height="649.823" id="AbstractBookmarkableMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="750" x="873.9583" y="707.8695"/><ellipse cx="1143.75" cy="723.5636" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1143.3431,720.2657 L1142.4947,723.995 L1144.1976,723.995 Z M1142.2445,718.6178 L1144.4478,718.6178 L1146.9076,727.7303 L1145.107,727.7303 L1144.5455,725.4781 L1142.1346,725.4781 L1141.5853,727.7303 L1139.7847,727.7303 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="195.8333" x="1166.6667" y="728.2878">AbstractBookmarkableMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="875" x2="1622.9167" y1="739.2578" y2="739.2578"/><ellipse cx="885.4167" cy="774.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="176.0417" x="896.875" y="781.5389">AbstractBookmarkableMapper()</text><ellipse cx="885.4167" cy="794.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="353.125" x="896.875" y="801.2838">AbstractBookmarkableMapper(String, IPageParametersEncoder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1205.2083" y1="757.4636" y2="757.4636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1208.3333" y="761.2732">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1292.7083" x2="1622.9167" y1="757.4636" y2="757.4636"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1622.9167" y1="810.9924" y2="810.9924"/><polygon fill="#FFFF44" points="885.4167,817.2424,889.5833,821.4091,885.4167,825.5758,881.25,821.4091" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="407.2917" x="896.875" y="829.362">boolean checkPageClass(Class&lt;? extends IRequestablePage&gt; pageClass)</text><polygon fill="#FFFF44" points="885.4167,836.9873,889.5833,841.154,885.4167,845.3206,881.25,841.154" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="258.3333" x="896.875" y="849.1069">boolean checkPageInstance(IRequestablePage)</text><polygon fill="#FFFF44" points="885.4167,856.7322,889.5833,860.8988,885.4167,865.0655,881.25,860.8988" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="295.8333" x="896.875" y="868.8517">PageParameters extractPageParameters(Request, Url)</text><polygon fill="#FFFF44" points="885.4167,876.4771,889.5833,880.6437,885.4167,884.8104,881.25,880.6437" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="191.6667" x="896.875" y="888.5966">int[] getMatchedSegmentSizes(Url)</text><polygon fill="#FFFF44" points="885.4167,896.2219,889.5833,900.3886,885.4167,904.5553,881.25,900.3886" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="285.4167" x="896.875" y="908.3415">boolean pageMustHaveBeenCreatedBookmarkable()</text><polygon fill="#FFFF44" points="885.4167,915.9668,889.5833,920.1335,885.4167,924.3001,881.25,920.1335" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="148.9583" x="896.875" y="928.0863">Locale resolveUserLocale()</text><polygon fill="#FFFF44" points="885.4167,935.7117,889.5833,939.8783,885.4167,944.045,881.25,939.8783" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="255.2083" x="896.875" y="947.8312">boolean setPlaceholders(PageParameters, Url)</text><polygon fill="#FFFF44" points="885.4167,979.3681,889.5833,983.5347,885.4167,987.7014,881.25,983.5347" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="228.125" x="896.875" y="991.4876">boolean isFixedSegment(String segment)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1222.3958" y1="967.4123" y2="967.4123"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="1225.5208" y="971.2219">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1275.5208" x2="1622.9167" y1="967.4123" y2="967.4123"/><polygon fill="#FFFF44" points="885.4167,1023.0245,889.5833,1027.1912,885.4167,1031.3578,881.25,1027.1912" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="352.0833" x="896.875" y="1035.144">List&lt;MountPathSegment&gt; getPathSegments(String[] segments)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1214.5833" y1="1011.0687" y2="1011.0687"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1217.7083" y="1014.8783">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1283.3333" x2="1622.9167" y1="1011.0687" y2="1011.0687"/><polygon fill="#FFFF44" points="885.4167,1066.6809,889.5833,1070.8476,885.4167,1075.0142,881.25,1070.8476" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="896.875" y="1078.8005">PageParameters newPageParameters()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1221.875" y1="1054.7251" y2="1054.7251"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="1225" y="1058.5347">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1276.0417" x2="1622.9167" y1="1054.7251" y2="1054.7251"/><ellipse cx="885.4167" cy="1115.5457" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="438.5417" x="896.875" y="1122.4569">AbstractBookmarkableMapper setCaseSensitiveMatch(boolean isCaseSensitive)</text><polygon fill="#FFFF44" points="885.4167,1130.0822,889.5833,1134.2489,885.4167,1138.4155,881.25,1134.2489" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="896.875" y="1142.2017">boolean isCaseSensitiveMatch()</text><polygon fill="#FFFF44" points="885.4167,1149.8271,889.5833,1153.9937,885.4167,1158.1604,881.25,1153.9937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="384.375" x="896.875" y="1161.9466">boolean segmentsMatch(String mountedSegment, String urlSegment)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1215.625" y1="1098.3816" y2="1098.3816"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="60.4167" x="1218.75" y="1102.1912">(matching)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1282.2917" x2="1622.9167" y1="1098.3816" y2="1098.3816"/><polygon fill="#FFFF44" points="885.4167,1193.4835,889.5833,1197.6501,885.4167,1201.8168,881.25,1197.6501" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="242.7083" x="896.875" y="1205.603">PageInfo getPageInfo(IPageRequestHandler)</text><polygon fill="#FFFF44" points="885.4167,1213.2284,889.5833,1217.395,885.4167,1221.5617,881.25,1217.395" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="170.8333" x="896.875" y="1225.3479">UrlInfo parseRequest(Request)</text><polygon fill="#FFFF44" points="885.4167,1232.9732,889.5833,1237.1399,885.4167,1241.3066,881.25,1237.1399" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="583.3333" x="896.875" y="1245.0928">IRequestHandler processBookmarkable(Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters)</text><polygon fill="#FFFF44" points="885.4167,1252.7181,889.5833,1256.8848,885.4167,1261.0514,881.25,1256.8848" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="717.7083" x="896.875" y="1264.8376">IRequestHandler processHybrid(PageInfo, Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters, Integer renderCount)</text><polygon fill="#FFFF44" points="885.4167,1272.463,889.5833,1276.6296,885.4167,1280.7963,881.25,1276.6296" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="669.7917" x="896.875" y="1284.5825">IRequestHandler processListener(PageComponentInfo, Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1211.4583" y1="1181.5277" y2="1181.5277"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1214.5833" y="1185.3373">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1286.4583" x2="1622.9167" y1="1181.5277" y2="1181.5277"/><polygon fill="#FFFF44" points="885.4167,1316.1194,889.5833,1320.2861,885.4167,1324.4527,881.25,1320.2861" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="896.875" y="1328.2389">Url buildUrl(UrlInfo)</text><polygon fill="#FFFF44" points="885.4167,1335.8643,889.5833,1340.0309,885.4167,1344.1976,881.25,1340.0309" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="896.875" y="1347.9838">boolean urlStartsWithMountedSegments(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="875" x2="1219.2708" y1="1304.1636" y2="1304.1636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1222.3958" y="1307.9732">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1278.6458" x2="1622.9167" y1="1304.1636" y2="1304.1636"/><!--MD5=[08477c48c21027ad48c53f2f07c5d320]
+class IWicketInternalException--><rect codeLine="11" fill="#282828" height="48.055" id="IWicketInternalException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="1789.0625" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="1789.0625" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="1789.0625" y="138.2161"/><rect codeLine="11" fill="none" height="48.055" id="IWicketInternalException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="1789.0625" y="115.1611"/><ellipse cx="1803.6458" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1801.0498,128.0172 L1801.0498,126.4303 L1806.4758,126.4303 L1806.4758,128.0172 L1804.6631,128.0172 L1804.6631,133.9559 L1806.4758,133.9559 L1806.4758,135.5428 L1801.0498,135.5428 L1801.0498,133.9559 L1802.8625,133.9559 L1802.8625,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="1820.3125" y="135.5794">IWicketInternalException</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1790.1042" x2="1984.8958" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1790.1042" x2="1984.8958" y1="154.8828" y2="154.8828"/><!--MD5=[64e47b57ec77ff956af7885042716758]
+class IRequestMapperDelegate--><rect codeLine="12" fill="#282828" height="48.055" id="IRequestMapperDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="2329.6875" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="2329.6875" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="2329.6875" y="138.2161"/><rect codeLine="12" fill="none" height="48.055" id="IRequestMapperDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="2329.6875" y="115.1611"/><ellipse cx="2344.2708" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2341.6748,128.0172 L2341.6748,126.4303 L2347.1008,126.4303 L2347.1008,128.0172 L2345.2881,128.0172 L2345.2881,133.9559 L2347.1008,133.9559 L2347.1008,135.5428 L2341.6748,135.5428 L2341.6748,133.9559 L2343.4875,133.9559 L2343.4875,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="2360.9375" y="135.5794">IRequestMapperDelegate</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2330.7292" x2="2527.6042" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2330.7292" x2="2527.6042" y1="154.8828" y2="154.8828"/><!--MD5=[2889a748b6248c784fbee67a1490fe05]
+class IRequestMapper--><rect codeLine="13" fill="#282828" height="48.055" id="IRequestMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="141.6667" x="1539.5833" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="141.6667" x="1539.5833" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="141.6667" x="1539.5833" y="138.2161"/><rect codeLine="13" fill="none" height="48.055" id="IRequestMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="141.6667" x="1539.5833" y="115.1611"/><ellipse cx="1554.1667" cy="130.8553" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1551.5706,128.0172 L1551.5706,126.4303 L1556.9967,126.4303 L1556.9967,128.0172 L1555.1839,128.0172 L1555.1839,133.9559 L1556.9967,133.9559 L1556.9967,135.5428 L1551.5706,135.5428 L1551.5706,133.9559 L1553.3834,133.9559 L1553.3834,128.0172 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="104.1667" x="1570.8333" y="135.5794">IRequestMapper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1540.625" x2="1680.2083" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1540.625" x2="1680.2083" y1="154.8828" y2="154.8828"/><!--MD5=[b1376baef966ad89b58b569268296ca0]
+class Url--><rect fill="#282828" height="48.055" id="Url" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="56.25" x="675" y="1528.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="56.25" x="675" y="1528.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="56.25" x="675" y="1551.7578"/><rect fill="none" height="48.055" id="Url" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="56.25" x="675" y="1528.7028"/><ellipse cx="689.5833" cy="1544.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M691.4937,1548.822 Q691.0665,1549.0417 690.5965,1549.1516 Q690.1265,1549.2615 689.6077,1549.2615 Q687.7645,1549.2615 686.794,1548.0469 Q685.8236,1546.8323 685.8236,1544.5374 Q685.8236,1542.2363 686.794,1541.0217 Q687.7645,1539.8071 689.6077,1539.8071 Q690.1265,1539.8071 690.6026,1539.917 Q691.0787,1540.0269 691.4937,1540.2466 L691.4937,1542.2485 Q691.0299,1541.8213 690.5935,1541.6229 Q690.1571,1541.4246 689.6932,1541.4246 Q688.7044,1541.4246 688.2009,1542.2089 Q687.6973,1542.9932 687.6973,1544.5374 Q687.6973,1546.0754 688.2009,1546.8597 Q688.7044,1547.644 689.6932,1547.644 Q690.1571,1547.644 690.5935,1547.4457 Q691.0299,1547.2473 691.4937,1546.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="18.75" x="706.25" y="1549.1211">Url</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="676.0417" x2="730.2083" y1="1560.0911" y2="1560.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="676.0417" x2="730.2083" y1="1568.4245" y2="1568.4245"/><!--MD5=[840b41d635bf29cf3156740d3bb90b25]
+class BasicResourceReferenceMapper--><rect codeLine="73" fill="#282828" height="218.514" id="BasicResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="629.1667" x="9.375" y="1443.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="629.1667" x="9.375" y="1443.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="629.1667" x="9.375" y="1466.3411"/><rect codeLine="73" fill="none" height="218.514" id="BasicResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="629.1667" x="9.375" y="1443.2861"/><ellipse cx="215.625" cy="1458.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M217.5354,1463.4054 Q217.1082,1463.6251 216.6382,1463.7349 Q216.1682,1463.8448 215.6494,1463.8448 Q213.8062,1463.8448 212.8357,1462.6302 Q211.8652,1461.4156 211.8652,1459.1207 Q211.8652,1456.8197 212.8357,1455.6051 Q213.8062,1454.3905 215.6494,1454.3905 Q216.1682,1454.3905 216.6443,1454.5003 Q217.1204,1454.6102 217.5354,1454.8299 L217.5354,1456.8319 Q217.0715,1456.4046 216.6351,1456.2063 Q216.1987,1456.0079 215.7349,1456.0079 Q214.7461,1456.0079 214.2426,1456.7922 Q213.739,1457.5765 213.739,1459.1207 Q213.739,1460.6588 214.2426,1461.4431 Q214.7461,1462.2274 215.7349,1462.2274 Q216.1987,1462.2274 216.6351,1462.029 Q217.0715,1461.8306 217.5354,1461.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="202.0833" x="238.5417" y="1463.7044">BasicResourceReferenceMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="637.5" y1="1474.6745" y2="1474.6745"/><ellipse cx="20.8333" cy="1510.0444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="596.875" x="32.2917" y="1516.9556">BasicResourceReferenceMapper(IPageParametersEncoder, Supplier&lt;? extends IResourceCachingStrategy&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="280.2083" y1="1492.8802" y2="1492.8802"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="283.3333" y="1496.6899">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="367.7083" x2="637.5" y1="1492.8802" y2="1492.8802"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="637.5" y1="1526.6642" y2="1526.6642"/><polygon fill="#FFFF44" points="20.8333,1532.9142,25,1537.0809,20.8333,1541.2476,16.6667,1537.0809" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="267.7083" x="32.2917" y="1545.0338">IResourceCachingStrategy getCachingStrategy()</text><polygon fill="#FFFF44" points="20.8333,1552.6591,25,1556.8258,20.8333,1560.9924,16.6667,1556.8258" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="203.125" x="32.2917" y="1564.7786">Class&lt;?&gt; resolveClass(String name)</text><polygon fill="#FFFF44" points="20.8333,1596.3155,25,1600.4822,20.8333,1604.6488,16.6667,1600.4822" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="151.0417" x="32.2917" y="1608.4351">boolean canBeHandled(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="297.3958" y1="1584.3597" y2="1584.3597"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="300.5208" y="1588.1694">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="350.5208" x2="637.5" y1="1584.3597" y2="1584.3597"/><polygon fill="#FFFF44" points="20.8333,1639.9719,25,1644.1386,20.8333,1648.3053,16.6667,1644.1386" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="214.5833" x="32.2917" y="1652.0915">String getClassName(Class&lt;?&gt; scope)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="295.8333" y1="1628.0162" y2="1628.0162"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="298.9583" y="1631.8258">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="352.0833" x2="637.5" y1="1628.0162" y2="1628.0162"/><!--MD5=[d10d7e44e24f8e028571ad2cacb85f95]
+class BookmarkableMapper--><rect codeLine="87" fill="#282828" height="146.7794" id="BookmarkableMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="383.3333" x="767.7083" y="1479.2236"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="383.3333" x="767.7083" y="1479.2236"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="383.3333" x="767.7083" y="1502.2786"/><rect codeLine="87" fill="none" height="146.7794" id="BookmarkableMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="383.3333" x="767.7083" y="1479.2236"/><ellipse cx="881.25" cy="1494.9178" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M883.1604,1499.3429 Q882.7332,1499.5626 882.2632,1499.6724 Q881.7932,1499.7823 881.2744,1499.7823 Q879.4312,1499.7823 878.4607,1498.5677 Q877.4902,1497.3531 877.4902,1495.0582 Q877.4902,1492.7572 878.4607,1491.5426 Q879.4312,1490.328 881.2744,1490.328 Q881.7932,1490.328 882.2693,1490.4378 Q882.7454,1490.5477 883.1604,1490.7674 L883.1604,1492.7694 Q882.6965,1492.3421 882.2601,1492.1438 Q881.8237,1491.9454 881.3599,1491.9454 Q880.3711,1491.9454 879.8676,1492.7297 Q879.364,1493.514 879.364,1495.0582 Q879.364,1496.5963 879.8676,1497.3806 Q880.3711,1498.1649 881.3599,1498.1649 Q881.8237,1498.1649 882.2601,1497.9665 Q882.6965,1497.7681 883.1604,1497.3409 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="141.6667" x="904.1667" y="1499.6419">BookmarkableMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="768.75" x2="1150" y1="1510.612" y2="1510.612"/><ellipse cx="779.1667" cy="1545.9819" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="790.625" y="1552.8931">BookmarkableMapper()</text><ellipse cx="779.1667" cy="1565.7267" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="790.625" y="1572.6379">BookmarkableMapper(IPageParametersEncoder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="768.75" x2="915.625" y1="1528.8177" y2="1528.8177"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="918.75" y="1532.6274">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1003.125" x2="1150" y1="1528.8177" y2="1528.8177"/><polygon fill="#FFFF44" points="779.1667,1604.1748,783.3333,1608.3415,779.1667,1612.5081,775,1608.3415" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="351.0417" x="790.625" y="1616.2944">boolean urlStartsWithAndHasPageClass(Url, String... segments)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="768.75" x2="929.6875" y1="1592.219" y2="1592.219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="932.8125" y="1596.0286">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="989.0625" x2="1150" y1="1592.219" y2="1592.219"/><!--MD5=[7e6977b353f0f9f3ff6524c3279ebd60]
+class BufferedResponseMapper--><rect codeLine="97" fill="#282828" height="214.3473" id="BufferedResponseMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="369.7917" x="1478.6458" y="358.9111"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="369.7917" x="1478.6458" y="358.9111"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="369.7917" x="1478.6458" y="381.9661"/><rect codeLine="97" fill="none" height="214.3473" id="BufferedResponseMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="369.7917" x="1478.6458" y="358.9111"/><ellipse cx="1573.4375" cy="374.6053" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1575.3479,379.0304 Q1574.9207,379.2501 1574.4507,379.3599 Q1573.9807,379.4698 1573.4619,379.4698 Q1571.6187,379.4698 1570.6482,378.2552 Q1569.6777,377.0406 1569.6777,374.7457 Q1569.6777,372.4447 1570.6482,371.2301 Q1571.6187,370.0155 1573.4619,370.0155 Q1573.9807,370.0155 1574.4568,370.1253 Q1574.9329,370.2352 1575.3479,370.4549 L1575.3479,372.4569 Q1574.884,372.0296 1574.4476,371.8313 Q1574.0112,371.6329 1573.5474,371.6329 Q1572.5586,371.6329 1572.0551,372.4172 Q1571.5515,373.2015 1571.5515,374.7457 Q1571.5515,376.2838 1572.0551,377.0681 Q1572.5586,377.8524 1573.5474,377.8524 Q1574.0112,377.8524 1574.4476,377.654 Q1574.884,377.4556 1575.3479,377.0284 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="165.625" x="1596.3542" y="379.3294">BufferedResponseMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1479.6875" x2="1847.3958" y1="390.2995" y2="390.2995"/><ellipse cx="1490.1042" cy="425.6694" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="151.0417" x="1501.5625" y="432.5806">BufferedResponseMapper()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1479.6875" x2="1619.7917" y1="408.5052" y2="408.5052"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1622.9167" y="412.3149">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1707.2917" x2="1847.3958" y1="408.5052" y2="408.5052"/><polygon fill="#FFFF44" points="1490.1042,464.1174,1494.2708,468.2841,1490.1042,472.4508,1485.9375,468.2841" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="193.75" x="1501.5625" y="476.237">boolean hasBufferedResponse(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1479.6875" x2="1636.9792" y1="452.1617" y2="452.1617"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="1640.1042" y="455.9713">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1690.1042" x2="1847.3958" y1="452.1617" y2="452.1617"/><polygon fill="#FFFF44" points="1490.1042,507.7738,1494.2708,511.9405,1490.1042,516.1072,1485.9375,511.9405" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="337.5" x="1501.5625" y="519.8934">BufferedWebResponse getAndRemoveBufferedResponse(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1479.6875" x2="1629.1667" y1="495.8181" y2="495.8181"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1632.2917" y="499.6277">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1697.9167" x2="1847.3958" y1="495.8181" y2="495.8181"/><polygon fill="#FFFF44" points="1490.1042,551.4303,1494.2708,555.5969,1490.1042,559.7636,1485.9375,555.5969" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="1501.5625" y="563.5498">String getSessionId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1479.6875" x2="1635.4167" y1="539.4745" y2="539.4745"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="1638.5417" y="543.2841">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1691.6667" x2="1847.3958" y1="539.4745" y2="539.4745"/><!--MD5=[681540336713913fa190fb217fbaa8c3]
+class CryptoMapper--><rect codeLine="110" fill="#282828" height="356.7281" id="CryptoMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="402.0833" x="2228.125" y="288.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="402.0833" x="2228.125" y="288.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="402.0833" x="2228.125" y="311.1328"/><rect codeLine="110" fill="none" height="356.7281" id="CryptoMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="402.0833" x="2228.125" y="288.0778"/><ellipse cx="2376.0417" cy="303.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2377.9521,308.197 Q2377.5248,308.4167 2377.0549,308.5266 Q2376.5849,308.6365 2376.0661,308.6365 Q2374.2228,308.6365 2373.2524,307.4219 Q2372.2819,306.2073 2372.2819,303.9124 Q2372.2819,301.6113 2373.2524,300.3967 Q2374.2228,299.1821 2376.0661,299.1821 Q2376.5849,299.1821 2377.061,299.292 Q2377.537,299.4019 2377.9521,299.6216 L2377.9521,301.6235 Q2377.4882,301.1963 2377.0518,300.9979 Q2376.6154,300.7996 2376.1515,300.7996 Q2375.1628,300.7996 2374.6592,301.5839 Q2374.1557,302.3682 2374.1557,303.9124 Q2374.1557,305.4504 2374.6592,306.2347 Q2375.1628,307.019 2376.1515,307.019 Q2376.6154,307.019 2377.0518,306.8207 Q2377.4882,306.6223 2377.9521,306.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="2398.9583" y="308.4961">CryptoMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2229.1667" x2="2629.1667" y1="319.4661" y2="319.4661"/><ellipse cx="2239.5833" cy="354.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="2251.0417" y="361.7472">CryptoMapper(IRequestMapper, Application)</text><ellipse cx="2239.5833" cy="374.5809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="283.3333" x="2251.0417" y="381.4921">CryptoMapper(IRequestMapper, Supplier&lt;ICrypt&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2229.1667" x2="2385.4167" y1="337.6719" y2="337.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2388.5417" y="341.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2472.9167" x2="2629.1667" y1="337.6719" y2="337.6719"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2229.1667" x2="2629.1667" y1="391.2008" y2="391.2008"/><ellipse cx="2239.5833" cy="402.6591" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="180.2083" x="2251.0417" y="409.5703">boolean getMarkEncryptedUrls()</text><polygon fill="#FFFF44" points="2239.5833,417.1956,2243.75,421.3623,2239.5833,425.529,2235.4167,421.3623" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="163.5417" x="2251.0417" y="429.3152">IMapperContext getContext()</text><polygon fill="#FFFF44" points="2239.5833,436.9405,2243.75,441.1072,2239.5833,445.2738,2235.4167,441.1072" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="94.7917" x="2251.0417" y="449.0601">ICrypt getCrypt()</text><ellipse cx="2239.5833" cy="485.8053" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="369.7917" x="2251.0417" y="492.7165">CryptoMapper setMarkEncryptedUrls(boolean markEncryptedUrls)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2229.1667" x2="2393.75" y1="468.6412" y2="468.6412"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="2396.875" y="472.4508">(functional)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2464.5833" x2="2629.1667" y1="468.6412" y2="468.6412"/><polygon fill="#FFFF44" points="2239.5833,524.2533,2243.75,528.42,2239.5833,532.5867,2235.4167,528.42" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="263.5417" x="2251.0417" y="536.3729">Url decryptEntireUrl(Request, Url encryptedUrl)</text><polygon fill="#FFFF44" points="2239.5833,543.9982,2243.75,548.1649,2239.5833,552.3315,2235.4167,548.1649" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="360.4167" x="2251.0417" y="556.1178">Url decryptRequestListenerParameter(Request, Url encryptedUrl)</text><polygon fill="#FFFF44" points="2239.5833,563.7431,2243.75,567.9097,2239.5833,572.0764,2235.4167,567.9097" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="231.25" x="2251.0417" y="575.8626">Url decryptUrl(Request, Url encryptedUrl)</text><polygon fill="#FFFF44" points="2239.5833,583.488,2243.75,587.6546,2239.5833,591.8213,2235.4167,587.6546" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="2251.0417" y="595.6075">Url encryptEntireUrl(Url)</text><polygon fill="#FFFF44" points="2239.5833,603.2328,2243.75,607.3995,2239.5833,611.5662,2235.4167,607.3995" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="233.3333" x="2251.0417" y="615.3524">Url encryptRequestListenerParameter(Url)</text><polygon fill="#FFFF44" points="2239.5833,622.9777,2243.75,627.1444,2239.5833,631.311,2235.4167,627.1444" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="2251.0417" y="635.0972">Url encryptUrl(Url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2229.1667" x2="2399.4792" y1="512.2976" y2="512.2976"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="2402.6042" y="516.1072">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2458.8542" x2="2629.1667" y1="512.2976" y2="512.2976"/><!--MD5=[a0e7391fe442a107adab5b23b4f9b220]
+class CryptoMapper.HashedSegmentGenerator--><rect codeLine="130" fill="#282828" height="170.6909" id="CryptoMapper.HashedSegmentGenerator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="300" x="155.2083" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="300" x="155.2083" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="300" x="155.2083" y="76.7578"/><rect codeLine="130" fill="none" height="170.6909" id="CryptoMapper.HashedSegmentGenerator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="300" x="155.2083" y="53.7028"/><ellipse cx="169.7917" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M171.7021,73.822 Q171.2748,74.0417 170.8049,74.1516 Q170.3349,74.2615 169.8161,74.2615 Q167.9728,74.2615 167.0024,73.0469 Q166.0319,71.8323 166.0319,69.5374 Q166.0319,67.2363 167.0024,66.0217 Q167.9728,64.8071 169.8161,64.8071 Q170.3349,64.8071 170.811,64.917 Q171.287,65.0269 171.7021,65.2466 L171.7021,67.2485 Q171.2382,66.8213 170.8018,66.6229 Q170.3654,66.4246 169.9015,66.4246 Q168.9128,66.4246 168.4092,67.2089 Q167.9057,67.9932 167.9057,69.5374 Q167.9057,71.0754 168.4092,71.8597 Q168.9128,72.644 169.9015,72.644 Q170.3654,72.644 170.8018,72.4457 Q171.2382,72.2473 171.7021,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="262.5" x="186.4583" y="74.1211">CryptoMapper.HashedSegmentGenerator</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="156.25" x2="454.1667" y1="85.0911" y2="85.0911"/><ellipse cx="166.6667" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="178.125" y="127.3722">HashedSegmentGenerator(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.25" x2="261.4583" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="264.5833" y="107.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="348.9583" x2="454.1667" y1="103.2969" y2="103.2969"/><ellipse cx="166.6667" cy="164.1174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="119.7917" x="178.125" y="171.0286">int hashString(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.25" x2="270.8333" y1="146.9533" y2="146.9533"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="273.9583" y="150.7629">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="339.5833" x2="454.1667" y1="146.9533" y2="146.9533"/><ellipse cx="166.6667" cy="207.7738" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="69.7917" x="178.125" y="214.6851">String next()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.25" x2="274.4792" y1="190.6097" y2="190.6097"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="55.2083" x="277.6042" y="194.4194">(iteration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="335.9375" x2="454.1667" y1="190.6097" y2="190.6097"/><!--MD5=[c645d63f8a84b9c6d6b900533a706bef]
+class MountedMapper--><rect codeLine="196" fill="#282828" height="170.6909" id="MountedMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="581.25" x="1187.5" y="1467.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="581.25" x="1187.5" y="1467.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="581.25" x="1187.5" y="1490.2995"/><rect codeLine="196" fill="none" height="170.6909" id="MountedMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="581.25" x="1187.5" y="1467.2445"/><ellipse cx="1418.2292" cy="1482.9386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1420.1396,1487.3637 Q1419.7123,1487.5834 1419.2424,1487.6933 Q1418.7724,1487.8031 1418.2536,1487.8031 Q1416.4103,1487.8031 1415.4399,1486.5885 Q1414.4694,1485.3739 1414.4694,1483.079 Q1414.4694,1480.778 1415.4399,1479.5634 Q1416.4103,1478.3488 1418.2536,1478.3488 Q1418.7724,1478.3488 1419.2485,1478.4587 Q1419.7245,1478.5685 1420.1396,1478.7882 L1420.1396,1480.7902 Q1419.6757,1480.363 1419.2393,1480.1646 Q1418.8029,1479.9662 1418.339,1479.9662 Q1417.3503,1479.9662 1416.8467,1480.7505 Q1416.3432,1481.5348 1416.3432,1483.079 Q1416.3432,1484.6171 1416.8467,1485.4014 Q1417.3503,1486.1857 1418.339,1486.1857 Q1418.8029,1486.1857 1419.2393,1485.9873 Q1419.6757,1485.789 1420.1396,1485.3617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="1441.1458" y="1487.6628">MountedMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1188.5417" x2="1767.7083" y1="1498.6328" y2="1498.6328"/><ellipse cx="1198.9583" cy="1534.0027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="340.625" x="1210.4167" y="1540.9139">MountedMapper(String, Class&lt;? extends IRequestablePage&gt;)</text><ellipse cx="1198.9583" cy="1553.7476" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="484.375" x="1210.4167" y="1560.6588">MountedMapper(String, Class&lt;? extends IRequestablePage&gt;, IPageParametersEncoder)</text><ellipse cx="1198.9583" cy="1573.4924" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="405.2083" x="1210.4167" y="1580.4036">MountedMapper(String, Supplier&lt;Class&lt;? extends IRequestablePage&gt;&gt;)</text><ellipse cx="1198.9583" cy="1593.2373" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="548.9583" x="1210.4167" y="1600.1485">MountedMapper(String, Supplier&lt;Class&lt;? extends IRequestablePage&gt;&gt;, IPageParametersEncoder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1188.5417" x2="1434.375" y1="1516.8386" y2="1516.8386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1437.5" y="1520.6482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1521.875" x2="1767.7083" y1="1516.8386" y2="1516.8386"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1188.5417" x2="1767.7083" y1="1609.8572" y2="1609.8572"/><polygon fill="#FFFF44" points="1198.9583,1616.1072,1203.125,1620.2738,1198.9583,1624.4405,1194.7917,1620.2738" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="1210.4167" y="1628.2267">boolean redirectFromHomePage()</text><!--MD5=[06c1911320b3f29107034335a2de5146]
+class HomePageMapper--><rect codeLine="141" fill="#282828" height="122.8678" id="HomePageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="486.4583" x="1234.8958" y="1725.5778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="486.4583" x="1234.8958" y="1725.5778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="486.4583" x="1234.8958" y="1748.6328"/><rect codeLine="141" fill="none" height="122.8678" id="HomePageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="486.4583" x="1234.8958" y="1725.5778"/><ellipse cx="1413.0208" cy="1741.272" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1414.9312,1745.697 Q1414.504,1745.9167 1414.034,1746.0266 Q1413.564,1746.1365 1413.0452,1746.1365 Q1411.202,1746.1365 1410.2315,1744.9219 Q1409.2611,1743.7073 1409.2611,1741.4124 Q1409.2611,1739.1113 1410.2315,1737.8967 Q1411.202,1736.6821 1413.0452,1736.6821 Q1413.564,1736.6821 1414.0401,1736.792 Q1414.5162,1736.9019 1414.9312,1737.1216 L1414.9312,1739.1235 Q1414.4674,1738.6963 1414.031,1738.4979 Q1413.5946,1738.2996 1413.1307,1738.2996 Q1412.1419,1738.2996 1411.6384,1739.0839 Q1411.1348,1739.8682 1411.1348,1741.4124 Q1411.1348,1742.9504 1411.6384,1743.7347 Q1412.1419,1744.519 1413.1307,1744.519 Q1413.5946,1744.519 1414.031,1744.3207 Q1414.4674,1744.1223 1414.9312,1743.6951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="1435.9375" y="1745.9961">HomePageMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1235.9375" x2="1720.3125" y1="1756.9661" y2="1756.9661"/><ellipse cx="1246.3542" cy="1792.336" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="454.1667" x="1257.8125" y="1799.2472">HomePageMapper(Class&lt;? extends IRequestablePage&gt;, IPageParametersEncoder)</text><ellipse cx="1246.3542" cy="1812.0809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="375" x="1257.8125" y="1818.9921">HomePageMapper(Supplier&lt;Class&lt;? extends IRequestablePage&gt;&gt;)</text><ellipse cx="1246.3542" cy="1831.8258" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="310.4167" x="1257.8125" y="1838.737">HomePageMapper(Class&lt;? extends IRequestablePage&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1235.9375" x2="1434.375" y1="1775.1719" y2="1775.1719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1437.5" y="1778.9815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1521.875" x2="1720.3125" y1="1775.1719" y2="1775.1719"/><!--MD5=[1eae57df7406e70b6fe0706bf38a77f1]
+class IPageSource--><rect codeLine="163" fill="#282828" height="111.4563" id="IPageSource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="592.7083" x="2565.1042" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="592.7083" x="2565.1042" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="592.7083" x="2565.1042" y="106.4453"/><rect codeLine="163" fill="none" height="111.4563" id="IPageSource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="592.7083" x="2565.1042" y="83.3903"/><ellipse cx="2815.625" cy="99.0845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2813.029,96.2463 L2813.029,94.6594 L2818.455,94.6594 L2818.455,96.2463 L2816.6423,96.2463 L2816.6423,102.1851 L2818.455,102.1851 L2818.455,103.772 L2813.029,103.772 L2813.029,102.1851 L2814.8417,102.1851 L2814.8417,96.2463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="77.0833" x="2838.5417" y="103.8086">IPageSource</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2566.1458" x2="3156.7708" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2566.1458" x2="3156.7708" y1="123.112" y2="123.112"/><ellipse cx="2576.5625" cy="134.5703" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="254.1667" x="2588.0208" y="141.4815">IRequestablePage getPageInstance(int pageId)</text><ellipse cx="2576.5625" cy="178.2267" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="560.4167" x="2588.0208" y="185.1379">IRequestablePage newPageInstance(Class&lt;? extends IRequestablePage&gt; pageClass, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2566.1458" x2="2834.375" y1="161.0626" y2="161.0626"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="2837.5" y="164.8722">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2888.5417" x2="3156.7708" y1="161.0626" y2="161.0626"/><!--MD5=[08b91c2a2e7ab261d1973f7240cadbbe]
+class IMapperContext--><rect codeLine="151" fill="#282828" height="190.4358" id="IMapperContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="367.7083" x="2677.6042" y="370.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="367.7083" x="2677.6042" y="370.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="367.7083" x="2677.6042" y="393.9453"/><rect codeLine="151" fill="none" height="190.4358" id="IMapperContext" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="367.7083" x="2677.6042" y="370.8903"/><ellipse cx="2802.6042" cy="386.5845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2800.0081,383.7463 L2800.0081,382.1594 L2805.4342,382.1594 L2805.4342,383.7463 L2803.6214,383.7463 L2803.6214,389.6851 L2805.4342,389.6851 L2805.4342,391.272 L2800.0081,391.272 L2800.0081,389.6851 L2801.8209,389.6851 L2801.8209,383.7463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="103.125" x="2825.5208" y="391.3086">IMapperContext</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2678.6458" x2="3044.2708" y1="402.2786" y2="402.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2678.6458" x2="3044.2708" y1="410.612" y2="410.612"/><ellipse cx="2689.0625" cy="422.0703" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="319.7917" x="2700.5208" y="428.9815">Class&lt;? extends IRequestablePage&gt; getHomePageClass()</text><ellipse cx="2689.0625" cy="441.8152" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="2700.5208" y="448.7264">String getNamespace()</text><ellipse cx="2689.0625" cy="461.5601" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="335.4167" x="2700.5208" y="468.4713">ResourceReferenceRegistry getResourceReferenceRegistry()</text><ellipse cx="2689.0625" cy="505.2165" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="2700.5208" y="512.1277">String getBookmarkableIdentifier()</text><ellipse cx="2689.0625" cy="524.9613" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="138.5417" x="2700.5208" y="531.8726">String getPageIdentifier()</text><ellipse cx="2689.0625" cy="544.7062" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="164.5833" x="2700.5208" y="551.6174">String getResourceIdentifier()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2678.6458" x2="2833.3333" y1="488.0524" y2="488.0524"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="2836.4583" y="491.862">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2889.5833" x2="3044.2708" y1="488.0524" y2="488.0524"/><!--MD5=[5091a9e19b35b326aa4728afea7197c4]
+class MapperUtils--><rect codeLine="171" fill="#282828" height="103.123" id="MapperUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="468.75" x="491.6667" y="87.557"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="468.75" x="491.6667" y="87.557"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="468.75" x="491.6667" y="110.612"/><rect codeLine="171" fill="none" height="103.123" id="MapperUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="468.75" x="491.6667" y="87.557"/><ellipse cx="679.6875" cy="103.2511" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M681.5979,107.6762 Q681.1707,107.8959 680.7007,108.0058 Q680.2307,108.1156 679.7119,108.1156 Q677.8687,108.1156 676.8982,106.901 Q675.9277,105.6864 675.9277,103.3915 Q675.9277,101.0905 676.8982,99.8759 Q677.8687,98.6613 679.7119,98.6613 Q680.2307,98.6613 680.7068,98.7712 Q681.1829,98.881 681.5979,99.1007 L681.5979,101.1027 Q681.134,100.6755 680.6976,100.4771 Q680.2612,100.2787 679.7974,100.2787 Q678.8086,100.2787 678.3051,101.063 Q677.8015,101.8473 677.8015,103.3915 Q677.8015,104.9296 678.3051,105.7139 Q678.8086,106.4982 679.7974,106.4982 Q680.2612,106.4982 680.6976,106.2998 Q681.134,106.1015 681.5979,105.6742 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="702.6042" y="107.9753">MapperUtils</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="492.7083" x2="959.375" y1="118.9453" y2="118.9453"/><ellipse cx="503.125" cy="154.3152" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="272.9167" x="514.5833" y="161.2264">PageComponentInfo getPageComponentInfo(Url)</text><ellipse cx="503.125" cy="174.0601" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="436.4583" x="514.5833" y="180.9713">PageComponentInfo parsePageComponentInfoParameter(Url.QueryParameter)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="492.7083" x2="688.5417" y1="137.1511" y2="137.1511"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="691.6667" y="140.9607">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="763.5417" x2="959.375" y1="137.1511" y2="137.1511"/><!--MD5=[fca7bc8b86d3c1096dd22a32cddf9dfe]
+class AbstractBookmarkableMapper.MountPathSegment--><rect codeLine="178" fill="#282828" height="293.3268" id="AbstractBookmarkableMapper.MountPathSegment" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="362.5" x="123.9583" y="319.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="362.5" x="123.9583" y="319.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="362.5" x="123.9583" y="342.3828"/><rect codeLine="178" fill="none" height="293.3268" id="AbstractBookmarkableMapper.MountPathSegment" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="362.5" x="123.9583" y="319.3278"/><ellipse cx="138.5417" cy="335.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M140.4521,339.447 Q140.0248,339.6667 139.5549,339.7766 Q139.0849,339.8865 138.5661,339.8865 Q136.7228,339.8865 135.7524,338.6719 Q134.7819,337.4573 134.7819,335.1624 Q134.7819,332.8613 135.7524,331.6467 Q136.7228,330.4321 138.5661,330.4321 Q139.0849,330.4321 139.561,330.542 Q140.037,330.6519 140.4521,330.8716 L140.4521,332.8735 Q139.9882,332.4463 139.5518,332.2479 Q139.1154,332.0496 138.6515,332.0496 Q137.6628,332.0496 137.1592,332.8339 Q136.6557,333.6182 136.6557,335.1624 Q136.6557,336.7004 137.1592,337.4847 Q137.6628,338.269 138.6515,338.269 Q139.1154,338.269 139.5518,338.0707 Q139.9882,337.8723 140.4521,337.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="325" x="155.2083" y="339.7461">AbstractBookmarkableMapper.MountPathSegment</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="125" x2="485.4167" y1="350.7161" y2="350.7161"/><ellipse cx="135.4167" cy="386.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="130.2083" x="146.875" y="392.9972">MountPathSegment(int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="125" x2="261.4583" y1="368.9219" y2="368.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="264.5833" y="372.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="348.9583" x2="485.4167" y1="368.9219" y2="368.9219"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="125" x2="485.4167" y1="402.7059" y2="402.7059"/><ellipse cx="135.4167" cy="414.1642" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="146.875" y="421.0754">String getFixedPart()</text><ellipse cx="135.4167" cy="433.9091" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="146.875" y="440.8203">int getMaxParameters()</text><ellipse cx="135.4167" cy="453.654" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="126.0417" x="146.875" y="460.5652">int getMinParameters()</text><ellipse cx="135.4167" cy="473.3988" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="154.1667" x="146.875" y="480.3101">int getOptionalParameters()</text><ellipse cx="135.4167" cy="493.1437" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="146.875" y="500.0549">void setFixedPart(String fixedPart)</text><ellipse cx="135.4167" cy="536.8001" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="160.4167" x="146.875" y="543.7113">void addOptionalParameter()</text><ellipse cx="135.4167" cy="556.545" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="146.875" y="563.4562">void addRequiredParameter()</text><ellipse cx="135.4167" cy="576.2899" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="146.875" y="583.2011">int getFixedPartSize()</text><ellipse cx="135.4167" cy="596.0347" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="146.875" y="602.946">int getSegmentIndex()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="125" x2="270.8333" y1="519.636" y2="519.636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="273.9583" y="523.4456">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="339.5833" x2="485.4167" y1="519.636" y2="519.636"/><!--MD5=[0b3c23b041b6ad1a0e7079ee100f946b]
+class PackageMapper--><rect codeLine="208" fill="#282828" height="166.5243" id="PackageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="386.4583" x="1805.7292" y="1469.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="386.4583" x="1805.7292" y="1469.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="386.4583" x="1805.7292" y="1492.3828"/><rect codeLine="208" fill="none" height="166.5243" id="PackageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="386.4583" x="1805.7292" y="1469.3278"/><ellipse cx="1941.6667" cy="1485.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1943.5771,1489.447 Q1943.1498,1489.6667 1942.6799,1489.7766 Q1942.2099,1489.8865 1941.6911,1489.8865 Q1939.8478,1489.8865 1938.8774,1488.6719 Q1937.9069,1487.4573 1937.9069,1485.1624 Q1937.9069,1482.8613 1938.8774,1481.6467 Q1939.8478,1480.4321 1941.6911,1480.4321 Q1942.2099,1480.4321 1942.686,1480.542 Q1943.162,1480.6519 1943.5771,1480.8716 L1943.5771,1482.8735 Q1943.1132,1482.4463 1942.6768,1482.2479 Q1942.2404,1482.0496 1941.7765,1482.0496 Q1940.7878,1482.0496 1940.2842,1482.8339 Q1939.7807,1483.6182 1939.7807,1485.1624 Q1939.7807,1486.7004 1940.2842,1487.4847 Q1940.7878,1488.269 1941.7765,1488.269 Q1942.2404,1488.269 1942.6768,1488.0707 Q1943.1132,1487.8723 1943.5771,1487.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="100" x="1964.5833" y="1489.7461">PackageMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1806.7708" x2="2191.1458" y1="1500.7161" y2="1500.7161"/><ellipse cx="1817.1875" cy="1536.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="1828.6458" y="1542.9972">PackageMapper(String, PackageName)</text><ellipse cx="1817.1875" cy="1555.8309" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="354.1667" x="1828.6458" y="1562.7421">PackageMapper(String, PackageName, IPageParametersEncoder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1806.7708" x2="1955.2083" y1="1518.9219" y2="1518.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1958.3333" y="1522.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2042.7083" x2="2191.1458" y1="1518.9219" y2="1518.9219"/><polygon fill="#FFFF44" points="1817.1875,1594.279,1821.3542,1598.4456,1817.1875,1602.6123,1813.0208,1598.4456" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="232.2917" x="1828.6458" y="1606.3985">String transformForUrl(String className)</text><polygon fill="#FFFF44" points="1817.1875,1614.0238,1821.3542,1618.1905,1817.1875,1622.3572,1813.0208,1618.1905" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="269.7917" x="1828.6458" y="1626.1434">String transformFromUrl(String classNameAlias)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1806.7708" x2="1969.2708" y1="1582.3232" y2="1582.3232"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1972.3958" y="1586.1328">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2028.6458" x2="2191.1458" y1="1582.3232" y2="1582.3232"/><!--MD5=[17d235448c65b4bf7ec5e6623096ae27]
+class PageInstanceMapper--><rect codeLine="219" fill="#282828" height="83.3781" id="PageInstanceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="169.7917" x="1660.9375" y="991.2028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="169.7917" x="1660.9375" y="991.2028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="169.7917" x="1660.9375" y="1014.2578"/><rect codeLine="219" fill="none" height="83.3781" id="PageInstanceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="169.7917" x="1660.9375" y="991.2028"/><ellipse cx="1675.5208" cy="1006.897" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1677.4312,1011.322 Q1677.004,1011.5417 1676.534,1011.6516 Q1676.064,1011.7615 1675.5452,1011.7615 Q1673.702,1011.7615 1672.7315,1010.5469 Q1671.7611,1009.3323 1671.7611,1007.0374 Q1671.7611,1004.7363 1672.7315,1003.5217 Q1673.702,1002.3071 1675.5452,1002.3071 Q1676.064,1002.3071 1676.5401,1002.417 Q1677.0162,1002.5269 1677.4312,1002.7466 L1677.4312,1004.7485 Q1676.9674,1004.3213 1676.531,1004.1229 Q1676.0946,1003.9246 1675.6307,1003.9246 Q1674.6419,1003.9246 1674.1384,1004.7089 Q1673.6348,1005.4932 1673.6348,1007.0374 Q1673.6348,1008.5754 1674.1384,1009.3597 Q1674.6419,1010.144 1675.6307,1010.144 Q1676.0946,1010.144 1676.531,1009.9457 Q1676.9674,1009.7473 1677.4312,1009.3201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="132.2917" x="1692.1875" y="1011.6211">PageInstanceMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1661.9792" x2="1829.6875" y1="1022.5911" y2="1022.5911"/><ellipse cx="1672.3958" cy="1057.961" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="1683.8542" y="1064.8722">PageInstanceMapper()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1661.9792" x2="1702.0833" y1="1040.7969" y2="1040.7969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1705.2083" y="1044.6065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1789.5833" x2="1829.6875" y1="1040.7969" y2="1040.7969"/><!--MD5=[e3dc1c3c8e22fea8df8fad83e7b48fc6]
+class ResourceMapper--><rect codeLine="226" fill="#282828" height="194.6025" id="ResourceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="425" x="2229.1667" y="1455.2653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="425" x="2229.1667" y="1455.2653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="425" x="2229.1667" y="1478.3203"/><rect codeLine="226" fill="none" height="194.6025" id="ResourceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="425" x="2229.1667" y="1455.2653"/><ellipse cx="2381.25" cy="1470.9595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2383.1604,1475.3845 Q2382.7332,1475.6042 2382.2632,1475.7141 Q2381.7932,1475.824 2381.2744,1475.824 Q2379.4312,1475.824 2378.4607,1474.6094 Q2377.4902,1473.3948 2377.4902,1471.0999 Q2377.4902,1468.7988 2378.4607,1467.5842 Q2379.4312,1466.3696 2381.2744,1466.3696 Q2381.7932,1466.3696 2382.2693,1466.4795 Q2382.7454,1466.5894 2383.1604,1466.8091 L2383.1604,1468.811 Q2382.6965,1468.3838 2382.2601,1468.1854 Q2381.8237,1467.9871 2381.3599,1467.9871 Q2380.3711,1467.9871 2379.8676,1468.7714 Q2379.364,1469.5557 2379.364,1471.0999 Q2379.364,1472.6379 2379.8676,1473.4222 Q2380.3711,1474.2065 2381.3599,1474.2065 Q2381.8237,1474.2065 2382.2601,1474.0082 Q2382.6965,1473.8098 2383.1604,1473.3826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="106.25" x="2404.1667" y="1475.6836">ResourceMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2230.2083" x2="2653.125" y1="1486.6536" y2="1486.6536"/><ellipse cx="2240.625" cy="1522.0235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="2252.0833" y="1528.9347">ResourceMapper(String, ResourceReference)</text><ellipse cx="2240.625" cy="1541.7684" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="392.7083" x="2252.0833" y="1548.6796">ResourceMapper(String, ResourceReference, IPageParametersEncoder)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2230.2083" x2="2397.9167" y1="1504.8594" y2="1504.8594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2401.0417" y="1508.669">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2485.4167" x2="2653.125" y1="1504.8594" y2="1504.8594"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2230.2083" x2="2653.125" y1="1558.3883" y2="1558.3883"/><polygon fill="#FFFF44" points="2240.625,1564.6383,2244.7917,1568.8049,2240.625,1572.9716,2236.4583,1568.8049" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="267.7083" x="2252.0833" y="1576.7578">IResourceCachingStrategy getCachingStrategy()</text><polygon fill="#FFFF44" points="2240.625,1608.2947,2244.7917,1612.4613,2240.625,1616.628,2236.4583,1612.4613" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="275" x="2252.0833" y="1620.4142">void addCachingDecoration(Url, PageParameters)</text><polygon fill="#FFFF44" points="2240.625,1628.0396,2244.7917,1632.2062,2240.625,1636.3729,2236.4583,1632.2062" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="295.8333" x="2252.0833" y="1640.1591">void removeCachingDecoration(Url, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2230.2083" x2="2407.2917" y1="1596.3389" y2="1596.3389"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="2410.4167" y="1600.1485">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2476.0417" x2="2653.125" y1="1596.3389" y2="1596.3389"/><!--MD5=[e27937a525de65d2078b2b371abff854]
+class ParentPathReferenceRewriter--><rect fill="#282828" height="48.055" id="ParentPathReferenceRewriter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="3295.3125" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="3295.3125" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="3295.3125" y="138.2161"/><rect fill="none" height="48.055" id="ParentPathReferenceRewriter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="3295.3125" y="115.1611"/><ellipse cx="3309.8958" cy="130.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3311.8062,135.2804 Q3311.379,135.5001 3310.909,135.6099 Q3310.439,135.7198 3309.9202,135.7198 Q3308.077,135.7198 3307.1065,134.5052 Q3306.1361,133.2906 3306.1361,130.9957 Q3306.1361,128.6947 3307.1065,127.4801 Q3308.077,126.2655 3309.9202,126.2655 Q3310.439,126.2655 3310.9151,126.3753 Q3311.3912,126.4852 3311.8062,126.7049 L3311.8062,128.7069 Q3311.3424,128.2796 3310.906,128.0813 Q3310.4696,127.8829 3310.0057,127.8829 Q3309.0169,127.8829 3308.5134,128.6672 Q3308.0098,129.4515 3308.0098,130.9957 Q3308.0098,132.5338 3308.5134,133.3181 Q3309.0169,134.1024 3310.0057,134.1024 Q3310.4696,134.1024 3310.906,133.904 Q3311.3424,133.7056 3311.8062,133.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="184.375" x="3326.5625" y="135.5794">ParentPathReferenceRewriter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3296.3542" x2="3516.1458" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3296.3542" x2="3516.1458" y1="154.8828" y2="154.8828"/><!--MD5=[980acb7492f7f7e0aaf1df653b9ea94d]
+class ResourceReferenceMapper--><rect codeLine="239" fill="#282828" height="83.3781" id="ResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="648.9583" x="3081.7708" y="424.5361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="648.9583" x="3081.7708" y="424.5361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="648.9583" x="3081.7708" y="447.5911"/><rect codeLine="239" fill="none" height="83.3781" id="ResourceReferenceMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="648.9583" x="3081.7708" y="424.5361"/><ellipse cx="3314.5833" cy="440.2303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3316.4937,444.6554 Q3316.0665,444.8751 3315.5965,444.9849 Q3315.1265,445.0948 3314.6077,445.0948 Q3312.7645,445.0948 3311.794,443.8802 Q3310.8236,442.6656 3310.8236,440.3707 Q3310.8236,438.0697 3311.794,436.8551 Q3312.7645,435.6405 3314.6077,435.6405 Q3315.1265,435.6405 3315.6026,435.7503 Q3316.0787,435.8602 3316.4937,436.0799 L3316.4937,438.0819 Q3316.0299,437.6546 3315.5935,437.4563 Q3315.1571,437.2579 3314.6932,437.2579 Q3313.7044,437.2579 3313.2009,438.0422 Q3312.6973,438.8265 3312.6973,440.3707 Q3312.6973,441.9088 3313.2009,442.6931 Q3313.7044,443.4774 3314.6932,443.4774 Q3315.1571,443.4774 3315.5935,443.279 Q3316.0299,443.0806 3316.4937,442.6534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="168.75" x="3337.5" y="444.9544">ResourceReferenceMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3082.8125" x2="3729.6875" y1="455.9245" y2="455.9245"/><ellipse cx="3093.2292" cy="491.2944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="616.6667" x="3104.6875" y="498.2056">ResourceReferenceMapper(IPageParametersEncoder, Supplier&lt;String&gt;, Supplier&lt;IResourceCachingStrategy&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3082.8125" x2="3362.5" y1="474.1302" y2="474.1302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="3365.625" y="477.9399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3450" x2="3729.6875" y1="474.1302" y2="474.1302"/><!--MD5=[45b2bb481767de2342fc072aa9ebeed7]
+class WicketRuntimeException--><rect fill="#282828" height="48.055" id="WicketRuntimeException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="2022.3958" y="115.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="2022.3958" y="115.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="196.875" x="2022.3958" y="138.2161"/><rect fill="none" height="48.055" id="WicketRuntimeException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="196.875" x="2022.3958" y="115.1611"/><ellipse cx="2036.9792" cy="130.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2038.8896,135.2804 Q2038.4623,135.5001 2037.9924,135.6099 Q2037.5224,135.7198 2037.0036,135.7198 Q2035.1603,135.7198 2034.1899,134.5052 Q2033.2194,133.2906 2033.2194,130.9957 Q2033.2194,128.6947 2034.1899,127.4801 Q2035.1603,126.2655 2037.0036,126.2655 Q2037.5224,126.2655 2037.9985,126.3753 Q2038.4745,126.4852 2038.8896,126.7049 L2038.8896,128.7069 Q2038.4257,128.2796 2037.9893,128.0813 Q2037.5529,127.8829 2037.089,127.8829 Q2036.1003,127.8829 2035.5967,128.6672 Q2035.0932,129.4515 2035.0932,130.9957 Q2035.0932,132.5338 2035.5967,133.3181 Q2036.1003,134.1024 2037.089,134.1024 Q2037.5529,134.1024 2037.9893,133.904 Q2038.4257,133.7056 2038.8896,133.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="2053.6458" y="135.5794">WicketRuntimeException</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2023.4375" x2="2218.2292" y1="146.5495" y2="146.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2023.4375" x2="2218.2292" y1="154.8828" y2="154.8828"/><!--MD5=[c56f777d9457fc8bdf6553a938908bd8]
+class StalePageException--><rect codeLine="247" fill="#282828" height="111.4563" id="StalePageException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="244.7917" x="1946.3542" y="410.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="244.7917" x="1946.3542" y="410.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="244.7917" x="1946.3542" y="433.5286"/><rect codeLine="247" fill="none" height="111.4563" id="StalePageException" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="244.7917" x="1946.3542" y="410.4736"/><ellipse cx="1999.4792" cy="426.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2001.3896,430.5929 Q2000.9623,430.8126 2000.4924,430.9224 Q2000.0224,431.0323 1999.5036,431.0323 Q1997.6603,431.0323 1996.6899,429.8177 Q1995.7194,428.6031 1995.7194,426.3082 Q1995.7194,424.0072 1996.6899,422.7926 Q1997.6603,421.578 1999.5036,421.578 Q2000.0224,421.578 2000.4985,421.6878 Q2000.9745,421.7977 2001.3896,422.0174 L2001.3896,424.0194 Q2000.9257,423.5921 2000.4893,423.3938 Q2000.0529,423.1954 1999.589,423.1954 Q1998.6003,423.1954 1998.0967,423.9797 Q1997.5932,424.764 1997.5932,426.3082 Q1997.5932,427.8463 1998.0967,428.6306 Q1998.6003,429.4149 1999.589,429.4149 Q2000.0529,429.4149 2000.4893,429.2165 Q2000.9257,429.0181 2001.3896,428.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="123.9583" x="2022.3958" y="430.8919">StalePageException</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1947.3958" x2="2190.1042" y1="441.862" y2="441.862"/><ellipse cx="1957.8125" cy="477.2319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="212.5" x="1969.2708" y="484.1431">StalePageException(IRequestablePage)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1947.3958" x2="2025" y1="460.0677" y2="460.0677"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2028.125" y="463.8774">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2112.5" x2="2190.1042" y1="460.0677" y2="460.0677"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1947.3958" x2="2190.1042" y1="493.8517" y2="493.8517"/><ellipse cx="1957.8125" cy="505.3101" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="1969.2708" y="512.2213">IRequestablePage getPage()</text><!--MD5=[b241ac938f571ed1b16299e43e0db4e9]
+class AbstractBookmarkableMapper.UrlInfo--><rect codeLine="255" fill="#282828" height="174.8576" id="AbstractBookmarkableMapper.UrlInfo" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="495.8333" x="522.9167" y="378.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="495.8333" x="522.9167" y="378.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="495.8333" x="522.9167" y="401.7578"/><rect codeLine="255" fill="none" height="174.8576" id="AbstractBookmarkableMapper.UrlInfo" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="495.8333" x="522.9167" y="378.7028"/><ellipse cx="641.6667" cy="394.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M643.5771,398.822 Q643.1498,399.0417 642.6799,399.1516 Q642.2099,399.2615 641.6911,399.2615 Q639.8478,399.2615 638.8774,398.0469 Q637.9069,396.8323 637.9069,394.5374 Q637.9069,392.2363 638.8774,391.0217 Q639.8478,389.8071 641.6911,389.8071 Q642.2099,389.8071 642.686,389.917 Q643.162,390.0269 643.5771,390.2466 L643.5771,392.2485 Q643.1132,391.8213 642.6768,391.6229 Q642.2404,391.4246 641.7765,391.4246 Q640.7878,391.4246 640.2842,392.2089 Q639.7807,392.9932 639.7807,394.5374 Q639.7807,396.0754 640.2842,396.8597 Q640.7878,397.644 641.7765,397.644 Q642.2404,397.644 642.6768,397.4457 Q643.1132,397.2473 643.5771,396.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="243.75" x="664.5833" y="399.1211">AbstractBookmarkableMapper.UrlInfo</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="523.9583" x2="1017.7083" y1="410.0911" y2="410.0911"/><ellipse cx="534.375" cy="445.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="463.5417" x="545.8333" y="452.3722">UrlInfo(PageComponentInfo, Class&lt;? extends IRequestablePage&gt;, PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="523.9583" x2="727.0833" y1="428.2969" y2="428.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="730.2083" y="432.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="814.5833" x2="1017.7083" y1="428.2969" y2="428.2969"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="523.9583" x2="1017.7083" y1="462.0809" y2="462.0809"/><ellipse cx="534.375" cy="473.5392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="287.5" x="545.8333" y="480.4504">Class&lt;? extends IRequestablePage&gt; getPageClass()</text><ellipse cx="534.375" cy="493.2841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="206.25" x="545.8333" y="500.1953">PageParameters getPageParameters()</text><ellipse cx="534.375" cy="536.9405" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="256.25" x="545.8333" y="543.8517">PageComponentInfo getPageComponentInfo()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="523.9583" x2="733.3333" y1="519.7764" y2="519.7764"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="736.4583" y="523.586">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="808.3333" x2="1017.7083" y1="519.7764" y2="519.7764"/><!--MD5=[bf98c47f5ecca26db4a6e463c35b1ef7]
+reverse link AbstractComponentMapper to AbstractBookmarkableMapper--><path codeLine="15" d="M1248.9583,606.7132 C1248.9583,637.9945 1248.9583,672.4424 1248.9583,707.7861 " fill="none" id="AbstractComponentMapper-backto-AbstractBookmarkableMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1241.6667,606.432,1248.9583,585.5986,1256.25,606.432,1241.6667,606.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9985798152ec6532779e6b58a06467eb]
+link AbstractBookmarkableMapper to Url--><path codeLine="16" d="M873.8021,1306.0257 C828.2917,1348.7445 785.1771,1394.9007 748.9583,1443.2861 C730.7604,1467.609 718.2292,1500.2445 710.9375,1523.3174 " fill="none" id="AbstractBookmarkableMapper-to-Url" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="#545454" points="709.3646,1528.3799,716.13,1520.6675,710.913,1523.407,708.1735,1518.19,709.3646,1528.3799" style="stroke:#545454;stroke-width:1.5625;"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="45.8333" x="797.9167" y="1405.3711">creates</text><!--MD5=[793cf4d3ba80bb3d51941da0ef82dd20]
+reverse link AbstractMapper to AbstractComponentMapper--><path codeLine="51" d="M1248.9583,184.432 C1248.9583,226.0986 1248.9583,290.3799 1248.9583,346.9215 " fill="none" id="AbstractMapper-backto-AbstractComponentMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1241.6667,184.3695,1248.9583,163.5361,1256.25,184.3695,1241.6667,184.3695" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1d962d6305c6e6fb2632bda12b209d41]
+reverse link IRequestMapper to AbstractComponentMapper--><path codeLine="52" d="M1569.0104,177.3903 C1523.25,218.5361 1447.1979,286.9215 1380.7083,346.7028 " fill="none" id="IRequestMapper-backto-AbstractComponentMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1564.3438,171.7861,1584.7083,163.2757,1574.0938,182.6299,1564.3438,171.7861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[28616acf17fcfc69649ee4d075184fc2]
+reverse link AbstractComponentMapper to AbstractResourceReferenceMapper--><path codeLine="67" d="M1105.0833,598.5153 C1082.9896,615.2445 1059.7604,631.109 1036.4583,644.3278 C962.2083,686.4424 930.9896,668.5778 855.2083,707.8695 C679.3854,799.0465 494.6458,951.2861 427.4375,1008.8382 " fill="none" id="AbstractComponentMapper-backto-AbstractResourceReferenceMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1100.8125,592.5986,1121.7396,585.5778,1109.7604,604.1195,1100.8125,592.5986" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[d617bd3127e27df9c06b3b0fbda1d8e2]
+reverse link AbstractResourceReferenceMapper to BasicResourceReferenceMapper--><path codeLine="72" d="M394.4583,1078.109 C382.5104,1158.3486 356.9271,1330.1611 340.0938,1443.2549 " fill="none" id="AbstractResourceReferenceMapper-backto-BasicResourceReferenceMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="387.3021,1076.6924,397.5833,1057.1611,401.7188,1078.8382,387.3021,1076.6924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e60e7afd1e34d4c4ff01ff0c2f2e5842]
+reverse link AbstractBookmarkableMapper to BookmarkableMapper--><path codeLine="86" d="M1057.3854,1376.4007 C1036.0625,1414.5153 1016.2604,1449.9215 1000.1146,1478.7861 " fill="none" id="AbstractBookmarkableMapper-backto-BookmarkableMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1051.0833,1372.734,1067.6146,1358.109,1063.8125,1379.8486,1051.0833,1372.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8247c2718c63347f99885f09e6cc8859]
+reverse link IRequestMapper to BufferedResponseMapper--><path codeLine="96" d="M1617.625,184.2861 C1624.9167,228.8799 1636.4583,299.4632 1646.1458,358.7236 " fill="none" id="IRequestMapper-backto-BufferedResponseMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1610.4063,185.2757,1614.2396,163.5361,1624.7917,182.9215,1610.4063,185.2757" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5631dbde2f10a92893549424013db5bf]
+reverse link IRequestMapperDelegate to CryptoMapper--><path codeLine="109" d="M2429.1667,184.5361 C2429.1667,212.0257 2429.1667,249.3278 2429.1667,287.7549 " fill="none" id="IRequestMapperDelegate-backto-CryptoMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2421.875,184.3695,2429.1667,163.5361,2436.4583,184.3695,2421.875,184.3695" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[a4ff5e22710d10e0c3c7a7b1cff1d4dd]
+reverse link MountedMapper to HomePageMapper--><path codeLine="140" d="M1478.125,1659.2757 C1478.125,1681.9945 1478.125,1705.2549 1478.125,1725.5465 " fill="none" id="MountedMapper-backto-HomePageMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1470.8333,1659.057,1478.125,1638.2236,1485.4167,1659.057,1470.8333,1659.057" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[fbc9c214e4a68af087b83488696e3c6a]
+reverse link IPageSource to IMapperContext--><path codeLine="150" d="M2861.4583,215.7757 C2861.4583,261.9424 2861.4583,321.3695 2861.4583,370.6403 " fill="none" id="IPageSource-backto-IMapperContext" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2854.1667,215.7549,2861.4583,194.9215,2868.75,215.7549,2854.1667,215.7549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f015cf315e10ab6f89b133e925e3b895]
+reverse link AbstractBookmarkableMapper to MountedMapper--><path codeLine="195" d="M1401.0833,1377.5674 C1415.5521,1410.2549 1429.1146,1440.9111 1440.7188,1467.109 " fill="none" id="AbstractBookmarkableMapper-backto-MountedMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1394.2292,1380.109,1392.4688,1358.109,1407.5625,1374.2028,1394.2292,1380.109" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f9c335bcc49aa01b2296abd52e3a56a0]
+reverse link AbstractBookmarkableMapper to PackageMapper--><path codeLine="207" d="M1641.5521,1357.0882 C1641.9375,1357.3486 1642.3229,1357.609 1642.7083,1357.8695 C1678.75,1382.1715 1762.9271,1428.1195 1840.4167,1469.1715 " fill="none" id="AbstractBookmarkableMapper-backto-PackageMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1637.2813,1363.0049,1624.2188,1345.2132,1645.5313,1350.9736,1637.2813,1363.0049" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f22bdb8c5ce214c3174b24e6b380b94f]
+reverse link AbstractComponentMapper to PageInstanceMapper--><path codeLine="218" d="M1392.0625,598.5361 C1414.0625,615.2653 1437.1979,631.1195 1460.4167,644.3278 C1534.6146,686.5361 1582.0938,646.7236 1641.6667,707.8695 C1718.7604,787.0049 1738.8021,923.3903 1744.0104,991.1611 " fill="none" id="AbstractComponentMapper-backto-PageInstanceMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1387.4271,604.1611,1375.4896,585.5986,1396.4063,592.6715,1387.4271,604.1611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2ed900ad9750fbc140b6294f08009d1e]
+reverse link AbstractBookmarkableMapper to ResourceMapper--><path codeLine="225" d="M1643.3333,1356.9215 C1788.3958,1409.5361 2093.7917,1408.0049 2210.4167,1443.2861 C2222.0833,1446.8174 2233.9167,1450.8382 2245.7396,1455.2028 " fill="none" id="AbstractBookmarkableMapper-backto-ResourceMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1640.5729,1363.6611,1623.9688,1349.1195,1646.0208,1350.1403,1640.5729,1363.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[a32186e7a9fd93e046be9391f0fbc657]
+reverse link ParentPathReferenceRewriter to ResourceReferenceMapper--><path codeLine="238" d="M3406.25,184.6924 C3406.25,248.057 3406.25,363.307 3406.25,424.484 " fill="none" id="ParentPathReferenceRewriter-backto-ResourceReferenceMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3398.9583,184.3695,3406.25,163.5361,3413.5417,184.3695,3398.9583,184.3695" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4ad8195087f845af7370296a08a8631c]
+reverse link WicketRuntimeException to StalePageException--><path codeLine="245" d="M2113.7604,184.3174 C2104.3542,242.9736 2087.75,346.5674 2077.5521,410.2132 " fill="none" id="WicketRuntimeException-backto-StalePageException" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2106.5938,182.9528,2117.0833,163.5361,2120.9896,185.2549,2106.5938,182.9528" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c8cb64a263670f1404eecf900d28c13e]
+reverse link IWicketInternalException to StalePageException--><path codeLine="246" d="M1910.8333,182.0049 C1943.3021,240.2132 2002.1458,345.7236 2038.1042,410.2132 " fill="none" id="IWicketInternalException-backto-StalePageException" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1904.3125,185.2861,1900.5313,163.5361,1917.0521,178.182,1904.3125,185.2861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[988dd81c046210261c35f0b009dabc1a]
+link CryptoMapper.HashedSegmentGenerator to MapperUtils--><!--MD5=[222856c6662c185e0fddff2e31315738]
+link CryptoMapper.HashedSegmentGenerator to AbstractBookmarkableMapper.MountPathSegment--><!--MD5=[9a653d8bb4f4bd433b31bfe37c56a664]
+link AbstractBookmarkableMapper.MountPathSegment to AbstractBookmarkableMapper.UrlInfo--><!--MD5=[ee8d69bac842499cbf701b7c514ec8af]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.request.mapper"
+    
+    abstract AbstractMapper
+    abstract AbstractComponentMapper
+    abstract AbstractResourceReferenceMapper
+    abstract AbstractBookmarkableMapper
+    
+    interface IWicketInternalException
+    interface IRequestMapperDelegate
+    interface IRequestMapper
+    
+    AbstractComponentMapper <|- - AbstractBookmarkableMapper
+    AbstractBookmarkableMapper - -> Url : "creates"
+    abstract class AbstractBookmarkableMapper
+    {
+        - -(constructors)- -
+        +AbstractBookmarkableMapper()
+        +AbstractBookmarkableMapper(String, IPageParametersEncoder)
+        - -
+        #boolean checkPageClass(Class<? extends IRequestablePage> pageClass)
+        #boolean checkPageInstance(IRequestablePage)
+        #PageParameters extractPageParameters(Request, Url)
+        #int[] getMatchedSegmentSizes(Url)
+        #boolean pageMustHaveBeenCreatedBookmarkable()
+        #Locale resolveUserLocale()
+        #boolean setPlaceholders(PageParameters, Url)
+        - -(checks)- -
+        #boolean isFixedSegment(String segment)
+        - -(collection)- -
+        #List<MountPathSegment> getPathSegments(String[] segments)
+        - -(factory)- -
+        #PageParameters newPageParameters()
+        - -(matching)- -
+        +AbstractBookmarkableMapper setCaseSensitiveMatch(boolean isCaseSensitive)
+        #boolean isCaseSensitiveMatch()
+        #boolean segmentsMatch(String mountedSegment, String urlSegment)
+        - -(messaging)- -
+        #PageInfo getPageInfo(IPageRequestHandler)
+        #UrlInfo parseRequest(Request)
+        #IRequestHandler processBookmarkable(Class<? extends IRequestablePage> pageClass, PageParameters)
+        #IRequestHandler processHybrid(PageInfo, Class<? extends IRequestablePage> pageClass, PageParameters, Integer renderCount)
+        #IRequestHandler processListener(PageComponentInfo, Class<? extends IRequestablePage> pageClass, PageParameters)
+        - -(network)- -
+        #Url buildUrl(UrlInfo)
+        #boolean urlStartsWithMountedSegments(Url)
+    }
+    
+    AbstractMapper <|- - AbstractComponentMapper
+    IRequestMapper <|- - AbstractComponentMapper
+    abstract class AbstractComponentMapper
+    {
+        - -(constructors)- -
+        +AbstractComponentMapper()
+        - -
+        #IMapperContext getContext()
+        #Class<? extends IRequestablePage> getPageClass(String name)
+        - -(messaging)- -
+        #void encodePageComponentInfo(Url, PageComponentInfo)
+        #PageComponentInfo getPageComponentInfo(Url)
+        - -(naming)- -
+        #String cleanClassName(String className)
+    }
+    
+    AbstractComponentMapper <|- - AbstractResourceReferenceMapper
+    abstract class AbstractResourceReferenceMapper
+    {
+    }
+    
+    AbstractResourceReferenceMapper <|- - BasicResourceReferenceMapper
+    class BasicResourceReferenceMapper
+    {
+        - -(constructors)- -
+        +BasicResourceReferenceMapper(IPageParametersEncoder, Supplier<? extends IResourceCachingStrategy>)
+        - -
+        #IResourceCachingStrategy getCachingStrategy()
+        #Class<?> resolveClass(String name)
+        - -(checks)- -
+        #boolean canBeHandled(Url)
+        - -(naming)- -
+        #String getClassName(Class<?> scope)
+    }
+    
+    AbstractBookmarkableMapper <|- - BookmarkableMapper
+    class BookmarkableMapper
+    {
+        - -(constructors)- -
+        +BookmarkableMapper()
+        +BookmarkableMapper(IPageParametersEncoder)
+        - -(network)- -
+        #boolean urlStartsWithAndHasPageClass(Url, String... segments)
+    }
+    
+    IRequestMapper <|- - BufferedResponseMapper
+    class BufferedResponseMapper
+    {
+        - -(constructors)- -
+        +BufferedResponseMapper()
+        - -(checks)- -
+        #boolean hasBufferedResponse(Url)
+        - -(collection)- -
+        #BufferedWebResponse getAndRemoveBufferedResponse(Url)
+        - -(identity)- -
+        #String getSessionId()
+    }
+    
+    IRequestMapperDelegate <|- - CryptoMapper
+    class CryptoMapper
+    {
+        - -(constructors)- -
+        +CryptoMapper(IRequestMapper, Application)
+        +CryptoMapper(IRequestMapper, Supplier<ICrypt>)
+        - -
+        +boolean getMarkEncryptedUrls()
+        #IMapperContext getContext()
+        #ICrypt getCrypt()
+        - -(functional)- -
+        +CryptoMapper setMarkEncryptedUrls(boolean markEncryptedUrls)
+        - -(network)- -
+        #Url decryptEntireUrl(Request, Url encryptedUrl)
+        #Url decryptRequestListenerParameter(Request, Url encryptedUrl)
+        #Url decryptUrl(Request, Url encryptedUrl)
+        #Url encryptEntireUrl(Url)
+        #Url encryptRequestListenerParameter(Url)
+        #Url encryptUrl(Url)
+    }
+    
+    class CryptoMapper.HashedSegmentGenerator
+    {
+        - -(constructors)- -
+        +HashedSegmentGenerator(String)
+        - -(collection)- -
+        +int hashString(String)
+        - -(iteration)- -
+        +String next()
+    }
+    
+    MountedMapper <|- - HomePageMapper
+    class HomePageMapper
+    {
+        - -(constructors)- -
+        +HomePageMapper(Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +HomePageMapper(Supplier<Class<? extends IRequestablePage>>)
+        +HomePageMapper(Class<? extends IRequestablePage>)
+    }
+    
+    interface IPageSource
+    IPageSource <|- - IMapperContext
+    interface IMapperContext
+    {
+        - -
+        +Class<? extends IRequestablePage> getHomePageClass()
+        +String getNamespace()
+        +ResourceReferenceRegistry getResourceReferenceRegistry()
+        - -(identity)- -
+        +String getBookmarkableIdentifier()
+        +String getPageIdentifier()
+        +String getResourceIdentifier()
+    }
+    
+    interface IPageSource
+    {
+        - -
+        +IRequestablePage getPageInstance(int pageId)
+        - -(factory)- -
+        +IRequestablePage newPageInstance(Class<? extends IRequestablePage> pageClass, PageParameters)
+    }
+    
+    class MapperUtils
+    {
+        - -(messaging)- -
+        +PageComponentInfo getPageComponentInfo(Url)
+        +PageComponentInfo parsePageComponentInfoParameter(Url.QueryParameter)
+    }
+    
+    class AbstractBookmarkableMapper.MountPathSegment
+    {
+        - -(constructors)- -
+        +MountPathSegment(int)
+        - -
+        +String getFixedPart()
+        +int getMaxParameters()
+        +int getMinParameters()
+        +int getOptionalParameters()
+        +void setFixedPart(String fixedPart)
+        - -(collection)- -
+        +void addOptionalParameter()
+        +void addRequiredParameter()
+        +int getFixedPartSize()
+        +int getSegmentIndex()
+    }
+    
+    AbstractBookmarkableMapper <|- - MountedMapper
+    class MountedMapper
+    {
+        - -(constructors)- -
+        +MountedMapper(String, Class<? extends IRequestablePage>)
+        +MountedMapper(String, Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>, IPageParametersEncoder)
+        - -
+        #boolean redirectFromHomePage()
+    }
+    
+    AbstractBookmarkableMapper <|- - PackageMapper
+    class PackageMapper
+    {
+        - -(constructors)- -
+        +PackageMapper(String, PackageName)
+        +PackageMapper(String, PackageName, IPageParametersEncoder)
+        - -(network)- -
+        #String transformForUrl(String className)
+        #String transformFromUrl(String classNameAlias)
+    }
+    
+    AbstractComponentMapper <|- - PageInstanceMapper
+    class PageInstanceMapper
+    {
+        - -(constructors)- -
+        +PageInstanceMapper()
+    }
+    
+    AbstractBookmarkableMapper <|- - ResourceMapper
+    class ResourceMapper
+    {
+        - -(constructors)- -
+        +ResourceMapper(String, ResourceReference)
+        +ResourceMapper(String, ResourceReference, IPageParametersEncoder)
+        - -
+        #IResourceCachingStrategy getCachingStrategy()
+        - -(collection)- -
+        #void addCachingDecoration(Url, PageParameters)
+        #void removeCachingDecoration(Url, PageParameters)
+    }
+    
+    ParentPathReferenceRewriter <|- - ResourceReferenceMapper
+    class ResourceReferenceMapper
+    {
+        - -(constructors)- -
+        +ResourceReferenceMapper(IPageParametersEncoder, Supplier<String>, Supplier<IResourceCachingStrategy>)
+    }
+    
+    WicketRuntimeException <|- - StalePageException
+    IWicketInternalException <|- - StalePageException
+    class StalePageException
+    {
+        - -(constructors)- -
+        +StalePageException(IRequestablePage)
+        - -
+        +IRequestablePage getPage()
+    }
+    
+    class AbstractBookmarkableMapper.UrlInfo
+    {
+        - -(constructors)- -
+        +UrlInfo(PageComponentInfo, Class<? extends IRequestablePage>, PageParameters)
+        - -
+        +Class<? extends IRequestablePage> getPageClass()
+        +PageParameters getPageParameters()
+        - -(messaging)- -
+        +PageComponentInfo getPageComponentInfo()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.core.request.mapper"
+    
+    abstract AbstractMapper
+    abstract AbstractComponentMapper
+    abstract AbstractResourceReferenceMapper
+    abstract AbstractBookmarkableMapper
+    
+    interface IWicketInternalException
+    interface IRequestMapperDelegate
+    interface IRequestMapper
+    
+    AbstractComponentMapper <|- - AbstractBookmarkableMapper
+    AbstractBookmarkableMapper - -> Url : "creates"
+    abstract class AbstractBookmarkableMapper
+    {
+        - -(constructors)- -
+        +AbstractBookmarkableMapper()
+        +AbstractBookmarkableMapper(String, IPageParametersEncoder)
+        - -
+        #boolean checkPageClass(Class<? extends IRequestablePage> pageClass)
+        #boolean checkPageInstance(IRequestablePage)
+        #PageParameters extractPageParameters(Request, Url)
+        #int[] getMatchedSegmentSizes(Url)
+        #boolean pageMustHaveBeenCreatedBookmarkable()
+        #Locale resolveUserLocale()
+        #boolean setPlaceholders(PageParameters, Url)
+        - -(checks)- -
+        #boolean isFixedSegment(String segment)
+        - -(collection)- -
+        #List<MountPathSegment> getPathSegments(String[] segments)
+        - -(factory)- -
+        #PageParameters newPageParameters()
+        - -(matching)- -
+        +AbstractBookmarkableMapper setCaseSensitiveMatch(boolean isCaseSensitive)
+        #boolean isCaseSensitiveMatch()
+        #boolean segmentsMatch(String mountedSegment, String urlSegment)
+        - -(messaging)- -
+        #PageInfo getPageInfo(IPageRequestHandler)
+        #UrlInfo parseRequest(Request)
+        #IRequestHandler processBookmarkable(Class<? extends IRequestablePage> pageClass, PageParameters)
+        #IRequestHandler processHybrid(PageInfo, Class<? extends IRequestablePage> pageClass, PageParameters, Integer renderCount)
+        #IRequestHandler processListener(PageComponentInfo, Class<? extends IRequestablePage> pageClass, PageParameters)
+        - -(network)- -
+        #Url buildUrl(UrlInfo)
+        #boolean urlStartsWithMountedSegments(Url)
+    }
+    
+    AbstractMapper <|- - AbstractComponentMapper
+    IRequestMapper <|- - AbstractComponentMapper
+    abstract class AbstractComponentMapper
+    {
+        - -(constructors)- -
+        +AbstractComponentMapper()
+        - -
+        #IMapperContext getContext()
+        #Class<? extends IRequestablePage> getPageClass(String name)
+        - -(messaging)- -
+        #void encodePageComponentInfo(Url, PageComponentInfo)
+        #PageComponentInfo getPageComponentInfo(Url)
+        - -(naming)- -
+        #String cleanClassName(String className)
+    }
+    
+    AbstractComponentMapper <|- - AbstractResourceReferenceMapper
+    abstract class AbstractResourceReferenceMapper
+    {
+    }
+    
+    AbstractResourceReferenceMapper <|- - BasicResourceReferenceMapper
+    class BasicResourceReferenceMapper
+    {
+        - -(constructors)- -
+        +BasicResourceReferenceMapper(IPageParametersEncoder, Supplier<? extends IResourceCachingStrategy>)
+        - -
+        #IResourceCachingStrategy getCachingStrategy()
+        #Class<?> resolveClass(String name)
+        - -(checks)- -
+        #boolean canBeHandled(Url)
+        - -(naming)- -
+        #String getClassName(Class<?> scope)
+    }
+    
+    AbstractBookmarkableMapper <|- - BookmarkableMapper
+    class BookmarkableMapper
+    {
+        - -(constructors)- -
+        +BookmarkableMapper()
+        +BookmarkableMapper(IPageParametersEncoder)
+        - -(network)- -
+        #boolean urlStartsWithAndHasPageClass(Url, String... segments)
+    }
+    
+    IRequestMapper <|- - BufferedResponseMapper
+    class BufferedResponseMapper
+    {
+        - -(constructors)- -
+        +BufferedResponseMapper()
+        - -(checks)- -
+        #boolean hasBufferedResponse(Url)
+        - -(collection)- -
+        #BufferedWebResponse getAndRemoveBufferedResponse(Url)
+        - -(identity)- -
+        #String getSessionId()
+    }
+    
+    IRequestMapperDelegate <|- - CryptoMapper
+    class CryptoMapper
+    {
+        - -(constructors)- -
+        +CryptoMapper(IRequestMapper, Application)
+        +CryptoMapper(IRequestMapper, Supplier<ICrypt>)
+        - -
+        +boolean getMarkEncryptedUrls()
+        #IMapperContext getContext()
+        #ICrypt getCrypt()
+        - -(functional)- -
+        +CryptoMapper setMarkEncryptedUrls(boolean markEncryptedUrls)
+        - -(network)- -
+        #Url decryptEntireUrl(Request, Url encryptedUrl)
+        #Url decryptRequestListenerParameter(Request, Url encryptedUrl)
+        #Url decryptUrl(Request, Url encryptedUrl)
+        #Url encryptEntireUrl(Url)
+        #Url encryptRequestListenerParameter(Url)
+        #Url encryptUrl(Url)
+    }
+    
+    class CryptoMapper.HashedSegmentGenerator
+    {
+        - -(constructors)- -
+        +HashedSegmentGenerator(String)
+        - -(collection)- -
+        +int hashString(String)
+        - -(iteration)- -
+        +String next()
+    }
+    
+    MountedMapper <|- - HomePageMapper
+    class HomePageMapper
+    {
+        - -(constructors)- -
+        +HomePageMapper(Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +HomePageMapper(Supplier<Class<? extends IRequestablePage>>)
+        +HomePageMapper(Class<? extends IRequestablePage>)
+    }
+    
+    interface IPageSource
+    IPageSource <|- - IMapperContext
+    interface IMapperContext
+    {
+        - -
+        +Class<? extends IRequestablePage> getHomePageClass()
+        +String getNamespace()
+        +ResourceReferenceRegistry getResourceReferenceRegistry()
+        - -(identity)- -
+        +String getBookmarkableIdentifier()
+        +String getPageIdentifier()
+        +String getResourceIdentifier()
+    }
+    
+    interface IPageSource
+    {
+        - -
+        +IRequestablePage getPageInstance(int pageId)
+        - -(factory)- -
+        +IRequestablePage newPageInstance(Class<? extends IRequestablePage> pageClass, PageParameters)
+    }
+    
+    class MapperUtils
+    {
+        - -(messaging)- -
+        +PageComponentInfo getPageComponentInfo(Url)
+        +PageComponentInfo parsePageComponentInfoParameter(Url.QueryParameter)
+    }
+    
+    class AbstractBookmarkableMapper.MountPathSegment
+    {
+        - -(constructors)- -
+        +MountPathSegment(int)
+        - -
+        +String getFixedPart()
+        +int getMaxParameters()
+        +int getMinParameters()
+        +int getOptionalParameters()
+        +void setFixedPart(String fixedPart)
+        - -(collection)- -
+        +void addOptionalParameter()
+        +void addRequiredParameter()
+        +int getFixedPartSize()
+        +int getSegmentIndex()
+    }
+    
+    AbstractBookmarkableMapper <|- - MountedMapper
+    class MountedMapper
+    {
+        - -(constructors)- -
+        +MountedMapper(String, Class<? extends IRequestablePage>)
+        +MountedMapper(String, Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>, IPageParametersEncoder)
+        - -
+        #boolean redirectFromHomePage()
+    }
+    
+    AbstractBookmarkableMapper <|- - PackageMapper
+    class PackageMapper
+    {
+        - -(constructors)- -
+        +PackageMapper(String, PackageName)
+        +PackageMapper(String, PackageName, IPageParametersEncoder)
+        - -(network)- -
+        #String transformForUrl(String className)
+        #String transformFromUrl(String classNameAlias)
+    }
+    
+    AbstractComponentMapper <|- - PageInstanceMapper
+    class PageInstanceMapper
+    {
+        - -(constructors)- -
+        +PageInstanceMapper()
+    }
+    
+    AbstractBookmarkableMapper <|- - ResourceMapper
+    class ResourceMapper
+    {
+        - -(constructors)- -
+        +ResourceMapper(String, ResourceReference)
+        +ResourceMapper(String, ResourceReference, IPageParametersEncoder)
+        - -
+        #IResourceCachingStrategy getCachingStrategy()
+        - -(collection)- -
+        #void addCachingDecoration(Url, PageParameters)
+        #void removeCachingDecoration(Url, PageParameters)
+    }
+    
+    ParentPathReferenceRewriter <|- - ResourceReferenceMapper
+    class ResourceReferenceMapper
+    {
+        - -(constructors)- -
+        +ResourceReferenceMapper(IPageParametersEncoder, Supplier<String>, Supplier<IResourceCachingStrategy>)
+    }
+    
+    WicketRuntimeException <|- - StalePageException
+    IWicketInternalException <|- - StalePageException
+    class StalePageException
+    {
+        - -(constructors)- -
+        +StalePageException(IRequestablePage)
+        - -
+        +IRequestablePage getPage()
+    }
+    
+    class AbstractBookmarkableMapper.UrlInfo
+    {
+        - -(constructors)- -
+        +UrlInfo(PageComponentInfo, Class<? extends IRequestablePage>, PageParameters)
+        - -
+        +Class<? extends IRequestablePage> getPageClass()
+        +PageParameters getPageParameters()
+        - -(messaging)- -
+        +PageComponentInfo getPageComponentInfo()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

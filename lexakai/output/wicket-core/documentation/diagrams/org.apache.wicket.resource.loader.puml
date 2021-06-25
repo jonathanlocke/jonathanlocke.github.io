@@ -1,0 +1,77 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.resource.loader"
+    
+    interface IStringResourceLoader
+    
+    IStringResourceLoader <|-- BundleStringResourceLoader
+    class BundleStringResourceLoader
+    {
+        --(constructors)--
+        +BundleStringResourceLoader(String)
+    }
+    
+    ComponentStringResourceLoader <|-- ClassStringResourceLoader
+    class ClassStringResourceLoader
+    {
+        --(constructors)--
+        +ClassStringResourceLoader(Class<?>)
+    }
+    
+    IStringResourceLoader <|-- ComponentStringResourceLoader
+    class ComponentStringResourceLoader
+    {
+        --(constructors)--
+        +ComponentStringResourceLoader()
+        --(factory)--
+        #IPropertiesFactory getPropertiesFactory()
+        #IResourceNameIterator newResourceNameIterator(String path, Locale, String style, String variation)
+        --(path)--
+        #String getResourcePath(Component)
+        --(search)--
+        #boolean isStopResourceSearch(Component)
+        #boolean isStopResourceSearch(Class<?> clazz)
+    }
+    
+    interface IStringResourceLoader
+    {
+        --(read)--
+        +String loadStringResource(Component, String key, Locale, String style, String variation)
+        +String loadStringResource(Class<?> clazz, String key, Locale, String style, String variation)
+    }
+    
+    ComponentStringResourceLoader <|-- InitializerStringResourceLoader
+    class InitializerStringResourceLoader
+    {
+        --(constructors)--
+        +InitializerStringResourceLoader(List<IInitializer>)
+    }
+    
+    IStringResourceLoader <|-- NestedStringResourceLoader
+    class NestedStringResourceLoader
+    {
+        --(constructors)--
+        +NestedStringResourceLoader(List<IStringResourceLoader>, Pattern)
+    }
+    
+    ComponentStringResourceLoader <|-- PackageStringResourceLoader
+    class PackageStringResourceLoader
+    {
+        --(constructors)--
+        +PackageStringResourceLoader()
+        --(filesystem)--
+        +String getFilename()
+        +void setFilename(String filename)
+    }
+    
+    ComponentStringResourceLoader <|-- ValidatorStringResourceLoader
+    class ValidatorStringResourceLoader
+    {
+        --(constructors)--
+        +ValidatorStringResourceLoader()
+    }
+    
+@enduml
+

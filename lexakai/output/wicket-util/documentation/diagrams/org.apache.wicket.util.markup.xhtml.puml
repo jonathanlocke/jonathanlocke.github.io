@@ -1,0 +1,14 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.markup.xhtml"
+    
+    class WellFormedXmlTestCase
+    {
+        --(filesystem)--
+        +void markupFiles()
+    }
+    
+@enduml
+

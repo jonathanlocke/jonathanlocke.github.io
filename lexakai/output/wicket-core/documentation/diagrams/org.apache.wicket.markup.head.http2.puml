@@ -1,0 +1,82 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.head.http2"
+    
+    interface Serializable
+    interface IPushBuilder
+    
+    enum PushItemHeaderValue.HeaderOperation
+    {
+        ADD
+        SET
+    }
+    
+    interface IPushBuilder
+    {
+        --(collection)--
+        +void push(HttpServletRequest, PushItem... pushItems)
+    }
+    
+    IPushBuilder <|-- PushBuilder
+    class PushBuilder
+    {
+    }
+    
+    HeaderItem <|-- PushHeaderItem
+    class PushHeaderItem
+    {
+        --(constructors)--
+        +PushHeaderItem(Page, Request, Response)
+        +PushHeaderItem(Page, Request, Response, IPushBuilder)
+        --
+        #void applyPageCacheHeader()
+        --(checks)--
+        +boolean isHttp2(HttpServletRequest)
+        --(collection)--
+        +PushHeaderItem push(List<PushItem> pushItems)
+        #void push(HttpServletRequest)
+        --(network)--
+        +HttpServletRequest checkHttpServletRequest(Request)
+        +HttpServletRequest getContainerRequest(Request)
+        --(time)--
+        #Instant getPageModificationTime()
+    }
+    
+    Serializable <|-- PushItem
+    class PushItem
+    {
+        --(constructors)--
+        +PushItem()
+        +PushItem(Serializable)
+        +PushItem(Serializable, Map<String, PushItemHeaderValue>)
+        +PushItem(Serializable, PageParameters)
+        +PushItem(Serializable, PageParameters, Map<String, PushItemHeaderValue>)
+        --
+        +Object getObject()
+        +PageParameters getPageParameters()
+        --(collection)--
+        +Map<String,PushItemHeaderValue> getHeaders()
+        +PushItem setHeaders(Map<String,PushItemHeaderValue> headers)
+        +PushItem setObject(Serializable object)
+        +PushItem setPageParameters(PageParameters)
+        +PushItem setUrl(String url)
+        --(network)--
+        +String getUrl()
+    }
+    
+    class PushItemHeaderValue
+    {
+        --(constructors)--
+        +PushItemHeaderValue(String, HeaderOperation)
+        --
+        +String getValue()
+        +void setOperation(HeaderOperation)
+        +void setValue(String value)
+        --(collection)--
+        +HeaderOperation getOperation()
+    }
+    
+@enduml
+

@@ -1,0 +1,555 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="713.5417px" preserveAspectRatio="none" style="width:2070px;height:713px;background:#333333;" version="1.1" viewBox="0 0 2070 713" width="2070.8333px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="456.25" x="800.2604" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="433.3333" x="811.7188" y="30.5583">org.apache.wicket.protocol.ws.api.message</text><!--MD5=[dcf401eccc5516e8fc082334c55b4dfa]
+class AbstractClientMessage--><rect codeLine="18" fill="#282828" height="198.7691" id="AbstractClientMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="301.0417" x="883.8542" y="274.5361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="301.0417" x="883.8542" y="274.5361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="301.0417" x="883.8542" y="297.5911"/><rect codeLine="18" fill="none" height="198.7691" id="AbstractClientMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="301.0417" x="883.8542" y="274.5361"/><ellipse cx="952.6042" cy="290.2303" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M952.1973,286.9324 L951.3489,290.6616 L953.0518,290.6616 Z M951.0986,285.2844 L953.302,285.2844 L955.7617,294.397 L953.9612,294.397 L953.3997,292.1448 L950.9888,292.1448 L950.4395,294.397 L948.6389,294.397 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="148.9583" x="975.5208" y="294.9544">AbstractClientMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="884.8958" x2="1183.8542" y1="305.9245" y2="305.9245"/><ellipse cx="895.3125" cy="341.2944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="268.75" x="906.7708" y="348.2056">AbstractClientMessage(Application, String, IKey)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="884.8958" x2="990.625" y1="324.1302" y2="324.1302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="993.75" y="327.9399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1078.125" x2="1183.8542" y1="324.1302" y2="324.1302"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="884.8958" x2="1183.8542" y1="357.9142" y2="357.9142"/><ellipse cx="895.3125" cy="369.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="156.25" x="906.7708" y="376.2838">Application getApplication()</text><ellipse cx="895.3125" cy="413.029" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="71.875" x="906.7708" y="419.9402">IKey getKey()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="884.8958" x2="1000" y1="395.8649" y2="395.8649"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1003.125" y="399.6745">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1068.75" x2="1183.8542" y1="395.8649" y2="395.8649"/><ellipse cx="895.3125" cy="456.6854" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="906.7708" y="463.5966">String getSessionId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="884.8958" x2="1006.25" y1="439.5213" y2="439.5213"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="1009.375" y="443.3309">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1062.5" x2="1183.8542" y1="439.5213" y2="439.5213"/><!--MD5=[99f0da776665f3933b8121cb43bc9759]
+class IWebSocketMessage--><rect codeLine="74" fill="#282828" height="48.055" id="IWebSocketMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="1093.2292" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="1093.2292" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="167.7083" x="1093.2292" y="187.1745"/><rect codeLine="74" fill="none" height="48.055" id="IWebSocketMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="167.7083" x="1093.2292" y="164.1195"/><ellipse cx="1107.8125" cy="179.8136" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1105.2165,176.9755 L1105.2165,175.3886 L1110.6425,175.3886 L1110.6425,176.9755 L1108.8298,176.9755 L1108.8298,182.9142 L1110.6425,182.9142 L1110.6425,184.5011 L1105.2165,184.5011 L1105.2165,182.9142 L1107.0292,182.9142 L1107.0292,176.9755 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="130.2083" x="1124.4792" y="184.5378">IWebSocketMessage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1094.2708" x2="1259.8958" y1="195.5078" y2="195.5078"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1094.2708" x2="1259.8958" y1="203.8411" y2="203.8411"/><!--MD5=[ff0bd8810286bb45573dc5a78d0858e5]
+class AbortedMessage--><rect codeLine="11" fill="#282828" height="83.3781" id="AbortedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="266.6667" x="7.2917" y="579.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="266.6667" x="7.2917" y="579.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="266.6667" x="7.2917" y="602.7995"/><rect codeLine="11" fill="none" height="83.3781" id="AbortedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="266.6667" x="7.2917" y="579.7445"/><ellipse cx="79.1667" cy="595.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M81.0771,599.8637 Q80.6498,600.0834 80.1799,600.1933 Q79.7099,600.3031 79.1911,600.3031 Q77.3478,600.3031 76.3774,599.0885 Q75.4069,597.8739 75.4069,595.579 Q75.4069,593.278 76.3774,592.0634 Q77.3478,590.8488 79.1911,590.8488 Q79.7099,590.8488 80.186,590.9587 Q80.662,591.0685 81.0771,591.2882 L81.0771,593.2902 Q80.6132,592.863 80.1768,592.6646 Q79.7404,592.4662 79.2765,592.4662 Q78.2878,592.4662 77.7842,593.2505 Q77.2807,594.0348 77.2807,595.579 Q77.2807,597.1171 77.7842,597.9014 Q78.2878,598.6857 79.2765,598.6857 Q79.7404,598.6857 80.1768,598.4873 Q80.6132,598.289 81.0771,597.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="102.0833" y="600.1628">AbortedMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="272.9167" y1="611.1328" y2="611.1328"/><ellipse cx="18.75" cy="646.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="234.375" x="30.2083" y="653.4139">AbortedMessage(Application, String, IKey)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="96.875" y1="629.3386" y2="629.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="100" y="633.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="184.375" x2="272.9167" y1="629.3386" y2="629.3386"/><!--MD5=[bd0ded474f3564c1b978429bd4a1d79c]
+class BinaryMessage--><rect codeLine="31" fill="#282828" height="150.946" id="BinaryMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="358.3333" x="310.4167" y="545.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="358.3333" x="310.4167" y="545.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="358.3333" x="310.4167" y="568.9453"/><rect codeLine="31" fill="none" height="150.946" id="BinaryMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="358.3333" x="310.4167" y="545.8903"/><ellipse cx="433.8542" cy="561.5845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M435.7646,566.0095 Q435.3373,566.2292 434.8674,566.3391 Q434.3974,566.449 433.8786,566.449 Q432.0353,566.449 431.0649,565.2344 Q430.0944,564.0198 430.0944,561.7249 Q430.0944,559.4238 431.0649,558.2092 Q432.0353,556.9946 433.8786,556.9946 Q434.3974,556.9946 434.8735,557.1045 Q435.3495,557.2144 435.7646,557.4341 L435.7646,559.436 Q435.3007,559.0088 434.8643,558.8104 Q434.4279,558.6121 433.964,558.6121 Q432.9753,558.6121 432.4717,559.3964 Q431.9682,560.1807 431.9682,561.7249 Q431.9682,563.2629 432.4717,564.0472 Q432.9753,564.8315 433.964,564.8315 Q434.4279,564.8315 434.8643,564.6332 Q435.3007,564.4348 435.7646,564.0076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="96.875" x="456.7708" y="566.3086">BinaryMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="311.4583" x2="667.7083" y1="577.2786" y2="577.2786"/><ellipse cx="321.875" cy="612.6485" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="326.0417" x="333.3333" y="619.5597">BinaryMessage(WebApplication, String, IKey, byte[], int, int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="311.4583" x2="445.8333" y1="595.4844" y2="595.4844"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="448.9583" y="599.294">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="533.3333" x2="667.7083" y1="595.4844" y2="595.4844"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="311.4583" x2="667.7083" y1="629.2684" y2="629.2684"/><ellipse cx="321.875" cy="640.7267" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="86.4583" x="333.3333" y="647.6379">byte[] getData()</text><ellipse cx="321.875" cy="660.4716" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="333.3333" y="667.3828">int getLength()</text><ellipse cx="321.875" cy="680.2165" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="333.3333" y="687.1277">int getOffset()</text><!--MD5=[1340fab96a1f4f66d346134a9236401c]
+class ClosedMessage--><rect codeLine="42" fill="#282828" height="170.6909" id="ClosedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="319.7917" x="705.7292" y="535.9945"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="319.7917" x="705.7292" y="535.9945"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="319.7917" x="705.7292" y="559.0495"/><rect codeLine="42" fill="none" height="170.6909" id="ClosedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="319.7917" x="705.7292" y="535.9945"/><ellipse cx="807.8125" cy="551.6886" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M809.7229,556.1137 Q809.2957,556.3334 808.8257,556.4433 Q808.3557,556.5531 807.8369,556.5531 Q805.9937,556.5531 805.0232,555.3385 Q804.0527,554.1239 804.0527,551.829 Q804.0527,549.528 805.0232,548.3134 Q805.9937,547.0988 807.8369,547.0988 Q808.3557,547.0988 808.8318,547.2087 Q809.3079,547.3185 809.7229,547.5382 L809.7229,549.5402 Q809.259,549.113 808.8226,548.9146 Q808.3862,548.7162 807.9224,548.7162 Q806.9336,548.7162 806.4301,549.5005 Q805.9265,550.2848 805.9265,551.829 Q805.9265,553.3671 806.4301,554.1514 Q806.9336,554.9357 807.9224,554.9357 Q808.3862,554.9357 808.8226,554.7373 Q809.259,554.539 809.7229,554.1117 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="101.0417" x="830.7292" y="556.4128">ClosedMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="706.7708" x2="1024.4792" y1="567.3828" y2="567.3828"/><ellipse cx="717.1875" cy="602.7527" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="287.5" x="728.6458" y="609.6639">ClosedMessage(Application, String, IKey, int, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="706.7708" x2="821.875" y1="585.5886" y2="585.5886"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="825" y="589.3982">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="909.375" x2="1024.4792" y1="585.5886" y2="585.5886"/><ellipse cx="717.1875" cy="646.4091" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="104.1667" x="728.6458" y="653.3203">int getCloseCode()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="706.7708" x2="853.125" y1="629.245" y2="629.245"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="18.75" x="856.25" y="633.0546">(io)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="878.125" x2="1024.4792" y1="629.245" y2="629.245"/><ellipse cx="717.1875" cy="690.0655" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="728.6458" y="696.9767">String getMessage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="706.7708" x2="828.125" y1="672.9014" y2="672.9014"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="831.25" y="676.711">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="903.125" x2="1024.4792" y1="672.9014" y2="672.9014"/><!--MD5=[41b9381def0e88e9cd3dfade1c30e7e9]
+class ConnectedMessage--><rect codeLine="53" fill="#282828" height="83.3781" id="ConnectedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="281.25" x="1062.5" y="579.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="281.25" x="1062.5" y="579.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="281.25" x="1062.5" y="602.7995"/><rect codeLine="53" fill="none" height="83.3781" id="ConnectedMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="281.25" x="1062.5" y="579.7445"/><ellipse cx="1133.3333" cy="595.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1135.2437,599.8637 Q1134.8165,600.0834 1134.3465,600.1933 Q1133.8765,600.3031 1133.3577,600.3031 Q1131.5145,600.3031 1130.544,599.0885 Q1129.5736,597.8739 1129.5736,595.579 Q1129.5736,593.278 1130.544,592.0634 Q1131.5145,590.8488 1133.3577,590.8488 Q1133.8765,590.8488 1134.3526,590.9587 Q1134.8287,591.0685 1135.2437,591.2882 L1135.2437,593.2902 Q1134.7799,592.863 1134.3435,592.6646 Q1133.9071,592.4662 1133.4432,592.4662 Q1132.4544,592.4662 1131.9509,593.2505 Q1131.4473,594.0348 1131.4473,595.579 Q1131.4473,597.1171 1131.9509,597.9014 Q1132.4544,598.6857 1133.4432,598.6857 Q1133.9071,598.6857 1134.3435,598.4873 Q1134.7799,598.289 1135.2437,597.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="125" x="1156.25" y="600.1628">ConnectedMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1063.5417" x2="1342.7083" y1="611.1328" y2="611.1328"/><ellipse cx="1073.9583" cy="646.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="1085.4167" y="653.4139">ConnectedMessage(Application, String, IKey)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1063.5417" x2="1159.375" y1="629.3386" y2="629.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1162.5" y="633.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1246.875" x2="1342.7083" y1="629.3386" y2="629.3386"/><!--MD5=[838ac959de5e1ba4664740f6291c93a0]
+class ErrorMessage--><rect codeLine="60" fill="#282828" height="111.4563" id="ErrorMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="314.5833" x="1380.2083" y="565.682"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="314.5833" x="1380.2083" y="565.682"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="314.5833" x="1380.2083" y="588.737"/><rect codeLine="60" fill="none" height="111.4563" id="ErrorMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="314.5833" x="1380.2083" y="565.682"/><ellipse cx="1486.4583" cy="581.3761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1488.3687,585.8012 Q1487.9415,586.0209 1487.4715,586.1308 Q1487.0015,586.2406 1486.4827,586.2406 Q1484.6395,586.2406 1483.669,585.026 Q1482.6986,583.8114 1482.6986,581.5165 Q1482.6986,579.2155 1483.669,578.0009 Q1484.6395,576.7863 1486.4827,576.7863 Q1487.0015,576.7863 1487.4776,576.8962 Q1487.9537,577.006 1488.3687,577.2257 L1488.3687,579.2277 Q1487.9049,578.8005 1487.4685,578.6021 Q1487.0321,578.4037 1486.5682,578.4037 Q1485.5794,578.4037 1485.0759,579.188 Q1484.5723,579.9723 1484.5723,581.5165 Q1484.5723,583.0546 1485.0759,583.8389 Q1485.5794,584.6232 1486.5682,584.6232 Q1487.0321,584.6232 1487.4685,584.4248 Q1487.9049,584.2265 1488.3687,583.7992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="1509.375" y="586.1003">ErrorMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1381.25" x2="1693.75" y1="597.0703" y2="597.0703"/><ellipse cx="1391.6667" cy="632.4402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="282.2917" x="1403.125" y="639.3514">ErrorMessage(Application, String, IKey, Throwable)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1381.25" x2="1493.75" y1="615.2761" y2="615.2761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1496.875" y="619.0857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1581.25" x2="1693.75" y1="615.2761" y2="615.2761"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1381.25" x2="1693.75" y1="649.0601" y2="649.0601"/><ellipse cx="1391.6667" cy="660.5184" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="1403.125" y="667.4296">Throwable getThrowable()</text><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="68" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1119.2708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1119.2708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1119.2708" y="76.7578"/><rect codeLine="68" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1119.2708" y="53.7028"/><ellipse cx="1133.8542" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1131.2581,66.5588 L1131.2581,64.9719 L1136.6842,64.9719 L1136.6842,66.5588 L1134.8714,66.5588 L1134.8714,72.4976 L1136.6842,72.4976 L1136.6842,74.0845 L1131.2581,74.0845 L1131.2581,72.4976 L1133.0709,72.4976 L1133.0709,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="1150.5208" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1120.3125" x2="1233.8542" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1120.3125" x2="1233.8542" y1="93.4245" y2="93.4245"/><!--MD5=[85ac22839510d960ce32b6bbcaad574a]
+class IWebSocketPushMessage--><rect codeLine="76" fill="#282828" height="48.055" id="IWebSocketPushMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="1221.3542" y="350.057"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="1221.3542" y="350.057"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="1221.3542" y="373.112"/><rect codeLine="76" fill="none" height="48.055" id="IWebSocketPushMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="1221.3542" y="350.057"/><ellipse cx="1235.9375" cy="365.7511" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1233.3415,362.913 L1233.3415,361.3261 L1238.7675,361.3261 L1238.7675,362.913 L1236.9548,362.913 L1236.9548,368.8517 L1238.7675,368.8517 L1238.7675,370.4386 L1233.3415,370.4386 L1233.3415,368.8517 L1235.1542,368.8517 L1235.1542,362.913 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="1252.6042" y="370.4753">IWebSocketPushMessage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1222.3958" x2="1419.2708" y1="381.4453" y2="381.4453"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1222.3958" x2="1419.2708" y1="389.7786" y2="389.7786"/><!--MD5=[5756c407c546eb76320546df130f846f]
+class TextMessage--><rect codeLine="81" fill="#282828" height="111.4563" id="TextMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="332.2917" x="1731.7708" y="565.682"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="332.2917" x="1731.7708" y="565.682"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="332.2917" x="1731.7708" y="588.737"/><rect codeLine="81" fill="none" height="111.4563" id="TextMessage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="332.2917" x="1731.7708" y="565.682"/><ellipse cx="1848.4375" cy="581.3761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1850.3479,585.8012 Q1849.9207,586.0209 1849.4507,586.1308 Q1848.9807,586.2406 1848.4619,586.2406 Q1846.6187,586.2406 1845.6482,585.026 Q1844.6777,583.8114 1844.6777,581.5165 Q1844.6777,579.2155 1845.6482,578.0009 Q1846.6187,576.7863 1848.4619,576.7863 Q1848.9807,576.7863 1849.4568,576.8962 Q1849.9329,577.006 1850.3479,577.2257 L1850.3479,579.2277 Q1849.884,578.8005 1849.4476,578.6021 Q1849.0112,578.4037 1848.5474,578.4037 Q1847.5586,578.4037 1847.0551,579.188 Q1846.5515,579.9723 1846.5515,581.5165 Q1846.5515,583.0546 1847.0551,583.8389 Q1847.5586,584.6232 1848.5474,584.6232 Q1849.0112,584.6232 1849.4476,584.4248 Q1849.884,584.2265 1850.3479,583.7992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="84.375" x="1871.3542" y="586.1003">TextMessage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1732.8125" x2="2063.0208" y1="597.0703" y2="597.0703"/><ellipse cx="1743.2292" cy="632.4402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="300" x="1754.6875" y="639.3514">TextMessage(Application, String, IKey, CharSequence)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1732.8125" x2="1854.1667" y1="615.2761" y2="615.2761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1857.2917" y="619.0857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1941.6667" x2="2063.0208" y1="615.2761" y2="615.2761"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1732.8125" x2="2063.0208" y1="649.0601" y2="649.0601"/><ellipse cx="1743.2292" cy="660.5184" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1754.6875" y="667.4296">String getText()</text><!--MD5=[2f1fa69f565726d68b751c7350f87d19]
+reverse link AbstractClientMessage to AbortedMessage--><path codeLine="10" d="M863.1146,397.432 C709.875,420.8903 480.8854,464.4632 291.6667,535.9945 C261.4583,547.4111 229.9896,564.1195 203.6458,579.6611 " fill="none" id="AbstractClientMessage-backto-AbortedMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="862.0625,390.2236,883.75,394.3278,864.2396,404.6403,862.0625,390.2236" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9a98fc3561ab290d5fc17816ffba964f]
+reverse link IWebSocketMessage to AbstractClientMessage--><path codeLine="17" d="M1145.9167,229.2757 C1135.4375,242.7757 1123.2292,258.5049 1110.8229,274.484 " fill="none" id="IWebSocketMessage-backto-AbstractClientMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1140.4792,224.3903,1159.0104,212.4007,1152,233.3382,1140.4792,224.3903" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[15bdd1de89516fd3c21dbfc2766162aa]
+reverse link AbstractClientMessage to BinaryMessage--><path codeLine="30" d="M864.2917,451.6403 C797.7292,481.6195 721.625,515.8799 655.4688,545.6715 " fill="none" id="AbstractClientMessage-backto-BinaryMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="861.7188,444.807,883.7083,442.9007,867.6979,458.109,861.7188,444.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[cf758af029ee7ae8131cebda44a67a2f]
+reverse link AbstractClientMessage to ClosedMessage--><path codeLine="41" d="M954.4479,491.2445 C944.1563,506.2132 933.7604,521.3174 923.8958,535.6507 " fill="none" id="AbstractClientMessage-backto-ClosedMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="948.6563,486.807,966.4688,473.7757,960.6667,495.0674,948.6563,486.807" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ddaf318aaa3a81a0fd0dd392bcf2fab3]
+reverse link AbstractClientMessage to ConnectedMessage--><path codeLine="52" d="M1114.3333,491.2965 C1136.1667,523.0257 1158.3854,555.3382 1175.1458,579.6924 " fill="none" id="AbstractClientMessage-backto-ConnectedMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1108.0833,495.0674,1102.2813,473.7757,1120.0938,486.807,1108.0833,495.0674" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4d7900b17f28d3ca370c845f876690d2]
+reverse link AbstractClientMessage to ErrorMessage--><path codeLine="59" d="M1204.2292,473.609 C1275.2083,506.6715 1298.2188,507.9424 1362.5,535.9945 C1383.5208,545.1715 1405.7188,555.4215 1426.9896,565.5361 " fill="none" id="AbstractClientMessage-backto-ErrorMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1200.7604,480.0361,1185.0938,464.484,1207.0417,466.8799,1200.7604,480.0361" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4ed62818e931835b486c41b01594163e]
+reverse link IClusterable to IWebSocketMessage--><path codeLine="69" d="M1177.0833,122.6195 C1177.0833,136.8382 1177.0833,152.0361 1177.0833,164.0986 " fill="none" id="IClusterable-backto-IWebSocketMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1169.7917,122.5153,1177.0833,101.682,1184.375,122.5153,1169.7917,122.5153" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[cb99af9668417c4a34f4fd66b80b7778]
+reverse link IWebSocketMessage to IWebSocketPushMessage--><path codeLine="75" d="M1208.2813,229.0153 C1237.1563,265.9528 1279.0833,319.5778 1302.7708,349.8799 " fill="none" id="IWebSocketMessage-backto-IWebSocketPushMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1202.375,233.307,1195.2917,212.4007,1213.8646,224.3278,1202.375,233.307" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[df6feb2b19aba47b829728c74f0ebc5f]
+reverse link AbstractClientMessage to TextMessage--><path codeLine="80" d="M1205.125,473.359 C1424.0938,542.3903 1499.9479,475.609 1713.5417,535.9945 C1739.9688,543.4632 1767.4063,554.2132 1792.7813,565.557 " fill="none" id="AbstractClientMessage-backto-TextMessage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1202.7813,480.2653,1185.25,466.859,1207.3229,466.4111,1202.7813,480.2653" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[38b90875515b448d15ede6a4395e56d3]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api.message"
+    
+    abstract AbstractClientMessage
+    
+    interface IWebSocketMessage
+    
+    AbstractClientMessage <|- - AbortedMessage
+    class AbortedMessage
+    {
+        - -(constructors)- -
+        +AbortedMessage(Application, String, IKey)
+    }
+    
+    IWebSocketMessage <|- - AbstractClientMessage
+    abstract class AbstractClientMessage
+    {
+        - -(constructors)- -
+        +AbstractClientMessage(Application, String, IKey)
+        - -
+        +Application getApplication()
+        - -(collection)- -
+        +IKey getKey()
+        - -(identity)- -
+        +String getSessionId()
+    }
+    
+    AbstractClientMessage <|- - BinaryMessage
+    class BinaryMessage
+    {
+        - -(constructors)- -
+        +BinaryMessage(WebApplication, String, IKey, byte[], int, int)
+        - -
+        +byte[] getData()
+        +int getLength()
+        +int getOffset()
+    }
+    
+    AbstractClientMessage <|- - ClosedMessage
+    class ClosedMessage
+    {
+        - -(constructors)- -
+        +ClosedMessage(Application, String, IKey, int, String)
+        - -(io)- -
+        +int getCloseCode()
+        - -(messaging)- -
+        +String getMessage()
+    }
+    
+    AbstractClientMessage <|- - ConnectedMessage
+    class ConnectedMessage
+    {
+        - -(constructors)- -
+        +ConnectedMessage(Application, String, IKey)
+    }
+    
+    AbstractClientMessage <|- - ErrorMessage
+    class ErrorMessage
+    {
+        - -(constructors)- -
+        +ErrorMessage(Application, String, IKey, Throwable)
+        - -
+        +Throwable getThrowable()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IWebSocketMessage
+    interface IWebSocketMessage
+    {
+    }
+    
+    interface IWebSocketMessage
+    IWebSocketMessage <|- - IWebSocketPushMessage
+    interface IWebSocketPushMessage
+    {
+    }
+    
+    AbstractClientMessage <|- - TextMessage
+    class TextMessage
+    {
+        - -(constructors)- -
+        +TextMessage(Application, String, IKey, CharSequence)
+        - -
+        +String getText()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.protocol.ws.api.message"
+    
+    abstract AbstractClientMessage
+    
+    interface IWebSocketMessage
+    
+    AbstractClientMessage <|- - AbortedMessage
+    class AbortedMessage
+    {
+        - -(constructors)- -
+        +AbortedMessage(Application, String, IKey)
+    }
+    
+    IWebSocketMessage <|- - AbstractClientMessage
+    abstract class AbstractClientMessage
+    {
+        - -(constructors)- -
+        +AbstractClientMessage(Application, String, IKey)
+        - -
+        +Application getApplication()
+        - -(collection)- -
+        +IKey getKey()
+        - -(identity)- -
+        +String getSessionId()
+    }
+    
+    AbstractClientMessage <|- - BinaryMessage
+    class BinaryMessage
+    {
+        - -(constructors)- -
+        +BinaryMessage(WebApplication, String, IKey, byte[], int, int)
+        - -
+        +byte[] getData()
+        +int getLength()
+        +int getOffset()
+    }
+    
+    AbstractClientMessage <|- - ClosedMessage
+    class ClosedMessage
+    {
+        - -(constructors)- -
+        +ClosedMessage(Application, String, IKey, int, String)
+        - -(io)- -
+        +int getCloseCode()
+        - -(messaging)- -
+        +String getMessage()
+    }
+    
+    AbstractClientMessage <|- - ConnectedMessage
+    class ConnectedMessage
+    {
+        - -(constructors)- -
+        +ConnectedMessage(Application, String, IKey)
+    }
+    
+    AbstractClientMessage <|- - ErrorMessage
+    class ErrorMessage
+    {
+        - -(constructors)- -
+        +ErrorMessage(Application, String, IKey, Throwable)
+        - -
+        +Throwable getThrowable()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IWebSocketMessage
+    interface IWebSocketMessage
+    {
+    }
+    
+    interface IWebSocketMessage
+    IWebSocketMessage <|- - IWebSocketPushMessage
+    interface IWebSocketPushMessage
+    {
+    }
+    
+    AbstractClientMessage <|- - TextMessage
+    class TextMessage
+    {
+        - -(constructors)- -
+        +TextMessage(Application, String, IKey, CharSequence)
+        - -
+        +String getText()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

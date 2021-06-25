@@ -1,0 +1,64 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.http"
+    
+    enum WebResponse.CacheScope
+    {
+        PRIVATE
+        PUBLIC
+    }
+    
+    Request <|-- WebRequest
+    abstract class WebRequest
+    {
+        --
+        +Cookie getCookie(String cookieName)
+        +Instant getDateHeader(String name)
+        +String getHeader(String name)
+        --(checks)--
+        +boolean isAjax()
+        +boolean shouldPreserveClientUrl()
+        --(collection)--
+        +List<Cookie> getCookies()
+        +List<String> getHeaders(String name)
+        --(time)--
+        +Instant getIfModifiedSinceHeader()
+    }
+    
+    Response <|-- WebResponse
+    abstract class WebResponse
+    {
+        --
+        +void disableCaching()
+        +void enableCaching(Duration, WebResponse.CacheScope)
+        +String encodeRedirectURL(CharSequence url)
+        +void setAttachmentHeader(String filename)
+        +void setContentLength(long length)
+        +void setContentRange(String contentRange)
+        +void setContentType(String mimeType)
+        +void setDateHeader(String name, Instant date)
+        +void setHeader(String name, String value)
+        +void setInlineHeader(String filename)
+        --(checks)--
+        +boolean isHeaderSupported()
+        +boolean isRedirect()
+        --(collection)--
+        +void addCookie(Cookie)
+        +void addHeader(String name, String value)
+        +void clearCookie(Cookie)
+        +void setLastModifiedTime(Instant time)
+        --(filtering)--
+        +void setAcceptRange(String acceptRange)
+        --(io)--
+        +void flush()
+        --(messaging)--
+        +void sendRedirect(String url)
+        --(status)--
+        +void sendError(int sc, String msg)
+        +void setStatus(int sc)
+    }
+    
+@enduml
+

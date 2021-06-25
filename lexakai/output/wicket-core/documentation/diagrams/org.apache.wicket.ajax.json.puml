@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.json"
+    
+    interface IClusterable
+    interface CharSequence
+    interface JSONString
+    
+    JSONString <|-- JSONFunction
+    CharSequence <|-- JSONFunction
+    IClusterable <|-- JSONFunction
+    class JSONFunction
+    {
+        --(constructors)--
+        +JSONFunction(CharSequence)
+    }
+    
+    class JsonUtils
+    {
+        --(collection)--
+        +JSONArray asArray(Map<String,Object>)
+    }
+    
+@enduml
+

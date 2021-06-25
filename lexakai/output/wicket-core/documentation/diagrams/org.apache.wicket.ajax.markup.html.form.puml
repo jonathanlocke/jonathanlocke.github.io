@@ -1,0 +1,76 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.markup.html.form"
+    
+    abstract AbstractSubmitLink
+    
+    Button <|-- AjaxButton
+    abstract class AjaxButton
+    {
+        --(constructors)--
+        +AjaxButton(String)
+        +AjaxButton(String, Form<?>)
+        +AjaxButton(String, IModel<String>)
+        +AjaxButton(String, IModel<String>, Form<?>)
+        --
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(factory)--
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        --(messaging)--
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        --(status)--
+        #void onError(AjaxRequestTarget)
+    }
+    
+    CheckBox <|-- AjaxCheckBox
+    abstract class AjaxCheckBox
+    {
+        --(constructors)--
+        +AjaxCheckBox(String)
+        +AjaxCheckBox(String, IModel<Boolean>)
+        --
+        #void onUpdate(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    Button <|-- AjaxFallbackButton
+    abstract class AjaxFallbackButton
+    {
+        --(constructors)--
+        +AjaxFallbackButton(String, Form<?>)
+        +AjaxFallbackButton(String, IModel<String>, Form<?>)
+        --
+        #void onAfterSubmit(Optional<AjaxRequestTarget>)
+        #void onSubmit(Optional<AjaxRequestTarget>)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(checks)--
+        #boolean isButtonEnabled()
+        --(messaging)--
+        #AjaxFormSubmitBehavior newAjaxEventBehavior(Form<?>, String event)
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        --(status)--
+        #void onError(Optional<AjaxRequestTarget>)
+    }
+    
+    AbstractSubmitLink <|-- AjaxSubmitLink
+    abstract class AjaxSubmitLink
+    {
+        --(constructors)--
+        +AjaxSubmitLink(String)
+        +AjaxSubmitLink(String, Form<?>)
+        --
+        #void onAfterSubmit(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(factory)--
+        #AjaxFormSubmitBehavior newAjaxFormSubmitBehavior(String event)
+        --(status)--
+        #void onError(AjaxRequestTarget)
+    }
+    
+@enduml
+

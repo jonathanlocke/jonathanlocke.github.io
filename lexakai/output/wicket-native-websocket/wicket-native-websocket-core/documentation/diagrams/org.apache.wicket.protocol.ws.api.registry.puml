@@ -1,0 +1,54 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.api.registry"
+    
+    interface IKey
+    interface IWebSocketConnectionRegistry
+    
+    interface IClusterable
+    IClusterable <|-- IKey
+    interface IKey
+    {
+    }
+    
+    interface IWebSocketConnectionRegistry
+    {
+        --
+        +IWebSocketConnection getConnection(Application, String sessionId, IKey)
+        +Collection<IWebSocketConnection> getConnections(Application)
+        +Collection<IWebSocketConnection> getConnections(Application, String sessionId)
+        +void setConnection(Application, String sessionId, IKey, IWebSocketConnection)
+        --(collection)--
+        +void removeConnection(Application, String sessionId, IKey)
+    }
+    
+    IKey <|-- PageIdKey
+    class PageIdKey
+    {
+        --(constructors)--
+        +PageIdKey(Integer)
+    }
+    
+    IKey <|-- ResourceNameKey
+    class ResourceNameKey
+    {
+        --(constructors)--
+        +ResourceNameKey(String)
+    }
+    
+    IKey <|-- ResourceNameTokenKey
+    class ResourceNameTokenKey
+    {
+        --(constructors)--
+        +ResourceNameTokenKey(String, String)
+    }
+    
+    IWebSocketConnectionRegistry <|-- SimpleWebSocketConnectionRegistry
+    class SimpleWebSocketConnectionRegistry
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,104 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.breadcrumb"
+    
+    interface IBreadCrumbModelListener
+    interface IClusterable
+    interface IBreadCrumbModel
+    
+    Panel <|-- BreadCrumbBar
+    IBreadCrumbModel <|-- BreadCrumbBar
+    class BreadCrumbBar
+    {
+        --(constructors)--
+        +BreadCrumbBar(String)
+        --
+        #boolean getEnableLinkToCurrent()
+        #String getSeparatorMarkup()
+        --(factory)--
+        #Component newBreadCrumbComponent(String id, long index, int total, IBreadCrumbParticipant)
+    }
+    
+    Panel <|-- BreadCrumbBar.BreadCrumbComponent
+    class BreadCrumbBar.BreadCrumbComponent
+    {
+        --(constructors)--
+        +BreadCrumbComponent(String, String, long, IBreadCrumbModel, IBreadCrumbParticipant, boolean)
+    }
+    
+    Link <|-- BreadCrumbLink
+    abstract class BreadCrumbLink
+    {
+        --(constructors)--
+        +BreadCrumbLink(String, IBreadCrumbModel)
+        --
+        #IBreadCrumbParticipant getParticipant(String componentId)
+    }
+    
+    IClusterable <|-- BreadCrumbModelListenerSupport
+    class BreadCrumbModelListenerSupport
+    {
+        --(messaging)--
+        +void addListener(IBreadCrumbModelListener)
+        +void fireBreadCrumbActivated(IBreadCrumbParticipant previousParticipant, IBreadCrumbParticipant)
+        +void fireBreadCrumbAdded(IBreadCrumbParticipant)
+        +void fireBreadCrumbRemoved(IBreadCrumbParticipant)
+        +void removeListener(IBreadCrumbModelListener)
+    }
+    
+    ListView <|-- BreadCrumbBar.BreadCrumbsListView
+    IBreadCrumbModelListener <|-- BreadCrumbBar.BreadCrumbsListView
+    class BreadCrumbBar.BreadCrumbsListView
+    {
+        --(constructors)--
+        +BreadCrumbsListView(String)
+    }
+    
+    IBreadCrumbModel <|-- DefaultBreadCrumbsModel
+    class DefaultBreadCrumbsModel
+    {
+        --(constructors)--
+        +DefaultBreadCrumbsModel()
+        --
+        #void activate(IBreadCrumbParticipant)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IBreadCrumbModel
+    interface IBreadCrumbModel
+    {
+        --
+        +IBreadCrumbParticipant getActive()
+        +void setActive(IBreadCrumbParticipant)
+        --(collection)--
+        +void addListener(IBreadCrumbModelListener)
+        +List<IBreadCrumbParticipant> allBreadCrumbParticipants()
+        +void removeListener(IBreadCrumbModelListener)
+    }
+    
+    interface EventListener
+    interface IClusterable
+    EventListener <|-- IBreadCrumbModelListener
+    IClusterable <|-- IBreadCrumbModelListener
+    interface IBreadCrumbModelListener
+    {
+        --
+        +void breadCrumbActivated(IBreadCrumbParticipant previousParticipant, IBreadCrumbParticipant)
+        +void breadCrumbAdded(IBreadCrumbParticipant)
+        +void breadCrumbRemoved(IBreadCrumbParticipant)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IBreadCrumbParticipant
+    interface IBreadCrumbParticipant
+    {
+        --
+        +Component getComponent()
+        +IModel<String> getTitle()
+        +void onActivate(IBreadCrumbParticipant previous)
+    }
+    
+@enduml
+

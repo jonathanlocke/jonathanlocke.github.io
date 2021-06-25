@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.niceurl"
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+    }
+    
+    WicketExampleApplication <|-- NiceUrlApplication
+    class NiceUrlApplication
+    {
+    }
+    
+    WicketExamplePage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2(PageParameters)
+    }
+    
+    Page2 <|-- Page2PP
+    class Page2PP
+    {
+        --(constructors)--
+        +Page2PP(PageParameters)
+    }
+    
+    Page2 <|-- Page2UP
+    class Page2UP
+    {
+        --(constructors)--
+        +Page2UP(PageParameters)
+    }
+    
+@enduml
+

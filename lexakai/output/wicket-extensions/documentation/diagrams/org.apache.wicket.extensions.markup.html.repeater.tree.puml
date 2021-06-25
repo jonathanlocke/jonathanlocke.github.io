@@ -1,0 +1,129 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.tree"
+    
+    abstract AbstractTree
+    
+    interface IModel
+    interface IGenericComponent
+    
+    Panel <|-- AbstractTree
+    IGenericComponent <|-- AbstractTree
+    abstract class AbstractTree<T>
+    {
+        --(constructors)--
+        #AbstractTree(String, ITreeProvider<T>)
+        #AbstractTree(String, ITreeProvider<T>, IModel<? extends Set<T>>)
+        --
+        +void collapse(T)
+        +void expand(T)
+        +IItemReuseStrategy getItemReuseStrategy()
+        +ITreeProvider<T> getProvider()
+        +State getState(T)
+        +AbstractTree<T> setItemReuseStrategy(IItemReuseStrategy)
+        +void updateBranch(T node, IPartialPageRequestHandler target)
+        +void updateNode(T node, IPartialPageRequestHandler target)
+        --(factory)--
+        +Component newNodeComponent(String id, IModel<T>)
+        #Component newContentComponent(String id, IModel<T>)
+        #IModel<Set<T>> newModel()
+    }
+    
+    NestedTree <|-- DefaultNestedTree
+    class DefaultNestedTree<T>
+    {
+        --(constructors)--
+        +DefaultNestedTree(String, ITreeProvider<T>)
+        +DefaultNestedTree(String, ITreeProvider<T>, IModel<? extends Set<T>>)
+    }
+    
+    TableTree <|-- DefaultTableTree
+    class DefaultTableTree<T, S>
+    {
+        --(constructors)--
+        +DefaultTableTree(String, List<? extends IColumn<T, S>>, ISortableTreeProvider<T, S>, int)
+        +DefaultTableTree(String, List<? extends IColumn<T, S>>, ISortableTreeProvider<T, S>, int, IModel<? extends Set<T>>)
+    }
+    
+    interface ISortStateLocator
+    interface ITreeProvider
+    ITreeProvider <|-- ISortableTreeProvider
+    ISortStateLocator <|-- ISortableTreeProvider
+    interface ISortableTreeProvider<T, S>
+    {
+    }
+    
+    interface IDetachable
+    IDetachable <|-- ITreeProvider
+    interface ITreeProvider<T>
+    {
+        --
+        +IModel<T> model(T object)
+        --(checks)--
+        +boolean hasChildren(T node)
+        --(collection)--
+        +Iterator<? extends T> getChildren(T node)
+        +Iterator<? extends T> getRoots()
+    }
+    
+    AbstractTree <|-- NestedTree
+    abstract class NestedTree<T>
+    {
+        --(constructors)--
+        +NestedTree(String, ITreeProvider<T>)
+        +NestedTree(String, ITreeProvider<T>, IModel<? extends Set<T>>)
+        --(factory)--
+        +Component newSubtree(String id, IModel<T>)
+    }
+    
+    Panel <|-- Node
+    abstract class Node<T>
+    {
+        --(constructors)--
+        +Node(String, AbstractTree<T>, IModel<T>)
+        --
+        +IModel<T> getModel()
+        +T getModelObject()
+        #Component createContent(String id, IModel<T>)
+        #MarkupContainer createJunctionComponent(String id)
+        #String getCollapsedStyleClass()
+        #String getExpandedStyleClass(T)
+        #String getOtherStyleClass()
+        #String getStyleClass()
+        #void toggle()
+    }
+    
+    IModel <|-- NestedTree.RootsModel
+    class NestedTree.RootsModel
+    {
+    }
+    
+    enum AbstractTree.State
+    {
+        COLLAPSED
+        EXPANDED
+    }
+    
+    Behavior <|-- Node.StyleBehavior
+    class Node.StyleBehavior
+    {
+    }
+    
+    AbstractTree <|-- TableTree
+    abstract class TableTree<T, S>
+    {
+        --(constructors)--
+        +TableTree(String, List<? extends IColumn<T, S>>, ITreeProvider<T>, long)
+        +TableTree(String, List<? extends IColumn<T, S>>, ITreeProvider<T>, long, IModel<? extends Set<T>>)
+        --
+        +DataTable<T,S> getTable()
+        --(factory)--
+        #ITreeDataProvider<T> newDataProvider(ITreeProvider<T>)
+        #DataTable<T,S> newDataTable(String id, List<? extends IColumn<T,S>> columns, IDataProvider<T>, long rowsPerPage)
+        #Item<T> newRowItem(String id, int index, IModel<T>)
+    }
+    
+@enduml
+

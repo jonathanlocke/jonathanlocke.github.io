@@ -1,0 +1,20 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.model"
+    
+    interface IModel
+    
+    IModel <|-- AbstractCheckBoxModel
+    abstract class AbstractCheckBoxModel
+    {
+        --
+        +void select()
+        +void unselect()
+        --(checks)--
+        +boolean isSelected()
+    }
+    
+@enduml
+

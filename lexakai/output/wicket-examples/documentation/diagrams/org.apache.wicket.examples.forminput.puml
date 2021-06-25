@@ -1,0 +1,132 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.forminput"
+    
+    interface IChoiceRenderer
+    interface IClusterable
+    interface IConverter
+    
+    BorderBehavior <|-- BeforeAndAfterBorder
+    class BeforeAndAfterBorder
+    {
+    }
+    
+    WicketExamplePage <|-- FormInput
+    class FormInput
+    {
+        --(constructors)--
+        +FormInput()
+        --
+        +void setLocale(Locale)
+    }
+    
+    WicketExampleApplication <|-- FormInputApplication
+    class FormInputApplication
+    {
+    }
+    
+    IClusterable <|-- FormInputModel
+    class FormInputModel
+    {
+        --(constructors)--
+        +FormInputModel()
+        --
+        +Boolean getBooleanProperty()
+        +String getNumberRadioChoice()
+        +String getNumbersGroup()
+        +UsPhoneNumber getPhoneNumberUS()
+        +Set<String> getSiteSelection()
+        +String getStringProperty()
+        +void setBooleanProperty(Boolean booleanProperty)
+        +void setLines(List<Line> lines)
+        +void setNumberRadioChoice(String favoriteColor)
+        +void setNumbersGroup(String group)
+        +void setPhoneNumberUS(UsPhoneNumber phoneNumberUS)
+        +void setSiteSelection(Set<String> selectedSites)
+        +void setStringProperty(String stringProperty)
+        --(collection)--
+        +List<Line> getLines()
+        +List<String> getNumbersCheckGroup()
+        --(math)--
+        +Integer getMultiply()
+        +void setMultiply(Integer multiply)
+        --(network)--
+        +URL getUrlProperty()
+        +void setUrlProperty(URL urlProperty)
+        --(primitive)--
+        +Double getDoubleProperty()
+        +Integer getIntegerInRangeProperty()
+        +Integer getIntegerProperty()
+        +void setDoubleProperty(Double doubleProperty)
+        +void setIntegerInRangeProperty(Integer integerInRangeProperty)
+        +void setIntegerProperty(Integer integerProperty)
+    }
+    
+    Form <|-- FormInput.InputForm
+    class FormInput.InputForm
+    {
+        --(constructors)--
+        +InputForm(String)
+    }
+    
+    IClusterable <|-- FormInputModel.Line
+    class FormInputModel.Line
+    {
+        --(constructors)--
+        +Line(String)
+        --
+        +String getText()
+        +void setText(String text)
+    }
+    
+    ListView <|-- FormInput.LinesListView
+    class FormInput.LinesListView
+    {
+        --(constructors)--
+        +LinesListView(String)
+    }
+    
+    IChoiceRenderer <|-- FormInput.LocaleChoiceRenderer
+    class FormInput.LocaleChoiceRenderer
+    {
+    }
+    
+    DropDownChoice <|-- FormInput.LocaleDropDownChoice
+    class FormInput.LocaleDropDownChoice
+    {
+        --(constructors)--
+        +LocaleDropDownChoice(String)
+    }
+    
+    FormComponentPanel <|-- Multiply
+    class Multiply
+    {
+        --(constructors)--
+        +Multiply(String)
+        +Multiply(String, IModel<Integer>)
+        --
+        +int getLhs()
+        +int getRhs()
+        +void setLhs(int lhs)
+        +void setRhs(int rhs)
+    }
+    
+    IConverter <|-- FormInput.URLConverter
+    class FormInput.URLConverter
+    {
+    }
+    
+    IClusterable <|-- UsPhoneNumber
+    class UsPhoneNumber
+    {
+        --(constructors)--
+        +UsPhoneNumber(String)
+        --
+        +String getNumber()
+        +void setNumber(String number)
+    }
+    
+@enduml
+

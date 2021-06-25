@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="507.2917px" preserveAspectRatio="none" style="width:1678px;height:507px;background:#333333;" version="1.1" viewBox="0 0 1678 507" width="1678.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="507.2917" x="578.125" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="484.375" x="589.5833" y="30.5583">org.apache.wicket.extensions.breadcrumb.panel</text><!--MD5=[974f8b1325dccd4ac827c45bbaa90fb7]
+class IBreadCrumbPanelFactory--><rect codeLine="48" fill="#282828" height="67.7999" id="IBreadCrumbPanelFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="400" x="7.2917" y="225.5778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="400" x="7.2917" y="225.5778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="400" x="7.2917" y="248.6328"/><rect codeLine="48" fill="none" height="67.7999" id="IBreadCrumbPanelFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="400" x="7.2917" y="225.5778"/><ellipse cx="117.1875" cy="241.272" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M114.5915,238.4338 L114.5915,236.8469 L120.0175,236.8469 L120.0175,238.4338 L118.2048,238.4338 L118.2048,244.3726 L120.0175,244.3726 L120.0175,245.9595 L114.5915,245.9595 L114.5915,244.3726 L116.4042,244.3726 L116.4042,238.4338 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="165.625" x="140.1042" y="245.9961">IBreadCrumbPanelFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="406.25" y1="256.9661" y2="256.9661"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="406.25" y1="265.2995" y2="265.2995"/><ellipse cx="18.75" cy="276.7578" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="367.7083" x="30.2083" y="283.669">BreadCrumbPanel create(String componentId, IBreadCrumbModel)</text><!--MD5=[dcb60d631e9d265dd911eaf93833fa82]
+class IBreadCrumbParticipant--><rect codeLine="7" fill="#282828" height="48.055" id="IBreadCrumbParticipant" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="785.9375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="785.9375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="190.625" x="785.9375" y="76.7578"/><rect codeLine="7" fill="none" height="48.055" id="IBreadCrumbParticipant" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="190.625" x="785.9375" y="53.7028"/><ellipse cx="800.5208" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M797.9248,66.5588 L797.9248,64.9719 L803.3508,64.9719 L803.3508,66.5588 L801.5381,66.5588 L801.5381,72.4976 L803.3508,72.4976 L803.3508,74.0845 L797.9248,74.0845 L797.9248,72.4976 L799.7375,72.4976 L799.7375,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="153.125" x="817.1875" y="74.1211">IBreadCrumbParticipant</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="786.9792" x2="975.5208" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="786.9792" x2="975.5208" y1="93.4245" y2="93.4245"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="583.8542" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="583.8542" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="583.8542" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="583.8542" y="53.7028"/><ellipse cx="598.4375" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M600.3479,73.822 Q599.9207,74.0417 599.4507,74.1516 Q598.9807,74.2615 598.4619,74.2615 Q596.6187,74.2615 595.6482,73.0469 Q594.6777,71.8323 594.6777,69.5374 Q594.6777,67.2363 595.6482,66.0217 Q596.6187,64.8071 598.4619,64.8071 Q598.9807,64.8071 599.4568,64.917 Q599.9329,65.0269 600.3479,65.2466 L600.3479,67.2485 Q599.884,66.8213 599.4476,66.6229 Q599.0112,66.4246 598.5474,66.4246 Q597.5586,66.4246 597.0551,67.2089 Q596.5515,67.9932 596.5515,69.5374 Q596.5515,71.0754 597.0551,71.8597 Q597.5586,72.644 598.5474,72.644 Q599.0112,72.644 599.4476,72.4457 Q599.884,72.2473 600.3479,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="615.1042" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="584.8958" x2="654.6875" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="584.8958" x2="654.6875" y1="93.4245" y2="93.4245"/><!--MD5=[08de487c2c2ea5ea6cb494533fd0b87b]
+class BreadCrumbPanel--><rect codeLine="11" fill="#282828" height="190.4358" id="BreadCrumbPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="352.0833" x="443.75" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="352.0833" x="443.75" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="352.0833" x="443.75" y="187.1745"/><rect codeLine="11" fill="none" height="190.4358" id="BreadCrumbPanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="352.0833" x="443.75" y="164.1195"/><ellipse cx="555.2083" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M554.8014,176.5157 L553.953,180.245 L555.6559,180.245 Z M553.7028,174.8678 L555.9062,174.8678 L558.3659,183.9803 L556.5653,183.9803 L556.0038,181.7281 L553.5929,181.7281 L553.0436,183.9803 L551.2431,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="114.5833" x="578.125" y="184.5378">BreadCrumbPanel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="444.7917" x2="794.7917" y1="195.5078" y2="195.5078"/><ellipse cx="455.2083" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="466.6667" y="237.7889">BreadCrumbPanel(String, IBreadCrumbModel)</text><ellipse cx="455.2083" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="319.7917" x="466.6667" y="257.5338">BreadCrumbPanel(String, IBreadCrumbModel, IModel&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="444.7917" x2="576.0417" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="579.1667" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="663.5417" x2="794.7917" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="444.7917" x2="794.7917" y1="267.2424" y2="267.2424"/><ellipse cx="455.2083" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="221.875" x="466.6667" y="285.612">void activate(IBreadCrumbPanelFactory)</text><ellipse cx="455.2083" cy="298.4456" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="466.6667" y="305.3569">void activate(IBreadCrumbParticipant)</text><ellipse cx="455.2083" cy="318.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="466.6667" y="325.1017">IBreadCrumbModel getBreadCrumbModel()</text><ellipse cx="455.2083" cy="337.9354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="261.4583" x="466.6667" y="344.8466">void setBreadCrumbModel(IBreadCrumbModel)</text><!--MD5=[ee36225a9cc19c8f471f33883d9725d9]
+class BreadCrumbPanelFactory--><rect codeLine="24" fill="#282828" height="83.3781" id="BreadCrumbPanelFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="385.4167" x="14.5833" y="417.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="385.4167" x="14.5833" y="417.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="385.4167" x="14.5833" y="440.2995"/><rect codeLine="24" fill="none" height="83.3781" id="BreadCrumbPanelFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="385.4167" x="14.5833" y="417.2445"/><ellipse cx="119.2708" cy="432.9386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M121.1812,437.3637 Q120.754,437.5834 120.284,437.6933 Q119.814,437.8031 119.2952,437.8031 Q117.452,437.8031 116.4815,436.5885 Q115.5111,435.3739 115.5111,433.079 Q115.5111,430.778 116.4815,429.5634 Q117.452,428.3488 119.2952,428.3488 Q119.814,428.3488 120.2901,428.4587 Q120.7662,428.5685 121.1812,428.7882 L121.1812,430.7902 Q120.7174,430.363 120.281,430.1646 Q119.8446,429.9662 119.3807,429.9662 Q118.3919,429.9662 117.8884,430.7505 Q117.3848,431.5348 117.3848,433.079 Q117.3848,434.6171 117.8884,435.4014 Q118.3919,436.1857 119.3807,436.1857 Q119.8446,436.1857 120.281,435.9873 Q120.7174,435.789 121.1812,435.3617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="142.1875" y="437.6628">BreadCrumbPanelFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="15.625" x2="398.9583" y1="448.6328" y2="448.6328"/><ellipse cx="26.0417" cy="484.0027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="353.125" x="37.5" y="490.9139">BreadCrumbPanelFactory(Class&lt;? extends BreadCrumbPanel&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="15.625" x2="163.5417" y1="466.8386" y2="466.8386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="166.6667" y="470.6482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="251.0417" x2="398.9583" y1="466.8386" y2="466.8386"/><!--MD5=[61b0c7588a7ac2441504a4a17e8862d1]
+class BreadCrumbLink--><rect fill="#282828" height="48.055" id="BreadCrumbLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="1338.5417" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="1338.5417" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="1338.5417" y="76.7578"/><rect fill="none" height="48.055" id="BreadCrumbLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="1338.5417" y="53.7028"/><ellipse cx="1353.125" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1355.0354,73.822 Q1354.6082,74.0417 1354.1382,74.1516 Q1353.6682,74.2615 1353.1494,74.2615 Q1351.3062,74.2615 1350.3357,73.0469 Q1349.3652,71.8323 1349.3652,69.5374 Q1349.3652,67.2363 1350.3357,66.0217 Q1351.3062,64.8071 1353.1494,64.8071 Q1353.6682,64.8071 1354.1443,64.917 Q1354.6204,65.0269 1355.0354,65.2466 L1355.0354,67.2485 Q1354.5715,66.8213 1354.1351,66.6229 Q1353.6987,66.4246 1353.2349,66.4246 Q1352.2461,66.4246 1351.7426,67.2089 Q1351.239,67.9932 1351.239,69.5374 Q1351.239,71.0754 1351.7426,71.8597 Q1352.2461,72.644 1353.2349,72.644 Q1353.6987,72.644 1354.1351,72.4457 Q1354.5715,72.2473 1355.0354,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="1369.7917" y="74.1211">BreadCrumbLink</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1339.5833" x2="1483.3333" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1339.5833" x2="1483.3333" y1="93.4245" y2="93.4245"/><!--MD5=[3ca23801393fbdfdde31ec22614c4ae2]
+class BreadCrumbPanelLink--><rect codeLine="31" fill="#282828" height="122.8678" id="BreadCrumbPanelLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="518.75" x="1152.0833" y="197.9736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="518.75" x="1152.0833" y="197.9736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="518.75" x="1152.0833" y="221.0286"/><rect codeLine="31" fill="none" height="122.8678" id="BreadCrumbPanelLink" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="518.75" x="1152.0833" y="197.9736"/><ellipse cx="1332.8125" cy="213.6678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1334.7229,218.0929 Q1334.2957,218.3126 1333.8257,218.4224 Q1333.3557,218.5323 1332.8369,218.5323 Q1330.9937,218.5323 1330.0232,217.3177 Q1329.0527,216.1031 1329.0527,213.8082 Q1329.0527,211.5072 1330.0232,210.2926 Q1330.9937,209.078 1332.8369,209.078 Q1333.3557,209.078 1333.8318,209.1878 Q1334.3079,209.2977 1334.7229,209.5174 L1334.7229,211.5194 Q1334.259,211.0921 1333.8226,210.8938 Q1333.3862,210.6954 1332.9224,210.6954 Q1331.9336,210.6954 1331.4301,211.4797 Q1330.9265,212.264 1330.9265,213.8082 Q1330.9265,215.3463 1331.4301,216.1306 Q1331.9336,216.9149 1332.9224,216.9149 Q1333.3862,216.9149 1333.8226,216.7165 Q1334.259,216.5181 1334.7229,216.0909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="142.7083" x="1355.7292" y="218.3919">BreadCrumbPanelLink</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1153.125" x2="1669.7917" y1="229.362" y2="229.362"/><ellipse cx="1163.5417" cy="264.7319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="479.1667" x="1175" y="271.6431">BreadCrumbPanelLink(String, BreadCrumbPanel, Class&lt;? extends BreadCrumbPanel&gt;)</text><ellipse cx="1163.5417" cy="284.4767" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="486.4583" x="1175" y="291.3879">BreadCrumbPanelLink(String, IBreadCrumbModel, Class&lt;? extends BreadCrumbPanel&gt;)</text><ellipse cx="1163.5417" cy="304.2216" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="426.0417" x="1175" y="311.1328">BreadCrumbPanelLink(String, IBreadCrumbModel, IBreadCrumbPanelFactory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1153.125" x2="1367.7083" y1="247.5677" y2="247.5677"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1370.8333" y="251.3774">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1455.2083" x2="1669.7917" y1="247.5677" y2="247.5677"/><!--MD5=[299315977db6cc6a392384bb3780c7d5]
+class BreadCrumbParticipantDelegate--><rect codeLine="40" fill="#282828" height="83.3781" id="BreadCrumbParticipantDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="283.3333" x="832.2917" y="217.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="283.3333" x="832.2917" y="217.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="283.3333" x="832.2917" y="240.8203"/><rect codeLine="40" fill="none" height="83.3781" id="BreadCrumbParticipantDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="283.3333" x="832.2917" y="217.7653"/><ellipse cx="864.6875" cy="233.4595" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M864.2806,230.1615 L863.4322,233.8908 L865.1351,233.8908 Z M863.182,228.5136 L865.3853,228.5136 L867.8451,237.6261 L866.0445,237.6261 L865.483,235.3739 L863.0721,235.3739 L862.5228,237.6261 L860.7222,237.6261 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="206.25" x="885.3125" y="238.1836">BreadCrumbParticipantDelegate</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="833.3333" x2="1114.5833" y1="249.1536" y2="249.1536"/><ellipse cx="843.75" cy="284.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="855.2083" y="291.4347">BreadCrumbParticipantDelegate(Component)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="833.3333" x2="930.2083" y1="267.3594" y2="267.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="933.3333" y="271.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1017.7083" x2="1114.5833" y1="267.3594" y2="267.3594"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="46" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="149.4792" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="149.4792" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="149.4792" y="76.7578"/><rect codeLine="46" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="149.4792" y="53.7028"/><ellipse cx="164.0625" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M161.4665,66.5588 L161.4665,64.9719 L166.8925,64.9719 L166.8925,66.5588 L165.0798,66.5588 L165.0798,72.4976 L166.8925,72.4976 L166.8925,74.0845 L161.4665,74.0845 L161.4665,72.4976 L163.2792,72.4976 L163.2792,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="180.7292" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="150.5208" x2="264.0625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="150.5208" x2="264.0625" y1="93.4245" y2="93.4245"/><!--MD5=[ec4a575c2e1310c06b31f93eb2da58ed]
+reverse link Panel to BreadCrumbPanel--><path codeLine="9" d="M619.7917,122.8695 C619.7917,135.359 619.7917,149.4528 619.7917,163.7132 " fill="none" id="Panel-backto-BreadCrumbPanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="612.5,122.6611,619.7917,101.8278,627.0833,122.6611,612.5,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1b080344288d9adfc7412698a1d26382]
+reverse link IBreadCrumbParticipant to BreadCrumbPanel--><path codeLine="10" d="M830.4792,113.5986 C809.2292,128.2028 783.3958,145.9528 757.2188,163.9424 " fill="none" id="IBreadCrumbParticipant-backto-BreadCrumbPanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="826.5729,107.432,847.875,101.6403,834.8333,119.4528,826.5729,107.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[548b960bf54ae5b1c12627d0c8797956]
+reverse link IBreadCrumbPanelFactory to BreadCrumbPanelFactory--><path codeLine="23" d="M207.2917,314.4215 C207.2917,346.859 207.2917,387.4736 207.2917,417.1924 " fill="none" id="IBreadCrumbPanelFactory-backto-BreadCrumbPanelFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="200,314.3486,207.2917,293.5153,214.5833,314.3486,200,314.3486" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8db944bd66f7e8c810e72522ae088ea9]
+reverse link BreadCrumbLink to BreadCrumbPanelLink--><path codeLine="30" d="M1411.4583,122.7549 C1411.4583,145.3799 1411.4583,173.307 1411.4583,197.9215 " fill="none" id="BreadCrumbLink-backto-BreadCrumbPanelLink" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1404.1667,122.6611,1411.4583,101.8278,1418.75,122.6611,1404.1667,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ff4d53aaebf195f0614a9fb9187a199a]
+reverse link IBreadCrumbParticipant to BreadCrumbParticipantDelegate--><path codeLine="39" d="M902.9167,120.7028 C917.9792,149.8903 937.9479,188.5986 952.875,217.5361 " fill="none" id="IBreadCrumbParticipant-backto-BreadCrumbParticipantDelegate" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="896.25,123.682,893.1771,101.8278,909.2083,116.9945,896.25,123.682" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ad943e11ef6a31f4ced12e8b51ee43d4]
+reverse link IClusterable to IBreadCrumbPanelFactory--><path codeLine="47" d="M207.2917,122.7132 C207.2917,154.3903 207.2917,196.4424 207.2917,225.2861 " fill="none" id="IClusterable-backto-IBreadCrumbPanelFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="200,122.6611,207.2917,101.8278,214.5833,122.6611,200,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[43c27f6c206de6d57f8fd70788970be1]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.breadcrumb.panel"
+    
+    interface IBreadCrumbPanelFactory
+    interface IBreadCrumbParticipant
+    
+    Panel <|- - BreadCrumbPanel
+    IBreadCrumbParticipant <|- - BreadCrumbPanel
+    abstract class BreadCrumbPanel
+    {
+        - -(constructors)- -
+        +BreadCrumbPanel(String, IBreadCrumbModel)
+        +BreadCrumbPanel(String, IBreadCrumbModel, IModel<?>)
+        - -
+        +void activate(IBreadCrumbPanelFactory)
+        +void activate(IBreadCrumbParticipant)
+        +IBreadCrumbModel getBreadCrumbModel()
+        +void setBreadCrumbModel(IBreadCrumbModel)
+    }
+    
+    IBreadCrumbPanelFactory <|- - BreadCrumbPanelFactory
+    class BreadCrumbPanelFactory
+    {
+        - -(constructors)- -
+        +BreadCrumbPanelFactory(Class<? extends BreadCrumbPanel>)
+    }
+    
+    BreadCrumbLink <|- - BreadCrumbPanelLink
+    class BreadCrumbPanelLink
+    {
+        - -(constructors)- -
+        +BreadCrumbPanelLink(String, BreadCrumbPanel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, IBreadCrumbPanelFactory)
+    }
+    
+    IBreadCrumbParticipant <|- - BreadCrumbParticipantDelegate
+    abstract class BreadCrumbParticipantDelegate
+    {
+        - -(constructors)- -
+        +BreadCrumbParticipantDelegate(Component)
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IBreadCrumbPanelFactory
+    interface IBreadCrumbPanelFactory
+    {
+        - -
+        +BreadCrumbPanel create(String componentId, IBreadCrumbModel)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.breadcrumb.panel"
+    
+    interface IBreadCrumbPanelFactory
+    interface IBreadCrumbParticipant
+    
+    Panel <|- - BreadCrumbPanel
+    IBreadCrumbParticipant <|- - BreadCrumbPanel
+    abstract class BreadCrumbPanel
+    {
+        - -(constructors)- -
+        +BreadCrumbPanel(String, IBreadCrumbModel)
+        +BreadCrumbPanel(String, IBreadCrumbModel, IModel<?>)
+        - -
+        +void activate(IBreadCrumbPanelFactory)
+        +void activate(IBreadCrumbParticipant)
+        +IBreadCrumbModel getBreadCrumbModel()
+        +void setBreadCrumbModel(IBreadCrumbModel)
+    }
+    
+    IBreadCrumbPanelFactory <|- - BreadCrumbPanelFactory
+    class BreadCrumbPanelFactory
+    {
+        - -(constructors)- -
+        +BreadCrumbPanelFactory(Class<? extends BreadCrumbPanel>)
+    }
+    
+    BreadCrumbLink <|- - BreadCrumbPanelLink
+    class BreadCrumbPanelLink
+    {
+        - -(constructors)- -
+        +BreadCrumbPanelLink(String, BreadCrumbPanel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, Class<? extends BreadCrumbPanel>)
+        +BreadCrumbPanelLink(String, IBreadCrumbModel, IBreadCrumbPanelFactory)
+    }
+    
+    IBreadCrumbParticipant <|- - BreadCrumbParticipantDelegate
+    abstract class BreadCrumbParticipantDelegate
+    {
+        - -(constructors)- -
+        +BreadCrumbParticipantDelegate(Component)
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IBreadCrumbPanelFactory
+    interface IBreadCrumbPanelFactory
+    {
+        - -
+        +BreadCrumbPanel create(String componentId, IBreadCrumbModel)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,42 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.watch"
+    
+    interface IModificationWatcher
+    
+    class ModificationWatcher.Entry
+    {
+    }
+    
+    interface IModifiable
+    {
+        --(time)--
+        +Instant lastModifiedTime()
+    }
+    
+    interface IModificationWatcher
+    {
+        --
+        +void destroy()
+        +Set<IModifiable> getEntries()
+        --(collection)--
+        +boolean add(IModifiable, IChangeListener<IModifiable>)
+        +IModifiable remove(IModifiable)
+        --(lifecycle)--
+        +void start(Duration pollFrequency)
+    }
+    
+    IModificationWatcher <|-- ModificationWatcher
+    class ModificationWatcher
+    {
+        --(constructors)--
+        +ModificationWatcher()
+        +ModificationWatcher(Duration)
+        --(time)--
+        #void checkModified()
+    }
+    
+@enduml
+

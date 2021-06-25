@@ -1,0 +1,36 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.velocity"
+    
+    interface IInitializer
+    
+    IInitializer <|-- Initializer
+    class Initializer
+    {
+    }
+    
+    Behavior <|-- VelocityContributor
+    class VelocityContributor
+    {
+        --(constructors)--
+        +VelocityContributor(String, IModel<? extends Map<String, Object>>)
+        --
+        +String getEncoding()
+        +void setEncoding(String encoding)
+        #boolean escapeHtml()
+        --(primitive)--
+        #CharSequence evaluate()
+    }
+    
+    VelocityContributor <|-- VelocityJavaScriptContributor
+    class VelocityJavaScriptContributor
+    {
+        --(constructors)--
+        +VelocityJavaScriptContributor(Class<?>, String, IModel<? extends Map<String, Object>>, String)
+        +VelocityJavaScriptContributor(String, IModel<? extends Map<String, Object>>, String)
+    }
+    
+@enduml
+

@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.ajax.prototype"
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+        --(collection)--
+        +int getCount()
+    }
+    
+    WicketExampleApplication <|-- PrototypeApplication
+    class PrototypeApplication
+    {
+    }
+    
+@enduml
+

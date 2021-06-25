@@ -1,0 +1,43 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.mapper.info"
+    
+    class ComponentInfo
+    {
+        --(constructors)--
+        +ComponentInfo(Integer, String, Integer)
+        --(collection)--
+        +Integer getRenderCount()
+        --(identity)--
+        +Integer getBehaviorId()
+        --(messaging)--
+        +ComponentInfo parse(String)
+        --(path)--
+        +String getComponentPath()
+    }
+    
+    class PageComponentInfo
+    {
+        --(constructors)--
+        +PageComponentInfo(PageInfo, ComponentInfo)
+        --(messaging)--
+        +ComponentInfo getComponentInfo()
+        +PageInfo getPageInfo()
+        +PageComponentInfo parse(String)
+    }
+    
+    class PageInfo
+    {
+        --(constructors)--
+        +PageInfo()
+        +PageInfo(Integer)
+        --(identity)--
+        +Integer getPageId()
+        --(messaging)--
+        +PageInfo parse(String src)
+    }
+    
+@enduml
+

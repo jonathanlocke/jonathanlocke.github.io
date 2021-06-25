@@ -1,0 +1,120 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.media"
+    
+    enum MediaComponent.Cors
+    {
+        ANONYMOUS
+        NO_CORS
+        USER_CREDENTIALS
+    }
+    
+    enum Track.Kind
+    {
+        CAPTIONS
+        CHAPTERS
+        DESCRIPTIONS
+        METADATA
+        SUBTITLES
+    }
+    
+    WebMarkupContainer <|-- MediaComponent
+    abstract class MediaComponent
+    {
+        --(constructors)--
+        +MediaComponent(String)
+        +MediaComponent(String, IModel<?>)
+        +MediaComponent(String, IModel<?>, ResourceReference)
+        +MediaComponent(String, IModel<?>, ResourceReference, PageParameters)
+        +MediaComponent(String, IModel<?>, String)
+        +MediaComponent(String, IModel<?>, String, PageParameters)
+        +MediaComponent(String, ResourceReference)
+        +MediaComponent(String, ResourceReference, PageParameters)
+        +MediaComponent(String, String)
+        --
+        +Cors getCrossOrigin()
+        +String getMediaGroup()
+        +PageParameters getPageParameters()
+        +Preload getPreload()
+        +String getType()
+        +void setAutoplay(boolean autoplay)
+        +void setControls(Boolean controls)
+        +void setCrossOrigin(Cors crossOrigin)
+        +void setLooping(boolean loop)
+        +void setMediaGroup(String mediaGroup)
+        +void setMuted(boolean muted)
+        +void setPageParameters(PageParameters)
+        +void setPreload(Preload)
+        +void setType(String type)
+        --(checks)--
+        +boolean hasControls()
+        +boolean isAutoplay()
+        +boolean isLooping()
+        +boolean isMuted()
+        --(time)--
+        +String getEndTime()
+        +String getStartTime()
+        +void setEndTime(String endTime)
+        +void setStartTime(String startTime)
+    }
+    
+    enum MediaComponent.Preload
+    {
+        AUTO
+        METADATA
+        NONE
+    }
+    
+    WebMarkupContainer <|-- Source
+    class Source
+    {
+        --(constructors)--
+        +Source(String)
+        +Source(String, IModel<?>)
+        +Source(String, IModel<?>, ResourceReference)
+        +Source(String, IModel<?>, ResourceReference, PageParameters)
+        +Source(String, IModel<?>, String)
+        +Source(String, ResourceReference)
+        +Source(String, ResourceReference, PageParameters)
+        +Source(String, String)
+        --
+        +boolean getDisplayType()
+        +String getMedia()
+        +PageParameters getPageParameters()
+        +String getType()
+        +void setDisplayType(boolean displayType)
+        +void setMedia(String media)
+        +void setPageParameters(PageParameters)
+        +void setType(String type)
+    }
+    
+    WebMarkupContainer <|-- Track
+    class Track
+    {
+        --(constructors)--
+        +Track(String)
+        +Track(String, IModel<?>)
+        +Track(String, IModel<?>, ResourceReference)
+        +Track(String, IModel<?>, ResourceReference, PageParameters)
+        +Track(String, IModel<?>, String)
+        +Track(String, ResourceReference)
+        +Track(String, ResourceReference, PageParameters)
+        +Track(String, String)
+        --
+        +Kind getKind()
+        +String getLabel()
+        +PageParameters getPageParameters()
+        +Locale getSrclang()
+        +void setDefaultTrack(Boolean defaultTrack)
+        +void setKind(Kind)
+        +void setLabel(String label)
+        +void setPageParameters(PageParameters)
+        +void setSrclang(Locale srclang)
+        --(checks)--
+        +boolean isDefaultTrack()
+    }
+    
+@enduml
+

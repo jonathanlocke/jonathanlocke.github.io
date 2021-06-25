@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.model.util"
+    
+    interface IObjectClassAwareModel
+    
+    GenericBaseModel <|-- CollectionModel
+    class CollectionModel<T>
+    {
+        --(constructors)--
+        +CollectionModel()
+        +CollectionModel(Collection<T>)
+    }
+    
+    IObjectClassAwareModel <|-- GenericBaseModel
+    abstract class GenericBaseModel<T>
+    {
+        --(identity)--
+        #T createSerializableVersionOf(T object)
+    }
+    
+    GenericBaseModel <|-- ListModel
+    class ListModel<T>
+    {
+        --(constructors)--
+        +ListModel()
+        +ListModel(List<T>)
+    }
+    
+    GenericBaseModel <|-- MapModel
+    class MapModel<K, V>
+    {
+        --(constructors)--
+        +MapModel()
+        +MapModel(Map<K, V>)
+    }
+    
+    GenericBaseModel <|-- SetModel
+    class SetModel<T>
+    {
+        --(constructors)--
+        +SetModel()
+        +SetModel(Set<T>)
+    }
+    
+@enduml
+

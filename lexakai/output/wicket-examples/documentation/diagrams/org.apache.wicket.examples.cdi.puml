@@ -1,0 +1,90 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.cdi"
+    
+    interface Serializable
+    interface ConversationalComponent
+    
+    Counter <|-- ApplicationCounter
+    class ApplicationCounter
+    {
+    }
+    
+    CdiExamplePage <|-- AutoConversationPage1
+    ConversationalComponent <|-- AutoConversationPage1
+    class AutoConversationPage1
+    {
+        --(constructors)--
+        +AutoConversationPage1()
+    }
+    
+    CdiExamplePage <|-- AutoConversationPage2
+    class AutoConversationPage2
+    {
+        --(constructors)--
+        +AutoConversationPage2()
+    }
+    
+    WicketExampleApplication <|-- CdiApplication
+    class CdiApplication
+    {
+    }
+    
+    WicketExamplePage <|-- CdiExamplePage
+    abstract class CdiExamplePage
+    {
+    }
+    
+    CdiExamplePage <|-- CdiHomePage
+    class CdiHomePage
+    {
+        --(constructors)--
+        +CdiHomePage()
+    }
+    
+    Counter <|-- ConversationCounter
+    class ConversationCounter
+    {
+    }
+    
+    CdiExamplePage <|-- ConversationPage1
+    class ConversationPage1
+    {
+        --(constructors)--
+        +ConversationPage1()
+    }
+    
+    CdiExamplePage <|-- ConversationPage2
+    class ConversationPage2
+    {
+        --(constructors)--
+        +ConversationPage2()
+    }
+    
+    CdiExamplePage <|-- ConversationPage3
+    class ConversationPage3
+    {
+        --(constructors)--
+        +ConversationPage3()
+    }
+    
+    Serializable <|-- Counter
+    abstract class Counter
+    {
+        --(collection)--
+        +int getCount()
+        --(math)--
+        +void increment()
+    }
+    
+    CdiExamplePage <|-- InjectionPage
+    class InjectionPage
+    {
+        --(constructors)--
+        +InjectionPage()
+    }
+    
+@enduml
+

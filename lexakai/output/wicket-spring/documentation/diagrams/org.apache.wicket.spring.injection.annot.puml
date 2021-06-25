@@ -1,0 +1,43 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.spring.injection.annot"
+    
+    interface IFieldValueFactory
+    interface ISpringContextLocator
+    interface IBehaviorInstantiationListener
+    interface IComponentInstantiationListener
+    
+    IFieldValueFactory <|-- AnnotProxyFieldValueFactory
+    class AnnotProxyFieldValueFactory
+    {
+        --(constructors)--
+        +AnnotProxyFieldValueFactory(ISpringContextLocator)
+        +AnnotProxyFieldValueFactory(ISpringContextLocator, boolean)
+        --
+        +BeanDefinition getBeanDefinition(ConfigurableListableBeanFactory, String name)
+    }
+    
+    ISpringContextLocator <|-- SpringComponentInjector.ContextLocator
+    class SpringComponentInjector.ContextLocator
+    {
+    }
+    
+    annotation SpringBean
+    
+    Injector <|-- SpringComponentInjector
+    IComponentInstantiationListener <|-- SpringComponentInjector
+    IBehaviorInstantiationListener <|-- SpringComponentInjector
+    class SpringComponentInjector
+    {
+        --(constructors)--
+        +SpringComponentInjector(WebApplication)
+        +SpringComponentInjector(WebApplication, ApplicationContext)
+        +SpringComponentInjector(WebApplication, ApplicationContext, boolean)
+        --
+        +void setDefaultContext(WebApplication, ApplicationContext)
+    }
+    
+@enduml
+

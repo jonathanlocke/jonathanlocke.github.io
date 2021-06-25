@@ -1,0 +1,51 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.authentication3"
+    
+    abstract BasePage
+    
+    BasePage <|-- AdminPage
+    class AdminPage
+    {
+    }
+    
+    WicketExamplePage <|-- BasePage
+    class BasePage
+    {
+    }
+    
+    BasePage <|-- HomePage
+    class HomePage
+    {
+    }
+    
+    AuthenticatedWebApplication <|-- MyAuthenticatedWebApplication
+    class MyAuthenticatedWebApplication
+    {
+    }
+    
+    AuthenticatedWebSession <|-- MyAuthenticatedWebSession
+    class MyAuthenticatedWebSession
+    {
+        --(constructors)--
+        +MyAuthenticatedWebSession(Request)
+    }
+    
+    WicketExamplePage <|-- MySignInPage
+    class MySignInPage
+    {
+        --(constructors)--
+        +MySignInPage()
+    }
+    
+    WicketExamplePage <|-- SignOut
+    class SignOut
+    {
+        --(constructors)--
+        +SignOut()
+    }
+    
+@enduml
+

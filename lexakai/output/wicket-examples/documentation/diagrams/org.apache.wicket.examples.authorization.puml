@@ -1,0 +1,61 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.authorization"
+    
+    abstract BasePage
+    
+    interface IClusterable
+    interface IRoleCheckingStrategy
+    
+    WicketExamplePage <|-- BasePage
+    class BasePage
+    {
+    }
+    
+    BasePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    WicketExampleApplication <|-- RolesApplication
+    class RolesApplication
+    {
+        --(constructors)--
+        +RolesApplication()
+    }
+    
+    WebSession <|-- RolesSession
+    class RolesSession
+    {
+        --(constructors)--
+        +RolesSession(Request)
+        --
+        +User getUser()
+        +void setUser(User)
+    }
+    
+    IClusterable <|-- User
+    class User
+    {
+        --(constructors)--
+        +User(String, String)
+        --
+        +String getUid()
+        --(checks)--
+        +boolean hasAnyRole(Roles)
+        +boolean hasRole(String role)
+    }
+    
+    IRoleCheckingStrategy <|-- UserRolesAuthorizer
+    class UserRolesAuthorizer
+    {
+        --(constructors)--
+        +UserRolesAuthorizer()
+    }
+    
+@enduml
+

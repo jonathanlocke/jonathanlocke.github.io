@@ -1,0 +1,32 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.proxy.objenesis"
+    
+    abstract AbstractCGLibInterceptor
+    
+    interface IClusterable
+    
+    LazyInitProxyFactory.AbstractCGLibInterceptor <|-- ObjenesisCGLibInterceptor
+    class ObjenesisCGLibInterceptor
+    {
+        --(constructors)--
+        +ObjenesisCGLibInterceptor(Class<?>, IProxyTargetLocator)
+    }
+    
+    class ObjenesisProxyFactory
+    {
+        --
+        +Object createProxy(Class<?> type, IProxyTargetLocator, NamingPolicy)
+    }
+    
+    IClusterable <|-- ObjenesisProxyReplacement
+    class ObjenesisProxyReplacement
+    {
+        --(read)--
+        #Object readResolve()
+    }
+    
+@enduml
+

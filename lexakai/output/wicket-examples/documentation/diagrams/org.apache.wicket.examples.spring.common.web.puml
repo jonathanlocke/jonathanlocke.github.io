@@ -1,0 +1,56 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.spring.common.web"
+    
+    abstract BasePage
+    
+    WicketExamplePage <|-- BasePage
+    class BasePage
+    {
+        --(constructors)--
+        +BasePage()
+    }
+    
+    SortableDataProvider <|-- ContactDataProvider
+    abstract class ContactDataProvider
+    {
+        --(constructors)--
+        +ContactDataProvider()
+        --
+        #ContactDao getContactDao()
+    }
+    
+    LoadableDetachableModel <|-- ContactDetachableModel
+    abstract class ContactDetachableModel
+    {
+        --(constructors)--
+        +ContactDetachableModel(Contact)
+        --
+        #ContactDao getContactDao()
+    }
+    
+    BasePage <|-- ContactsDisplayPage
+    abstract class ContactsDisplayPage
+    {
+        --(constructors)--
+        +ContactsDisplayPage()
+        --
+        #ContactDataProvider getDataProvider()
+    }
+    
+    WicketExampleApplication <|-- ExampleApplication
+    class ExampleApplication
+    {
+    }
+    
+    BasePage <|-- HomePage
+    class HomePage
+    {
+        --(constructors)--
+        +HomePage()
+    }
+    
+@enduml
+

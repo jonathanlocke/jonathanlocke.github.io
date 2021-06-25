@@ -1,0 +1,28 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization.strategies.page"
+    
+    abstract AbstractPageAuthorizationStrategy
+    
+    IAuthorizationStrategy.AllowAllAuthorizationStrategy <|-- AbstractPageAuthorizationStrategy
+    abstract class AbstractPageAuthorizationStrategy
+    {
+        --
+        #boolean instanceOf(Class<?> type, Class<?> superType)
+        --(checks)--
+        #boolean isPageAuthorized(Class<T> pageClass)
+    }
+    
+    AbstractPageAuthorizationStrategy <|-- SimplePageAuthorizationStrategy
+    abstract class SimplePageAuthorizationStrategy
+    {
+        --(constructors)--
+        +SimplePageAuthorizationStrategy(Class<?>, Class<S>)
+        --(checks)--
+        #boolean isAuthorized()
+    }
+    
+@enduml
+

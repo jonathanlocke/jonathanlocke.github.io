@@ -1,0 +1,59 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.upload"
+    
+    ListView <|-- UploadPage.FileListView
+    class UploadPage.FileListView
+    {
+        --(constructors)--
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    ListView <|-- MultiUploadPage.FileListView
+    class MultiUploadPage.FileListView
+    {
+        --(constructors)--
+        +FileListView(String, IModel<List<File>>)
+    }
+    
+    Form <|-- UploadPage.FileUploadForm
+    class UploadPage.FileUploadForm
+    {
+        --(constructors)--
+        +FileUploadForm(String)
+    }
+    
+    Form <|-- MultiUploadPage.FileUploadForm
+    class MultiUploadPage.FileUploadForm
+    {
+        --(constructors)--
+        +FileUploadForm(String)
+        --(filesystem)--
+        +Collection<FileUpload> getUploads()
+    }
+    
+    WicketExamplePage <|-- MultiUploadPage
+    class MultiUploadPage
+    {
+        --(constructors)--
+        +MultiUploadPage(PageParameters)
+    }
+    
+    WicketExampleApplication <|-- UploadApplication
+    class UploadApplication
+    {
+        --(filesystem)--
+        +Folder getUploadFolder()
+    }
+    
+    WicketExamplePage <|-- UploadPage
+    class UploadPage
+    {
+        --(constructors)--
+        +UploadPage(PageParameters)
+    }
+    
+@enduml
+

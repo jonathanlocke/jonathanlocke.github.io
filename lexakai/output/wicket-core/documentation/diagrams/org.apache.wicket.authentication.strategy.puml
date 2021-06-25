@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authentication.strategy"
+    
+    interface IAuthenticationStrategy
+    
+    IAuthenticationStrategy <|-- DefaultAuthenticationStrategy
+    class DefaultAuthenticationStrategy
+    {
+        --(constructors)--
+        +DefaultAuthenticationStrategy(String)
+        +DefaultAuthenticationStrategy(String, ICrypt)
+        +DefaultAuthenticationStrategy(String, String)
+        --
+        #String[] decode(String value)
+        #String encode(String credential, String... extraCredentials)
+        #CookieUtils getCookieUtils()
+        #ICrypt getCrypt()
+    }
+    
+    IAuthenticationStrategy <|-- NoOpAuthenticationStrategy
+    class NoOpAuthenticationStrategy
+    {
+    }
+    
+@enduml
+

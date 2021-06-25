@@ -1,0 +1,28 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.arquillian.testing.pages"
+    
+    WebPage <|-- InsertContact
+    class InsertContact
+    {
+        --(constructors)--
+        +InsertContact()
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(network)--
+        +String getEmail()
+        +void setEmail(String email)
+    }
+    
+    WebPage <|-- ListContacts
+    class ListContacts
+    {
+        --(constructors)--
+        +ListContacts()
+    }
+    
+@enduml
+

@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="261.4583px" preserveAspectRatio="none" style="width:2186px;height:261px;background:#333333;" version="1.1" viewBox="0 0 2186 261" width="2186.4583px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="465.625" x="853.125" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="442.7083" x="864.5833" y="30.5583">org.apache.wicket.examples.requestmapper</text><!--MD5=[402e0211343781a70d25cb9f969bdd51]
+cluster RequestMapperApplication--><polygon fill="#333333" points="1359.8958,132.8695,1546.3542,132.8695,1553.6458,160.0911,1575.5208,160.0911,1575.5208,254.7445,1359.8958,254.7445,1359.8958,132.8695" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="1359.8958" x2="1553.6458" y1="160.0911" y2="160.0911"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="173.9583" x="1367.1875" y="150.1628">RequestMapperApplication</text><!--MD5=[5d38749050fdee73b967e1542d8a1305]
+class RequestMapperApplication.LazyHttpsConfig--><rect codeLine="21" fill="#282828" height="48.055" id="RequestMapperApplication.LazyHttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="1404.6875" y="181.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="1404.6875" y="181.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="1404.6875" y="204.8828"/><rect codeLine="21" fill="none" height="48.055" id="RequestMapperApplication.LazyHttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="1404.6875" y="181.8278"/><ellipse cx="1419.2708" cy="197.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1421.1812,201.947 Q1420.754,202.1667 1420.284,202.2766 Q1419.814,202.3865 1419.2952,202.3865 Q1417.452,202.3865 1416.4815,201.1719 Q1415.5111,199.9573 1415.5111,197.6624 Q1415.5111,195.3613 1416.4815,194.1467 Q1417.452,192.9321 1419.2952,192.9321 Q1419.814,192.9321 1420.2901,193.042 Q1420.7662,193.1519 1421.1812,193.3716 L1421.1812,195.3735 Q1420.7174,194.9463 1420.281,194.7479 Q1419.8446,194.5496 1419.3807,194.5496 Q1418.3919,194.5496 1417.8884,195.3339 Q1417.3848,196.1182 1417.3848,197.6624 Q1417.3848,199.2004 1417.8884,199.9847 Q1418.3919,200.769 1419.3807,200.769 Q1419.8446,200.769 1420.281,200.5707 Q1420.7174,200.3723 1421.1812,199.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="1435.9375" y="202.2461">LazyHttpsConfig</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1405.7292" x2="1549.4792" y1="213.2161" y2="213.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1405.7292" x2="1549.4792" y1="221.5495" y2="221.5495"/><!--MD5=[31193e28adafc59aabc220d2e2a8b678]
+class AbstractComponentMapper--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractComponentMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="15.625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="15.625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="15.625" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="AbstractComponentMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="15.625" y="53.7028"/><ellipse cx="30.2083" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M29.8014,66.099 L28.953,69.8283 L30.6559,69.8283 Z M28.7028,64.4511 L30.9062,64.4511 L33.3659,73.5636 L31.5653,73.5636 L31.0038,71.3114 L28.5929,71.3114 L28.0436,73.5636 L26.2431,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="178.125" x="46.875" y="74.1211">AbstractComponentMapper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="16.6667" x2="230.2083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="16.6667" x2="230.2083" y1="93.4245" y2="93.4245"/><!--MD5=[06c1911320b3f29107034335a2de5146]
+class HomePageMapper--><rect fill="#282828" height="48.055" id="HomePageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="380.2083" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="380.2083" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="380.2083" y="76.7578"/><rect fill="none" height="48.055" id="HomePageMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="380.2083" y="53.7028"/><ellipse cx="394.7917" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M396.7021,73.822 Q396.2748,74.0417 395.8049,74.1516 Q395.3349,74.2615 394.8161,74.2615 Q392.9728,74.2615 392.0024,73.0469 Q391.0319,71.8323 391.0319,69.5374 Q391.0319,67.2363 392.0024,66.0217 Q392.9728,64.8071 394.8161,64.8071 Q395.3349,64.8071 395.811,64.917 Q396.287,65.0269 396.7021,65.2466 L396.7021,67.2485 Q396.2382,66.8213 395.8018,66.6229 Q395.3654,66.4246 394.9015,66.4246 Q393.9128,66.4246 393.4092,67.2089 Q392.9057,67.9932 392.9057,69.5374 Q392.9057,71.0754 393.4092,71.8597 Q393.9128,72.644 394.9015,72.644 Q395.3654,72.644 395.8018,72.4457 Q396.2382,72.2473 396.7021,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="411.4583" y="74.1211">HomePageMapper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="381.25" x2="532.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="381.25" x2="532.2917" y1="93.4245" y2="93.4245"/><!--MD5=[1208691febad4786f304e2f78fe58f76]
+class CustomHomeMapper--><rect codeLine="9" fill="#282828" height="83.3781" id="CustomHomeMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="360.4167" x="276.5625" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="360.4167" x="276.5625" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="360.4167" x="276.5625" y="187.1745"/><rect codeLine="9" fill="none" height="83.3781" id="CustomHomeMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="360.4167" x="276.5625" y="164.1195"/><ellipse cx="381.25" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M383.1604,184.2387 Q382.7332,184.4584 382.2632,184.5683 Q381.7932,184.6781 381.2744,184.6781 Q379.4312,184.6781 378.4607,183.4635 Q377.4902,182.2489 377.4902,179.954 Q377.4902,177.653 378.4607,176.4384 Q379.4312,175.2238 381.2744,175.2238 Q381.7932,175.2238 382.2693,175.3337 Q382.7454,175.4435 383.1604,175.6632 L383.1604,177.6652 Q382.6965,177.238 382.2601,177.0396 Q381.8237,176.8412 381.3599,176.8412 Q380.3711,176.8412 379.8676,177.6255 Q379.364,178.4098 379.364,179.954 Q379.364,181.4921 379.8676,182.2764 Q380.3711,183.0607 381.3599,183.0607 Q381.8237,183.0607 382.2601,182.8623 Q382.6965,182.664 383.1604,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="404.1667" y="184.5378">CustomHomeMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="277.6042" x2="635.9375" y1="195.5078" y2="195.5078"/><ellipse cx="288.0208" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="328.125" x="299.4792" y="237.7889">CustomHomeMapper(Class&lt;? extends IRequestablePage&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="277.6042" x2="413.0208" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="416.1458" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="500.5208" x2="635.9375" y1="213.7136" y2="213.7136"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="834.8958" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="834.8958" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="834.8958" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="834.8958" y="53.7028"/><ellipse cx="849.4792" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M851.3896,73.822 Q850.9623,74.0417 850.4924,74.1516 Q850.0224,74.2615 849.5036,74.2615 Q847.6603,74.2615 846.6899,73.0469 Q845.7194,71.8323 845.7194,69.5374 Q845.7194,67.2363 846.6899,66.0217 Q847.6603,64.8071 849.5036,64.8071 Q850.0224,64.8071 850.4985,64.917 Q850.9745,65.0269 851.3896,65.2466 L851.3896,67.2485 Q850.9257,66.8213 850.4893,66.6229 Q850.0529,66.4246 849.589,66.4246 Q848.6003,66.4246 848.0967,67.2089 Q847.5932,67.9932 847.5932,69.5374 Q847.5932,71.0754 848.0967,71.8597 Q848.6003,72.644 849.589,72.644 Q850.0529,72.644 850.4893,72.4457 Q850.9257,72.2473 851.3896,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="866.1458" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="835.9375" x2="998.4375" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="835.9375" x2="998.4375" y1="93.4245" y2="93.4245"/><!--MD5=[dbb119dd11dd0b9498e83384acf61e80]
+class HttpsPage--><rect codeLine="16" fill="#282828" height="48.055" id="HttpsPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="673.9583" y="181.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="673.9583" y="181.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="673.9583" y="204.8828"/><rect codeLine="16" fill="none" height="48.055" id="HttpsPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="673.9583" y="181.8278"/><ellipse cx="688.5417" cy="197.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M690.4521,201.947 Q690.0248,202.1667 689.5549,202.2766 Q689.0849,202.3865 688.5661,202.3865 Q686.7228,202.3865 685.7524,201.1719 Q684.7819,199.9573 684.7819,197.6624 Q684.7819,195.3613 685.7524,194.1467 Q686.7228,192.9321 688.5661,192.9321 Q689.0849,192.9321 689.561,193.042 Q690.037,193.1519 690.4521,193.3716 L690.4521,195.3735 Q689.9882,194.9463 689.5518,194.7479 Q689.1154,194.5496 688.6515,194.5496 Q687.6628,194.5496 687.1592,195.3339 Q686.6557,196.1182 686.6557,197.6624 Q686.6557,199.2004 687.1592,199.9847 Q687.6628,200.769 688.6515,200.769 Q689.1154,200.769 689.5518,200.5707 Q689.9882,200.3723 690.4521,199.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="705.2083" y="202.2461">HttpsPage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="675" x2="776.0417" y1="213.2161" y2="213.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="675" x2="776.0417" y1="221.5495" y2="221.5495"/><!--MD5=[2354b0b452913538cc59f3362f30fe5f]
+class HttpsConfig--><rect fill="#282828" height="48.055" id="HttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="116.6667" x="1419.2708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="116.6667" x="1419.2708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="116.6667" x="1419.2708" y="76.7578"/><rect fill="none" height="48.055" id="HttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="116.6667" x="1419.2708" y="53.7028"/><ellipse cx="1433.8542" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1435.7646,73.822 Q1435.3373,74.0417 1434.8674,74.1516 Q1434.3974,74.2615 1433.8786,74.2615 Q1432.0353,74.2615 1431.0649,73.0469 Q1430.0944,71.8323 1430.0944,69.5374 Q1430.0944,67.2363 1431.0649,66.0217 Q1432.0353,64.8071 1433.8786,64.8071 Q1434.3974,64.8071 1434.8735,64.917 Q1435.3495,65.0269 1435.7646,65.2466 L1435.7646,67.2485 Q1435.3007,66.8213 1434.8643,66.6229 Q1434.4279,66.4246 1433.964,66.4246 Q1432.9753,66.4246 1432.4717,67.2089 Q1431.9682,67.9932 1431.9682,69.5374 Q1431.9682,71.0754 1432.4717,71.8597 Q1432.9753,72.644 1433.964,72.644 Q1434.4279,72.644 1434.8643,72.4457 Q1435.3007,72.2473 1435.7646,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="79.1667" x="1450.5208" y="74.1211">HttpsConfig</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1420.3125" x2="1534.8958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1420.3125" x2="1534.8958" y1="93.4245" y2="93.4245"/><!--MD5=[bf5e67bf095513d6950c9c3dccab5b6b]
+class LocaleFirstMapper--><rect codeLine="26" fill="#282828" height="83.3781" id="LocaleFirstMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="232.2917" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="232.2917" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="232.2917" x="7.2917" y="187.1745"/><rect codeLine="26" fill="none" height="83.3781" id="LocaleFirstMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="232.2917" x="7.2917" y="164.1195"/><ellipse cx="57.2917" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M59.2021,184.2387 Q58.7748,184.4584 58.3049,184.5683 Q57.8349,184.6781 57.3161,184.6781 Q55.4728,184.6781 54.5024,183.4635 Q53.5319,182.2489 53.5319,179.954 Q53.5319,177.653 54.5024,176.4384 Q55.4728,175.2238 57.3161,175.2238 Q57.8349,175.2238 58.311,175.3337 Q58.787,175.4435 59.2021,175.6632 L59.2021,177.6652 Q58.7382,177.238 58.3018,177.0396 Q57.8654,176.8412 57.4015,176.8412 Q56.4128,176.8412 55.9092,177.6255 Q55.4057,178.4098 55.4057,179.954 Q55.4057,181.4921 55.9092,182.2764 Q56.4128,183.0607 57.4015,183.0607 Q57.8654,183.0607 58.3018,182.8623 Q58.7382,182.664 59.2021,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="80.2083" y="184.5378">LocaleFirstMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="238.5417" y1="195.5078" y2="195.5078"/><ellipse cx="18.75" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="200" x="30.2083" y="237.7889">LocaleFirstMapper(IRequestMapper)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="79.6875" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="82.8125" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="167.1875" x2="238.5417" y1="213.7136" y2="213.7136"/><!--MD5=[4507a08275be3edda40af1a95136d9fe]
+class LocaleHelper--><rect codeLine="32" fill="#282828" height="48.055" id="LocaleHelper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="119.7917" x="1572.9167" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="119.7917" x="1572.9167" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="119.7917" x="1572.9167" y="76.7578"/><rect codeLine="32" fill="none" height="48.055" id="LocaleHelper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="119.7917" x="1572.9167" y="53.7028"/><ellipse cx="1587.5" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1589.4104,73.822 Q1588.9832,74.0417 1588.5132,74.1516 Q1588.0432,74.2615 1587.5244,74.2615 Q1585.6812,74.2615 1584.7107,73.0469 Q1583.7402,71.8323 1583.7402,69.5374 Q1583.7402,67.2363 1584.7107,66.0217 Q1585.6812,64.8071 1587.5244,64.8071 Q1588.0432,64.8071 1588.5193,64.917 Q1588.9954,65.0269 1589.4104,65.2466 L1589.4104,67.2485 Q1588.9465,66.8213 1588.5101,66.6229 Q1588.0737,66.4246 1587.6099,66.4246 Q1586.6211,66.4246 1586.1176,67.2089 Q1585.614,67.9932 1585.614,69.5374 Q1585.614,71.0754 1586.1176,71.8597 Q1586.6211,72.644 1587.6099,72.644 Q1588.0737,72.644 1588.5101,72.4457 Q1588.9465,72.2473 1589.4104,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="82.2917" x="1604.1667" y="74.1211">LocaleHelper</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1573.9583" x2="1691.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1573.9583" x2="1691.6667" y1="93.4245" y2="93.4245"/><!--MD5=[bfe2b9430b3690084018d0594eb02198]
+class LocalizedPage--><rect codeLine="37" fill="#282828" height="83.3781" id="LocalizedPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="813.5417" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="813.5417" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="207.2917" x="813.5417" y="187.1745"/><rect codeLine="37" fill="none" height="83.3781" id="LocalizedPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="207.2917" x="813.5417" y="164.1195"/><ellipse cx="864.5833" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M866.4937,184.2387 Q866.0665,184.4584 865.5965,184.5683 Q865.1265,184.6781 864.6077,184.6781 Q862.7645,184.6781 861.794,183.4635 Q860.8236,182.2489 860.8236,179.954 Q860.8236,177.653 861.794,176.4384 Q862.7645,175.2238 864.6077,175.2238 Q865.1265,175.2238 865.6026,175.3337 Q866.0787,175.4435 866.4937,175.6632 L866.4937,177.6652 Q866.0299,177.238 865.5935,177.0396 Q865.1571,176.8412 864.6932,176.8412 Q863.7044,176.8412 863.2009,177.6255 Q862.6973,178.4098 862.6973,179.954 Q862.6973,181.4921 863.2009,182.2764 Q863.7044,183.0607 864.6932,183.0607 Q865.1571,183.0607 865.5935,182.8623 Q866.0299,182.664 866.4937,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="887.5" y="184.5378">LocalizedPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="814.5833" x2="1019.7917" y1="195.5078" y2="195.5078"/><ellipse cx="825" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="836.4583" y="237.7889">LocalizedPage(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="814.5833" x2="873.4375" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="876.5625" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="960.9375" x2="1019.7917" y1="213.7136" y2="213.7136"/><!--MD5=[d215d62ff3788cee5bb3f5afbd917bb1]
+class ResourceReference--><rect fill="#282828" height="48.055" id="ResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="158.3333" x="1729.6875" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="158.3333" x="1729.6875" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="158.3333" x="1729.6875" y="76.7578"/><rect fill="none" height="48.055" id="ResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="158.3333" x="1729.6875" y="53.7028"/><ellipse cx="1744.2708" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1746.1812,73.822 Q1745.754,74.0417 1745.284,74.1516 Q1744.814,74.2615 1744.2952,74.2615 Q1742.452,74.2615 1741.4815,73.0469 Q1740.5111,71.8323 1740.5111,69.5374 Q1740.5111,67.2363 1741.4815,66.0217 Q1742.452,64.8071 1744.2952,64.8071 Q1744.814,64.8071 1745.2901,64.917 Q1745.7662,65.0269 1746.1812,65.2466 L1746.1812,67.2485 Q1745.7174,66.8213 1745.281,66.6229 Q1744.8446,66.4246 1744.3807,66.4246 Q1743.3919,66.4246 1742.8884,67.2089 Q1742.3848,67.9932 1742.3848,69.5374 Q1742.3848,71.0754 1742.8884,71.8597 Q1743.3919,72.644 1744.3807,72.644 Q1744.8446,72.644 1745.281,72.4457 Q1745.7174,72.2473 1746.1812,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="120.8333" x="1760.9375" y="74.1211">ResourceReference</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1730.7292" x2="1886.9792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1730.7292" x2="1886.9792" y1="93.4245" y2="93.4245"/><!--MD5=[cea73fddb1645c061173635443d3dd7c]
+class MapperDemoResourceReference--><rect codeLine="44" fill="#282828" height="83.3781" id="MapperDemoResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="244.7917" x="1686.4583" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="244.7917" x="1686.4583" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="244.7917" x="1686.4583" y="187.1745"/><rect codeLine="44" fill="none" height="83.3781" id="MapperDemoResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="244.7917" x="1686.4583" y="164.1195"/><ellipse cx="1701.0417" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1702.9521,184.2387 Q1702.5248,184.4584 1702.0549,184.5683 Q1701.5849,184.6781 1701.0661,184.6781 Q1699.2228,184.6781 1698.2524,183.4635 Q1697.2819,182.2489 1697.2819,179.954 Q1697.2819,177.653 1698.2524,176.4384 Q1699.2228,175.2238 1701.0661,175.2238 Q1701.5849,175.2238 1702.061,175.3337 Q1702.537,175.4435 1702.9521,175.6632 L1702.9521,177.6652 Q1702.4882,177.238 1702.0518,177.0396 Q1701.6154,176.8412 1701.1515,176.8412 Q1700.1628,176.8412 1699.6592,177.6255 Q1699.1557,178.4098 1699.1557,179.954 Q1699.1557,181.4921 1699.6592,182.2764 Q1700.1628,183.0607 1701.1515,183.0607 Q1701.6154,183.0607 1702.0518,182.8623 Q1702.4882,182.664 1702.9521,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="207.2917" x="1717.7083" y="184.5378">MapperDemoResourceReference</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1687.5" x2="1930.2083" y1="195.5078" y2="195.5078"/><ellipse cx="1697.9167" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="1709.375" y="237.7889">MapperDemoResourceReference()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1687.5" x2="1765.1042" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1768.2292" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1852.6042" x2="1930.2083" y1="213.7136" y2="213.7136"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1969.2708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1969.2708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="1969.2708" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="1969.2708" y="53.7028"/><ellipse cx="1983.8542" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1985.7646,73.822 Q1985.3373,74.0417 1984.8674,74.1516 Q1984.3974,74.2615 1983.8786,74.2615 Q1982.0353,74.2615 1981.0649,73.0469 Q1980.0944,71.8323 1980.0944,69.5374 Q1980.0944,67.2363 1981.0649,66.0217 Q1982.0353,64.8071 1983.8786,64.8071 Q1984.3974,64.8071 1984.8735,64.917 Q1985.3495,65.0269 1985.7646,65.2466 L1985.7646,67.2485 Q1985.3007,66.8213 1984.8643,66.6229 Q1984.4279,66.4246 1983.964,66.4246 Q1982.9753,66.4246 1982.4717,67.2089 Q1981.9682,67.9932 1981.9682,69.5374 Q1981.9682,71.0754 1982.4717,71.8597 Q1982.9753,72.644 1983.964,72.644 Q1984.4279,72.644 1984.8643,72.4457 Q1985.3007,72.2473 1985.7646,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="2000.5208" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1970.3125" x2="2176.5625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1970.3125" x2="2176.5625" y1="93.4245" y2="93.4245"/><!--MD5=[cbda0d08ea83e277e3e83d48920ad863]
+class RequestMapperApplication--><rect codeLine="51" fill="#282828" height="48.055" id="RequestMapperApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="211.4583" x="1967.7083" y="181.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="211.4583" x="1967.7083" y="181.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="211.4583" x="1967.7083" y="204.8828"/><rect codeLine="51" fill="none" height="48.055" id="RequestMapperApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="211.4583" x="1967.7083" y="181.8278"/><ellipse cx="1982.2917" cy="197.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1984.2021,201.947 Q1983.7748,202.1667 1983.3049,202.2766 Q1982.8349,202.3865 1982.3161,202.3865 Q1980.4728,202.3865 1979.5024,201.1719 Q1978.5319,199.9573 1978.5319,197.6624 Q1978.5319,195.3613 1979.5024,194.1467 Q1980.4728,192.9321 1982.3161,192.9321 Q1982.8349,192.9321 1983.311,193.042 Q1983.787,193.1519 1984.2021,193.3716 L1984.2021,195.3735 Q1983.7382,194.9463 1983.3018,194.7479 Q1982.8654,194.5496 1982.4015,194.5496 Q1981.4128,194.5496 1980.9092,195.3339 Q1980.4057,196.1182 1980.4057,197.6624 Q1980.4057,199.2004 1980.9092,199.9847 Q1981.4128,200.769 1982.4015,200.769 Q1982.8654,200.769 1983.3018,200.5707 Q1983.7382,200.3723 1984.2021,199.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="173.9583" x="1998.9583" y="202.2461">RequestMapperApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1968.75" x2="2178.125" y1="213.2161" y2="213.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1968.75" x2="2178.125" y1="221.5495" y2="221.5495"/><!--MD5=[e47fbf4b9c58b8a13596bfaf6205c60a]
+class RequestMapperHomePage--><rect codeLine="56" fill="#282828" height="83.3781" id="RequestMapperHomePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="273.9583" x="1057.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="273.9583" x="1057.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="273.9583" x="1057.2917" y="187.1745"/><rect codeLine="56" fill="none" height="83.3781" id="RequestMapperHomePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="273.9583" x="1057.2917" y="164.1195"/><ellipse cx="1103.125" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1105.0354,184.2387 Q1104.6082,184.4584 1104.1382,184.5683 Q1103.6682,184.6781 1103.1494,184.6781 Q1101.3062,184.6781 1100.3357,183.4635 Q1099.3652,182.2489 1099.3652,179.954 Q1099.3652,177.653 1100.3357,176.4384 Q1101.3062,175.2238 1103.1494,175.2238 Q1103.6682,175.2238 1104.1443,175.3337 Q1104.6204,175.4435 1105.0354,175.6632 L1105.0354,177.6652 Q1104.5715,177.238 1104.1351,177.0396 Q1103.6987,176.8412 1103.2349,176.8412 Q1102.2461,176.8412 1101.7426,177.6255 Q1101.239,178.4098 1101.239,179.954 Q1101.239,181.4921 1101.7426,182.2764 Q1102.2461,183.0607 1103.2349,183.0607 Q1103.6987,183.0607 1104.1351,182.8623 Q1104.5715,182.664 1105.0354,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="167.7083" x="1126.0417" y="184.5378">RequestMapperHomePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1058.3333" x2="1330.2083" y1="195.5078" y2="195.5078"/><ellipse cx="1068.75" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="241.6667" x="1080.2083" y="237.7889">RequestMapperHomePage(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1058.3333" x2="1150.5208" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1153.6458" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1238.0208" x2="1330.2083" y1="213.7136" y2="213.7136"/><!--MD5=[c8fa6d5ff3a8d8ddfcba06631c7ac7ec]
+reverse link HomePageMapper to CustomHomeMapper--><path codeLine="8" d="M456.7708,122.682 C456.7708,136.0778 456.7708,150.7445 456.7708,163.9215 " fill="none" id="HomePageMapper-backto-CustomHomeMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="449.4792,122.6507,456.7708,101.8174,464.0625,122.6507,449.4792,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3e96a95753e803b1e1db590add16bd0c]
+reverse link WicketExamplePage to HttpsPage--><path codeLine="15" d="M815.2083,104.7861 C808.2396,108.1507 801.5208,111.9424 795.3125,116.2028 C770.6146,133.1299 750.5104,161.4528 738.3229,181.5049 " fill="none" id="WicketExamplePage-backto-HttpsPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="812.6875,97.9424,834.7188,96.5882,818.3333,111.3799,812.6875,97.9424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b0f92d07871d6e21155e9267d080d18b]
+reverse link HttpsConfig to RequestMapperApplication.LazyHttpsConfig--><path codeLine="20" d="M1477.6042,122.9528 C1477.6042,142.7965 1477.6042,165.3799 1477.6042,181.7757 " fill="none" id="HttpsConfig-backto-RequestMapperApplication.LazyHttpsConfig" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1470.3125,122.6507,1477.6042,101.8174,1484.8958,122.6507,1470.3125,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e78c744f97970c3f72a9513a267d172e]
+reverse link AbstractComponentMapper to LocaleFirstMapper--><path codeLine="25" d="M123.4375,122.682 C123.4375,136.0778 123.4375,150.7445 123.4375,163.9215 " fill="none" id="AbstractComponentMapper-backto-LocaleFirstMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="116.1458,122.6507,123.4375,101.8174,130.7292,122.6507,116.1458,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[df6290972027640ff727c04ef2151e5f]
+reverse link WicketExamplePage to LocalizedPage--><path codeLine="36" d="M917.1875,122.682 C917.1875,136.0778 917.1875,150.7445 917.1875,163.9215 " fill="none" id="WicketExamplePage-backto-LocalizedPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="909.8958,122.6507,917.1875,101.8174,924.4792,122.6507,909.8958,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[67daa477c8e047032ab58696e68f4f0e]
+reverse link ResourceReference to MapperDemoResourceReference--><path codeLine="43" d="M1808.8542,122.682 C1808.8542,136.0778 1808.8542,150.7445 1808.8542,163.9215 " fill="none" id="ResourceReference-backto-MapperDemoResourceReference" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1801.5625,122.6507,1808.8542,101.8174,1816.1458,122.6507,1801.5625,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[616fd3aec53afce23ebf7279f61cbdb5]
+reverse link WicketExampleApplication to RequestMapperApplication--><path codeLine="50" d="M2073.4375,122.9528 C2073.4375,142.7965 2073.4375,165.3799 2073.4375,181.7757 " fill="none" id="WicketExampleApplication-backto-RequestMapperApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2066.1458,122.6507,2073.4375,101.8174,2080.7292,122.6507,2066.1458,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[14016cad1dd3778cd80e7a7b8aa11ec6]
+reverse link WicketExamplePage to RequestMapperHomePage--><path codeLine="55" d="M1019.3854,108.3174 C1026.1042,110.8174 1032.7188,113.4528 1039.0625,116.2028 C1070.0938,129.6299 1102.8438,147.682 1130.2083,163.9736 " fill="none" id="WicketExamplePage-backto-RequestMapperHomePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1016.9375,115.182,999.7083,101.3903,1021.7708,101.4215,1016.9375,115.182" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[47c0f2f8754e0694959abd0361bcaf01]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.requestmapper"
+    
+    abstract AbstractComponentMapper
+    
+    HomePageMapper <|- - CustomHomeMapper
+    class CustomHomeMapper
+    {
+        - -(constructors)- -
+        +CustomHomeMapper(Class<? extends IRequestablePage>)
+    }
+    
+    WicketExamplePage <|- - HttpsPage
+    class HttpsPage
+    {
+    }
+    
+    HttpsConfig <|- - RequestMapperApplication.LazyHttpsConfig
+    class RequestMapperApplication.LazyHttpsConfig
+    {
+    }
+    
+    AbstractComponentMapper <|- - LocaleFirstMapper
+    class LocaleFirstMapper
+    {
+        - -(constructors)- -
+        +LocaleFirstMapper(IRequestMapper)
+    }
+    
+    class LocaleHelper
+    {
+    }
+    
+    WicketExamplePage <|- - LocalizedPage
+    class LocalizedPage
+    {
+        - -(constructors)- -
+        +LocalizedPage(PageParameters)
+    }
+    
+    ResourceReference <|- - MapperDemoResourceReference
+    class MapperDemoResourceReference
+    {
+        - -(constructors)- -
+        +MapperDemoResourceReference()
+    }
+    
+    WicketExampleApplication <|- - RequestMapperApplication
+    class RequestMapperApplication
+    {
+    }
+    
+    WicketExamplePage <|- - RequestMapperHomePage
+    class RequestMapperHomePage
+    {
+        - -(constructors)- -
+        +RequestMapperHomePage(PageParameters)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.requestmapper"
+    
+    abstract AbstractComponentMapper
+    
+    HomePageMapper <|- - CustomHomeMapper
+    class CustomHomeMapper
+    {
+        - -(constructors)- -
+        +CustomHomeMapper(Class<? extends IRequestablePage>)
+    }
+    
+    WicketExamplePage <|- - HttpsPage
+    class HttpsPage
+    {
+    }
+    
+    HttpsConfig <|- - RequestMapperApplication.LazyHttpsConfig
+    class RequestMapperApplication.LazyHttpsConfig
+    {
+    }
+    
+    AbstractComponentMapper <|- - LocaleFirstMapper
+    class LocaleFirstMapper
+    {
+        - -(constructors)- -
+        +LocaleFirstMapper(IRequestMapper)
+    }
+    
+    class LocaleHelper
+    {
+    }
+    
+    WicketExamplePage <|- - LocalizedPage
+    class LocalizedPage
+    {
+        - -(constructors)- -
+        +LocalizedPage(PageParameters)
+    }
+    
+    ResourceReference <|- - MapperDemoResourceReference
+    class MapperDemoResourceReference
+    {
+        - -(constructors)- -
+        +MapperDemoResourceReference()
+    }
+    
+    WicketExampleApplication <|- - RequestMapperApplication
+    class RequestMapperApplication
+    {
+    }
+    
+    WicketExamplePage <|- - RequestMapperHomePage
+    class RequestMapperHomePage
+    {
+        - -(constructors)- -
+        +RequestMapperHomePage(PageParameters)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

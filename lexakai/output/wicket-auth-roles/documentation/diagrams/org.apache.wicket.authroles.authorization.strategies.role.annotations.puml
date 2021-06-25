@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authorization.strategies.role.annotations"
+    
+    abstract AbstractRoleAuthorizationStrategy
+    
+    AbstractRoleAuthorizationStrategy <|-- AnnotationsRoleAuthorizationStrategy
+    class AnnotationsRoleAuthorizationStrategy
+    {
+        --(constructors)--
+        +AnnotationsRoleAuthorizationStrategy(IRoleCheckingStrategy)
+        --(checks)--
+        #boolean isActionAuthorized(Class<?> componentClass, Action)
+    }
+    
+    annotation AuthorizeAction
+    
+    annotation AuthorizeActions
+    
+    annotation AuthorizeInstantiation
+    
+    annotation AuthorizeInstantiations
+    
+    annotation AuthorizeResource
+    
+@enduml
+

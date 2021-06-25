@@ -1,0 +1,160 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.application"
+    
+    abstract AbstractClassResolver
+    
+    interface IComponentOnBeforeRenderListener
+    interface IHeaderContributor
+    interface IClassResolver
+    interface IComponentOnConfigureListener
+    interface IOnComponentTagListener
+    interface IComponentOnAfterRenderListener
+    interface IComponentInitializationListener
+    interface IComponentInstantiationListener
+    
+    IClassResolver <|-- AbstractClassResolver
+    abstract class AbstractClassResolver
+    {
+    }
+    
+    ListenerCollection <|-- ComponentInitializationListenerCollection
+    IComponentInitializationListener <|-- ComponentInitializationListenerCollection
+    class ComponentInitializationListenerCollection
+    {
+    }
+    
+    ListenerCollection <|-- ComponentInstantiationListenerCollection
+    IComponentInstantiationListener <|-- ComponentInstantiationListenerCollection
+    class ComponentInstantiationListenerCollection
+    {
+    }
+    
+    ListenerCollection <|-- ComponentOnAfterRenderListenerCollection
+    IComponentOnAfterRenderListener <|-- ComponentOnAfterRenderListenerCollection
+    class ComponentOnAfterRenderListenerCollection
+    {
+    }
+    
+    ListenerCollection <|-- ComponentOnBeforeRenderListenerCollection
+    IComponentOnBeforeRenderListener <|-- ComponentOnBeforeRenderListenerCollection
+    class ComponentOnBeforeRenderListenerCollection
+    {
+    }
+    
+    ListenerCollection <|-- ComponentOnConfigureListenerCollection
+    IComponentOnConfigureListener <|-- ComponentOnConfigureListenerCollection
+    class ComponentOnConfigureListenerCollection
+    {
+    }
+    
+    IClassResolver <|-- CompoundClassResolver
+    class CompoundClassResolver
+    {
+        --(collection)--
+        +CompoundClassResolver add(IClassResolver)
+        +CompoundClassResolver remove(IClassResolver)
+    }
+    
+    AbstractClassResolver <|-- DefaultClassResolver
+    class DefaultClassResolver
+    {
+    }
+    
+    ListenerCollection <|-- HeaderContributorListenerCollection
+    IHeaderContributor <|-- HeaderContributorListenerCollection
+    class HeaderContributorListenerCollection
+    {
+    }
+    
+    interface IClassResolver
+    {
+        --
+        +ClassLoader getClassLoader()
+        +Class<?> resolveClass(String classname)
+        --(collection)--
+        +Iterator<URL> getResources(String name)
+    }
+    
+    interface IComponentInitializationListener
+    {
+        --(lifecycle)--
+        +void onInitialize(Component)
+    }
+    
+    interface IComponentInstantiationListener
+    {
+        --
+        +void onInstantiation(Component)
+    }
+    
+    interface IComponentOnAfterRenderListener
+    {
+        --
+        +void onAfterRender(Component)
+    }
+    
+    interface IComponentOnBeforeRenderListener
+    {
+        --
+        +void onBeforeRender(Component)
+    }
+    
+    interface IComponentOnConfigureListener
+    {
+        --
+        +void onConfigure(Component)
+    }
+    
+    interface IOnComponentTagListener
+    {
+        --
+        +void onComponentTag(Component, ComponentTag)
+    }
+    
+    class WildcardMatcherHelper.Matcher
+    {
+        --(constructors)--
+        +Matcher(String, String)
+        --(collection)--
+        +Map<String,String> getMap()
+        --(matching)--
+        +boolean isMatch()
+    }
+    
+    ListenerCollection <|-- OnComponentTagListenerCollection
+    IOnComponentTagListener <|-- OnComponentTagListenerCollection
+    class OnComponentTagListenerCollection
+    {
+    }
+    
+    URLClassLoader <|-- ReloadingClassLoader
+    class ReloadingClassLoader
+    {
+        --(constructors)--
+        +ReloadingClassLoader(ClassLoader)
+        --
+        +void destroy()
+        #boolean tryClassHere(String name)
+        --(collection)--
+        +void addLocation(URL)
+        +List<String> getPatterns()
+        --(filtering)--
+        +void excludePattern(String pattern)
+        +void includePattern(String pattern)
+        --(messaging)--
+        +void setListener(IChangeListener<Class<?>>)
+        --(network)--
+        +Set<URL> getLocations()
+    }
+    
+    class WildcardMatcherHelper
+    {
+        --(collection)--
+        +Map<String,String> match(String pat, String)
+    }
+    
+@enduml
+

@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.basic"
+    
+    interface IGenericComponent
+    
+    WebMarkupContainer <|-- EnclosureContainer
+    class EnclosureContainer
+    {
+        --(constructors)--
+        +EnclosureContainer(String, Component)
+    }
+    
+    WebComponent <|-- EnumLabel
+    IGenericComponent <|-- EnumLabel
+    class EnumLabel<T>
+    {
+        --(constructors)--
+        +EnumLabel(String)
+        +EnumLabel(String, IModel<T>)
+        +EnumLabel(String, T)
+        --
+        #String nullValue()
+        --(collection)--
+        #String resourceKey(T value)
+    }
+    
+    WebComponent <|-- Label
+    class Label
+    {
+        --(constructors)--
+        +Label(String)
+        +Label(String, IModel<?>)
+        +Label(String, Serializable)
+    }
+    
+    WebComponent <|-- MultiLineLabel
+    class MultiLineLabel
+    {
+        --(constructors)--
+        +MultiLineLabel(String)
+        +MultiLineLabel(String, IModel<?>)
+        +MultiLineLabel(String, String)
+    }
+    
+@enduml
+

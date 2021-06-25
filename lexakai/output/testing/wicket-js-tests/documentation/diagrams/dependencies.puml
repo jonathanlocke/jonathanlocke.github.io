@@ -1,0 +1,61 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-js-tests"
+    
+    artifact jakarta_servlet_api
+    artifact log4j
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact wicket_js_tests
+    artifact apiguardian_api
+    artifact jetty_jakarta_servlet_api
+    artifact jetty_http
+    artifact jetty_io
+    artifact jetty_jmx
+    artifact jetty_security
+    artifact jetty_server
+    artifact jetty_servlet
+    artifact jetty_util
+    artifact jetty_webapp
+    artifact jetty_xml
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    artifact slf4j_simple
+    jetty_jmx --> jetty_util
+    jetty_server --> jetty_http
+    jetty_server --> jetty_io
+    jetty_server --> jetty_jakarta_servlet_api
+    jetty_servlet --> jetty_security
+    jetty_webapp --> jetty_servlet
+    jetty_webapp --> jetty_xml
+    junit_jupiter_engine --> apiguardian_api
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_jupiter_engine --> junit_platform_engine
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    slf4j_log4j12 --> log4j
+    wicket_js_tests --> jakarta_servlet_api
+    wicket_js_tests --> jcl_over_slf4j
+    wicket_js_tests --> jetty_jmx
+    wicket_js_tests --> jetty_server
+    wicket_js_tests --> jetty_webapp
+    wicket_js_tests --> junit_jupiter_engine
+    wicket_js_tests --> mockito_core
+    wicket_js_tests --> slf4j_api
+    wicket_js_tests --> slf4j_log4j12
+    wicket_js_tests --> slf4j_simple
+    
+@enduml

@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.http.request"
+    
+    ClientInfo <|-- WebClientInfo
+    class WebClientInfo
+    {
+        --(constructors)--
+        +WebClientInfo(RequestCycle)
+        +WebClientInfo(RequestCycle, ClientProperties)
+        +WebClientInfo(RequestCycle, String)
+        +WebClientInfo(RequestCycle, String, ClientProperties)
+        --
+        +ClientProperties getProperties()
+        +String getUserAgent()
+        #String getRemoteAddr(RequestCycle)
+    }
+    
+@enduml
+

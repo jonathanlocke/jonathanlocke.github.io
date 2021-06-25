@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="365.625px" preserveAspectRatio="none" style="width:929px;height:365px;background:#333333;" version="1.1" viewBox="0 0 929 365" width="929.1667px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="631.25" x="141.6667" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="608.3333" x="153.125" y="30.5583">org.apache.wicket.extensions.ajax.markup.html.form.upload</text><!--MD5=[28833aeec8547a9192c45101db46ee82]
+cluster UploadProgressBar--><polygon fill="#333333" points="320.8333,188.5986,456.25,188.5986,463.5417,215.8203,565.625,215.8203,565.625,310.4736,320.8333,310.4736,320.8333,188.5986" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="320.8333" x2="463.5417" y1="215.8203" y2="215.8203"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="328.125" y="205.8919">UploadProgressBar</text><!--MD5=[f71203c92fc2fa93e54be9f0065185eb]
+class UploadProgressBar.ComponentInitializer--><rect codeLine="11" fill="#282828" height="48.055" id="UploadProgressBar.ComponentInitializer" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="175" x="365.625" y="237.557"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="175" x="365.625" y="237.557"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="175" x="365.625" y="260.612"/><rect codeLine="11" fill="none" height="48.055" id="UploadProgressBar.ComponentInitializer" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="175" x="365.625" y="237.557"/><ellipse cx="380.2083" cy="253.2511" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M382.1187,257.6762 Q381.6915,257.8959 381.2215,258.0058 Q380.7515,258.1156 380.2327,258.1156 Q378.3895,258.1156 377.419,256.901 Q376.4486,255.6864 376.4486,253.3915 Q376.4486,251.0905 377.419,249.8759 Q378.3895,248.6613 380.2327,248.6613 Q380.7515,248.6613 381.2276,248.7712 Q381.7037,248.881 382.1187,249.1007 L382.1187,251.1027 Q381.6549,250.6755 381.2185,250.4771 Q380.7821,250.2787 380.3182,250.2787 Q379.3294,250.2787 378.8259,251.063 Q378.3223,251.8473 378.3223,253.3915 Q378.3223,254.9296 378.8259,255.7139 Q379.3294,256.4982 380.3182,256.4982 Q380.7821,256.4982 381.2185,256.2998 Q381.6549,256.1015 382.1187,255.6742 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="137.5" x="396.875" y="257.9753">ComponentInitializer</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="366.6667" x2="539.5833" y1="268.9453" y2="268.9453"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="366.6667" x2="539.5833" y1="277.2786" y2="277.2786"/><!--MD5=[50a30282382586376108eb2dfb7a517e]
+class AbstractResource--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="75" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="75" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="75" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="AbstractResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="75" y="53.7028"/><ellipse cx="89.5833" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M89.1764,66.099 L88.328,69.8283 L90.0309,69.8283 Z M88.0778,64.4511 L90.2812,64.4511 L92.7409,73.5636 L90.9403,73.5636 L90.3788,71.3114 L87.9679,71.3114 L87.4186,73.5636 L85.6181,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="112.5" x="106.25" y="74.1211">AbstractResource</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="76.0417" x2="223.9583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="76.0417" x2="223.9583" y1="93.4245" y2="93.4245"/><!--MD5=[886a457a7c238977703b1435802930a6]
+class IInitializer--><rect codeLine="8" fill="#282828" height="48.055" id="IInitializer" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="401.5625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="401.5625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="401.5625" y="76.7578"/><rect codeLine="8" fill="none" height="48.055" id="IInitializer" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="401.5625" y="53.7028"/><ellipse cx="416.1458" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M413.5498,66.5588 L413.5498,64.9719 L418.9758,64.9719 L418.9758,66.5588 L417.1631,66.5588 L417.1631,72.4976 L418.9758,72.4976 L418.9758,74.0845 L413.5498,74.0845 L413.5498,72.4976 L415.3625,72.4976 L415.3625,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="432.8125" y="74.1211">IInitializer</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="402.6042" x2="503.6458" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="402.6042" x2="503.6458" y1="93.4245" y2="93.4245"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="720.3125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="720.3125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="720.3125" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="720.3125" y="53.7028"/><ellipse cx="734.8958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M736.8062,73.822 Q736.379,74.0417 735.909,74.1516 Q735.439,74.2615 734.9202,74.2615 Q733.077,74.2615 732.1065,73.0469 Q731.1361,71.8323 731.1361,69.5374 Q731.1361,67.2363 732.1065,66.0217 Q733.077,64.8071 734.9202,64.8071 Q735.439,64.8071 735.9151,64.917 Q736.3912,65.0269 736.8062,65.2466 L736.8062,67.2485 Q736.3424,66.8213 735.906,66.6229 Q735.4696,66.4246 735.0057,66.4246 Q734.0169,66.4246 733.5134,67.2089 Q733.0098,67.9932 733.0098,69.5374 Q733.0098,71.0754 733.5134,71.8597 Q734.0169,72.644 735.0057,72.644 Q735.4696,72.644 735.906,72.4457 Q736.3424,72.2473 736.8062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="751.5625" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="721.3542" x2="791.1458" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="721.3542" x2="791.1458" y1="93.4245" y2="93.4245"/><!--MD5=[7a25a6bb00db12e889935dabafaa5b75]
+class UploadProgressBar--><rect codeLine="16" fill="#282828" height="194.6025" id="UploadProgressBar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="331.25" x="590.625" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="331.25" x="590.625" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="331.25" x="590.625" y="187.1745"/><rect codeLine="16" fill="none" height="194.6025" id="UploadProgressBar" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="331.25" x="590.625" y="164.1195"/><ellipse cx="687.5" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M689.4104,184.2387 Q688.9832,184.4584 688.5132,184.5683 Q688.0432,184.6781 687.5244,184.6781 Q685.6812,184.6781 684.7107,183.4635 Q683.7402,182.2489 683.7402,179.954 Q683.7402,177.653 684.7107,176.4384 Q685.6812,175.2238 687.5244,175.2238 Q688.0432,175.2238 688.5193,175.3337 Q688.9954,175.4435 689.4104,175.6632 L689.4104,177.6652 Q688.9465,177.238 688.5101,177.0396 Q688.0737,176.8412 687.6099,176.8412 Q686.6211,176.8412 686.1176,177.6255 Q685.614,178.4098 685.614,179.954 Q685.614,181.4921 686.1176,182.2764 Q686.6211,183.0607 687.6099,183.0607 Q688.0737,183.0607 688.5101,182.8623 Q688.9465,182.664 689.4104,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="710.4167" y="184.5378">UploadProgressBar</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="591.6667" x2="920.8333" y1="195.5078" y2="195.5078"/><ellipse cx="602.0833" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="208.3333" x="613.5417" y="237.7889">UploadProgressBar(String, Form&lt;?&gt;)</text><ellipse cx="602.0833" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="298.9583" x="613.5417" y="257.5338">UploadProgressBar(String, Form&lt;?&gt;, FileUploadField)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="591.6667" x2="712.5" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="715.625" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="800" x2="920.8333" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="591.6667" x2="920.8333" y1="267.2424" y2="267.2424"/><polygon fill="#FFFF44" points="602.0833,273.4924,606.25,277.6591,602.0833,281.8258,597.9167,277.6591" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="157.2917" x="613.5417" y="285.612">ResourceReference getCss()</text><polygon fill="#FFFF44" points="602.0833,317.1488,606.25,321.3155,602.0833,325.4822,597.9167,321.3155" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="260.4167" x="613.5417" y="329.2684">MarkupContainer newBarComponent(String id)</text><polygon fill="#FFFF44" points="602.0833,336.8937,606.25,341.0604,602.0833,345.2271,597.9167,341.0604" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="277.0833" x="613.5417" y="349.0133">MarkupContainer newStatusComponent(String id)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="591.6667" x2="729.1667" y1="305.1931" y2="305.1931"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="732.2917" y="309.0027">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="783.3333" x2="920.8333" y1="305.1931" y2="305.1931"/><!--MD5=[8bcc41249c4ef5bd19462898299304fd]
+class UploadStatusResource--><rect codeLine="29" fill="#282828" height="83.3781" id="UploadStatusResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="285.4167" x="7.2917" y="219.8486"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="285.4167" x="7.2917" y="219.8486"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="285.4167" x="7.2917" y="242.9036"/><rect codeLine="29" fill="none" height="83.3781" id="UploadStatusResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="285.4167" x="7.2917" y="219.8486"/><ellipse cx="70.3125" cy="235.5428" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M72.2229,239.9679 Q71.7957,240.1876 71.3257,240.2974 Q70.8557,240.4073 70.3369,240.4073 Q68.4937,240.4073 67.5232,239.1927 Q66.5527,237.9781 66.5527,235.6832 Q66.5527,233.3822 67.5232,232.1676 Q68.4937,230.953 70.3369,230.953 Q70.8557,230.953 71.3318,231.0628 Q71.8079,231.1727 72.2229,231.3924 L72.2229,233.3944 Q71.759,232.9671 71.3226,232.7688 Q70.8862,232.5704 70.4224,232.5704 Q69.4336,232.5704 68.9301,233.3547 Q68.4265,234.139 68.4265,235.6832 Q68.4265,237.2213 68.9301,238.0056 Q69.4336,238.7899 70.4224,238.7899 Q70.8862,238.7899 71.3226,238.5915 Q71.759,238.3931 72.2229,237.9659 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="144.7917" x="93.2292" y="240.2669">UploadStatusResource</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="291.6667" y1="251.237" y2="251.237"/><ellipse cx="18.75" cy="286.6069" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="30.2083" y="293.5181">PageParameters newParameter(String upload)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="122.9167" y1="269.4427" y2="269.4427"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="126.0417" y="273.2524">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="177.0833" x2="291.6667" y1="269.4427" y2="269.4427"/><!--MD5=[2917c552342f591b75c8680ff4e9a7b7]
+reverse link IInitializer to UploadProgressBar.ComponentInitializer--><path codeLine="10" d="M453.125,122.6507 C453.125,158.7861 453.125,208.5674 453.125,237.3486 " fill="none" id="IInitializer-backto-UploadProgressBar.ComponentInitializer" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="445.8333,122.557,453.125,101.7236,460.4167,122.557,445.8333,122.557" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e61a588e012c8fc167ec080e6a905aac]
+reverse link Panel to UploadProgressBar--><path codeLine="15" d="M756.25,122.8382 C756.25,135.3799 756.25,149.5674 756.25,163.932 " fill="none" id="Panel-backto-UploadProgressBar" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="748.9583,122.557,756.25,101.7236,763.5417,122.557,748.9583,122.557" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bef8964cab0636188f7e4b54d3bc2cb3]
+reverse link AbstractResource to UploadStatusResource--><path codeLine="28" d="M150,122.6507 C150,152.182 150,190.8174 150,219.6715 " fill="none" id="AbstractResource-backto-UploadStatusResource" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="142.7083,122.557,150,101.7236,157.2917,122.557,142.7083,122.557" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2c8f4e1d1c2e24601b488a416bf3e7ea]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.form.upload"
+    
+    abstract AbstractResource
+    
+    interface IInitializer
+    
+    IInitializer <|- - UploadProgressBar.ComponentInitializer
+    class UploadProgressBar.ComponentInitializer
+    {
+    }
+    
+    Panel <|- - UploadProgressBar
+    class UploadProgressBar
+    {
+        - -(constructors)- -
+        +UploadProgressBar(String, Form<?>)
+        +UploadProgressBar(String, Form<?>, FileUploadField)
+        - -
+        #ResourceReference getCss()
+        - -(factory)- -
+        #MarkupContainer newBarComponent(String id)
+        #MarkupContainer newStatusComponent(String id)
+    }
+    
+    AbstractResource <|- - UploadStatusResource
+    class UploadStatusResource
+    {
+        - -(factory)- -
+        +PageParameters newParameter(String upload)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.form.upload"
+    
+    abstract AbstractResource
+    
+    interface IInitializer
+    
+    IInitializer <|- - UploadProgressBar.ComponentInitializer
+    class UploadProgressBar.ComponentInitializer
+    {
+    }
+    
+    Panel <|- - UploadProgressBar
+    class UploadProgressBar
+    {
+        - -(constructors)- -
+        +UploadProgressBar(String, Form<?>)
+        +UploadProgressBar(String, Form<?>, FileUploadField)
+        - -
+        #ResourceReference getCss()
+        - -(factory)- -
+        #MarkupContainer newBarComponent(String id)
+        #MarkupContainer newStatusComponent(String id)
+    }
+    
+    AbstractResource <|- - UploadStatusResource
+    class UploadStatusResource
+    {
+        - -(factory)- -
+        +PageParameters newParameter(String upload)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

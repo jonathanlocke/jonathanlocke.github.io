@@ -1,0 +1,169 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.convert.converter"
+    
+    abstract AbstractDateConverter
+    abstract AbstractNumberConverter
+    abstract AbstractDecimalConverter
+    abstract AbstractJavaTimeConverter
+    abstract AbstractConverter
+    abstract AbstractIntegerConverter
+    
+    interface IConverter
+    
+    IConverter <|-- AbstractConverter
+    abstract class AbstractConverter<C>
+    {
+        --
+        #Class<C> getTargetType()
+        --(factory)--
+        #ConversionException newConversionException(String message, Object value, Locale)
+        --(parsing)--
+        #C parse(Format, Object value, Locale)
+    }
+    
+    AbstractConverter <|-- AbstractDateConverter
+    abstract class AbstractDateConverter<D>
+    {
+        --
+        +DateFormat getDateFormat(Locale)
+        #D createDateLike(long date)
+    }
+    
+    AbstractNumberConverter <|-- AbstractDecimalConverter
+    abstract class AbstractDecimalConverter<N>
+    {
+    }
+    
+    AbstractNumberConverter <|-- AbstractIntegerConverter
+    abstract class AbstractIntegerConverter<I>
+    {
+    }
+    
+    AbstractConverter <|-- AbstractJavaTimeConverter
+    abstract class AbstractJavaTimeConverter<T>
+    {
+        --
+        #T createTemporal(TemporalAccessor)
+        --(time)--
+        +DateTimeFormatter getDateTimeFormatter(Locale)
+        #DateTimeFormatter getDateTimeFormatter()
+    }
+    
+    AbstractConverter <|-- AbstractNumberConverter
+    abstract class AbstractNumberConverter<N>
+    {
+        --
+        +NumberFormat getNumberFormat(Locale)
+        --(factory)--
+        #NumberFormat newNumberFormat(Locale)
+        --(parsing)--
+        #BigDecimal parse(Object value, BigDecimal min, BigDecimal max, Locale)
+    }
+    
+    AbstractDecimalConverter <|-- BigDecimalConverter
+    class BigDecimalConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|-- BigIntegerConverter
+    class BigIntegerConverter
+    {
+    }
+    
+    AbstractConverter <|-- BooleanConverter
+    class BooleanConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|-- ByteConverter
+    class ByteConverter
+    {
+    }
+    
+    IConverter <|-- CalendarConverter
+    class CalendarConverter
+    {
+        --(constructors)--
+        +CalendarConverter()
+        +CalendarConverter(IConverter<Date>)
+    }
+    
+    AbstractConverter <|-- CharacterConverter
+    class CharacterConverter
+    {
+    }
+    
+    AbstractDateConverter <|-- DateConverter
+    class DateConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|-- DoubleConverter
+    class DoubleConverter
+    {
+    }
+    
+    AbstractDecimalConverter <|-- FloatConverter
+    class FloatConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|-- IntegerConverter
+    class IntegerConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|-- LocalDateConverter
+    class LocalDateConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|-- LocalDateTimeConverter
+    class LocalDateTimeConverter
+    {
+    }
+    
+    AbstractJavaTimeConverter <|-- LocalTimeConverter
+    class LocalTimeConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|-- LongConverter
+    class LongConverter
+    {
+    }
+    
+    AbstractIntegerConverter <|-- ShortConverter
+    class ShortConverter
+    {
+    }
+    
+    AbstractDateConverter <|-- SqlDateConverter
+    class SqlDateConverter
+    {
+    }
+    
+    AbstractDateConverter <|-- SqlTimeConverter
+    class SqlTimeConverter
+    {
+    }
+    
+    AbstractDateConverter <|-- SqlTimestampConverter
+    class SqlTimestampConverter
+    {
+        --(constructors)--
+        +SqlTimestampConverter()
+        +SqlTimestampConverter(int)
+        +SqlTimestampConverter(int, int)
+    }
+    
+    AbstractJavaTimeConverter <|-- ZonedDateTimeConverter
+    class ZonedDateTimeConverter
+    {
+    }
+    
+@enduml
+

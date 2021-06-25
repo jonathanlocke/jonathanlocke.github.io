@@ -1,0 +1,20 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.guice"
+    
+    WicketExampleApplication <|-- GuiceApplication
+    class GuiceApplication
+    {
+    }
+    
+    WicketExamplePage <|-- HomePage
+    class HomePage
+    {
+        --(constructors)--
+        +HomePage()
+    }
+    
+@enduml
+

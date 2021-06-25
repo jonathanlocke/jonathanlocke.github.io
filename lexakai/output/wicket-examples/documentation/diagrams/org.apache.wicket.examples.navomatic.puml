@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.navomatic"
+    
+    WicketExampleApplication <|-- NavomaticApplication
+    class NavomaticApplication
+    {
+    }
+    
+    Border <|-- NavomaticBorder
+    class NavomaticBorder
+    {
+        --(constructors)--
+        +NavomaticBorder(String)
+    }
+    
+    WicketExamplePage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1()
+    }
+    
+    WicketExamplePage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2()
+    }
+    
+    WicketExamplePage <|-- Page3
+    class Page3
+    {
+        --(constructors)--
+        +Page3()
+    }
+    
+@enduml
+

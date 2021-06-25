@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="683.3333px" preserveAspectRatio="none" style="width:1102px;height:683px;background:#333333;" version="1.1" viewBox="0 0 1102 683" width="1102.0833px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="350" x="368.75" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="327.0833" x="380.2083" y="30.5583">org.apache.wicket.protocol.https</text><!--MD5=[64e47b57ec77ff956af7885042716758]
+class IRequestMapperDelegate--><rect codeLine="6" fill="#282828" height="48.055" id="IRequestMapperDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="485.9375" y="168.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="485.9375" y="168.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="485.9375" y="191.862"/><rect codeLine="6" fill="none" height="48.055" id="IRequestMapperDelegate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="485.9375" y="168.807"/><ellipse cx="500.5208" cy="184.5011" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M497.9248,181.663 L497.9248,180.0761 L503.3508,180.0761 L503.3508,181.663 L501.5381,181.663 L501.5381,187.6017 L503.3508,187.6017 L503.3508,189.1886 L497.9248,189.1886 L497.9248,187.6017 L499.7375,187.6017 L499.7375,181.663 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="517.1875" y="189.2253">IRequestMapperDelegate</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="486.9792" x2="683.8542" y1="200.1953" y2="200.1953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="486.9792" x2="683.8542" y1="208.5286" y2="208.5286"/><!--MD5=[7dbbd70004befa22e2d6cfe4be6cb830]
+class IRequestHandler--><rect codeLine="7" fill="#282828" height="48.055" id="IRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="143.75" x="904.1667" y="168.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="143.75" x="904.1667" y="168.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="143.75" x="904.1667" y="191.862"/><rect codeLine="7" fill="none" height="48.055" id="IRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="143.75" x="904.1667" y="168.807"/><ellipse cx="918.75" cy="184.5011" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M916.154,181.663 L916.154,180.0761 L921.58,180.0761 L921.58,181.663 L919.7673,181.663 L919.7673,187.6017 L921.58,187.6017 L921.58,189.1886 L916.154,189.1886 L916.154,187.6017 L917.9667,187.6017 L917.9667,181.663 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="106.25" x="935.4167" y="189.2253">IRequestHandler</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="905.2083" x2="1046.875" y1="200.1953" y2="200.1953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="905.2083" x2="1046.875" y1="208.5286" y2="208.5286"/><!--MD5=[2354b0b452913538cc59f3362f30fe5f]
+class HttpsConfig--><rect codeLine="9" fill="#282828" height="277.7486" id="HttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="283.3333" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="283.3333" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="283.3333" x="7.2917" y="76.7578"/><rect codeLine="9" fill="none" height="277.7486" id="HttpsConfig" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="283.3333" x="7.2917" y="53.7028"/><ellipse cx="102.0833" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M103.9937,73.822 Q103.5665,74.0417 103.0965,74.1516 Q102.6265,74.2615 102.1077,74.2615 Q100.2645,74.2615 99.294,73.0469 Q98.3236,71.8323 98.3236,69.5374 Q98.3236,67.2363 99.294,66.0217 Q100.2645,64.8071 102.1077,64.8071 Q102.6265,64.8071 103.1026,64.917 Q103.5787,65.0269 103.9937,65.2466 L103.9937,67.2485 Q103.5299,66.8213 103.0935,66.6229 Q102.6571,66.4246 102.1932,66.4246 Q101.2044,66.4246 100.7009,67.2089 Q100.1973,67.9932 100.1973,69.5374 Q100.1973,71.0754 100.7009,71.8597 Q101.2044,72.644 102.1932,72.644 Q102.6571,72.644 103.0935,72.4457 Q103.5299,72.2473 103.9937,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="79.1667" x="125" y="74.1211">HttpsConfig</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="289.5833" y1="85.0911" y2="85.0911"/><ellipse cx="18.75" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="76.0417" x="30.2083" y="127.3722">HttpsConfig()</text><ellipse cx="18.75" cy="140.2059" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="30.2083" y="147.1171">HttpsConfig(int, int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="105.2083" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="108.3333" y="107.1065">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="192.7083" x2="289.5833" y1="103.2969" y2="103.2969"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="289.5833" y1="156.8258" y2="156.8258"/><ellipse cx="18.75" cy="168.2841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="251.0417" x="30.2083" y="175.1953">void setPreferStateful(boolean preferStateful)</text><ellipse cx="18.75" cy="211.9405" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="30.2083" y="218.8517">boolean isPreferStateful()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="122.3958" y1="194.7764" y2="194.7764"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="125.5208" y="198.586">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="175.5208" x2="289.5833" y1="194.7764" y2="194.7764"/><ellipse cx="18.75" cy="255.5969" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="90.625" x="30.2083" y="262.5081">int getHttpPort()</text><ellipse cx="18.75" cy="275.3418" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="30.2083" y="282.253">int getHttpsPort()</text><ellipse cx="18.75" cy="295.0867" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="162.5" x="30.2083" y="301.9979">void setHttpPort(int httpPort)</text><ellipse cx="18.75" cy="314.8315" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="30.2083" y="321.7428">void setHttpsPort(int httpsPort)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="119.2708" y1="238.4328" y2="238.4328"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="122.3958" y="242.2424">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="178.6458" x2="289.5833" y1="238.4328" y2="238.4328"/><!--MD5=[5557bddeb39ba1638b53efaed201553b]
+class HttpsMapper--><rect codeLine="26" fill="#282828" height="281.9153" id="HttpsMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="470.8333" x="350" y="394.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="470.8333" x="350" y="394.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="470.8333" x="350" y="417.3828"/><rect codeLine="26" fill="none" height="281.9153" id="HttpsMapper" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="470.8333" x="350" y="394.3278"/><ellipse cx="536.4583" cy="410.022" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M538.3687,414.447 Q537.9415,414.6667 537.4715,414.7766 Q537.0015,414.8865 536.4827,414.8865 Q534.6395,414.8865 533.669,413.6719 Q532.6986,412.4573 532.6986,410.1624 Q532.6986,407.8613 533.669,406.6467 Q534.6395,405.4321 536.4827,405.4321 Q537.0015,405.4321 537.4776,405.542 Q537.9537,405.6519 538.3687,405.8716 L538.3687,407.8735 Q537.9049,407.4463 537.4685,407.2479 Q537.0321,407.0496 536.5682,407.0496 Q535.5794,407.0496 535.0759,407.8339 Q534.5723,408.6182 534.5723,410.1624 Q534.5723,411.7004 535.0759,412.4847 Q535.5794,413.269 536.5682,413.269 Q537.0321,413.269 537.4685,413.0707 Q537.9049,412.8723 538.3687,412.4451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="83.3333" x="559.375" y="414.7461">HttpsMapper</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="351.0417" x2="819.7917" y1="425.7161" y2="425.7161"/><ellipse cx="361.4583" cy="461.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="372.9167" y="467.9972">HttpsMapper(IRequestMapper, HttpsConfig)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="541.6667" y1="443.9219" y2="443.9219"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="544.7917" y="447.7315">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="629.1667" x2="819.7917" y1="443.9219" y2="443.9219"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="819.7917" y1="477.7059" y2="477.7059"/><polygon fill="#FFFF44" points="361.4583,483.9559,365.625,488.1226,361.4583,492.2892,357.2917,488.1226" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="172.9167" x="372.9167" y="496.0754">Scheme getSchemeOf(Request)</text><polygon fill="#FFFF44" points="361.4583,527.6123,365.625,531.779,361.4583,535.9456,357.2917,531.779" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="267.7083" x="372.9167" y="539.7319">Scheme getDesiredSchemeFor(IRequestHandler)</text><polygon fill="#FFFF44" points="361.4583,547.3572,365.625,551.5238,361.4583,555.6905,357.2917,551.5238" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="438.5417" x="372.9167" y="559.4767">Scheme getDesiredSchemeFor(Class&lt;? extends IRequestablePage&gt; pageClass)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="550" y1="515.6565" y2="515.6565"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="64.5833" x="553.125" y="519.4661">(functional)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="620.8333" x2="819.7917" y1="515.6565" y2="515.6565"/><polygon fill="#FFFF44" points="361.4583,591.0136,365.625,595.1803,361.4583,599.3469,357.2917,595.1803" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="279.1667" x="372.9167" y="603.1331">IRequestHandler createRedirectHandler(String url)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="547.9167" y1="579.0578" y2="579.0578"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="551.0417" y="582.8674">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="622.9167" x2="819.7917" y1="579.0578" y2="579.0578"/><ellipse cx="361.4583" cy="639.8783" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="134.375" x="372.9167" y="646.7896">HttpsConfig getConfig()</text><polygon fill="#FFFF44" points="361.4583,654.4149,365.625,658.5815,361.4583,662.7482,357.2917,658.5815" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="333.3333" x="372.9167" y="666.5344">String createRedirectUrl(IRequestHandler, Request, Scheme)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="351.0417" x2="555.7292" y1="622.7142" y2="622.7142"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="558.8542" y="626.5238">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="615.1042" x2="819.7917" y1="622.7142" y2="622.7142"/><!--MD5=[5aac15fcd7e3351313502cd8af0463d3]
+class HttpsMapper.RedirectHandler--><rect codeLine="43" fill="#282828" height="127.0345" id="HttpsMapper.RedirectHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="237.5" x="857.2917" y="471.932"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="237.5" x="857.2917" y="471.932"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="237.5" x="857.2917" y="494.987"/><rect codeLine="43" fill="none" height="127.0345" id="HttpsMapper.RedirectHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="237.5" x="857.2917" y="471.932"/><ellipse cx="917.7083" cy="487.6261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M919.6187,492.0512 Q919.1915,492.2709 918.7215,492.3808 Q918.2515,492.4906 917.7327,492.4906 Q915.8895,492.4906 914.919,491.276 Q913.9486,490.0614 913.9486,487.7665 Q913.9486,485.4655 914.919,484.2509 Q915.8895,483.0363 917.7327,483.0363 Q918.2515,483.0363 918.7276,483.1462 Q919.2037,483.256 919.6187,483.4757 L919.6187,485.4777 Q919.1549,485.0505 918.7185,484.8521 Q918.2821,484.6537 917.8182,484.6537 Q916.8294,484.6537 916.3259,485.438 Q915.8223,486.2223 915.8223,487.7665 Q915.8223,489.3046 916.3259,490.0889 Q916.8294,490.8732 917.8182,490.8732 Q918.2821,490.8732 918.7185,490.6748 Q919.1549,490.4765 919.6187,490.0492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="102.0833" x="940.625" y="492.3503">RedirectHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="858.3333" x2="1093.75" y1="503.3203" y2="503.3203"/><ellipse cx="868.75" cy="538.6902" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="205.2083" x="880.2083" y="545.6014">RedirectHandler(String, HttpsConfig)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="858.3333" x2="932.2917" y1="521.5261" y2="521.5261"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="935.4167" y="525.3357">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1019.7917" x2="1093.75" y1="521.5261" y2="521.5261"/><ellipse cx="868.75" cy="582.3466" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="79.1667" x="880.2083" y="589.2578">String getUrl()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="858.3333" x2="946.3542" y1="565.1825" y2="565.1825"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="949.4792" y="568.9921">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1005.7292" x2="1093.75" y1="565.1825" y2="565.1825"/><!--MD5=[d4b1cb0f26e588e058a740b760dad652]
+class RequireHttps--><rect codeLine="51" fill="#282828" height="48.055" id="RequireHttps" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="121.875" x="327.6042" y="168.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="121.875" x="327.6042" y="168.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="121.875" x="327.6042" y="191.862"/><rect codeLine="51" fill="none" height="48.055" id="RequireHttps" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="121.875" x="327.6042" y="168.807"/><ellipse cx="342.1875" cy="184.5011" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M343.9596,184.5601 Q343.9596,183.8704 343.6483,183.4798 Q343.337,183.0892 342.7938,183.0892 Q342.2506,183.0892 341.9423,183.4798 Q341.6341,183.8704 341.6341,184.5601 Q341.6341,185.2559 341.9423,185.6466 Q342.2506,186.0372 342.7938,186.0372 Q343.337,186.0372 343.6483,185.6466 Q343.9596,185.2559 343.9596,184.5601 Z M345.0948,187.0626 L343.8985,187.0626 L343.8985,186.5621 Q343.6666,186.8856 343.3523,187.0351 Q343.0379,187.1847 342.5985,187.1847 Q341.5975,187.1847 340.9841,186.4644 Q340.3707,185.7442 340.3707,184.5601 Q340.3707,183.3822 340.981,182.665 Q341.5914,181.9478 342.5985,181.9478 Q343.0318,181.9478 343.3614,182.0974 Q343.691,182.2469 343.8985,182.5338 L343.8985,182.2835 Q343.8985,181.4535 343.4438,181.0018 Q342.9891,180.5501 342.1468,180.5501 Q340.8773,180.5501 340.0747,181.6671 Q339.2721,182.784 339.2721,184.5723 Q339.2721,186.4461 340.1998,187.5539 Q341.1275,188.6617 342.6717,188.6617 Q343.16,188.6617 343.6178,188.5183 Q344.0755,188.3748 344.4967,188.088 L345.0582,189.1622 Q344.5638,189.4979 343.9809,189.6657 Q343.398,189.8336 342.7327,189.8336 Q340.5965,189.8336 339.327,188.4115 Q338.0575,186.9893 338.0575,184.5723 Q338.0575,182.2103 339.1988,180.7912 Q340.3402,179.3722 342.2201,179.3722 Q343.5506,179.3722 344.3227,180.1748 Q345.0948,180.9774 345.0948,182.3629 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="84.375" x="358.8542" y="189.2253">RequireHttps</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="328.6458" x2="448.4375" y1="200.1953" y2="200.1953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="328.6458" x2="448.4375" y1="208.5286" y2="208.5286"/><!--MD5=[eb67951da8e901d002bf021564b151ea]
+class Scheme--><rect codeLine="53" fill="#282828" height="107.2896" id="Scheme" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="86.4583" x="105.7292" y="481.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="86.4583" x="105.7292" y="481.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="86.4583" x="105.7292" y="504.8828"/><rect codeLine="53" fill="none" height="107.2896" id="Scheme" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="86.4583" x="105.7292" y="481.8278"/><ellipse cx="120.3125" cy="497.522" fill="#CF6300" rx="10.4167" ry="10.4167" style="stroke:#EF8300;stroke-width:1.0416666666666667;"/><path d="M123.3683,502.2095 L117.6921,502.2095 L117.6921,493.0969 L123.3683,493.0969 L123.3683,494.6838 L119.4926,494.6838 L119.4926,496.6492 L123.0021,496.6492 L123.0021,498.2361 L119.4926,498.2361 L119.4926,500.6226 L123.3683,500.6226 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="48.9583" x="136.9792" y="502.2461">Scheme</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="106.7708" x2="191.1458" y1="513.2161" y2="513.2161"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="23.9583" x="115.1042" y="531.5857">ANY</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="29.1667" x="115.1042" y="551.3306">HTTP</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="35.4167" x="115.1042" y="571.0754">HTTPS</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="106.7708" x2="191.1458" y1="580.7841" y2="580.7841"/><!--MD5=[adcea8dcee1ca9d6263c31db7e438cc1]
+reverse link IRequestMapperDelegate to HttpsMapper--><path codeLine="25" d="M585.4167,237.984 C585.4167,277.6715 585.4167,338.1507 585.4167,394.1611 " fill="none" id="IRequestMapperDelegate-backto-HttpsMapper" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="578.125,237.7861,585.4167,216.9528,592.7083,237.7861,578.125,237.7861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f01b225082b99ec9fb810635376a7014]
+reverse link IRequestHandler to HttpsMapper.RedirectHandler--><path codeLine="42" d="M976.0417,237.984 C976.0417,297.5049 976.0417,403.807 976.0417,471.6299 " fill="none" id="IRequestHandler-backto-HttpsMapper.RedirectHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="968.75,237.7861,976.0417,216.9528,983.3333,237.7861,968.75,237.7861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3044fa071276df9435dc7a7d36164679]
+link HttpsConfig to RequireHttps--><!--MD5=[be1cad22065a6b4d31f1ddd50bb690d2]
+link HttpsConfig to Scheme--><!--MD5=[3b2658d8bfe50448eaa095831d163475]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.https"
+    
+    interface IRequestMapperDelegate
+    interface IRequestHandler
+    
+    class HttpsConfig
+    {
+        - -(constructors)- -
+        +HttpsConfig()
+        +HttpsConfig(int, int)
+        - -
+        +void setPreferStateful(boolean preferStateful)
+        - -(checks)- -
+        +boolean isPreferStateful()
+        - -(network)- -
+        +int getHttpPort()
+        +int getHttpsPort()
+        +void setHttpPort(int httpPort)
+        +void setHttpsPort(int httpsPort)
+    }
+    
+    IRequestMapperDelegate <|- - HttpsMapper
+    class HttpsMapper
+    {
+        - -(constructors)- -
+        +HttpsMapper(IRequestMapper, HttpsConfig)
+        - -
+        #Scheme getSchemeOf(Request)
+        - -(functional)- -
+        #Scheme getDesiredSchemeFor(IRequestHandler)
+        #Scheme getDesiredSchemeFor(Class<? extends IRequestablePage> pageClass)
+        - -(messaging)- -
+        #IRequestHandler createRedirectHandler(String url)
+        - -(network)- -
+        +HttpsConfig getConfig()
+        #String createRedirectUrl(IRequestHandler, Request, Scheme)
+    }
+    
+    IRequestHandler <|- - HttpsMapper.RedirectHandler
+    class HttpsMapper.RedirectHandler
+    {
+        - -(constructors)- -
+        +RedirectHandler(String, HttpsConfig)
+        - -(network)- -
+        +String getUrl()
+    }
+    
+    annotation RequireHttps
+    
+    enum Scheme
+    {
+        ANY
+        HTTP
+        HTTPS
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.protocol.https"
+    
+    interface IRequestMapperDelegate
+    interface IRequestHandler
+    
+    class HttpsConfig
+    {
+        - -(constructors)- -
+        +HttpsConfig()
+        +HttpsConfig(int, int)
+        - -
+        +void setPreferStateful(boolean preferStateful)
+        - -(checks)- -
+        +boolean isPreferStateful()
+        - -(network)- -
+        +int getHttpPort()
+        +int getHttpsPort()
+        +void setHttpPort(int httpPort)
+        +void setHttpsPort(int httpsPort)
+    }
+    
+    IRequestMapperDelegate <|- - HttpsMapper
+    class HttpsMapper
+    {
+        - -(constructors)- -
+        +HttpsMapper(IRequestMapper, HttpsConfig)
+        - -
+        #Scheme getSchemeOf(Request)
+        - -(functional)- -
+        #Scheme getDesiredSchemeFor(IRequestHandler)
+        #Scheme getDesiredSchemeFor(Class<? extends IRequestablePage> pageClass)
+        - -(messaging)- -
+        #IRequestHandler createRedirectHandler(String url)
+        - -(network)- -
+        +HttpsConfig getConfig()
+        #String createRedirectUrl(IRequestHandler, Request, Scheme)
+    }
+    
+    IRequestHandler <|- - HttpsMapper.RedirectHandler
+    class HttpsMapper.RedirectHandler
+    {
+        - -(constructors)- -
+        +RedirectHandler(String, HttpsConfig)
+        - -(network)- -
+        +String getUrl()
+    }
+    
+    annotation RequireHttps
+    
+    enum Scheme
+    {
+        ANY
+        HTTP
+        HTTPS
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

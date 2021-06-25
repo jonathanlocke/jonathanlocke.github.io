@@ -1,0 +1,117 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.tree"
+    
+    abstract AbstractTreePage
+    
+    interface Serializable
+    interface IModel
+    interface Set
+    interface ITreeProvider
+    
+    WicketExamplePage <|-- AbstractTreePage
+    abstract class AbstractTreePage
+    {
+    }
+    
+    AbstractTreePage <|-- AdvancedTreePage
+    abstract class AdvancedTreePage
+    {
+        --(constructors)--
+        +AdvancedTreePage()
+        --
+        #AbstractTree<Foo> createTree(FooProvider, IModel<Set<Foo>> state)
+        --(factory)--
+        #Component newContentComponent(String id, IModel<Foo>)
+    }
+    
+    AbstractTreePage <|-- BeginnersTreePage
+    class BeginnersTreePage
+    {
+        --(constructors)--
+        +BeginnersTreePage()
+    }
+    
+    Serializable <|-- Foo
+    class Foo
+    {
+        --(constructors)--
+        +Foo(Foo, String)
+        +Foo(String)
+        --
+        +String getBar()
+        +String getBaz()
+        +Foo getParent()
+        +boolean getQuux()
+        +void setBar(String bar)
+        +void setBaz(String baz)
+        +void setLoaded(boolean loaded)
+        +void setQuux(boolean quux)
+        --(checks)--
+        +boolean isLoaded()
+        --(collection)--
+        +List<Foo> getFoos()
+        --(identity)--
+        +String getId()
+    }
+    
+    Set <|-- FooExpansion
+    Serializable <|-- FooExpansion
+    class FooExpansion
+    {
+        --
+        +void collapseAll()
+        +void expandAll()
+        +FooExpansion get()
+    }
+    
+    IModel <|-- AdvancedTreePage.FooExpansionModel
+    class AdvancedTreePage.FooExpansionModel
+    {
+    }
+    
+    LoadableDetachableModel <|-- FooProvider.FooModel
+    class FooProvider.FooModel
+    {
+        --(constructors)--
+        +FooModel(Foo)
+    }
+    
+    Panel <|-- FooPanel
+    class FooPanel
+    {
+        --(constructors)--
+        +FooPanel(String, IModel<Foo>)
+    }
+    
+    ITreeProvider <|-- FooProvider
+    class FooProvider
+    {
+        --(constructors)--
+        +FooProvider()
+    }
+    
+    AdvancedTreePage <|-- NestedTreePage
+    class NestedTreePage
+    {
+    }
+    
+    AdvancedTreePage <|-- TableTreePage
+    class TableTreePage
+    {
+    }
+    
+    WicketExampleApplication <|-- TreeApplication
+    class TreeApplication
+    {
+        --(constructors)--
+        +TreeApplication()
+        --
+        +TreeApplication get()
+        +Foo getFoo(String id)
+    }
+    
+@enduml
+

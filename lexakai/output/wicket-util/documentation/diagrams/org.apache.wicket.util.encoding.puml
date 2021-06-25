@@ -1,0 +1,31 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.encoding"
+    
+    enum UrlEncoder.Type
+    {
+        HEADER
+        PATH
+        QUERY
+    }
+    
+    class UrlDecoder
+    {
+        --
+        +String decode(String, String enc)
+        +String decode(String source, Charset)
+    }
+    
+    class UrlEncoder
+    {
+        --(constructors)--
+        #UrlEncoder(Type)
+        --
+        +String encode(String, String charsetName)
+        +String encode(String unsafeInput, Charset)
+    }
+    
+@enduml
+

@@ -1,0 +1,168 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.jmx"
+    
+    interface IInitializer
+    
+    interface ApplicationMBean
+    {
+        --
+        +String getApplicationClass()
+        +String getHomePageClass()
+        --(collection)--
+        +void clearLocalizerCache()
+        +void clearMarkupCache()
+        +int getMarkupCacheSize()
+        --(configuration)--
+        +String getConfigurationType()
+        --(identity)--
+        +String getWicketVersion()
+    }
+    
+    interface ApplicationSettingsMBean
+    {
+        --
+        +String getAccessDeniedPage()
+        +String getClassResolver()
+        +String getUnexpectedExceptionDisplay()
+        --(collection)--
+        +String getDefaultMaximumUploadSize()
+        +void setDefaultMaximumUploadSize(String defaultUploadSize)
+        --(status)--
+        +String getInternalErrorPage()
+        +String getPageExpiredErrorPage()
+    }
+    
+    interface DebugSettingsMBean
+    {
+        --
+        +boolean getComponentUseCheck()
+        +void setAjaxDebugModeEnabled(boolean enable)
+        +void setComponentUseCheck(boolean check)
+        +void setDevelopmentUtilitiesEnabled(boolean enable)
+        --(checks)--
+        +boolean isAjaxDebugModeEnabled()
+        +boolean isDevelopmentUtilitiesEnabled()
+        +boolean isLinePreciseReportingOnAddComponentEnabled()
+        +boolean isLinePreciseReportingOnNewComponentEnabled()
+        +boolean isOutputMarkupContainerClassName()
+        --(collection)--
+        +void setLinePreciseReportingOnAddComponentEnabled(boolean enable)
+        --(factory)--
+        +void setLinePreciseReportingOnNewComponentEnabled(boolean enable)
+        --(naming)--
+        +String getComponentPathAttributeName()
+        +void setComponentPathAttributeName(String name)
+        +void setOutputMarkupContainerClassName(boolean enable)
+    }
+    
+    IInitializer <|-- Initializer
+    class Initializer
+    {
+    }
+    
+    interface MarkupSettingsMBean
+    {
+        --
+        +boolean getAutomaticLinking()
+        +boolean getCompressWhitespace()
+        +String getDefaultMarkupEncoding()
+        +boolean getStripComments()
+        +boolean getStripWicketTags()
+        +void setAutomaticLinking(boolean automaticLinking)
+        +void setCompressWhitespace(boolean compressWhitespace)
+        +void setDefaultMarkupEncoding(String encoding)
+        +void setStripComments(boolean stripComments)
+        +void setStripWicketTags(boolean stripWicketTags)
+    }
+    
+    interface PageSettingsMBean
+    {
+        --(identity)--
+        +boolean getVersionPagesByDefault()
+        +void setVersionPagesByDefault(boolean pagesVersionedByDefault)
+    }
+    
+    interface RequestCycleSettingsMBean
+    {
+        --
+        +boolean getBufferResponse()
+        +String getResponseRequestEncoding()
+        +void setBufferResponse(boolean bufferResponse)
+        +void setResponseRequestEncoding(String responseRequestEncoding)
+        --(collection)--
+        +int getExceptionRetryCount()
+        +void setExceptionRetryCount(int retries)
+        --(messaging)--
+        +boolean getGatherExtendedBrowserInfo()
+        +void setGatherExtendedBrowserInfo(boolean gatherExtendedBrowserInfo)
+        --(network)--
+        +String getTimeout()
+        +void setTimeout(String timeout)
+    }
+    
+    interface RequestLoggerMBean
+    {
+        --
+        +Integer getNumberOfCreatedSessions()
+        +Integer getNumberOfCurrentActiveRequests()
+        +Integer getNumberOfLiveSessions()
+        +Integer getPeakNumberOfActiveRequests()
+        +Integer getPeakNumberOfSessions()
+        --(lifecycle)--
+        +void restart()
+        +void stop()
+    }
+    
+    interface ResourceSettingsMBean
+    {
+        --
+        +String getLocalizer()
+        +String getPackageResourceGuard()
+        +String getResourceFinders()
+        +String getResourceStreamLocator()
+        +String[] getStringResourceLoaders()
+        +boolean getThrowExceptionOnMissingResource()
+        +boolean getUseDefaultOnMissingResource()
+        +void setThrowExceptionOnMissingResource(boolean throwExceptionOnMissingResource)
+        +void setUseDefaultOnMissingResource(boolean useDefaultOnMissingResource)
+        --(factory)--
+        +String getPropertiesFactory()
+        --(time)--
+        +String getResourcePollFrequency()
+    }
+    
+    interface SecuritySettingsMBean
+    {
+        --
+        +String getAuthorizationStrategy()
+        --(factory)--
+        +String getCryptFactory()
+        --(messaging)--
+        +String getUnauthorizedComponentInstantiationListener()
+    }
+    
+    interface SessionSettingsMBean
+    {
+        --
+        +String getSessionStore()
+        --(factory)--
+        +String getPageFactory()
+    }
+    
+    interface StoreSettingsMBean
+    {
+        --
+        +int getAsynchronousQueueCapacity()
+        --(checks)--
+        +boolean isAsynchronous()
+        --(collection)--
+        +long getMaxSizePerSession()
+        --(filesystem)--
+        +String getFileStoreFolder()
+    }
+    
+@enduml
+

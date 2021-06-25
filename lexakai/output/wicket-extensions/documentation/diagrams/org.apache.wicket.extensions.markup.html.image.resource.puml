@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.image.resource"
+    
+    DynamicImageResource <|-- ThumbnailImageResource
+    class ThumbnailImageResource
+    {
+        --(constructors)--
+        +ThumbnailImageResource(IResource, int)
+        --(functional)--
+        #BufferedImage getScaledImageInstance(Attributes)
+    }
+    
+@enduml
+

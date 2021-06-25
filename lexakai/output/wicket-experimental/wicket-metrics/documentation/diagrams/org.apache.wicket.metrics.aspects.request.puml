@@ -1,0 +1,22 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.request"
+    
+    WicketMetrics <|-- WicketFilterRequestCycleAspect
+    class WicketFilterRequestCycleAspect
+    {
+        --(functional)--
+        +Object aroundRequestProcessed(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- WicketFilterRequestCycleUrlAspect
+    class WicketFilterRequestCycleUrlAspect
+    {
+        --(functional)--
+        +Object aroundRequestProcessedWithURL(ProceedingJoinPoint)
+    }
+    
+@enduml
+

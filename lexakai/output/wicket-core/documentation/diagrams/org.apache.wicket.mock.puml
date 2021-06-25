@@ -1,0 +1,116 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.mock"
+    
+    interface IPageStore
+    interface IPageManager
+    interface IWritableRequestParameters
+    interface ISessionStore
+    interface IPageContext
+    
+    WebApplication <|-- MockApplication
+    class MockApplication
+    {
+        --(constructors)--
+        +MockApplication()
+        --
+        +Session getSession()
+    }
+    
+    WebPage <|-- MockHomePage
+    class MockHomePage
+    {
+    }
+    
+    IPageContext <|-- MockPageContext
+    class MockPageContext
+    {
+        --(constructors)--
+        +MockPageContext()
+        +MockPageContext(String)
+        --(collection)--
+        +void clearRequest()
+        +void clearSession()
+    }
+    
+    IPageManager <|-- MockPageManager
+    class MockPageManager
+    {
+    }
+    
+    IPageStore <|-- MockPageStore
+    class MockPageStore
+    {
+        --(collection)--
+        +List<IManageablePage> getPages()
+    }
+    
+    IWritableRequestParameters <|-- MockRequestParameters
+    class MockRequestParameters
+    {
+        --
+        +void setParameterValue(String name, String value)
+        --(collection)--
+        +void addParameterValue(String name, String value)
+    }
+    
+    ISessionStore <|-- MockSessionStore
+    class MockSessionStore
+    {
+        --(constructors)--
+        +MockSessionStore()
+    }
+    
+    WebRequest <|-- MockWebRequest
+    class MockWebRequest
+    {
+        --(constructors)--
+        +MockWebRequest(Url)
+        +MockWebRequest(Url, String, String, String)
+        --
+        +void setCookies(List<Cookie> cookies)
+        +void setDateHeader(String name, Time value)
+        +void setHeader(String name, String value)
+        +void setLocale(Locale)
+        --(collection)--
+        +void addCookie(Cookie)
+        +void addDateHeader(String name, Time value)
+        +void addHeader(String name, String value)
+        +void removeHeader(String header)
+        --(network)--
+        +void setUrl(Url)
+        --(path)--
+        +MockWebRequest setContextPath(String contextPath)
+        +MockWebRequest setFilterPath(String filterPath)
+        +MockWebRequest setPrefixToContextPath(String prefixToContextPath)
+    }
+    
+    WebResponse <|-- MockWebResponse
+    class MockWebResponse
+    {
+        --(constructors)--
+        +MockWebResponse()
+        --
+        +byte[] getBinaryResponse()
+        +Long getContentLength()
+        +String getContentType()
+        +Instant getDateHeader(String name)
+        +String getHeader(String name)
+        +Set<String> getHeaderNames()
+        --(checks)--
+        +boolean hasHeader(String name)
+        --(collection)--
+        +List<Cookie> getCookies()
+        --(network)--
+        +String getRedirectUrl()
+        --(primitive)--
+        +CharSequence getTextResponse()
+        --(status)--
+        +String getErrorMessage()
+        +Integer getStatus()
+    }
+    
+@enduml
+

@@ -1,0 +1,24 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization.strategies.action"
+    
+    IAuthorizationStrategy.AllowAllAuthorizationStrategy <|-- ActionAuthorizationStrategy
+    class ActionAuthorizationStrategy
+    {
+        --(collection)--
+        +void addActionAuthorizer(IActionAuthorizer)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IActionAuthorizer
+    interface IActionAuthorizer
+    {
+        --
+        +boolean authorizeAction(Component)
+        +Action getAction()
+    }
+    
+@enduml
+

@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.images"
+    
+    RenderedDynamicImageResource <|-- Home.CircleDynamicImageResource
+    class Home.CircleDynamicImageResource
+    {
+    }
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+        --
+        +ResourceReference getImage5Resource()
+    }
+    
+    WicketExampleApplication <|-- ImagesApplication
+    class ImagesApplication
+    {
+    }
+    
+@enduml
+

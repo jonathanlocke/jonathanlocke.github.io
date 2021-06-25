@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.resource"
+    
+    abstract AbstractResourceStream
+    
+    interface IResourceFinder
+    interface IFixedLocationResourceStream
+    
+    IResourceFinder <|-- ClassPathResourceFinder
+    class ClassPathResourceFinder
+    {
+        --(constructors)--
+        +ClassPathResourceFinder(String)
+    }
+    
+    AbstractResourceStream <|-- PackageResourceStream
+    class PackageResourceStream
+    {
+        --(constructors)--
+        +PackageResourceStream(Class<?>, String)
+        +PackageResourceStream(Class<?>, String, Locale, String, String)
+    }
+    
+    class UrlResourceStream.StreamData
+    {
+    }
+    
+    AbstractResourceStream <|-- UrlResourceStream
+    IFixedLocationResourceStream <|-- UrlResourceStream
+    class UrlResourceStream
+    {
+        --(constructors)--
+        +UrlResourceStream(URL)
+        --(network)--
+        +URL getURL()
+    }
+    
+    AbstractResourceStream <|-- WebExternalResourceStream
+    class WebExternalResourceStream
+    {
+        --(constructors)--
+        +WebExternalResourceStream(String)
+    }
+    
+@enduml
+

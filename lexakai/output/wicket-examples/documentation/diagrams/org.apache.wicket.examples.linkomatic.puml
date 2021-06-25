@@ -1,0 +1,82 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.linkomatic"
+    
+    interface IClusterable
+    
+    IClusterable <|-- Book
+    class Book
+    {
+        --(constructors)--
+        +Book(String)
+        --
+        +String getTitle()
+        +void setTitle(String title)
+    }
+    
+    WicketExamplePage <|-- BookDetails
+    class BookDetails
+    {
+        --(constructors)--
+        +BookDetails(Book)
+    }
+    
+    WicketExamplePage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+        --(collection)--
+        +int getLinkClickCount()
+        +int getOnClickLinkClickCount()
+        +void setLinkClickCount(int linkClickCount)
+        +void setOnClickLinkClickCount(int onClickLinkClickCount)
+    }
+    
+    WicketExampleApplication <|-- LinkomaticApplication
+    class LinkomaticApplication
+    {
+    }
+    
+    WicketExamplePage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Page3
+    class Page3
+    {
+        --(constructors)--
+        +Page3(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Popup
+    class Popup
+    {
+        --(constructors)--
+        +Popup()
+    }
+    
+    Form <|-- Home.RedirectForm
+    class Home.RedirectForm
+    {
+        --(constructors)--
+        +RedirectForm(String)
+        --(network)--
+        +String getRedirectUrl()
+        +void setRedirectUrl(String redirectUrl)
+    }
+    
+@enduml
+

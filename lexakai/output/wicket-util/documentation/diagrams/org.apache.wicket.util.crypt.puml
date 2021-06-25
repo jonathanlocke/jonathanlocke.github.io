@@ -1,0 +1,125 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.crypt"
+    
+    abstract AbstractCrypt
+    
+    interface ICryptFactory
+    interface ICrypt
+    
+    ICrypt <|-- AbstractCrypt
+    abstract class AbstractCrypt
+    {
+        --(constructors)--
+        +AbstractCrypt()
+        --
+        #byte[] crypt(byte[] input, int mode)
+        --(collection)--
+        +String getKey()
+    }
+    
+    CryptFactoryCachingDecorator <|-- CachingSunJceCryptFactory
+    class CachingSunJceCryptFactory
+    {
+        --(constructors)--
+        +CachingSunJceCryptFactory(String)
+    }
+    
+    class CharEncoding
+    {
+    }
+    
+    class CipherUtils
+    {
+        --(collection)--
+        +SecretKey generateKey(String algorithm, int keyLength, SecureRandom)
+        +SecretKey generatePBEKey(String password, String pbeAlgorithm, String keyAlgorithm, byte[] salt, int iterationCount, int keyLength)
+    }
+    
+    ICryptFactory <|-- ClassCryptFactory
+    class ClassCryptFactory
+    {
+        --(constructors)--
+        +ClassCryptFactory(Class<?>, String)
+    }
+    
+    ICryptFactory <|-- CryptFactoryCachingDecorator
+    class CryptFactoryCachingDecorator
+    {
+        --(constructors)--
+        +CryptFactoryCachingDecorator(ICryptFactory)
+    }
+    
+    interface ICrypt
+    {
+        --(collection)--
+        +void setKey(String key)
+        --(network)--
+        +String decryptUrlSafe(String text)
+        +String encryptUrlSafe(String plainText)
+    }
+    
+    interface ICryptFactory
+    {
+        --(factory)--
+        +ICrypt newCrypt()
+    }
+    
+    ICrypt <|-- NoCrypt
+    class NoCrypt
+    {
+        --(constructors)--
+        +NoCrypt()
+    }
+    
+    ICryptFactory <|-- NoCryptFactory
+    class NoCryptFactory
+    {
+    }
+    
+    class StringUtils
+    {
+        --(factory)--
+        +String newString(byte[] bytes, String charsetName)
+        +String newStringIso8859_1(byte[] bytes)
+        +String newStringUsAscii(byte[] bytes)
+        +String newStringUtf16(byte[] bytes)
+        +String newStringUtf16Be(byte[] bytes)
+        +String newStringUtf16Le(byte[] bytes)
+        +String newStringUtf8(byte[] bytes)
+        --(primitive)--
+        +byte[] getBytesIso8859_1(String)
+        +byte[] getBytesUnchecked(String, String charsetName)
+        +byte[] getBytesUsAscii(String)
+        +byte[] getBytesUtf16(String)
+        +byte[] getBytesUtf16Be(String)
+        +byte[] getBytesUtf16Le(String)
+        +byte[] getBytesUtf8(String)
+    }
+    
+    AbstractCrypt <|-- SunJceCrypt
+    class SunJceCrypt
+    {
+        --(constructors)--
+        +SunJceCrypt()
+        +SunJceCrypt(String)
+        +SunJceCrypt(String, byte[], int)
+        +SunJceCrypt(byte[], int)
+        --
+        +byte[] randomSalt()
+        #Cipher createCipher(SecretKey, AlgorithmParameterSpec, int mode)
+        #AlgorithmParameterSpec createParameterSpec()
+        --(collection)--
+        #KeySpec createKeySpec()
+        #SecretKey generateSecretKey()
+    }
+    
+    AbstractCrypt <|-- TrivialCrypt
+    class TrivialCrypt
+    {
+    }
+    
+@enduml
+

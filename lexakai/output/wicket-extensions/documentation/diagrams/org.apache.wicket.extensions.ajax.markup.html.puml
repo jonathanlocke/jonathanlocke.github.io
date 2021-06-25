@@ -1,0 +1,177 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html"
+    
+    abstract AbstractDefaultAjaxBehavior
+    abstract AbstractAjaxTimerBehavior
+    
+    interface IModel
+    interface IObjectClassAwareModel
+    interface IGenericComponent
+    interface IAjaxIndicatorAware
+    
+    AjaxEditableLabel <|-- AjaxEditableChoiceLabel
+    class AjaxEditableChoiceLabel<T>
+    {
+        --(constructors)--
+        +AjaxEditableChoiceLabel(String)
+        +AjaxEditableChoiceLabel(String, IModel<T>)
+        +AjaxEditableChoiceLabel(String, IModel<T>, IModel<? extends List<? extends T>>)
+        +AjaxEditableChoiceLabel(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +AjaxEditableChoiceLabel(String, IModel<T>, List<? extends T>)
+        +AjaxEditableChoiceLabel(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>)
+        +AjaxEditableChoiceLabel(String, List<? extends T>)
+    }
+    
+    Panel <|-- AjaxEditableLabel
+    IGenericComponent <|-- AjaxEditableLabel
+    class AjaxEditableLabel<T>
+    {
+        --(constructors)--
+        +AjaxEditableLabel(String)
+        +AjaxEditableLabel(String, IModel<T>)
+        --
+        +void onEdit(AjaxRequestTarget)
+        +AjaxEditableLabel<T> setLabel(IModel<String> labelModel)
+        +AjaxEditableLabel<T> setType(Class<?> type)
+        #String defaultNullLabel()
+        #FormComponent<T> getEditor()
+        #Component getLabel()
+        #void onCancel(AjaxRequestTarget)
+        #void onSubmit(AjaxRequestTarget)
+        #void updateEditorAjaxAttributes(AjaxRequestAttributes)
+        #void updateLabelAjaxAttributes(AjaxRequestAttributes)
+        --(checks)--
+        #boolean shouldTrimInput()
+        --(collection)--
+        +AjaxEditableLabel<T> add(IValidator<T>)
+        --(factory)--
+        #FormComponent<T> newEditor(MarkupContainer parent, String componentId, IModel<T>)
+        #Component newLabel(MarkupContainer parent, String componentId, IModel<T>)
+        --(functional)--
+        +AjaxEditableLabel<T> setRequired(boolean required)
+        --(messaging)--
+        #String getLabelAjaxEvent()
+        --(status)--
+        #void onError(AjaxRequestTarget)
+    }
+    
+    AjaxEditableLabel <|-- AjaxEditableMultiLineLabel
+    class AjaxEditableMultiLineLabel<T>
+    {
+        --(constructors)--
+        +AjaxEditableMultiLineLabel(String)
+        +AjaxEditableMultiLineLabel(String, IModel<T>)
+        --
+        +int getCols()
+        +int getRows()
+        +void setCols(int cols)
+        +void setRows(int rows)
+    }
+    
+    Behavior <|-- AjaxIndicatorAppender
+    class AjaxIndicatorAppender
+    {
+        --(constructors)--
+        +AjaxIndicatorAppender()
+        +AjaxIndicatorAppender(ResourceReference)
+        --
+        #String getSpanClass()
+        --(identity)--
+        +String getMarkupId()
+        --(primitive)--
+        #CharSequence getIndicatorUrl()
+    }
+    
+    Panel <|-- AjaxLazyLoadPanel
+    abstract class AjaxLazyLoadPanel<T>
+    {
+        --(constructors)--
+        +AjaxLazyLoadPanel(String)
+        +AjaxLazyLoadPanel(String, IModel<?>)
+        --
+        +Component getLoadingComponent(String id)
+        #void onContentLoaded(T content, Optional<AjaxRequestTarget>)
+        --(checks)--
+        #boolean isContentReady()
+        #boolean isLoaded()
+        --(lifecycle)--
+        #void initTimer()
+        --(read)--
+        +T getLazyLoadComponent(String markupId)
+        --(time)--
+        #Duration getUpdateInterval()
+    }
+    
+    class AjaxLazyLoadPanelTester
+    {
+        --(read)--
+        +void executeAjaxLazyLoadPanel(BaseWicketTester wt, Page)
+        +void executeAjaxLazyLoadPanel(BaseWicketTester wt)
+        +Duration loadAjaxLazyLoadPanel(BaseWicketTester wt, AjaxLazyLoadPanel<?>)
+    }
+    
+    AbstractAjaxTimerBehavior <|-- AjaxLazyLoadPanel.AjaxLazyLoadTimer
+    class AjaxLazyLoadPanel.AjaxLazyLoadTimer
+    {
+        --(constructors)--
+        +AjaxLazyLoadTimer()
+        --(read)--
+        +void load(AjaxRequestTarget)
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- AjaxEditableLabel.EditorAjaxBehavior
+    class AjaxEditableLabel.EditorAjaxBehavior
+    {
+    }
+    
+    AjaxButton <|-- IndicatingAjaxButton
+    IAjaxIndicatorAware <|-- IndicatingAjaxButton
+    abstract class IndicatingAjaxButton
+    {
+        --(constructors)--
+        +IndicatingAjaxButton(String)
+        +IndicatingAjaxButton(String, Form<?>)
+        +IndicatingAjaxButton(String, IModel<String>)
+        +IndicatingAjaxButton(String, IModel<String>, Form<?>)
+        --(extension points)--
+        +IndicatingAjaxButton onSubmit(String id, SerializableBiConsumer<AjaxButton,AjaxRequestTarget> onSubmit)
+    }
+    
+    AjaxFallbackLink <|-- IndicatingAjaxFallbackLink
+    IAjaxIndicatorAware <|-- IndicatingAjaxFallbackLink
+    abstract class IndicatingAjaxFallbackLink<T>
+    {
+        --(constructors)--
+        +IndicatingAjaxFallbackLink(String)
+        +IndicatingAjaxFallbackLink(String, IModel<T>)
+    }
+    
+    AjaxLink <|-- IndicatingAjaxLink
+    IAjaxIndicatorAware <|-- IndicatingAjaxLink
+    abstract class IndicatingAjaxLink<T>
+    {
+        --(constructors)--
+        +IndicatingAjaxLink(String)
+        +IndicatingAjaxLink(String, IModel<T>)
+        --(extension points)--
+        +IndicatingAjaxLink<T> onClick(String id, SerializableBiConsumer<AjaxLink<T>,AjaxRequestTarget> onClick)
+    }
+    
+    AjaxEventBehavior <|-- AjaxEditableLabel.LabelAjaxBehavior
+    class AjaxEditableLabel.LabelAjaxBehavior
+    {
+        --(constructors)--
+        +LabelAjaxBehavior(String)
+    }
+    
+    IModel <|-- AjaxEditableLabel.WrapperModel
+    IObjectClassAwareModel <|-- AjaxEditableLabel.WrapperModel
+    class AjaxEditableLabel.WrapperModel
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,62 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.form.palette"
+    
+    FormComponentPanel <|-- Palette
+    Palette --> String : "creates"
+    class Palette<T>
+    {
+        --(constructors)--
+        +Palette(String, IModel<? extends Collection<T>>, IChoiceRenderer<? super T>, int, boolean)
+        +Palette(String, IModel<? extends Collection<T>>, IModel<? extends Collection<? extends T>>, IChoiceRenderer<? super T>, int, boolean)
+        +Palette(String, IModel<? extends Collection<T>>, IModel<? extends Collection<? extends T>>, IChoiceRenderer<? super T>, int, boolean, boolean)
+        --
+        +IChoiceRenderer<? super T> getChoiceRenderer()
+        +Collection<? extends T> getChoices()
+        +String getChoicesOnFocusJS()
+        +String getDownOnClickJS()
+        +Collection<T> getModelCollection()
+        +Recorder<T> getRecorderComponent()
+        +int getRows()
+        +String getSelectionOnFocusJS()
+        +String getUpOnClickJS()
+        #String buildJSCall(String funcName)
+        #Component getChoicesComponent()
+        #Component getSelectionComponent()
+        --(checks)--
+        +boolean isPaletteEnabled()
+        --(collection)--
+        +String getAddAllOnClickJS()
+        +String getAddOnClickJS()
+        +String getRemoveAllOnClickJS()
+        +String getRemoveOnClickJS()
+        +Iterator<T> getSelectedChoices()
+        +Iterator<T> getUnselectedChoices()
+        #Map<String,String> getAdditionalAttributesForChoices(Object choice)
+        #Map<String,String> getAdditionalAttributesForSelection(Object choice)
+        #boolean localizeDisplayValues()
+        #Component newAddAllComponent()
+        #Component newAddComponent()
+        #Component newRemoveAllComponent()
+        #Component newRemoveComponent()
+        --(factory)--
+        #Component newAvailableHeader(String componentId)
+        #Component newChoicesComponent()
+        #Component newDownComponent()
+        #Recorder<T> newRecorderComponent()
+        #Component newSelectedHeader(String componentId)
+        #Component newSelectionComponent()
+        #Component newUpComponent()
+    }
+    
+    WebMarkupContainer <|-- Palette.PaletteButton
+    class Palette.PaletteButton
+    {
+        --(constructors)--
+        +PaletteButton(String)
+    }
+    
+@enduml
+

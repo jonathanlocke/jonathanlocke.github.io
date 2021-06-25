@@ -1,0 +1,296 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.model"
+    
+    abstract AbstractPropertyModel
+    
+    interface IModel
+    interface IWrapModel
+    interface IObjectClassAwareModel
+    interface IComponentAssignedModel
+    interface IPropertyReflectionAwareModel
+    interface IComponentInheritedModel
+    
+    ChainingModel <|-- AbstractPropertyModel
+    IObjectClassAwareModel <|-- AbstractPropertyModel
+    IPropertyReflectionAwareModel <|-- AbstractPropertyModel
+    abstract class AbstractPropertyModel<T>
+    {
+        --(constructors)--
+        +AbstractPropertyModel(Object)
+        --
+        +String getPropertyExpression()
+        #String propertyExpression()
+    }
+    
+    IWrapModel <|-- AbstractWrapModel
+    abstract class AbstractWrapModel<T>
+    {
+    }
+    
+    LoadableDetachableModel <|-- ResourceModel.AssignmentWrapper
+    IWrapModel <|-- ResourceModel.AssignmentWrapper
+    class ResourceModel.AssignmentWrapper
+    {
+    }
+    
+    LoadableDetachableModel <|-- StringResourceModel.AssignmentWrapper
+    IWrapModel <|-- StringResourceModel.AssignmentWrapper
+    class StringResourceModel.AssignmentWrapper
+    {
+        --(constructors)--
+        +AssignmentWrapper(Component)
+    }
+    
+    IWrapModel <|-- ComponentPropertyModel.AssignmentWrapper
+    class ComponentPropertyModel.AssignmentWrapper<P>
+    {
+        --
+        #String propertyExpression()
+    }
+    
+    AbstractPropertyModel <|-- CompoundPropertyModel.AttachedCompoundPropertyModel
+    IWrapModel <|-- CompoundPropertyModel.AttachedCompoundPropertyModel
+    class CompoundPropertyModel.AttachedCompoundPropertyModel<C>
+    {
+    }
+    
+    IModel <|-- ChainingModel
+    class ChainingModel<T>
+    {
+        --(constructors)--
+        +ChainingModel(Object)
+        --
+        +Object getInnermostModelOrObject()
+        +Object getTarget()
+        #ChainingModel<T> setTarget(Object modelObject)
+        --(functional)--
+        +IModel<?> getChainedModel()
+    }
+    
+    IComponentAssignedModel <|-- ComponentDetachableModel
+    class ComponentDetachableModel<T>
+    {
+        --
+        #void attach()
+        #T getObject(Component)
+        #void setAttached()
+        #void setObject(Component, T object)
+        --(checks)--
+        +boolean isAttached()
+    }
+    
+    IModel <|-- ComponentModel
+    IComponentAssignedModel <|-- ComponentModel
+    class ComponentModel<T>
+    {
+        --
+        #T getObject(Component)
+        #void setObject(Component, T object)
+    }
+    
+    IComponentAssignedModel <|-- ComponentPropertyModel
+    class ComponentPropertyModel<T>
+    {
+        --(constructors)--
+        +ComponentPropertyModel(String)
+    }
+    
+    ChainingModel <|-- CompoundPropertyModel
+    IComponentInheritedModel <|-- CompoundPropertyModel
+    class CompoundPropertyModel<T>
+    {
+        --(constructors)--
+        +CompoundPropertyModel(IModel<T>)
+        +CompoundPropertyModel(T)
+        --
+        +IModel<S> bind(String property)
+        +CompoundPropertyModel<Z> of(Z object)
+        +CompoundPropertyModel<Z> of(IModel<Z>)
+        #String propertyExpression(Component)
+    }
+    
+    interface IModel
+    IModel <|-- IComponentAssignedModel
+    interface IComponentAssignedModel<T>
+    {
+        --
+        +IWrapModel<T> wrapOnAssignment(Component)
+    }
+    
+    interface IModel
+    IModel <|-- IComponentInheritedModel
+    interface IComponentInheritedModel<T>
+    {
+        --
+        +IWrapModel<W> wrapOnInheritance(Component)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IDetachable
+    interface IDetachable
+    {
+        --
+        +void detach()
+    }
+    
+    interface IDetachable
+    IDetachable <|-- IModel
+    interface IModel<T>
+    {
+        --
+        +IModel<R> combineWith(IModel<U> other, SerializableBiFunction<? super T,? super U,R> combiner)
+        +T getObject()
+        +IModel<Boolean> isPresent()
+        +IModel<T> of(IModel<?>)
+        +IModel<T> orElse(T other)
+        +IModel<T> orElseGet(SerializableSupplier<? extends T> other)
+        +void setObject(T object)
+        --(collection)--
+        +IModel<R> flatMap(SerializableFunction<? super T,IModel<R>> mapper)
+        +IModel<R> map(SerializableFunction<? super T,R> mapper)
+        --(filtering)--
+        +IModel<T> filter(SerializablePredicate<? super T>)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IModelComparator
+    interface IModelComparator
+    {
+        --
+        +boolean compare(Component, Object newObject)
+    }
+    
+    interface IModel
+    IModel <|-- IObjectClassAwareModel
+    interface IObjectClassAwareModel<T>
+    {
+        --
+        +Class<T> getObjectClass()
+    }
+    
+    interface IModel
+    IModel <|-- IPropertyReflectionAwareModel
+    interface IPropertyReflectionAwareModel<T>
+    {
+        --
+        +Field getPropertyField()
+        +Method getPropertyGetter()
+        +Method getPropertySetter()
+    }
+    
+    interface IModel
+    IModel <|-- IWrapModel
+    interface IWrapModel<T>
+    {
+        --(functional)--
+        +IModel<?> getWrappedModel()
+    }
+    
+    enum LoadableDetachableModel.InternalState
+    {
+        ATTACHED
+        ATTACHING
+        DETACHED
+    }
+    
+    IModel <|-- LambdaModel
+    abstract class LambdaModel<T>
+    {
+        --
+        +IModel<R> of(SerializableSupplier<R> getter)
+        +IModel<R> of(IModel<X> target, SerializableFunction<X,R> getter, SerializableBiConsumer<X,R> setter)
+        +IModel<R> of(SerializableSupplier<R> getter, SerializableConsumer<R> setter)
+    }
+    
+    IModel <|-- LoadableDetachableModel
+    abstract class LoadableDetachableModel<T>
+    {
+        --(constructors)--
+        +LoadableDetachableModel()
+        +LoadableDetachableModel(T)
+        --
+        +LoadableDetachableModel<T> of(SerializableSupplier<T> getter)
+        #void onAttach()
+        #void onDetach()
+        --(checks)--
+        +boolean isAttached()
+        --(read)--
+        #T load()
+    }
+    
+    IObjectClassAwareModel <|-- Model
+    class Model<T>
+    {
+        --(constructors)--
+        +Model()
+        +Model(T)
+        --
+        +IModel<Collection<C>> of(Collection<C>)
+        +Model<T> of(T object)
+        +Model<T> of()
+        +IModel<Set<C>> ofSet(Set<C>)
+        --(collection)--
+        +IModel<List<C>> ofList(List<C>)
+        +IModel<Map<K,V>> ofMap(Map<K,V>)
+    }
+    
+    AbstractPropertyModel <|-- PropertyModel
+    class PropertyModel<T>
+    {
+        --(constructors)--
+        +PropertyModel(Object, String)
+        --
+        +PropertyModel<Z> of(Object parent, String property)
+    }
+    
+    IComponentAssignedModel <|-- ResourceModel
+    class ResourceModel
+    {
+        --(constructors)--
+        +ResourceModel(String)
+        +ResourceModel(String, IModel<String>)
+        +ResourceModel(String, String)
+    }
+    
+    LoadableDetachableModel <|-- StringResourceModel
+    IComponentAssignedModel <|-- StringResourceModel
+    class StringResourceModel
+    {
+        --(constructors)--
+        +StringResourceModel(String)
+        +StringResourceModel(String, Component)
+        +StringResourceModel(String, Component, IModel<?>)
+        +StringResourceModel(String, IModel<?>)
+        --
+        +Localizer getLocalizer()
+        +String getString()
+        +StringResourceModel setDefaultValue(String defaultValue)
+        +StringResourceModel setDefaultValue(IModel<String> defaultValue)
+        +StringResourceModel setModel(IModel<?>)
+        +StringResourceModel setParameters(Object... parameters)
+        #Locale getLocale()
+        #Object[] getParameters()
+        #String getString(Component)
+        --(collection)--
+        #String getResourceKey()
+    }
+    
+    IWrapModel <|-- ComponentDetachableModel.WrapModel
+    class ComponentDetachableModel.WrapModel<P>
+    {
+        --(constructors)--
+        +WrapModel(Component)
+    }
+    
+    IWrapModel <|-- ComponentModel.WrapModel
+    class ComponentModel.WrapModel
+    {
+        --(constructors)--
+        +WrapModel(Component)
+    }
+    
+@enduml
+

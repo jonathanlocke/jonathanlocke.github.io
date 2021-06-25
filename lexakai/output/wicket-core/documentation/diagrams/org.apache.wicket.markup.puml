@@ -1,0 +1,526 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup"
+    
+    abstract AbstractMarkupFragment
+    abstract AbstractMarkupParser
+    
+    interface IMarkupCacheKeyProvider
+    interface Serializable
+    interface IMarkupCache
+    interface IResourceStream
+    interface ICache
+    interface Iterator
+    interface IMarkupFragment
+    interface IFixedLocationResourceStream
+    interface IMarkupResourceStreamProvider
+    
+    IMarkupFragment <|-- AbstractMarkupFragment
+    abstract class AbstractMarkupFragment
+    {
+        --(search)--
+        #IMarkupFragment find(String id, int streamOffset)
+    }
+    
+    abstract class AbstractMarkupParser
+    {
+        --(constructors)--
+        +AbstractMarkupParser(IXmlPullParser, MarkupResourceStream)
+        +AbstractMarkupParser(MarkupResourceStream)
+        +AbstractMarkupParser(String)
+        --
+        +void setWicketNamespace(String namespace)
+        #String compressWhitespace(String rawMarkup)
+        #MarkupResourceStream getMarkupResourceStream()
+        #void postProcess(Markup)
+        --(collection)--
+        +List<IMarkupFilter> getMarkupFilters()
+        #List<IMarkupFilter> initializeMarkupFilters(Markup)
+        --(parsing)--
+        +Markup parse()
+        --(primitive)--
+        #CharSequence handleRawText(String rawMarkup)
+    }
+    
+    MarkupElement <|-- ComponentTag
+    class ComponentTag
+    {
+        --(constructors)--
+        +ComponentTag(ComponentTag)
+        +ComponentTag(String, XmlTag.TagType)
+        +ComponentTag(XmlTag)
+        --
+        +void append(String key, CharSequence value, String separator)
+        +void enableAutolink(boolean autolink)
+        +String getAttribute(String name)
+        +boolean getFlag(int flag)
+        +int getLength()
+        +Class<? extends Component> getMarkupClass()
+        +String getNamespace()
+        +ComponentTag getOpenTag()
+        +int getPos()
+        +TagType getType()
+        +Object getUserData(String key)
+        +XmlTag getXmlTag()
+        +void makeImmutable()
+        +ComponentTag mutable()
+        +void onBeforeRender(Component, MarkupStream)
+        +void setAutoComponentTag(boolean auto)
+        +void setFlag(int flag, boolean set)
+        +void setIgnore(boolean ignore)
+        +void setMarkupClass(Class<C> wicketHeaderClass)
+        +void setNamespace(String namespace)
+        +void setOpenTag(ComponentTag)
+        +void setType(TagType)
+        +void setUserData(String key, Object value)
+        --(checks)--
+        +boolean hasBehaviors()
+        +boolean hasNoCloseTag()
+        +boolean isAutoComponentTag()
+        +boolean isAutolinkEnabled()
+        +boolean isClose()
+        +boolean isIgnore()
+        +boolean isOpen(String id)
+        +boolean isOpen()
+        +boolean isOpenClose()
+        +boolean isOpenClose(String id)
+        --(collection)--
+        +void addBehavior(Behavior)
+        +boolean containsWicketId()
+        +IValueMap getAttributes()
+        +Iterator<? extends Behavior> getBehaviors()
+        +void put(String key, int value)
+        +void put(String key, boolean value)
+        +void put(String key, CharSequence value)
+        +void put(String key, StringValue)
+        +void putAll(Map<String,Object>)
+        +void putInternal(String key, CharSequence value)
+        +void remove(String key)
+        +void setContainsWicketId(boolean containsWicketId)
+        --(factory)--
+        +IAutoComponentFactory getAutoComponentFactory()
+        +void setAutoComponentFactory(IAutoComponentFactory)
+        --(identity)--
+        +String getId()
+        +void setId(String id)
+        --(io)--
+        +boolean requiresCloseTag()
+        +void setHasNoCloseTag(boolean hasNoCloseTag)
+        +CharSequence syntheticCloseTagString()
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(time)--
+        +void setModified(boolean modified)
+        --(write)--
+        +void writeOutput(Response, boolean stripWicketAttributes, String namespace)
+    }
+    
+    class ContainerInfo
+    {
+        --(constructors)--
+        +ContainerInfo(Class<?>, Locale, String, String, MarkupType)
+        +ContainerInfo(Class<?>, MarkupContainer)
+        +ContainerInfo(MarkupContainer)
+        --
+        +Class<?> getContainerClass()
+        +Locale getLocale()
+        +String getStyle()
+        +String getVariation()
+        --(filesystem)--
+        +String getFileExtension()
+    }
+    
+    MarkupCache.ICache <|-- MarkupCache.DefaultCacheImplementation
+    class MarkupCache.DefaultCacheImplementation<K, V>
+    {
+        --(constructors)--
+        +DefaultCacheImplementation()
+    }
+    
+    IMarkupCacheKeyProvider <|-- DefaultMarkupCacheKeyProvider
+    class DefaultMarkupCacheKeyProvider
+    {
+        --(constructors)--
+        +DefaultMarkupCacheKeyProvider()
+    }
+    
+    IMarkupResourceStreamProvider <|-- DefaultMarkupResourceStreamProvider
+    class DefaultMarkupResourceStreamProvider
+    {
+        --(constructors)--
+        +DefaultMarkupResourceStreamProvider()
+    }
+    
+    MarkupElement <|-- HtmlSpecialTag
+    class HtmlSpecialTag
+    {
+        --(constructors)--
+        +HtmlSpecialTag(XmlTag, HttpTagType)
+        --
+        +boolean getFlag(int flag)
+        +int getLength()
+        +int getPos()
+        +TagType getType()
+        +XmlTag getXmlTag()
+        +void onBeforeRender(Component, MarkupStream)
+        +void setFlag(int flag, boolean set)
+        --(checks)--
+        +boolean isClose()
+        +boolean isOpen()
+        +boolean isOpenClose()
+        --(network)--
+        +HttpTagType getHttpTagType()
+        --(write)--
+        +void writeOutput(Response, boolean stripWicketAttributes, String namespace)
+    }
+    
+    interface ComponentTag.IAutoComponentFactory
+    {
+        --(factory)--
+        +Component newComponent(MarkupContainer, ComponentTag)
+    }
+    
+    interface MarkupCache.ICache<K, V>
+    {
+        --
+        +V get(K key)
+        +void shutdown()
+        --(collection)--
+        +void clear()
+        +boolean containsKey(K key)
+        +Collection<K> getKeys()
+        +Collection<V> getValues()
+        +void put(K key, V value)
+        +boolean remove(K key)
+        +int size()
+    }
+    
+    interface IMarkupCache
+    {
+        --
+        +Markup getMarkup(MarkupContainer, Class<?> clazz, boolean enforceReload)
+        +void shutdown()
+        --(collection)--
+        +void clear()
+        +IMarkupFragment removeMarkup(String cacheKey)
+        +int size()
+    }
+    
+    interface IMarkupCacheKeyProvider
+    {
+        --(collection)--
+        +String getCacheKey(MarkupContainer, Class<?> containerClass)
+    }
+    
+    interface Iterable<MarkupElement>
+    Iterable <|-- IMarkupFragment
+    interface IMarkupFragment
+    {
+        --
+        +MarkupElement get(int index)
+        +MarkupResourceStream getMarkupResourceStream()
+        --(collection)--
+        +int size()
+        --(search)--
+        +IMarkupFragment find(String wicketId)
+    }
+    
+    interface IMarkupResourceStreamProvider
+    {
+        --
+        +IResourceStream getMarkupResourceStream(MarkupContainer, Class<?> containerClass)
+    }
+    
+    AbstractMarkupFragment <|-- Markup
+    class Markup
+    {
+        --(constructors)--
+        +Markup(MarkupResourceStream)
+        --
+        +String locationAsString()
+        +void makeImmutable()
+        +Markup of(String markup, String wicketNamespace)
+        +Markup of(String markup)
+        +void replace(int index, MarkupElement)
+        --(collection)--
+        +void addMarkupElement(MarkupElement)
+        +void addMarkupElement(int pos, MarkupElement)
+        +Iterator<MarkupElement> iterator(int startIndex, int size)
+    }
+    
+    IMarkupCache <|-- MarkupCache
+    class MarkupCache
+    {
+        --(constructors)--
+        #MarkupCache()
+        --
+        +IMarkupCache get()
+        +ICache<String,Markup> getMarkupCache()
+        #Markup getMarkupFromCache(String cacheKey, MarkupContainer)
+        --(collection)--
+        +IMarkupCacheKeyProvider getMarkupCacheKeyProvider(MarkupContainer)
+        #Markup putIntoCache(String locationString, MarkupContainer, Markup)
+        --(extension points)--
+        #Markup onMarkupNotFound(String cacheKey, MarkupContainer, Markup)
+        --(factory)--
+        #ICache<K,V> newCacheImplementation()
+    }
+    
+    abstract class MarkupElement
+    {
+        --(constructors)--
+        +MarkupElement()
+        --
+        +boolean closes(MarkupElement open)
+        +boolean equalTo(MarkupElement)
+        --(conversion)--
+        +CharSequence toCharSequence()
+        +String toUserDebugString()
+    }
+    
+    WicketRuntimeException <|-- MarkupException
+    class MarkupException
+    {
+        --(constructors)--
+        +MarkupException(IResourceStream, String)
+        +MarkupException(IResourceStream, String, Throwable)
+        +MarkupException(Markup, String, Throwable)
+        +MarkupException(MarkupStream, String)
+        +MarkupException(MarkupStream, String, Throwable)
+        +MarkupException(String)
+        --
+        +MarkupStream getMarkupStream()
+        +void setMarkupStream(MarkupStream)
+    }
+    
+    class MarkupFactory
+    {
+        --(constructors)--
+        +MarkupFactory()
+        --
+        +Class<?> getContainerClass(MarkupContainer, Class<?> clazz)
+        +Markup getMarkup(MarkupContainer, boolean enforceReload)
+        +Markup getMarkup(MarkupContainer, Class<?> clazz, boolean enforceReload)
+        +IMarkupCache getMarkupCache()
+        +IMarkupLoader getMarkupLoader()
+        +MarkupResourceStream getMarkupResourceStream(MarkupContainer, Class<?> clazz)
+        #boolean checkMarkupType(MarkupContainer)
+        #IMarkupResourceStreamProvider getMarkupResourceStreamProvider(MarkupContainer)
+        --(checks)--
+        +boolean hasMarkupCache()
+        --(factory)--
+        +MarkupFactory get()
+        +MarkupParser newMarkupParser(MarkupResourceStream)
+        #IXmlPullParser newXmlPullParser()
+        --(filtering)--
+        #IMarkupFilter onAppendMarkupFilter(IMarkupFilter)
+        --(read)--
+        +Markup loadMarkup(MarkupContainer, MarkupResourceStream, boolean enforceReload)
+    }
+    
+    ArrayList <|-- MarkupParser.MarkupFilterList
+    class MarkupParser.MarkupFilterList
+    {
+        --(collection)--
+        +boolean add(IMarkupFilter, Class<? extends IMarkupFilter> beforeFilter)
+        #IMarkupFilter onAdd(IMarkupFilter)
+    }
+    
+    AbstractMarkupFragment <|-- MarkupFragment
+    class MarkupFragment
+    {
+        --(constructors)--
+        +MarkupFragment(IMarkupFragment, int)
+        --
+        +Markup getRootMarkup()
+    }
+    
+    Iterator <|-- MarkupIterator
+    class MarkupIterator
+    {
+        --(constructors)--
+        +MarkupIterator(IMarkupFragment)
+        --
+        +void setComponentTagOnly(boolean componentTagOnly)
+        +void setOpenTagOnly(boolean openTagOnly)
+        +void setWicketTagOnly(boolean wicketTagOnly)
+        --(iteration)--
+        +ComponentTag nextTag()
+        +WicketTag nextWicketTag()
+    }
+    
+    WicketRuntimeException <|-- MarkupNotFoundException
+    class MarkupNotFoundException
+    {
+        --(constructors)--
+        +MarkupNotFoundException(String)
+        +MarkupNotFoundException(String, Throwable)
+    }
+    
+    AbstractMarkupParser <|-- MarkupParser
+    class MarkupParser
+    {
+        --(constructors)--
+        +MarkupParser(IXmlPullParser, MarkupResourceStream)
+        +MarkupParser(MarkupResourceStream)
+        +MarkupParser(String)
+        --(collection)--
+        +boolean add(IMarkupFilter)
+        +boolean add(IMarkupFilter, Class<? extends IMarkupFilter> beforeFilter)
+        --(filtering)--
+        #IMarkupFilter onAppendMarkupFilter(IMarkupFilter)
+    }
+    
+    IResourceStream <|-- MarkupResourceStream
+    IFixedLocationResourceStream <|-- MarkupResourceStream
+    class MarkupResourceStream
+    {
+        --(constructors)--
+        +MarkupResourceStream(IResourceStream)
+        +MarkupResourceStream(IResourceStream, ContainerInfo, Class<?>)
+        --
+        +Markup getBaseMarkup()
+        +MarkupResourceStream getBaseMarkupResourceStream()
+        +String getDoctype()
+        +String getEncoding()
+        +Class<? extends Component> getMarkupClass()
+        +IResourceStream getResource()
+        +String getWicketNamespace()
+        +void setBaseMarkup(Markup baseMarkup)
+        +void setDoctype(CharSequence doctype)
+        +void setWicketNamespace(String wicketNamespace)
+        --(checks)--
+        +boolean isHtml5()
+        --(collection)--
+        +String getCacheKey()
+        +void setCacheKey(String cacheKey)
+        --(identity)--
+        +String getWicketId()
+        --(messaging)--
+        +ContainerInfo getContainerInfo()
+    }
+    
+    class MarkupStream
+    {
+        --(constructors)--
+        +MarkupStream(IMarkupFragment)
+        --
+        +boolean atOpenTag()
+        +boolean atOpenTag(String id)
+        +boolean atTag()
+        +boolean equalMarkup(MarkupStream)
+        +boolean equalTo(MarkupStream that)
+        +MarkupElement get(int index)
+        +MarkupElement get()
+        +Class<? extends Component> getContainerClass()
+        +String getEncoding()
+        +IMarkupFragment getMarkupFragment()
+        +ComponentTag getPreviousTag()
+        +IResourceStream getResource()
+        +ComponentTag getTag()
+        +String getTagAttribute(String name, boolean withWicketNamespace)
+        +String getWicketNamespace()
+        +void skipComponent()
+        +void skipRawMarkup()
+        +void skipUntil(String wicketTagName)
+        +boolean skipUntil(Class<? extends MarkupElement> clazz)
+        +void throwMarkupException(String message)
+        --(checks)--
+        +boolean isMergedMarkup()
+        --(collection)--
+        +int getCurrentIndex()
+        +boolean isCurrentIndexInsideTheStream()
+        +MarkupStream setCurrentIndex(int currentIndex)
+        --(conversion)--
+        +String toHtmlDebugString()
+        --(io)--
+        +boolean atCloseTag()
+        +boolean atOpenCloseTag(String componentId)
+        +boolean atOpenCloseTag()
+        +void skipToMatchingCloseTag(ComponentTag openTag)
+        --(iteration)--
+        +boolean hasMore()
+        +MarkupElement next()
+        +MarkupElement nextOpenTag()
+    }
+    
+    Serializable <|-- MarkupType
+    class MarkupType
+    {
+        --(constructors)--
+        +MarkupType(String, String)
+        --
+        +String getMimeType()
+        --(filesystem)--
+        +String getExtension()
+    }
+    
+    Markup <|-- MergedMarkup
+    class MergedMarkup
+    {
+        --(constructors)--
+        +MergedMarkup(Markup, Markup, int)
+    }
+    
+    MarkupElement <|-- RawMarkup
+    class RawMarkup
+    {
+        --(constructors)--
+        +RawMarkup(CharSequence)
+    }
+    
+    class TagUtils
+    {
+        --(constructors)--
+        +TagUtils()
+        --(checks)--
+        +boolean isBodyTag(ComponentTag)
+        +boolean isExtendTag(IMarkupFragment, int)
+        +boolean isHeadTag(MarkupElement)
+        +boolean isWicketBodyTag(MarkupElement)
+        +boolean isWicketBorderTag(MarkupElement)
+        +boolean isWicketHeadTag(MarkupElement)
+        +boolean isWicketHeaderItemsTag(MarkupElement)
+        +boolean isWicketTag(IMarkupFragment, int)
+        --(filesystem)--
+        +void copyAttributes(MarkupContainer component, ComponentTag)
+        --(search)--
+        +IMarkupFragment findTagMarkup(IMarkupFragment, String id, String tagName, int streamOffset)
+    }
+    
+    ParseException <|-- WicketParseException
+    class WicketParseException
+    {
+        --(constructors)--
+        +WicketParseException(String, ComponentTag)
+        +WicketParseException(String, XmlTag)
+    }
+    
+    ComponentTag <|-- WicketTag
+    class WicketTag
+    {
+        --(constructors)--
+        +WicketTag(ComponentTag)
+        +WicketTag(XmlTag)
+        --(checks)--
+        +boolean isBodyTag()
+        +boolean isBorderTag()
+        +boolean isChildTag()
+        +boolean isContainerTag()
+        +boolean isEnclosureTag()
+        +boolean isExtendTag()
+        +boolean isFragmentTag()
+        +boolean isHeadTag()
+        +boolean isHeaderItemsTag()
+        +boolean isLinkTag()
+        +boolean isMajorWicketComponentTag()
+        +boolean isMessageTag()
+        +boolean isPanelTag()
+        +boolean isRemoveTag()
+    }
+    
+@enduml
+

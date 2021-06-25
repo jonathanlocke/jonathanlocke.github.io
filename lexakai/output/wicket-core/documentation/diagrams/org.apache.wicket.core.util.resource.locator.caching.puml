@@ -1,0 +1,62 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.resource.locator.caching"
+    
+    abstract AbstractResourceStreamReference
+    
+    interface IResourceStreamLocator
+    interface IResourceStreamReference
+    
+    IResourceStreamReference <|-- AbstractResourceStreamReference
+    abstract class AbstractResourceStreamReference
+    {
+        --
+        #void restoreResourceStream(IResourceStream)
+        --(write)--
+        #void saveResourceStream(IResourceStream)
+    }
+    
+    ResourceReference.Key <|-- CachingResourceStreamLocator.CacheKey
+    class CachingResourceStreamLocator.CacheKey
+    {
+    }
+    
+    IResourceStreamLocator <|-- CachingResourceStreamLocator
+    class CachingResourceStreamLocator
+    {
+        --(constructors)--
+        +CachingResourceStreamLocator(IResourceStreamLocator)
+        --(collection)--
+        +void clearCache()
+    }
+    
+    AbstractResourceStreamReference <|-- FileResourceStreamReference
+    class FileResourceStreamReference
+    {
+    }
+    
+    AbstractResourceStreamReference <|-- FileSystemResourceStreamReference
+    class FileSystemResourceStreamReference
+    {
+    }
+    
+    interface IResourceStreamReference
+    {
+        --
+        +IResourceStream getReference()
+    }
+    
+    IResourceStreamReference <|-- NullResourceStreamReference
+    class NullResourceStreamReference
+    {
+    }
+    
+    AbstractResourceStreamReference <|-- UrlResourceStreamReference
+    class UrlResourceStreamReference
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,33 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.instrument"
+    
+    interface IObjectSizeOfStrategy
+    
+    WicketObjects.IObjectSizeOfStrategy <|-- InstrumentationObjectSizeOfStrategy
+    class InstrumentationObjectSizeOfStrategy
+    {
+        --(constructors)--
+        +InstrumentationObjectSizeOfStrategy(Instrumentation)
+    }
+    
+    class ObjectSizeOfAgent
+    {
+        --
+        +void agentmain(String agentArgs, Instrumentation)
+        +void premain(String agentArgs, Instrumentation)
+    }
+    
+    ObjectOutputStream <|-- InstrumentationObjectSizeOfStrategy.SizeRecodingOutputStream
+    class InstrumentationObjectSizeOfStrategy.SizeRecodingOutputStream
+    {
+        --(constructors)--
+        +SizeRecodingOutputStream()
+        --(collection)--
+        +long getTotalSize()
+    }
+    
+@enduml
+

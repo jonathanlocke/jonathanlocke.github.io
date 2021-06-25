@@ -1,0 +1,52 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util"
+    
+    interface IClusterable
+    interface Supplier
+    
+    interface IHierarchical<T>
+    {
+        --
+        +T getParent()
+    }
+    
+    Supplier <|-- LazyInitializer
+    IClusterable <|-- LazyInitializer
+    abstract class LazyInitializer<T>
+    {
+        --
+        #T createInstance()
+    }
+    
+    class LongEncoder
+    {
+        --
+        +long decode(String value, String alphabet)
+        +long decode(String value)
+        +String encode(long value, String alphabet)
+        +String encode(long value)
+    }
+    
+    Supplier <|-- NullProvider
+    class NullProvider<T>
+    {
+    }
+    
+    Supplier <|-- ValueProvider
+    class ValueProvider<T>
+    {
+        --(constructors)--
+        +ValueProvider(T)
+        --
+        +ValueProvider<T> of(T value)
+    }
+    
+    interface WicketTestTag
+    {
+    }
+    
+@enduml
+

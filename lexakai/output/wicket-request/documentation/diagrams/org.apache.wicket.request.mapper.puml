@@ -1,0 +1,74 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.mapper"
+    
+    interface ICompoundRequestMapper
+    interface Comparable
+    interface IRequestMapperDelegate
+    interface IRequestMapper
+    
+    IRequestMapper <|-- AbstractMapper
+    abstract class AbstractMapper
+    {
+        --(constructors)--
+        +AbstractMapper()
+        --
+        #PageParameters extractPageParameters(Request, int segmentsToSkip, IPageParametersEncoder)
+        #String[] getMountSegments(String mountPath)
+        #String getOptionalPlaceholder(String)
+        #String getPlaceholder(String)
+        #String getPlaceholder(String, char startChar)
+        #Locale resolveLocale()
+        #String safeSegmentGetter(List<String> segments, int index, String defaultValue)
+        --(collection)--
+        #void removeMetaParameter(Url urlCopy)
+        --(network)--
+        #Url encodePageParameters(Url, PageParameters, IPageParametersEncoder)
+        #boolean urlStartsWith(Url, String... segments)
+    }
+    
+    ICompoundRequestMapper <|-- CompoundRequestMapper
+    class CompoundRequestMapper
+    {
+    }
+    
+    interface IRequestMapper
+    interface Iterable<IRequestMapper>
+    IRequestMapper <|-- ICompoundRequestMapper
+    Iterable <|-- ICompoundRequestMapper
+    interface ICompoundRequestMapper
+    {
+        --(collection)--
+        +ICompoundRequestMapper add(IRequestMapper)
+        +ICompoundRequestMapper remove(IRequestMapper)
+    }
+    
+    interface IRequestMapper
+    IRequestMapper <|-- IRequestMapperDelegate
+    interface IRequestMapperDelegate
+    {
+        --
+        +IRequestMapper getDelegateMapper()
+    }
+    
+    Comparable <|-- CompoundRequestMapper.MapperWithScore
+    class CompoundRequestMapper.MapperWithScore
+    {
+        --(constructors)--
+        +MapperWithScore(IRequestMapper, int)
+        --
+        +IRequestMapper getMapper()
+    }
+    
+    IRequestMapperDelegate <|-- ParentPathReferenceRewriter
+    class ParentPathReferenceRewriter
+    {
+        --(constructors)--
+        +ParentPathReferenceRewriter(IRequestMapper)
+        +ParentPathReferenceRewriter(IRequestMapper, Supplier<String>)
+    }
+    
+@enduml
+

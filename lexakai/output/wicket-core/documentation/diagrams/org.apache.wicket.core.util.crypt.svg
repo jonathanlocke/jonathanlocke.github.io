@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="476.0417px" preserveAspectRatio="none" style="width:914px;height:476px;background:#333333;" version="1.1" viewBox="0 0 914 476" width="914.5833px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="346.875" x="276.5625" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="323.9583" x="288.0208" y="30.5583">org.apache.wicket.core.util.crypt</text><!--MD5=[63840d51f57d2f17613f17e6ed0a2969]
+cluster KeyInSessionSunJceCryptFactory--><polygon fill="#333333" points="662.5,146.932,886.4583,146.932,893.75,174.1536,896.875,174.1536,896.875,268.807,662.5,268.807,662.5,146.932" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="662.5" x2="893.75" y1="174.1536" y2="174.1536"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="211.4583" x="669.7917" y="164.2253">KeyInSessionSunJceCryptFactory</text><!--MD5=[4d1bfaa5e43a66b571c9ed8ef86c23b3]
+class KeyInSessionSunJceCryptFactory.CryptData--><rect codeLine="39" fill="#282828" height="48.055" id="KeyInSessionSunJceCryptFactory.CryptData" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="753.6458" y="195.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="753.6458" y="195.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="103.125" x="753.6458" y="218.9453"/><rect codeLine="39" fill="none" height="48.055" id="KeyInSessionSunJceCryptFactory.CryptData" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="103.125" x="753.6458" y="195.8903"/><ellipse cx="768.2292" cy="211.5845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M770.1396,216.0095 Q769.7123,216.2292 769.2424,216.3391 Q768.7724,216.449 768.2536,216.449 Q766.4103,216.449 765.4399,215.2344 Q764.4694,214.0198 764.4694,211.7249 Q764.4694,209.4238 765.4399,208.2092 Q766.4103,206.9946 768.2536,206.9946 Q768.7724,206.9946 769.2485,207.1045 Q769.7245,207.2144 770.1396,207.4341 L770.1396,209.436 Q769.6757,209.0088 769.2393,208.8104 Q768.8029,208.6121 768.339,208.6121 Q767.3503,208.6121 766.8467,209.3964 Q766.3432,210.1807 766.3432,211.7249 Q766.3432,213.2629 766.8467,214.0472 Q767.3503,214.8315 768.339,214.8315 Q768.8029,214.8315 769.2393,214.6332 Q769.6757,214.4348 770.1396,214.0076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="784.8958" y="216.3086">CryptData</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="754.6875" x2="855.7292" y1="227.2786" y2="227.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="754.6875" x2="855.7292" y1="235.612" y2="235.612"/><!--MD5=[1c5facf51bc5016d08b672500d40f914]
+class AbstractJceCrypt--><rect codeLine="22" fill="#282828" height="87.5448" id="AbstractJceCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="64.5833" y="176.0986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="64.5833" y="176.0986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="64.5833" y="199.1536"/><rect codeLine="22" fill="none" height="87.5448" id="AbstractJceCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="64.5833" y="176.0986"/><ellipse cx="108.3333" cy="191.7928" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M107.9264,188.4949 L107.078,192.2241 L108.7809,192.2241 Z M106.8278,186.8469 L109.0312,186.8469 L111.4909,195.9595 L109.6903,195.9595 L109.1288,193.7073 L106.7179,193.7073 L106.1686,195.9595 L104.3681,195.9595 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="131.25" y="196.5169">AbstractJceCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="65.625" x2="273.9583" y1="207.487" y2="207.487"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="65.625" x2="273.9583" y1="215.8203" y2="215.8203"/><polygon fill="#FFFF44" points="76.0417,222.0703,80.2083,226.237,76.0417,230.4036,71.875,226.237" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="87.5" y="234.1899">byte[] decrypt(byte[] encrypted)</text><polygon fill="#FFFF44" points="76.0417,241.8152,80.2083,245.9819,76.0417,250.1485,71.875,245.9819" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="87.5" y="253.9347">byte[] encrypt(byte[] plainBytes)</text><!--MD5=[52e3a1498a9f4e2a5992059ac3e3294d]
+class AbstractKeyInSessionCryptFactory--><rect codeLine="30" fill="#282828" height="111.4563" id="AbstractKeyInSessionCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="279.1667" x="357.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="279.1667" x="357.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="279.1667" x="357.2917" y="187.1745"/><rect codeLine="30" fill="none" height="111.4563" id="AbstractKeyInSessionCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="279.1667" x="357.2917" y="164.1195"/><ellipse cx="371.875" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M371.4681,176.5157 L370.6197,180.245 L372.3226,180.245 Z M370.3695,174.8678 L372.5728,174.8678 L375.0326,183.9803 L373.232,183.9803 L372.6705,181.7281 L370.2596,181.7281 L369.7103,183.9803 L367.9097,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="222.9167" x="388.5417" y="184.5378">AbstractKeyInSessionCryptFactory</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="622.9167" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="627.0833" y="177.2461">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="358.3333" x2="635.4167" y1="195.5078" y2="195.5078"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="358.3333" x2="635.4167" y1="203.8411" y2="203.8411"/><polygon fill="#FFFF44" points="368.75,210.0911,372.9167,214.2578,368.75,218.4245,364.5833,214.2578" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="380.2083" y="222.2107">ICrypt createCrypt(T key)</text><polygon fill="#FFFF44" points="368.75,253.7476,372.9167,257.9142,368.75,262.0809,364.5833,257.9142" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="130.2083" x="380.2083" y="265.8671">T generateKey(Session)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="358.3333" x2="462.5" y1="241.7918" y2="241.7918"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="465.625" y="245.6014">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="531.25" x2="635.4167" y1="241.7918" y2="241.7918"/><!--MD5=[736ad8e84e5464d61ac96c644596cacf]
+class ICryptFactory--><rect codeLine="9" fill="#282828" height="48.055" id="ICryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="123.9583" x="434.8958" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="123.9583" x="434.8958" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="123.9583" x="434.8958" y="76.7578"/><rect codeLine="9" fill="none" height="48.055" id="ICryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="123.9583" x="434.8958" y="53.7028"/><ellipse cx="449.4792" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M446.8831,66.5588 L446.8831,64.9719 L452.3092,64.9719 L452.3092,66.5588 L450.4964,66.5588 L450.4964,72.4976 L452.3092,72.4976 L452.3092,74.0845 L446.8831,74.0845 L446.8831,72.4976 L448.6959,72.4976 L448.6959,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="86.4583" x="466.1458" y="74.1211">ICryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="435.9375" x2="557.8125" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="435.9375" x2="557.8125" y1="93.4245" y2="93.4245"/><!--MD5=[4f7fe1dc05f924acefc77d33ba965ef9]
+class ICrypt--><rect codeLine="10" fill="#282828" height="48.055" id="ICrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="77.0833" x="131.25" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="77.0833" x="131.25" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="77.0833" x="131.25" y="76.7578"/><rect codeLine="10" fill="none" height="48.055" id="ICrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="77.0833" x="131.25" y="53.7028"/><ellipse cx="145.8333" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M143.2373,66.5588 L143.2373,64.9719 L148.6633,64.9719 L148.6633,66.5588 L146.8506,66.5588 L146.8506,72.4976 L148.6633,72.4976 L148.6633,74.0845 L143.2373,74.0845 L143.2373,72.4976 L145.05,72.4976 L145.05,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="39.5833" x="162.5" y="74.1211">ICrypt</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="132.2917" x2="207.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="132.2917" x2="207.2917" y1="93.4245" y2="93.4245"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="11" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="747.3958" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="747.3958" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="747.3958" y="76.7578"/><rect codeLine="11" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="747.3958" y="53.7028"/><ellipse cx="761.9792" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M759.3831,66.5588 L759.3831,64.9719 L764.8092,64.9719 L764.8092,66.5588 L762.9964,66.5588 L762.9964,72.4976 L764.8092,72.4976 L764.8092,74.0845 L759.3831,74.0845 L759.3831,72.4976 L761.1959,72.4976 L761.1959,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="778.6458" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="748.4375" x2="861.9792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="748.4375" x2="861.9792" y1="93.4245" y2="93.4245"/><!--MD5=[bdd87b9ecb3db7f41a131685f22e0750]
+class AESCrypt--><rect codeLine="14" fill="#282828" height="103.123" id="AESCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="325" x="7.2917" y="352.1403"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="325" x="7.2917" y="352.1403"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="325" x="7.2917" y="375.1953"/><rect codeLine="14" fill="none" height="103.123" id="AESCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="325" x="7.2917" y="352.1403"/><ellipse cx="132.8125" cy="367.8345" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M134.7229,372.2595 Q134.2957,372.4792 133.8257,372.5891 Q133.3557,372.699 132.8369,372.699 Q130.9937,372.699 130.0232,371.4844 Q129.0527,370.2698 129.0527,367.9749 Q129.0527,365.6738 130.0232,364.4592 Q130.9937,363.2446 132.8369,363.2446 Q133.3557,363.2446 133.8318,363.3545 Q134.3079,363.4644 134.7229,363.6841 L134.7229,365.686 Q134.259,365.2588 133.8226,365.0604 Q133.3862,364.8621 132.9224,364.8621 Q131.9336,364.8621 131.4301,365.6464 Q130.9265,366.4307 130.9265,367.9749 Q130.9265,369.5129 131.4301,370.2972 Q131.9336,371.0815 132.9224,371.0815 Q133.3862,371.0815 133.8226,370.8832 Q134.259,370.6848 134.7229,370.2576 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="59.375" x="155.7292" y="372.5586">AESCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="331.25" y1="383.5286" y2="383.5286"/><ellipse cx="18.75" cy="418.8985" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="30.2083" y="425.8097">AESCrypt(SecretKey, ISecureRandomSupplier)</text><ellipse cx="18.75" cy="438.6434" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="292.7083" x="30.2083" y="445.5546">AESCrypt(SecretKey, String, ISecureRandomSupplier)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="126.0417" y1="401.7344" y2="401.7344"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="129.1667" y="405.544">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="213.5417" x2="331.25" y1="401.7344" y2="401.7344"/><!--MD5=[e878d892c724877897c29f16a6949f0d]
+class KeyInSessionSunJceCryptFactory--><rect codeLine="44" fill="#282828" height="131.2012" id="KeyInSessionSunJceCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="368.75" y="338.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="368.75" y="338.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="256.25" x="368.75" y="361.1328"/><rect codeLine="44" fill="none" height="131.2012" id="KeyInSessionSunJceCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="256.25" x="368.75" y="338.0778"/><ellipse cx="386.6146" cy="353.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M388.525,358.197 Q388.0977,358.4167 387.6278,358.5266 Q387.1578,358.6365 386.639,358.6365 Q384.7957,358.6365 383.8253,357.4219 Q382.8548,356.2073 382.8548,353.9124 Q382.8548,351.6113 383.8253,350.3967 Q384.7957,349.1821 386.639,349.1821 Q387.1578,349.1821 387.6339,349.292 Q388.1099,349.4019 388.525,349.6216 L388.525,351.6235 Q388.0611,351.1963 387.6247,350.9979 Q387.1883,350.7996 386.7244,350.7996 Q385.7357,350.7996 385.2321,351.5839 Q384.7286,352.3682 384.7286,353.9124 Q384.7286,355.4504 385.2321,356.2347 Q385.7357,357.019 386.7244,357.019 Q387.1883,357.019 387.6247,356.8207 Q388.0611,356.6223 388.525,356.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="211.4583" x="404.0104" y="358.4961">KeyInSessionSunJceCryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="369.7917" x2="623.9583" y1="369.4661" y2="369.4661"/><ellipse cx="380.2083" cy="404.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="190.625" x="391.6667" y="411.7472">KeyInSessionSunJceCryptFactory()</text><ellipse cx="380.2083" cy="424.5809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="223.9583" x="391.6667" y="431.4921">KeyInSessionSunJceCryptFactory(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="369.7917" x2="453.125" y1="387.6719" y2="387.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="456.25" y="391.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="540.625" x2="623.9583" y1="387.6719" y2="387.6719"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="369.7917" x2="623.9583" y1="441.2008" y2="441.2008"/><polygon fill="#FFFF44" points="380.2083,447.4508,384.375,451.6174,380.2083,455.7841,376.0417,451.6174" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="391.6667" y="459.5703">ICrypt createCrypt()</text><!--MD5=[d273c291514384e997bbb8a8d11c99db]
+reverse link AbstractJceCrypt to AESCrypt--><path codeLine="13" d="M169.7917,284.9215 C169.7917,306.859 169.7917,331.0778 169.7917,351.8278 " fill="none" id="AbstractJceCrypt-backto-AESCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="162.5,284.7965,169.7917,263.9632,177.0833,284.7965,162.5,284.7965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8de89d789f1c167844646f3b7847dc0b]
+reverse link ICrypt to AbstractJceCrypt--><path codeLine="21" d="M169.7917,122.7757 C169.7917,139.7965 169.7917,159.2028 169.7917,176.0986 " fill="none" id="ICrypt-backto-AbstractJceCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="162.5,122.6715,169.7917,101.8382,177.0833,122.6715,162.5,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[76cf30ae5dfd2ef8bc346fe96d1c0c4b]
+reverse link ICryptFactory to AbstractKeyInSessionCryptFactory--><path codeLine="29" d="M496.875,122.7028 C496.875,135.7549 496.875,150.2028 496.875,163.859 " fill="none" id="ICryptFactory-backto-AbstractKeyInSessionCryptFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="489.5833,122.6715,496.875,101.8382,504.1667,122.6715,489.5833,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1c66fb538ac790b2fc5b798a5868653b]
+reverse link IClusterable to KeyInSessionSunJceCryptFactory.CryptData--><path codeLine="38" d="M805.2083,122.6715 C805.2083,146.8486 805.2083,175.8486 805.2083,195.6403 " fill="none" id="IClusterable-backto-KeyInSessionSunJceCryptFactory.CryptData" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="797.9167,122.6715,805.2083,101.8382,812.5,122.6715,797.9167,122.6715" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c42be63f77693cd2dfaa8706c3d5f1b1]
+reverse link AbstractKeyInSessionCryptFactory to KeyInSessionSunJceCryptFactory--><path codeLine="43" d="M496.875,296.8174 C496.875,310.484 496.875,324.609 496.875,337.9111 " fill="none" id="AbstractKeyInSessionCryptFactory-backto-KeyInSessionSunJceCryptFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="489.5833,296.7549,496.875,275.9215,504.1667,296.7549,489.5833,296.7549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2fe02fa747969d9848b7dca90164a1be]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.crypt"
+    
+    abstract AbstractJceCrypt
+    abstract AbstractKeyInSessionCryptFactory
+    
+    interface ICryptFactory
+    interface ICrypt
+    interface IClusterable
+    
+    AbstractJceCrypt <|- - AESCrypt
+    class AESCrypt
+    {
+        - -(constructors)- -
+        +AESCrypt(SecretKey, ISecureRandomSupplier)
+        +AESCrypt(SecretKey, String, ISecureRandomSupplier)
+    }
+    
+    ICrypt <|- - AbstractJceCrypt
+    abstract class AbstractJceCrypt
+    {
+        - -
+        #byte[] decrypt(byte[] encrypted)
+        #byte[] encrypt(byte[] plainBytes)
+    }
+    
+    ICryptFactory <|- - AbstractKeyInSessionCryptFactory
+    abstract class AbstractKeyInSessionCryptFactory<T>
+    {
+        - -
+        #ICrypt createCrypt(T key)
+        - -(collection)- -
+        #T generateKey(Session)
+    }
+    
+    IClusterable <|- - KeyInSessionSunJceCryptFactory.CryptData
+    class KeyInSessionSunJceCryptFactory.CryptData
+    {
+    }
+    
+    AbstractKeyInSessionCryptFactory <|- - KeyInSessionSunJceCryptFactory
+    class KeyInSessionSunJceCryptFactory
+    {
+        - -(constructors)- -
+        +KeyInSessionSunJceCryptFactory()
+        +KeyInSessionSunJceCryptFactory(String)
+        - -
+        #ICrypt createCrypt()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.core.util.crypt"
+    
+    abstract AbstractJceCrypt
+    abstract AbstractKeyInSessionCryptFactory
+    
+    interface ICryptFactory
+    interface ICrypt
+    interface IClusterable
+    
+    AbstractJceCrypt <|- - AESCrypt
+    class AESCrypt
+    {
+        - -(constructors)- -
+        +AESCrypt(SecretKey, ISecureRandomSupplier)
+        +AESCrypt(SecretKey, String, ISecureRandomSupplier)
+    }
+    
+    ICrypt <|- - AbstractJceCrypt
+    abstract class AbstractJceCrypt
+    {
+        - -
+        #byte[] decrypt(byte[] encrypted)
+        #byte[] encrypt(byte[] plainBytes)
+    }
+    
+    ICryptFactory <|- - AbstractKeyInSessionCryptFactory
+    abstract class AbstractKeyInSessionCryptFactory<T>
+    {
+        - -
+        #ICrypt createCrypt(T key)
+        - -(collection)- -
+        #T generateKey(Session)
+    }
+    
+    IClusterable <|- - KeyInSessionSunJceCryptFactory.CryptData
+    class KeyInSessionSunJceCryptFactory.CryptData
+    {
+    }
+    
+    AbstractKeyInSessionCryptFactory <|- - KeyInSessionSunJceCryptFactory
+    class KeyInSessionSunJceCryptFactory
+    {
+        - -(constructors)- -
+        +KeyInSessionSunJceCryptFactory()
+        +KeyInSessionSunJceCryptFactory(String)
+        - -
+        #ICrypt createCrypt()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

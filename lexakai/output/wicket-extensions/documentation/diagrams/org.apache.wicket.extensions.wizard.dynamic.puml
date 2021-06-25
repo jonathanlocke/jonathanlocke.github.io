@@ -1,0 +1,53 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.wizard.dynamic"
+    
+    abstract AbstractWizardModel
+    
+    interface IDynamicWizardStep
+    
+    AbstractWizardModel <|-- DynamicWizardModel
+    class DynamicWizardModel
+    {
+        --(constructors)--
+        +DynamicWizardModel(IDynamicWizardStep)
+        --
+        #void setActiveStep(IDynamicWizardStep)
+        --(lifecycle)--
+        +IDynamicWizardStep getStartStep()
+    }
+    
+    WizardStep <|-- DynamicWizardStep
+    IDynamicWizardStep <|-- DynamicWizardStep
+    abstract class DynamicWizardStep
+    {
+        --(constructors)--
+        +DynamicWizardStep(IDynamicWizardStep)
+        +DynamicWizardStep(IDynamicWizardStep, IModel<String>, IModel<String>)
+        +DynamicWizardStep(IDynamicWizardStep, IModel<String>, IModel<String>, IModel<?>)
+        +DynamicWizardStep(IDynamicWizardStep, String, String)
+        +DynamicWizardStep(IDynamicWizardStep, String, String, IModel<?>)
+    }
+    
+    interface IWizardStep
+    IWizardStep <|-- IDynamicWizardStep
+    interface IDynamicWizardStep
+    {
+        --
+        +IDynamicWizardStep previous()
+        --(checks)--
+        +boolean isFinishAvailable()
+        +boolean isLastAvailable()
+        +boolean isLastStep()
+        +boolean isNextAvailable()
+        +boolean isPreviousAvailable()
+        --(collection)--
+        +IDynamicWizardStep last()
+        --(iteration)--
+        +IDynamicWizardStep next()
+    }
+    
+@enduml
+

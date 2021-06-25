@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="467.7083px" preserveAspectRatio="none" style="width:579px;height:467px;background:#333333;" version="1.1" viewBox="0 0 579 467" width="579.1667px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="566.6667" x="2.0833" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="543.75" x="13.5417" y="30.5583">org.apache.wicket.examples.template.pageinheritance</text><!--MD5=[d8121754e85cb79a2bca62b47d45134d]
+class TemplatePage--><rect codeLine="29" fill="#282828" height="131.2012" id="TemplatePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="191.6667" x="44.7917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="191.6667" x="44.7917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="191.6667" x="44.7917" y="187.1745"/><rect codeLine="29" fill="none" height="131.2012" id="TemplatePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="191.6667" x="44.7917" y="164.1195"/><ellipse cx="88.0208" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M87.6139,176.5157 L86.7655,180.245 L88.4684,180.245 Z M86.5153,174.8678 L88.7187,174.8678 L91.1784,183.9803 L89.3778,183.9803 L88.8163,181.7281 L86.4054,181.7281 L85.8561,183.9803 L84.0556,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="110.9375" y="184.5378">TemplatePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="45.8333" x2="235.4167" y1="195.5078" y2="195.5078"/><ellipse cx="56.25" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="85.4167" x="67.7083" y="237.7889">TemplatePage()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="45.8333" x2="96.875" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="100" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="184.375" x2="235.4167" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="45.8333" x2="235.4167" y1="247.4976" y2="247.4976"/><ellipse cx="56.25" cy="258.9559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="112.5" x="67.7083" y="265.8671">String getPageTitle()</text><ellipse cx="56.25" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="67.7083" y="285.612">void setPageTitle(String title)</text><!--MD5=[06b688d0b738e4cac92d287870990ff7]
+class Page1--><rect codeLine="7" fill="#282828" height="83.3781" id="Page1" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="43.75" y="367.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="43.75" y="367.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="43.75" y="390.8203"/><rect codeLine="7" fill="none" height="83.3781" id="Page1" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="43.75" y="367.7653"/><ellipse cx="67.2396" cy="383.4595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M69.15,387.8845 Q68.7227,388.1042 68.2528,388.2141 Q67.7828,388.324 67.264,388.324 Q65.4207,388.324 64.4503,387.1094 Q63.4798,385.8948 63.4798,383.5999 Q63.4798,381.2988 64.4503,380.0842 Q65.4207,378.8696 67.264,378.8696 Q67.7828,378.8696 68.2589,378.9795 Q68.7349,379.0894 69.15,379.3091 L69.15,381.311 Q68.6861,380.8838 68.2497,380.6854 Q67.8133,380.4871 67.3494,380.4871 Q66.3607,380.4871 65.8571,381.2714 Q65.3536,382.0557 65.3536,383.5999 Q65.3536,385.1379 65.8571,385.9222 Q66.3607,386.7065 67.3494,386.7065 Q67.8133,386.7065 68.2497,386.5082 Q68.6861,386.3098 69.15,385.8826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="38.5417" x="85.8854" y="388.1836">Page1</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="44.7917" x2="138.5417" y1="399.1536" y2="399.1536"/><ellipse cx="55.2083" cy="434.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="41.6667" x="66.6667" y="441.4347">Page1()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="44.7917" x2="47.9167" y1="417.3594" y2="417.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="51.0417" y="421.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="135.4167" x2="138.5417" y1="417.3594" y2="417.3594"/><!--MD5=[60836b88cd0974e36522c374daade8cb]
+class Page2--><rect codeLine="14" fill="#282828" height="83.3781" id="Page2" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="176.0417" y="367.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="176.0417" y="367.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="176.0417" y="390.8203"/><rect codeLine="14" fill="none" height="83.3781" id="Page2" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="176.0417" y="367.7653"/><ellipse cx="199.5313" cy="383.4595" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M201.4417,387.8845 Q201.0144,388.1042 200.5444,388.2141 Q200.0745,388.324 199.5557,388.324 Q197.7124,388.324 196.7419,387.1094 Q195.7715,385.8948 195.7715,383.5999 Q195.7715,381.2988 196.7419,380.0842 Q197.7124,378.8696 199.5557,378.8696 Q200.0745,378.8696 200.5505,378.9795 Q201.0266,379.0894 201.4417,379.3091 L201.4417,381.311 Q200.9778,380.8838 200.5414,380.6854 Q200.105,380.4871 199.6411,380.4871 Q198.6523,380.4871 198.1488,381.2714 Q197.6453,382.0557 197.6453,383.5999 Q197.6453,385.1379 198.1488,385.9222 Q198.6523,386.7065 199.6411,386.7065 Q200.105,386.7065 200.5414,386.5082 Q200.9778,386.3098 201.4417,385.8826 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="38.5417" x="218.1771" y="388.1836">Page2</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="177.0833" x2="270.8333" y1="399.1536" y2="399.1536"/><ellipse cx="187.5" cy="434.5235" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="41.6667" x="198.9583" y="441.4347">Page2()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="177.0833" x2="180.2083" y1="417.3594" y2="417.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="183.3333" y="421.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="267.7083" x2="270.8333" y1="417.3594" y2="417.3594"/><!--MD5=[33f7289ada7355e511cdb81f6bdd45d0]
+class TemplatePanel--><rect codeLine="39" fill="#282828" height="103.123" id="TemplatePanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="220.8333" x="320.8333" y="178.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="220.8333" x="320.8333" y="178.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="220.8333" x="320.8333" y="201.237"/><rect codeLine="39" fill="none" height="103.123" id="TemplatePanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="220.8333" x="320.8333" y="178.182"/><ellipse cx="376.5625" cy="193.8761" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M376.1556,190.5782 L375.3072,194.3075 L377.0101,194.3075 Z M375.057,188.9303 L377.2603,188.9303 L379.7201,198.0428 L377.9195,198.0428 L377.358,195.7906 L374.9471,195.7906 L374.3978,198.0428 L372.5972,198.0428 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="94.7917" x="399.4792" y="198.6003">TemplatePanel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="321.875" x2="540.625" y1="209.5703" y2="209.5703"/><ellipse cx="332.2917" cy="244.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="343.75" y="251.8514">TemplatePanel(String)</text><ellipse cx="332.2917" cy="264.6851" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="343.75" y="271.5963">TemplatePanel(String, IModel&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="321.875" x2="387.5" y1="227.7761" y2="227.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="390.625" y="231.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="475" x2="540.625" y1="227.7761" y2="227.7761"/><!--MD5=[2ff56847518911be8f15fc769f9bf84a]
+class Panel1--><rect codeLine="21" fill="#282828" height="103.123" id="Panel1" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="177.0833" x="342.7083" y="357.8695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="177.0833" x="342.7083" y="357.8695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="177.0833" x="342.7083" y="380.9245"/><rect codeLine="21" fill="none" height="103.123" id="Panel1" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="177.0833" x="342.7083" y="357.8695"/><ellipse cx="402.6042" cy="373.5636" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M404.5146,377.9887 Q404.0873,378.2084 403.6174,378.3183 Q403.1474,378.4281 402.6286,378.4281 Q400.7853,378.4281 399.8149,377.2135 Q398.8444,375.9989 398.8444,373.704 Q398.8444,371.403 399.8149,370.1884 Q400.7853,368.9738 402.6286,368.9738 Q403.1474,368.9738 403.6235,369.0837 Q404.0995,369.1935 404.5146,369.4132 L404.5146,371.4152 Q404.0507,370.988 403.6143,370.7896 Q403.1779,370.5912 402.714,370.5912 Q401.7253,370.5912 401.2217,371.3755 Q400.7182,372.1598 400.7182,373.704 Q400.7182,375.2421 401.2217,376.0264 Q401.7253,376.8107 402.714,376.8107 Q403.1779,376.8107 403.6143,376.6123 Q404.0507,376.414 404.5146,375.9867 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="42.7083" x="425.5208" y="378.2878">Panel1</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="343.75" x2="518.75" y1="389.2578" y2="389.2578"/><ellipse cx="354.1667" cy="424.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="78.125" x="365.625" y="431.5389">Panel1(String)</text><ellipse cx="354.1667" cy="444.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="365.625" y="451.2838">Panel1(String, IModel&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="343.75" x2="387.5" y1="407.4636" y2="407.4636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="390.625" y="411.2732">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="475" x2="518.75" y1="407.4636" y2="407.4636"/><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="58.3333" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="58.3333" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="58.3333" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="58.3333" y="53.7028"/><ellipse cx="72.9167" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M74.8271,73.822 Q74.3998,74.0417 73.9299,74.1516 Q73.4599,74.2615 72.9411,74.2615 Q71.0978,74.2615 70.1274,73.0469 Q69.1569,71.8323 69.1569,69.5374 Q69.1569,67.2363 70.1274,66.0217 Q71.0978,64.8071 72.9411,64.8071 Q73.4599,64.8071 73.936,64.917 Q74.412,65.0269 74.8271,65.2466 L74.8271,67.2485 Q74.3632,66.8213 73.9268,66.6229 Q73.4904,66.4246 73.0265,66.4246 Q72.0378,66.4246 71.5342,67.2089 Q71.0307,67.9932 71.0307,69.5374 Q71.0307,71.0754 71.5342,71.8597 Q72.0378,72.644 73.0265,72.644 Q73.4904,72.644 73.9268,72.4457 Q74.3632,72.2473 74.8271,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="89.5833" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="59.375" x2="221.875" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="59.375" x2="221.875" y1="93.4245" y2="93.4245"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="395.3125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="395.3125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="395.3125" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="395.3125" y="53.7028"/><ellipse cx="409.8958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M411.8062,73.822 Q411.379,74.0417 410.909,74.1516 Q410.439,74.2615 409.9202,74.2615 Q408.077,74.2615 407.1065,73.0469 Q406.1361,71.8323 406.1361,69.5374 Q406.1361,67.2363 407.1065,66.0217 Q408.077,64.8071 409.9202,64.8071 Q410.439,64.8071 410.9151,64.917 Q411.3912,65.0269 411.8062,65.2466 L411.8062,67.2485 Q411.3424,66.8213 410.906,66.6229 Q410.4696,66.4246 410.0057,66.4246 Q409.0169,66.4246 408.5134,67.2089 Q408.0098,67.9932 408.0098,69.5374 Q408.0098,71.0754 408.5134,71.8597 Q409.0169,72.644 410.0057,72.644 Q410.4696,72.644 410.906,72.4457 Q411.3424,72.2473 411.8062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="426.5625" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="396.3542" x2="466.1458" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="396.3542" x2="466.1458" y1="93.4245" y2="93.4245"/><!--MD5=[e4c28d64f1dc727e55dad936bc1f89f9]
+reverse link TemplatePage to Page1--><path codeLine="6" d="M117.25,315.5986 C112.2604,333.7028 107.2083,352.0257 102.9271,367.557 " fill="none" id="TemplatePage-backto-Page1" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="110.25,313.557,122.8125,295.4111,124.3021,317.432,110.25,313.557" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[85dd5c2d5684a2a58e0b917b5acf8cb9]
+reverse link TemplatePage to Page2--><path codeLine="13" d="M179.875,314.4215 C188.5417,332.9111 197.3542,351.6924 204.8021,367.557 " fill="none" id="TemplatePage-backto-Page2" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="173.1979,317.3695,170.9479,295.4111,186.3958,311.1715,173.1979,317.3695" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4976006cbe9d8bcd80a0ce3c775393d2]
+reverse link TemplatePanel to Panel1--><path codeLine="20" d="M431.25,302.7028 C431.25,321.1715 431.25,340.6611 431.25,357.7965 " fill="none" id="TemplatePanel-backto-Panel1" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="423.9583,302.5153,431.25,281.682,438.5417,302.5153,423.9583,302.5153" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b7166bc194825e97cdc489d76f8d6caa]
+reverse link WicketExamplePage to TemplatePage--><path codeLine="28" d="M140.625,122.9945 C140.625,135.8695 140.625,150.2132 140.625,164.0674 " fill="none" id="WicketExamplePage-backto-TemplatePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="133.3333,122.6403,140.625,101.807,147.9167,122.6403,133.3333,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[29ef336d0049703e8f06ebf7dd97fd86]
+reverse link Panel to TemplatePanel--><path codeLine="38" d="M431.25,122.932 C431.25,140.182 431.25,160.0674 431.25,177.9111 " fill="none" id="Panel-backto-TemplatePanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="423.9583,122.6403,431.25,101.807,438.5417,122.6403,423.9583,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[04e31e82705b0a1f539180975aa21ac3]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.template.pageinheritance"
+    
+    TemplatePage <|- - Page1
+    class Page1
+    {
+        - -(constructors)- -
+        +Page1()
+    }
+    
+    TemplatePage <|- - Page2
+    class Page2
+    {
+        - -(constructors)- -
+        +Page2()
+    }
+    
+    TemplatePanel <|- - Panel1
+    class Panel1
+    {
+        - -(constructors)- -
+        +Panel1(String)
+        +Panel1(String, IModel<?>)
+    }
+    
+    WicketExamplePage <|- - TemplatePage
+    abstract class TemplatePage
+    {
+        - -(constructors)- -
+        +TemplatePage()
+        - -
+        +String getPageTitle()
+        +void setPageTitle(String title)
+    }
+    
+    Panel <|- - TemplatePanel
+    abstract class TemplatePanel
+    {
+        - -(constructors)- -
+        +TemplatePanel(String)
+        +TemplatePanel(String, IModel<?>)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.template.pageinheritance"
+    
+    TemplatePage <|- - Page1
+    class Page1
+    {
+        - -(constructors)- -
+        +Page1()
+    }
+    
+    TemplatePage <|- - Page2
+    class Page2
+    {
+        - -(constructors)- -
+        +Page2()
+    }
+    
+    TemplatePanel <|- - Panel1
+    class Panel1
+    {
+        - -(constructors)- -
+        +Panel1(String)
+        +Panel1(String, IModel<?>)
+    }
+    
+    WicketExamplePage <|- - TemplatePage
+    abstract class TemplatePage
+    {
+        - -(constructors)- -
+        +TemplatePage()
+        - -
+        +String getPageTitle()
+        +void setPageTitle(String title)
+    }
+    
+    Panel <|- - TemplatePanel
+    abstract class TemplatePanel
+    {
+        - -(constructors)- -
+        +TemplatePanel(String)
+        +TemplatePanel(String, IModel<?>)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

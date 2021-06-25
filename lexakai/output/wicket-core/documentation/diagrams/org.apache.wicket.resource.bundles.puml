@@ -1,0 +1,70 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.resource.bundles"
+    
+    abstract AbstractResource
+    
+    interface IStaticCacheableResource
+    interface IResourceBundle
+    
+    AbstractResource <|-- ConcatBundleResource
+    IStaticCacheableResource <|-- ConcatBundleResource
+    class ConcatBundleResource
+    {
+        --(constructors)--
+        +ConcatBundleResource(List<? extends IReferenceHeaderItem>)
+        --
+        +ITextResourceCompressor getCompressor()
+        +void setCachingEnabled(boolean enabled)
+        +void setCompressor(ITextResourceCompressor)
+        #boolean getThrowExceptionOnMissingResource()
+        --(read)--
+        #byte[] readAllResources(List<IResourceStream>)
+        --(search)--
+        #String findContentType(List<IResourceStream>)
+        #Instant findLastModified(List<IResourceStream>)
+    }
+    
+    ResourceReference <|-- ConcatResourceBundleReference
+    IResourceBundle <|-- ConcatResourceBundleReference
+    class ConcatResourceBundleReference<T>
+    {
+        --(constructors)--
+        +ConcatResourceBundleReference(Class<?>, String, List<T>)
+        +ConcatResourceBundleReference(Class<?>, String, Locale, String, String, List<T>)
+        +ConcatResourceBundleReference(Class<?>, String, T)
+        +ConcatResourceBundleReference(String, T)
+        --
+        +ITextResourceCompressor getCompressor()
+        +void setCompressor(ITextResourceCompressor)
+    }
+    
+    interface IResourceBundle
+    {
+        --(collection)--
+        +Iterable<? extends HeaderItem> getProvidedResources()
+    }
+    
+    ResourceBundleReference <|-- ReplacementResourceBundleReference
+    class ReplacementResourceBundleReference
+    {
+        --(constructors)--
+        +ReplacementResourceBundleReference(ResourceReference)
+    }
+    
+    ResourceReference <|-- ResourceBundleReference
+    IResourceBundle <|-- ResourceBundleReference
+    class ResourceBundleReference
+    {
+        --(constructors)--
+        +ResourceBundleReference(ResourceReference)
+        --
+        +ResourceReference getBundleReference()
+        --(collection)--
+        +void addProvidedResources(HeaderItem... items)
+    }
+    
+@enduml
+

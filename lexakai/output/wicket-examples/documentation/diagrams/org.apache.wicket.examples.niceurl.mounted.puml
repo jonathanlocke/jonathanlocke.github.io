@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.niceurl.mounted"
+    
+    WicketExamplePage <|-- Page3
+    class Page3
+    {
+        --(constructors)--
+        +Page3(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Page4
+    class Page4
+    {
+        --(constructors)--
+        +Page4(PageParameters)
+    }
+    
+    WicketExamplePage <|-- Page5
+    class Page5
+    {
+        --(constructors)--
+        +Page5(PageParameters)
+    }
+    
+@enduml
+

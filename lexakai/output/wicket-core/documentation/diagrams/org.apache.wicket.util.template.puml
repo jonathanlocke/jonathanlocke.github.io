@@ -1,0 +1,58 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.template"
+    
+    abstract AbstractStringResourceStream
+    
+    TextTemplateDecorator <|-- CssTemplate
+    class CssTemplate
+    {
+        --(constructors)--
+        +CssTemplate(TextTemplate)
+    }
+    
+    TextTemplateDecorator <|-- JavaScriptTemplate
+    class JavaScriptTemplate
+    {
+        --(constructors)--
+        +JavaScriptTemplate(TextTemplate)
+    }
+    
+    TextTemplate <|-- PackageTextTemplate
+    class PackageTextTemplate
+    {
+        --(constructors)--
+        +PackageTextTemplate(Class<?>, String)
+        +PackageTextTemplate(Class<?>, String, String)
+        +PackageTextTemplate(Class<?>, String, String, String)
+        +PackageTextTemplate(Class<?>, String, String, String, Locale, String, String)
+        --
+        +void setEncoding(String encoding)
+    }
+    
+    AbstractStringResourceStream <|-- TextTemplate
+    abstract class TextTemplate
+    {
+        --(constructors)--
+        +TextTemplate()
+        +TextTemplate(String)
+        --
+        +TextTemplate interpolate(Map<String,?> variables)
+        --(conversion)--
+        +String asString(Map<String,?> variables)
+    }
+    
+    TextTemplate <|-- TextTemplateDecorator
+    abstract class TextTemplateDecorator
+    {
+        --(constructors)--
+        +TextTemplateDecorator(TextTemplate)
+        --
+        +String getAfterTemplateContents()
+        +String getBeforeTemplateContents()
+    }
+    
+@enduml
+

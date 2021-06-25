@@ -1,0 +1,136 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.wizard"
+    
+    interface IClusterable
+    interface ICondition
+    
+    StaticContentStep <|-- NewUserWizard.ConfirmationStep
+    class NewUserWizard.ConfirmationStep
+    {
+        --(constructors)--
+        +ConfirmationStep()
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    Wizard <|-- NewUserWizard
+    class NewUserWizard
+    {
+        --(constructors)--
+        +NewUserWizard(String)
+        --
+        +User getUser()
+        +void setAssignRoles(boolean assignRoles)
+        +void setUser(User)
+        --(checks)--
+        +boolean isAssignRoles()
+    }
+    
+    Wizard <|-- StaticWizard
+    class StaticWizard
+    {
+        --(constructors)--
+        +StaticWizard(String)
+    }
+    
+    Wizard <|-- StaticWizardWithPanels
+    class StaticWizardWithPanels
+    {
+        --(constructors)--
+        +StaticWizardWithPanels(String)
+    }
+    
+    WizardStep <|-- StaticWizardWithPanels.Step1
+    class StaticWizardWithPanels.Step1
+    {
+        --(constructors)--
+        +Step1()
+    }
+    
+    WizardStep <|-- StaticWizardWithPanels.Step2
+    class StaticWizardWithPanels.Step2
+    {
+        --(constructors)--
+        +Step2()
+    }
+    
+    WizardStep <|-- StaticWizardWithPanels.Step3
+    class StaticWizardWithPanels.Step3
+    {
+        --(constructors)--
+        +Step3()
+    }
+    
+    IClusterable <|-- User
+    class User
+    {
+        --
+        +String getDepartment()
+        +Set<String> getRoles()
+        +void setDepartment(String department)
+        +void setRoles(Set<String> roles)
+        --(naming)--
+        +String getFirstName()
+        +String getLastName()
+        +String getRolesSetName()
+        +String getUserName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        +void setRolesSetName(String rolesSetName)
+        +void setUserName(String userName)
+        --(network)--
+        +String getEmail()
+        +void setEmail(String email)
+    }
+    
+    WizardStep <|-- NewUserWizard.UserDetailsStep
+    class NewUserWizard.UserDetailsStep
+    {
+        --(constructors)--
+        +UserDetailsStep()
+    }
+    
+    WizardStep <|-- NewUserWizard.UserNameStep
+    class NewUserWizard.UserNameStep
+    {
+        --(constructors)--
+        +UserNameStep()
+    }
+    
+    WizardStep <|-- NewUserWizard.UserRolesStep
+    WizardModel.ICondition <|-- NewUserWizard.UserRolesStep
+    class NewUserWizard.UserRolesStep
+    {
+        --(constructors)--
+        +UserRolesStep()
+    }
+    
+    WicketExampleApplication <|-- WizardApplication
+    class WizardApplication
+    {
+    }
+    
+    Link <|-- Index.WizardLink
+    class Index.WizardLink
+    {
+        --(constructors)--
+        +WizardLink(String, Class<C>)
+    }
+    
+    WicketExamplePage <|-- WizardPage
+    class WizardPage
+    {
+        --(constructors)--
+        +WizardPage(Class<C>)
+    }
+    
+@enduml
+

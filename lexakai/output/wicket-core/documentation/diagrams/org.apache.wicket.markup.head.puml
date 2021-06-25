@@ -1,0 +1,358 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.head"
+    
+    abstract AbstractCssReferenceHeaderItem
+    abstract AbstractJavaScriptReferenceHeaderItem
+    abstract AbstractCspHeaderItem
+    
+    interface Serializable
+    interface IWrappedHeaderItem
+    interface IClusterable
+    interface ISubresourceHeaderItem
+    interface IReferenceHeaderItem
+    interface Comparator
+    
+    HeaderItem <|-- AbstractCspHeaderItem
+    abstract class AbstractCspHeaderItem
+    {
+        --
+        +String getNonce()
+        +AbstractCspHeaderItem setNonce(String nonce)
+    }
+    
+    CssHeaderItem <|-- AbstractCssReferenceHeaderItem
+    ISubresourceHeaderItem <|-- AbstractCssReferenceHeaderItem
+    abstract class AbstractCssReferenceHeaderItem
+    {
+        --(constructors)--
+        +AbstractCssReferenceHeaderItem(String, String)
+        --
+        +String getMedia()
+        +String getRel()
+        #void internalRenderCSSReference(Response, String url)
+    }
+    
+    JavaScriptHeaderItem <|-- AbstractJavaScriptReferenceHeaderItem
+    ISubresourceHeaderItem <|-- AbstractJavaScriptReferenceHeaderItem
+    abstract class AbstractJavaScriptReferenceHeaderItem
+    {
+        --
+        +String getCharset()
+        +AbstractJavaScriptReferenceHeaderItem setAsync(boolean async)
+        +AbstractJavaScriptReferenceHeaderItem setCharset(String charset)
+        +AbstractJavaScriptReferenceHeaderItem setDefer(boolean defer)
+        #void internalRenderJavaScriptReference(Response, String url)
+        --(checks)--
+        +boolean isAsync()
+        +boolean isDefer()
+    }
+    
+    CssHeaderItem <|-- CssContentHeaderItem
+    class CssContentHeaderItem
+    {
+        --(constructors)--
+        +CssContentHeaderItem(CharSequence, String)
+        --(primitive)--
+        +CharSequence getCss()
+    }
+    
+    AbstractCspHeaderItem <|-- CssHeaderItem
+    abstract class CssHeaderItem
+    {
+        --
+        +CssContentHeaderItem forCSS(CharSequence css, String id)
+        +CssReferenceHeaderItem forReference(ResourceReference)
+        +CssReferenceHeaderItem forReference(ResourceReference, PageParameters, String media)
+        +CssReferenceHeaderItem forReference(ResourceReference, String media)
+        +CssReferenceHeaderItem forReference(ResourceReference, PageParameters, String media, String rel)
+        --(identity)--
+        +String getId()
+        +CssHeaderItem setId(String markupId)
+        --(network)--
+        +CssUrlReferenceHeaderItem forUrl(String url)
+        +CssUrlReferenceHeaderItem forUrl(String url, String media)
+        +CssUrlReferenceHeaderItem forUrl(String url, String media, String rel)
+    }
+    
+    AbstractCssReferenceHeaderItem <|-- CssReferenceHeaderItem
+    IReferenceHeaderItem <|-- CssReferenceHeaderItem
+    class CssReferenceHeaderItem
+    {
+        --(constructors)--
+        +CssReferenceHeaderItem(ResourceReference, PageParameters, String)
+        +CssReferenceHeaderItem(ResourceReference, PageParameters, String, String)
+        --
+        +PageParameters getPageParameters()
+    }
+    
+    AbstractCssReferenceHeaderItem <|-- CssUrlReferenceHeaderItem
+    class CssUrlReferenceHeaderItem
+    {
+        --(constructors)--
+        +CssUrlReferenceHeaderItem(String, String)
+        +CssUrlReferenceHeaderItem(String, String, String)
+        --(network)--
+        +String getUrl()
+    }
+    
+    IClusterable <|-- HeaderItem
+    abstract class HeaderItem
+    {
+        --
+        +void render(Response)
+        --(collection)--
+        +List<HeaderItem> getDependencies()
+        +Iterable<? extends HeaderItem> getProvidedResources()
+        +Iterable<?> getRenderTokens()
+    }
+    
+    enum PriorityFirstComparator.HeaderItemType
+    {
+        COMPONENT
+        PAGE
+        PRIORITY
+    }
+    
+    MetaDataHeaderItem <|-- HtmlImportHeaderItem
+    class HtmlImportHeaderItem
+    {
+        --
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters, String media, boolean async)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters, IModel<String> media)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters, boolean async)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters, String media)
+        +MetaDataHeaderItem forImportLinkTag(IModel<String> href)
+        +MetaDataHeaderItem forImportLinkTag(String href)
+        +MetaDataHeaderItem forImportLinkTag(IModel<String> href, boolean async)
+        +MetaDataHeaderItem forImportLinkTag(String href, boolean async)
+        +MetaDataHeaderItem forImportLinkTag(Class<? extends Page> pageClass, PageParameters, IModel<String> media, boolean async)
+        +MetaDataHeaderItem forLinkTag(String rel, String href, String media)
+        +MetaDataHeaderItem forLinkTag(IModel<String> rel, IModel<String> href, IModel<String> media)
+    }
+    
+    interface Closeable
+    Closeable <|-- IHeaderResponse
+    interface IHeaderResponse
+    {
+        --
+        +Response getResponse()
+        +void markRendered(Object)
+        +void render(HeaderItem)
+        +boolean wasRendered(Object)
+        --(io)--
+        +boolean isClosed()
+    }
+    
+    interface IReferenceHeaderItem
+    {
+        --
+        +ResourceReference getReference()
+    }
+    
+    interface ISubresourceHeaderItem
+    {
+        --
+        +CrossOrigin getCrossOrigin()
+        +String getIntegrity()
+        +HeaderItem setCrossOrigin(CrossOrigin)
+        +HeaderItem setIntegrity(String integrity)
+    }
+    
+    interface IWrappedHeaderItem
+    {
+        --
+        +HeaderItem wrap(HeaderItem)
+        --(functional)--
+        +HeaderItem getWrapped()
+    }
+    
+    JavaScriptHeaderItem <|-- JavaScriptContentHeaderItem
+    class JavaScriptContentHeaderItem
+    {
+        --(constructors)--
+        +JavaScriptContentHeaderItem(CharSequence, String)
+        --(primitive)--
+        +CharSequence getJavaScript()
+    }
+    
+    AbstractCspHeaderItem <|-- JavaScriptHeaderItem
+    abstract class JavaScriptHeaderItem
+    {
+        --
+        +JavaScriptReferenceHeaderItem forReference(ResourceReference)
+        +JavaScriptReferenceHeaderItem forReference(ResourceReference, String id)
+        +JavaScriptReferenceHeaderItem forReference(ResourceReference, PageParameters, String id)
+        +JavaScriptContentHeaderItem forScript(CharSequence javascript, String id)
+        --(identity)--
+        +String getId()
+        +JavaScriptHeaderItem setId(String markupId)
+        --(network)--
+        +JavaScriptUrlReferenceHeaderItem forUrl(String url)
+        +JavaScriptUrlReferenceHeaderItem forUrl(String url, String id)
+    }
+    
+    AbstractJavaScriptReferenceHeaderItem <|-- JavaScriptReferenceHeaderItem
+    IReferenceHeaderItem <|-- JavaScriptReferenceHeaderItem
+    class JavaScriptReferenceHeaderItem
+    {
+        --(constructors)--
+        +JavaScriptReferenceHeaderItem(ResourceReference, PageParameters, String)
+        --
+        +PageParameters getPageParameters()
+    }
+    
+    AbstractJavaScriptReferenceHeaderItem <|-- JavaScriptUrlReferenceHeaderItem
+    class JavaScriptUrlReferenceHeaderItem
+    {
+        --(constructors)--
+        +JavaScriptUrlReferenceHeaderItem(String, String)
+        --(network)--
+        +String getUrl()
+    }
+    
+    HeaderItem <|-- MetaDataHeaderItem
+    class MetaDataHeaderItem
+    {
+        --(constructors)--
+        +MetaDataHeaderItem(String)
+        --
+        +MetaDataHeaderItem forLinkTag(String rel, String href)
+        +MetaDataHeaderItem forLinkTag(IModel<String> rel, IModel<String> href)
+        +MetaDataHeaderItem forMetaTag(IModel<String> name, IModel<String> content)
+        +MetaDataHeaderItem forMetaTag(String name, String content)
+        +String generateString()
+        --(collection)--
+        +MetaDataHeaderItem addTagAttribute(String attributeName)
+        +MetaDataHeaderItem addTagAttribute(String attributeName, Object attributeValue)
+        --(network)--
+        +MetaDataHeaderItem forHttpEquiv(IModel<String> httpEquiv, IModel<String> content)
+        +MetaDataHeaderItem forHttpEquiv(String httpEquiv, String content)
+    }
+    
+    HeaderItem <|-- NoHeaderItem
+    class NoHeaderItem
+    {
+        --
+        +NoHeaderItem get()
+    }
+    
+    AbstractCspHeaderItem <|-- OnDomReadyHeaderItem
+    class OnDomReadyHeaderItem
+    {
+        --(constructors)--
+        +OnDomReadyHeaderItem()
+        +OnDomReadyHeaderItem(CharSequence)
+        --
+        +OnDomReadyHeaderItem forScript(CharSequence javaScript)
+        --(primitive)--
+        +CharSequence getJavaScript()
+    }
+    
+    AbstractCspHeaderItem <|-- OnEventHeaderItem
+    class OnEventHeaderItem
+    {
+        --(constructors)--
+        +OnEventHeaderItem(String, String)
+        +OnEventHeaderItem(String, String, CharSequence)
+        --
+        +String getTarget()
+        --(messaging)--
+        +OnEventHeaderItem forComponent(Component target, String event, CharSequence javaScript)
+        +OnEventHeaderItem forMarkupId(String id, String event, CharSequence javaScript)
+        +OnEventHeaderItem forScript(String literalTarget, String event, CharSequence javaScript)
+        +String getEvent()
+        --(primitive)--
+        +CharSequence getCompleteJavaScript()
+        +CharSequence getJavaScript()
+    }
+    
+    AbstractCspHeaderItem <|-- OnLoadHeaderItem
+    class OnLoadHeaderItem
+    {
+        --(constructors)--
+        +OnLoadHeaderItem()
+        +OnLoadHeaderItem(CharSequence)
+        --(primitive)--
+        +CharSequence getJavaScript()
+        --(read)--
+        +OnLoadHeaderItem forScript(CharSequence javaScript)
+    }
+    
+    StringHeaderItem <|-- PageHeaderItem
+    class PageHeaderItem
+    {
+        --(constructors)--
+        +PageHeaderItem(CharSequence)
+    }
+    
+    Comparator <|-- PriorityFirstComparator
+    Serializable <|-- PriorityFirstComparator
+    class PriorityFirstComparator
+    {
+        --(constructors)--
+        +PriorityFirstComparator(boolean)
+        --
+        #int compareWithinGroup(RecordedHeaderItem item1, RecordedHeaderItem item2)
+        #int inversedComponentOrder(RecordedHeaderItem item1, RecordedHeaderItem item2)
+        --(collection)--
+        #HeaderItemType getItemType(RecordedHeaderItem)
+    }
+    
+    HeaderItem <|-- PriorityHeaderItem
+    IWrappedHeaderItem <|-- PriorityHeaderItem
+    class PriorityHeaderItem
+    {
+        --(constructors)--
+        +PriorityHeaderItem(HeaderItem)
+    }
+    
+    class ResourceAggregator.RecordedHeaderItem
+    {
+        --(constructors)--
+        +RecordedHeaderItem(HeaderItem)
+        --
+        +HeaderItem getItem()
+        +int getMinDepth()
+        --(collection)--
+        +List<RecordedHeaderItemLocation> getLocations()
+    }
+    
+    class ResourceAggregator.RecordedHeaderItemLocation
+    {
+        --(constructors)--
+        +RecordedHeaderItemLocation(Component, int)
+        --
+        +int getDepth()
+        +Object getRenderBase()
+        --(collection)--
+        +int getIndexInRequest()
+    }
+    
+    DecoratingHeaderResponse <|-- ResourceAggregator
+    class ResourceAggregator
+    {
+        --(constructors)--
+        +ResourceAggregator(IHeaderResponse)
+        --
+        #HeaderItem preserveCssDetails(CssReferenceHeaderItem, CssReferenceHeaderItem bundle)
+        #HeaderItem preserveDetails(HeaderItem, HeaderItem bundle)
+    }
+    
+    HeaderItem <|-- StringHeaderItem
+    class StringHeaderItem
+    {
+        --(constructors)--
+        +StringHeaderItem(CharSequence)
+        --
+        +StringHeaderItem forString(CharSequence string)
+        --(primitive)--
+        +CharSequence getString()
+    }
+    
+@enduml
+

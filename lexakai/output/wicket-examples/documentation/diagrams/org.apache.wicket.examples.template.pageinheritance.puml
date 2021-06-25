@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.template.pageinheritance"
+    
+    TemplatePage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1()
+    }
+    
+    TemplatePage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2()
+    }
+    
+    TemplatePanel <|-- Panel1
+    class Panel1
+    {
+        --(constructors)--
+        +Panel1(String)
+        +Panel1(String, IModel<?>)
+    }
+    
+    WicketExamplePage <|-- TemplatePage
+    abstract class TemplatePage
+    {
+        --(constructors)--
+        +TemplatePage()
+        --
+        +String getPageTitle()
+        +void setPageTitle(String title)
+    }
+    
+    Panel <|-- TemplatePanel
+    abstract class TemplatePanel
+    {
+        --(constructors)--
+        +TemplatePanel(String)
+        +TemplatePanel(String, IModel<?>)
+    }
+    
+@enduml
+

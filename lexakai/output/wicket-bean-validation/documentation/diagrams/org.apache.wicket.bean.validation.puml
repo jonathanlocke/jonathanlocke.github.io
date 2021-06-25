@@ -1,0 +1,137 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.bean.validation"
+    
+    interface INullAcceptingValidator
+    interface ITagModifier
+    interface IViolationTranslator
+    interface Serializable
+    interface IPropertyResolver
+    interface BeanValidationContext
+    interface Iterator
+    interface Supplier
+    interface MessageInterpolator
+    
+    BeanValidationContext <|-- BeanValidationConfiguration
+    class BeanValidationConfiguration
+    {
+        --(constructors)--
+        +BeanValidationConfiguration()
+        --
+        +void configure(Application)
+        +BeanValidationContext get()
+        +void setValidatorProvider(Supplier<Validator> validatorProvider)
+        +void setViolationTranslator(IViolationTranslator)
+        --(configuration)--
+        +BeanValidationConfiguration add(IPropertyResolver)
+        +BeanValidationConfiguration register(Class<T> annotationType, ITagModifier<T>)
+    }
+    
+    interface IPropertyResolver
+    IPropertyResolver <|-- BeanValidationContext
+    interface BeanValidationContext
+    {
+        --
+        +ITagModifier<T> getTagModifier(Class<T> annotationType)
+        +Validator getValidator()
+        +IViolationTranslator getViolationTranslator()
+        --(checks)--
+        +boolean isRequiredConstraint(ConstraintDescriptor<?>)
+    }
+    
+    Iterator <|-- ConstraintIterator
+    class ConstraintIterator
+    {
+        --(constructors)--
+        +ConstraintIterator(Validator, Property, Class<?>)
+    }
+    
+    IPropertyResolver <|-- DefaultPropertyResolver
+    class DefaultPropertyResolver
+    {
+    }
+    
+    Supplier <|-- DefaultValidatorProvider
+    class DefaultValidatorProvider
+    {
+    }
+    
+    IViolationTranslator <|-- DefaultViolationTranslator
+    class DefaultViolationTranslator
+    {
+    }
+    
+    LoadableDetachableModel <|-- GroupsModel
+    class GroupsModel
+    {
+        --(constructors)--
+        +GroupsModel(Class<?>)
+    }
+    
+    interface IPropertyResolver
+    {
+        --
+        +Property resolveProperty(FormComponent<?>)
+    }
+    
+    interface ITagModifier<T>
+    {
+        --
+        +void modify(FormComponent<?>, ComponentTag, T annotation)
+    }
+    
+    interface IViolationTranslator
+    {
+        --(status)--
+        +ValidationError convert(ConstraintViolation<T>)
+    }
+    
+    Serializable <|-- Property
+    class Property
+    {
+        --(constructors)--
+        +Property(Class<?>, String)
+        +Property(ClassReference<?>, String)
+        --
+        +Class<?> getOwner()
+        --(naming)--
+        +String getName()
+    }
+    
+    Behavior <|-- PropertyValidator
+    INullAcceptingValidator <|-- PropertyValidator
+    class PropertyValidator<T>
+    {
+        --(constructors)--
+        +PropertyValidator(Class<?>)
+        +PropertyValidator(IModel<Class<?>[]>)
+        +PropertyValidator(Property, Class<?>)
+        +PropertyValidator(Property, IModel<Class<?>[]>)
+        --(checks)--
+        #boolean isRequired()
+    }
+    
+    MessageInterpolator <|-- SessionLocaleInterpolator
+    class SessionLocaleInterpolator
+    {
+        --(constructors)--
+        +SessionLocaleInterpolator(MessageInterpolator)
+    }
+    
+    ITagModifier <|-- SizeTagModifier
+    class SizeTagModifier
+    {
+        --(checks)--
+        #boolean hasLengthAttribute(String tagName)
+    }
+    
+    class ValidationModelResolver
+    {
+        --
+        +IPropertyReflectionAwareModel<?> resolvePropertyModelFrom(FormComponent<?>)
+    }
+    
+@enduml
+

@@ -1,0 +1,132 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.head.filter"
+    
+    abstract AbstractHeaderResponseFilter
+    
+    interface IHeaderResponseFilter
+    interface IWrappedHeaderItem
+    
+    FilteringHeaderResponse.IHeaderResponseFilter <|-- AbstractHeaderResponseFilter
+    abstract class AbstractHeaderResponseFilter
+    {
+        --(constructors)--
+        +AbstractHeaderResponseFilter(String)
+        --(filtering)--
+        #boolean acceptsWrapped(HeaderItem)
+    }
+    
+    AbstractHeaderResponseFilter <|-- CssAcceptingHeaderResponseFilter
+    class CssAcceptingHeaderResponseFilter
+    {
+        --(constructors)--
+        +CssAcceptingHeaderResponseFilter(String)
+    }
+    
+    AbstractHeaderResponseFilter <|-- CssAndPageAcceptingHeaderResponseFilter
+    class CssAndPageAcceptingHeaderResponseFilter
+    {
+        --(constructors)--
+        +CssAndPageAcceptingHeaderResponseFilter(String)
+    }
+    
+    HeaderItem <|-- FilteredHeaderItem
+    IWrappedHeaderItem <|-- FilteredHeaderItem
+    class FilteredHeaderItem
+    {
+        --(constructors)--
+        +FilteredHeaderItem(HeaderItem, String)
+        --(filtering)--
+        +String getFilterName()
+    }
+    
+    DecoratingHeaderResponse <|-- FilteringHeaderResponse
+    class FilteringHeaderResponse
+    {
+        --(constructors)--
+        +FilteringHeaderResponse(IHeaderResponse)
+        +FilteringHeaderResponse(IHeaderResponse, String, Iterable<? extends IHeaderResponseFilter>)
+        --
+        +FilteringHeaderResponse get()
+        #IHeaderResponse decorate(IHeaderResponse)
+        #void render(HeaderItem, List<HeaderItem> filteredItems)
+        #void setFilters(Iterable<? extends IHeaderResponseFilter> filters)
+        --(primitive)--
+        +CharSequence getContent(String filterName)
+    }
+    
+    WebMarkupContainer <|-- HeaderResponseContainer
+    class HeaderResponseContainer
+    {
+        --(constructors)--
+        +HeaderResponseContainer(String, String)
+    }
+    
+    interface Predicate<HeaderItem>
+    Predicate <|-- FilteringHeaderResponse.IHeaderResponseFilter
+    interface FilteringHeaderResponse.IHeaderResponseFilter
+    {
+        --(filtering)--
+        +boolean accepts(HeaderItem)
+        --(naming)--
+        +String getName()
+    }
+    
+    AbstractHeaderResponseFilter <|-- JavaScriptAcceptingHeaderResponseFilter
+    class JavaScriptAcceptingHeaderResponseFilter
+    {
+        --(constructors)--
+        +JavaScriptAcceptingHeaderResponseFilter(String)
+    }
+    
+    DecoratingHeaderResponse <|-- JavaScriptDeferHeaderResponse
+    class JavaScriptDeferHeaderResponse
+    {
+        --(constructors)--
+        +JavaScriptDeferHeaderResponse(IHeaderResponse)
+    }
+    
+    FilteringHeaderResponse <|-- JavaScriptFilteredIntoFooterHeaderResponse
+    class JavaScriptFilteredIntoFooterHeaderResponse
+    {
+        --(constructors)--
+        +JavaScriptFilteredIntoFooterHeaderResponse(IHeaderResponse, String)
+        --(filtering)--
+        #IHeaderResponseFilter createFooterFilter(String footerBucketName)
+        #IHeaderResponseFilter createHeaderFilter(String headerFilterName, IHeaderResponseFilter footerFilter)
+    }
+    
+    OnDomReadyHeaderItem <|-- JavaScriptDeferHeaderResponse.NativeOnDomContentLoadedHeaderItem
+    class JavaScriptDeferHeaderResponse.NativeOnDomContentLoadedHeaderItem
+    {
+        --(constructors)--
+        +NativeOnDomContentLoadedHeaderItem(CharSequence)
+    }
+    
+    OnLoadHeaderItem <|-- JavaScriptDeferHeaderResponse.NativeOnLoadHeaderItem
+    class JavaScriptDeferHeaderResponse.NativeOnLoadHeaderItem
+    {
+        --(constructors)--
+        +NativeOnLoadHeaderItem(CharSequence)
+    }
+    
+    FilteringHeaderResponse.IHeaderResponseFilter <|-- OppositeHeaderResponseFilter
+    class OppositeHeaderResponseFilter
+    {
+        --(constructors)--
+        +OppositeHeaderResponseFilter(String, IHeaderResponseFilter)
+    }
+    
+    DecoratingHeaderResponse <|-- SubresourceHeaderResponse
+    abstract class SubresourceHeaderResponse
+    {
+        --(constructors)--
+        +SubresourceHeaderResponse(IHeaderResponse)
+        --
+        #void configure(ISubresourceHeaderItem)
+    }
+    
+@enduml
+

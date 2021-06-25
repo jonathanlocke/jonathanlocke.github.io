@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="969.7917px" preserveAspectRatio="none" style="width:2219px;height:969px;background:#333333;" version="1.1" viewBox="0 0 2219 969" width="2219.7917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="297.9167" x="953.6458" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="275" x="965.1042" y="30.5583">org.apache.wicket.util.crypt</text><!--MD5=[5f6d837d31026311c5b6f226198a64c5]
+class AbstractCrypt--><rect codeLine="12" fill="#282828" height="155.1127" id="AbstractCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="225" x="985.4167" y="367.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="225" x="985.4167" y="367.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="225" x="985.4167" y="390.2995"/><rect codeLine="12" fill="none" height="155.1127" id="AbstractCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="225" x="985.4167" y="367.2445"/><ellipse cx="1045.8333" cy="382.9386" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1045.4264,379.6407 L1044.578,383.37 L1046.2809,383.37 Z M1044.3278,377.9928 L1046.5312,377.9928 L1048.9909,387.1053 L1047.1903,387.1053 L1046.6288,384.8531 L1044.2179,384.8531 L1043.6686,387.1053 L1041.8681,387.1053 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="89.5833" x="1068.75" y="387.6628">AbstractCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="986.4583" x2="1209.375" y1="398.6328" y2="398.6328"/><ellipse cx="996.875" cy="434.0027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="87.5" x="1008.3333" y="440.9139">AbstractCrypt()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="986.4583" x2="1054.1667" y1="416.8386" y2="416.8386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1057.2917" y="420.6482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1141.6667" x2="1209.375" y1="416.8386" y2="416.8386"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="986.4583" x2="1209.375" y1="450.6226" y2="450.6226"/><polygon fill="#FFFF44" points="996.875,456.8726,1001.0417,461.0392,996.875,465.2059,992.7083,461.0392" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="1008.3333" y="468.9921">byte[] crypt(byte[] input, int mode)</text><ellipse cx="996.875" cy="505.7373" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="82.2917" x="1008.3333" y="512.6485">String getKey()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="986.4583" x2="1063.5417" y1="488.5732" y2="488.5732"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1066.6667" y="492.3828">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1132.2917" x2="1209.375" y1="488.5732" y2="488.5732"/><!--MD5=[736ad8e84e5464d61ac96c644596cacf]
+class ICryptFactory--><rect codeLine="63" fill="#282828" height="83.3781" id="ICryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="1854.1667" y="85.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="1854.1667" y="85.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="131.25" x="1854.1667" y="108.5286"/><rect codeLine="63" fill="none" height="83.3781" id="ICryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="131.25" x="1854.1667" y="85.4736"/><ellipse cx="1872.0313" cy="101.1678" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1869.4352,98.3297 L1869.4352,96.7428 L1874.8612,96.7428 L1874.8612,98.3297 L1873.0485,98.3297 L1873.0485,104.2684 L1874.8612,104.2684 L1874.8612,105.8553 L1869.4352,105.8553 L1869.4352,104.2684 L1871.248,104.2684 L1871.248,98.3297 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="86.4583" x="1889.4271" y="105.8919">ICryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1855.2083" x2="1984.375" y1="116.862" y2="116.862"/><ellipse cx="1865.625" cy="152.2319" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="98.9583" x="1877.0833" y="159.1431">ICrypt newCrypt()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1855.2083" x2="1892.7083" y1="135.0677" y2="135.0677"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="1895.8333" y="138.8774">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1946.875" x2="1984.375" y1="135.0677" y2="135.0677"/><!--MD5=[4f7fe1dc05f924acefc77d33ba965ef9]
+class ICrypt--><rect codeLine="54" fill="#282828" height="146.7794" id="ICrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="247.9167" x="1072.9167" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="247.9167" x="1072.9167" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="247.9167" x="1072.9167" y="76.7578"/><rect codeLine="54" fill="none" height="146.7794" id="ICrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="247.9167" x="1072.9167" y="53.7028"/><ellipse cx="1169.7917" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1167.1956,66.5588 L1167.1956,64.9719 L1172.6217,64.9719 L1172.6217,66.5588 L1170.8089,66.5588 L1170.8089,72.4976 L1172.6217,72.4976 L1172.6217,74.0845 L1167.1956,74.0845 L1167.1956,72.4976 L1169.0084,72.4976 L1169.0084,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="39.5833" x="1192.7083" y="74.1211">ICrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1073.9583" x2="1319.7917" y1="85.0911" y2="85.0911"/><ellipse cx="1084.375" cy="120.461" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="1095.8333" y="127.3722">void setKey(String key)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1073.9583" x2="1162.5" y1="103.2969" y2="103.2969"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1165.625" y="107.1065">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1231.25" x2="1319.7917" y1="103.2969" y2="103.2969"/><ellipse cx="1084.375" cy="164.1174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="1095.8333" y="171.0286">String decryptUrlSafe(String text)</text><ellipse cx="1084.375" cy="183.8623" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="215.625" x="1095.8333" y="190.7735">String encryptUrlSafe(String plainText)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1073.9583" x2="1167.1875" y1="146.9533" y2="146.9533"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1170.3125" y="150.7629">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1226.5625" x2="1319.7917" y1="146.9533" y2="146.9533"/><!--MD5=[e7262fcef8d1686c515f4350314c3287]
+class CryptFactoryCachingDecorator--><rect codeLine="48" fill="#282828" height="83.3781" id="CryptFactoryCachingDecorator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="1472.9167" y="403.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="1472.9167" y="403.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="1472.9167" y="426.237"/><rect codeLine="48" fill="none" height="83.3781" id="CryptFactoryCachingDecorator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="1472.9167" y="403.182"/><ellipse cx="1512.8125" cy="418.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1514.7229,423.3012 Q1514.2957,423.5209 1513.8257,423.6308 Q1513.3557,423.7406 1512.8369,423.7406 Q1510.9937,423.7406 1510.0232,422.526 Q1509.0527,421.3114 1509.0527,419.0165 Q1509.0527,416.7155 1510.0232,415.5009 Q1510.9937,414.2863 1512.8369,414.2863 Q1513.3557,414.2863 1513.8318,414.3962 Q1514.3079,414.506 1514.7229,414.7257 L1514.7229,416.7277 Q1514.259,416.3005 1513.8226,416.1021 Q1513.3862,415.9037 1512.9224,415.9037 Q1511.9336,415.9037 1511.4301,416.688 Q1510.9265,417.4723 1510.9265,419.0165 Q1510.9265,420.5546 1511.4301,421.3389 Q1511.9336,422.1232 1512.9224,422.1232 Q1513.3862,422.1232 1513.8226,421.9248 Q1514.259,421.7265 1514.7229,421.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="197.9167" x="1535.1042" y="423.6003">CryptFactoryCachingDecorator</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1473.9583" x2="1763.5417" y1="434.5703" y2="434.5703"/><ellipse cx="1484.375" cy="469.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="259.375" x="1495.8333" y="476.8514">CryptFactoryCachingDecorator(ICryptFactory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1473.9583" x2="1575" y1="452.7761" y2="452.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1578.125" y="456.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1662.5" x2="1763.5417" y1="452.7761" y2="452.7761"/><!--MD5=[5fe99f1a08617fdf859b3bf45419b9b2]
+class CachingSunJceCryptFactory--><rect codeLine="23" fill="#282828" height="83.3781" id="CachingSunJceCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="229.1667" x="1504.1667" y="784.432"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="229.1667" x="1504.1667" y="784.432"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="229.1667" x="1504.1667" y="807.487"/><rect codeLine="23" fill="none" height="83.3781" id="CachingSunJceCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="229.1667" x="1504.1667" y="784.432"/><ellipse cx="1525.3125" cy="800.1261" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1527.2229,804.5512 Q1526.7957,804.7709 1526.3257,804.8808 Q1525.8557,804.9906 1525.3369,804.9906 Q1523.4937,804.9906 1522.5232,803.776 Q1521.5527,802.5614 1521.5527,800.2665 Q1521.5527,797.9655 1522.5232,796.7509 Q1523.4937,795.5363 1525.3369,795.5363 Q1525.8557,795.5363 1526.3318,795.6462 Q1526.8079,795.756 1527.2229,795.9757 L1527.2229,797.9777 Q1526.759,797.5505 1526.3226,797.3521 Q1525.8862,797.1537 1525.4224,797.1537 Q1524.4336,797.1537 1523.9301,797.938 Q1523.4265,798.7223 1523.4265,800.2665 Q1523.4265,801.8046 1523.9301,802.5889 Q1524.4336,803.3732 1525.4224,803.3732 Q1525.8862,803.3732 1526.3226,803.1748 Q1526.759,802.9765 1527.2229,802.5492 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="177.0833" x="1543.4375" y="804.8503">CachingSunJceCryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1505.2083" x2="1732.2917" y1="815.8203" y2="815.8203"/><ellipse cx="1515.625" cy="851.1902" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="1527.0833" y="858.1014">CachingSunJceCryptFactory(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1505.2083" x2="1575" y1="834.0261" y2="834.0261"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1578.125" y="837.8357">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1662.5" x2="1732.2917" y1="834.0261" y2="834.0261"/><!--MD5=[4c844e87331d3855605b5bdfaa64b7f4]
+class CharEncoding--><rect codeLine="29" fill="#282828" height="48.055" id="CharEncoding" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="127.0833" x="110.4167" y="103.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="127.0833" x="110.4167" y="103.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="127.0833" x="110.4167" y="126.237"/><rect codeLine="29" fill="none" height="48.055" id="CharEncoding" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="127.0833" x="110.4167" y="103.182"/><ellipse cx="125" cy="118.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M126.9104,123.3012 Q126.4832,123.5209 126.0132,123.6308 Q125.5432,123.7406 125.0244,123.7406 Q123.1812,123.7406 122.2107,122.526 Q121.2402,121.3114 121.2402,119.0165 Q121.2402,116.7155 122.2107,115.5009 Q123.1812,114.2863 125.0244,114.2863 Q125.5432,114.2863 126.0193,114.3962 Q126.4954,114.506 126.9104,114.7257 L126.9104,116.7277 Q126.4465,116.3005 126.0101,116.1021 Q125.5737,115.9037 125.1099,115.9037 Q124.1211,115.9037 123.6176,116.688 Q123.114,117.4723 123.114,119.0165 Q123.114,120.5546 123.6176,121.3389 Q124.1211,122.1232 125.1099,122.1232 Q125.5737,122.1232 126.0101,121.9248 Q126.4465,121.7265 126.9104,121.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="89.5833" x="141.6667" y="123.6003">CharEncoding</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="111.4583" x2="236.4583" y1="134.5703" y2="134.5703"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="111.4583" x2="236.4583" y1="142.9036" y2="142.9036"/><!--MD5=[d66ccfae09115673cfd9b4770ef83420]
+class CipherUtils--><rect codeLine="33" fill="#282828" height="103.123" id="CipherUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="761.4583" x="274.4792" y="75.5778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="761.4583" x="274.4792" y="75.5778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="761.4583" x="274.4792" y="98.6328"/><rect codeLine="33" fill="none" height="103.123" id="CipherUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="761.4583" x="274.4792" y="75.5778"/><ellipse cx="611.4583" cy="91.272" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M613.3687,95.697 Q612.9415,95.9167 612.4715,96.0266 Q612.0015,96.1365 611.4827,96.1365 Q609.6395,96.1365 608.669,94.9219 Q607.6986,93.7073 607.6986,91.4124 Q607.6986,89.1113 608.669,87.8967 Q609.6395,86.6821 611.4827,86.6821 Q612.0015,86.6821 612.4776,86.792 Q612.9537,86.9019 613.3687,87.1216 L613.3687,89.1235 Q612.9049,88.6963 612.4685,88.4979 Q612.0321,88.2996 611.5682,88.2996 Q610.5794,88.2996 610.0759,89.0839 Q609.5723,89.8682 609.5723,91.4124 Q609.5723,92.9504 610.0759,93.7347 Q610.5794,94.519 611.5682,94.519 Q612.0321,94.519 612.4685,94.3207 Q612.9049,94.1223 613.3687,93.6951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="72.9167" x="634.375" y="95.9961">CipherUtils</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="275.5208" x2="1034.8958" y1="106.9661" y2="106.9661"/><ellipse cx="285.9375" cy="142.336" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="395.8333" x="297.3958" y="149.2472">SecretKey generateKey(String algorithm, int keyLength, SecureRandom)</text><ellipse cx="285.9375" cy="162.0809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="729.1667" x="297.3958" y="168.9921">SecretKey generatePBEKey(String password, String pbeAlgorithm, String keyAlgorithm, byte[] salt, int iterationCount, int keyLength)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="275.5208" x2="620.8333" y1="125.1719" y2="125.1719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="623.9583" y="128.9815">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="689.5833" x2="1034.8958" y1="125.1719" y2="125.1719"/><!--MD5=[47d12d17b5a078a63ce72247ab63ada8]
+class ClassCryptFactory--><rect codeLine="41" fill="#282828" height="83.3781" id="ClassCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="237.5" x="1801.0417" y="403.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="237.5" x="1801.0417" y="403.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="237.5" x="1801.0417" y="426.237"/><rect codeLine="41" fill="none" height="83.3781" id="ClassCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="237.5" x="1801.0417" y="403.182"/><ellipse cx="1853.6458" cy="418.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1855.5562,423.3012 Q1855.129,423.5209 1854.659,423.6308 Q1854.189,423.7406 1853.6702,423.7406 Q1851.827,423.7406 1850.8565,422.526 Q1849.8861,421.3114 1849.8861,419.0165 Q1849.8861,416.7155 1850.8565,415.5009 Q1851.827,414.2863 1853.6702,414.2863 Q1854.189,414.2863 1854.6651,414.3962 Q1855.1412,414.506 1855.5562,414.7257 L1855.5562,416.7277 Q1855.0924,416.3005 1854.656,416.1021 Q1854.2196,415.9037 1853.7557,415.9037 Q1852.7669,415.9037 1852.2634,416.688 Q1851.7598,417.4723 1851.7598,419.0165 Q1851.7598,420.5546 1852.2634,421.3389 Q1852.7669,422.1232 1853.7557,422.1232 Q1854.2196,422.1232 1854.656,421.9248 Q1855.0924,421.7265 1855.5562,421.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="1876.5625" y="423.6003">ClassCryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1802.0833" x2="2037.5" y1="434.5703" y2="434.5703"/><ellipse cx="1812.5" cy="469.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="205.2083" x="1823.9583" y="476.8514">ClassCryptFactory(Class&lt;?&gt;, String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1802.0833" x2="1876.0417" y1="452.7761" y2="452.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1879.1667" y="456.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1963.5417" x2="2037.5" y1="452.7761" y2="452.7761"/><!--MD5=[7196d08c8f497841b75169989b24cd76]
+class NoCrypt--><rect codeLine="70" fill="#282828" height="83.3781" id="NoCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="1246.875" y="403.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="1246.875" y="403.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="95.8333" x="1246.875" y="426.237"/><rect codeLine="70" fill="none" height="83.3781" id="NoCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="95.8333" x="1246.875" y="403.182"/><ellipse cx="1263.8021" cy="418.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1265.7125,423.3012 Q1265.2852,423.5209 1264.8153,423.6308 Q1264.3453,423.7406 1263.8265,423.7406 Q1261.9832,423.7406 1261.0128,422.526 Q1260.0423,421.3114 1260.0423,419.0165 Q1260.0423,416.7155 1261.0128,415.5009 Q1261.9832,414.2863 1263.8265,414.2863 Q1264.3453,414.2863 1264.8214,414.3962 Q1265.2974,414.506 1265.7125,414.7257 L1265.7125,416.7277 Q1265.2486,416.3005 1264.8122,416.1021 Q1264.3758,415.9037 1263.9119,415.9037 Q1262.9232,415.9037 1262.4196,416.688 Q1261.9161,417.4723 1261.9161,419.0165 Q1261.9161,420.5546 1262.4196,421.3389 Q1262.9232,422.1232 1263.9119,422.1232 Q1264.3758,422.1232 1264.8122,421.9248 Q1265.2486,421.7265 1265.7125,421.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="53.125" x="1280.9896" y="423.6003">NoCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1247.9167" x2="1341.6667" y1="434.5703" y2="434.5703"/><ellipse cx="1258.3333" cy="469.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="55.2083" x="1269.7917" y="476.8514">NoCrypt()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1247.9167" x2="1251.0417" y1="452.7761" y2="452.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1254.1667" y="456.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1338.5417" x2="1341.6667" y1="452.7761" y2="452.7761"/><!--MD5=[3e6fa7a43f5fb787114e4e347e5ae622]
+class NoCryptFactory--><rect codeLine="77" fill="#282828" height="48.055" id="NoCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="137.5" x="2075" y="420.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="137.5" x="2075" y="420.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="137.5" x="2075" y="443.9453"/><rect codeLine="77" fill="none" height="48.055" id="NoCryptFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="137.5" x="2075" y="420.8903"/><ellipse cx="2089.5833" cy="436.5845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2091.4937,441.0095 Q2091.0665,441.2292 2090.5965,441.3391 Q2090.1265,441.449 2089.6077,441.449 Q2087.7645,441.449 2086.794,440.2344 Q2085.8236,439.0198 2085.8236,436.7249 Q2085.8236,434.4238 2086.794,433.2092 Q2087.7645,431.9946 2089.6077,431.9946 Q2090.1265,431.9946 2090.6026,432.1045 Q2091.0787,432.2144 2091.4937,432.4341 L2091.4937,434.436 Q2091.0299,434.0088 2090.5935,433.8104 Q2090.1571,433.6121 2089.6932,433.6121 Q2088.7044,433.6121 2088.2009,434.3964 Q2087.6973,435.1807 2087.6973,436.7249 Q2087.6973,438.2629 2088.2009,439.0472 Q2088.7044,439.8315 2089.6932,439.8315 Q2090.1571,439.8315 2090.5935,439.6332 Q2091.0299,439.4348 2091.4937,439.0076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="100" x="2106.25" y="441.3086">NoCryptFactory</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2076.0417" x2="2211.4583" y1="452.2786" y2="452.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2076.0417" x2="2211.4583" y1="460.612" y2="460.612"/><!--MD5=[420ec89d5ce78f751a5f467d4550c99f]
+class StringUtils--><rect codeLine="81" fill="#282828" height="363.973" id="StringUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="333.3333" x="7.2917" y="263.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="333.3333" x="7.2917" y="263.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="333.3333" x="7.2917" y="286.1328"/><rect codeLine="81" fill="none" height="363.973" id="StringUtils" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="333.3333" x="7.2917" y="263.0778"/><ellipse cx="132.2917" cy="278.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M134.2021,283.197 Q133.7748,283.4167 133.3049,283.5266 Q132.8349,283.6365 132.3161,283.6365 Q130.4728,283.6365 129.5024,282.4219 Q128.5319,281.2073 128.5319,278.9124 Q128.5319,276.6113 129.5024,275.3967 Q130.4728,274.1821 132.3161,274.1821 Q132.8349,274.1821 133.311,274.292 Q133.787,274.4019 134.2021,274.6216 L134.2021,276.6235 Q133.7382,276.1963 133.3018,275.9979 Q132.8654,275.7996 132.4015,275.7996 Q131.4128,275.7996 130.9092,276.5839 Q130.4057,277.3682 130.4057,278.9124 Q130.4057,280.4504 130.9092,281.2347 Q131.4128,282.019 132.4015,282.019 Q132.8654,282.019 133.3018,281.8207 Q133.7382,281.6223 134.2021,281.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="68.75" x="155.2083" y="283.4961">StringUtils</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="339.5833" y1="294.4661" y2="294.4661"/><ellipse cx="18.75" cy="329.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="30.2083" y="336.7472">String newString(byte[] bytes, String charsetName)</text><ellipse cx="18.75" cy="349.5809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="225" x="30.2083" y="356.4921">String newStringIso8859_1(byte[] bytes)</text><ellipse cx="18.75" cy="369.3258" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="207.2917" x="30.2083" y="376.237">String newStringUsAscii(byte[] bytes)</text><ellipse cx="18.75" cy="389.0706" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="30.2083" y="395.9819">String newStringUtf16(byte[] bytes)</text><ellipse cx="18.75" cy="408.8155" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="30.2083" y="415.7267">String newStringUtf16Be(byte[] bytes)</text><ellipse cx="18.75" cy="428.5604" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="209.375" x="30.2083" y="435.4716">String newStringUtf16Le(byte[] bytes)</text><ellipse cx="18.75" cy="448.3053" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="30.2083" y="455.2165">String newStringUtf8(byte[] bytes)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="146.875" y1="312.6719" y2="312.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="150" y="316.4815">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="201.0417" x2="339.5833" y1="312.6719" y2="312.6719"/><ellipse cx="18.75" cy="491.9617" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="183.3333" x="30.2083" y="498.8729">byte[] getBytesIso8859_1(String)</text><ellipse cx="18.75" cy="511.7065" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="301.0417" x="30.2083" y="518.6178">byte[] getBytesUnchecked(String, String charsetName)</text><ellipse cx="18.75" cy="531.4514" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="165.625" x="30.2083" y="538.3626">byte[] getBytesUsAscii(String)</text><ellipse cx="18.75" cy="551.1963" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="155.2083" x="30.2083" y="558.1075">byte[] getBytesUtf16(String)</text><ellipse cx="18.75" cy="570.9412" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="30.2083" y="577.8524">byte[] getBytesUtf16Be(String)</text><ellipse cx="18.75" cy="590.686" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="30.2083" y="597.5972">byte[] getBytesUtf16Le(String)</text><ellipse cx="18.75" cy="610.4309" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="147.9167" x="30.2083" y="617.3421">byte[] getBytesUtf8(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="142.1875" y1="474.7976" y2="474.7976"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="145.3125" y="478.6072">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="205.7292" x2="339.5833" y1="474.7976" y2="474.7976"/><!--MD5=[8c93ed388fb2e6d60a989a7c8317c174]
+class SunJceCrypt--><rect codeLine="102" fill="#282828" height="273.5819" id="SunJceCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="407.2917" x="800.5208" y="689.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="407.2917" x="800.5208" y="689.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="407.2917" x="800.5208" y="712.1745"/><rect codeLine="102" fill="none" height="273.5819" id="SunJceCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="407.2917" x="800.5208" y="689.1195"/><ellipse cx="957.8125" cy="704.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M959.7229,709.2387 Q959.2957,709.4584 958.8257,709.5683 Q958.3557,709.6781 957.8369,709.6781 Q955.9937,709.6781 955.0232,708.4635 Q954.0527,707.2489 954.0527,704.954 Q954.0527,702.653 955.0232,701.4384 Q955.9937,700.2238 957.8369,700.2238 Q958.3557,700.2238 958.8318,700.3337 Q959.3079,700.4435 959.7229,700.6632 L959.7229,702.6652 Q959.259,702.238 958.8226,702.0396 Q958.3862,701.8412 957.9224,701.8412 Q956.9336,701.8412 956.4301,702.6255 Q955.9265,703.4098 955.9265,704.954 Q955.9265,706.4921 956.4301,707.2764 Q956.9336,708.0607 957.9224,708.0607 Q958.3862,708.0607 958.8226,707.8623 Q959.259,707.664 959.7229,707.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="980.7292" y="709.5378">SunJceCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="801.5625" x2="1206.7708" y1="720.5078" y2="720.5078"/><ellipse cx="811.9792" cy="755.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="76.0417" x="823.4375" y="762.7889">SunJceCrypt()</text><ellipse cx="811.9792" cy="775.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="109.375" x="823.4375" y="782.5338">SunJceCrypt(String)</text><ellipse cx="811.9792" cy="795.3674" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="168.75" x="823.4375" y="802.2786">SunJceCrypt(String, byte[], int)</text><ellipse cx="811.9792" cy="815.1123" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="823.4375" y="822.0235">SunJceCrypt(byte[], int)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="801.5625" x2="960.4167" y1="738.7136" y2="738.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="963.5417" y="742.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1047.9167" x2="1206.7708" y1="738.7136" y2="738.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="801.5625" x2="1206.7708" y1="831.7322" y2="831.7322"/><ellipse cx="811.9792" cy="843.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="107.2917" x="823.4375" y="850.1017">byte[] randomSalt()</text><polygon fill="#FFFF44" points="811.9792,857.7271,816.1458,861.8937,811.9792,866.0604,807.8125,861.8937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="375" x="823.4375" y="869.8466">Cipher createCipher(SecretKey, AlgorithmParameterSpec, int mode)</text><polygon fill="#FFFF44" points="811.9792,877.4719,816.1458,881.6386,811.9792,885.8053,807.8125,881.6386" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="266.6667" x="823.4375" y="889.5915">AlgorithmParameterSpec createParameterSpec()</text><polygon fill="#FFFF44" points="811.9792,921.1283,816.1458,925.295,811.9792,929.4617,807.8125,925.295" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="137.5" x="823.4375" y="933.2479">KeySpec createKeySpec()</text><polygon fill="#FFFF44" points="811.9792,940.8732,816.1458,945.0399,811.9792,949.2065,807.8125,945.0399" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="168.75" x="823.4375" y="952.9928">SecretKey generateSecretKey()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="801.5625" x2="969.7917" y1="909.1726" y2="909.1726"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="972.9167" y="912.9822">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1038.5417" x2="1206.7708" y1="909.1726" y2="909.1726"/><!--MD5=[a782aa01e3dd5000f09f96d1c74ecf3c]
+class TrivialCrypt--><rect codeLine="119" fill="#282828" height="48.055" id="TrivialCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="1244.2708" y="802.1403"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="1244.2708" y="802.1403"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="1244.2708" y="825.1953"/><rect codeLine="119" fill="none" height="48.055" id="TrivialCrypt" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="1244.2708" y="802.1403"/><ellipse cx="1258.8542" cy="817.8345" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1260.7646,822.2595 Q1260.3373,822.4792 1259.8674,822.5891 Q1259.3974,822.699 1258.8786,822.699 Q1257.0353,822.699 1256.0649,821.4844 Q1255.0944,820.2698 1255.0944,817.9749 Q1255.0944,815.6738 1256.0649,814.4592 Q1257.0353,813.2446 1258.8786,813.2446 Q1259.3974,813.2446 1259.8735,813.3545 Q1260.3495,813.4644 1260.7646,813.6841 L1260.7646,815.686 Q1260.3007,815.2588 1259.8643,815.0604 Q1259.4279,814.8621 1258.964,814.8621 Q1257.9753,814.8621 1257.4717,815.6464 Q1256.9682,816.4307 1256.9682,817.9749 Q1256.9682,819.5129 1257.4717,820.2972 Q1257.9753,821.0815 1258.964,821.0815 Q1259.4279,821.0815 1259.8643,820.8832 Q1260.3007,820.6848 1260.7646,820.2576 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="1275.5208" y="822.5586">TrivialCrypt</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1245.3125" x2="1356.7708" y1="833.5286" y2="833.5286"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1245.3125" x2="1356.7708" y1="841.862" y2="841.862"/><!--MD5=[eb789b370100b41fd9f1ebf1397a4c2f]
+reverse link ICrypt to AbstractCrypt--><path codeLine="11" d="M1167.9063,220.5882 C1153.3125,267.1299 1135.8229,322.9007 1121.9792,367.057 " fill="none" id="ICrypt-backto-AbstractCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1160.9792,218.2861,1174.1771,200.5882,1174.8958,222.6507,1160.9792,218.2861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2c42a184a7d3096229d5aec71fff033e]
+reverse link CryptFactoryCachingDecorator to CachingSunJceCryptFactory--><path codeLine="22" d="M1618.75,507.7861 C1618.75,585.8382 1618.75,717.859 1618.75,784.2861 " fill="none" id="CryptFactoryCachingDecorator-backto-CachingSunJceCryptFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1611.4583,507.6611,1618.75,486.8278,1626.0417,507.6611,1611.4583,507.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[d7f77f9217b6e3ba39f3a93d32a52abc]
+reverse link ICryptFactory to ClassCryptFactory--><path codeLine="40" d="M1919.7917,190.307 C1919.7917,253.2965 1919.7917,348.932 1919.7917,402.9424 " fill="none" id="ICryptFactory-backto-ClassCryptFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1912.5,189.9528,1919.7917,169.1195,1927.0833,189.9528,1912.5,189.9528" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e8cd75fbe719a5feb22c3eeb51e5cb3c]
+reverse link ICryptFactory to CryptFactoryCachingDecorator--><path codeLine="47" d="M1861.8021,183.5882 C1836.9792,207.682 1807.875,236.4424 1782.2917,263.0778 C1737.1458,310.0778 1687.1354,365.932 1654.4479,402.984 " fill="none" id="ICryptFactory-backto-CryptFactoryCachingDecorator" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1856.9792,178.109,1877.0208,168.8695,1867.1146,188.5882,1856.9792,178.109" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[01ddfda3261a39e04b68d849002e4b0d]
+reverse link ICrypt to NoCrypt--><path codeLine="69" d="M1225.625,220.8486 C1244.3854,281.3278 1267.9479,357.2757 1282.1667,403.0986 " fill="none" id="ICrypt-backto-NoCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1218.5521,222.6507,1219.3438,200.5882,1232.4792,218.3278,1218.5521,222.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7d94b834e5276f1ef9e655595ad4e97d]
+reverse link ICryptFactory to NoCryptFactory--><path codeLine="76" d="M1984.3958,183.3903 C2008.8646,206.3903 2035.7396,234.4111 2056.25,263.0778 C2093.375,314.9632 2122.1354,385.0153 2135.5208,420.7549 " fill="none" id="ICryptFactory-backto-NoCryptFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1979.1771,188.4945,1968.7604,169.0361,1989.0417,177.7445,1979.1771,188.4945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7929b138b72936cabceef55567922451]
+reverse link AbstractCrypt to SunJceCrypt--><path codeLine="101" d="M1073.9167,542.9736 C1062.9375,587.359 1049.75,640.6924 1037.8125,688.984 " fill="none" id="AbstractCrypt-backto-SunJceCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1066.8646,541.0986,1078.9479,522.6195,1081.0208,544.5986,1066.8646,541.0986" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[98e2e2cf0431a8a905a95b9d8440b40e]
+reverse link AbstractCrypt to TrivialCrypt--><path codeLine="118" d="M1148.9792,541.2132 C1195.7396,628.484 1261.6458,751.5153 1288.7083,802.0361 " fill="none" id="AbstractCrypt-backto-TrivialCrypt" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1142.4375,544.432,1139.0208,522.6195,1155.2917,537.5361,1142.4375,544.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c390a4cd57185a3cd92150966c566e32]
+link CharEncoding to CipherUtils--><!--MD5=[913bfd87ca07b4013f887d448cbf4185]
+link CharEncoding to StringUtils--><!--MD5=[8ca1297eac759e0fbf1307a4d0b15dc4]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.crypt"
+    
+    abstract AbstractCrypt
+    
+    interface ICryptFactory
+    interface ICrypt
+    
+    ICrypt <|- - AbstractCrypt
+    abstract class AbstractCrypt
+    {
+        - -(constructors)- -
+        +AbstractCrypt()
+        - -
+        #byte[] crypt(byte[] input, int mode)
+        - -(collection)- -
+        +String getKey()
+    }
+    
+    CryptFactoryCachingDecorator <|- - CachingSunJceCryptFactory
+    class CachingSunJceCryptFactory
+    {
+        - -(constructors)- -
+        +CachingSunJceCryptFactory(String)
+    }
+    
+    class CharEncoding
+    {
+    }
+    
+    class CipherUtils
+    {
+        - -(collection)- -
+        +SecretKey generateKey(String algorithm, int keyLength, SecureRandom)
+        +SecretKey generatePBEKey(String password, String pbeAlgorithm, String keyAlgorithm, byte[] salt, int iterationCount, int keyLength)
+    }
+    
+    ICryptFactory <|- - ClassCryptFactory
+    class ClassCryptFactory
+    {
+        - -(constructors)- -
+        +ClassCryptFactory(Class<?>, String)
+    }
+    
+    ICryptFactory <|- - CryptFactoryCachingDecorator
+    class CryptFactoryCachingDecorator
+    {
+        - -(constructors)- -
+        +CryptFactoryCachingDecorator(ICryptFactory)
+    }
+    
+    interface ICrypt
+    {
+        - -(collection)- -
+        +void setKey(String key)
+        - -(network)- -
+        +String decryptUrlSafe(String text)
+        +String encryptUrlSafe(String plainText)
+    }
+    
+    interface ICryptFactory
+    {
+        - -(factory)- -
+        +ICrypt newCrypt()
+    }
+    
+    ICrypt <|- - NoCrypt
+    class NoCrypt
+    {
+        - -(constructors)- -
+        +NoCrypt()
+    }
+    
+    ICryptFactory <|- - NoCryptFactory
+    class NoCryptFactory
+    {
+    }
+    
+    class StringUtils
+    {
+        - -(factory)- -
+        +String newString(byte[] bytes, String charsetName)
+        +String newStringIso8859_1(byte[] bytes)
+        +String newStringUsAscii(byte[] bytes)
+        +String newStringUtf16(byte[] bytes)
+        +String newStringUtf16Be(byte[] bytes)
+        +String newStringUtf16Le(byte[] bytes)
+        +String newStringUtf8(byte[] bytes)
+        - -(primitive)- -
+        +byte[] getBytesIso8859_1(String)
+        +byte[] getBytesUnchecked(String, String charsetName)
+        +byte[] getBytesUsAscii(String)
+        +byte[] getBytesUtf16(String)
+        +byte[] getBytesUtf16Be(String)
+        +byte[] getBytesUtf16Le(String)
+        +byte[] getBytesUtf8(String)
+    }
+    
+    AbstractCrypt <|- - SunJceCrypt
+    class SunJceCrypt
+    {
+        - -(constructors)- -
+        +SunJceCrypt()
+        +SunJceCrypt(String)
+        +SunJceCrypt(String, byte[], int)
+        +SunJceCrypt(byte[], int)
+        - -
+        +byte[] randomSalt()
+        #Cipher createCipher(SecretKey, AlgorithmParameterSpec, int mode)
+        #AlgorithmParameterSpec createParameterSpec()
+        - -(collection)- -
+        #KeySpec createKeySpec()
+        #SecretKey generateSecretKey()
+    }
+    
+    AbstractCrypt <|- - TrivialCrypt
+    class TrivialCrypt
+    {
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.util.crypt"
+    
+    abstract AbstractCrypt
+    
+    interface ICryptFactory
+    interface ICrypt
+    
+    ICrypt <|- - AbstractCrypt
+    abstract class AbstractCrypt
+    {
+        - -(constructors)- -
+        +AbstractCrypt()
+        - -
+        #byte[] crypt(byte[] input, int mode)
+        - -(collection)- -
+        +String getKey()
+    }
+    
+    CryptFactoryCachingDecorator <|- - CachingSunJceCryptFactory
+    class CachingSunJceCryptFactory
+    {
+        - -(constructors)- -
+        +CachingSunJceCryptFactory(String)
+    }
+    
+    class CharEncoding
+    {
+    }
+    
+    class CipherUtils
+    {
+        - -(collection)- -
+        +SecretKey generateKey(String algorithm, int keyLength, SecureRandom)
+        +SecretKey generatePBEKey(String password, String pbeAlgorithm, String keyAlgorithm, byte[] salt, int iterationCount, int keyLength)
+    }
+    
+    ICryptFactory <|- - ClassCryptFactory
+    class ClassCryptFactory
+    {
+        - -(constructors)- -
+        +ClassCryptFactory(Class<?>, String)
+    }
+    
+    ICryptFactory <|- - CryptFactoryCachingDecorator
+    class CryptFactoryCachingDecorator
+    {
+        - -(constructors)- -
+        +CryptFactoryCachingDecorator(ICryptFactory)
+    }
+    
+    interface ICrypt
+    {
+        - -(collection)- -
+        +void setKey(String key)
+        - -(network)- -
+        +String decryptUrlSafe(String text)
+        +String encryptUrlSafe(String plainText)
+    }
+    
+    interface ICryptFactory
+    {
+        - -(factory)- -
+        +ICrypt newCrypt()
+    }
+    
+    ICrypt <|- - NoCrypt
+    class NoCrypt
+    {
+        - -(constructors)- -
+        +NoCrypt()
+    }
+    
+    ICryptFactory <|- - NoCryptFactory
+    class NoCryptFactory
+    {
+    }
+    
+    class StringUtils
+    {
+        - -(factory)- -
+        +String newString(byte[] bytes, String charsetName)
+        +String newStringIso8859_1(byte[] bytes)
+        +String newStringUsAscii(byte[] bytes)
+        +String newStringUtf16(byte[] bytes)
+        +String newStringUtf16Be(byte[] bytes)
+        +String newStringUtf16Le(byte[] bytes)
+        +String newStringUtf8(byte[] bytes)
+        - -(primitive)- -
+        +byte[] getBytesIso8859_1(String)
+        +byte[] getBytesUnchecked(String, String charsetName)
+        +byte[] getBytesUsAscii(String)
+        +byte[] getBytesUtf16(String)
+        +byte[] getBytesUtf16Be(String)
+        +byte[] getBytesUtf16Le(String)
+        +byte[] getBytesUtf8(String)
+    }
+    
+    AbstractCrypt <|- - SunJceCrypt
+    class SunJceCrypt
+    {
+        - -(constructors)- -
+        +SunJceCrypt()
+        +SunJceCrypt(String)
+        +SunJceCrypt(String, byte[], int)
+        +SunJceCrypt(byte[], int)
+        - -
+        +byte[] randomSalt()
+        #Cipher createCipher(SecretKey, AlgorithmParameterSpec, int mode)
+        #AlgorithmParameterSpec createParameterSpec()
+        - -(collection)- -
+        #KeySpec createKeySpec()
+        #SecretKey generateSecretKey()
+    }
+    
+    AbstractCrypt <|- - TrivialCrypt
+    class TrivialCrypt
+    {
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

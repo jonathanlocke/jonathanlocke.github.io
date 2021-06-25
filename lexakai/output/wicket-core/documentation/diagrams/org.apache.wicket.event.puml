@@ -1,0 +1,40 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.event"
+    
+    enum Broadcast
+    {
+        BREADTH
+        BUBBLE
+        DEPTH
+        EXACT
+    }
+    
+    interface IEvent<T>
+    {
+        --
+        +T getPayload()
+        --(lifecycle)--
+        +void stop()
+        --(messaging)--
+        +void dontBroadcastDeeper()
+        +IEventSource getSource()
+        +Broadcast getType()
+    }
+    
+    interface IEventSink
+    {
+        --(messaging)--
+        +void onEvent(IEvent<?>)
+    }
+    
+    interface IEventSource
+    {
+        --(messaging)--
+        +void send(IEventSink, Broadcast, T payload)
+    }
+    
+@enduml
+

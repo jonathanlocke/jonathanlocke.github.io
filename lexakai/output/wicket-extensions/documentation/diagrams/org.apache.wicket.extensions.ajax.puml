@@ -1,0 +1,71 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    interface IRequestListener
+    
+    AjaxCallListener <|-- AjaxDisableComponentListener
+    class AjaxDisableComponentListener
+    {
+        --(messaging)--
+        #String generateHandlerJavaScript(Component, boolean disabled)
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- AjaxDownloadBehavior
+    class AjaxDownloadBehavior
+    {
+        --(constructors)--
+        +AjaxDownloadBehavior(IResource)
+        +AjaxDownloadBehavior(ResourceReference)
+        +AjaxDownloadBehavior(ResourceReference, PageParameters)
+        --
+        +Location getLocation()
+        +void initiate(IPartialPageRequestHandler)
+        +AjaxDownloadBehavior setLocation(Location)
+        #void onBeforeDownload(IPartialPageRequestHandler)
+        #void onDownloadFailed(AjaxRequestTarget)
+        --(lifecycle)--
+        +void markCompleted(IResource.Attributes)
+        #void onDownloadCompleted(AjaxRequestTarget)
+        --(status)--
+        #void onDownloadSuccess(AjaxRequestTarget)
+    }
+    
+    AjaxEventBehavior <|-- AjaxFileDropBehavior
+    class AjaxFileDropBehavior
+    {
+        --(constructors)--
+        +AjaxFileDropBehavior()
+        --(collection)--
+        +Bytes getFileMaxSize()
+        +Bytes getMaxSize()
+        +void setFileMaxSize(Bytes fileMaxSize)
+        +void setMaxSize(Bytes maxSize)
+        --(filesystem)--
+        #void onFileUpload(AjaxRequestTarget, List<FileUpload> files)
+        --(status)--
+        #void onError(AjaxRequestTarget, FileUploadException fux)
+    }
+    
+    enum AjaxDownloadBehavior.Location
+    {
+        Blob
+        IFrame
+        NewWindow
+        SameWindow
+    }
+    
+    Behavior <|-- AjaxDownloadBehavior.ResourceBehavior
+    IRequestListener <|-- AjaxDownloadBehavior.ResourceBehavior
+    class AjaxDownloadBehavior.ResourceBehavior
+    {
+        --(primitive)--
+        +CharSequence getUrl()
+    }
+    
+@enduml
+

@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="304.1667px" preserveAspectRatio="none" style="width:1207px;height:304px;background:#333333;" version="1.1" viewBox="0 0 1207 304" width="1207.2917px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="367.7083" x="412.5" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="344.7917" x="423.9583" y="30.5583">org.apache.wicket.proxy.objenesis</text><!--MD5=[b093894cd39d4cdc6572183d3210bb59]
+cluster LazyInitProxyFactory--><polygon fill="#333333" points="515.1042,52.6611,660.9375,52.6611,668.2292,79.8828,750.5208,79.8828,750.5208,157.8695,515.1042,157.8695,515.1042,52.6611" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="515.1042" x2="668.2292" y1="79.8828" y2="79.8828"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="133.3333" x="522.3958" y="69.9544">LazyInitProxyFactory</text><!--MD5=[7c06a95773fdd6c26e540a82d6239211]
+class LazyInitProxyFactory.AbstractCGLibInterceptor--><rect fill="#282828" height="48.055" id="LazyInitProxyFactory.AbstractCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="201.0417" x="532.2917" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="201.0417" x="532.2917" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="201.0417" x="532.2917" y="116.3411"/><rect fill="none" height="48.055" id="LazyInitProxyFactory.AbstractCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="201.0417" x="532.2917" y="93.2861"/><ellipse cx="546.875" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M548.7854,113.4054 Q548.3582,113.6251 547.8882,113.7349 Q547.4182,113.8448 546.8994,113.8448 Q545.0562,113.8448 544.0857,112.6302 Q543.1152,111.4156 543.1152,109.1207 Q543.1152,106.8197 544.0857,105.6051 Q545.0562,104.3905 546.8994,104.3905 Q547.4182,104.3905 547.8943,104.5003 Q548.3704,104.6102 548.7854,104.8299 L548.7854,106.8319 Q548.3215,106.4046 547.8851,106.2063 Q547.4487,106.0079 546.9849,106.0079 Q545.9961,106.0079 545.4926,106.7922 Q544.989,107.5765 544.989,109.1207 Q544.989,110.6588 545.4926,111.4431 Q545.9961,112.2274 546.9849,112.2274 Q547.4487,112.2274 547.8851,112.029 Q548.3215,111.8306 548.7854,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="163.5417" x="563.5417" y="113.7044">AbstractCGLibInterceptor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="533.3333" x2="732.2917" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="533.3333" x2="732.2917" y1="133.0078" y2="133.0078"/><!--MD5=[7b3a0b0a6cdf421dd5bfd9b61000cebb]
+class AbstractCGLibInterceptor--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="201.0417" x="7.2917" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="201.0417" x="7.2917" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="201.0417" x="7.2917" y="116.3411"/><rect codeLine="6" fill="none" height="48.055" id="AbstractCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="201.0417" x="7.2917" y="93.2861"/><ellipse cx="21.875" cy="108.9803" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M21.4681,105.6824 L20.6197,109.4116 L22.3226,109.4116 Z M20.3695,104.0344 L22.5728,104.0344 L25.0326,113.147 L23.232,113.147 L22.6705,110.8948 L20.2596,110.8948 L19.7103,113.147 L17.9097,113.147 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="163.5417" x="38.5417" y="113.7044">AbstractCGLibInterceptor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="207.2917" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="207.2917" y1="133.0078" y2="133.0078"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="8" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="244.7917" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="244.7917" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="244.7917" y="116.3411"/><rect codeLine="8" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="244.7917" y="93.2861"/><ellipse cx="259.375" cy="108.9803" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M256.779,106.1422 L256.779,104.5553 L262.205,104.5553 L262.205,106.1422 L260.3923,106.1422 L260.3923,112.0809 L262.205,112.0809 L262.205,113.6678 L256.779,113.6678 L256.779,112.0809 L258.5917,112.0809 L258.5917,106.1422 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="276.0417" y="113.7044">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="245.8333" x2="359.375" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="245.8333" x2="359.375" y1="133.0078" y2="133.0078"/><!--MD5=[2473c21fe75cd0dac179545d96292a94]
+class ObjenesisCGLibInterceptor--><rect codeLine="11" fill="#282828" height="83.3781" id="ObjenesisCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="366.6667" x="449.4792" y="213.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="366.6667" x="449.4792" y="213.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="366.6667" x="449.4792" y="236.6536"/><rect codeLine="11" fill="none" height="83.3781" id="ObjenesisCGLibInterceptor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="366.6667" x="449.4792" y="213.5986"/><ellipse cx="538.5417" cy="229.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M540.4521,233.7179 Q540.0248,233.9376 539.5549,234.0474 Q539.0849,234.1573 538.5661,234.1573 Q536.7228,234.1573 535.7524,232.9427 Q534.7819,231.7281 534.7819,229.4332 Q534.7819,227.1322 535.7524,225.9176 Q536.7228,224.703 538.5661,224.703 Q539.0849,224.703 539.561,224.8128 Q540.037,224.9227 540.4521,225.1424 L540.4521,227.1444 Q539.9882,226.7171 539.5518,226.5188 Q539.1154,226.3204 538.6515,226.3204 Q537.6628,226.3204 537.1592,227.1047 Q536.6557,227.889 536.6557,229.4332 Q536.6557,230.9713 537.1592,231.7556 Q537.6628,232.5399 538.6515,232.5399 Q539.1154,232.5399 539.5518,232.3415 Q539.9882,232.1431 540.4521,231.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="173.9583" x="561.4583" y="234.0169">ObjenesisCGLibInterceptor</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="450.5208" x2="815.1042" y1="244.987" y2="244.987"/><ellipse cx="460.9375" cy="280.3569" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="334.375" x="472.3958" y="287.2681">ObjenesisCGLibInterceptor(Class&lt;?&gt;, IProxyTargetLocator)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="450.5208" x2="589.0625" y1="263.1927" y2="263.1927"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="592.1875" y="267.0024">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="676.5625" x2="815.1042" y1="263.1927" y2="263.1927"/><!--MD5=[3e0b8c6a77d083a0a809531f2500a78a]
+class ObjenesisProxyFactory--><rect codeLine="17" fill="#282828" height="67.7999" id="ObjenesisProxyFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="430.2083" x="769.7917" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="430.2083" x="769.7917" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="430.2083" x="769.7917" y="106.4453"/><rect codeLine="17" fill="none" height="67.7999" id="ObjenesisProxyFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="430.2083" x="769.7917" y="83.3903"/><ellipse cx="904.1667" cy="99.0845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M906.0771,103.5095 Q905.6498,103.7292 905.1799,103.8391 Q904.7099,103.949 904.1911,103.949 Q902.3478,103.949 901.3774,102.7344 Q900.4069,101.5198 900.4069,99.2249 Q900.4069,96.9238 901.3774,95.7092 Q902.3478,94.4946 904.1911,94.4946 Q904.7099,94.4946 905.186,94.6045 Q905.662,94.7144 906.0771,94.9341 L906.0771,96.936 Q905.6132,96.5088 905.1768,96.3104 Q904.7404,96.1121 904.2765,96.1121 Q903.2878,96.1121 902.7842,96.8964 Q902.2807,97.6807 902.2807,99.2249 Q902.2807,100.7629 902.7842,101.5472 Q903.2878,102.3315 904.2765,102.3315 Q904.7404,102.3315 905.1768,102.1332 Q905.6132,101.9348 906.0771,101.5076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="146.875" x="927.0833" y="103.8086">ObjenesisProxyFactory</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="770.8333" x2="1198.9583" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="770.8333" x2="1198.9583" y1="123.112" y2="123.112"/><ellipse cx="781.25" cy="134.5703" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="397.9167" x="792.7083" y="141.4815">Object createProxy(Class&lt;?&gt; type, IProxyTargetLocator, NamingPolicy)</text><!--MD5=[df947f98bd3e61b1892c3bdfff9a00a2]
+class ObjenesisProxyReplacement--><rect codeLine="24" fill="#282828" height="83.3781" id="ObjenesisProxyReplacement" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="219.7917" x="192.7083" y="213.5986"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="219.7917" x="192.7083" y="213.5986"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="219.7917" x="192.7083" y="236.6536"/><rect codeLine="24" fill="none" height="83.3781" id="ObjenesisProxyReplacement" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="219.7917" x="192.7083" y="213.5986"/><ellipse cx="207.2917" cy="229.2928" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M209.2021,233.7179 Q208.7748,233.9376 208.3049,234.0474 Q207.8349,234.1573 207.3161,234.1573 Q205.4728,234.1573 204.5024,232.9427 Q203.5319,231.7281 203.5319,229.4332 Q203.5319,227.1322 204.5024,225.9176 Q205.4728,224.703 207.3161,224.703 Q207.8349,224.703 208.311,224.8128 Q208.787,224.9227 209.2021,225.1424 L209.2021,227.1444 Q208.7382,226.7171 208.3018,226.5188 Q207.8654,226.3204 207.4015,226.3204 Q206.4128,226.3204 205.9092,227.1047 Q205.4057,227.889 205.4057,229.4332 Q205.4057,230.9713 205.9092,231.7556 Q206.4128,232.5399 207.4015,232.5399 Q207.8654,232.5399 208.3018,232.3415 Q208.7382,232.1431 209.2021,231.7159 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="182.2917" x="223.9583" y="234.0169">ObjenesisProxyReplacement</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="193.75" x2="411.4583" y1="244.987" y2="244.987"/><polygon fill="#FFFF44" points="204.1667,275.1485,208.3333,279.3152,204.1667,283.4819,200,279.3152" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="115.625" x="215.625" y="287.2681">Object readResolve()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="193.75" x2="282.8125" y1="263.1927" y2="263.1927"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="285.9375" y="267.0024">(read)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="322.3958" x2="411.4583" y1="263.1927" y2="263.1927"/><!--MD5=[d76aff9ad0f9a22a570a07f35d7b8ce1]
+reverse link LazyInitProxyFactory.AbstractCGLibInterceptor to ObjenesisCGLibInterceptor--><path codeLine="10" d="M632.8125,162.3174 C632.8125,178.7445 632.8125,197.307 632.8125,213.4215 " fill="none" id="LazyInitProxyFactory.AbstractCGLibInterceptor-backto-ObjenesisCGLibInterceptor" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="625.5208,162.182,632.8125,141.3486,640.1042,162.182,625.5208,162.182" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[59f6b21141b5d344dbe5ef201117e82c]
+reverse link IClusterable to ObjenesisProxyReplacement--><path codeLine="23" d="M302.6042,162.3174 C302.6042,178.7445 302.6042,197.307 302.6042,213.4215 " fill="none" id="IClusterable-backto-ObjenesisProxyReplacement" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="295.3125,162.182,302.6042,141.3486,309.8958,162.182,295.3125,162.182" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4ee2cb28e84732828e6b2bd3cc3d0dcb]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.proxy.objenesis"
+    
+    abstract AbstractCGLibInterceptor
+    
+    interface IClusterable
+    
+    LazyInitProxyFactory.AbstractCGLibInterceptor <|- - ObjenesisCGLibInterceptor
+    class ObjenesisCGLibInterceptor
+    {
+        - -(constructors)- -
+        +ObjenesisCGLibInterceptor(Class<?>, IProxyTargetLocator)
+    }
+    
+    class ObjenesisProxyFactory
+    {
+        - -
+        +Object createProxy(Class<?> type, IProxyTargetLocator, NamingPolicy)
+    }
+    
+    IClusterable <|- - ObjenesisProxyReplacement
+    class ObjenesisProxyReplacement
+    {
+        - -(read)- -
+        #Object readResolve()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.proxy.objenesis"
+    
+    abstract AbstractCGLibInterceptor
+    
+    interface IClusterable
+    
+    LazyInitProxyFactory.AbstractCGLibInterceptor <|- - ObjenesisCGLibInterceptor
+    class ObjenesisCGLibInterceptor
+    {
+        - -(constructors)- -
+        +ObjenesisCGLibInterceptor(Class<?>, IProxyTargetLocator)
+    }
+    
+    class ObjenesisProxyFactory
+    {
+        - -
+        +Object createProxy(Class<?> type, IProxyTargetLocator, NamingPolicy)
+    }
+    
+    IClusterable <|- - ObjenesisProxyReplacement
+    class ObjenesisProxyReplacement
+    {
+        - -(read)- -
+        #Object readResolve()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

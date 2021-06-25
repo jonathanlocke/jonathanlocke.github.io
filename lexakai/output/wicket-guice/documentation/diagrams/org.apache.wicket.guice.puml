@@ -1,0 +1,60 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.guice"
+    
+    interface IClusterable
+    interface IWebApplicationFactory
+    interface IBehaviorInstantiationListener
+    interface IFieldValueFactory
+    interface IProxyTargetLocator
+    interface IComponentInstantiationListener
+    
+    Injector <|-- GuiceComponentInjector
+    IComponentInstantiationListener <|-- GuiceComponentInjector
+    IBehaviorInstantiationListener <|-- GuiceComponentInjector
+    class GuiceComponentInjector
+    {
+        --(constructors)--
+        +GuiceComponentInjector(Application)
+        +GuiceComponentInjector(Application, Injector)
+        +GuiceComponentInjector(Application, Injector, boolean)
+        +GuiceComponentInjector(Application, Module)
+    }
+    
+    IFieldValueFactory <|-- GuiceFieldValueFactory
+    class GuiceFieldValueFactory
+    {
+    }
+    
+    IClusterable <|-- GuiceInjectorHolder
+    class GuiceInjectorHolder
+    {
+        --(constructors)--
+        +GuiceInjectorHolder(Injector)
+        --
+        +Injector getInjector()
+    }
+    
+    IProxyTargetLocator <|-- GuiceProxyTargetLocator
+    class GuiceProxyTargetLocator
+    {
+        --(constructors)--
+        +GuiceProxyTargetLocator(Field, Annotation, boolean)
+        --(checks)--
+        +boolean isSingletonScope()
+    }
+    
+    IWebApplicationFactory <|-- GuiceWebApplicationFactory
+    class GuiceWebApplicationFactory
+    {
+    }
+    
+    Exception <|-- GuiceFieldValueFactory.MoreThanOneBindingException
+    class GuiceFieldValueFactory.MoreThanOneBindingException
+    {
+    }
+    
+@enduml
+

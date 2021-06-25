@@ -1,0 +1,39 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.coep"
+    
+    interface IRequestCycleListener
+    
+    enum CrossOriginEmbedderPolicyConfiguration.CoepMode
+    {
+        DISABLED
+        ENFORCING
+        REPORTING
+    }
+    
+    class CrossOriginEmbedderPolicyConfiguration
+    {
+        --(constructors)--
+        +CrossOriginEmbedderPolicyConfiguration(CoepMode)
+        +CrossOriginEmbedderPolicyConfiguration(CoepMode, String)
+        --
+        +String getCoepHeader()
+        +Set<String> getExemptions()
+        --(checks)--
+        +boolean isEnabled()
+        --(configuration)--
+        +CrossOriginEmbedderPolicyConfiguration addExemptedPath(String path)
+        +CoepMode getMode()
+    }
+    
+    IRequestCycleListener <|-- CrossOriginEmbedderPolicyRequestCycleListener
+    class CrossOriginEmbedderPolicyRequestCycleListener
+    {
+        --(constructors)--
+        +CrossOriginEmbedderPolicyRequestCycleListener(CrossOriginEmbedderPolicyConfiguration)
+    }
+    
+@enduml
+

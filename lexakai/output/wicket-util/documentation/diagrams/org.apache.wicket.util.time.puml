@@ -1,0 +1,180 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.time"
+    
+    abstract AbstractTimeValue
+    abstract AbstractTime
+    
+    interface Serializable
+    interface ITimeFrameSource
+    
+    AbstractTimeValue <|-- AbstractTime
+    abstract class AbstractTime
+    {
+        --
+        +boolean after(AbstractTimeValue that)
+        +boolean before(AbstractTimeValue that)
+        --(time)--
+        +String toTimeString(Calendar)
+        +String toTimeString()
+    }
+    
+    LongValue <|-- AbstractTimeValue
+    abstract class AbstractTimeValue
+    {
+        --(time)--
+        +long getMilliseconds()
+    }
+    
+    AbstractTimeValue <|-- Duration
+    class Duration
+    {
+        --(constructors)--
+        #Duration(long)
+        --(thread)--
+        +void sleep()
+        +void wait(Object)
+        --(time)--
+        +Duration add(Duration)
+        +Duration benchmark(Runnable code)
+        +Duration benchmark(ICode, Logger)
+        +Duration days(double days)
+        +double days()
+        +Duration days(int days)
+        +Duration elapsed(Time start)
+        +double hours()
+        +Duration hours(int hours)
+        +Duration hours(double hours)
+        +Duration milliseconds(long milliseconds)
+        +Duration milliseconds(double milliseconds)
+        +double minutes()
+        +Duration minutes(int minutes)
+        +Duration minutes(double minutes)
+        +Duration seconds(double seconds)
+        +double seconds()
+        +Duration seconds(int seconds)
+        +Duration subtract(Duration that)
+        +java.time.Duration toJavaDuration()
+        +Duration valueOf(String)
+        +Duration valueOf(String, Locale)
+        +Duration valueOf(long time)
+    }
+    
+    class Durations
+    {
+        --(time)--
+        +Duration elapsedSince(Instant start)
+    }
+    
+    interface Serializable
+    Serializable <|-- ITimeFrameSource
+    interface ITimeFrameSource
+    {
+        --(time)--
+        +TimeFrame getTimeFrame()
+    }
+    
+    class Instants
+    {
+        --
+        +String toRFC7231Format(Instant)
+    }
+    
+    EnumeratedType <|-- TimeOfDay.Meridian
+    class TimeOfDay.Meridian
+    {
+    }
+    
+    AbstractTime <|-- Time
+    class Time
+    {
+        --
+        +int get(int field)
+        +int get(Calendar, int field)
+        +int getYear()
+        +int getYear(Calendar)
+        --(conversion)--
+        +Date toDate()
+        +String toDateString(Calendar)
+        +String toDateString()
+        +String toRfc1123TimestampString()
+        --(time)--
+        +Time add(Duration)
+        +Duration elapsedSince()
+        +Duration fromNow()
+        +int getDayOfMonth(Calendar)
+        +int getDayOfMonth()
+        +int getHour(Calendar)
+        +int getHour()
+        +int getMinute()
+        +int getMinute(Calendar)
+        +int getMonth()
+        +int getMonth(Calendar)
+        +int getSecond(Calendar)
+        +int getSecond()
+        +Time millis(long time)
+        +Time now()
+        +Time parseDate(String)
+        +Time parseDate(Calendar, String)
+        +Time subtract(Duration)
+        +Duration subtract(Time that)
+        +Time valueOf(String, String pattern)
+        +Time valueOf(Calendar, String)
+        +Time valueOf(Date)
+        +Time valueOf(TimeOfDay)
+        +Time valueOf(Calendar, TimeOfDay)
+        +Time valueOf(String)
+    }
+    
+    ITimeFrameSource <|-- TimeFrame
+    class TimeFrame
+    {
+        --
+        +boolean overlaps(TimeFrame)
+        --(collection)--
+        +boolean contains(Time)
+        --(time)--
+        +ITimeFrameSource eachDay(TimeOfDay startTimeOfDay, TimeOfDay endTimeOfDay)
+        +Duration getDuration()
+        +Time getEnd()
+        +Time getStart()
+        +TimeFrame valueOf(Time start, Time end)
+        +TimeFrame valueOf(Time start, Duration)
+    }
+    
+    Serializable <|-- TimeMap
+    class TimeMap
+    {
+        --
+        +Object get()
+        +Object get(Time)
+        --(collection)--
+        +void put(ITimeFrameSource, Object)
+    }
+    
+    AbstractTime <|-- TimeOfDay
+    class TimeOfDay
+    {
+        --(time)--
+        +int hour()
+        +TimeOfDay militaryTime(int hour, int minute, int second)
+        +int minute()
+        +Time next()
+        +Time next(Calendar)
+        +TimeOfDay now(Calendar)
+        +TimeOfDay now()
+        +int second()
+        +TimeOfDay time(int hour, int minute, Meridian)
+        +TimeOfDay time(int hour, int minute, int second, Meridian)
+        +TimeOfDay valueOf(Calendar, Time)
+        +TimeOfDay valueOf(String time)
+        +TimeOfDay valueOf(Time)
+        +TimeOfDay valueOf(Duration)
+        +TimeOfDay valueOf(Calendar, String time)
+        +TimeOfDay valueOf(long time)
+    }
+    
+@enduml
+

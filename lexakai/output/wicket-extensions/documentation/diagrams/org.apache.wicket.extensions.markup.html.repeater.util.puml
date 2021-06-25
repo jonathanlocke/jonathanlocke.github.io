@@ -1,0 +1,86 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.util"
+    
+    interface Serializable
+    interface IDetachable
+    interface Set
+    interface ISortableTreeProvider
+    interface TreeModelListener
+    interface IClusterable
+    interface ISortableDataProvider
+    interface ISortState
+    interface ITreeProvider
+    
+    TreeModelListener <|-- TreeModelProvider.Listener
+    Serializable <|-- TreeModelProvider.Listener
+    class TreeModelProvider.Listener
+    {
+    }
+    
+    Set <|-- ProviderSubset
+    IDetachable <|-- ProviderSubset
+    class ProviderSubset<T>
+    {
+        --(constructors)--
+        +ProviderSubset(ITreeProvider<T>)
+        +ProviderSubset(ITreeProvider<T>, boolean)
+        --
+        +IModel<Set<T>> createModel()
+    }
+    
+    ISortState <|-- SingleSortState
+    IClusterable <|-- SingleSortState
+    class SingleSortState<T>
+    {
+        --(collection)--
+        +SortParam<T> getSort()
+        +void setSort(SortParam<T>)
+    }
+    
+    IClusterable <|-- SortParam
+    class SortParam<T>
+    {
+        --(constructors)--
+        +SortParam(T, boolean)
+        --
+        +T getProperty()
+        --(checks)--
+        +boolean isAscending()
+    }
+    
+    ISortableDataProvider <|-- SortableDataProvider
+    abstract class SortableDataProvider<T, S>
+    {
+        --(collection)--
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, SortOrder)
+    }
+    
+    ISortableTreeProvider <|-- SortableTreeProvider
+    abstract class SortableTreeProvider<T, S>
+    {
+        --(collection)--
+        +SortParam<S> getSort()
+        +void setSort(SortParam<S>)
+        +void setSort(S property, boolean ascending)
+    }
+    
+    ITreeProvider <|-- TreeModelProvider
+    abstract class TreeModelProvider<T>
+    {
+        --(constructors)--
+        +TreeModelProvider(TreeModel)
+        +TreeModelProvider(TreeModel, boolean)
+        --
+        +void update(AbstractTree<T>, AjaxRequestTarget)
+        #void branchUpdate(Object branch)
+        #T cast(Object)
+        #void nodeUpdate(Object[] nodes)
+    }
+    
+@enduml
+

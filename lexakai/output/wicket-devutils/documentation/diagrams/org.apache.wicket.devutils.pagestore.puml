@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.devutils.pagestore"
+    
+    DevUtilsPage <|-- PageStorePage
+    class PageStorePage
+    {
+        --(constructors)--
+        +PageStorePage(PageParameters)
+        --
+        +IPersistentPageStore getPersistentPageStore()
+    }
+    
+@enduml
+

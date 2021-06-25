@@ -1,0 +1,14 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws.concurrent"
+    
+    interface Executor
+    {
+        --(lifecycle)--
+        +void run(Runnable command)
+    }
+    
+@enduml
+

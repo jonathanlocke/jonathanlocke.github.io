@@ -1,0 +1,206 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    abstract AbstractPartialPageRequestHandler
+    abstract AbstractAjaxTimerBehavior
+    abstract AbstractAjaxBehavior
+    
+    interface AjaxRequestTarget
+    interface IClusterable
+    
+    AbstractDefaultAjaxBehavior <|-- AbstractAjaxTimerBehavior
+    abstract class AbstractAjaxTimerBehavior
+    {
+        --(constructors)--
+        +AbstractAjaxTimerBehavior(Duration)
+        +AbstractAjaxTimerBehavior(org.apache.wicket.util.time.Duration)
+        --
+        #void onTimer(AjaxRequestTarget)
+        #void setUpdateInterval(Duration updateInterval)
+        --(checks)--
+        +boolean isStopped()
+        #boolean shouldTrigger()
+        --(extension points)--
+        +AbstractAjaxTimerBehavior onTimer(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+        --(identity)--
+        #String getTimerId()
+        --(lifecycle)--
+        +void restart(IPartialPageRequestHandler target)
+        +void stop(IPartialPageRequestHandler target)
+        --(time)--
+        +Duration getUpdateInterval()
+    }
+    
+    AbstractAjaxBehavior <|-- AbstractDefaultAjaxBehavior
+    abstract class AbstractDefaultAjaxBehavior
+    {
+        --
+        #AjaxRequestAttributes getAttributes()
+        #Form.MethodMismatchResponse onMethodMismatch()
+        #void respond(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(configuration)--
+        #void postprocessConfiguration(JSONObject attributesJson, Component)
+        --(primitive)--
+        +CharSequence getCallbackFunction(CallbackParameter... extraParameters)
+        +CharSequence getCallbackFunctionBody(CallbackParameter... extraParameters)
+        +CharSequence getCallbackScript()
+        #CharSequence getCallbackScript(Component)
+        #CharSequence renderAjaxAttributes(Component)
+        #CharSequence renderAjaxAttributes(Component, AjaxRequestAttributes)
+        --(search)--
+        #String findIndicatorId()
+    }
+    
+    IClusterable <|-- AjaxChannel
+    class AjaxChannel
+    {
+        --(constructors)--
+        +AjaxChannel(String)
+        +AjaxChannel(String, Type)
+        --
+        +Type getType()
+        --(naming)--
+        +String getName()
+    }
+    
+    AbstractAjaxTimerBehavior <|-- AjaxClientInfoBehavior
+    class AjaxClientInfoBehavior
+    {
+        --(constructors)--
+        +AjaxClientInfoBehavior()
+        +AjaxClientInfoBehavior(Duration)
+        --(messaging)--
+        +AjaxClientInfoBehavior onClientInfo(SerializableBiConsumer<AjaxRequestTarget,WebClientInfo> onClientInfo)
+        #WebClientInfo newWebClientInfo(RequestCycle)
+        #void onClientInfo(AjaxRequestTarget, WebClientInfo)
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- AjaxEventBehavior
+    abstract class AjaxEventBehavior
+    {
+        --(constructors)--
+        +AjaxEventBehavior(String)
+        --(messaging)--
+        +String getEvent()
+        +AjaxEventBehavior onEvent(String eventName, SerializableConsumer<AjaxRequestTarget> onEvent)
+        #void onEvent(AjaxRequestTarget)
+    }
+    
+    AbstractDefaultAjaxBehavior <|-- AjaxNewWindowNotifyingBehavior
+    class AjaxNewWindowNotifyingBehavior
+    {
+        --(factory)--
+        +AjaxNewWindowNotifyingBehavior onNewWindow(SerializableConsumer<AjaxRequestTarget> onNewWindow)
+        #String newWindowName()
+        #void onNewWindow(AjaxRequestTarget)
+        --(naming)--
+        +String getWindowName()
+    }
+    
+    AjaxEventBehavior <|-- AjaxPreventSubmitBehavior
+    class AjaxPreventSubmitBehavior
+    {
+        --(constructors)--
+        +AjaxPreventSubmitBehavior()
+    }
+    
+    AbstractPartialPageRequestHandler <|-- AjaxRequestHandler
+    AjaxRequestTarget <|-- AjaxRequestHandler
+    class AjaxRequestHandler
+    {
+        --(constructors)--
+        +AjaxRequestHandler(Page)
+    }
+    
+    interface ILoggableRequestHandler
+    interface IPartialPageRequestHandler
+    IPartialPageRequestHandler <|-- AjaxRequestTarget
+    ILoggableRequestHandler <|-- AjaxRequestTarget
+    interface AjaxRequestTarget
+    {
+        --(collection)--
+        +void addListener(AjaxRequestTarget.IListener)
+        +String getLastFocusedElementId()
+        --(messaging)--
+        +void registerRespondListener(ITargetRespondListener)
+    }
+    
+    ListenerCollection <|-- AjaxRequestTargetListenerCollection
+    class AjaxRequestTargetListenerCollection
+    {
+    }
+    
+    AbstractAjaxTimerBehavior <|-- AjaxSelfUpdatingTimerBehavior
+    class AjaxSelfUpdatingTimerBehavior
+    {
+        --(constructors)--
+        +AjaxSelfUpdatingTimerBehavior(Duration)
+        +AjaxSelfUpdatingTimerBehavior(org.apache.wicket.util.time.Duration)
+        --
+        #void onPostProcessTarget(AjaxRequestTarget)
+        --(extension points)--
+        +AjaxSelfUpdatingTimerBehavior onSelfUpdate(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+    }
+    
+    AjaxCallListener <|-- CancelEventIfAjaxListener
+    class CancelEventIfAjaxListener
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IAjaxIndicatorAware
+    interface IAjaxIndicatorAware
+    {
+        --(identity)--
+        +String getAjaxIndicatorMarkupId()
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IAjaxRegionMarkupIdProvider
+    interface IAjaxRegionMarkupIdProvider
+    {
+        --(identity)--
+        +String getAjaxRegionMarkupId(Component)
+    }
+    
+    interface AjaxRequestTarget.IJavaScriptResponse
+    {
+        --(collection)--
+        +void addJavaScript(String script)
+    }
+    
+    interface AjaxRequestTarget.IListener
+    {
+        --
+        +void onAfterRespond(Map<String,Component>, AjaxRequestTarget.IJavaScriptResponse)
+        +void onBeforeRespond(Map<String,Component>, AjaxRequestTarget)
+        +void updateAjaxAttributes(AbstractDefaultAjaxBehavior, AjaxRequestAttributes)
+    }
+    
+    interface AjaxRequestTarget.ITargetRespondListener
+    {
+        --
+        +void onTargetRespond(AjaxRequestTarget)
+    }
+    
+    enum AjaxChannel.Type
+    {
+        ACTIVE
+        DROP
+        QUEUE
+    }
+    
+    JavaScriptResourceReference <|-- WicketAjaxJQueryResourceReference
+    class WicketAjaxJQueryResourceReference
+    {
+        --(search)--
+        +WicketAjaxJQueryResourceReference get()
+    }
+    
+@enduml
+

@@ -1,0 +1,24 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authentication.pages"
+    
+    WebPage <|-- SignInPage
+    class SignInPage
+    {
+        --(constructors)--
+        +SignInPage()
+        +SignInPage(PageParameters)
+    }
+    
+    WebPage <|-- SignOutPage
+    class SignOutPage
+    {
+        --(constructors)--
+        +SignOutPage()
+        +SignOutPage(PageParameters)
+    }
+    
+@enduml
+

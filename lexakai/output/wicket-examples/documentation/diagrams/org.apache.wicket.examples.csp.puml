@@ -1,0 +1,20 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.csp"
+    
+    WicketExampleApplication <|-- CspApplication
+    class CspApplication
+    {
+    }
+    
+    WicketExamplePage <|-- NonceDemoPage
+    class NonceDemoPage
+    {
+        --(constructors)--
+        +NonceDemoPage()
+    }
+    
+@enduml
+

@@ -1,0 +1,86 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.behavior"
+    
+    interface IComponentAwareHeaderContributor
+    interface IRequestListener
+    interface IClusterable
+    interface IComponentAwareEventSink
+    
+    Behavior <|-- AbstractAjaxBehavior
+    IRequestListener <|-- AbstractAjaxBehavior
+    abstract class AbstractAjaxBehavior
+    {
+        --(constructors)--
+        +AbstractAjaxBehavior()
+        --
+        #Component getComponent()
+        #void onBind()
+        #void onComponentRendered()
+        #void onComponentTag(ComponentTag)
+        #void onUnbind()
+        --(primitive)--
+        +CharSequence getCallbackUrl()
+    }
+    
+    AttributeModifier <|-- AttributeAppender
+    class AttributeAppender
+    {
+        --(constructors)--
+        +AttributeAppender(String, IModel<?>, String)
+        +AttributeAppender(String, IModel<?>)
+        +AttributeAppender(String, Serializable)
+        +AttributeAppender(String, Serializable, String)
+        --
+        +String getSeparator()
+        +AttributeAppender setSeparator(String separator)
+    }
+    
+    IClusterable <|-- Behavior
+    IComponentAwareEventSink <|-- Behavior
+    IComponentAwareHeaderContributor <|-- Behavior
+    abstract class Behavior
+    {
+        --(constructors)--
+        +Behavior()
+        --
+        +void afterRender(Component)
+        +void beforeRender(Component)
+        +void bind(Component)
+        +void detach(Component)
+        +boolean getStatelessHint(Component)
+        +void onComponentTag(Component, ComponentTag)
+        +void onConfigure(Component)
+        +void onException(Component, RuntimeException)
+        +void unbind(Component)
+        --(checks)--
+        +boolean canCallListener(Component)
+        +boolean isEnabled(Component)
+        +boolean isTemporary(Component)
+        --(collection)--
+        +void onRemove(Component)
+        --(extension points)--
+        +Behavior onAttribute(String name, SerializableFunction<String,CharSequence> onAttribute)
+        +Behavior onTag(SerializableBiConsumer<Component,ComponentTag> onTagConsumer)
+    }
+    
+    WicketRuntimeException <|-- InvalidBehaviorIdException
+    class InvalidBehaviorIdException
+    {
+        --(constructors)--
+        +InvalidBehaviorIdException(Component, int)
+        --
+        +Component getComponent()
+        --(identity)--
+        +int getBehaviorId()
+    }
+    
+    Behavior <|-- OutputMarkupContainerClassNameBehavior
+    class OutputMarkupContainerClassNameBehavior
+    {
+    }
+    
+@enduml
+

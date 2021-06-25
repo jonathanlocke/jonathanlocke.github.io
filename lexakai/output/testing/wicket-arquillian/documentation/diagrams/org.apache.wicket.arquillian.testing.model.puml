@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.arquillian.testing.model"
+    
+    interface Serializable
+    
+    Serializable <|-- Contact
+    class Contact
+    {
+        --(constructors)--
+        +Contact()
+        +Contact(Long, String, String)
+        --(identity)--
+        +Long getId()
+        +void setId(Long id)
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(network)--
+        +String getEmail()
+        +void setEmail(String email)
+    }
+    
+@enduml
+

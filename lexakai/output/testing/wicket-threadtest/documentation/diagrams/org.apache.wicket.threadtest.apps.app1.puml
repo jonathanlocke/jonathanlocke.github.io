@@ -1,0 +1,205 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.threadtest.apps.app1"
+    
+    interface Serializable
+    interface IDataProvider
+    
+    Panel <|-- Home.ActionPanel
+    class Home.ActionPanel
+    {
+        --(constructors)--
+        +ActionPanel(String, IModel<Contact>)
+    }
+    
+    Serializable <|-- Contact
+    class Contact
+    {
+        --(constructors)--
+        +Contact()
+        +Contact(String, String)
+        --
+        +String getCellPhone()
+        +String getHomePhone()
+        +void setCellPhone(String cellPhone)
+        +void setHomePhone(String homePhone)
+        --(collection)--
+        +String getFirstName()
+        +String getLastName()
+        +void setFirstName(String firstName)
+        +void setLastName(String lastName)
+        --(identity)--
+        +long getId()
+        +void setId(long id)
+    }
+    
+    IDataProvider <|-- ContactDataProvider
+    class ContactDataProvider
+    {
+        --
+        +void detach()
+        +IModel<Contact> model(Contact object)
+        #ContactsDatabase getContactsDB()
+        --(collection)--
+        +Iterator<Contact> iterator(long first, long count)
+        +long size()
+    }
+    
+    class ContactGenerator
+    {
+        --
+        +Contact generate()
+        +void generate(Collection<Contact>, int count)
+        +ContactGenerator getInstance()
+        --(identity)--
+        +long generateId()
+    }
+    
+    class ContactsDatabase
+    {
+        --(constructors)--
+        +ContactsDatabase(int)
+        --
+        +Contact get(long id)
+        --(collection)--
+        +List<Contact> find(long first, long count, String sortProperty, boolean sortAsc)
+        +int getCount()
+        #void add(Contact)
+        #List<Contact> getIndex(String prop, boolean asc)
+        --(filesystem)--
+        +void delete(Contact)
+        --(write)--
+        +void save(Contact)
+    }
+    
+    class DatabaseLocator
+    {
+        --
+        +ContactsDatabase getDatabase()
+    }
+    
+    LoadableDetachableModel <|-- DetachableContactModel
+    class DetachableContactModel
+    {
+        --(constructors)--
+        +DetachableContactModel(Contact)
+        +DetachableContactModel(long)
+        --
+        #ContactsDatabase getContactsDB()
+    }
+    
+    Serializable <|-- FormInputModel
+    class FormInputModel
+    {
+        --(constructors)--
+        +FormInputModel()
+        --
+        +Boolean getBooleanProperty()
+        +Date getDateProperty()
+        +String getNumberRadioChoice()
+        +String getNumbersGroup()
+        +UsPhoneNumber getPhoneNumberUS()
+        +Set<String> getSiteSelection()
+        +String getStringProperty()
+        +void setBooleanProperty(Boolean booleanProperty)
+        +void setDateProperty(Date dateProperty)
+        +void setLines(List<Line> lines)
+        +void setNumberRadioChoice(String favoriteColor)
+        +void setNumbersGroup(String group)
+        +void setPhoneNumberUS(UsPhoneNumber phoneNumberUS)
+        +void setSiteSelection(Set<String> selectedSites)
+        +void setStringProperty(String stringProperty)
+        --(collection)--
+        +List<Line> getLines()
+        +List<String> getNumbersCheckGroup()
+        --(network)--
+        +URL getUrlProperty()
+        +void setUrlProperty(URL urlProperty)
+        --(primitive)--
+        +Double getDoubleProperty()
+        +Integer getIntegerInRangeProperty()
+        +Integer getIntegerProperty()
+        +void setDoubleProperty(Double doubleProperty)
+        +void setIntegerInRangeProperty(Integer integerInRangeProperty)
+        +void setIntegerProperty(Integer integerProperty)
+    }
+    
+    WebPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+        --
+        +String getSelectedContactLabel()
+        +void setLocale(Locale)
+    }
+    
+    Form <|-- Home.InputForm
+    class Home.InputForm
+    {
+        --(constructors)--
+        +InputForm(String)
+    }
+    
+    Serializable <|-- FormInputModel.Line
+    class FormInputModel.Line
+    {
+        --(constructors)--
+        +Line(String)
+        --
+        +String getText()
+        +void setText(String text)
+    }
+    
+    ListView <|-- Home.LinesListView
+    class Home.LinesListView
+    {
+        --(constructors)--
+        +LinesListView(String)
+    }
+    
+    ChoiceRenderer <|-- Home.LocaleChoiceRenderer
+    class Home.LocaleChoiceRenderer
+    {
+        --(constructors)--
+        +LocaleChoiceRenderer()
+    }
+    
+    DropDownChoice <|-- Home.LocaleDropDownChoice
+    class Home.LocaleDropDownChoice
+    {
+        --(constructors)--
+        +LocaleDropDownChoice(String)
+    }
+    
+    WebPage <|-- ResourceTestPage
+    class ResourceTestPage
+    {
+        --(constructors)--
+        +ResourceTestPage()
+    }
+    
+    WebApplication <|-- TestApp1
+    class TestApp1
+    {
+        --(constructors)--
+        +TestApp1()
+        --
+        +TestApp1 get()
+        +ContactsDatabase getContactsDB()
+    }
+    
+    Serializable <|-- UsPhoneNumber
+    class UsPhoneNumber
+    {
+        --(constructors)--
+        +UsPhoneNumber(String)
+        --
+        +String getNumber()
+        +void setNumber(String number)
+    }
+    
+@enduml
+

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="297.9167px" preserveAspectRatio="none" style="width:953px;height:297px;background:#333333;" version="1.1" viewBox="0 0 953 297" width="953.125px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="711.4583" x="113.8021" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="688.5417" x="125.2604" y="30.5583">org.apache.wicket.authroles.authorization.strategies.role.annotations</text><!--MD5=[155a13c41f490f5600aaa06567af3011]
+class AbstractRoleAuthorizationStrategy--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractRoleAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="262.5" x="619.7917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="262.5" x="619.7917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="262.5" x="619.7917" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="AbstractRoleAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="262.5" x="619.7917" y="53.7028"/><ellipse cx="634.375" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M633.9681,66.099 L633.1197,69.8283 L634.8226,69.8283 Z M632.8695,64.4511 L635.0728,64.4511 L637.5326,73.5636 L635.732,73.5636 L635.1705,71.3114 L632.7596,71.3114 L632.2103,73.5636 L630.4097,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="225" x="651.0417" y="74.1211">AbstractRoleAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="620.8333" x2="881.25" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="620.8333" x2="881.25" y1="93.4245" y2="93.4245"/><!--MD5=[844063f0141a8815e17da636e41818c9]
+class AnnotationsRoleAuthorizationStrategy--><rect codeLine="9" fill="#282828" height="127.0345" id="AnnotationsRoleAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="390.625" x="555.7292" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="390.625" x="555.7292" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="390.625" x="555.7292" y="187.1745"/><rect codeLine="9" fill="none" height="127.0345" id="AnnotationsRoleAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="390.625" x="555.7292" y="164.1195"/><ellipse cx="618.2292" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M620.1396,184.2387 Q619.7123,184.4584 619.2424,184.5683 Q618.7724,184.6781 618.2536,184.6781 Q616.4103,184.6781 615.4399,183.4635 Q614.4694,182.2489 614.4694,179.954 Q614.4694,177.653 615.4399,176.4384 Q616.4103,175.2238 618.2536,175.2238 Q618.7724,175.2238 619.2485,175.3337 Q619.7245,175.4435 620.1396,175.6632 L620.1396,177.6652 Q619.6757,177.238 619.2393,177.0396 Q618.8029,176.8412 618.339,176.8412 Q617.3503,176.8412 616.8467,177.6255 Q616.3432,178.4098 616.3432,179.954 Q616.3432,181.4921 616.8467,182.2764 Q617.3503,183.0607 618.339,183.0607 Q618.8029,183.0607 619.2393,182.8623 Q619.6757,182.664 620.1396,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="251.0417" x="641.1458" y="184.5378">AnnotationsRoleAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="556.7708" x2="945.3125" y1="195.5078" y2="195.5078"/><ellipse cx="567.1875" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="348.9583" x="578.6458" y="237.7889">AnnotationsRoleAuthorizationStrategy(IRoleCheckingStrategy)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="556.7708" x2="707.2917" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="710.4167" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="794.7917" x2="945.3125" y1="213.7136" y2="213.7136"/><polygon fill="#FFFF44" points="567.1875,269.3258,571.3542,273.4924,567.1875,277.6591,563.0208,273.4924" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="358.3333" x="578.6458" y="281.4453">boolean isActionAuthorized(Class&lt;?&gt; componentClass, Action)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="556.7708" x2="724.4792" y1="257.37" y2="257.37"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="727.6042" y="261.1796">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="777.6042" x2="945.3125" y1="257.37" y2="257.37"/><!--MD5=[5db56d459c5d362bb0b1f6411489d5cf]
+class AuthorizeAction--><rect codeLine="17" fill="#282828" height="48.055" id="AuthorizeAction" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="31.7708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="31.7708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="31.7708" y="76.7578"/><rect codeLine="17" fill="none" height="48.055" id="AuthorizeAction" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="31.7708" y="53.7028"/><ellipse cx="46.3542" cy="69.397" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M48.1262,69.456 Q48.1262,68.7663 47.8149,68.3757 Q47.5037,67.985 46.9604,67.985 Q46.4172,67.985 46.109,68.3757 Q45.8008,68.7663 45.8008,69.456 Q45.8008,70.1518 46.109,70.5424 Q46.4172,70.933 46.9604,70.933 Q47.5037,70.933 47.8149,70.5424 Q48.1262,70.1518 48.1262,69.456 Z M49.2615,71.9584 L48.0652,71.9584 L48.0652,71.4579 Q47.8333,71.7814 47.5189,71.9309 Q47.2046,72.0805 46.7651,72.0805 Q45.7642,72.0805 45.1508,71.3603 Q44.5374,70.6401 44.5374,69.456 Q44.5374,68.278 45.1477,67.5608 Q45.7581,66.8437 46.7651,66.8437 Q47.1985,66.8437 47.5281,66.9932 Q47.8577,67.1427 48.0652,67.4296 L48.0652,67.1794 Q48.0652,66.3493 47.6105,65.8976 Q47.1558,65.446 46.3135,65.446 Q45.0439,65.446 44.2413,66.5629 Q43.4387,67.6799 43.4387,69.4682 Q43.4387,71.342 44.3665,72.4497 Q45.2942,73.5575 46.8384,73.5575 Q47.3267,73.5575 47.7844,73.4141 Q48.2422,73.2707 48.6633,72.9838 L49.2249,74.058 Q48.7305,74.3937 48.1476,74.5616 Q47.5647,74.7294 46.8994,74.7294 Q44.7632,74.7294 43.4937,73.3073 Q42.2241,71.8852 42.2241,69.4682 Q42.2241,67.1061 43.3655,65.6871 Q44.5068,64.268 46.3867,64.268 Q47.7173,64.268 48.4894,65.0706 Q49.2615,65.8732 49.2615,67.2587 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="63.0208" y="74.1211">AuthorizeAction</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="32.8125" x2="173.4375" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="32.8125" x2="173.4375" y1="93.4245" y2="93.4245"/><!--MD5=[057a28783bbe84902a383dca22cf430b]
+class AuthorizeActions--><rect codeLine="19" fill="#282828" height="48.055" id="AuthorizeActions" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="211.4583" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="211.4583" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="150" x="211.4583" y="76.7578"/><rect codeLine="19" fill="none" height="48.055" id="AuthorizeActions" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="150" x="211.4583" y="53.7028"/><ellipse cx="226.0417" cy="69.397" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M227.8137,69.456 Q227.8137,68.7663 227.5024,68.3757 Q227.1912,67.985 226.6479,67.985 Q226.1047,67.985 225.7965,68.3757 Q225.4883,68.7663 225.4883,69.456 Q225.4883,70.1518 225.7965,70.5424 Q226.1047,70.933 226.6479,70.933 Q227.1912,70.933 227.5024,70.5424 Q227.8137,70.1518 227.8137,69.456 Z M228.949,71.9584 L227.7527,71.9584 L227.7527,71.4579 Q227.5208,71.7814 227.2064,71.9309 Q226.8921,72.0805 226.4526,72.0805 Q225.4517,72.0805 224.8383,71.3603 Q224.2249,70.6401 224.2249,69.456 Q224.2249,68.278 224.8352,67.5608 Q225.4456,66.8437 226.4526,66.8437 Q226.886,66.8437 227.2156,66.9932 Q227.5452,67.1427 227.7527,67.4296 L227.7527,67.1794 Q227.7527,66.3493 227.298,65.8976 Q226.8433,65.446 226.001,65.446 Q224.7314,65.446 223.9288,66.5629 Q223.1262,67.6799 223.1262,69.4682 Q223.1262,71.342 224.054,72.4497 Q224.9817,73.5575 226.5259,73.5575 Q227.0142,73.5575 227.4719,73.4141 Q227.9297,73.2707 228.3508,72.9838 L228.9124,74.058 Q228.418,74.3937 227.8351,74.5616 Q227.2522,74.7294 226.5869,74.7294 Q224.4507,74.7294 223.1812,73.3073 Q221.9116,71.8852 221.9116,69.4682 Q221.9116,67.1061 223.053,65.6871 Q224.1943,64.268 226.0742,64.268 Q227.4048,64.268 228.1769,65.0706 Q228.949,65.8732 228.949,67.2587 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="112.5" x="242.7083" y="74.1211">AuthorizeActions</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="212.5" x2="360.4167" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="212.5" x2="360.4167" y1="93.4245" y2="93.4245"/><!--MD5=[d7789dda370bb4a10914bb22088b9e12]
+class AuthorizeInstantiation--><rect codeLine="21" fill="#282828" height="48.055" id="AuthorizeInstantiation" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="184.375" x="398.4375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="184.375" x="398.4375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="184.375" x="398.4375" y="76.7578"/><rect codeLine="21" fill="none" height="48.055" id="AuthorizeInstantiation" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="184.375" x="398.4375" y="53.7028"/><ellipse cx="413.0208" cy="69.397" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M414.7929,69.456 Q414.7929,68.7663 414.4816,68.3757 Q414.1703,67.985 413.6271,67.985 Q413.0839,67.985 412.7757,68.3757 Q412.4674,68.7663 412.4674,69.456 Q412.4674,70.1518 412.7757,70.5424 Q413.0839,70.933 413.6271,70.933 Q414.1703,70.933 414.4816,70.5424 Q414.7929,70.1518 414.7929,69.456 Z M415.9281,71.9584 L414.7319,71.9584 L414.7319,71.4579 Q414.4999,71.7814 414.1856,71.9309 Q413.8713,72.0805 413.4318,72.0805 Q412.4308,72.0805 411.8174,71.3603 Q411.204,70.6401 411.204,69.456 Q411.204,68.278 411.8144,67.5608 Q412.4247,66.8437 413.4318,66.8437 Q413.8652,66.8437 414.1947,66.9932 Q414.5243,67.1427 414.7319,67.4296 L414.7319,67.1794 Q414.7319,66.3493 414.2771,65.8976 Q413.8224,65.446 412.9801,65.446 Q411.7106,65.446 410.908,66.5629 Q410.1054,67.6799 410.1054,69.4682 Q410.1054,71.342 411.0331,72.4497 Q411.9609,73.5575 413.505,73.5575 Q413.9933,73.5575 414.4511,73.4141 Q414.9089,73.2707 415.33,72.9838 L415.8915,74.058 Q415.3971,74.3937 414.8142,74.5616 Q414.2314,74.7294 413.5661,74.7294 Q411.4299,74.7294 410.1603,73.3073 Q408.8908,71.8852 408.8908,69.4682 Q408.8908,67.1061 410.0321,65.6871 Q411.1735,64.268 413.0534,64.268 Q414.384,64.268 415.156,65.0706 Q415.9281,65.8732 415.9281,67.2587 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="146.875" x="429.6875" y="74.1211">AuthorizeInstantiation</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="399.4792" x2="581.7708" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="399.4792" x2="581.7708" y1="93.4245" y2="93.4245"/><!--MD5=[081fae52a25b86a1c57c07720d50feff]
+class AuthorizeInstantiations--><rect codeLine="23" fill="#282828" height="48.055" id="AuthorizeInstantiations" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="191.6667" x="7.2917" y="203.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="191.6667" x="7.2917" y="203.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="191.6667" x="7.2917" y="226.7578"/><rect codeLine="23" fill="none" height="48.055" id="AuthorizeInstantiations" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="191.6667" x="7.2917" y="203.7028"/><ellipse cx="21.875" cy="219.397" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M23.6471,219.456 Q23.6471,218.7663 23.3358,218.3757 Q23.0245,217.985 22.4813,217.985 Q21.9381,217.985 21.6298,218.3757 Q21.3216,218.7663 21.3216,219.456 Q21.3216,220.1518 21.6298,220.5424 Q21.9381,220.933 22.4813,220.933 Q23.0245,220.933 23.3358,220.5424 Q23.6471,220.1518 23.6471,219.456 Z M24.7823,221.9584 L23.586,221.9584 L23.586,221.4579 Q23.3541,221.7814 23.0398,221.9309 Q22.7254,222.0805 22.286,222.0805 Q21.285,222.0805 20.6716,221.3603 Q20.0582,220.6401 20.0582,219.456 Q20.0582,218.278 20.6685,217.5608 Q21.2789,216.8437 22.286,216.8437 Q22.7193,216.8437 23.0489,216.9932 Q23.3785,217.1427 23.586,217.4296 L23.586,217.1794 Q23.586,216.3493 23.1313,215.8976 Q22.6766,215.446 21.8343,215.446 Q20.5648,215.446 19.7622,216.5629 Q18.9596,217.6799 18.9596,219.4682 Q18.9596,221.342 19.8873,222.4497 Q20.815,223.5575 22.3592,223.5575 Q22.8475,223.5575 23.3053,223.4141 Q23.763,223.2707 24.1842,222.9838 L24.7457,224.058 Q24.2513,224.3937 23.6684,224.5616 Q23.0855,224.7294 22.4202,224.7294 Q20.284,224.7294 19.0145,223.3073 Q17.745,221.8852 17.745,219.4682 Q17.745,217.1061 18.8863,215.6871 Q20.0277,214.268 21.9076,214.268 Q23.2381,214.268 24.0102,215.0706 Q24.7823,215.8732 24.7823,217.2587 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="154.1667" x="38.5417" y="224.1211">AuthorizeInstantiations</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="197.9167" y1="235.0911" y2="235.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="197.9167" y1="243.4245" y2="243.4245"/><!--MD5=[7e7ec3e7539e34624b73bf2851aef6f9]
+class AuthorizeResource--><rect codeLine="25" fill="#282828" height="48.055" id="AuthorizeResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="159.375" x="235.9375" y="203.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="159.375" x="235.9375" y="203.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="159.375" x="235.9375" y="226.7578"/><rect codeLine="25" fill="none" height="48.055" id="AuthorizeResource" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="159.375" x="235.9375" y="203.7028"/><ellipse cx="250.5208" cy="219.397" fill="#3380B9" rx="10.4167" ry="10.4167" style="stroke:#004D86;stroke-width:1.0416666666666667;"/><path d="M252.2929,219.456 Q252.2929,218.7663 251.9816,218.3757 Q251.6703,217.985 251.1271,217.985 Q250.5839,217.985 250.2757,218.3757 Q249.9674,218.7663 249.9674,219.456 Q249.9674,220.1518 250.2757,220.5424 Q250.5839,220.933 251.1271,220.933 Q251.6703,220.933 251.9816,220.5424 Q252.2929,220.1518 252.2929,219.456 Z M253.4281,221.9584 L252.2319,221.9584 L252.2319,221.4579 Q251.9999,221.7814 251.6856,221.9309 Q251.3713,222.0805 250.9318,222.0805 Q249.9308,222.0805 249.3174,221.3603 Q248.704,220.6401 248.704,219.456 Q248.704,218.278 249.3144,217.5608 Q249.9247,216.8437 250.9318,216.8437 Q251.3652,216.8437 251.6947,216.9932 Q252.0243,217.1427 252.2319,217.4296 L252.2319,217.1794 Q252.2319,216.3493 251.7771,215.8976 Q251.3224,215.446 250.4801,215.446 Q249.2106,215.446 248.408,216.5629 Q247.6054,217.6799 247.6054,219.4682 Q247.6054,221.342 248.5331,222.4497 Q249.4609,223.5575 251.005,223.5575 Q251.4933,223.5575 251.9511,223.4141 Q252.4089,223.2707 252.83,222.9838 L253.3915,224.058 Q252.8971,224.3937 252.3142,224.5616 Q251.7314,224.7294 251.0661,224.7294 Q248.9299,224.7294 247.6603,223.3073 Q246.3908,221.8852 246.3908,219.4682 Q246.3908,217.1061 247.5321,215.6871 Q248.6735,214.268 250.5534,214.268 Q251.884,214.268 252.656,215.0706 Q253.4281,215.8732 253.4281,217.2587 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="267.1875" y="224.1211">AuthorizeResource</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="236.9792" x2="394.2708" y1="235.0911" y2="235.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="236.9792" x2="394.2708" y1="243.4245" y2="243.4245"/><!--MD5=[13ff9433525d13b57087e2a759f86bf9]
+reverse link AbstractRoleAuthorizationStrategy to AnnotationsRoleAuthorizationStrategy--><path codeLine="8" d="M751.0417,123.057 C751.0417,135.9632 751.0417,150.307 751.0417,164.109 " fill="none" id="AbstractRoleAuthorizationStrategy-backto-AnnotationsRoleAuthorizationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="743.75,122.6507,751.0417,101.8174,758.3333,122.6507,743.75,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5e4226e52c5a2a046c29d4a63c4f604b]
+link AuthorizeAction to AuthorizeActions--><!--MD5=[6fd2decc9d4d0483cb0acb228d0ba0e8]
+link AuthorizeActions to AuthorizeInstantiation--><!--MD5=[80b7ba0deddbccf5e96c63f25b757cdd]
+link AuthorizeAction to AuthorizeInstantiations--><!--MD5=[5ea6ae24a8020da15d5879d2a2d7b1a5]
+link AuthorizeInstantiations to AuthorizeResource--><!--MD5=[ae1d9d163223cd28006355808b5f5c21]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authorization.strategies.role.annotations"
+    
+    abstract AbstractRoleAuthorizationStrategy
+    
+    AbstractRoleAuthorizationStrategy <|- - AnnotationsRoleAuthorizationStrategy
+    class AnnotationsRoleAuthorizationStrategy
+    {
+        - -(constructors)- -
+        +AnnotationsRoleAuthorizationStrategy(IRoleCheckingStrategy)
+        - -(checks)- -
+        #boolean isActionAuthorized(Class<?> componentClass, Action)
+    }
+    
+    annotation AuthorizeAction
+    
+    annotation AuthorizeActions
+    
+    annotation AuthorizeInstantiation
+    
+    annotation AuthorizeInstantiations
+    
+    annotation AuthorizeResource
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.authroles.authorization.strategies.role.annotations"
+    
+    abstract AbstractRoleAuthorizationStrategy
+    
+    AbstractRoleAuthorizationStrategy <|- - AnnotationsRoleAuthorizationStrategy
+    class AnnotationsRoleAuthorizationStrategy
+    {
+        - -(constructors)- -
+        +AnnotationsRoleAuthorizationStrategy(IRoleCheckingStrategy)
+        - -(checks)- -
+        #boolean isActionAuthorized(Class<?> componentClass, Action)
+    }
+    
+    annotation AuthorizeAction
+    
+    annotation AuthorizeActions
+    
+    annotation AuthorizeInstantiation
+    
+    annotation AuthorizeInstantiations
+    
+    annotation AuthorizeResource
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

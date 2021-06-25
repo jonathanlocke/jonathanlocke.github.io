@@ -1,0 +1,69 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.internal"
+    
+    interface IComponentResolver
+    
+    WebMarkupContainer <|-- Enclosure
+    IComponentResolver <|-- Enclosure
+    class Enclosure
+    {
+        --(constructors)--
+        +Enclosure(String, String)
+        --
+        #Component getChild()
+        #MarkupContainer getEnclosureParent()
+        --(identity)--
+        +String getChildId()
+    }
+    
+    class HtmlHeaderContainer.HeaderStreamState
+    {
+        --
+        +MarkupStream getMarkupStream()
+        +ComponentTag getOpenTag()
+    }
+    
+    TransparentWebMarkupContainer <|-- HtmlHeaderContainer
+    class HtmlHeaderContainer
+    {
+        --(constructors)--
+        +HtmlHeaderContainer(String)
+        --
+        +IHeaderResponse getHeaderResponse()
+        +boolean okToRenderComponent(String scope, String id)
+        +void renderHeaderTagBody(HeaderStreamState)
+        --(factory)--
+        #IHeaderResponse newHeaderResponse()
+        --(io)--
+        #boolean renderOpenAndCloseTags()
+    }
+    
+    HtmlHeaderContainer <|-- HtmlHeaderItemsContainer
+    class HtmlHeaderItemsContainer
+    {
+        --(constructors)--
+        +HtmlHeaderItemsContainer(String)
+    }
+    
+    Enclosure <|-- InlineEnclosure
+    class InlineEnclosure
+    {
+        --(constructors)--
+        +InlineEnclosure(String, String)
+    }
+    
+    abstract class ResponseBufferZone
+    {
+        --(constructors)--
+        +ResponseBufferZone(RequestCycle, MarkupStream)
+        --
+        #void executeInsideBufferedZone()
+        --(primitive)--
+        +CharSequence execute()
+    }
+    
+@enduml
+

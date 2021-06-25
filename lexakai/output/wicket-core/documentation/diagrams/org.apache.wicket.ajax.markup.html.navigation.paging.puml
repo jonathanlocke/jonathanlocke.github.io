@@ -1,0 +1,59 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.markup.html.navigation.paging"
+    
+    interface IAjaxLink
+    
+    PagingNavigation <|-- AjaxPagingNavigation
+    class AjaxPagingNavigation
+    {
+        --(constructors)--
+        +AjaxPagingNavigation(String, IPageable)
+        +AjaxPagingNavigation(String, IPageable, IPagingLabelProvider)
+    }
+    
+    AjaxEventBehavior <|-- AjaxPagingNavigationBehavior
+    class AjaxPagingNavigationBehavior
+    {
+        --(constructors)--
+        +AjaxPagingNavigationBehavior(IAjaxLink, IPageable, String)
+    }
+    
+    PagingNavigationIncrementLink <|-- AjaxPagingNavigationIncrementLink
+    IAjaxLink <|-- AjaxPagingNavigationIncrementLink
+    class AjaxPagingNavigationIncrementLink
+    {
+        --(constructors)--
+        +AjaxPagingNavigationIncrementLink(String, IPageable, int)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(factory)--
+        #AjaxPagingNavigationBehavior newAjaxPagingNavigationBehavior(IPageable, String event)
+    }
+    
+    PagingNavigationLink <|-- AjaxPagingNavigationLink
+    IAjaxLink <|-- AjaxPagingNavigationLink
+    class AjaxPagingNavigationLink
+    {
+        --(constructors)--
+        +AjaxPagingNavigationLink(String, IPageable, long)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(factory)--
+        #AjaxPagingNavigationBehavior newAjaxPagingNavigationBehavior(IPageable, String event)
+    }
+    
+    PagingNavigator <|-- AjaxPagingNavigator
+    class AjaxPagingNavigator
+    {
+        --(constructors)--
+        +AjaxPagingNavigator(String, IPageable)
+        +AjaxPagingNavigator(String, IPageable, IPagingLabelProvider)
+        --(messaging)--
+        #void onAjaxEvent(AjaxRequestTarget)
+    }
+    
+@enduml
+

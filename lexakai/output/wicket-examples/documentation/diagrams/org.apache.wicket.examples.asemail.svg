@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="254.1667px" preserveAspectRatio="none" style="width:1052px;height:254px;background:#333333;" version="1.1" viewBox="0 0 1052 254" width="1052.0833px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="389.5833" x="324.2188" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="366.6667" x="335.6771" y="30.5583">org.apache.wicket.examples.asemail</text><!--MD5=[8de0e4c819f220f8e0c4c4df41ba59ce]
+class WicketExamplePage--><rect fill="#282828" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="26.0417" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="26.0417" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="164.5833" x="26.0417" y="76.7578"/><rect fill="none" height="48.055" id="WicketExamplePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="164.5833" x="26.0417" y="53.7028"/><ellipse cx="40.625" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M42.5354,73.822 Q42.1082,74.0417 41.6382,74.1516 Q41.1682,74.2615 40.6494,74.2615 Q38.8062,74.2615 37.8357,73.0469 Q36.8652,71.8323 36.8652,69.5374 Q36.8652,67.2363 37.8357,66.0217 Q38.8062,64.8071 40.6494,64.8071 Q41.1682,64.8071 41.6443,64.917 Q42.1204,65.0269 42.5354,65.2466 L42.5354,67.2485 Q42.0715,66.8213 41.6351,66.6229 Q41.1987,66.4246 40.7349,66.4246 Q39.7461,66.4246 39.2426,67.2089 Q38.739,67.9932 38.739,69.5374 Q38.739,71.0754 39.2426,71.8597 Q39.7461,72.644 40.7349,72.644 Q41.1987,72.644 41.6351,72.4457 Q42.0715,72.2473 42.5354,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="127.0833" x="57.2917" y="74.1211">WicketExamplePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="27.0833" x2="189.5833" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="27.0833" x2="189.5833" y1="93.4245" y2="93.4245"/><!--MD5=[919d3c8c26702559a1449b866b8fbed5]
+class MailTemplate--><rect codeLine="7" fill="#282828" height="83.3781" id="MailTemplate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="202.0833" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="202.0833" x="7.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="202.0833" x="7.2917" y="187.1745"/><rect codeLine="7" fill="none" height="83.3781" id="MailTemplate" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="202.0833" x="7.2917" y="164.1195"/><ellipse cx="57.2917" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M59.2021,184.2387 Q58.7748,184.4584 58.3049,184.5683 Q57.8349,184.6781 57.3161,184.6781 Q55.4728,184.6781 54.5024,183.4635 Q53.5319,182.2489 53.5319,179.954 Q53.5319,177.653 54.5024,176.4384 Q55.4728,175.2238 57.3161,175.2238 Q57.8349,175.2238 58.311,175.3337 Q58.787,175.4435 59.2021,175.6632 L59.2021,177.6652 Q58.7382,177.238 58.3018,177.0396 Q57.8654,176.8412 57.4015,176.8412 Q56.4128,176.8412 55.9092,177.6255 Q55.4057,178.4098 55.4057,179.954 Q55.4057,181.4921 55.9092,182.2764 Q56.4128,183.0607 57.4015,183.0607 Q57.8654,183.0607 58.3018,182.8623 Q58.7382,182.664 59.2021,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="80.2083" y="184.5378">MailTemplate</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="208.3333" y1="195.5078" y2="195.5078"/><ellipse cx="18.75" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="30.2083" y="237.7889">MailTemplate(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="64.5833" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="67.7083" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="152.0833" x2="208.3333" y1="213.7136" y2="213.7136"/><!--MD5=[818b680dd029f5404dc253254408b9c3]
+class WicketExampleApplication--><rect fill="#282828" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="241.6667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="241.6667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="208.3333" x="241.6667" y="76.7578"/><rect fill="none" height="48.055" id="WicketExampleApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="208.3333" x="241.6667" y="53.7028"/><ellipse cx="256.25" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M258.1604,73.822 Q257.7332,74.0417 257.2632,74.1516 Q256.7932,74.2615 256.2744,74.2615 Q254.4312,74.2615 253.4607,73.0469 Q252.4902,71.8323 252.4902,69.5374 Q252.4902,67.2363 253.4607,66.0217 Q254.4312,64.8071 256.2744,64.8071 Q256.7932,64.8071 257.2693,64.917 Q257.7454,65.0269 258.1604,65.2466 L258.1604,67.2485 Q257.6965,66.8213 257.2601,66.6229 Q256.8237,66.4246 256.3599,66.4246 Q255.3711,66.4246 254.8676,67.2089 Q254.364,67.9932 254.364,69.5374 Q254.364,71.0754 254.8676,71.8597 Q255.3711,72.644 256.3599,72.644 Q256.8237,72.644 257.2601,72.4457 Q257.6965,72.2473 258.1604,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="170.8333" x="272.9167" y="74.1211">WicketExampleApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="242.7083" x2="448.9583" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="242.7083" x2="448.9583" y1="93.4245" y2="93.4245"/><!--MD5=[bc16c9df46c696f38ac07cb9cb5548a6]
+class MailTemplateApplication--><rect codeLine="14" fill="#282828" height="48.055" id="MailTemplateApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="246.3542" y="181.8278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="246.3542" y="181.8278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="198.9583" x="246.3542" y="204.8828"/><rect codeLine="14" fill="none" height="48.055" id="MailTemplateApplication" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="198.9583" x="246.3542" y="181.8278"/><ellipse cx="260.9375" cy="197.522" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M262.8479,201.947 Q262.4207,202.1667 261.9507,202.2766 Q261.4807,202.3865 260.9619,202.3865 Q259.1187,202.3865 258.1482,201.1719 Q257.1777,199.9573 257.1777,197.6624 Q257.1777,195.3613 258.1482,194.1467 Q259.1187,192.9321 260.9619,192.9321 Q261.4807,192.9321 261.9568,193.042 Q262.4329,193.1519 262.8479,193.3716 L262.8479,195.3735 Q262.384,194.9463 261.9476,194.7479 Q261.5112,194.5496 261.0474,194.5496 Q260.0586,194.5496 259.5551,195.3339 Q259.0515,196.1182 259.0515,197.6624 Q259.0515,199.2004 259.5551,199.9847 Q260.0586,200.769 261.0474,200.769 Q261.5112,200.769 261.9476,200.5707 Q262.384,200.3723 262.8479,199.9451 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="161.4583" x="277.6042" y="202.2461">MailTemplateApplication</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="247.3958" x2="444.2708" y1="213.2161" y2="213.2161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="247.3958" x2="444.2708" y1="221.5495" y2="221.5495"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="581.7708" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="581.7708" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="581.7708" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="581.7708" y="53.7028"/><ellipse cx="596.3542" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M598.2646,73.822 Q597.8373,74.0417 597.3674,74.1516 Q596.8974,74.2615 596.3786,74.2615 Q594.5353,74.2615 593.5649,73.0469 Q592.5944,71.8323 592.5944,69.5374 Q592.5944,67.2363 593.5649,66.0217 Q594.5353,64.8071 596.3786,64.8071 Q596.8974,64.8071 597.3735,64.917 Q597.8495,65.0269 598.2646,65.2466 L598.2646,67.2485 Q597.8007,66.8213 597.3643,66.6229 Q596.9279,66.4246 596.464,66.4246 Q595.4753,66.4246 594.9717,67.2089 Q594.4682,67.9932 594.4682,69.5374 Q594.4682,71.0754 594.9717,71.8597 Q595.4753,72.644 596.464,72.644 Q596.9279,72.644 597.3643,72.4457 Q597.8007,72.2473 598.2646,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="613.0208" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="582.8125" x2="652.6042" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="582.8125" x2="652.6042" y1="93.4245" y2="93.4245"/><!--MD5=[90eb7ced9ef948f3af9391c875ac7755]
+class MailTemplatePanel--><rect codeLine="19" fill="#282828" height="83.3781" id="MailTemplatePanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="270.8333" x="482.2917" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="270.8333" x="482.2917" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="270.8333" x="482.2917" y="187.1745"/><rect codeLine="19" fill="none" height="83.3781" id="MailTemplatePanel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="270.8333" x="482.2917" y="164.1195"/><ellipse cx="549.4792" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M551.3896,184.2387 Q550.9623,184.4584 550.4924,184.5683 Q550.0224,184.6781 549.5036,184.6781 Q547.6603,184.6781 546.6899,183.4635 Q545.7194,182.2489 545.7194,179.954 Q545.7194,177.653 546.6899,176.4384 Q547.6603,175.2238 549.5036,175.2238 Q550.0224,175.2238 550.4985,175.3337 Q550.9745,175.4435 551.3896,175.6632 L551.3896,177.6652 Q550.9257,177.238 550.4893,177.0396 Q550.0529,176.8412 549.589,176.8412 Q548.6003,176.8412 548.0967,177.6255 Q547.5932,178.4098 547.5932,179.954 Q547.5932,181.4921 548.0967,182.2764 Q548.6003,183.0607 549.589,183.0607 Q550.0529,183.0607 550.4893,182.8623 Q550.9257,182.664 551.3896,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="572.3958" y="184.5378">MailTemplatePanel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="483.3333" x2="752.0833" y1="195.5078" y2="195.5078"/><ellipse cx="493.75" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="238.5417" x="505.2083" y="237.7889">MailTemplatePanel(String, IModel&lt;String&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="483.3333" x2="573.9583" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="577.0833" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="661.4583" x2="752.0833" y1="213.7136" y2="213.7136"/><!--MD5=[2348928a02e2f2aa159b7171a1143fdb]
+class WebPage--><rect fill="#282828" height="48.055" id="WebPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="94.7917" x="870.3125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="94.7917" x="870.3125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="94.7917" x="870.3125" y="76.7578"/><rect fill="none" height="48.055" id="WebPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="94.7917" x="870.3125" y="53.7028"/><ellipse cx="884.8958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M886.8062,73.822 Q886.379,74.0417 885.909,74.1516 Q885.439,74.2615 884.9202,74.2615 Q883.077,74.2615 882.1065,73.0469 Q881.1361,71.8323 881.1361,69.5374 Q881.1361,67.2363 882.1065,66.0217 Q883.077,64.8071 884.9202,64.8071 Q885.439,64.8071 885.9151,64.917 Q886.3912,65.0269 886.8062,65.2466 L886.8062,67.2485 Q886.3424,66.8213 885.906,66.6229 Q885.4696,66.4246 885.0057,66.4246 Q884.0169,66.4246 883.5134,67.2089 Q883.0098,67.9932 883.0098,69.5374 Q883.0098,71.0754 883.5134,71.8597 Q884.0169,72.644 885.0057,72.644 Q885.4696,72.644 885.906,72.4457 Q886.3424,72.2473 886.8062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="57.2917" x="901.5625" y="74.1211">WebPage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="871.3542" x2="964.0625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="871.3542" x2="964.0625" y1="93.4245" y2="93.4245"/><!--MD5=[eafa6a2025d50a4a63ed65720e33a950]
+class TemplateBasedOnPage--><rect codeLine="26" fill="#282828" height="83.3781" id="TemplateBasedOnPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="255.2083" x="790.1042" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="255.2083" x="790.1042" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="255.2083" x="790.1042" y="187.1745"/><rect codeLine="26" fill="none" height="83.3781" id="TemplateBasedOnPage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="255.2083" x="790.1042" y="164.1195"/><ellipse cx="836.4583" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M838.3687,184.2387 Q837.9415,184.4584 837.4715,184.5683 Q837.0015,184.6781 836.4827,184.6781 Q834.6395,184.6781 833.669,183.4635 Q832.6986,182.2489 832.6986,179.954 Q832.6986,177.653 833.669,176.4384 Q834.6395,175.2238 836.4827,175.2238 Q837.0015,175.2238 837.4776,175.3337 Q837.9537,175.4435 838.3687,175.6632 L838.3687,177.6652 Q837.9049,177.238 837.4685,177.0396 Q837.0321,176.8412 836.5682,176.8412 Q835.5794,176.8412 835.0759,177.6255 Q834.5723,178.4098 834.5723,179.954 Q834.5723,181.4921 835.0759,182.2764 Q835.5794,183.0607 836.5682,183.0607 Q837.0321,183.0607 837.4685,182.8623 Q837.9049,182.664 838.3687,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="147.9167" x="859.375" y="184.5378">TemplateBasedOnPage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="791.1458" x2="1044.2708" y1="195.5078" y2="195.5078"/><ellipse cx="801.5625" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="222.9167" x="813.0208" y="237.7889">TemplateBasedOnPage(PageParameters)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="791.1458" x2="873.9583" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="877.0833" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="961.4583" x2="1044.2708" y1="213.7136" y2="213.7136"/><!--MD5=[948c3bd781ae37588c13def85abd0665]
+reverse link WicketExamplePage to MailTemplate--><path codeLine="6" d="M108.3333,122.682 C108.3333,136.0778 108.3333,150.7445 108.3333,163.9215 " fill="none" id="WicketExamplePage-backto-MailTemplate" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="101.0417,122.6507,108.3333,101.8174,115.625,122.6507,101.0417,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[fc1ac26d1ec8d6434532294cb85148b3]
+reverse link WicketExampleApplication to MailTemplateApplication--><path codeLine="13" d="M345.8333,122.9528 C345.8333,142.7965 345.8333,165.3799 345.8333,181.7757 " fill="none" id="WicketExampleApplication-backto-MailTemplateApplication" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="338.5417,122.6507,345.8333,101.8174,353.125,122.6507,338.5417,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[060e94f2013172ecf3ab77c93b954b7b]
+reverse link Panel to MailTemplatePanel--><path codeLine="18" d="M617.7083,122.682 C617.7083,136.0778 617.7083,150.7445 617.7083,163.9215 " fill="none" id="Panel-backto-MailTemplatePanel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="610.4167,122.6507,617.7083,101.8174,625,122.6507,610.4167,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[6b8cd88b562f1547f45e77dca10e2d2d]
+reverse link WebPage to TemplateBasedOnPage--><path codeLine="25" d="M917.7083,122.682 C917.7083,136.0778 917.7083,150.7445 917.7083,163.9215 " fill="none" id="WebPage-backto-TemplateBasedOnPage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="910.4167,122.6507,917.7083,101.8174,925,122.6507,910.4167,122.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[53c6fd12de93cdb0812b0b0ea1e92c58]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.asemail"
+    
+    WicketExamplePage <|- - MailTemplate
+    class MailTemplate
+    {
+        - -(constructors)- -
+        +MailTemplate(PageParameters)
+    }
+    
+    WicketExampleApplication <|- - MailTemplateApplication
+    class MailTemplateApplication
+    {
+    }
+    
+    Panel <|- - MailTemplatePanel
+    class MailTemplatePanel
+    {
+        - -(constructors)- -
+        +MailTemplatePanel(String, IModel<String>)
+    }
+    
+    WebPage <|- - TemplateBasedOnPage
+    class TemplateBasedOnPage
+    {
+        - -(constructors)- -
+        +TemplateBasedOnPage(PageParameters)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.examples.asemail"
+    
+    WicketExamplePage <|- - MailTemplate
+    class MailTemplate
+    {
+        - -(constructors)- -
+        +MailTemplate(PageParameters)
+    }
+    
+    WicketExampleApplication <|- - MailTemplateApplication
+    class MailTemplateApplication
+    {
+    }
+    
+    Panel <|- - MailTemplatePanel
+    class MailTemplatePanel
+    {
+        - -(constructors)- -
+        +MailTemplatePanel(String, IModel<String>)
+    }
+    
+    WebPage <|- - TemplateBasedOnPage
+    class TemplateBasedOnPage
+    {
+        - -(constructors)- -
+        +TemplateBasedOnPage(PageParameters)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

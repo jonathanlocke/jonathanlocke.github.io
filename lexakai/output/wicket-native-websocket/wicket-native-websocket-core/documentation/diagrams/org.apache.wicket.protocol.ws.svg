@@ -1,0 +1,568 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1046.875px" preserveAspectRatio="none" style="width:3121px;height:1046px;background:#333333;" version="1.1" viewBox="0 0 3121 1046" width="3121.875px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="325" x="1391.1458" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="302.0833" x="1402.6042" y="30.5583">org.apache.wicket.protocol.ws</text><!--MD5=[3da85f774e4a088ef88b5b6f89bb391d]
+cluster WebSocketSettings--><polygon fill="#333333" points="16.6667,816.7236,152.0833,816.7236,159.375,843.9453,1273.9583,843.9453,1273.9583,977.1403,16.6667,977.1403,16.6667,816.7236" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="16.6667" x2="159.375" y1="843.9453" y2="843.9453"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="23.9583" y="834.0169">WebSocketSettings</text><!--MD5=[d3eb50685c3f4f55412a78a5b3249bbc]
+class WebSocketSettings.Holder--><rect codeLine="25" fill="#282828" height="87.5448" id="WebSocketSettings.Holder" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="998.9583" y="865.1611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="998.9583" y="865.1611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="998.9583" y="888.2161"/><rect codeLine="25" fill="none" height="87.5448" id="WebSocketSettings.Holder" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="998.9583" y="865.1611"/><ellipse cx="1099.4792" cy="880.8553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1101.3896,885.2804 Q1100.9623,885.5001 1100.4924,885.6099 Q1100.0224,885.7198 1099.5036,885.7198 Q1097.6603,885.7198 1096.6899,884.5052 Q1095.7194,883.2906 1095.7194,880.9957 Q1095.7194,878.6947 1096.6899,877.4801 Q1097.6603,876.2655 1099.5036,876.2655 Q1100.0224,876.2655 1100.4985,876.3753 Q1100.9745,876.4852 1101.3896,876.7049 L1101.3896,878.7069 Q1100.9257,878.2796 1100.4893,878.0813 Q1100.0529,877.8829 1099.589,877.8829 Q1098.6003,877.8829 1098.0967,878.6672 Q1097.5932,879.4515 1097.5932,880.9957 Q1097.5932,882.5338 1098.0967,883.3181 Q1098.6003,884.1024 1099.589,884.1024 Q1100.0529,884.1024 1100.4893,883.904 Q1100.9257,883.7056 1101.3896,883.2784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="42.7083" x="1122.3958" y="885.5794">Holder</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1000" x2="1256.25" y1="896.5495" y2="896.5495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1000" x2="1256.25" y1="904.8828" y2="904.8828"/><ellipse cx="1010.4167" cy="916.3411" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="196.875" x="1021.875" y="923.2524">WebSocketSettings get(Application)</text><ellipse cx="1010.4167" cy="936.086" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="226.0417" x="1021.875" y="942.9972">void set(Application, WebSocketSettings)</text><!--MD5=[985ec96c99b7dbcdfbfd2ce9c7f81fda]
+class WebSocketSettings.SameThreadExecutor--><rect codeLine="33" fill="#282828" height="48.055" id="WebSocketSettings.SameThreadExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="790.1042" y="884.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="790.1042" y="884.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="790.1042" y="908.0078"/><rect codeLine="33" fill="none" height="48.055" id="WebSocketSettings.SameThreadExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="790.1042" y="884.9528"/><ellipse cx="804.6875" cy="900.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M806.5979,905.072 Q806.1707,905.2917 805.7007,905.4016 Q805.2307,905.5115 804.7119,905.5115 Q802.8687,905.5115 801.8982,904.2969 Q800.9277,903.0823 800.9277,900.7874 Q800.9277,898.4863 801.8982,897.2717 Q802.8687,896.0571 804.7119,896.0571 Q805.2307,896.0571 805.7068,896.167 Q806.1829,896.2769 806.5979,896.4966 L806.5979,898.4985 Q806.134,898.0713 805.6976,897.8729 Q805.2612,897.6746 804.7974,897.6746 Q803.8086,897.6746 803.3051,898.4589 Q802.8015,899.2432 802.8015,900.7874 Q802.8015,902.3254 803.3051,903.1097 Q803.8086,903.894 804.7974,903.894 Q805.2612,903.894 805.6976,903.6957 Q806.134,903.4973 806.5979,903.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="134.375" x="821.3542" y="905.3711">SameThreadExecutor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="791.1458" x2="960.9375" y1="916.3411" y2="916.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="791.1458" x2="960.9375" y1="924.6745" y2="924.6745"/><!--MD5=[e83b14d057bfa27e6371db434850ffd2]
+class WebSocketSettings.ThreadFactory--><rect codeLine="38" fill="#282828" height="48.055" id="WebSocketSettings.ThreadFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="884.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="884.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="908.0078"/><rect codeLine="38" fill="none" height="48.055" id="WebSocketSettings.ThreadFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="884.9528"/><ellipse cx="47.9167" cy="900.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M49.8271,905.072 Q49.3998,905.2917 48.9299,905.4016 Q48.4599,905.5115 47.9411,905.5115 Q46.0978,905.5115 45.1274,904.2969 Q44.1569,903.0823 44.1569,900.7874 Q44.1569,898.4863 45.1274,897.2717 Q46.0978,896.0571 47.9411,896.0571 Q48.4599,896.0571 48.936,896.167 Q49.412,896.2769 49.8271,896.4966 L49.8271,898.4985 Q49.3632,898.0713 48.9268,897.8729 Q48.4904,897.6746 48.0265,897.6746 Q47.0378,897.6746 46.5342,898.4589 Q46.0307,899.2432 46.0307,900.7874 Q46.0307,902.3254 46.5342,903.1097 Q47.0378,903.894 48.0265,903.894 Q48.4904,903.894 48.9268,903.6957 Q49.3632,903.4973 49.8271,903.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="64.5833" y="905.3711">ThreadFactory</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="34.375" x2="161.4583" y1="916.3411" y2="916.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="34.375" x2="161.4583" y1="924.6745" y2="924.6745"/><!--MD5=[195d8f1b19c640b7abb648aa13d46795]
+class WebSocketSettings.WebSocketPushMessageExecutor--><rect codeLine="53" fill="#282828" height="103.123" id="WebSocketSettings.WebSocketPushMessageExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="554.1667" x="198.9583" y="857.3486"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="554.1667" x="198.9583" y="857.3486"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="554.1667" x="198.9583" y="880.4036"/><rect codeLine="53" fill="none" height="103.123" id="WebSocketSettings.WebSocketPushMessageExecutor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="554.1667" x="198.9583" y="857.3486"/><ellipse cx="362.5" cy="873.0428" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M364.4104,877.4679 Q363.9832,877.6876 363.5132,877.7974 Q363.0432,877.9073 362.5244,877.9073 Q360.6812,877.9073 359.7107,876.6927 Q358.7402,875.4781 358.7402,873.1832 Q358.7402,870.8822 359.7107,869.6676 Q360.6812,868.453 362.5244,868.453 Q363.0432,868.453 363.5193,868.5628 Q363.9954,868.6727 364.4104,868.8924 L364.4104,870.8944 Q363.9465,870.4671 363.5101,870.2688 Q363.0737,870.0704 362.6099,870.0704 Q361.6211,870.0704 361.1176,870.8547 Q360.614,871.639 360.614,873.1832 Q360.614,874.7213 361.1176,875.5056 Q361.6211,876.2899 362.6099,876.2899 Q363.0737,876.2899 363.5101,876.0915 Q363.9465,875.8931 364.4104,875.4659 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="212.5" x="385.4167" y="877.7669">WebSocketPushMessageExecutor</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="200" x2="752.0833" y1="888.737" y2="888.737"/><ellipse cx="210.4167" cy="924.1069" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="221.875" y="931.0181">WebSocketPushMessageExecutor()</text><ellipse cx="210.4167" cy="943.8517" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="521.875" x="221.875" y="950.7629">WebSocketPushMessageExecutor(java.util.concurrent.Executor, java.util.concurrent.Executor)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="200" x2="432.2917" y1="906.9427" y2="906.9427"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="435.4167" y="910.7524">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="519.7917" x2="752.0833" y1="906.9427" y2="906.9427"/><!--MD5=[8cec0625a8342d8f1a5e77e209617c66]
+class ThreadFactory--><rect codeLine="6" fill="#282828" height="48.055" id="ThreadFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="383.5286"/><rect codeLine="6" fill="none" height="48.055" id="ThreadFactory" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="33.3333" y="360.4736"/><ellipse cx="47.9167" cy="376.1678" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M45.3206,373.3297 L45.3206,371.7428 L50.7467,371.7428 L50.7467,373.3297 L48.9339,373.3297 L48.9339,379.2684 L50.7467,379.2684 L50.7467,380.8553 L45.3206,380.8553 L45.3206,379.2684 L47.1334,379.2684 L47.1334,373.3297 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="64.5833" y="380.8919">ThreadFactory</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="34.375" x2="161.4583" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="34.375" x2="161.4583" y1="400.1953" y2="400.1953"/><!--MD5=[a0a1f7f9662f43ef0ece806266f72a6f]
+class Executor--><rect codeLine="7" fill="#282828" height="48.055" id="Executor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="92.7083" x="629.6875" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="92.7083" x="629.6875" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="92.7083" x="629.6875" y="383.5286"/><rect codeLine="7" fill="none" height="48.055" id="Executor" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="92.7083" x="629.6875" y="360.4736"/><ellipse cx="644.2708" cy="376.1678" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M641.6748,373.3297 L641.6748,371.7428 L647.1008,371.7428 L647.1008,373.3297 L645.2881,373.3297 L645.2881,379.2684 L647.1008,379.2684 L647.1008,380.8553 L641.6748,380.8553 L641.6748,379.2684 L643.4875,379.2684 L643.4875,373.3297 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="55.2083" x="660.9375" y="380.8919">Executor</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="630.7292" x2="721.3542" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="630.7292" x2="721.3542" y1="400.1953" y2="400.1953"/><!--MD5=[0cf0632a1c0a536a1866124264729120]
+class WicketFilter--><rect fill="#282828" height="48.055" id="WicketFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="1468.2292" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="1468.2292" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="1468.2292" y="383.5286"/><rect fill="none" height="48.055" id="WicketFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="1468.2292" y="360.4736"/><ellipse cx="1482.8125" cy="376.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1484.7229,380.5929 Q1484.2957,380.8126 1483.8257,380.9224 Q1483.3557,381.0323 1482.8369,381.0323 Q1480.9937,381.0323 1480.0232,379.8177 Q1479.0527,378.6031 1479.0527,376.3082 Q1479.0527,374.0072 1480.0232,372.7926 Q1480.9937,371.578 1482.8369,371.578 Q1483.3557,371.578 1483.8318,371.6878 Q1484.3079,371.7977 1484.7229,372.0174 L1484.7229,374.0194 Q1484.259,373.5921 1483.8226,373.3938 Q1483.3862,373.1954 1482.9224,373.1954 Q1481.9336,373.1954 1481.4301,373.9797 Q1480.9265,374.764 1480.9265,376.3082 Q1480.9265,377.8463 1481.4301,378.6306 Q1481.9336,379.4149 1482.9224,379.4149 Q1483.3862,379.4149 1483.8226,379.2165 Q1484.259,379.0181 1484.7229,378.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="1499.4792" y="380.8919">WicketFilter</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1469.2708" x2="1580.7292" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1469.2708" x2="1580.7292" y1="400.1953" y2="400.1953"/><!--MD5=[371f263be675eecc573f3d176f066ad9]
+class AbstractUpgradeFilter--><rect codeLine="10" fill="#282828" height="262.1704" id="AbstractUpgradeFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="461.4583" x="1294.2708" y="777.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="461.4583" x="1294.2708" y="777.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="461.4583" x="1294.2708" y="800.7161"/><rect codeLine="10" fill="none" height="262.1704" id="AbstractUpgradeFilter" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="461.4583" x="1294.2708" y="777.6611"/><ellipse cx="1446.875" cy="793.3553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1448.7854,797.7804 Q1448.3582,798.0001 1447.8882,798.1099 Q1447.4182,798.2198 1446.8994,798.2198 Q1445.0562,798.2198 1444.0857,797.0052 Q1443.1152,795.7906 1443.1152,793.4957 Q1443.1152,791.1947 1444.0857,789.9801 Q1445.0562,788.7655 1446.8994,788.7655 Q1447.4182,788.7655 1447.8943,788.8753 Q1448.3704,788.9852 1448.7854,789.2049 L1448.7854,791.2069 Q1448.3215,790.7796 1447.8851,790.5813 Q1447.4487,790.3829 1446.9849,790.3829 Q1445.9961,790.3829 1445.4926,791.1672 Q1444.989,791.9515 1444.989,793.4957 Q1444.989,795.0338 1445.4926,795.8181 Q1445.9961,796.6024 1446.9849,796.6024 Q1447.4487,796.6024 1447.8851,796.404 Q1448.3215,796.2056 1448.7854,795.7784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="141.6667" x="1469.7917" y="798.0794">AbstractUpgradeFilter</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1295.3125" x2="1754.6875" y1="809.0495" y2="809.0495"/><ellipse cx="1305.7292" cy="844.4194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="132.2917" x="1317.1875" y="851.3306">AbstractUpgradeFilter()</text><ellipse cx="1305.7292" cy="864.1642" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="218.75" x="1317.1875" y="871.0754">AbstractUpgradeFilter(WebApplication)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1295.3125" x2="1481.25" y1="827.2552" y2="827.2552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1484.375" y="831.0649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1568.75" x2="1754.6875" y1="827.2552" y2="827.2552"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1295.3125" x2="1754.6875" y1="880.7841" y2="880.7841"/><polygon fill="#FFFF44" points="1305.7292,887.0341,1309.8958,891.2008,1305.7292,895.3674,1301.5625,891.2008" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="1317.1875" y="899.1536">boolean verifyOrigin(String origin)</text><polygon fill="#FFFF44" points="1305.7292,930.6905,1309.8958,934.8572,1305.7292,939.0238,1301.5625,934.8572" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="429.1667" x="1317.1875" y="942.8101">List&lt;String&gt; getTokensFromHeader(HttpServletRequest, String headerName)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1295.3125" x2="1490.625" y1="918.7347" y2="918.7347"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="1493.75" y="922.5444">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1559.375" x2="1754.6875" y1="918.7347" y2="918.7347"/><polygon fill="#FFFF44" points="1305.7292,974.3469,1309.8958,978.5136,1305.7292,982.6803,1301.5625,978.5136" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="380.2083" x="1317.1875" y="986.4665">boolean acceptWebSocket(HttpServletRequest, HttpServletResponse)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1295.3125" x2="1495.8333" y1="962.3912" y2="962.3912"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="52.0833" x="1498.9583" y="966.2008">(filtering)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1554.1667" x2="1754.6875" y1="962.3912" y2="962.3912"/><polygon fill="#FFFF44" points="1305.7292,1018.0033,1309.8958,1022.17,1305.7292,1026.3367,1301.5625,1022.17" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="293.75" x="1317.1875" y="1030.1229">String selectSubProtocol(List&lt;String&gt; subProtocols)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1295.3125" x2="1495.3125" y1="1006.0476" y2="1006.0476"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="1498.4375" y="1009.8572">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1554.6875" x2="1754.6875" y1="1006.0476" y2="1006.0476"/><!--MD5=[1f3e3664e3400c6ba8c8eacf87eeb6eb]
+class CsrfPreventionRequestCycleListener--><rect fill="#282828" height="48.055" id="CsrfPreventionRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="271.875" x="1847.3958" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="271.875" x="1847.3958" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="271.875" x="1847.3958" y="383.5286"/><rect fill="none" height="48.055" id="CsrfPreventionRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="271.875" x="1847.3958" y="360.4736"/><ellipse cx="1861.9792" cy="376.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1863.8896,380.5929 Q1863.4623,380.8126 1862.9924,380.9224 Q1862.5224,381.0323 1862.0036,381.0323 Q1860.1603,381.0323 1859.1899,379.8177 Q1858.2194,378.6031 1858.2194,376.3082 Q1858.2194,374.0072 1859.1899,372.7926 Q1860.1603,371.578 1862.0036,371.578 Q1862.5224,371.578 1862.9985,371.6878 Q1863.4745,371.7977 1863.8896,372.0174 L1863.8896,374.0194 Q1863.4257,373.5921 1862.9893,373.3938 Q1862.5529,373.1954 1862.089,373.1954 Q1861.1003,373.1954 1860.5967,373.9797 Q1860.0932,374.764 1860.0932,376.3082 Q1860.0932,377.8463 1860.5967,378.6306 Q1861.1003,379.4149 1862.089,379.4149 Q1862.5529,379.4149 1862.9893,379.2165 Q1863.4257,379.0181 1863.8896,378.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="234.375" x="1878.6458" y="380.8919">CsrfPreventionRequestCycleListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1848.4375" x2="2118.2292" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1848.4375" x2="2118.2292" y1="400.1953" y2="400.1953"/><!--MD5=[44e89658917e4b145290ba86666d2d31]
+class WebSocketAwareCsrfPreventionRequestCycleListener--><rect codeLine="43" fill="#282828" height="48.055" id="WebSocketAwareCsrfPreventionRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="381.25" x="1792.7083" y="884.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="381.25" x="1792.7083" y="884.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="381.25" x="1792.7083" y="908.0078"/><rect codeLine="43" fill="none" height="48.055" id="WebSocketAwareCsrfPreventionRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="381.25" x="1792.7083" y="884.9528"/><ellipse cx="1807.2917" cy="900.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1809.2021,905.072 Q1808.7748,905.2917 1808.3049,905.4016 Q1807.8349,905.5115 1807.3161,905.5115 Q1805.4728,905.5115 1804.5024,904.2969 Q1803.5319,903.0823 1803.5319,900.7874 Q1803.5319,898.4863 1804.5024,897.2717 Q1805.4728,896.0571 1807.3161,896.0571 Q1807.8349,896.0571 1808.311,896.167 Q1808.787,896.2769 1809.2021,896.4966 L1809.2021,898.4985 Q1808.7382,898.0713 1808.3018,897.8729 Q1807.8654,897.6746 1807.4015,897.6746 Q1806.4128,897.6746 1805.9092,898.4589 Q1805.4057,899.2432 1805.4057,900.7874 Q1805.4057,902.3254 1805.9092,903.1097 Q1806.4128,903.894 1807.4015,903.894 Q1807.8654,903.894 1808.3018,903.6957 Q1808.7382,903.4973 1809.2021,903.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="343.75" x="1823.9583" y="905.3711">WebSocketAwareCsrfPreventionRequestCycleListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1793.75" x2="2172.9167" y1="916.3411" y2="916.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1793.75" x2="2172.9167" y1="924.6745" y2="924.6745"/><!--MD5=[f1cb45ee3ff75c9ae346429c68eb4912]
+class ResourceIsolationRequestCycleListener--><rect fill="#282828" height="48.055" id="ResourceIsolationRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="2265.625" y="360.4736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="2265.625" y="360.4736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="291.6667" x="2265.625" y="383.5286"/><rect fill="none" height="48.055" id="ResourceIsolationRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="291.6667" x="2265.625" y="360.4736"/><ellipse cx="2280.2083" cy="376.1678" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2282.1187,380.5929 Q2281.6915,380.8126 2281.2215,380.9224 Q2280.7515,381.0323 2280.2327,381.0323 Q2278.3895,381.0323 2277.419,379.8177 Q2276.4486,378.6031 2276.4486,376.3082 Q2276.4486,374.0072 2277.419,372.7926 Q2278.3895,371.578 2280.2327,371.578 Q2280.7515,371.578 2281.2276,371.6878 Q2281.7037,371.7977 2282.1187,372.0174 L2282.1187,374.0194 Q2281.6549,373.5921 2281.2185,373.3938 Q2280.7821,373.1954 2280.3182,373.1954 Q2279.3294,373.1954 2278.8259,373.9797 Q2278.3223,374.764 2278.3223,376.3082 Q2278.3223,377.8463 2278.8259,378.6306 Q2279.3294,379.4149 2280.3182,379.4149 Q2280.7821,379.4149 2281.2185,379.2165 Q2281.6549,379.0181 2282.1187,378.5909 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="254.1667" x="2296.875" y="380.8919">ResourceIsolationRequestCycleListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2266.6667" x2="2556.25" y1="391.862" y2="391.862"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2266.6667" x2="2556.25" y1="400.1953" y2="400.1953"/><!--MD5=[5477669f27bebcc499d770bc11657cd9]
+class WebSocketAwareResourceIsolationRequestCycleListener--><rect codeLine="48" fill="#282828" height="48.055" id="WebSocketAwareResourceIsolationRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="401.0417" x="2210.9375" y="884.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="401.0417" x="2210.9375" y="884.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="401.0417" x="2210.9375" y="908.0078"/><rect codeLine="48" fill="none" height="48.055" id="WebSocketAwareResourceIsolationRequestCycleListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="401.0417" x="2210.9375" y="884.9528"/><ellipse cx="2225.5208" cy="900.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2227.4312,905.072 Q2227.004,905.2917 2226.534,905.4016 Q2226.064,905.5115 2225.5452,905.5115 Q2223.702,905.5115 2222.7315,904.2969 Q2221.7611,903.0823 2221.7611,900.7874 Q2221.7611,898.4863 2222.7315,897.2717 Q2223.702,896.0571 2225.5452,896.0571 Q2226.064,896.0571 2226.5401,896.167 Q2227.0162,896.2769 2227.4312,896.4966 L2227.4312,898.4985 Q2226.9674,898.0713 2226.531,897.8729 Q2226.0946,897.6746 2225.6307,897.6746 Q2224.6419,897.6746 2224.1384,898.4589 Q2223.6348,899.2432 2223.6348,900.7874 Q2223.6348,902.3254 2224.1384,903.1097 Q2224.6419,903.894 2225.6307,903.894 Q2226.0946,903.894 2226.531,903.6957 Q2226.9674,903.4973 2227.4312,903.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="363.5417" x="2242.1875" y="905.3711">WebSocketAwareResourceIsolationRequestCycleListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2211.9792" x2="2610.9375" y1="916.3411" y2="916.3411"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2211.9792" x2="2610.9375" y1="924.6745" y2="924.6745"/><!--MD5=[a911c36e6ee8ce334b3eae1015b2d800]
+class WebSocketSettings--><rect codeLine="60" fill="#282828" height="661.2345" id="WebSocketSettings" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="520.8333" x="2593.75" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="520.8333" x="2593.75" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="520.8333" x="2593.75" y="76.7578"/><rect codeLine="60" fill="none" height="661.2345" id="WebSocketSettings" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="520.8333" x="2593.75" y="53.7028"/><ellipse cx="2785.4167" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2787.3271,73.822 Q2786.8998,74.0417 2786.4299,74.1516 Q2785.9599,74.2615 2785.4411,74.2615 Q2783.5978,74.2615 2782.6274,73.0469 Q2781.6569,71.8323 2781.6569,69.5374 Q2781.6569,67.2363 2782.6274,66.0217 Q2783.5978,64.8071 2785.4411,64.8071 Q2785.9599,64.8071 2786.436,64.917 Q2786.912,65.0269 2787.3271,65.2466 L2787.3271,67.2485 Q2786.8632,66.8213 2786.4268,66.6229 Q2785.9904,66.4246 2785.5265,66.4246 Q2784.5378,66.4246 2784.0342,67.2089 Q2783.5307,67.9932 2783.5307,69.5374 Q2783.5307,71.0754 2784.0342,71.8597 Q2784.5378,72.644 2785.5265,72.644 Q2785.9904,72.644 2786.4268,72.4457 Q2786.8632,72.2473 2787.3271,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="2808.3333" y="74.1211">WebSocketSettings</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2594.7917" x2="3113.5417" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="3113.5417" y1="93.4245" y2="93.4245"/><ellipse cx="2605.2083" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="312.5" x="2616.6667" y="111.794">IWebSocketConnectionRegistry getConnectionRegistry()</text><ellipse cx="2605.2083" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="415.625" x="2616.6667" y="131.5389">WebSocketSettings setConnectionRegistry(IWebSocketConnectionRegistry)</text><ellipse cx="2605.2083" cy="168.2841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="404.1667" x="2616.6667" y="175.1953">WebRequest newWebSocketRequest(HttpServletRequest, String filterPath)</text><ellipse cx="2605.2083" cy="188.029" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="351.0417" x="2616.6667" y="194.9402">WebResponse newWebSocketResponse(IWebSocketConnection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="2827.0833" y1="151.12" y2="151.12"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="2830.2083" y="154.9296">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2881.25" x2="3113.5417" y1="151.12" y2="151.12"/><ellipse cx="2605.2083" cy="231.6854" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="277.0833" x="2616.6667" y="238.5966">IWebSocketConnectionFilter getConnectionFilter()</text><ellipse cx="2605.2083" cy="251.4303" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="169.7917" x="2616.6667" y="258.3415">CharSequence getFilterPrefix()</text><ellipse cx="2605.2083" cy="271.1751" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="300" x="2616.6667" y="278.0863">void setConnectionFilter(IWebSocketConnectionFilter)</text><ellipse cx="2605.2083" cy="290.92" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="254.1667" x="2616.6667" y="297.8312">void setFilterPrefix(CharSequence filterPrefix)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="2825" y1="214.5213" y2="214.5213"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="52.0833" x="2828.125" y="218.3309">(filtering)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2883.3333" x2="3113.5417" y1="214.5213" y2="214.5213"/><ellipse cx="2605.2083" cy="334.5764" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="2616.6667" y="341.4876">Executor getSendPayloadExecutor()</text><ellipse cx="2605.2083" cy="354.3213" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="263.5417" x="2616.6667" y="361.2325">Executor getWebSocketPushMessageExecutor()</text><ellipse cx="2605.2083" cy="374.0662" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="488.5417" x="2616.6667" y="380.9774">WebSocketRequestHandler newWebSocketRequestHandler(Page, IWebSocketConnection)</text><ellipse cx="2605.2083" cy="393.811" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="431.25" x="2616.6667" y="400.7222">void setNotifyOnCloseEvent(Function&lt;Integer,Boolean&gt; notifyOnCloseEvent)</text><ellipse cx="2605.2083" cy="413.5559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="445.8333" x="2616.6667" y="420.4671">void setNotifyOnErrorEvent(Function&lt;Throwable,Boolean&gt; notifyOnErrorEvent)</text><ellipse cx="2605.2083" cy="433.3008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="425" x="2616.6667" y="440.212">WebSocketSettings setSendPayloadExecutor(Executor sendPayloadExecutor)</text><ellipse cx="2605.2083" cy="453.0457" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="366.6667" x="2616.6667" y="459.9569">WebSocketSettings setWebSocketPushMessageExecutor(Executor)</text><ellipse cx="2605.2083" cy="472.7905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="282.2917" x="2616.6667" y="479.7017">boolean shouldNotifyOnCloseEvent(int closeCode)</text><ellipse cx="2605.2083" cy="492.5354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="262.5" x="2616.6667" y="499.4466">boolean shouldNotifyOnErrorEvent(Throwable)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="2816.6667" y1="317.4123" y2="317.4123"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="2819.7917" y="321.2219">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2891.6667" x2="3113.5417" y1="317.4123" y2="317.4123"/><ellipse cx="2605.2083" cy="536.1918" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="151.0417" x="2616.6667" y="543.103">CharSequence getBaseUrl()</text><ellipse cx="2605.2083" cy="555.9367" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="91.6667" x="2616.6667" y="562.8479">Integer getPort()</text><ellipse cx="2605.2083" cy="575.6816" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="129.1667" x="2616.6667" y="582.5928">Integer getSecurePort()</text><ellipse cx="2605.2083" cy="595.4264" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="219.7917" x="2616.6667" y="602.3376">void setBaseUrl(CharSequence baseUrl)</text><ellipse cx="2605.2083" cy="615.1713" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="130.2083" x="2616.6667" y="622.0825">void setPort(int wsPort)</text><ellipse cx="2605.2083" cy="634.9162" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="173.9583" x="2616.6667" y="641.8274">void setSecurePort(int wssPort)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="2824.4792" y1="519.0277" y2="519.0277"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="2827.6042" y="522.8373">(network)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2883.8542" x2="3113.5417" y1="519.0277" y2="519.0277"/><ellipse cx="2605.2083" cy="678.5726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="2616.6667" y="685.4838">CharSequence getContextPath()</text><ellipse cx="2605.2083" cy="698.3175" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="270.8333" x="2616.6667" y="705.2287">void setContextPath(CharSequence contextPath)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2594.7917" x2="2834.375" y1="661.4085" y2="661.4085"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="2837.5" y="665.2181">(path)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2873.9583" x2="3113.5417" y1="661.4085" y2="661.4085"/><!--MD5=[e154d122519e62b71286f89079e10697]
+reverse link WicketFilter to AbstractUpgradeFilter--><path codeLine="9" d="M1525,429.8278 C1525,505.8695 1525,663.8695 1525,777.432 " fill="none" id="WicketFilter-backto-AbstractUpgradeFilter" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1517.7083,429.432,1525,408.5986,1532.2917,429.432,1517.7083,429.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b9eb2629157ec0f649e187a68a74640a]
+reverse link Executor to WebSocketSettings.SameThreadExecutor--><path codeLine="32" d="M692.4063,428.2132 C732.8125,533.7445 836.25,803.9424 867.1771,884.7236 " fill="none" id="Executor-backto-WebSocketSettings.SameThreadExecutor" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="685.5313,430.6611,684.8958,408.5986,699.1563,425.4424,685.5313,430.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7ce8a5878d8caaef198ecbb66fb9c267]
+reverse link ThreadFactory to WebSocketSettings.ThreadFactory--><path codeLine="37" d="M97.9167,429.5465 C97.9167,536.0049 97.9167,804.2757 97.9167,884.7236 " fill="none" id="ThreadFactory-backto-WebSocketSettings.ThreadFactory" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="90.625,429.432,97.9167,408.5986,105.2083,429.432,90.625,429.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[466d207e13603385df2a2d0fdb9d98d8]
+reverse link CsrfPreventionRequestCycleListener to WebSocketAwareCsrfPreventionRequestCycleListener--><path codeLine="42" d="M1983.3333,429.5465 C1983.3333,536.0049 1983.3333,804.2757 1983.3333,884.7236 " fill="none" id="CsrfPreventionRequestCycleListener-backto-WebSocketAwareCsrfPreventionRequestCycleListener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1976.0417,429.432,1983.3333,408.5986,1990.625,429.432,1976.0417,429.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[97d2664c22deb462faa4ed6f38c9e028]
+reverse link ResourceIsolationRequestCycleListener to WebSocketAwareResourceIsolationRequestCycleListener--><path codeLine="47" d="M2411.4583,429.5465 C2411.4583,536.0049 2411.4583,804.2757 2411.4583,884.7236 " fill="none" id="ResourceIsolationRequestCycleListener-backto-WebSocketAwareResourceIsolationRequestCycleListener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2404.1667,429.432,2411.4583,408.5986,2418.75,429.432,2404.1667,429.432" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3812cb71c793808641d16887271aaf24]
+reverse link Executor to WebSocketSettings.WebSocketPushMessageExecutor--><path codeLine="52" d="M659.7292,428.0778 C623.1667,523.5778 534.7708,754.4632 495.4583,857.1611 " fill="none" id="Executor-backto-WebSocketSettings.WebSocketPushMessageExecutor" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="652.9271,425.4424,667.1875,408.5986,666.5521,430.6611,652.9271,425.4424" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f99c38311ab74e3718152f39695fe3c7]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.protocol.ws"
+    
+    interface ThreadFactory
+    interface Executor
+    
+    WicketFilter <|- - AbstractUpgradeFilter
+    class AbstractUpgradeFilter
+    {
+        - -(constructors)- -
+        +AbstractUpgradeFilter()
+        +AbstractUpgradeFilter(WebApplication)
+        - -
+        #boolean verifyOrigin(String origin)
+        - -(collection)- -
+        #List<String> getTokensFromHeader(HttpServletRequest, String headerName)
+        - -(filtering)- -
+        #boolean acceptWebSocket(HttpServletRequest, HttpServletResponse)
+        - -(network)- -
+        #String selectSubProtocol(List<String> subProtocols)
+    }
+    
+    class WebSocketSettings.Holder
+    {
+        - -
+        +WebSocketSettings get(Application)
+        +void set(Application, WebSocketSettings)
+    }
+    
+    Executor <|- - WebSocketSettings.SameThreadExecutor
+    class WebSocketSettings.SameThreadExecutor
+    {
+    }
+    
+    ThreadFactory <|- - WebSocketSettings.ThreadFactory
+    class WebSocketSettings.ThreadFactory
+    {
+    }
+    
+    CsrfPreventionRequestCycleListener <|- - WebSocketAwareCsrfPreventionRequestCycleListener
+    class WebSocketAwareCsrfPreventionRequestCycleListener
+    {
+    }
+    
+    ResourceIsolationRequestCycleListener <|- - WebSocketAwareResourceIsolationRequestCycleListener
+    class WebSocketAwareResourceIsolationRequestCycleListener
+    {
+    }
+    
+    Executor <|- - WebSocketSettings.WebSocketPushMessageExecutor
+    class WebSocketSettings.WebSocketPushMessageExecutor
+    {
+        - -(constructors)- -
+        +WebSocketPushMessageExecutor()
+        +WebSocketPushMessageExecutor(java.util.concurrent.Executor, java.util.concurrent.Executor)
+    }
+    
+    class WebSocketSettings
+    {
+        - -
+        +IWebSocketConnectionRegistry getConnectionRegistry()
+        +WebSocketSettings setConnectionRegistry(IWebSocketConnectionRegistry)
+        - -(factory)- -
+        +WebRequest newWebSocketRequest(HttpServletRequest, String filterPath)
+        +WebResponse newWebSocketResponse(IWebSocketConnection)
+        - -(filtering)- -
+        +IWebSocketConnectionFilter getConnectionFilter()
+        +CharSequence getFilterPrefix()
+        +void setConnectionFilter(IWebSocketConnectionFilter)
+        +void setFilterPrefix(CharSequence filterPrefix)
+        - -(messaging)- -
+        +Executor getSendPayloadExecutor()
+        +Executor getWebSocketPushMessageExecutor()
+        +WebSocketRequestHandler newWebSocketRequestHandler(Page, IWebSocketConnection)
+        +void setNotifyOnCloseEvent(Function<Integer,Boolean> notifyOnCloseEvent)
+        +void setNotifyOnErrorEvent(Function<Throwable,Boolean> notifyOnErrorEvent)
+        +WebSocketSettings setSendPayloadExecutor(Executor sendPayloadExecutor)
+        +WebSocketSettings setWebSocketPushMessageExecutor(Executor)
+        +boolean shouldNotifyOnCloseEvent(int closeCode)
+        +boolean shouldNotifyOnErrorEvent(Throwable)
+        - -(network)- -
+        +CharSequence getBaseUrl()
+        +Integer getPort()
+        +Integer getSecurePort()
+        +void setBaseUrl(CharSequence baseUrl)
+        +void setPort(int wsPort)
+        +void setSecurePort(int wssPort)
+        - -(path)- -
+        +CharSequence getContextPath()
+        +void setContextPath(CharSequence contextPath)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.protocol.ws"
+    
+    interface ThreadFactory
+    interface Executor
+    
+    WicketFilter <|- - AbstractUpgradeFilter
+    class AbstractUpgradeFilter
+    {
+        - -(constructors)- -
+        +AbstractUpgradeFilter()
+        +AbstractUpgradeFilter(WebApplication)
+        - -
+        #boolean verifyOrigin(String origin)
+        - -(collection)- -
+        #List<String> getTokensFromHeader(HttpServletRequest, String headerName)
+        - -(filtering)- -
+        #boolean acceptWebSocket(HttpServletRequest, HttpServletResponse)
+        - -(network)- -
+        #String selectSubProtocol(List<String> subProtocols)
+    }
+    
+    class WebSocketSettings.Holder
+    {
+        - -
+        +WebSocketSettings get(Application)
+        +void set(Application, WebSocketSettings)
+    }
+    
+    Executor <|- - WebSocketSettings.SameThreadExecutor
+    class WebSocketSettings.SameThreadExecutor
+    {
+    }
+    
+    ThreadFactory <|- - WebSocketSettings.ThreadFactory
+    class WebSocketSettings.ThreadFactory
+    {
+    }
+    
+    CsrfPreventionRequestCycleListener <|- - WebSocketAwareCsrfPreventionRequestCycleListener
+    class WebSocketAwareCsrfPreventionRequestCycleListener
+    {
+    }
+    
+    ResourceIsolationRequestCycleListener <|- - WebSocketAwareResourceIsolationRequestCycleListener
+    class WebSocketAwareResourceIsolationRequestCycleListener
+    {
+    }
+    
+    Executor <|- - WebSocketSettings.WebSocketPushMessageExecutor
+    class WebSocketSettings.WebSocketPushMessageExecutor
+    {
+        - -(constructors)- -
+        +WebSocketPushMessageExecutor()
+        +WebSocketPushMessageExecutor(java.util.concurrent.Executor, java.util.concurrent.Executor)
+    }
+    
+    class WebSocketSettings
+    {
+        - -
+        +IWebSocketConnectionRegistry getConnectionRegistry()
+        +WebSocketSettings setConnectionRegistry(IWebSocketConnectionRegistry)
+        - -(factory)- -
+        +WebRequest newWebSocketRequest(HttpServletRequest, String filterPath)
+        +WebResponse newWebSocketResponse(IWebSocketConnection)
+        - -(filtering)- -
+        +IWebSocketConnectionFilter getConnectionFilter()
+        +CharSequence getFilterPrefix()
+        +void setConnectionFilter(IWebSocketConnectionFilter)
+        +void setFilterPrefix(CharSequence filterPrefix)
+        - -(messaging)- -
+        +Executor getSendPayloadExecutor()
+        +Executor getWebSocketPushMessageExecutor()
+        +WebSocketRequestHandler newWebSocketRequestHandler(Page, IWebSocketConnection)
+        +void setNotifyOnCloseEvent(Function<Integer,Boolean> notifyOnCloseEvent)
+        +void setNotifyOnErrorEvent(Function<Throwable,Boolean> notifyOnErrorEvent)
+        +WebSocketSettings setSendPayloadExecutor(Executor sendPayloadExecutor)
+        +WebSocketSettings setWebSocketPushMessageExecutor(Executor)
+        +boolean shouldNotifyOnCloseEvent(int closeCode)
+        +boolean shouldNotifyOnErrorEvent(Throwable)
+        - -(network)- -
+        +CharSequence getBaseUrl()
+        +Integer getPort()
+        +Integer getSecurePort()
+        +void setBaseUrl(CharSequence baseUrl)
+        +void setPort(int wsPort)
+        +void setSecurePort(int wssPort)
+        - -(path)- -
+        +CharSequence getContextPath()
+        +void setContextPath(CharSequence contextPath)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

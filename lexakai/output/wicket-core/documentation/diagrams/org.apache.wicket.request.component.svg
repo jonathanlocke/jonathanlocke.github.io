@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="595.8333px" preserveAspectRatio="none" style="width:459px;height:595px;background:#333333;" version="1.1" viewBox="0 0 459 595" width="459.375px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="403.125" x="20.8333" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="380.2083" x="32.2917" y="30.5583">org.apache.wicket.request.component</text><!--MD5=[f0829cca7e4064106892e9c03995ca2b]
+class IRequestableComponent--><rect codeLine="23" fill="#282828" height="277.7486" id="IRequestableComponent" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="7.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="259.375" x="7.2917" y="76.7578"/><rect codeLine="23" fill="none" height="277.7486" id="IRequestableComponent" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="259.375" x="7.2917" y="53.7028"/><ellipse cx="50" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M47.404,66.5588 L47.404,64.9719 L52.83,64.9719 L52.83,66.5588 L51.0173,66.5588 L51.0173,72.4976 L52.83,72.4976 L52.83,74.0845 L47.404,74.0845 L47.404,72.4976 L49.2167,72.4976 L49.2167,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="159.375" x="72.9167" y="74.1211">IRequestableComponent</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="8.3333" x2="265.625" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="265.625" y1="93.4245" y2="93.4245"/><ellipse cx="18.75" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="30.2083" y="111.794">void detach()</text><ellipse cx="18.75" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="227.0833" x="30.2083" y="131.5389">IRequestableComponent get(String path)</text><ellipse cx="18.75" cy="144.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="152.0833" x="30.2083" y="151.2838">IRequestablePage getPage()</text><ellipse cx="18.75" cy="188.029" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="176.0417" x="30.2083" y="194.9402">Behavior getBehaviorById(int id)</text><ellipse cx="18.75" cy="207.7738" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="150" x="30.2083" y="214.6851">int getBehaviorId(Behavior)</text><ellipse cx="18.75" cy="227.5187" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="72.9167" x="30.2083" y="234.4299">String getId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="108.8542" y1="170.8649" y2="170.8649"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="111.9792" y="174.6745">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="165.1042" x2="265.625" y1="170.8649" y2="170.8649"/><ellipse cx="18.75" cy="271.1751" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="205.2083" x="30.2083" y="278.0863">boolean canCallListenerAfterExpiry()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="99.4792" y1="254.011" y2="254.011"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="102.6042" y="257.8206">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="174.4792" x2="265.625" y1="254.011" y2="254.011"/><ellipse cx="18.75" cy="314.8315" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="155.2083" x="30.2083" y="321.7428">String getPageRelativePath()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="117.1875" y1="297.6674" y2="297.6674"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="33.3333" x="120.3125" y="301.4771">(path)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="156.7708" x2="265.625" y1="297.6674" y2="297.6674"/><!--MD5=[43670cf36460ceb1b4b2b8597ddbc73d]
+class IManageablePage--><rect codeLine="22" fill="#282828" height="48.055" id="IManageablePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="148.9583" x="303.125" y="168.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="148.9583" x="303.125" y="168.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="148.9583" x="303.125" y="191.862"/><rect codeLine="22" fill="none" height="48.055" id="IManageablePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="148.9583" x="303.125" y="168.807"/><ellipse cx="317.7083" cy="184.5011" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M315.1123,181.663 L315.1123,180.0761 L320.5383,180.0761 L320.5383,181.663 L318.7256,181.663 L318.7256,187.6017 L320.5383,187.6017 L320.5383,189.1886 L315.1123,189.1886 L315.1123,187.6017 L316.925,187.6017 L316.925,181.663 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="111.4583" x="334.375" y="189.2253">IManageablePage</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="304.1667" x2="451.0417" y1="200.1953" y2="200.1953"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="304.1667" x2="451.0417" y1="208.5286" y2="208.5286"/><!--MD5=[3523d2cf8a5d6f087f9374d7928a2a38]
+class IRequestablePage--><rect codeLine="26" fill="#282828" height="194.6025" id="IRequestablePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="238.5417" x="137.5" y="394.3278"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="238.5417" x="137.5" y="394.3278"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="238.5417" x="137.5" y="417.3828"/><rect codeLine="26" fill="none" height="194.6025" id="IRequestablePage" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="238.5417" x="137.5" y="394.3278"/><ellipse cx="192.7083" cy="410.022" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M190.1123,407.1838 L190.1123,405.5969 L195.5383,405.5969 L195.5383,407.1838 L193.7256,407.1838 L193.7256,413.1226 L195.5383,413.1226 L195.5383,414.7095 L190.1123,414.7095 L190.1123,413.1226 L191.925,413.1226 L191.925,407.1838 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="113.5417" x="215.625" y="414.7461">IRequestablePage</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="138.5417" x2="375" y1="425.7161" y2="425.7161"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="138.5417" x2="375" y1="434.0495" y2="434.0495"/><ellipse cx="148.9583" cy="445.5078" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="206.25" x="160.4167" y="452.419">PageParameters getPageParameters()</text><ellipse cx="148.9583" cy="465.2527" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="98.9583" x="160.4167" y="472.1639">void renderPage()</text><ellipse cx="148.9583" cy="484.9976" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="160.4167" y="491.9088">boolean wasCreatedBookmarkable()</text><ellipse cx="148.9583" cy="528.654" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="143.75" x="160.4167" y="535.5652">boolean isBookmarkable()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="138.5417" x2="230.2083" y1="511.4899" y2="511.4899"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="233.3333" y="515.2995">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="283.3333" x2="375" y1="511.4899" y2="511.4899"/><ellipse cx="148.9583" cy="572.3104" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="160.4167" y="579.2216">int getRenderCount()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="138.5417" x2="222.3958" y1="555.1463" y2="555.1463"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="225.5208" y="558.9559">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="291.1458" x2="375" y1="555.1463" y2="555.1463"/><!--MD5=[c4d34bd343ec0d275eb087aa135e2e42]
+reverse link IRequestableComponent to IRequestablePage--><path codeLine="24" d="M200.7396,351.8278 C206.5313,366.182 212.2708,380.4007 217.75,393.9632 " fill="none" id="IRequestableComponent-backto-IRequestablePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="193.875,354.2965,192.8438,332.2445,207.3958,348.8382,193.875,354.2965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2559fc7c49fca9655cab47f0344794e7]
+reverse link IManageablePage to IRequestablePage--><path codeLine="25" d="M360.1771,236.6195 C343.4688,277.6611 317.6667,341.0778 296.0104,394.2757 " fill="none" id="IManageablePage-backto-IRequestablePage" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="353.5104,233.6507,368.125,217.0986,367.0208,239.1507,353.5104,233.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[985da823fdc77237f2d003b3c820ff2a]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.component"
+    
+    interface IRequestableComponent
+    {
+        - -
+        +void detach()
+        +IRequestableComponent get(String path)
+        +IRequestablePage getPage()
+        - -(identity)- -
+        +Behavior getBehaviorById(int id)
+        +int getBehaviorId(Behavior)
+        +String getId()
+        - -(messaging)- -
+        +boolean canCallListenerAfterExpiry()
+        - -(path)- -
+        +String getPageRelativePath()
+    }
+    
+    interface IManageablePage
+    interface IRequestableComponent
+    IRequestableComponent <|- - IRequestablePage
+    IManageablePage <|- - IRequestablePage
+    interface IRequestablePage
+    {
+        - -
+        +PageParameters getPageParameters()
+        +void renderPage()
+        +boolean wasCreatedBookmarkable()
+        - -(checks)- -
+        +boolean isBookmarkable()
+        - -(collection)- -
+        +int getRenderCount()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.request.component"
+    
+    interface IRequestableComponent
+    {
+        - -
+        +void detach()
+        +IRequestableComponent get(String path)
+        +IRequestablePage getPage()
+        - -(identity)- -
+        +Behavior getBehaviorById(int id)
+        +int getBehaviorId(Behavior)
+        +String getId()
+        - -(messaging)- -
+        +boolean canCallListenerAfterExpiry()
+        - -(path)- -
+        +String getPageRelativePath()
+    }
+    
+    interface IManageablePage
+    interface IRequestableComponent
+    IRequestableComponent <|- - IRequestablePage
+    IManageablePage <|- - IRequestablePage
+    interface IRequestablePage
+    {
+        - -
+        +PageParameters getPageParameters()
+        +void renderPage()
+        +boolean wasCreatedBookmarkable()
+        - -(checks)- -
+        +boolean isBookmarkable()
+        - -(collection)- -
+        +int getRenderCount()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

@@ -1,0 +1,55 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.ajax.builtin.modal"
+    
+    abstract BasePage
+    
+    WebPage <|-- ModalContent1Page
+    class ModalContent1Page
+    {
+        --(constructors)--
+        +ModalContent1Page(PageReference, ModalWindow)
+    }
+    
+    WebPage <|-- ModalContent2Page
+    class ModalContent2Page
+    {
+        --(constructors)--
+        +ModalContent2Page(ModalWindow)
+    }
+    
+    BasePage <|-- ModalDialogPage
+    class ModalDialogPage
+    {
+        --(constructors)--
+        +ModalDialogPage()
+    }
+    
+    Fragment <|-- ModalDialogPage.ModalFragment
+    class ModalDialogPage.ModalFragment
+    {
+        --(constructors)--
+        +ModalFragment(String)
+    }
+    
+    Panel <|-- ModalPanel1
+    class ModalPanel1
+    {
+        --(constructors)--
+        +ModalPanel1(String)
+    }
+    
+    BasePage <|-- ModalWindowPage
+    class ModalWindowPage
+    {
+        --(constructors)--
+        +ModalWindowPage()
+        --
+        +String getResult()
+        +void setResult(String result)
+    }
+    
+@enduml
+

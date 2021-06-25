@@ -1,0 +1,26 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.session"
+    
+    interface HttpSessionListener
+    
+    HttpSessionListener <|-- SessionCountListener
+    class SessionCountListener
+    {
+        --
+        +void dec(HttpSessionEvent)
+        +void inc(HttpSessionEvent)
+    }
+    
+    WicketMetrics <|-- SessionCountListenerAspect
+    class SessionCountListenerAspect
+    {
+        --
+        +Object aroundDec(ProceedingJoinPoint)
+        +Object aroundInc(ProceedingJoinPoint)
+    }
+    
+@enduml
+

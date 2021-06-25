@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.template.border"
+    
+    WicketExamplePage <|-- Page1
+    class Page1
+    {
+        --(constructors)--
+        +Page1()
+    }
+    
+    WicketExamplePage <|-- Page2
+    class Page2
+    {
+        --(constructors)--
+        +Page2()
+    }
+    
+    Border <|-- TemplateBorder
+    class TemplateBorder
+    {
+        --(constructors)--
+        +TemplateBorder(String)
+    }
+    
+@enduml
+

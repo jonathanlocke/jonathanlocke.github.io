@@ -1,0 +1,14 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects"
+    
+    class WicketFilterInitAspect
+    {
+        --(lifecycle)--
+        +Object aroundInit(ProceedingJoinPoint)
+    }
+    
+@enduml
+

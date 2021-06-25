@@ -1,0 +1,46 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics"
+    
+    enum WicketMetrics.CounterOperation
+    {
+        DEC
+        INC
+    }
+    
+    class WicketMetrics
+    {
+        --
+        +MetricRegistry getMetricRegistry()
+        +WicketMetricsSettings getSettings()
+        +Object mark(String name, ProceedingJoinPoint)
+        --(collection)--
+        +Object count(String name, ProceedingJoinPoint, CounterOperation, Long value)
+        --(lifecycle)--
+        +void stopQuietly(Context)
+        --(naming)--
+        +String getFilterName()
+        +String renderClassName(ProceedingJoinPoint)
+        +void setFilterName(String filterName)
+        --(time)--
+        +Object measureTime(String name, ProceedingJoinPoint, boolean renderClass)
+        +Object measureTime(String name, ProceedingJoinPoint)
+    }
+    
+    class WicketMetricsSettings
+    {
+        --
+        +String getPrefix()
+        +void setEnabled(boolean enabled)
+        +void setPrefix(String prefix)
+        --(checks)--
+        +boolean isEnabled()
+        --(lifecycle)--
+        +void startJmxReporter()
+        +void stopJmxReporter()
+    }
+    
+@enduml
+

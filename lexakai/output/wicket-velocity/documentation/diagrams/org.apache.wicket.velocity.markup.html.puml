@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.velocity.markup.html"
+    
+    interface IMarkupCacheKeyProvider
+    interface IMarkupResourceStreamProvider
+    
+    Panel <|-- VelocityPanel
+    IMarkupResourceStreamProvider <|-- VelocityPanel
+    IMarkupCacheKeyProvider <|-- VelocityPanel
+    abstract class VelocityPanel
+    {
+        --(constructors)--
+        +VelocityPanel(String, IModel<? extends Map>)
+        --
+        +VelocityPanel forTemplateResource(String id, IModel<? extends Map>, IResourceStream templateResource)
+        #boolean escapeHtml()
+        #IResourceStream getTemplateResource()
+        #boolean throwVelocityExceptions()
+        --(parsing)--
+        #boolean parseGeneratedMarkup()
+    }
+    
+@enduml
+

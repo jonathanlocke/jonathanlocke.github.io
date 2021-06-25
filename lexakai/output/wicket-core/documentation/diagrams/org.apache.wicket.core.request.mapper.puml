@@ -1,0 +1,268 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.request.mapper"
+    
+    abstract AbstractMapper
+    abstract AbstractComponentMapper
+    abstract AbstractResourceReferenceMapper
+    abstract AbstractBookmarkableMapper
+    
+    interface IWicketInternalException
+    interface IRequestMapperDelegate
+    interface IRequestMapper
+    
+    AbstractComponentMapper <|-- AbstractBookmarkableMapper
+    AbstractBookmarkableMapper --> Url : "creates"
+    abstract class AbstractBookmarkableMapper
+    {
+        --(constructors)--
+        +AbstractBookmarkableMapper()
+        +AbstractBookmarkableMapper(String, IPageParametersEncoder)
+        --
+        #boolean checkPageClass(Class<? extends IRequestablePage> pageClass)
+        #boolean checkPageInstance(IRequestablePage)
+        #PageParameters extractPageParameters(Request, Url)
+        #int[] getMatchedSegmentSizes(Url)
+        #boolean pageMustHaveBeenCreatedBookmarkable()
+        #Locale resolveUserLocale()
+        #boolean setPlaceholders(PageParameters, Url)
+        --(checks)--
+        #boolean isFixedSegment(String segment)
+        --(collection)--
+        #List<MountPathSegment> getPathSegments(String[] segments)
+        --(factory)--
+        #PageParameters newPageParameters()
+        --(matching)--
+        +AbstractBookmarkableMapper setCaseSensitiveMatch(boolean isCaseSensitive)
+        #boolean isCaseSensitiveMatch()
+        #boolean segmentsMatch(String mountedSegment, String urlSegment)
+        --(messaging)--
+        #PageInfo getPageInfo(IPageRequestHandler)
+        #UrlInfo parseRequest(Request)
+        #IRequestHandler processBookmarkable(Class<? extends IRequestablePage> pageClass, PageParameters)
+        #IRequestHandler processHybrid(PageInfo, Class<? extends IRequestablePage> pageClass, PageParameters, Integer renderCount)
+        #IRequestHandler processListener(PageComponentInfo, Class<? extends IRequestablePage> pageClass, PageParameters)
+        --(network)--
+        #Url buildUrl(UrlInfo)
+        #boolean urlStartsWithMountedSegments(Url)
+    }
+    
+    AbstractMapper <|-- AbstractComponentMapper
+    IRequestMapper <|-- AbstractComponentMapper
+    abstract class AbstractComponentMapper
+    {
+        --(constructors)--
+        +AbstractComponentMapper()
+        --
+        #IMapperContext getContext()
+        #Class<? extends IRequestablePage> getPageClass(String name)
+        --(messaging)--
+        #void encodePageComponentInfo(Url, PageComponentInfo)
+        #PageComponentInfo getPageComponentInfo(Url)
+        --(naming)--
+        #String cleanClassName(String className)
+    }
+    
+    AbstractComponentMapper <|-- AbstractResourceReferenceMapper
+    abstract class AbstractResourceReferenceMapper
+    {
+    }
+    
+    AbstractResourceReferenceMapper <|-- BasicResourceReferenceMapper
+    class BasicResourceReferenceMapper
+    {
+        --(constructors)--
+        +BasicResourceReferenceMapper(IPageParametersEncoder, Supplier<? extends IResourceCachingStrategy>)
+        --
+        #IResourceCachingStrategy getCachingStrategy()
+        #Class<?> resolveClass(String name)
+        --(checks)--
+        #boolean canBeHandled(Url)
+        --(naming)--
+        #String getClassName(Class<?> scope)
+    }
+    
+    AbstractBookmarkableMapper <|-- BookmarkableMapper
+    class BookmarkableMapper
+    {
+        --(constructors)--
+        +BookmarkableMapper()
+        +BookmarkableMapper(IPageParametersEncoder)
+        --(network)--
+        #boolean urlStartsWithAndHasPageClass(Url, String... segments)
+    }
+    
+    IRequestMapper <|-- BufferedResponseMapper
+    class BufferedResponseMapper
+    {
+        --(constructors)--
+        +BufferedResponseMapper()
+        --(checks)--
+        #boolean hasBufferedResponse(Url)
+        --(collection)--
+        #BufferedWebResponse getAndRemoveBufferedResponse(Url)
+        --(identity)--
+        #String getSessionId()
+    }
+    
+    IRequestMapperDelegate <|-- CryptoMapper
+    class CryptoMapper
+    {
+        --(constructors)--
+        +CryptoMapper(IRequestMapper, Application)
+        +CryptoMapper(IRequestMapper, Supplier<ICrypt>)
+        --
+        +boolean getMarkEncryptedUrls()
+        #IMapperContext getContext()
+        #ICrypt getCrypt()
+        --(functional)--
+        +CryptoMapper setMarkEncryptedUrls(boolean markEncryptedUrls)
+        --(network)--
+        #Url decryptEntireUrl(Request, Url encryptedUrl)
+        #Url decryptRequestListenerParameter(Request, Url encryptedUrl)
+        #Url decryptUrl(Request, Url encryptedUrl)
+        #Url encryptEntireUrl(Url)
+        #Url encryptRequestListenerParameter(Url)
+        #Url encryptUrl(Url)
+    }
+    
+    class CryptoMapper.HashedSegmentGenerator
+    {
+        --(constructors)--
+        +HashedSegmentGenerator(String)
+        --(collection)--
+        +int hashString(String)
+        --(iteration)--
+        +String next()
+    }
+    
+    MountedMapper <|-- HomePageMapper
+    class HomePageMapper
+    {
+        --(constructors)--
+        +HomePageMapper(Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +HomePageMapper(Supplier<Class<? extends IRequestablePage>>)
+        +HomePageMapper(Class<? extends IRequestablePage>)
+    }
+    
+    interface IPageSource
+    IPageSource <|-- IMapperContext
+    interface IMapperContext
+    {
+        --
+        +Class<? extends IRequestablePage> getHomePageClass()
+        +String getNamespace()
+        +ResourceReferenceRegistry getResourceReferenceRegistry()
+        --(identity)--
+        +String getBookmarkableIdentifier()
+        +String getPageIdentifier()
+        +String getResourceIdentifier()
+    }
+    
+    interface IPageSource
+    {
+        --
+        +IRequestablePage getPageInstance(int pageId)
+        --(factory)--
+        +IRequestablePage newPageInstance(Class<? extends IRequestablePage> pageClass, PageParameters)
+    }
+    
+    class MapperUtils
+    {
+        --(messaging)--
+        +PageComponentInfo getPageComponentInfo(Url)
+        +PageComponentInfo parsePageComponentInfoParameter(Url.QueryParameter)
+    }
+    
+    class AbstractBookmarkableMapper.MountPathSegment
+    {
+        --(constructors)--
+        +MountPathSegment(int)
+        --
+        +String getFixedPart()
+        +int getMaxParameters()
+        +int getMinParameters()
+        +int getOptionalParameters()
+        +void setFixedPart(String fixedPart)
+        --(collection)--
+        +void addOptionalParameter()
+        +void addRequiredParameter()
+        +int getFixedPartSize()
+        +int getSegmentIndex()
+    }
+    
+    AbstractBookmarkableMapper <|-- MountedMapper
+    class MountedMapper
+    {
+        --(constructors)--
+        +MountedMapper(String, Class<? extends IRequestablePage>)
+        +MountedMapper(String, Class<? extends IRequestablePage>, IPageParametersEncoder)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>)
+        +MountedMapper(String, Supplier<Class<? extends IRequestablePage>>, IPageParametersEncoder)
+        --
+        #boolean redirectFromHomePage()
+    }
+    
+    AbstractBookmarkableMapper <|-- PackageMapper
+    class PackageMapper
+    {
+        --(constructors)--
+        +PackageMapper(String, PackageName)
+        +PackageMapper(String, PackageName, IPageParametersEncoder)
+        --(network)--
+        #String transformForUrl(String className)
+        #String transformFromUrl(String classNameAlias)
+    }
+    
+    AbstractComponentMapper <|-- PageInstanceMapper
+    class PageInstanceMapper
+    {
+        --(constructors)--
+        +PageInstanceMapper()
+    }
+    
+    AbstractBookmarkableMapper <|-- ResourceMapper
+    class ResourceMapper
+    {
+        --(constructors)--
+        +ResourceMapper(String, ResourceReference)
+        +ResourceMapper(String, ResourceReference, IPageParametersEncoder)
+        --
+        #IResourceCachingStrategy getCachingStrategy()
+        --(collection)--
+        #void addCachingDecoration(Url, PageParameters)
+        #void removeCachingDecoration(Url, PageParameters)
+    }
+    
+    ParentPathReferenceRewriter <|-- ResourceReferenceMapper
+    class ResourceReferenceMapper
+    {
+        --(constructors)--
+        +ResourceReferenceMapper(IPageParametersEncoder, Supplier<String>, Supplier<IResourceCachingStrategy>)
+    }
+    
+    WicketRuntimeException <|-- StalePageException
+    IWicketInternalException <|-- StalePageException
+    class StalePageException
+    {
+        --(constructors)--
+        +StalePageException(IRequestablePage)
+        --
+        +IRequestablePage getPage()
+    }
+    
+    class AbstractBookmarkableMapper.UrlInfo
+    {
+        --(constructors)--
+        +UrlInfo(PageComponentInfo, Class<? extends IRequestablePage>, PageParameters)
+        --
+        +Class<? extends IRequestablePage> getPageClass()
+        +PageParameters getPageParameters()
+        --(messaging)--
+        +PageComponentInfo getPageComponentInfo()
+    }
+    
+@enduml
+

@@ -1,0 +1,133 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.repeater"
+    
+    abstract AbstractRepeater
+    
+    interface Serializable
+    interface IItemReuseStrategy
+    interface Iterator
+    interface IPageableItems
+    interface Comparator
+    
+    RefreshingView <|-- AbstractPageableView
+    IPageableItems <|-- AbstractPageableView
+    abstract class AbstractPageableView<T>
+    {
+        --(constructors)--
+        +AbstractPageableView(String)
+        +AbstractPageableView(String, IModel<? extends Collection<? extends T>>)
+        --(collection)--
+        +long getFirstItemOffset()
+        +long getRowCount()
+        +long getViewSize()
+        #Iterator<IModel<T>> getItemModels(long offset, long size)
+        #long internalGetItemCount()
+    }
+    
+    WebMarkupContainer <|-- AbstractRepeater
+    abstract class AbstractRepeater
+    {
+        --(constructors)--
+        +AbstractRepeater(String)
+        +AbstractRepeater(String, IModel<?>)
+        --
+        #void onPopulate()
+        #void renderChild(Component child)
+        --(collection)--
+        #Iterator<? extends Component> renderIterator()
+    }
+    
+    Iterator <|-- AbstractPageableView.CappedIteratorAdapter
+    class AbstractPageableView.CappedIteratorAdapter<T>
+    {
+        --(constructors)--
+        +CappedIteratorAdapter(Iterator<IModel<T>>, long)
+    }
+    
+    IItemReuseStrategy <|-- DefaultItemReuseStrategy
+    class DefaultItemReuseStrategy
+    {
+        --
+        +IItemReuseStrategy getInstance()
+    }
+    
+    interface IItemFactory<T>
+    {
+        --(factory)--
+        +Item<T> newItem(int index, IModel<T>)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IItemReuseStrategy
+    interface IItemReuseStrategy
+    {
+        --(collection)--
+        +Iterator<Item<T>> getItems(IItemFactory<T>, Iterator<IModel<T>> newModels, Iterator<Item<T>> existingItems)
+    }
+    
+    Comparator <|-- Item.IndexComparator
+    Serializable <|-- Item.IndexComparator
+    class Item.IndexComparator
+    {
+        --
+        +Comparator<Item<?>> getInstance()
+    }
+    
+    ListItem <|-- Item
+    class Item<T>
+    {
+        --(constructors)--
+        +Item(String, int)
+        +Item(String, int, IModel<T>)
+        --(collection)--
+        +String getPrimaryKey()
+    }
+    
+    Item <|-- OddEvenItem
+    class OddEvenItem<T>
+    {
+        --(constructors)--
+        +OddEvenItem(String, int, IModel<T>)
+    }
+    
+    RepeatingView <|-- RefreshingView
+    abstract class RefreshingView<T>
+    {
+        --(constructors)--
+        +RefreshingView(String)
+        +RefreshingView(String, IModel<?>)
+        --
+        +IItemReuseStrategy getItemReuseStrategy()
+        +RefreshingView<T> setItemReuseStrategy(IItemReuseStrategy)
+        #void populateItem(Item<T>)
+        --(collection)--
+        +Iterator<Item<T>> getItems()
+        #void addItems(Iterator<Item<T>> items)
+        #Iterator<IModel<T>> getItemModels()
+        --(factory)--
+        #Item<T> newItem(String id, int index, IModel<T>)
+        #IItemFactory<T> newItemFactory()
+    }
+    
+    AbstractRepeater <|-- RepeatingView
+    class RepeatingView
+    {
+        --(constructors)--
+        +RepeatingView(String)
+        +RepeatingView(String, IModel<?>)
+        --(factory)--
+        +String newChildId()
+    }
+    
+    IItemReuseStrategy <|-- ReuseIfModelsEqualStrategy
+    class ReuseIfModelsEqualStrategy
+    {
+        --
+        +IItemReuseStrategy getInstance()
+    }
+    
+@enduml
+

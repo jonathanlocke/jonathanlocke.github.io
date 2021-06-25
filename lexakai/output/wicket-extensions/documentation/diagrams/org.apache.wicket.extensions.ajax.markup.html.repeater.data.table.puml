@@ -1,0 +1,31 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.repeater.data.table"
+    
+    DataTable <|-- AjaxFallbackDefaultDataTable
+    class AjaxFallbackDefaultDataTable<T, S>
+    {
+        --(constructors)--
+        +AjaxFallbackDefaultDataTable(String, List<? extends IColumn<T, S>>, ISortableDataProvider<T, S>, int)
+    }
+    
+    HeadersToolbar <|-- AjaxFallbackHeadersToolbar
+    class AjaxFallbackHeadersToolbar<S>
+    {
+        --(constructors)--
+        +AjaxFallbackHeadersToolbar(DataTable<?, S>, ISortStateLocator<S>)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+    }
+    
+    NavigationToolbar <|-- AjaxNavigationToolbar
+    class AjaxNavigationToolbar
+    {
+        --(constructors)--
+        +AjaxNavigationToolbar(DataTable<?, ?>)
+    }
+    
+@enduml
+

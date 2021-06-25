@@ -1,0 +1,53 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.customresourceloading"
+    
+    interface IMarkupCacheKeyProvider
+    interface IMarkupResourceStreamProvider
+    
+    WicketExamplePage <|-- AlternativePageFromWebContext
+    class AlternativePageFromWebContext
+    {
+        --(constructors)--
+        +AlternativePageFromWebContext()
+    }
+    
+    WicketExampleApplication <|-- CustomResourceLoadingApplication
+    class CustomResourceLoadingApplication
+    {
+        --(constructors)--
+        +CustomResourceLoadingApplication()
+    }
+    
+    ResourceStreamLocator <|-- CustomResourceLoadingApplication.CustomResourceStreamLocator
+    class CustomResourceLoadingApplication.CustomResourceStreamLocator
+    {
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    WicketExamplePage <|-- PageFromWebContext
+    class PageFromWebContext
+    {
+        --(constructors)--
+        +PageFromWebContext()
+    }
+    
+    WicketExamplePage <|-- PageWithCustomLoading
+    IMarkupResourceStreamProvider <|-- PageWithCustomLoading
+    IMarkupCacheKeyProvider <|-- PageWithCustomLoading
+    class PageWithCustomLoading
+    {
+        --(constructors)--
+        +PageWithCustomLoading()
+    }
+    
+@enduml
+

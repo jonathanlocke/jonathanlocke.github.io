@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authroles.authorization.strategies.role"
+    
+    interface IClusterable
+    
+    IAuthorizationStrategy.AllowAllAuthorizationStrategy <|-- AbstractRoleAuthorizationStrategy
+    abstract class AbstractRoleAuthorizationStrategy
+    {
+        --(constructors)--
+        +AbstractRoleAuthorizationStrategy(IRoleCheckingStrategy)
+        --(checks)--
+        #boolean hasAny(Roles)
+        #boolean isEmpty(Roles)
+    }
+    
+    interface IRoleCheckingStrategy
+    {
+        --(checks)--
+        +boolean hasAnyRole(Roles)
+    }
+    
+    CompoundAuthorizationStrategy <|-- RoleAuthorizationStrategy
+    class RoleAuthorizationStrategy
+    {
+        --(constructors)--
+        +RoleAuthorizationStrategy(IRoleCheckingStrategy)
+    }
+    
+    HashSet <|-- Roles
+    IClusterable <|-- Roles
+    class Roles
+    {
+        --(constructors)--
+        +Roles()
+        +Roles(Collection<String>)
+        +Roles(String)
+        +Roles(String[])
+        --(checks)--
+        +boolean hasAllRoles(Roles)
+        +boolean hasAnyRole(Roles)
+        +boolean hasRole(String role)
+    }
+    
+@enduml
+

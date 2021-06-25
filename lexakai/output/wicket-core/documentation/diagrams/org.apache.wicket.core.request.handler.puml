@@ -1,0 +1,250 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.request.handler"
+    
+    interface IPageClassRequestHandler
+    interface IRequestHandler
+    interface IClusterable
+    interface IPartialPageRequestHandler
+    interface IPageRequestHandler
+    interface IPageAndComponentProvider
+    interface IComponentRequestHandler
+    interface IPageProvider
+    interface ILoggableRequestHandler
+    interface IRequestHandlerDelegate
+    
+    IPartialPageRequestHandler <|-- AbstractPartialPageRequestHandler
+    abstract class AbstractPartialPageRequestHandler
+    {
+        --(constructors)--
+        #AbstractPartialPageRequestHandler(Page)
+        --
+        #PartialPageUpdate getUpdate()
+    }
+    
+    IPageRequestHandler <|-- BookmarkableListenerRequestHandler
+    IComponentRequestHandler <|-- BookmarkableListenerRequestHandler
+    class BookmarkableListenerRequestHandler
+    {
+        --(constructors)--
+        +BookmarkableListenerRequestHandler(IPageAndComponentProvider, Integer)
+        +BookmarkableListenerRequestHandler(PageAndComponentProvider)
+        --(collection)--
+        +Integer getBehaviorIndex()
+        +boolean includeRenderCount()
+    }
+    
+    IPageClassRequestHandler <|-- BookmarkablePageRequestHandler
+    ILoggableRequestHandler <|-- BookmarkablePageRequestHandler
+    class BookmarkablePageRequestHandler
+    {
+        --(constructors)--
+        +BookmarkablePageRequestHandler(IPageProvider)
+    }
+    
+    IRequestHandler <|-- BufferedResponseRequestHandler
+    class BufferedResponseRequestHandler
+    {
+        --(constructors)--
+        +BufferedResponseRequestHandler(BufferedWebResponse)
+    }
+    
+    WicketRuntimeException <|-- ComponentNotFoundException
+    class ComponentNotFoundException
+    {
+        --(constructors)--
+        +ComponentNotFoundException()
+        +ComponentNotFoundException(String)
+        +ComponentNotFoundException(String, Throwable)
+        +ComponentNotFoundException(Throwable)
+    }
+    
+    IComponentRequestHandler <|-- ComponentRenderingRequestHandler
+    class ComponentRenderingRequestHandler
+    {
+        --(constructors)--
+        +ComponentRenderingRequestHandler(Component)
+    }
+    
+    IRequestHandler <|-- EmptyAjaxRequestHandler
+    class EmptyAjaxRequestHandler
+    {
+        --(collection)--
+        +EmptyAjaxRequestHandler getInstance()
+    }
+    
+    interface IRequestHandler
+    IRequestHandler <|-- IComponentRequestHandler
+    interface IComponentRequestHandler
+    {
+        --
+        +IRequestableComponent getComponent()
+        --(path)--
+        +String getComponentPath()
+    }
+    
+    interface IPageProvider
+    IPageProvider <|-- IPageAndComponentProvider
+    interface IPageAndComponentProvider
+    {
+        --
+        +IRequestableComponent getComponent()
+        --(path)--
+        +String getComponentPath()
+    }
+    
+    interface IRequestHandler
+    IRequestHandler <|-- IPageClassRequestHandler
+    interface IPageClassRequestHandler
+    {
+        --
+        +Class<? extends IRequestablePage> getPageClass()
+        +PageParameters getPageParameters()
+    }
+    
+    interface IPageProvider
+    {
+        --
+        +void detach()
+        +Class<? extends IRequestablePage> getPageClass()
+        +IRequestablePage getPageInstance()
+        +PageParameters getPageParameters()
+        --(checks)--
+        +boolean hasPageInstance()
+        --(collection)--
+        +Integer getRenderCount()
+        --(factory)--
+        +boolean doesProvideNewPage()
+        --(identity)--
+        +Integer getPageId()
+        --(time)--
+        +boolean wasExpired()
+    }
+    
+    interface IPageClassRequestHandler
+    IPageClassRequestHandler <|-- IPageRequestHandler
+    interface IPageRequestHandler
+    {
+        --
+        +IRequestablePage getPage()
+        +Page getPage(IRequestHandler)
+        --(checks)--
+        +boolean isPageInstanceCreated()
+        --(collection)--
+        +Integer getRenderCount()
+        --(identity)--
+        +Integer getPageId()
+    }
+    
+    interface IPageRequestHandler
+    IPageRequestHandler <|-- IPartialPageRequestHandler
+    interface IPartialPageRequestHandler
+    {
+        --
+        +void appendJavaScript(CharSequence javascript)
+        +void focusComponent(Component)
+        +Collection<? extends Component> getComponents()
+        +IHeaderResponse getHeaderResponse()
+        +void prependJavaScript(CharSequence javascript)
+        --(collection)--
+        +void add(Component, String markupId)
+        +void add(Component... components)
+        +void addChildren(MarkupContainer parent, Class<?> childCriteria)
+    }
+    
+    RuntimeException <|-- ListenerInvocationNotAllowedException
+    class ListenerInvocationNotAllowedException
+    {
+        --(constructors)--
+        +ListenerInvocationNotAllowedException(Component, Behavior, String)
+        --
+        +Behavior getBehavior()
+        +Component getComponent()
+    }
+    
+    IPageRequestHandler <|-- ListenerRequestHandler
+    IComponentRequestHandler <|-- ListenerRequestHandler
+    ILoggableRequestHandler <|-- ListenerRequestHandler
+    class ListenerRequestHandler
+    {
+        --(constructors)--
+        +ListenerRequestHandler(IPageAndComponentProvider, Integer)
+        +ListenerRequestHandler(PageAndComponentProvider)
+        --(collection)--
+        +Integer getBehaviorIndex()
+        +boolean includeRenderCount()
+    }
+    
+    PageProvider <|-- PageAndComponentProvider
+    IPageAndComponentProvider <|-- PageAndComponentProvider
+    class PageAndComponentProvider
+    {
+        --(constructors)--
+        +PageAndComponentProvider(Class<? extends IRequestablePage>, PageParameters, String)
+        +PageAndComponentProvider(Class<? extends IRequestablePage>, String)
+        +PageAndComponentProvider(IRequestablePage, IRequestableComponent)
+        +PageAndComponentProvider(IRequestablePage, IRequestableComponent, PageParameters)
+        +PageAndComponentProvider(IRequestablePage, String)
+        +PageAndComponentProvider(Integer, Class<? extends IRequestablePage>, PageParameters, Integer, String)
+        +PageAndComponentProvider(int, Class<? extends IRequestablePage>, Integer, String)
+        +PageAndComponentProvider(int, Integer, String)
+    }
+    
+    IPageProvider <|-- PageProvider
+    IClusterable <|-- PageProvider
+    class PageProvider
+    {
+        --(constructors)--
+        +PageProvider(Class<? extends IRequestablePage>)
+        +PageProvider(IRequestablePage)
+        +PageProvider(Class<? extends IRequestablePage>, PageParameters)
+        +PageProvider(Integer, Class<? extends IRequestablePage>, Integer)
+        +PageProvider(Integer, Class<? extends IRequestablePage>, PageParameters, Integer)
+        +PageProvider(Integer, Integer)
+        --
+        +void setPageSource(IPageSource)
+        #IPageSource getPageSource()
+        #void setPageParameters(PageParameters)
+    }
+    
+    class PageProvider.Provision
+    {
+    }
+    
+    enum RenderPageRequestHandler.RedirectPolicy
+    {
+        ALWAYS_REDIRECT
+        AUTO_REDIRECT
+        NEVER_REDIRECT
+    }
+    
+    IPageRequestHandler <|-- RenderPageRequestHandler
+    IPageClassRequestHandler <|-- RenderPageRequestHandler
+    ILoggableRequestHandler <|-- RenderPageRequestHandler
+    class RenderPageRequestHandler
+    {
+        --(constructors)--
+        +RenderPageRequestHandler(IPageProvider)
+        +RenderPageRequestHandler(IPageProvider, RedirectPolicy)
+        +RenderPageRequestHandler(Class<? extends IRequestablePage>)
+        +RenderPageRequestHandler(Class<? extends IRequestablePage>, PageParameters)
+        +RenderPageRequestHandler(IRequestablePage)
+        --
+        +IPageProvider getPageProvider()
+        --(messaging)--
+        +RedirectPolicy getRedirectPolicy()
+    }
+    
+    IRequestHandlerDelegate <|-- RequestSettingRequestHandler
+    class RequestSettingRequestHandler
+    {
+        --(constructors)--
+        +RequestSettingRequestHandler(Request, IRequestHandler)
+        --
+        +Request getRequest()
+    }
+    
+@enduml
+

@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.spring.annot.web"
+    
+    ContactsDisplayPage <|-- AnnotPage
+    class AnnotPage
+    {
+    }
+    
+    ContactDataProvider <|-- ProxyDataProvider
+    class ProxyDataProvider
+    {
+        --(constructors)--
+        +ProxyDataProvider(ContactDao)
+    }
+    
+    ContactDetachableModel <|-- ProxyModel
+    class ProxyModel
+    {
+        --(constructors)--
+        +ProxyModel(Contact, ContactDao)
+    }
+    
+@enduml
+

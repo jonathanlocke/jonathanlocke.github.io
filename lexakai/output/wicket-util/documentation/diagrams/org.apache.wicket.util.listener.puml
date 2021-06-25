@@ -1,0 +1,47 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.listener"
+    
+    interface Serializable
+    interface Iterable
+    
+    ListenerCollection <|-- ChangeListenerSet
+    class ChangeListenerSet<T>
+    {
+        --(thread)--
+        +void notifyListeners(T)
+    }
+    
+    interface IChangeListener<T>
+    {
+        --
+        +void onChange(T modifiable)
+    }
+    
+    interface ListenerCollection.INotifier<T>
+    {
+        --(thread)--
+        +void notify(T listener)
+    }
+    
+    Serializable <|-- ListenerCollection
+    Iterable <|-- ListenerCollection
+    abstract class ListenerCollection<T>
+    {
+        --(checks)--
+        #boolean isAllowingDuplicates()
+        #boolean isAllowingNulls()
+        --(collection)--
+        +boolean add(T listener)
+        +void remove(T listener)
+        --(thread)--
+        #void notify(INotifier<T>)
+        #void notifyIgnoringExceptions(INotifier<T>)
+        #void reversedNotify(INotifier<T>)
+        #void reversedNotifyIgnoringExceptions(INotifier<T>)
+    }
+    
+@enduml
+

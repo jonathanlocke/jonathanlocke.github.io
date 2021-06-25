@@ -1,0 +1,53 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.convert"
+    
+    interface IConverter
+    
+    RuntimeException <|-- ConversionException
+    class ConversionException
+    {
+        --(constructors)--
+        +ConversionException(String)
+        +ConversionException(String, Throwable)
+        +ConversionException(Throwable)
+        --
+        +IConverter<?> getConverter()
+        +Format getFormat()
+        +Locale getLocale()
+        +Object getSourceValue()
+        +Class<?> getTargetType()
+        +ConversionException setConverter(IConverter<?>)
+        +ConversionException setFormat(Format)
+        +ConversionException setLocale(Locale)
+        +ConversionException setSourceValue(Object sourceValue)
+        +ConversionException setTargetType(Class<?> targetType)
+        +ConversionException setVariable(String name, Object value)
+        --(collection)--
+        +String getResourceKey()
+        +Map<String,Object> getVariables()
+        +ConversionException setResourceKey(String resourceKey)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IConverter
+    interface IConverter<C>
+    {
+        --
+        +C convertToObject(String value, Locale)
+        +String convertToString(C value, Locale)
+    }
+    
+    IConverter <|-- MaskConverter
+    class MaskConverter<C>
+    {
+        --(constructors)--
+        +MaskConverter(MaskFormatter)
+        +MaskConverter(String)
+        +MaskConverter(String, Class<?>)
+    }
+    
+@enduml
+

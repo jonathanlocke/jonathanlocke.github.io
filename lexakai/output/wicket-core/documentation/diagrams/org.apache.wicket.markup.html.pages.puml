@@ -1,0 +1,91 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.pages"
+    
+    abstract AbstractErrorPage
+    
+    WebPage <|-- AbstractErrorPage
+    abstract class AbstractErrorPage
+    {
+        --(constructors)--
+        #AbstractErrorPage()
+        #AbstractErrorPage(IModel<?>)
+        #AbstractErrorPage(PageParameters)
+    }
+    
+    AbstractErrorPage <|-- AccessDeniedPage
+    class AccessDeniedPage
+    {
+        --(constructors)--
+        +AccessDeniedPage()
+    }
+    
+    GenericPanel <|-- BrowserInfoForm
+    class BrowserInfoForm
+    {
+        --(constructors)--
+        +BrowserInfoForm(String, IModel<ClientProperties>)
+        --
+        #void afterSubmit()
+        #Form<ClientProperties> createForm(String componentId, IModel<ClientProperties>)
+        --(identity)--
+        +String getFormMarkupId()
+    }
+    
+    WebPage <|-- BrowserInfoPage
+    class BrowserInfoPage
+    {
+        --(constructors)--
+        +BrowserInfoPage()
+        --(messaging)--
+        #ClientProperties newClientInfo()
+        #WebClientInfo newWebClientInfo(RequestCycle)
+    }
+    
+    Link <|-- BrowserInfoPage.ContinueLink
+    class BrowserInfoPage.ContinueLink
+    {
+        --(constructors)--
+        +ContinueLink(String, IModel<WebClientInfo>)
+    }
+    
+    AbstractErrorPage <|-- ExceptionErrorPage
+    class ExceptionErrorPage
+    {
+        --(constructors)--
+        +ExceptionErrorPage(Throwable, Page)
+        --
+        +Throwable getThrowable()
+        --(messaging)--
+        +String getErrorMessage(Throwable)
+        +String getStackTrace(Throwable)
+    }
+    
+    AbstractErrorPage <|-- InternalErrorPage
+    class InternalErrorPage
+    {
+        --(constructors)--
+        +InternalErrorPage()
+    }
+    
+    AbstractErrorPage <|-- PageExpiredErrorPage
+    class PageExpiredErrorPage
+    {
+        --(constructors)--
+        +PageExpiredErrorPage()
+    }
+    
+    WebPage <|-- RedirectPage
+    class RedirectPage
+    {
+        --(constructors)--
+        +RedirectPage(CharSequence)
+        +RedirectPage(CharSequence, int)
+        +RedirectPage(Page)
+        +RedirectPage(Page, int)
+    }
+    
+@enduml
+

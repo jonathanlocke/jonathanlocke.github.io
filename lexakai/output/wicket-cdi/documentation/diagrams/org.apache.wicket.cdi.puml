@@ -1,0 +1,192 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.cdi"
+    
+    abstract AbstractInjector
+    
+    interface IComponentOnBeforeRenderListener
+    interface IRequestCycleListener
+    interface IClusterable
+    interface IBehaviorInstantiationListener
+    interface ISessionListener
+    interface IApplicationListener
+    interface IComponentInstantiationListener
+    
+    class AbstractInjector
+    {
+        --(constructors)--
+        +AbstractInjector()
+        --
+        #void inject(T instance)
+        #void postConstruct(T instance)
+    }
+    
+    IClusterable <|-- AutoConversation
+    class AutoConversation
+    {
+        --(constructors)--
+        +AutoConversation()
+        --
+        +void setAutomatic(boolean automatic)
+        --(checks)--
+        +boolean isAutomatic()
+    }
+    
+    IComponentOnBeforeRenderListener <|-- AutoConversationManager
+    class AutoConversationManager
+    {
+        --(constructors)--
+        +AutoConversationManager(IConversationPropagation)
+        --(checks)--
+        #boolean hasConversationalComponent(Page)
+        --(lifecycle)--
+        #void autoBeginIfNecessary(Page, IRequestHandler)
+        #void autoEndIfNecessary(Page, IRequestHandler)
+    }
+    
+    class BeanManagerLookup
+    {
+        --(search)--
+        +BeanManager lookup()
+    }
+    
+    enum BeanManagerLookup.BeanManagerLookupStrategy
+    {
+        CDI_PROVIDER
+        FALLBACK
+        JNDI
+        JNDI_ENV
+    }
+    
+    AbstractInjector <|-- BehaviorInjector
+    IBehaviorInstantiationListener <|-- BehaviorInjector
+    class BehaviorInjector
+    {
+        --(constructors)--
+        +BehaviorInjector()
+    }
+    
+    class CdiConfiguration
+    {
+        --(constructors)--
+        +CdiConfiguration()
+        --
+        +void configure(Application)
+        +BeanManager getFallbackBeanManager()
+        +IConversationPropagation getPropagation()
+        --(configuration)--
+        +CdiConfiguration get(Application)
+        +CdiConfiguration setFallbackBeanManager(BeanManager fallbackBeanManager)
+        +CdiConfiguration setPropagation(IConversationPropagation)
+    }
+    
+    IApplicationListener <|-- CdiShutdownCleaner
+    class CdiShutdownCleaner
+    {
+        --(constructors)--
+        +CdiShutdownCleaner()
+    }
+    
+    AbstractInjector <|-- ComponentInjector
+    IComponentInstantiationListener <|-- ComponentInjector
+    class ComponentInjector
+    {
+        --(constructors)--
+        +ComponentInjector()
+    }
+    
+    RuntimeException <|-- ConversationExpiredException
+    class ConversationExpiredException
+    {
+        --(constructors)--
+        +ConversationExpiredException(Throwable, String, Page, IRequestHandler)
+        --
+        +String getCid()
+        +Page getPage()
+        --(messaging)--
+        +IRequestHandler getHandler()
+    }
+    
+    IComponentOnBeforeRenderListener <|-- ConversationExpiryChecker
+    class ConversationExpiryChecker
+    {
+        --(constructors)--
+        +ConversationExpiryChecker()
+    }
+    
+    enum ConversationPropagation
+    {
+        ALL
+        NONBOOKMARKABLE
+        NONE
+    }
+    
+    IRequestCycleListener <|-- ConversationPropagator
+    class ConversationPropagator
+    {
+        --(constructors)--
+        +ConversationPropagator(Application, IConversationPropagation)
+        --
+        +IConversationPropagation getPropagation()
+        #PageParameters getPageParameters(IRequestHandler)
+        --(identity)--
+        +String getConversationIdFromPage(Page)
+        +void markPageWithConversationId(IRequestHandler, String cid)
+        +void removeConversationIdFromPage(Page)
+        --(messaging)--
+        #boolean activateForHandler(IRequestHandler)
+    }
+    
+    interface ConversationalComponent
+    {
+    }
+    
+    class DetachEvent
+    {
+    }
+    
+    IRequestCycleListener <|-- DetachEventEmitter
+    class DetachEventEmitter
+    {
+        --(constructors)--
+        +DetachEventEmitter()
+    }
+    
+    interface IRequestCycleListener
+    IRequestCycleListener <|-- ICdiAwareRequestCycleListener
+    interface ICdiAwareRequestCycleListener
+    {
+        --
+        +void onAfterConversationActivated(RequestCycle)
+        +void onBeforeConversationDeactivated(RequestCycle)
+    }
+    
+    interface IConversationPropagation
+    {
+        --
+        +boolean propagatesVia(IRequestHandler, Page)
+    }
+    
+    class NonContextual<T>
+    {
+        --
+        +void inject(T instance)
+        +NonContextual<T> of(T)
+        +NonContextual<T> of(Class<? extends T> clazz)
+        +void postConstruct(T instance)
+        +void preDestroy(T instance)
+        +void undeploy()
+    }
+    
+    AbstractInjector <|-- SessionInjector
+    ISessionListener <|-- SessionInjector
+    class SessionInjector
+    {
+        --(constructors)--
+        +SessionInjector()
+    }
+    
+@enduml
+

@@ -1,0 +1,865 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.form"
+    
+    abstract AbstractChoice
+    abstract AbstractCheckSelector
+    abstract AbstractSubmitLink
+    abstract AbstractMarkupFilter
+    abstract AbstractSingleSelectChoice
+    abstract AbstractLink
+    abstract AbstractTextComponent
+    
+    interface IChoiceRenderer
+    interface Serializable
+    interface IRequestListener
+    interface IFormModelUpdateListener
+    interface IVisitor
+    interface IClusterable
+    interface IGenericComponent
+    interface ILabelProvider
+    interface IComponentResolver
+    interface IValidatable
+    interface IErrorMessageSource
+    interface IFormSubmittingComponent
+    interface IHeaderContributor
+    interface IFormVisitorParticipant
+    interface IConverter
+    interface IQueueRegion
+    
+    LabeledWebMarkupContainer <|-- AbstractCheckSelector
+    IHeaderContributor <|-- AbstractCheckSelector
+    abstract class AbstractCheckSelector
+    {
+        --(constructors)--
+        +AbstractCheckSelector(String)
+        --
+        #boolean wantAutomaticUpdate()
+        --(primitive)--
+        #CharSequence getFindCheckboxesFunction()
+    }
+    
+    FormComponent <|-- AbstractChoice
+    abstract class AbstractChoice<T, E>
+    {
+        --(constructors)--
+        +AbstractChoice(String)
+        +AbstractChoice(String, IModel<T>, IModel<? extends List<? extends E>>)
+        +AbstractChoice(String, IModel<T>, IModel<? extends List<? extends E>>, IChoiceRenderer<? super E>)
+        +AbstractChoice(String, IModel<T>, List<? extends E>)
+        +AbstractChoice(String, IModel<T>, List<? extends E>, IChoiceRenderer<? super E>)
+        +AbstractChoice(String, IModel<? extends List<? extends E>>)
+        +AbstractChoice(String, IModel<? extends List<? extends E>>, IChoiceRenderer<? super E>)
+        +AbstractChoice(String, List<? extends E>)
+        +AbstractChoice(String, List<? extends E>, IChoiceRenderer<? super E>)
+        --
+        +IChoiceRenderer<? super E> getChoiceRenderer()
+        +AbstractChoice<T,E> setChoiceRenderer(IChoiceRenderer<? super E>)
+        +AbstractChoice<T,E> setChoices(IModel<? extends List<? extends E>> choices)
+        +AbstractChoice<T,E> setChoices(List<? extends E> choices)
+        #void appendOptionHtml(AppendingStringBuffer, E choice, int index, String selected)
+        #void setOptionAttributes(AppendingStringBuffer, E choice, int index, String selected)
+        --(checks)--
+        #boolean isDisabled(E object, int index, String selected)
+        #boolean isSelected(E object, int index, String selected)
+        --(collection)--
+        +List<? extends E> getChoices()
+        +IModel<? extends List<? extends E>> getChoicesModel()
+        #boolean localizeDisplayValues()
+        --(primitive)--
+        #CharSequence escapeOptionHtml(String displayValue)
+        #CharSequence getDefaultChoice(String selectedValue)
+    }
+    
+    AbstractChoice <|-- AbstractSingleSelectChoice
+    abstract class AbstractSingleSelectChoice<T>
+    {
+        --(constructors)--
+        +AbstractSingleSelectChoice(String, IModel<? extends List<? extends T>>)
+        +AbstractSingleSelectChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +AbstractSingleSelectChoice(String, IModel<T>, IModel<? extends List<? extends T>>)
+        +AbstractSingleSelectChoice(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +AbstractSingleSelectChoice(String)
+        +AbstractSingleSelectChoice(String, IModel<T>, List<? extends T>)
+        +AbstractSingleSelectChoice(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>)
+        +AbstractSingleSelectChoice(String, List<? extends T>)
+        +AbstractSingleSelectChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+        --
+        +AbstractSingleSelectChoice<T> setNullValid(boolean nullValid)
+        #String getNullValidDisplayValue()
+        --(checks)--
+        +boolean isNullValid()
+        --(collection)--
+        #String getNullKey()
+        #String getNullKeyDisplayValue()
+        #String getNullValidKey()
+        --(identity)--
+        #T convertChoiceIdToChoice(String id)
+    }
+    
+    AbstractLink <|-- AbstractSubmitLink
+    IFormSubmittingComponent <|-- AbstractSubmitLink
+    abstract class AbstractSubmitLink
+    {
+        --(constructors)--
+        +AbstractSubmitLink(String)
+        +AbstractSubmitLink(String, Form<?>)
+        +AbstractSubmitLink(String, IModel<?>)
+        +AbstractSubmitLink(String, IModel<?>, Form<?>)
+    }
+    
+    FormComponent <|-- AbstractTextComponent
+    abstract class AbstractTextComponent<T>
+    {
+        --(constructors)--
+        +AbstractTextComponent(String)
+        +AbstractTextComponent(String, IModel<T>)
+        --(collection)--
+        +boolean getConvertEmptyInputStringToNull()
+        +FormComponent<T> setConvertEmptyInputStringToNull(boolean flag)
+    }
+    
+    TransparentWebMarkupContainer <|-- AutoLabelResolver.AutoLabel
+    class AutoLabelResolver.AutoLabel
+    {
+        --(constructors)--
+        +AutoLabel(String, Component)
+        --(functional)--
+        +Component getRelatedComponent()
+    }
+    
+    Serializable <|-- AutoLabelResolver.AutoLabelMarker
+    class AutoLabelResolver.AutoLabelMarker
+    {
+        --(constructors)--
+        +AutoLabelMarker(FormComponent<?>)
+        --
+        +void updateFrom(FormComponent<?>, AjaxRequestTarget)
+        --(checks)--
+        +boolean isEnabled()
+        +boolean isRequired()
+        +boolean isValid()
+    }
+    
+    IComponentResolver <|-- AutoLabelResolver
+    class AutoLabelResolver
+    {
+        --(identity)--
+        +String getLabelIdFor(Component)
+    }
+    
+    AbstractMarkupFilter <|-- AutoLabelTagHandler
+    class AutoLabelTagHandler
+    {
+        --(constructors)--
+        +AutoLabelTagHandler(MarkupResourceStream)
+    }
+    
+    IComponentResolver <|-- AutoLabelTextResolver
+    class AutoLabelTextResolver
+    {
+    }
+    
+    FormComponent <|-- Button
+    IFormSubmittingComponent <|-- Button
+    class Button
+    {
+        --(constructors)--
+        +Button(String)
+        +Button(String, IModel<String>)
+        --
+        #String getOnClickScript()
+    }
+    
+    LabeledWebMarkupContainer <|-- Check
+    IGenericComponent <|-- Check
+    class Check<T>
+    {
+        --(constructors)--
+        +Check(String)
+        +Check(String, CheckGroup<T>)
+        +Check(String, IModel<T>)
+        +Check(String, IModel<T>, CheckGroup<T>)
+        --
+        +String getValue()
+        #CheckGroup<T> getGroup()
+    }
+    
+    FormComponent <|-- CheckBox
+    class CheckBox
+    {
+        --(constructors)--
+        +CheckBox(String)
+        +CheckBox(String, IModel<Boolean>)
+    }
+    
+    IConverter <|-- CheckBox.CheckBoxConverter
+    class CheckBox.CheckBoxConverter
+    {
+    }
+    
+    ListMultipleChoice <|-- CheckBoxMultipleChoice
+    class CheckBoxMultipleChoice<T>
+    {
+        --(constructors)--
+        +CheckBoxMultipleChoice(String, IModel<? extends Collection<T>>, IModel<? extends List<? extends T>>)
+        +CheckBoxMultipleChoice(String, IModel<? extends Collection<T>>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +CheckBoxMultipleChoice(String, IModel<? extends List<? extends T>>)
+        +CheckBoxMultipleChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +CheckBoxMultipleChoice(String)
+        +CheckBoxMultipleChoice(String, IModel<? extends Collection<T>>, List<? extends T>)
+        +CheckBoxMultipleChoice(String, IModel<? extends Collection<T>>, List<? extends T>, IChoiceRenderer<? super T>)
+        +CheckBoxMultipleChoice(String, List<? extends T>)
+        +CheckBoxMultipleChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+        --
+        +String getPrefix()
+        +String getSuffix()
+        +CheckBoxMultipleChoice<T> setLabelPosition(LabelPosition)
+        +CheckBoxMultipleChoice<T> setPrefix(String prefix)
+        +CheckBoxMultipleChoice<T> setSuffix(String suffix)
+        #String getPrefix(int index, T choice)
+        #String getSuffix(int index, T choice)
+        --(collection)--
+        #IValueMap getAdditionalAttributes(int index, T choice)
+        #IValueMap getAdditionalAttributesForLabel(int index, T choice)
+        --(identity)--
+        #String getCheckBoxMarkupId(String id)
+    }
+    
+    AbstractCheckSelector <|-- CheckBoxSelector
+    class CheckBoxSelector
+    {
+        --(constructors)--
+        +CheckBoxSelector(String)
+        +CheckBoxSelector(String, CheckBox)
+        --(collection)--
+        +Iterable<CheckBox> collectCheckBoxes(WebMarkupContainer)
+        #Iterable<? extends CheckBox> getCheckBoxes()
+    }
+    
+    FormComponent <|-- CheckGroup
+    class CheckGroup<T>
+    {
+        --(constructors)--
+        +CheckGroup(String)
+        +CheckGroup(String, Collection<T>)
+        +CheckGroup(String, IModel<? extends Collection<T>>)
+    }
+    
+    AbstractCheckSelector <|-- CheckGroupSelector
+    class CheckGroupSelector
+    {
+        --(constructors)--
+        +CheckGroupSelector(String)
+        +CheckGroupSelector(String, CheckGroup<?>)
+    }
+    
+    AbstractCheckSelector <|-- CheckboxMultipleChoiceSelector
+    class CheckboxMultipleChoiceSelector
+    {
+        --(constructors)--
+        +CheckboxMultipleChoiceSelector(String, CheckBoxMultipleChoice<?>)
+    }
+    
+    IChoiceRenderer <|-- ChoiceRenderer
+    IClusterable <|-- ChoiceRenderer
+    class ChoiceRenderer<T>
+    {
+        --(constructors)--
+        +ChoiceRenderer()
+        +ChoiceRenderer(String)
+        +ChoiceRenderer(String, String)
+    }
+    
+    AbstractSingleSelectChoice <|-- DropDownChoice
+    class DropDownChoice<T>
+    {
+        --(constructors)--
+        +DropDownChoice(String, IModel<? extends List<? extends T>>)
+        +DropDownChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +DropDownChoice(String, IModel<T>, IModel<? extends List<? extends T>>)
+        +DropDownChoice(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +DropDownChoice(String)
+        +DropDownChoice(String, IModel<T>, List<? extends T>)
+        +DropDownChoice(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>)
+        +DropDownChoice(String, List<? extends T>)
+        +DropDownChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+    }
+    
+    TextField <|-- EmailTextField
+    class EmailTextField
+    {
+        --(constructors)--
+        +EmailTextField(String)
+        +EmailTextField(String, IModel<String>)
+        +EmailTextField(String, IModel<String>, IValidator<String>)
+        +EmailTextField(String, IValidator<String>)
+        +EmailTextField(String, String)
+    }
+    
+    IChoiceRenderer <|-- EnumChoiceRenderer
+    class EnumChoiceRenderer<T>
+    {
+        --(constructors)--
+        +EnumChoiceRenderer()
+        +EnumChoiceRenderer(Component)
+        --(collection)--
+        #String resourceKey(T object)
+    }
+    
+    WebMarkupContainer <|-- Form
+    IRequestListener <|-- Form
+    IGenericComponent <|-- Form
+    class Form<T>
+    {
+        --(constructors)--
+        +Form(String)
+        +Form(String, IModel<T>)
+        --
+        +IFormSubmittingComponent getDefaultButton()
+        +Collection<IFormValidator> getFormValidators()
+        +Form<?> getRootForm()
+        +void onFormSubmitted(IFormSubmitter)
+        +void process(IFormSubmitter submittingComponent)
+        +void setDefaultButton(IFormSubmittingComponent)
+        +void setMultiPart(boolean multiPart)
+        +R visitFormComponents(IVisitor<FormComponent<?>,R>)
+        +R visitFormComponentsPostOrder(IVisitor<? extends FormComponent<?>,R>)
+        #void appendDefaultButtonField()
+        #void beforeUpdateFormComponentModels()
+        #void delegateSubmit(IFormSubmitter submittingComponent)
+        #String getMethod()
+        #void markFormComponentsInvalid()
+        #void markFormComponentsValid()
+        #MethodMismatchResponse onMethodMismatch()
+        #void onSubmit()
+        #void onValidate()
+        #void onValidateModelObjects()
+        #void updateFormComponentModels()
+        #void validate()
+        #void validateComponents()
+        #void validateFormValidator(IFormValidator)
+        #void validateFormValidators()
+        #boolean wantSubmitOnNestedFormSubmit()
+        #boolean wantSubmitOnParentFormSubmit()
+        --(checks)--
+        +boolean isMultiPart()
+        +boolean isRootForm()
+        +boolean isSubmitted()
+        --(collection)--
+        +void add(IFormValidator)
+        +void clearInput()
+        +Bytes getFileMaxSize()
+        +Bytes getMaxSize()
+        +String getValidatorKeyPrefix()
+        +void remove(IFormValidator)
+        +void setFileMaxSize(Bytes fileMaxSize)
+        +void setMaxSize(Bytes maxSize)
+        #void addDefaultSubmitButtonHandler(IHeaderResponse)
+        --(filesystem)--
+        #void onFileUploadException(FileUploadException, Map<String,Object> model)
+        --(identity)--
+        +String getRootFormRelativeId(Component)
+        --(messaging)--
+        #boolean handleMultiPart()
+        --(naming)--
+        #String getInputNamePrefix()
+        --(network)--
+        #boolean encodeUrlInHiddenFields()
+        --(primitive)--
+        +CharSequence getJsForListenerUrl(CharSequence url)
+        +CharSequence getJsForSubmitter(IFormSubmittingComponent submitter, boolean triggerEvent)
+        #CharSequence getActionUrl()
+        --(search)--
+        +Form<?> findForm(Component)
+        +IFormSubmittingComponent findSubmitter()
+        --(status)--
+        +void error(String error, Map<String,Object> args)
+        +boolean hasError()
+        #void callOnError(IFormSubmitter)
+        #void onError()
+        --(write)--
+        +void writeHiddenFields()
+        #void writeParamsAsHiddenFields(String[] params, AppendingStringBuffer)
+    }
+    
+    LabeledWebMarkupContainer <|-- FormComponent
+    IFormVisitorParticipant <|-- FormComponent
+    IFormModelUpdateListener <|-- FormComponent
+    IGenericComponent <|-- FormComponent
+    abstract class FormComponent<T>
+    {
+        --(constructors)--
+        +FormComponent(String)
+        +FormComponent(String, IModel<T>)
+        --
+        +boolean checkRequired()
+        +String getDefaultLabel()
+        +String getDefaultLabel(String defaultValue)
+        +Form<?> getForm()
+        +Class<T> getType()
+        +String getValue()
+        +void invalid()
+        +void setModelValue(String[] value)
+        +FormComponent<T> setType(Class<?> type)
+        +void updateAutoLabels(AjaxRequestTarget)
+        +void updateCollectionModel(FormComponent<Collection<S>>)
+        +void valid()
+        +void validate()
+        +R visitComponentsPostOrder(Component, org.apache.wicket.util.visit.IVisitor<Component,R>)
+        +R visitFormComponentsPostOrder(Component, IVisitor<? extends FormComponent<?>,R>)
+        #T convertValue(String[] value)
+        #String getModelValue()
+        #void onDisabled(ComponentTag)
+        #void onInvalid()
+        #void onValid()
+        #String trim(String)
+        #void validateRequired()
+        #void validateValidators()
+        --(checks)--
+        +boolean isMultiPart()
+        +boolean isRequired()
+        +boolean isValid()
+        --(collection)--
+        +FormComponent<T> add(IValidator<? super T>)
+        +FormComponent<T> add(IValidator<? super T>... validators)
+        +String getValidatorKeyPrefix()
+        +List<IValidator<? super T>> getValidators()
+        +FormComponent<T> remove(IValidator<? super T>)
+        #List<StringValue> getParameterValues(String inputName)
+        --(factory)--
+        +IValidatable<T> newValidatable()
+        --(functional)--
+        +FormComponent<T> setRequired(boolean required)
+        --(read)--
+        +void clearInput()
+        +void convertInput()
+        +T getConvertedInput()
+        +String getInput()
+        +String[] getInputAsArray()
+        +String getInputName()
+        +String getRawInput()
+        +boolean hasRawInput()
+        +void inputChanged()
+        +boolean isInputNullable()
+        +void processInput()
+        +void setConvertedInput(T convertedInput)
+        #int inputAsInt(int defaultValue)
+        #int inputAsInt()
+        #int[] inputAsIntArray()
+        #boolean shouldTrimInput()
+        --(status)--
+        +void error(IValidationError)
+        #ValidationError newValidationError(ConversionException cause)
+        #void reportRequiredError()
+    }
+    
+    WebMarkupContainer <|-- FormComponentLabel
+    class FormComponentLabel
+    {
+        --(constructors)--
+        +FormComponentLabel(String, LabeledWebMarkupContainer)
+        --
+        +LabeledWebMarkupContainer getFormComponent()
+    }
+    
+    FormComponent <|-- FormComponentPanel
+    IQueueRegion <|-- FormComponentPanel
+    abstract class FormComponentPanel<T>
+    {
+        --(constructors)--
+        +FormComponentPanel(String)
+        +FormComponentPanel(String, IModel<T>)
+    }
+    
+    Behavior <|-- FormComponentUpdatingBehavior
+    IRequestListener <|-- FormComponentUpdatingBehavior
+    class FormComponentUpdatingBehavior
+    {
+        --
+        +FormComponent<?> getFormComponent()
+        #boolean getUpdateModel()
+        #void onBind()
+        #void onUpdate()
+        --(messaging)--
+        #String getEvent()
+        --(status)--
+        #void onError(RuntimeException)
+    }
+    
+    IVisitor <|-- Form.FormModelUpdateVisitor
+    class Form.FormModelUpdateVisitor
+    {
+        --(constructors)--
+        +FormModelUpdateVisitor(Form<?>)
+    }
+    
+    TextField <|-- HiddenField
+    class HiddenField<T>
+    {
+        --(constructors)--
+        +HiddenField(String)
+        +HiddenField(String, Class<T>)
+        +HiddenField(String, IModel<T>)
+        +HiddenField(String, IModel<T>, Class<T>)
+    }
+    
+    interface IDetachable
+    IDetachable <|-- IChoiceRenderer
+    interface IChoiceRenderer<T>
+    {
+        --
+        +Object getDisplayValue(T object)
+        +T getObject(String id, IModel<? extends List<? extends T>> choices)
+        --(identity)--
+        +String getIdValue(T object, int index)
+    }
+    
+    interface IFormModelUpdateListener
+    {
+        --
+        +void updateModel()
+    }
+    
+    interface IFormSubmitter
+    {
+        --
+        +boolean getDefaultFormProcessing()
+        +Form<?> getForm()
+        +void onAfterSubmit()
+        +void onSubmit()
+        --(status)--
+        +void onError()
+    }
+    
+    interface IFormSubmitter
+    IFormSubmitter <|-- IFormSubmittingComponent
+    interface IFormSubmittingComponent
+    {
+        --
+        +Component setDefaultFormProcessing(boolean defaultFormProcessing)
+        --(naming)--
+        +String getInputName()
+    }
+    
+    interface IFormVisitorParticipant
+    {
+        --
+        +boolean processChildren()
+    }
+    
+    interface ILabelProvider<T>
+    {
+        --
+        +IModel<T> getLabel()
+    }
+    
+    interface ILabelProviderLocator
+    {
+        --
+        +Component getAutoLabelComponent()
+    }
+    
+    interface AbstractTextComponent.ITextFormatProvider
+    {
+        --
+        +String getTextFormat()
+    }
+    
+    Button <|-- ImageButton
+    IRequestListener <|-- ImageButton
+    class ImageButton
+    {
+        --(constructors)--
+        +ImageButton(String, IModel<String>)
+        +ImageButton(String, IResource)
+        +ImageButton(String, ResourceReference)
+        +ImageButton(String, ResourceReference, PageParameters)
+        +ImageButton(String, String)
+        --
+        +void setImageResource(IResource imageResource)
+        +void setImageResourceReference(ResourceReference)
+        +void setImageResourceReference(ResourceReference, PageParameters)
+        #IResource getImageResource()
+        #ResourceReference getImageResourceReference()
+    }
+    
+    class JavaScriptReservedNames
+    {
+        --(naming)--
+        +boolean isNameReserved(String name)
+    }
+    
+    enum AbstractChoice.LabelPosition
+    {
+        AFTER
+        BEFORE
+        WRAP_AFTER
+        WRAP_BEFORE
+    }
+    
+    WebMarkupContainer <|-- LabeledWebMarkupContainer
+    ILabelProvider <|-- LabeledWebMarkupContainer
+    abstract class LabeledWebMarkupContainer
+    {
+        --(constructors)--
+        +LabeledWebMarkupContainer(String)
+        +LabeledWebMarkupContainer(String, IModel<?>)
+        --
+        +LabeledWebMarkupContainer setLabel(IModel<String> labelModel)
+    }
+    
+    IChoiceRenderer <|-- LambdaChoiceRenderer
+    class LambdaChoiceRenderer<T>
+    {
+        --(constructors)--
+        +LambdaChoiceRenderer()
+        +LambdaChoiceRenderer(SerializableFunction<T, ?>)
+        +LambdaChoiceRenderer(SerializableFunction<T, ?>, SerializableFunction<T, ?>)
+    }
+    
+    DropDownChoice <|-- ListChoice
+    class ListChoice<T>
+    {
+        --(constructors)--
+        +ListChoice(String, IModel<? extends List<? extends T>>)
+        +ListChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +ListChoice(String, IModel<T>, IModel<? extends List<? extends T>>)
+        +ListChoice(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +ListChoice(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>, int)
+        +ListChoice(String)
+        +ListChoice(String, IModel<T>, List<? extends T>)
+        +ListChoice(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>)
+        +ListChoice(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>, int)
+        +ListChoice(String, IModel<T>, List<? extends T>, int)
+        +ListChoice(String, List<? extends T>)
+        +ListChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+        --
+        +int getMaxRows()
+        --(collection)--
+        +ListChoice<T> setMaxRows(int maxRows)
+    }
+    
+    AbstractChoice <|-- ListMultipleChoice
+    class ListMultipleChoice<T>
+    {
+        --(constructors)--
+        +ListMultipleChoice(String, IModel<? extends Collection<T>>, IModel<? extends List<? extends T>>)
+        +ListMultipleChoice(String, IModel<? extends Collection<T>>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +ListMultipleChoice(String, IModel<? extends List<? extends T>>)
+        +ListMultipleChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +ListMultipleChoice(String)
+        +ListMultipleChoice(String, IModel<? extends Collection<T>>, List<? extends T>)
+        +ListMultipleChoice(String, IModel<? extends Collection<T>>, List<? extends T>, IChoiceRenderer<? super T>)
+        +ListMultipleChoice(String, List<? extends T>)
+        +ListMultipleChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+        +ListMultipleChoice(String, List<? extends T>, int)
+        --(checks)--
+        +boolean isRetainDisabledSelected()
+        --(collection)--
+        +ListMultipleChoice<T> setMaxRows(int maxRows)
+        +ListMultipleChoice<T> setRetainDisabledSelected(boolean retain)
+        #List<T> convertChoiceIdsToChoices(String[] ids)
+    }
+    
+    IErrorMessageSource <|-- FormComponent.MessageSource
+    class FormComponent.MessageSource
+    {
+    }
+    
+    enum Form.MethodMismatchResponse
+    {
+        ABORT
+        CONTINUE
+    }
+    
+    TextField <|-- NumberTextField
+    class NumberTextField<N>
+    {
+        --(constructors)--
+        +NumberTextField(String)
+        +NumberTextField(String, Class<N>)
+        +NumberTextField(String, IModel<N>)
+        +NumberTextField(String, IModel<N>, Class<N>)
+        --
+        +NumberTextField<N> setStep(IModel<N> step)
+        +NumberTextField<N> setStep(N step)
+        --(math)--
+        +NumberTextField<N> setMaximum(IModel<N> maximum)
+        +NumberTextField<N> setMaximum(N maximum)
+        +NumberTextField<N> setMinimum(IModel<N> minimum)
+        +NumberTextField<N> setMinimum(N minimum)
+    }
+    
+    TextField <|-- PasswordTextField
+    class PasswordTextField
+    {
+        --(constructors)--
+        +PasswordTextField(String)
+        +PasswordTextField(String, IModel<String>)
+        --(lifecycle)--
+        +boolean getResetPassword()
+        +PasswordTextField setResetPassword(boolean resetPassword)
+    }
+    
+    LabeledWebMarkupContainer <|-- Radio
+    IGenericComponent <|-- Radio
+    class Radio<T>
+    {
+        --(constructors)--
+        +Radio(String)
+        +Radio(String, IModel<T>)
+        +Radio(String, IModel<T>, RadioGroup<T>)
+        +Radio(String, RadioGroup<T>)
+        --
+        +String getValue()
+        #RadioGroup<T> getGroup()
+    }
+    
+    AbstractSingleSelectChoice <|-- RadioChoice
+    class RadioChoice<T>
+    {
+        --(constructors)--
+        +RadioChoice(String, IModel<? extends List<? extends T>>)
+        +RadioChoice(String, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +RadioChoice(String, IModel<T>, IModel<? extends List<? extends T>>)
+        +RadioChoice(String, IModel<T>, IModel<? extends List<? extends T>>, IChoiceRenderer<? super T>)
+        +RadioChoice(String)
+        +RadioChoice(String, IModel<T>, List<? extends T>)
+        +RadioChoice(String, IModel<T>, List<? extends T>, IChoiceRenderer<? super T>)
+        +RadioChoice(String, List<? extends T>)
+        +RadioChoice(String, List<? extends T>, IChoiceRenderer<? super T>)
+        --
+        +String getPrefix()
+        +String getSuffix()
+        +RadioChoice<T> setLabelPosition(LabelPosition)
+        +RadioChoice<T> setPrefix(String prefix)
+        +RadioChoice<T> setSuffix(String suffix)
+        #String getPrefix(int index, T choice)
+        #String getSuffix(int index, T choice)
+        --(collection)--
+        #IValueMap getAdditionalAttributes(int index, T choice)
+        #IValueMap getAdditionalAttributesForLabel(int index, T choice)
+    }
+    
+    FormComponent <|-- RadioGroup
+    class RadioGroup<T>
+    {
+        --(constructors)--
+        +RadioGroup(String)
+        +RadioGroup(String, IModel<T>)
+    }
+    
+    NumberTextField <|-- RangeTextField
+    class RangeTextField<N>
+    {
+        --(constructors)--
+        +RangeTextField(String)
+        +RangeTextField(String, IModel<N>)
+        +RangeTextField(String, IModel<N>, Class<N>)
+    }
+    
+    TextField <|-- RequiredTextField
+    class RequiredTextField<T>
+    {
+        --(constructors)--
+        +RequiredTextField(String)
+        +RequiredTextField(String, IModel<T>, Class<T>)
+        +RequiredTextField(String, Class<T>)
+        +RequiredTextField(String, IModel<T>)
+    }
+    
+    FormComponentLabel <|-- SimpleFormComponentLabel
+    class SimpleFormComponentLabel
+    {
+        --(constructors)--
+        +SimpleFormComponentLabel(String, LabeledWebMarkupContainer)
+    }
+    
+    Form <|-- StatelessForm
+    class StatelessForm<T>
+    {
+        --(constructors)--
+        +StatelessForm(String)
+        +StatelessForm(String, IModel<T>)
+    }
+    
+    AbstractSubmitLink <|-- SubmitLink
+    class SubmitLink
+    {
+        --(constructors)--
+        +SubmitLink(String)
+        +SubmitLink(String, Form<?>)
+        +SubmitLink(String, IModel<?>)
+        +SubmitLink(String, IModel<?>, Form<?>)
+        --
+        +void onLinkClicked()
+        --(messaging)--
+        #boolean shouldTriggerJavaScriptSubmitEvent()
+        --(primitive)--
+        #CharSequence getTriggerJavaScript()
+    }
+    
+    AbstractTextComponent <|-- TextArea
+    class TextArea<T>
+    {
+        --(constructors)--
+        +TextArea(String)
+        +TextArea(String, IModel<T>)
+    }
+    
+    AbstractTextComponent <|-- TextField
+    class TextField<T>
+    {
+        --(constructors)--
+        +TextField(String)
+        +TextField(String, IModel<T>, Class<T>)
+        +TextField(String, Class<T>)
+        +TextField(String, IModel<T>)
+        --(read)--
+        #String[] getInputTypes()
+    }
+    
+    WebMarkupContainer <|-- AutoLabelTextResolver.TextLabel
+    class AutoLabelTextResolver.TextLabel
+    {
+        --(constructors)--
+        +TextLabel(String, Component)
+    }
+    
+    TextField <|-- UrlTextField
+    class UrlTextField
+    {
+        --(constructors)--
+        +UrlTextField(String, IModel<String>)
+        +UrlTextField(String, IModel<String>, UrlValidator)
+        +UrlTextField(String, String)
+    }
+    
+    IValidatable <|-- FormComponent.ValidatableAdapter
+    class FormComponent.ValidatableAdapter
+    {
+    }
+    
+    IClusterable <|-- ValidationErrorFeedback
+    class ValidationErrorFeedback
+    {
+        --(constructors)--
+        +ValidationErrorFeedback(IValidationError, Serializable)
+        --(messaging)--
+        +Serializable getMessage()
+        --(status)--
+        +IValidationError getError()
+    }
+    
+    IVisitor <|-- Form.ValidationVisitor
+    abstract class Form.ValidationVisitor
+    {
+        --
+        +void validate(FormComponent<?>)
+    }
+    
+@enduml
+

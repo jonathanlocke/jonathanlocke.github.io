@@ -1,0 +1,47 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.diff.myers"
+    
+    interface DiffAlgorithm
+    
+    PathNode <|-- DiffNode
+    class DiffNode
+    {
+        --(constructors)--
+        +DiffNode(int, int, PathNode)
+    }
+    
+    DiffAlgorithm <|-- MyersDiff
+    MyersDiff --> PathNode : "creates"
+    MyersDiff --> Revision : "creates"
+    class MyersDiff
+    {
+        --(constructors)--
+        +MyersDiff()
+        --(building)--
+        +PathNode buildPath(Object[] orig, Object[] rev)
+        +Revision buildRevision(PathNode, Object[] orig, Object[] rev)
+    }
+    
+    abstract class PathNode
+    {
+        --(constructors)--
+        +PathNode(int, int, PathNode)
+        --(checks)--
+        +boolean isBootstrap()
+        +boolean isSnake()
+        --(path)--
+        +PathNode previousSnake()
+    }
+    
+    PathNode <|-- Snake
+    class Snake
+    {
+        --(constructors)--
+        +Snake(int, int, PathNode)
+    }
+    
+@enduml
+

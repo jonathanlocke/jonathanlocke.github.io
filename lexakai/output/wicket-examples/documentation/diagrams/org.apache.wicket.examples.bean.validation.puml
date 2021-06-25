@@ -1,0 +1,40 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.bean.validation"
+    
+    interface Serializable
+    
+    WicketExampleApplication <|-- BeanValidationApplication
+    class BeanValidationApplication
+    {
+    }
+    
+    WicketExamplePage <|-- BeanValidationPage
+    class BeanValidationPage
+    {
+        --(constructors)--
+        +BeanValidationPage()
+    }
+    
+    Serializable <|-- Person
+    class Person
+    {
+        --
+        +LocalDate getBirthdate()
+        +String getPassword()
+        +String getPhone()
+        +void setBirthdate(LocalDate birthdate)
+        +void setPassword(String password)
+        +void setPhone(String phone)
+        --(naming)--
+        +String getName()
+        +void setName(String name)
+        --(network)--
+        +String getEmail()
+        +void setEmail(String email)
+    }
+    
+@enduml
+

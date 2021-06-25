@@ -1,0 +1,27 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.resourcedecoration"
+    
+    WebMarkupContainer <|-- HomePage.AjaxProofContainer
+    class HomePage.AjaxProofContainer
+    {
+    }
+    
+    WicketExamplePage <|-- HomePage
+    class HomePage
+    {
+        --(constructors)--
+        +HomePage(PageParameters)
+    }
+    
+    WicketExampleApplication <|-- ResourceDecorationApplication
+    class ResourceDecorationApplication
+    {
+        --
+        +ResourceDecorationApplication get()
+    }
+    
+@enduml
+

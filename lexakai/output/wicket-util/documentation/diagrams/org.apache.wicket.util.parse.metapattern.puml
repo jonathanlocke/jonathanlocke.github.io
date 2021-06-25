@@ -1,0 +1,96 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.parse.metapattern"
+    
+    interface IClusterable
+    
+    Group <|-- BooleanGroup
+    class BooleanGroup
+    {
+        --(constructors)--
+        +BooleanGroup()
+        --
+        +boolean getBoolean(Matcher)
+        +boolean getBoolean(Matcher, boolean defaultValue)
+    }
+    
+    Group <|-- FloatingPointGroup
+    class FloatingPointGroup
+    {
+        --(constructors)--
+        +FloatingPointGroup()
+        --
+        +float getFloat(Matcher, float defaultValue)
+        +float getFloat(Matcher)
+        --(primitive)--
+        +double getDouble(Matcher)
+        +double getDouble(Matcher, double defaultValue)
+    }
+    
+    MetaPattern <|-- Group
+    class Group
+    {
+        --(constructors)--
+        +Group(MetaPattern)
+        --
+        +String get(Matcher)
+    }
+    
+    RuntimeException <|-- GroupAlreadyBoundException
+    class GroupAlreadyBoundException
+    {
+        --(constructors)--
+        +GroupAlreadyBoundException()
+    }
+    
+    RuntimeException <|-- GroupNotBoundException
+    class GroupNotBoundException
+    {
+        --(constructors)--
+        +GroupNotBoundException()
+    }
+    
+    Group <|-- IntegerGroup
+    class IntegerGroup
+    {
+        --(constructors)--
+        +IntegerGroup()
+        +IntegerGroup(MetaPattern)
+        +IntegerGroup(MetaPattern, int)
+        --(primitive)--
+        +int getInt(Matcher)
+        +int getInt(Matcher, int defaultValue)
+        +long getLong(Matcher, long defaultValue)
+        +long getLong(Matcher)
+    }
+    
+    IClusterable <|-- MetaPattern
+    class MetaPattern
+    {
+        --(constructors)--
+        +MetaPattern(List<MetaPattern>)
+        +MetaPattern(MetaPattern)
+        +MetaPattern(MetaPattern)
+        +MetaPattern(String)
+        --
+        +Pattern pattern()
+        +Pattern pattern(int flags)
+        --(matching)--
+        +Matcher matcher(CharSequence input)
+        +Matcher matcher(CharSequence input, int flags)
+    }
+    
+    MetaPattern <|-- OptionalMetaPattern
+    class OptionalMetaPattern
+    {
+        --(constructors)--
+        +OptionalMetaPattern(List<MetaPattern>)
+        +OptionalMetaPattern(MetaPattern)
+        +OptionalMetaPattern(MetaPattern[])
+        +OptionalMetaPattern(String)
+    }
+    
+@enduml
+

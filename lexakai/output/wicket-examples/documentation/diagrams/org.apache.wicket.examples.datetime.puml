@@ -1,0 +1,41 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.datetime"
+    
+    interface IChoiceRenderer
+    
+    WicketExampleApplication <|-- DateTimeApplication
+    class DateTimeApplication
+    {
+    }
+    
+    WicketExamplePage <|-- DateTimePage
+    class DateTimePage
+    {
+        --(constructors)--
+        +DateTimePage()
+    }
+    
+    IChoiceRenderer <|-- DateTimePage.LocaleChoiceRenderer
+    class DateTimePage.LocaleChoiceRenderer
+    {
+    }
+    
+    DropDownChoice <|-- DateTimePage.LocaleDropDownChoice
+    class DateTimePage.LocaleDropDownChoice
+    {
+        --(constructors)--
+        +LocaleDropDownChoice(String)
+    }
+    
+    DropDownChoice <|-- DateTimePage.ZoneDropDownChoice
+    class DateTimePage.ZoneDropDownChoice
+    {
+        --(constructors)--
+        +ZoneDropDownChoice(String)
+    }
+    
+@enduml
+

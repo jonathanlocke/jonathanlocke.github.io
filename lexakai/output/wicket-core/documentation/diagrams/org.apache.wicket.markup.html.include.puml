@@ -1,0 +1,23 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.markup.html.include"
+    
+    interface IGenericComponent
+    
+    WebComponent <|-- Include
+    IGenericComponent <|-- Include
+    class Include
+    {
+        --(constructors)--
+        +Include(String, IModel<String>)
+        +Include(String, String)
+        +Include(String)
+        --
+        +Charset getCharset()
+        #String importAsString()
+    }
+    
+@enduml
+

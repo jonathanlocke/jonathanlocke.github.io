@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="579.1667px" preserveAspectRatio="none" style="width:1158px;height:579px;background:#333333;" version="1.1" viewBox="0 0 1158 579" width="1158.3333px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="639.5833" x="252.3438" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="616.6667" x="263.8021" y="30.5583">org.apache.wicket.extensions.markup.html.repeater.data.grid</text><!--MD5=[4b43be1fcdf96cce9f14f8b64dca5fb6]
+class AbstractDataGridView--><rect codeLine="11" fill="#282828" height="190.4358" id="AbstractDataGridView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="525" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="525" x="9.375" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="525" x="9.375" y="187.1745"/><rect codeLine="11" fill="none" height="190.4358" id="AbstractDataGridView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="525" x="9.375" y="164.1195"/><ellipse cx="184.375" cy="179.8136" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M183.9681,176.5157 L183.1197,180.245 L184.8226,180.245 Z M182.8695,174.8678 L185.0728,174.8678 L187.5326,183.9803 L185.732,183.9803 L185.1705,181.7281 L182.7596,181.7281 L182.2103,183.9803 L180.4097,183.9803 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="141.6667" x="207.2917" y="184.5378">AbstractDataGridView</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="520.8333" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="525" y="177.2461">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="533.3333" y1="195.5078" y2="195.5078"/><ellipse cx="20.8333" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="476.0417" x="32.2917" y="237.7889">AbstractDataGridView(String, List&lt;? extends ICellPopulator&lt;T&gt;&gt;, IDataProvider&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="228.125" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="231.25" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="315.625" x2="533.3333" y1="213.7136" y2="213.7136"/><polygon fill="#FFFF44" points="20.8333,269.3258,25,273.4924,20.8333,277.6591,16.6667,273.4924" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="332.2917" x="32.2917" y="281.4453">List&lt;? extends ICellPopulator&lt;T&gt;&gt; internalGetPopulators()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="237.5" y1="257.37" y2="257.37"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="240.625" y="261.1796">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="306.25" x2="533.3333" y1="257.37" y2="257.37"/><polygon fill="#FFFF44" points="20.8333,312.9822,25,317.1488,20.8333,321.3155,16.6667,317.1488" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="492.7083" x="32.2917" y="325.1017">Item&lt;ICellPopulator&lt;T&gt;&gt; newCellItem(String id, int index, IModel&lt;ICellPopulator&lt;T&gt;&gt;)</text><polygon fill="#FFFF44" points="20.8333,332.7271,25,336.8937,20.8333,341.0604,16.6667,336.8937" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="301.0417" x="32.2917" y="344.8466">Item&lt;T&gt; newRowItem(String id, int index, IModel&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="244.7917" y1="301.0264" y2="301.0264"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="247.9167" y="304.836">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="298.9583" x2="533.3333" y1="301.0264" y2="301.0264"/><!--MD5=[091734937e621dfaf8d40224d9713906]
+class ICellPopulator--><rect codeLine="37" fill="#282828" height="67.7999" id="ICellPopulator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="576.0417" x="571.3542" y="225.5778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="576.0417" x="571.3542" y="225.5778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="576.0417" x="571.3542" y="248.6328"/><rect codeLine="37" fill="none" height="67.7999" id="ICellPopulator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="576.0417" x="571.3542" y="225.5778"/><ellipse cx="796.875" cy="241.272" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M794.279,238.4338 L794.279,236.8469 L799.705,236.8469 L799.705,238.4338 L797.8923,238.4338 L797.8923,244.3726 L799.705,244.3726 L799.705,245.9595 L794.279,245.9595 L794.279,244.3726 L796.0917,244.3726 L796.0917,238.4338 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="91.6667" x="819.7917" y="245.9961">ICellPopulator</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1133.8542" y="222.4528"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1138.0208" y="238.7044">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="572.3958" x2="1146.3542" y1="256.9661" y2="256.9661"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="572.3958" x2="1146.3542" y1="265.2995" y2="265.2995"/><ellipse cx="582.8125" cy="276.7578" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="543.75" x="594.2708" y="283.669">void populateItem(Item&lt;ICellPopulator&lt;T&gt;&gt; cellItem, String componentId, IModel&lt;T&gt; rowModel)</text><!--MD5=[2153e53720f9326a4815302cb89148fc]
+class DataViewBase--><rect fill="#282828" height="48.055" id="DataViewBase" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="207.8125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="207.8125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="128.125" x="207.8125" y="76.7578"/><rect fill="none" height="48.055" id="DataViewBase" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="128.125" x="207.8125" y="53.7028"/><ellipse cx="222.3958" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M224.3062,73.822 Q223.879,74.0417 223.409,74.1516 Q222.939,74.2615 222.4202,74.2615 Q220.577,74.2615 219.6065,73.0469 Q218.6361,71.8323 218.6361,69.5374 Q218.6361,67.2363 219.6065,66.0217 Q220.577,64.8071 222.4202,64.8071 Q222.939,64.8071 223.4151,64.917 Q223.8912,65.0269 224.3062,65.2466 L224.3062,67.2485 Q223.8424,66.8213 223.406,66.6229 Q222.9696,66.4246 222.5057,66.4246 Q221.5169,66.4246 221.0134,67.2089 Q220.5098,67.9932 220.5098,69.5374 Q220.5098,71.0754 221.0134,71.8597 Q221.5169,72.644 222.5057,72.644 Q222.9696,72.644 223.406,72.4457 Q223.8424,72.2473 224.3062,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="239.0625" y="74.1211">DataViewBase</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="208.8542" x2="334.8958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="208.8542" x2="334.8958" y1="93.4245" y2="93.4245"/><!--MD5=[16c8c3d194e69d2a43e80d63f186c6a4]
+class DataGridView--><rect codeLine="23" fill="#282828" height="155.1127" id="DataGridView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="460.4167" x="41.6667" y="417.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="460.4167" x="41.6667" y="417.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="460.4167" x="41.6667" y="440.2995"/><rect codeLine="23" fill="none" height="155.1127" id="DataGridView" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="460.4167" x="41.6667" y="417.2445"/><ellipse cx="211.4583" cy="432.9386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M213.3687,437.3637 Q212.9415,437.5834 212.4715,437.6933 Q212.0015,437.8031 211.4827,437.8031 Q209.6395,437.8031 208.669,436.5885 Q207.6986,435.3739 207.6986,433.079 Q207.6986,430.778 208.669,429.5634 Q209.6395,428.3488 211.4827,428.3488 Q212.0015,428.3488 212.4776,428.4587 Q212.9537,428.5685 213.3687,428.7882 L213.3687,430.7902 Q212.9049,430.363 212.4685,430.1646 Q212.0321,429.9662 211.5682,429.9662 Q210.5794,429.9662 210.0759,430.7505 Q209.5723,431.5348 209.5723,433.079 Q209.5723,434.6171 210.0759,435.4014 Q210.5794,436.1857 211.5682,436.1857 Q212.0321,436.1857 212.4685,435.9873 Q212.9049,435.789 213.3687,435.3617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="234.375" y="437.6628">DataGridView</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="488.5417" y="414.1195"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="492.7083" y="430.3711">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="42.7083" x2="501.0417" y1="448.6328" y2="448.6328"/><ellipse cx="53.125" cy="484.0027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="428.125" x="64.5833" y="490.9139">DataGridView(String, List&lt;? extends ICellPopulator&lt;T&gt;&gt;, IDataProvider&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="42.7083" x2="228.125" y1="466.8386" y2="466.8386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="231.25" y="470.6482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="315.625" x2="501.0417" y1="466.8386" y2="466.8386"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="42.7083" x2="501.0417" y1="500.6226" y2="500.6226"/><ellipse cx="53.125" cy="512.0809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="202.0833" x="64.5833" y="518.9921">IDataProvider&lt;T&gt; getDataProvider()</text><ellipse cx="53.125" cy="555.7373" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="288.5417" x="64.5833" y="562.6485">List&lt;? extends ICellPopulator&lt;T&gt;&gt; getPopulators()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="42.7083" x2="237.5" y1="538.5732" y2="538.5732"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="240.625" y="542.3828">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="306.25" x2="501.0417" y1="538.5732" y2="538.5732"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="33" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="725.5208" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="725.5208" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="725.5208" y="76.7578"/><rect codeLine="33" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="725.5208" y="53.7028"/><ellipse cx="740.1042" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M737.5081,66.5588 L737.5081,64.9719 L742.9342,64.9719 L742.9342,66.5588 L741.1214,66.5588 L741.1214,72.4976 L742.9342,72.4976 L742.9342,74.0845 L737.5081,74.0845 L737.5081,72.4976 L739.3209,72.4976 L739.3209,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="756.7708" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="726.5625" x2="840.1042" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="726.5625" x2="840.1042" y1="93.4245" y2="93.4245"/><!--MD5=[6c5faf02b7d93ed54cf7f7e04f65e50c]
+class IDetachable--><rect codeLine="34" fill="#282828" height="48.055" id="IDetachable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="877.6042" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="877.6042" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="877.6042" y="76.7578"/><rect codeLine="34" fill="none" height="48.055" id="IDetachable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="877.6042" y="53.7028"/><ellipse cx="892.1875" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M889.5915,66.5588 L889.5915,64.9719 L895.0175,64.9719 L895.0175,66.5588 L893.2048,66.5588 L893.2048,72.4976 L895.0175,72.4976 L895.0175,74.0845 L889.5915,74.0845 L889.5915,72.4976 L891.4042,72.4976 L891.4042,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="908.8542" y="74.1211">IDetachable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="878.6458" x2="990.1042" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="878.6458" x2="990.1042" y1="93.4245" y2="93.4245"/><!--MD5=[57591bf46f199e782cd1ddaef7a19998]
+class PropertyPopulator--><rect codeLine="44" fill="#282828" height="83.3781" id="PropertyPopulator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="771.3542" y="453.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="771.3542" y="453.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="771.3542" y="476.237"/><rect codeLine="44" fill="none" height="83.3781" id="PropertyPopulator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="771.3542" y="453.182"/><ellipse cx="787.3438" cy="468.8761" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M789.2542,473.3012 Q788.8269,473.5209 788.3569,473.6308 Q787.887,473.7406 787.3682,473.7406 Q785.5249,473.7406 784.5544,472.526 Q783.584,471.3114 783.584,469.0165 Q783.584,466.7155 784.5544,465.5009 Q785.5249,464.2863 787.3682,464.2863 Q787.887,464.2863 788.363,464.3962 Q788.8391,464.506 789.2542,464.7257 L789.2542,466.7277 Q788.7903,466.3005 788.3539,466.1021 Q787.9175,465.9037 787.4536,465.9037 Q786.4648,465.9037 785.9613,466.688 Q785.4578,467.4723 785.4578,469.0165 Q785.4578,470.5546 785.9613,471.3389 Q786.4648,472.1232 787.4536,472.1232 Q787.9175,472.1232 788.3539,471.9248 Q788.7903,471.7265 789.2542,471.2992 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="804.3229" y="473.6003">PropertyPopulator</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="933.8542" y="450.057"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="938.0208" y="466.3086">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="772.3958" x2="946.3542" y1="484.5703" y2="484.5703"/><ellipse cx="782.8125" cy="519.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="143.75" x="794.2708" y="526.8514">PropertyPopulator(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="772.3958" x2="815.625" y1="502.7761" y2="502.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="818.75" y="506.5857">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="903.125" x2="946.3542" y1="502.7761" y2="502.7761"/><!--MD5=[d6e40f97a7b90a8c2eca650c645bef6a]
+reverse link DataViewBase to AbstractDataGridView--><path codeLine="10" d="M271.875,122.8695 C271.875,135.359 271.875,149.4528 271.875,163.7132 " fill="none" id="DataViewBase-backto-AbstractDataGridView" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="264.5833,122.6611,271.875,101.8278,279.1667,122.6611,264.5833,122.6611" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5c260bf75b1d49d66988840c55687c29]
+reverse link AbstractDataGridView to DataGridView--><path codeLine="22" d="M271.875,376.0153 C271.875,389.9111 271.875,403.8278 271.875,416.984 " fill="none" id="AbstractDataGridView-backto-DataGridView" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="264.5833,375.8799,271.875,355.0465,279.1667,375.8799,264.5833,375.8799" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[e4d8d4fd5bf685574013f940771019d6]
+reverse link IClusterable to ICellPopulator--><path codeLine="35" d="M801.375,121.3382 C814.8438,153.1611 832.9792,196.0257 845.3646,225.2861 " fill="none" id="IClusterable-backto-ICellPopulator" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="794.5208,123.8486,793.1146,101.8278,807.9583,118.1715,794.5208,123.8486" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bce213105632d00643ae9cd3e97e85cc]
+reverse link IDetachable to ICellPopulator--><path codeLine="36" d="M916.5833,121.3382 C903.2917,153.1611 885.4063,196.0257 873.1875,225.2861 " fill="none" id="IDetachable-backto-ICellPopulator" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="909.9688,118.2445,924.7188,101.8278,923.4271,123.859,909.9688,118.2445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[11e76c05de40bc32fb6a66d36cfbdf37]
+reverse link ICellPopulator to PropertyPopulator--><path codeLine="43" d="M859.375,314.4424 C859.375,356.609 859.375,414.3382 859.375,452.7861 " fill="none" id="ICellPopulator-backto-PropertyPopulator" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="852.0833,314.2445,859.375,293.4111,866.6667,314.2445,852.0833,314.2445" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[38b5388de354741916b73584b53d18fe]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.data.grid"
+    
+    abstract AbstractDataGridView
+    
+    interface ICellPopulator
+    
+    DataViewBase <|- - AbstractDataGridView
+    abstract class AbstractDataGridView<T>
+    {
+        - -(constructors)- -
+        +AbstractDataGridView(String, List<? extends ICellPopulator<T>>, IDataProvider<T>)
+        - -(collection)- -
+        #List<? extends ICellPopulator<T>> internalGetPopulators()
+        - -(factory)- -
+        #Item<ICellPopulator<T>> newCellItem(String id, int index, IModel<ICellPopulator<T>>)
+        #Item<T> newRowItem(String id, int index, IModel<T>)
+    }
+    
+    AbstractDataGridView <|- - DataGridView
+    class DataGridView<T>
+    {
+        - -(constructors)- -
+        +DataGridView(String, List<? extends ICellPopulator<T>>, IDataProvider<T>)
+        - -
+        +IDataProvider<T> getDataProvider()
+        - -(collection)- -
+        +List<? extends ICellPopulator<T>> getPopulators()
+    }
+    
+    interface IClusterable
+    interface IDetachable
+    IClusterable <|- - ICellPopulator
+    IDetachable <|- - ICellPopulator
+    interface ICellPopulator<T>
+    {
+        - -
+        +void populateItem(Item<ICellPopulator<T>> cellItem, String componentId, IModel<T> rowModel)
+    }
+    
+    ICellPopulator <|- - PropertyPopulator
+    class PropertyPopulator<T>
+    {
+        - -(constructors)- -
+        +PropertyPopulator(String)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.data.grid"
+    
+    abstract AbstractDataGridView
+    
+    interface ICellPopulator
+    
+    DataViewBase <|- - AbstractDataGridView
+    abstract class AbstractDataGridView<T>
+    {
+        - -(constructors)- -
+        +AbstractDataGridView(String, List<? extends ICellPopulator<T>>, IDataProvider<T>)
+        - -(collection)- -
+        #List<? extends ICellPopulator<T>> internalGetPopulators()
+        - -(factory)- -
+        #Item<ICellPopulator<T>> newCellItem(String id, int index, IModel<ICellPopulator<T>>)
+        #Item<T> newRowItem(String id, int index, IModel<T>)
+    }
+    
+    AbstractDataGridView <|- - DataGridView
+    class DataGridView<T>
+    {
+        - -(constructors)- -
+        +DataGridView(String, List<? extends ICellPopulator<T>>, IDataProvider<T>)
+        - -
+        +IDataProvider<T> getDataProvider()
+        - -(collection)- -
+        +List<? extends ICellPopulator<T>> getPopulators()
+    }
+    
+    interface IClusterable
+    interface IDetachable
+    IClusterable <|- - ICellPopulator
+    IDetachable <|- - ICellPopulator
+    interface ICellPopulator<T>
+    {
+        - -
+        +void populateItem(Item<ICellPopulator<T>> cellItem, String componentId, IModel<T> rowModel)
+    }
+    
+    ICellPopulator <|- - PropertyPopulator
+    class PropertyPopulator<T>
+    {
+        - -(constructors)- -
+        +PropertyPopulator(String)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

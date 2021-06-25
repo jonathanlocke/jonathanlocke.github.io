@@ -1,0 +1,102 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "wicket-native-websocket-javax"
+    
+    artifact openjson
+    artifact commons_fileupload
+    artifact commons_io
+    artifact jakarta_annotation_api
+    artifact jakarta_servlet_api
+    artifact jakarta_transaction_api
+    artifact jakarta_websocket_api
+    artifact log4j
+    artifact byte_buddy_agent
+    artifact byte_buddy
+    artifact commons_collections4
+    artifact wicket_core
+    artifact wicket_native_websocket_core
+    artifact wicket_request
+    artifact wicket_util
+    artifact apiguardian_api
+    artifact jdk_serializable_functional
+    artifact jetty_jakarta_servlet_api
+    artifact jetty_jakarta_websocket_api
+    artifact websocket_core_client
+    artifact websocket_core_common
+    artifact websocket_core_server
+    artifact websocket_jakarta_client
+    artifact websocket_jakarta_common
+    artifact websocket_jakarta_server
+    artifact websocket_servlet
+    artifact jetty_alpn_client
+    artifact jetty_annotations
+    artifact jetty_client
+    artifact jetty_http
+    artifact jetty_io
+    artifact jetty_jndi
+    artifact jetty_plus
+    artifact jetty_security
+    artifact jetty_server
+    artifact jetty_servlet
+    artifact jetty_util
+    artifact jetty_webapp
+    artifact jetty_xml
+    artifact junit_jupiter_api
+    artifact junit_jupiter_engine
+    artifact junit_platform_commons
+    artifact junit_platform_engine
+    artifact mockito_core
+    artifact objenesis
+    artifact opentest4j
+    artifact asm_analysis
+    artifact asm_commons
+    artifact asm_tree
+    artifact asm
+    artifact jcl_over_slf4j
+    artifact slf4j_api
+    artifact slf4j_log4j12
+    asm_commons --> asm_analysis
+    asm_commons --> asm_tree
+    jetty_annotations --> asm
+    jetty_annotations --> asm_commons
+    jetty_annotations --> jakarta_annotation_api
+    jetty_annotations --> jetty_plus
+    jetty_client --> jetty_alpn_client
+    jetty_http --> jetty_util
+    jetty_plus --> jakarta_transaction_api
+    jetty_plus --> jetty_jndi
+    jetty_server --> jetty_http
+    jetty_server --> jetty_io
+    jetty_server --> jetty_jakarta_servlet_api
+    jetty_servlet --> jetty_security
+    jetty_webapp --> jetty_servlet
+    jetty_webapp --> jetty_xml
+    junit_jupiter_engine --> apiguardian_api
+    junit_jupiter_engine --> junit_jupiter_api
+    junit_jupiter_engine --> junit_platform_engine
+    junit_platform_engine --> junit_platform_commons
+    junit_platform_engine --> opentest4j
+    mockito_core --> byte_buddy
+    mockito_core --> byte_buddy_agent
+    mockito_core --> objenesis
+    slf4j_log4j12 --> log4j
+    websocket_core_client --> websocket_core_common
+    websocket_jakarta_client --> jetty_client
+    websocket_jakarta_client --> websocket_core_client
+    websocket_jakarta_client --> websocket_jakarta_common
+    websocket_jakarta_server --> jetty_annotations
+    websocket_jakarta_server --> jetty_jakarta_websocket_api
+    websocket_jakarta_server --> websocket_jakarta_client
+    websocket_jakarta_server --> websocket_servlet
+    websocket_servlet --> websocket_core_server
+    wicket_core --> jdk_serializable_functional
+    wicket_core --> openjson
+    wicket_core --> wicket_request
+    wicket_core --> wicket_util
+    wicket_util --> commons_collections4
+    wicket_util --> commons_fileupload
+    wicket_util --> commons_io
+    
+@enduml

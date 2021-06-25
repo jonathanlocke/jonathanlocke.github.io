@@ -1,0 +1,29 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.ajax"
+    
+    WicketMetrics <|-- IPartialPageRequestHandlerAddAspect
+    class IPartialPageRequestHandlerAddAspect
+    {
+        --(collection)--
+        +void beforeAdd()
+    }
+    
+    WicketMetrics <|-- IPartialPageRequestHandlerAppendJavaScriptAspect
+    class IPartialPageRequestHandlerAppendJavaScriptAspect
+    {
+        --
+        +void beforeAppendJavaScript()
+    }
+    
+    WicketMetrics <|-- IPartialPageRequestHandlerPrependJavaScriptAspect
+    class IPartialPageRequestHandlerPrependJavaScriptAspect
+    {
+        --
+        +void beforePrependJavaScript()
+    }
+    
+@enduml
+

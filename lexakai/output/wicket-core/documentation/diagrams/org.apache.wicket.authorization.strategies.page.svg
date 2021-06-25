@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="511.4583px" preserveAspectRatio="none" style="width:512px;height:511px;background:#333333;" version="1.1" viewBox="0 0 512 511" width="512.5px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="500" x="2.0833" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="477.0833" x="13.5417" y="30.5583">org.apache.wicket.authorization.strategies.page</text><!--MD5=[4a2e49c4b8217ffb25d0827d0f7f5038]
+cluster IAuthorizationStrategy--><polygon fill="#333333" points="126.0417,52.6611,285.4167,52.6611,292.7083,79.8828,394.7917,79.8828,394.7917,157.8695,126.0417,157.8695,126.0417,52.6611" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="126.0417" x2="292.7083" y1="79.8828" y2="79.8828"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="146.875" x="133.3333" y="69.9544">IAuthorizationStrategy</text><!--MD5=[91a24da200d9ed1ee77dc6553255e763]
+class IAuthorizationStrategy.AllowAllAuthorizationStrategy--><rect fill="#282828" height="48.055" id="IAuthorizationStrategy.AllowAllAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="234.375" x="143.2292" y="93.2861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="234.375" x="143.2292" y="93.2861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="234.375" x="143.2292" y="116.3411"/><rect fill="none" height="48.055" id="IAuthorizationStrategy.AllowAllAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="234.375" x="143.2292" y="93.2861"/><ellipse cx="157.8125" cy="108.9803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M159.7229,113.4054 Q159.2957,113.6251 158.8257,113.7349 Q158.3557,113.8448 157.8369,113.8448 Q155.9937,113.8448 155.0232,112.6302 Q154.0527,111.4156 154.0527,109.1207 Q154.0527,106.8197 155.0232,105.6051 Q155.9937,104.3905 157.8369,104.3905 Q158.3557,104.3905 158.8318,104.5003 Q159.3079,104.6102 159.7229,104.8299 L159.7229,106.8319 Q159.259,106.4046 158.8226,106.2063 Q158.3862,106.0079 157.9224,106.0079 Q156.9336,106.0079 156.4301,106.7922 Q155.9265,107.5765 155.9265,109.1207 Q155.9265,110.6588 156.4301,111.4431 Q156.9336,112.2274 157.9224,112.2274 Q158.3862,112.2274 158.8226,112.029 Q159.259,111.8306 159.7229,111.4034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="196.875" x="174.4792" y="113.7044">AllowAllAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="144.2708" x2="376.5625" y1="124.6745" y2="124.6745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="144.2708" x2="376.5625" y1="133.0078" y2="133.0078"/><!--MD5=[68babf092afe6e6fccd5c3be61797eb1]
+class AbstractPageAuthorizationStrategy--><rect codeLine="9" fill="#282828" height="111.4563" id="AbstractPageAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="353.125" x="83.8542" y="203.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="353.125" x="83.8542" y="203.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="353.125" x="83.8542" y="226.7578"/><rect codeLine="9" fill="none" height="111.4563" id="AbstractPageAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="353.125" x="83.8542" y="203.7028"/><ellipse cx="139.5833" cy="219.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M139.1764,216.099 L138.328,219.8283 L140.0309,219.8283 Z M138.0778,214.4511 L140.2812,214.4511 L142.7409,223.5636 L140.9403,223.5636 L140.3788,221.3114 L137.9679,221.3114 L137.4186,223.5636 L135.6181,223.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="227.0833" x="162.5" y="224.1211">AbstractPageAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="84.8958" x2="435.9375" y1="235.0911" y2="235.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="84.8958" x2="435.9375" y1="243.4245" y2="243.4245"/><polygon fill="#FFFF44" points="95.3125,249.6745,99.4792,253.8411,95.3125,258.0078,91.1458,253.8411" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="320.8333" x="106.7708" y="261.794">boolean instanceOf(Class&lt;?&gt; type, Class&lt;?&gt; superType)</text><polygon fill="#FFFF44" points="95.3125,293.3309,99.4792,297.4976,95.3125,301.6642,91.1458,297.4976" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="270.8333" x="106.7708" y="305.4504">boolean isPageAuthorized(Class&lt;T&gt; pageClass)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="84.8958" x2="233.8542" y1="281.3751" y2="281.3751"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="236.9792" y="285.1847">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="286.9792" x2="435.9375" y1="281.3751" y2="281.3751"/><!--MD5=[0f343b87be818c86494222819467fd43]
+class SimplePageAuthorizationStrategy--><rect codeLine="18" fill="#282828" height="127.0345" id="SimplePageAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="102.0833" y="377.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="102.0833" y="377.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="102.0833" y="400.7161"/><rect codeLine="18" fill="none" height="127.0345" id="SimplePageAuthorizationStrategy" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="102.0833" y="377.6611"/><ellipse cx="144.7917" cy="393.3553" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M144.3848,390.0574 L143.5364,393.7866 L145.2393,393.7866 Z M143.2861,388.4094 L145.4895,388.4094 L147.9492,397.522 L146.1487,397.522 L145.5872,395.2698 L143.1763,395.2698 L142.627,397.522 L140.8264,397.522 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="216.6667" x="167.7083" y="398.0794">SimplePageAuthorizationStrategy</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="103.125" x2="417.7083" y1="409.0495" y2="409.0495"/><ellipse cx="113.5417" cy="444.4194" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="280.2083" x="125" y="451.3306">SimplePageAuthorizationStrategy(Class&lt;?&gt;, Class</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" text-decoration="line-through" textLength="4.1667" x="405.2083" y="451.3306">)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="103.125" x2="216.6667" y1="427.2552" y2="427.2552"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="219.7917" y="431.0649">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="304.1667" x2="417.7083" y1="427.2552" y2="427.2552"/><polygon fill="#FFFF44" points="113.5417,482.8674,117.7083,487.0341,113.5417,491.2008,109.375,487.0341" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="125" y="494.987">boolean isAuthorized()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="103.125" x2="233.8542" y1="470.9117" y2="470.9117"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="236.9792" y="474.7213">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="286.9792" x2="417.7083" y1="470.9117" y2="470.9117"/><!--MD5=[6765051935ca55b28db7206a927c51c7]
+reverse link IAuthorizationStrategy.AllowAllAuthorizationStrategy to AbstractPageAuthorizationStrategy--><path codeLine="8" d="M260.4167,162.2861 C260.4167,175.3382 260.4167,189.7861 260.4167,203.4424 " fill="none" id="IAuthorizationStrategy.AllowAllAuthorizationStrategy-backto-AbstractPageAuthorizationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="253.125,162.2549,260.4167,141.4215,267.7083,162.2549,253.125,162.2549" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bfb06dc43d372a102d3e84b6e2abd7a2]
+reverse link AbstractPageAuthorizationStrategy to SimplePageAuthorizationStrategy--><path codeLine="17" d="M260.4167,336.3278 C260.4167,350.0257 260.4167,364.1611 260.4167,377.432 " fill="none" id="AbstractPageAuthorizationStrategy-backto-SimplePageAuthorizationStrategy" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="253.125,336.1924,260.4167,315.359,267.7083,336.1924,253.125,336.1924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[4f61c544be05f3b400a2a9201c8594ac]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.authorization.strategies.page"
+    
+    abstract AbstractPageAuthorizationStrategy
+    
+    IAuthorizationStrategy.AllowAllAuthorizationStrategy <|- - AbstractPageAuthorizationStrategy
+    abstract class AbstractPageAuthorizationStrategy
+    {
+        - -
+        #boolean instanceOf(Class<?> type, Class<?> superType)
+        - -(checks)- -
+        #boolean isPageAuthorized(Class<T> pageClass)
+    }
+    
+    AbstractPageAuthorizationStrategy <|- - SimplePageAuthorizationStrategy
+    abstract class SimplePageAuthorizationStrategy
+    {
+        - -(constructors)- -
+        +SimplePageAuthorizationStrategy(Class<?>, Class<S>)
+        - -(checks)- -
+        #boolean isAuthorized()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.authorization.strategies.page"
+    
+    abstract AbstractPageAuthorizationStrategy
+    
+    IAuthorizationStrategy.AllowAllAuthorizationStrategy <|- - AbstractPageAuthorizationStrategy
+    abstract class AbstractPageAuthorizationStrategy
+    {
+        - -
+        #boolean instanceOf(Class<?> type, Class<?> superType)
+        - -(checks)- -
+        #boolean isPageAuthorized(Class<T> pageClass)
+    }
+    
+    AbstractPageAuthorizationStrategy <|- - SimplePageAuthorizationStrategy
+    abstract class SimplePageAuthorizationStrategy
+    {
+        - -(constructors)- -
+        +SimplePageAuthorizationStrategy(Class<?>, Class<S>)
+        - -(checks)- -
+        #boolean isAuthorized()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

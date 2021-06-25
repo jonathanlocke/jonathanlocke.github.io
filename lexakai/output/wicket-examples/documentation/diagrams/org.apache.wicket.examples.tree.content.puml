@@ -1,0 +1,97 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.tree.content"
+    
+    interface IDetachable
+    
+    Content <|-- BookmarkableFolderContent
+    class BookmarkableFolderContent
+    {
+        --(constructors)--
+        +BookmarkableFolderContent(AbstractTree<Foo>)
+    }
+    
+    Content <|-- CheckedFolderContent
+    class CheckedFolderContent
+    {
+        --(constructors)--
+        +CheckedFolderContent(ITreeProvider<Foo>)
+        --
+        #void check(Foo, boolean check)
+        --(checks)--
+        #boolean isChecked(Foo)
+    }
+    
+    SelectableFolderContent <|-- CheckedSelectableFolderContent
+    class CheckedSelectableFolderContent
+    {
+        --(constructors)--
+        +CheckedSelectableFolderContent(ITreeProvider<Foo>)
+    }
+    
+    IDetachable <|-- Content
+    abstract class Content
+    {
+        --(factory)--
+        +Component newContentComponent(String id, AbstractTree<Foo>, IModel<Foo>)
+    }
+    
+    Content <|-- EditableFolderContent
+    class EditableFolderContent
+    {
+    }
+    
+    Content <|-- FolderContent
+    class FolderContent
+    {
+    }
+    
+    Content <|-- LabelContent
+    class LabelContent
+    {
+    }
+    
+    Content <|-- MixedContent
+    class MixedContent
+    {
+        --(constructors)--
+        +MixedContent(List<Content>)
+    }
+    
+    Content <|-- MultiLineLabelContent
+    class MultiLineLabelContent
+    {
+    }
+    
+    Content <|-- MultiSelectableFolderContent
+    class MultiSelectableFolderContent
+    {
+        --(constructors)--
+        +MultiSelectableFolderContent(ITreeProvider<Foo>)
+        --
+        #void toggle(Foo, AbstractTree<Foo>, Optional<AjaxRequestTarget> targetOptional)
+        --(checks)--
+        #boolean isSelected(Foo)
+    }
+    
+    Content <|-- PanelContent
+    IDetachable <|-- PanelContent
+    class PanelContent
+    {
+    }
+    
+    Content <|-- SelectableFolderContent
+    class SelectableFolderContent
+    {
+        --(constructors)--
+        +SelectableFolderContent(ITreeProvider<Foo>)
+        --
+        #void select(Foo, AbstractTree<Foo>, Optional<AjaxRequestTarget> targetOptional)
+        --(checks)--
+        #boolean isSelected(Foo)
+    }
+    
+@enduml
+

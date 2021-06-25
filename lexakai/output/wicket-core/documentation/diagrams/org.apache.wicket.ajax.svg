@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1306.25px" preserveAspectRatio="none" style="width:4705px;height:1306px;background:#333333;" version="1.1" viewBox="0 0 4705 1306" width="4705.2083px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="251.0417" x="2220.0521" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="228.125" x="2231.5104" y="30.5583">org.apache.wicket.ajax</text><!--MD5=[c44f484162ce826c46954ab096a868bc]
+class AbstractDefaultAjaxBehavior--><rect codeLine="38" fill="#282828" height="356.7281" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="471.875" x="1371.875" y="223.4945"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="471.875" x="1371.875" y="223.4945"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="471.875" x="1371.875" y="246.5495"/><rect codeLine="38" fill="none" height="356.7281" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="471.875" x="1371.875" y="223.4945"/><ellipse cx="1507.2917" cy="239.1886" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1506.8848,235.8907 L1506.0364,239.62 L1507.7393,239.62 Z M1505.7861,234.2428 L1507.9895,234.2428 L1510.4492,243.3553 L1508.6487,243.3553 L1508.0872,241.1031 L1505.6763,241.1031 L1505.127,243.3553 L1503.3264,243.3553 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="186.4583" x="1530.2083" y="243.9128">AbstractDefaultAjaxBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1372.9167" x2="1842.7083" y1="254.8828" y2="254.8828"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1372.9167" x2="1842.7083" y1="263.2161" y2="263.2161"/><polygon fill="#FFFF44" points="1383.3333,269.4661,1387.5,273.6328,1383.3333,277.7995,1379.1667,273.6328" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="211.4583" x="1394.7917" y="281.5857">AjaxRequestAttributes getAttributes()</text><polygon fill="#FFFF44" points="1383.3333,289.211,1387.5,293.3777,1383.3333,297.5444,1379.1667,293.3777" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="302.0833" x="1394.7917" y="301.3306">Form.MethodMismatchResponse onMethodMismatch()</text><polygon fill="#FFFF44" points="1383.3333,308.9559,1387.5,313.1226,1383.3333,317.2892,1379.1667,313.1226" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="1394.7917" y="321.0754">void respond(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="1383.3333,328.7008,1387.5,332.8674,1383.3333,337.0341,1379.1667,332.8674" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="1394.7917" y="340.8203">void updateAjaxAttributes(AjaxRequestAttributes)</text><polygon fill="#FFFF44" points="1383.3333,372.3572,1387.5,376.5238,1383.3333,380.6905,1379.1667,376.5238" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="400" x="1394.7917" y="384.4767">void postprocessConfiguration(JSONObject attributesJson, Component)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1372.9167" x2="1562.5" y1="360.4014" y2="360.4014"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="84.375" x="1565.625" y="364.211">(configuration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1653.125" x2="1842.7083" y1="360.4014" y2="360.4014"/><ellipse cx="1383.3333" cy="421.2219" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="412.5" x="1394.7917" y="428.1331">CharSequence getCallbackFunction(CallbackParameter... extraParameters)</text><ellipse cx="1383.3333" cy="440.9668" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="439.5833" x="1394.7917" y="447.878">CharSequence getCallbackFunctionBody(CallbackParameter... extraParameters)</text><ellipse cx="1383.3333" cy="460.7117" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="1394.7917" y="467.6229">CharSequence getCallbackScript()</text><polygon fill="#FFFF44" points="1383.3333,475.2482,1387.5,479.4149,1383.3333,483.5815,1379.1667,479.4149" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="254.1667" x="1394.7917" y="487.3678">CharSequence getCallbackScript(Component)</text><polygon fill="#FFFF44" points="1383.3333,494.9931,1387.5,499.1597,1383.3333,503.3264,1379.1667,499.1597" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="276.0417" x="1394.7917" y="507.1126">CharSequence renderAjaxAttributes(Component)</text><polygon fill="#FFFF44" points="1383.3333,514.738,1387.5,518.9046,1383.3333,523.0713,1379.1667,518.9046" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="408.3333" x="1394.7917" y="526.8575">CharSequence renderAjaxAttributes(Component, AjaxRequestAttributes)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1372.9167" x2="1576.0417" y1="404.0578" y2="404.0578"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="1579.1667" y="407.8674">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1639.5833" x2="1842.7083" y1="404.0578" y2="404.0578"/><polygon fill="#FFFF44" points="1383.3333,558.3944,1387.5,562.561,1383.3333,566.7277,1379.1667,562.561" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="127.0833" x="1394.7917" y="570.5139">String findIndicatorId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1372.9167" x2="1581.7708" y1="546.4386" y2="546.4386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="45.8333" x="1584.8958" y="550.2482">(search)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1633.8542" x2="1842.7083" y1="546.4386" y2="546.4386"/><!--MD5=[b33fa63e1b6d884010ff2c667dd071a1]
+class AbstractPartialPageRequestHandler--><rect codeLine="7" fill="#282828" height="48.055" id="AbstractPartialPageRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="264.5833" x="2406.7708" y="377.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="264.5833" x="2406.7708" y="377.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="264.5833" x="2406.7708" y="400.7161"/><rect codeLine="7" fill="none" height="48.055" id="AbstractPartialPageRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="264.5833" x="2406.7708" y="377.6611"/><ellipse cx="2421.3542" cy="393.3553" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M2420.9473,390.0574 L2420.0989,393.7866 L2421.8018,393.7866 Z M2419.8486,388.4094 L2422.052,388.4094 L2424.5117,397.522 L2422.7112,397.522 L2422.1497,395.2698 L2419.7388,395.2698 L2419.1895,397.522 L2417.3889,397.522 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="227.0833" x="2438.0208" y="398.0794">AbstractPartialPageRequestHandler</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2407.8125" x2="2670.3125" y1="409.0495" y2="409.0495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2407.8125" x2="2670.3125" y1="417.3828" y2="417.3828"/><!--MD5=[0e4e2b7a4fda2c740f9708b05f01b927]
+class AbstractAjaxTimerBehavior--><rect codeLine="15" fill="#282828" height="408.7179" id="AbstractAjaxTimerBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="639.5833" x="636.9792" y="642.2445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="639.5833" x="636.9792" y="642.2445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="639.5833" x="636.9792" y="665.2995"/><rect codeLine="15" fill="none" height="408.7179" id="AbstractAjaxTimerBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="639.5833" x="636.9792" y="642.2445"/><ellipse cx="861.4583" cy="657.9386" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M861.0514,654.6407 L860.203,658.37 L861.9059,658.37 Z M859.9528,652.9928 L862.1562,652.9928 L864.6159,662.1053 L862.8153,662.1053 L862.2538,659.8531 L859.8429,659.8531 L859.2936,662.1053 L857.4931,662.1053 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="176.0417" x="884.375" y="662.6628">AbstractAjaxTimerBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="638.0208" x2="1275.5208" y1="673.6328" y2="673.6328"/><ellipse cx="648.4375" cy="709.0027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="210.4167" x="659.8958" y="715.9139">AbstractAjaxTimerBehavior(Duration)</text><ellipse cx="648.4375" cy="728.7476" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="361.4583" x="659.8958" y="735.6588">AbstractAjaxTimerBehavior(org.apache.wicket.util.time.Duration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="913.0208" y1="691.8386" y2="691.8386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="916.1458" y="695.6482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1000.5208" x2="1275.5208" y1="691.8386" y2="691.8386"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="1275.5208" y1="745.3674" y2="745.3674"/><polygon fill="#FFFF44" points="648.4375,751.6174,652.6042,755.7841,648.4375,759.9508,644.2708,755.7841" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="188.5417" x="659.8958" y="763.737">void onTimer(AjaxRequestTarget)</text><polygon fill="#FFFF44" points="648.4375,771.3623,652.6042,775.529,648.4375,779.6956,644.2708,775.529" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="265.625" x="659.8958" y="783.4819">void setUpdateInterval(Duration updateInterval)</text><ellipse cx="648.4375" cy="820.2271" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="111.4583" x="659.8958" y="827.1383">boolean isStopped()</text><polygon fill="#FFFF44" points="648.4375,834.7636,652.6042,838.9303,648.4375,843.0969,644.2708,838.9303" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="659.8958" y="846.8831">boolean shouldTrigger()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="930.2083" y1="803.0629" y2="803.0629"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="933.3333" y="806.8726">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="983.3333" x2="1275.5208" y1="803.0629" y2="803.0629"/><ellipse cx="648.4375" cy="883.6283" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="607.2917" x="659.8958" y="890.5396">AbstractAjaxTimerBehavior onTimer(Duration interval, SerializableConsumer&lt;AjaxRequestTarget&gt; onTimer)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="902.6042" y1="866.4642" y2="866.4642"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="905.7292" y="870.2738">(extension points)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1010.9375" x2="1275.5208" y1="866.4642" y2="866.4642"/><polygon fill="#FFFF44" points="648.4375,922.0764,652.6042,926.2431,648.4375,930.4097,644.2708,926.2431" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="105.2083" x="659.8958" y="934.196">String getTimerId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="928.6458" y1="910.1206" y2="910.1206"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="931.7708" y="913.9303">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="984.8958" x2="1275.5208" y1="910.1206" y2="910.1206"/><ellipse cx="648.4375" cy="970.9412" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="261.4583" x="659.8958" y="977.8524">void restart(IPartialPageRequestHandler target)</text><ellipse cx="648.4375" cy="990.686" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="248.9583" x="659.8958" y="997.5972">void stop(IPartialPageRequestHandler target)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="927.0833" y1="953.7771" y2="953.7771"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="930.2083" y="957.5867">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="986.4583" x2="1275.5208" y1="953.7771" y2="953.7771"/><ellipse cx="648.4375" cy="1034.3424" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="159.375" x="659.8958" y="1041.2537">Duration getUpdateInterval()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="638.0208" x2="937.5" y1="1017.1783" y2="1017.1783"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="32.2917" x="940.625" y="1020.988">(time)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="976.0417" x2="1275.5208" y1="1017.1783" y2="1017.1783"/><!--MD5=[b5f8fcd6b92b16c6d5678be11ab9cfcc]
+class AbstractAjaxBehavior--><rect codeLine="9" fill="#282828" height="48.055" id="AbstractAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="1519.7917" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="1519.7917" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="176.0417" x="1519.7917" y="106.4453"/><rect codeLine="9" fill="none" height="48.055" id="AbstractAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="176.0417" x="1519.7917" y="83.3903"/><ellipse cx="1534.375" cy="99.0845" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1533.9681,95.7865 L1533.1197,99.5158 L1534.8226,99.5158 Z M1532.8695,94.1386 L1535.0728,94.1386 L1537.5326,103.2511 L1535.732,103.2511 L1535.1705,100.9989 L1532.7596,100.9989 L1532.2103,103.2511 L1530.4097,103.2511 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="138.5417" x="1551.0417" y="103.8086">AbstractAjaxBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1520.8333" x2="1694.7917" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1520.8333" x2="1694.7917" y1="123.112" y2="123.112"/><!--MD5=[fc243c8e7e2724a503baf3e90eabad0c]
+class AjaxRequestTarget--><rect codeLine="123" fill="#282828" height="146.7794" id="AjaxRequestTarget" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="338.5417" x="2708.3333" y="328.182"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="338.5417" x="2708.3333" y="328.182"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="338.5417" x="2708.3333" y="351.237"/><rect codeLine="123" fill="none" height="146.7794" id="AjaxRequestTarget" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="338.5417" x="2708.3333" y="328.182"/><ellipse cx="2809.375" cy="343.8761" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2806.779,341.038 L2806.779,339.4511 L2812.205,339.4511 L2812.205,341.038 L2810.3923,341.038 L2810.3923,346.9767 L2812.205,346.9767 L2812.205,348.5636 L2806.779,348.5636 L2806.779,346.9767 L2808.5917,346.9767 L2808.5917,341.038 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="121.875" x="2832.2917" y="348.6003">AjaxRequestTarget</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2709.375" x2="3045.8333" y1="359.5703" y2="359.5703"/><ellipse cx="2719.7917" cy="394.9402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="258.3333" x="2731.25" y="401.8514">void addListener(AjaxRequestTarget.IListener)</text><ellipse cx="2719.7917" cy="414.6851" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="2731.25" y="421.5963">String getLastFocusedElementId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2709.375" x2="2843.2292" y1="377.7761" y2="377.7761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="2846.3542" y="381.5857">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2911.9792" x2="3045.8333" y1="377.7761" y2="377.7761"/><ellipse cx="2719.7917" cy="458.3415" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="306.25" x="2731.25" y="465.2527">void registerRespondListener(ITargetRespondListener)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2709.375" x2="2840.1042" y1="441.1774" y2="441.1774"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="2843.2292" y="444.987">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2915.1042" x2="3045.8333" y1="441.1774" y2="441.1774"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="162" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="3351.0417" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="3351.0417" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="3351.0417" y="106.4453"/><rect codeLine="162" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="3351.0417" y="83.3903"/><ellipse cx="3365.625" cy="99.0845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M3363.029,96.2463 L3363.029,94.6594 L3368.455,94.6594 L3368.455,96.2463 L3366.6423,96.2463 L3366.6423,102.1851 L3368.455,102.1851 L3368.455,103.772 L3363.029,103.772 L3363.029,102.1851 L3364.8417,102.1851 L3364.8417,96.2463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="3382.2917" y="103.8086">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3352.0833" x2="3465.625" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3352.0833" x2="3465.625" y1="123.112" y2="123.112"/><!--MD5=[0f0531343a09862b9956eeb2e75db77b]
+class AjaxChannel--><rect codeLine="59" fill="#282828" height="174.8576" id="AjaxChannel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="178.125" x="3083.3333" y="314.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="178.125" x="3083.3333" y="314.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="178.125" x="3083.3333" y="337.1745"/><rect codeLine="59" fill="none" height="174.8576" id="AjaxChannel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="178.125" x="3083.3333" y="314.1195"/><ellipse cx="3124.6354" cy="329.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3126.5458,334.2387 Q3126.1186,334.4584 3125.6486,334.5683 Q3125.1786,334.6781 3124.6598,334.6781 Q3122.8166,334.6781 3121.8461,333.4635 Q3120.8757,332.2489 3120.8757,329.954 Q3120.8757,327.653 3121.8461,326.4384 Q3122.8166,325.2238 3124.6598,325.2238 Q3125.1786,325.2238 3125.6547,325.3337 Q3126.1308,325.4435 3126.5458,325.6632 L3126.5458,327.6652 Q3126.0819,327.238 3125.6455,327.0396 Q3125.2091,326.8412 3124.7453,326.8412 Q3123.7565,326.8412 3123.253,327.6255 Q3122.7494,328.4098 3122.7494,329.954 Q3122.7494,331.4921 3123.253,332.2764 Q3123.7565,333.0607 3124.7453,333.0607 Q3125.2091,333.0607 3125.6455,332.8623 Q3126.0819,332.664 3126.5458,332.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="81.25" x="3147.2396" y="334.5378">AjaxChannel</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3084.375" x2="3260.4167" y1="345.5078" y2="345.5078"/><ellipse cx="3094.7917" cy="380.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="112.5" x="3106.25" y="387.7889">AjaxChannel(String)</text><ellipse cx="3094.7917" cy="400.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="145.8333" x="3106.25" y="407.5338">AjaxChannel(String, Type)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3084.375" x2="3128.6458" y1="363.7136" y2="363.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="3131.7708" y="367.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3216.1458" x2="3260.4167" y1="363.7136" y2="363.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3084.375" x2="3260.4167" y1="417.2424" y2="417.2424"/><ellipse cx="3094.7917" cy="428.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="83.3333" x="3106.25" y="435.612">Type getType()</text><ellipse cx="3094.7917" cy="472.3572" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="93.75" x="3106.25" y="479.2684">String getName()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3084.375" x2="3144.2708" y1="455.1931" y2="455.1931"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="3147.3958" y="459.0027">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3200.5208" x2="3260.4167" y1="455.1931" y2="455.1931"/><!--MD5=[0512044433674481b7efe087213cfbd8]
+class AjaxClientInfoBehavior--><rect codeLine="71" fill="#282828" height="186.2691" id="AjaxClientInfoBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="646.875" x="9.375" y="1113.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="646.875" x="9.375" y="1113.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="646.875" x="9.375" y="1136.1328"/><rect codeLine="71" fill="none" height="186.2691" id="AjaxClientInfoBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="646.875" x="9.375" y="1113.0778"/><ellipse cx="251.0417" cy="1128.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M252.9521,1133.197 Q252.5248,1133.4167 252.0549,1133.5266 Q251.5849,1133.6365 251.0661,1133.6365 Q249.2228,1133.6365 248.2524,1132.4219 Q247.2819,1131.2073 247.2819,1128.9124 Q247.2819,1126.6113 248.2524,1125.3967 Q249.2228,1124.1821 251.0661,1124.1821 Q251.5849,1124.1821 252.061,1124.292 Q252.537,1124.4019 252.9521,1124.6216 L252.9521,1126.6235 Q252.4882,1126.1963 252.0518,1125.9979 Q251.6154,1125.7996 251.1515,1125.7996 Q250.1628,1125.7996 249.6592,1126.5839 Q249.1557,1127.3682 249.1557,1128.9124 Q249.1557,1130.4504 249.6592,1131.2347 Q250.1628,1132.019 251.1515,1132.019 Q251.6154,1132.019 252.0518,1131.8207 Q252.4882,1131.6223 252.9521,1131.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="148.9583" x="273.9583" y="1133.4961">AjaxClientInfoBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="10.4167" x2="655.2083" y1="1144.4661" y2="1144.4661"/><ellipse cx="20.8333" cy="1179.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="135.4167" x="32.2917" y="1186.7472">AjaxClientInfoBehavior()</text><ellipse cx="20.8333" cy="1199.5809" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="184.375" x="32.2917" y="1206.4921">AjaxClientInfoBehavior(Duration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="289.0625" y1="1162.6719" y2="1162.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="292.1875" y="1166.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="376.5625" x2="655.2083" y1="1162.6719" y2="1162.6719"/><ellipse cx="20.8333" cy="1243.2373" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="614.5833" x="32.2917" y="1250.1485">AjaxClientInfoBehavior onClientInfo(SerializableBiConsumer&lt;AjaxRequestTarget,WebClientInfo&gt; onClientInfo)</text><polygon fill="#FFFF44" points="20.8333,1257.7738,25,1261.9405,20.8333,1266.1072,16.6667,1261.9405" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="262.5" x="32.2917" y="1269.8934">WebClientInfo newWebClientInfo(RequestCycle)</text><polygon fill="#FFFF44" points="20.8333,1277.5187,25,1281.6854,20.8333,1285.8521,16.6667,1281.6854" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="293.75" x="32.2917" y="1289.6383">void onClientInfo(AjaxRequestTarget, WebClientInfo)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="10.4167" x2="295.3125" y1="1226.0732" y2="1226.0732"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="298.4375" y="1229.8828">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="370.3125" x2="655.2083" y1="1226.0732" y2="1226.0732"/><!--MD5=[61e09d85732d081f20ec5ea1cc80f915]
+class AjaxEventBehavior--><rect codeLine="83" fill="#282828" height="166.5243" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="589.5833" x="1313.0208" y="763.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="589.5833" x="1313.0208" y="763.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="589.5833" x="1313.0208" y="786.1328"/><rect codeLine="83" fill="none" height="166.5243" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="589.5833" x="1313.0208" y="763.0778"/><ellipse cx="1540.625" cy="778.772" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1540.2181,775.474 L1539.3697,779.2033 L1541.0726,779.2033 Z M1539.1195,773.8261 L1541.3228,773.8261 L1543.7826,782.9386 L1541.982,782.9386 L1541.4205,780.6864 L1539.0096,780.6864 L1538.4603,782.9386 L1536.6597,782.9386 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="1563.5417" y="783.4961">AjaxEventBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1314.0625" x2="1901.5625" y1="794.4661" y2="794.4661"/><ellipse cx="1324.4792" cy="829.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="1335.9375" y="836.7472">AjaxEventBehavior(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1314.0625" x2="1564.0625" y1="812.6719" y2="812.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1567.1875" y="816.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1651.5625" x2="1901.5625" y1="812.6719" y2="812.6719"/><ellipse cx="1324.4792" cy="873.4924" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="92.7083" x="1335.9375" y="880.4036">String getEvent()</text><ellipse cx="1324.4792" cy="893.2373" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="557.2917" x="1335.9375" y="900.1485">AjaxEventBehavior onEvent(String eventName, SerializableConsumer&lt;AjaxRequestTarget&gt; onEvent)</text><polygon fill="#FFFF44" points="1324.4792,907.7738,1328.6458,911.9405,1324.4792,916.1072,1320.3125,911.9405" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="186.4583" x="1335.9375" y="919.8934">void onEvent(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1314.0625" x2="1570.3125" y1="856.3283" y2="856.3283"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="68.75" x="1573.4375" y="860.1379">(messaging)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1645.3125" x2="1901.5625" y1="856.3283" y2="856.3283"/><!--MD5=[c5b95b1837bc24c278fc1eb296a0294c]
+class AjaxNewWindowNotifyingBehavior--><rect codeLine="94" fill="#282828" height="166.5243" id="AjaxNewWindowNotifyingBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="642.7083" x="1939.5833" y="763.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="642.7083" x="1939.5833" y="763.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="642.7083" x="1939.5833" y="786.1328"/><rect codeLine="94" fill="none" height="166.5243" id="AjaxNewWindowNotifyingBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="642.7083" x="1939.5833" y="763.0778"/><ellipse cx="2142.1875" cy="778.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2144.0979,783.197 Q2143.6707,783.4167 2143.2007,783.5266 Q2142.7307,783.6365 2142.2119,783.6365 Q2140.3687,783.6365 2139.3982,782.4219 Q2138.4277,781.2073 2138.4277,778.9124 Q2138.4277,776.6113 2139.3982,775.3967 Q2140.3687,774.1821 2142.2119,774.1821 Q2142.7307,774.1821 2143.2068,774.292 Q2143.6829,774.4019 2144.0979,774.6216 L2144.0979,776.6235 Q2143.634,776.1963 2143.1976,775.9979 Q2142.7612,775.7996 2142.2974,775.7996 Q2141.3086,775.7996 2140.8051,776.5839 Q2140.3015,777.3682 2140.3015,778.9124 Q2140.3015,780.4504 2140.8051,781.2347 Q2141.3086,782.019 2142.2974,782.019 Q2142.7612,782.019 2143.1976,781.8207 Q2143.634,781.6223 2144.0979,781.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="222.9167" x="2165.1042" y="783.4961">AjaxNewWindowNotifyingBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1940.625" x2="2581.25" y1="794.4661" y2="794.4661"/><ellipse cx="1951.0417" cy="829.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="610.4167" x="1962.5" y="836.7472">AjaxNewWindowNotifyingBehavior onNewWindow(SerializableConsumer&lt;AjaxRequestTarget&gt; onNewWindow)</text><polygon fill="#FFFF44" points="1951.0417,844.3726,1955.2083,848.5392,1951.0417,852.7059,1946.875,848.5392" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="140.625" x="1962.5" y="856.4921">String newWindowName()</text><polygon fill="#FFFF44" points="1951.0417,864.1174,1955.2083,868.2841,1951.0417,872.4508,1946.875,868.2841" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="221.875" x="1962.5" y="876.237">void onNewWindow(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1940.625" x2="2233.8542" y1="812.6719" y2="812.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="2236.9792" y="816.4815">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2288.0208" x2="2581.25" y1="812.6719" y2="812.6719"/><ellipse cx="1951.0417" cy="912.9822" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="1962.5" y="919.8934">String getWindowName()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1940.625" x2="2232.8125" y1="895.8181" y2="895.8181"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="2235.9375" y="899.6277">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2289.0625" x2="2581.25" y1="895.8181" y2="895.8181"/><!--MD5=[338d8c0ecb70c5ef44efccfa655a5fc7]
+class AjaxPreventSubmitBehavior--><rect codeLine="105" fill="#282828" height="83.3781" id="AjaxPreventSubmitBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="1500" y="1164.6403"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="1500" y="1164.6403"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="215.625" x="1500" y="1187.6953"/><rect codeLine="105" fill="none" height="83.3781" id="AjaxPreventSubmitBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="215.625" x="1500" y="1164.6403"/><ellipse cx="1514.5833" cy="1180.3345" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1516.4937,1184.7595 Q1516.0665,1184.9792 1515.5965,1185.0891 Q1515.1265,1185.199 1514.6077,1185.199 Q1512.7645,1185.199 1511.794,1183.9844 Q1510.8236,1182.7698 1510.8236,1180.4749 Q1510.8236,1178.1738 1511.794,1176.9592 Q1512.7645,1175.7446 1514.6077,1175.7446 Q1515.1265,1175.7446 1515.6026,1175.8545 Q1516.0787,1175.9644 1516.4937,1176.1841 L1516.4937,1178.186 Q1516.0299,1177.7588 1515.5935,1177.5604 Q1515.1571,1177.3621 1514.6932,1177.3621 Q1513.7044,1177.3621 1513.2009,1178.1464 Q1512.6973,1178.9307 1512.6973,1180.4749 Q1512.6973,1182.0129 1513.2009,1182.7972 Q1513.7044,1183.5815 1514.6932,1183.5815 Q1515.1571,1183.5815 1515.5935,1183.3832 Q1516.0299,1183.1848 1516.4937,1182.7576 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="178.125" x="1531.25" y="1185.0586">AjaxPreventSubmitBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1501.0417" x2="1714.5833" y1="1196.0286" y2="1196.0286"/><ellipse cx="1511.4583" cy="1231.3985" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="161.4583" x="1522.9167" y="1238.3097">AjaxPreventSubmitBehavior()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1501.0417" x2="1564.0625" y1="1214.2344" y2="1214.2344"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1567.1875" y="1218.044">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1651.5625" x2="1714.5833" y1="1214.2344" y2="1214.2344"/><!--MD5=[5b018287b35d7eca79d4938c853094c4]
+class AjaxRequestHandler--><rect codeLine="113" fill="#282828" height="83.3781" id="AjaxRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="180.2083" x="2618.75" y="804.7445"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="180.2083" x="2618.75" y="804.7445"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="180.2083" x="2618.75" y="827.7995"/><rect codeLine="113" fill="none" height="83.3781" id="AjaxRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="180.2083" x="2618.75" y="804.7445"/><ellipse cx="2638.9583" cy="820.4386" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2640.8687,824.8637 Q2640.4415,825.0834 2639.9715,825.1933 Q2639.5015,825.3031 2638.9827,825.3031 Q2637.1395,825.3031 2636.169,824.0885 Q2635.1986,822.8739 2635.1986,820.579 Q2635.1986,818.278 2636.169,817.0634 Q2637.1395,815.8488 2638.9827,815.8488 Q2639.5015,815.8488 2639.9776,815.9587 Q2640.4537,816.0685 2640.8687,816.2882 L2640.8687,818.2902 Q2640.4049,817.863 2639.9685,817.6646 Q2639.5321,817.4662 2639.0682,817.4662 Q2638.0794,817.4662 2637.5759,818.2505 Q2637.0723,819.0348 2637.0723,820.579 Q2637.0723,822.1171 2637.5759,822.9014 Q2638.0794,823.6857 2639.0682,823.6857 Q2639.5321,823.6857 2639.9685,823.4873 Q2640.4049,823.289 2640.8687,822.8617 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="130.2083" x="2656.875" y="825.1628">AjaxRequestHandler</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2619.7917" x2="2797.9167" y1="836.1328" y2="836.1328"/><ellipse cx="2630.2083" cy="871.5027" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="147.9167" x="2641.6667" y="878.4139">AjaxRequestHandler(Page)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2619.7917" x2="2665.1042" y1="854.3386" y2="854.3386"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2668.2292" y="858.1482">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2752.6042" x2="2797.9167" y1="854.3386" y2="854.3386"/><!--MD5=[bff54aaec3c38a6fcc21e41a8cd7ff72]
+class ILoggableRequestHandler--><rect codeLine="119" fill="#282828" height="48.055" id="ILoggableRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="203.125" x="2653.125" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="203.125" x="2653.125" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="203.125" x="2653.125" y="106.4453"/><rect codeLine="119" fill="none" height="48.055" id="ILoggableRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="203.125" x="2653.125" y="83.3903"/><ellipse cx="2667.7083" cy="99.0845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2665.1123,96.2463 L2665.1123,94.6594 L2670.5383,94.6594 L2670.5383,96.2463 L2668.7256,96.2463 L2668.7256,102.1851 L2670.5383,102.1851 L2670.5383,103.772 L2665.1123,103.772 L2665.1123,102.1851 L2666.925,102.1851 L2666.925,96.2463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="165.625" x="2684.375" y="103.8086">ILoggableRequestHandler</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2654.1667" x2="2855.2083" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2654.1667" x2="2855.2083" y1="123.112" y2="123.112"/><!--MD5=[41c6da75bef9e1ee8ede4ffc4d5cba6c]
+class IPartialPageRequestHandler--><rect codeLine="120" fill="#282828" height="48.055" id="IPartialPageRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="214.5833" x="2893.2292" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="214.5833" x="2893.2292" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="214.5833" x="2893.2292" y="106.4453"/><rect codeLine="120" fill="none" height="48.055" id="IPartialPageRequestHandler" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="214.5833" x="2893.2292" y="83.3903"/><ellipse cx="2907.8125" cy="99.0845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M2905.2165,96.2463 L2905.2165,94.6594 L2910.6425,94.6594 L2910.6425,96.2463 L2908.8298,96.2463 L2908.8298,102.1851 L2910.6425,102.1851 L2910.6425,103.772 L2905.2165,103.772 L2905.2165,102.1851 L2907.0292,102.1851 L2907.0292,96.2463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="177.0833" x="2924.4792" y="103.8086">IPartialPageRequestHandler</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2894.2708" x2="3106.7708" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2894.2708" x2="3106.7708" y1="123.112" y2="123.112"/><!--MD5=[c01fea171677a7c84bbab5710f80df76]
+class ListenerCollection--><rect fill="#282828" height="48.055" id="ListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="155.2083" x="3930.2083" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="155.2083" x="3930.2083" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="155.2083" x="3930.2083" y="106.4453"/><rect fill="none" height="48.055" id="ListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="155.2083" x="3930.2083" y="83.3903"/><ellipse cx="3944.7917" cy="99.0845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3946.7021,103.5095 Q3946.2748,103.7292 3945.8049,103.8391 Q3945.3349,103.949 3944.8161,103.949 Q3942.9728,103.949 3942.0024,102.7344 Q3941.0319,101.5198 3941.0319,99.2249 Q3941.0319,96.9238 3942.0024,95.7092 Q3942.9728,94.4946 3944.8161,94.4946 Q3945.3349,94.4946 3945.811,94.6045 Q3946.287,94.7144 3946.7021,94.9341 L3946.7021,96.936 Q3946.2382,96.5088 3945.8018,96.3104 Q3945.3654,96.1121 3944.9015,96.1121 Q3943.9128,96.1121 3943.4092,96.8964 Q3942.9057,97.6807 3942.9057,99.2249 Q3942.9057,100.7629 3943.4092,101.5472 Q3943.9128,102.3315 3944.9015,102.3315 Q3945.3654,102.3315 3945.8018,102.1332 Q3946.2382,101.9348 3946.7021,101.5076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="117.7083" x="3961.4583" y="103.8086">ListenerCollection</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3931.25" x2="4084.375" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3931.25" x2="4084.375" y1="123.112" y2="123.112"/><!--MD5=[ae5ce54b5f6dedea2b22df1b4f9d7a18]
+class AjaxRequestTargetListenerCollection--><rect codeLine="133" fill="#282828" height="48.055" id="AjaxRequestTargetListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="3869.2708" y="377.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="3869.2708" y="377.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="277.0833" x="3869.2708" y="400.7161"/><rect codeLine="133" fill="none" height="48.055" id="AjaxRequestTargetListenerCollection" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="277.0833" x="3869.2708" y="377.6611"/><ellipse cx="3883.8542" cy="393.3553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M3885.7646,397.7804 Q3885.3373,398.0001 3884.8674,398.1099 Q3884.3974,398.2198 3883.8786,398.2198 Q3882.0353,398.2198 3881.0649,397.0052 Q3880.0944,395.7906 3880.0944,393.4957 Q3880.0944,391.1947 3881.0649,389.9801 Q3882.0353,388.7655 3883.8786,388.7655 Q3884.3974,388.7655 3884.8735,388.8753 Q3885.3495,388.9852 3885.7646,389.2049 L3885.7646,391.2069 Q3885.3007,390.7796 3884.8643,390.5813 Q3884.4279,390.3829 3883.964,390.3829 Q3882.9753,390.3829 3882.4717,391.1672 Q3881.9682,391.9515 3881.9682,393.4957 Q3881.9682,395.0338 3882.4717,395.8181 Q3882.9753,396.6024 3883.964,396.6024 Q3884.4279,396.6024 3884.8643,396.404 Q3885.3007,396.2056 3885.7646,395.7784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="239.5833" x="3900.5208" y="398.0794">AjaxRequestTargetListenerCollection</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3870.3125" x2="4145.3125" y1="409.0495" y2="409.0495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3870.3125" x2="4145.3125" y1="417.3828" y2="417.3828"/><!--MD5=[3b8d35af381d943223f661520a316881]
+class AjaxSelfUpdatingTimerBehavior--><rect codeLine="138" fill="#282828" height="174.8576" id="AjaxSelfUpdatingTimerBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="689.5833" x="693.2292" y="1118.807"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="689.5833" x="693.2292" y="1118.807"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="689.5833" x="693.2292" y="1141.862"/><rect codeLine="138" fill="none" height="174.8576" id="AjaxSelfUpdatingTimerBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="689.5833" x="693.2292" y="1118.807"/><ellipse cx="928.125" cy="1134.5011" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M930.0354,1138.9262 Q929.6082,1139.1459 929.1382,1139.2558 Q928.6682,1139.3656 928.1494,1139.3656 Q926.3062,1139.3656 925.3357,1138.151 Q924.3652,1136.9364 924.3652,1134.6415 Q924.3652,1132.3405 925.3357,1131.1259 Q926.3062,1129.9113 928.1494,1129.9113 Q928.6682,1129.9113 929.1443,1130.0212 Q929.6204,1130.131 930.0354,1130.3507 L930.0354,1132.3527 Q929.5715,1131.9255 929.1351,1131.7271 Q928.6987,1131.5287 928.2349,1131.5287 Q927.2461,1131.5287 926.7426,1132.313 Q926.239,1133.0973 926.239,1134.6415 Q926.239,1136.1796 926.7426,1136.9639 Q927.2461,1137.7482 928.2349,1137.7482 Q928.6987,1137.7482 929.1351,1137.5498 Q929.5715,1137.3515 930.0354,1136.9242 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="205.2083" x="951.0417" y="1139.2253">AjaxSelfUpdatingTimerBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="694.2708" x2="1381.7708" y1="1150.1953" y2="1150.1953"/><ellipse cx="704.6875" cy="1185.5652" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="233.3333" x="716.1458" y="1192.4764">AjaxSelfUpdatingTimerBehavior(Duration)</text><ellipse cx="704.6875" cy="1205.3101" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="384.375" x="716.1458" y="1212.2213">AjaxSelfUpdatingTimerBehavior(org.apache.wicket.util.time.Duration)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="694.2708" x2="994.2708" y1="1168.4011" y2="1168.4011"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="997.3958" y="1172.2107">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1081.7708" x2="1381.7708" y1="1168.4011" y2="1168.4011"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="694.2708" x2="1381.7708" y1="1221.9299" y2="1221.9299"/><polygon fill="#FFFF44" points="704.6875,1228.1799,708.8542,1232.3466,704.6875,1236.5133,700.5208,1232.3466" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="260.4167" x="716.1458" y="1240.2995">void onPostProcessTarget(AjaxRequestTarget)</text><ellipse cx="704.6875" cy="1277.0447" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="657.2917" x="716.1458" y="1283.9559">AjaxSelfUpdatingTimerBehavior onSelfUpdate(Duration interval, SerializableConsumer&lt;AjaxRequestTarget&gt; onTimer)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="694.2708" x2="983.8542" y1="1259.8806" y2="1259.8806"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="986.9792" y="1263.6902">(extension points)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1092.1875" x2="1381.7708" y1="1259.8806" y2="1259.8806"/><!--MD5=[8b8ae94e6965fd6a41852b1b6c5c9a3a]
+class AjaxCallListener--><rect fill="#282828" height="48.055" id="AjaxCallListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="4214.5833" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="4214.5833" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="4214.5833" y="106.4453"/><rect fill="none" height="48.055" id="AjaxCallListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="4214.5833" y="83.3903"/><ellipse cx="4229.1667" cy="99.0845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4231.0771,103.5095 Q4230.6498,103.7292 4230.1799,103.8391 Q4229.7099,103.949 4229.1911,103.949 Q4227.3478,103.949 4226.3774,102.7344 Q4225.4069,101.5198 4225.4069,99.2249 Q4225.4069,96.9238 4226.3774,95.7092 Q4227.3478,94.4946 4229.1911,94.4946 Q4229.7099,94.4946 4230.186,94.6045 Q4230.662,94.7144 4231.0771,94.9341 L4231.0771,96.936 Q4230.6132,96.5088 4230.1768,96.3104 Q4229.7404,96.1121 4229.2765,96.1121 Q4228.2878,96.1121 4227.7842,96.8964 Q4227.2807,97.6807 4227.2807,99.2249 Q4227.2807,100.7629 4227.7842,101.5472 Q4228.2878,102.3315 4229.2765,102.3315 Q4229.7404,102.3315 4230.1768,102.1332 Q4230.6132,101.9348 4231.0771,101.5076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="4245.8333" y="103.8086">AjaxCallListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4215.625" x2="4356.25" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4215.625" x2="4356.25" y1="123.112" y2="123.112"/><!--MD5=[d5cc247045bfa83bed4ef071886e86f2]
+class CancelEventIfAjaxListener--><rect codeLine="150" fill="#282828" height="48.055" id="CancelEventIfAjaxListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="205.2083" x="4183.3333" y="377.6611"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="205.2083" x="4183.3333" y="377.6611"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="205.2083" x="4183.3333" y="400.7161"/><rect codeLine="150" fill="none" height="48.055" id="CancelEventIfAjaxListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="205.2083" x="4183.3333" y="377.6611"/><ellipse cx="4197.9167" cy="393.3553" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4199.8271,397.7804 Q4199.3998,398.0001 4198.9299,398.1099 Q4198.4599,398.2198 4197.9411,398.2198 Q4196.0978,398.2198 4195.1274,397.0052 Q4194.1569,395.7906 4194.1569,393.4957 Q4194.1569,391.1947 4195.1274,389.9801 Q4196.0978,388.7655 4197.9411,388.7655 Q4198.4599,388.7655 4198.936,388.8753 Q4199.412,388.9852 4199.8271,389.2049 L4199.8271,391.2069 Q4199.3632,390.7796 4198.9268,390.5813 Q4198.4904,390.3829 4198.0265,390.3829 Q4197.0378,390.3829 4196.5342,391.1672 Q4196.0307,391.9515 4196.0307,393.4957 Q4196.0307,395.0338 4196.5342,395.8181 Q4197.0378,396.6024 4198.0265,396.6024 Q4198.4904,396.6024 4198.9268,396.404 Q4199.3632,396.2056 4199.8271,395.7784 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="167.7083" x="4214.5833" y="398.0794">CancelEventIfAjaxListener</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4184.375" x2="4387.5" y1="409.0495" y2="409.0495"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4184.375" x2="4387.5" y1="417.3828" y2="417.3828"/><!--MD5=[bbe666f4617e53fe88c11b278c2880f6]
+class IAjaxIndicatorAware--><rect codeLine="156" fill="#282828" height="83.3781" id="IAjaxIndicatorAware" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="3297.9167" y="359.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="3297.9167" y="359.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="3297.9167" y="383.0078"/><rect codeLine="156" fill="none" height="83.3781" id="IAjaxIndicatorAware" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="3297.9167" y="359.9528"/><ellipse cx="3337.3438" cy="375.647" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M3334.7477,372.8088 L3334.7477,371.2219 L3340.1737,371.2219 L3340.1737,372.8088 L3338.361,372.8088 L3338.361,378.7476 L3340.1737,378.7476 L3340.1737,380.3345 L3334.7477,380.3345 L3334.7477,378.7476 L3336.5605,378.7476 L3336.5605,372.8088 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="129.1667" x="3359.5313" y="380.3711">IAjaxIndicatorAware</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3298.9583" x2="3518.75" y1="391.3411" y2="391.3411"/><ellipse cx="3309.375" cy="426.711" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="3320.8333" y="433.6222">String getAjaxIndicatorMarkupId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3298.9583" x2="3380.7292" y1="409.5469" y2="409.5469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="3383.8542" y="413.3565">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3436.9792" x2="3518.75" y1="409.5469" y2="409.5469"/><!--MD5=[881612852d1f07ec3ffa992e702c889e]
+class IAjaxRegionMarkupIdProvider--><rect codeLine="164" fill="#282828" height="83.3781" id="IAjaxRegionMarkupIdProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="276.0417" x="3556.25" y="359.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="276.0417" x="3556.25" y="359.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="276.0417" x="3556.25" y="383.0078"/><rect codeLine="164" fill="none" height="83.3781" id="IAjaxRegionMarkupIdProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="276.0417" x="3556.25" y="359.9528"/><ellipse cx="3591.9271" cy="375.647" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M3589.3311,372.8088 L3589.3311,371.2219 L3594.7571,371.2219 L3594.7571,372.8088 L3592.9443,372.8088 L3592.9443,378.7476 L3594.7571,378.7476 L3594.7571,380.3345 L3589.3311,380.3345 L3589.3311,378.7476 L3591.1438,378.7476 L3591.1438,372.8088 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="191.6667" x="3613.2813" y="380.3711">IAjaxRegionMarkupIdProvider</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="3557.2917" x2="3831.25" y1="391.3411" y2="391.3411"/><ellipse cx="3567.7083" cy="426.711" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="243.75" x="3579.1667" y="433.6222">String getAjaxRegionMarkupId(Component)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3557.2917" x2="3666.1458" y1="409.5469" y2="409.5469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="3669.2708" y="413.3565">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="3722.3958" x2="3831.25" y1="409.5469" y2="409.5469"/><!--MD5=[d0733cafd299a16d168692902907b2cf]
+class AjaxRequestTarget.IJavaScriptResponse--><rect codeLine="170" fill="#282828" height="83.3781" id="AjaxRequestTarget.IJavaScriptResponse" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="292.7083" x="623.9583" y="65.682"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="292.7083" x="623.9583" y="65.682"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="292.7083" x="623.9583" y="88.737"/><rect codeLine="170" fill="none" height="83.3781" id="AjaxRequestTarget.IJavaScriptResponse" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="292.7083" x="623.9583" y="65.682"/><ellipse cx="638.5417" cy="81.3761" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M635.9456,78.538 L635.9456,76.9511 L641.3717,76.9511 L641.3717,78.538 L639.5589,78.538 L639.5589,84.4767 L641.3717,84.4767 L641.3717,86.0636 L635.9456,86.0636 L635.9456,84.4767 L637.7584,84.4767 L637.7584,78.538 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="255.2083" x="655.2083" y="86.1003">AjaxRequestTarget.IJavaScriptResponse</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="625" x2="915.625" y1="97.0703" y2="97.0703"/><ellipse cx="635.4167" cy="132.4402" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="179.1667" x="646.875" y="139.3514">void addJavaScript(String script)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="625" x2="735.9375" y1="115.2761" y2="115.2761"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="739.0625" y="119.0857">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="804.6875" x2="915.625" y1="115.2761" y2="115.2761"/><!--MD5=[91924d9cfd22a778b24eb1aff3e2b3f0]
+class AjaxRequestTarget.IListener--><rect codeLine="176" fill="#282828" height="107.2896" id="AjaxRequestTarget.IListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="530.2083" x="953.125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="530.2083" x="953.125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="530.2083" x="953.125" y="76.7578"/><rect codeLine="176" fill="none" height="107.2896" id="AjaxRequestTarget.IListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="530.2083" x="953.125" y="53.7028"/><ellipse cx="1120.3125" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1117.7165,66.5588 L1117.7165,64.9719 L1123.1425,64.9719 L1123.1425,66.5588 L1121.3298,66.5588 L1121.3298,72.4976 L1123.1425,72.4976 L1123.1425,74.0845 L1117.7165,74.0845 L1117.7165,72.4976 L1119.5292,72.4976 L1119.5292,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="181.25" x="1143.2292" y="74.1211">AjaxRequestTarget.IListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="954.1667" x2="1482.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="954.1667" x2="1482.2917" y1="93.4245" y2="93.4245"/><ellipse cx="964.5833" cy="104.8828" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="497.9167" x="976.0417" y="111.794">void onAfterRespond(Map&lt;String,Component&gt;, AjaxRequestTarget.IJavaScriptResponse)</text><ellipse cx="964.5833" cy="124.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="390.625" x="976.0417" y="131.5389">void onBeforeRespond(Map&lt;String,Component&gt;, AjaxRequestTarget)</text><ellipse cx="964.5833" cy="144.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="447.9167" x="976.0417" y="151.2838">void updateAjaxAttributes(AbstractDefaultAjaxBehavior, AjaxRequestAttributes)</text><!--MD5=[170ac85f5489a3baf2cc7763d321ca14]
+class AjaxRequestTarget.ITargetRespondListener--><rect codeLine="184" fill="#282828" height="67.7999" id="AjaxRequestTarget.ITargetRespondListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="611.9792" y="367.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="611.9792" y="367.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="316.6667" x="611.9792" y="390.8203"/><rect codeLine="184" fill="none" height="67.7999" id="AjaxRequestTarget.ITargetRespondListener" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="316.6667" x="611.9792" y="367.7653"/><ellipse cx="626.5625" cy="383.4595" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M623.9665,380.6213 L623.9665,379.0344 L629.3925,379.0344 L629.3925,380.6213 L627.5798,380.6213 L627.5798,386.5601 L629.3925,386.5601 L629.3925,388.147 L623.9665,388.147 L623.9665,386.5601 L625.7792,386.5601 L625.7792,380.6213 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="279.1667" x="643.2292" y="388.1836">AjaxRequestTarget.ITargetRespondListener</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="613.0208" x2="927.6042" y1="399.1536" y2="399.1536"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="613.0208" x2="927.6042" y1="407.487" y2="407.487"/><ellipse cx="623.4375" cy="418.9453" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="241.6667" x="634.8958" y="425.8565">void onTargetRespond(AjaxRequestTarget)</text><!--MD5=[9794d7968581970dbea93bcb49a4a6b3]
+class AjaxChannel.Type--><rect codeLine="190" fill="#282828" height="107.2896" id="AjaxChannel.Type" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="965.625" y="347.9736"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="965.625" y="347.9736"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="153.125" x="965.625" y="371.0286"/><rect codeLine="190" fill="none" height="107.2896" id="AjaxChannel.Type" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="153.125" x="965.625" y="347.9736"/><ellipse cx="980.2083" cy="363.6678" fill="#CF6300" rx="10.4167" ry="10.4167" style="stroke:#EF8300;stroke-width:1.0416666666666667;"/><path d="M983.2642,368.3553 L977.5879,368.3553 L977.5879,359.2428 L983.2642,359.2428 L983.2642,360.8297 L979.3884,360.8297 L979.3884,362.795 L982.8979,362.795 L982.8979,364.3819 L979.3884,364.3819 L979.3884,366.7684 L983.2642,366.7684 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="996.875" y="368.3919">AjaxChannel.Type</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="966.6667" x2="1117.7083" y1="379.362" y2="379.362"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="40.625" x="975" y="397.7315">ACTIVE</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="31.25" x="975" y="417.4764">DROP</text><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="38.5417" x="975" y="437.2213">QUEUE</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="966.6667" x2="1117.7083" y1="446.9299" y2="446.9299"/><!--MD5=[ac0f9b78d95376f07f7716792d2430df]
+class JavaScriptResourceReference--><rect fill="#282828" height="48.055" id="JavaScriptResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="4451.0417" y="83.3903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="4451.0417" y="83.3903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="221.875" x="4451.0417" y="106.4453"/><rect fill="none" height="48.055" id="JavaScriptResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="221.875" x="4451.0417" y="83.3903"/><ellipse cx="4465.625" cy="99.0845" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4467.5354,103.5095 Q4467.1082,103.7292 4466.6382,103.8391 Q4466.1682,103.949 4465.6494,103.949 Q4463.8062,103.949 4462.8357,102.7344 Q4461.8652,101.5198 4461.8652,99.2249 Q4461.8652,96.9238 4462.8357,95.7092 Q4463.8062,94.4946 4465.6494,94.4946 Q4466.1682,94.4946 4466.6443,94.6045 Q4467.1204,94.7144 4467.5354,94.9341 L4467.5354,96.936 Q4467.0715,96.5088 4466.6351,96.3104 Q4466.1987,96.1121 4465.7349,96.1121 Q4464.7461,96.1121 4464.2426,96.8964 Q4463.739,97.6807 4463.739,99.2249 Q4463.739,100.7629 4464.2426,101.5472 Q4464.7461,102.3315 4465.7349,102.3315 Q4466.1987,102.3315 4466.6351,102.1332 Q4467.0715,101.9348 4467.5354,101.5076 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="184.375" x="4482.2917" y="103.8086">JavaScriptResourceReference</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4452.0833" x2="4671.875" y1="114.7786" y2="114.7786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4452.0833" x2="4671.875" y1="123.112" y2="123.112"/><!--MD5=[66934877ccf2f4674d1aeb67bbb89beb]
+class WicketAjaxJQueryResourceReference--><rect codeLine="198" fill="#282828" height="83.3781" id="WicketAjaxJQueryResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="272.9167" x="4425.5208" y="359.9528"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="272.9167" x="4425.5208" y="359.9528"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="272.9167" x="4425.5208" y="383.0078"/><rect codeLine="198" fill="none" height="83.3781" id="WicketAjaxJQueryResourceReference" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="272.9167" x="4425.5208" y="359.9528"/><ellipse cx="4440.1042" cy="375.647" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M4442.0146,380.072 Q4441.5873,380.2917 4441.1174,380.4016 Q4440.6474,380.5115 4440.1286,380.5115 Q4438.2853,380.5115 4437.3149,379.2969 Q4436.3444,378.0823 4436.3444,375.7874 Q4436.3444,373.4863 4437.3149,372.2717 Q4438.2853,371.0571 4440.1286,371.0571 Q4440.6474,371.0571 4441.1235,371.167 Q4441.5995,371.2769 4442.0146,371.4966 L4442.0146,373.4985 Q4441.5507,373.0713 4441.1143,372.8729 Q4440.6779,372.6746 4440.214,372.6746 Q4439.2253,372.6746 4438.7217,373.4589 Q4438.2182,374.2432 4438.2182,375.7874 Q4438.2182,377.3254 4438.7217,378.1097 Q4439.2253,378.894 4440.214,378.894 Q4440.6779,378.894 4441.1143,378.6957 Q4441.5507,378.4973 4442.0146,378.0701 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="235.4167" x="4456.7708" y="380.3711">WicketAjaxJQueryResourceReference</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="4426.5625" x2="4697.3958" y1="391.3411" y2="391.3411"/><ellipse cx="4436.9792" cy="426.711" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="234.375" x="4448.4375" y="433.6222">WicketAjaxJQueryResourceReference get()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4426.5625" x2="4535.9375" y1="409.5469" y2="409.5469"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="45.8333" x="4539.0625" y="413.3565">(search)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="4588.0208" x2="4697.3958" y1="409.5469" y2="409.5469"/><!--MD5=[0e8c03c4f83dd66c4f7a71f4b4c075ff]
+reverse link AbstractDefaultAjaxBehavior to AbstractAjaxTimerBehavior--><path codeLine="14" d="M1354.4792,574.9215 C1322.0729,596.9632 1288.6563,619.682 1255.6146,642.1507 " fill="none" id="AbstractDefaultAjaxBehavior-backto-AbstractAjaxTimerBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1350.5208,568.7965,1371.8542,563.1195,1358.7188,580.859,1350.5208,568.7965" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9c3d31eafa529c237880b917e05e34c1]
+reverse link AbstractAjaxBehavior to AbstractDefaultAjaxBehavior--><path codeLine="37" d="M1607.8125,152.4007 C1607.8125,172.2132 1607.8125,197.0257 1607.8125,223.2445 " fill="none" id="AbstractAjaxBehavior-backto-AbstractDefaultAjaxBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1600.5208,152.1507,1607.8125,131.3174,1615.1042,152.1507,1600.5208,152.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[66de9f2cf722e97a951a92b1f8e72537]
+reverse link IClusterable to AjaxChannel--><path codeLine="58" d="M3361.5625,144.7132 C3335.625,165.9945 3303.9167,194.3695 3279.6875,223.4945 C3256.8125,250.9945 3235.5104,283.8695 3218.0208,313.7861 " fill="none" id="IClusterable-backto-AjaxChannel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3357.2188,138.8486,3378.0313,131.4945,3366.3438,150.2236,3357.2188,138.8486" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[502d1f82fbbfdf2232d5e9e23a553477]
+reverse link AbstractAjaxTimerBehavior to AjaxClientInfoBehavior--><path codeLine="70" d="M618.3125,1041.5465 C575.0104,1066.3799 532.3958,1090.8174 493.8333,1112.932 " fill="none" id="AbstractAjaxTimerBehavior-backto-AjaxClientInfoBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="614.8646,1035.1195,636.5625,1031.0778,622.125,1047.7653,614.8646,1035.1195" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[f0c4f98eb29c149699d466d95a620519]
+reverse link AbstractDefaultAjaxBehavior to AjaxEventBehavior--><path codeLine="82" d="M1607.8125,600.7861 C1607.8125,657.9111 1607.8125,717.1195 1607.8125,762.9736 " fill="none" id="AbstractDefaultAjaxBehavior-backto-AjaxEventBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1600.5208,600.6924,1607.8125,579.859,1615.1042,600.6924,1600.5208,600.6924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b197dd85343897baa7acffdb9410789e]
+reverse link AbstractDefaultAjaxBehavior to AjaxNewWindowNotifyingBehavior--><path codeLine="93" d="M1861.4792,574.609 C1956.9896,639.3486 2061.2604,710.0257 2139.3229,762.932 " fill="none" id="AbstractDefaultAjaxBehavior-backto-AjaxNewWindowNotifyingBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1857.2188,580.5257,1844.0625,562.807,1865.4063,568.4528,1857.2188,580.5257" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ed6990b87f90743468405aae1d69bd8d]
+reverse link AjaxEventBehavior to AjaxPreventSubmitBehavior--><path codeLine="104" d="M1607.8125,950.9424 C1607.8125,1022.2236 1607.8125,1113.057 1607.8125,1164.6403 " fill="none" id="AjaxEventBehavior-backto-AjaxPreventSubmitBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1600.5208,950.8278,1607.8125,929.9945,1615.1042,950.8278,1600.5208,950.8278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[1a4dd147038729bbc407991f9fab10a5]
+reverse link AbstractPartialPageRequestHandler to AjaxRequestHandler--><path codeLine="111" d="M2555.4271,445.3382 C2588.1146,530.557 2661.0625,720.7653 2693.1771,804.484 " fill="none" id="AbstractPartialPageRequestHandler-backto-AjaxRequestHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2548.6042,447.9007,2547.9479,425.8382,2562.2188,442.682,2548.6042,447.9007" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7fbe60e0f00621ac5bb84c35ff1e497d]
+reverse link AjaxRequestTarget to AjaxRequestHandler--><path codeLine="112" d="M2842.4792,494.8174 C2806.1354,590.1611 2751.0417,734.682 2724.3854,804.6195 " fill="none" id="AjaxRequestTarget-backto-AjaxRequestHandler" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2835.6979,492.1403,2849.9271,475.2653,2849.3229,497.3382,2835.6979,492.1403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9c4007b12a510c29cb1a3b3eb9bfc79d]
+reverse link IPartialPageRequestHandler to AjaxRequestTarget--><path codeLine="121" d="M2982.7292,150.6924 C2963.2292,197.0465 2931.6042,272.2028 2908.1354,328.0153 " fill="none" id="IPartialPageRequestHandler-backto-AjaxRequestTarget" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2976.0729,147.6924,2990.875,131.3174,2989.5208,153.3486,2976.0729,147.6924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[31f1f7e4688ed0c3262c43d774eea2dd]
+reverse link ILoggableRequestHandler to AjaxRequestTarget--><path codeLine="122" d="M2772.4792,150.6924 C2791.9792,197.0465 2823.6042,272.2028 2847.0729,328.0153 " fill="none" id="ILoggableRequestHandler-backto-AjaxRequestTarget" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2765.6875,153.3486,2764.3333,131.3174,2779.1354,147.6924,2765.6875,153.3486" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b7df2aaf99a9b920d372834d3e3eea9e]
+reverse link ListenerCollection to AjaxRequestTargetListenerCollection--><path codeLine="132" d="M4007.8125,152.3486 C4007.8125,215.234 4007.8125,328.6715 4007.8125,377.3486 " fill="none" id="ListenerCollection-backto-AjaxRequestTargetListenerCollection" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="4000.5208,152.1507,4007.8125,131.3174,4015.1042,152.1507,4000.5208,152.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[04fa64876b36972b38ae7875a45eeee2]
+reverse link AbstractAjaxTimerBehavior to AjaxSelfUpdatingTimerBehavior--><path codeLine="137" d="M1007.6042,1071.3382 C1011.3646,1087.8799 1015,1103.8799 1018.3646,1118.7132 " fill="none" id="AbstractAjaxTimerBehavior-backto-AjaxSelfUpdatingTimerBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1000.4792,1072.859,1002.9792,1050.9215,1014.6979,1069.6299,1000.4792,1072.859" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[54d0068a450835428e75b0d22c6efe9c]
+reverse link AjaxCallListener to CancelEventIfAjaxListener--><path codeLine="149" d="M4285.9375,152.3486 C4285.9375,215.234 4285.9375,328.6715 4285.9375,377.3486 " fill="none" id="AjaxCallListener-backto-CancelEventIfAjaxListener" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="4278.6458,152.1507,4285.9375,131.3174,4293.2292,152.1507,4278.6458,152.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[9ce60125dd818db45759d73a2cfa5977]
+reverse link IClusterable to IAjaxIndicatorAware--><path codeLine="155" d="M3408.8542,152.3799 C3408.8542,208.6403 3408.8542,305.2861 3408.8542,359.9007 " fill="none" id="IClusterable-backto-IAjaxIndicatorAware" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3401.5625,152.1507,3408.8542,131.3174,3416.1458,152.1507,3401.5625,152.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[6588b781a7078e15f43b687da8ba8ba7]
+reverse link IClusterable to IAjaxRegionMarkupIdProvider--><path codeLine="163" d="M3452.9896,145.4111 C3478.5208,167.3903 3510.8646,196.2028 3538.0208,223.4945 C3582.4167,268.109 3629.75,322.8903 3660.5313,359.5986 " fill="none" id="IClusterable-backto-IAjaxRegionMarkupIdProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="3448.0625,150.7861,3436.9375,131.7236,3457.5208,139.6924,3448.0625,150.7861" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[7b466659981ec8d98d49534894ebb31e]
+reverse link JavaScriptResourceReference to WicketAjaxJQueryResourceReference--><path codeLine="197" d="M4561.9792,152.3799 C4561.9792,208.6403 4561.9792,305.2861 4561.9792,359.9007 " fill="none" id="JavaScriptResourceReference-backto-WicketAjaxJQueryResourceReference" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="4554.6875,152.1507,4561.9792,131.3174,4569.2708,152.1507,4554.6875,152.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[2e8548b3d123ff7ab83a22bac8a93229]
+link AjaxRequestTarget.IJavaScriptResponse to AjaxRequestTarget.IListener--><!--MD5=[d313b2b21011ebca33fdd350eaec0a62]
+link AjaxRequestTarget.IJavaScriptResponse to AjaxRequestTarget.ITargetRespondListener--><!--MD5=[cbd2e0af0eac5a6fb568ec20c4af8682]
+link AjaxRequestTarget.ITargetRespondListener to AjaxChannel.Type--><!--MD5=[ae83e89f774c4ca996be426cfe9e45b6]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    abstract AbstractPartialPageRequestHandler
+    abstract AbstractAjaxTimerBehavior
+    abstract AbstractAjaxBehavior
+    
+    interface AjaxRequestTarget
+    interface IClusterable
+    
+    AbstractDefaultAjaxBehavior <|- - AbstractAjaxTimerBehavior
+    abstract class AbstractAjaxTimerBehavior
+    {
+        - -(constructors)- -
+        +AbstractAjaxTimerBehavior(Duration)
+        +AbstractAjaxTimerBehavior(org.apache.wicket.util.time.Duration)
+        - -
+        #void onTimer(AjaxRequestTarget)
+        #void setUpdateInterval(Duration updateInterval)
+        - -(checks)- -
+        +boolean isStopped()
+        #boolean shouldTrigger()
+        - -(extension points)- -
+        +AbstractAjaxTimerBehavior onTimer(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+        - -(identity)- -
+        #String getTimerId()
+        - -(lifecycle)- -
+        +void restart(IPartialPageRequestHandler target)
+        +void stop(IPartialPageRequestHandler target)
+        - -(time)- -
+        +Duration getUpdateInterval()
+    }
+    
+    AbstractAjaxBehavior <|- - AbstractDefaultAjaxBehavior
+    abstract class AbstractDefaultAjaxBehavior
+    {
+        - -
+        #AjaxRequestAttributes getAttributes()
+        #Form.MethodMismatchResponse onMethodMismatch()
+        #void respond(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(configuration)- -
+        #void postprocessConfiguration(JSONObject attributesJson, Component)
+        - -(primitive)- -
+        +CharSequence getCallbackFunction(CallbackParameter... extraParameters)
+        +CharSequence getCallbackFunctionBody(CallbackParameter... extraParameters)
+        +CharSequence getCallbackScript()
+        #CharSequence getCallbackScript(Component)
+        #CharSequence renderAjaxAttributes(Component)
+        #CharSequence renderAjaxAttributes(Component, AjaxRequestAttributes)
+        - -(search)- -
+        #String findIndicatorId()
+    }
+    
+    IClusterable <|- - AjaxChannel
+    class AjaxChannel
+    {
+        - -(constructors)- -
+        +AjaxChannel(String)
+        +AjaxChannel(String, Type)
+        - -
+        +Type getType()
+        - -(naming)- -
+        +String getName()
+    }
+    
+    AbstractAjaxTimerBehavior <|- - AjaxClientInfoBehavior
+    class AjaxClientInfoBehavior
+    {
+        - -(constructors)- -
+        +AjaxClientInfoBehavior()
+        +AjaxClientInfoBehavior(Duration)
+        - -(messaging)- -
+        +AjaxClientInfoBehavior onClientInfo(SerializableBiConsumer<AjaxRequestTarget,WebClientInfo> onClientInfo)
+        #WebClientInfo newWebClientInfo(RequestCycle)
+        #void onClientInfo(AjaxRequestTarget, WebClientInfo)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxEventBehavior
+    abstract class AjaxEventBehavior
+    {
+        - -(constructors)- -
+        +AjaxEventBehavior(String)
+        - -(messaging)- -
+        +String getEvent()
+        +AjaxEventBehavior onEvent(String eventName, SerializableConsumer<AjaxRequestTarget> onEvent)
+        #void onEvent(AjaxRequestTarget)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxNewWindowNotifyingBehavior
+    class AjaxNewWindowNotifyingBehavior
+    {
+        - -(factory)- -
+        +AjaxNewWindowNotifyingBehavior onNewWindow(SerializableConsumer<AjaxRequestTarget> onNewWindow)
+        #String newWindowName()
+        #void onNewWindow(AjaxRequestTarget)
+        - -(naming)- -
+        +String getWindowName()
+    }
+    
+    AjaxEventBehavior <|- - AjaxPreventSubmitBehavior
+    class AjaxPreventSubmitBehavior
+    {
+        - -(constructors)- -
+        +AjaxPreventSubmitBehavior()
+    }
+    
+    AbstractPartialPageRequestHandler <|- - AjaxRequestHandler
+    AjaxRequestTarget <|- - AjaxRequestHandler
+    class AjaxRequestHandler
+    {
+        - -(constructors)- -
+        +AjaxRequestHandler(Page)
+    }
+    
+    interface ILoggableRequestHandler
+    interface IPartialPageRequestHandler
+    IPartialPageRequestHandler <|- - AjaxRequestTarget
+    ILoggableRequestHandler <|- - AjaxRequestTarget
+    interface AjaxRequestTarget
+    {
+        - -(collection)- -
+        +void addListener(AjaxRequestTarget.IListener)
+        +String getLastFocusedElementId()
+        - -(messaging)- -
+        +void registerRespondListener(ITargetRespondListener)
+    }
+    
+    ListenerCollection <|- - AjaxRequestTargetListenerCollection
+    class AjaxRequestTargetListenerCollection
+    {
+    }
+    
+    AbstractAjaxTimerBehavior <|- - AjaxSelfUpdatingTimerBehavior
+    class AjaxSelfUpdatingTimerBehavior
+    {
+        - -(constructors)- -
+        +AjaxSelfUpdatingTimerBehavior(Duration)
+        +AjaxSelfUpdatingTimerBehavior(org.apache.wicket.util.time.Duration)
+        - -
+        #void onPostProcessTarget(AjaxRequestTarget)
+        - -(extension points)- -
+        +AjaxSelfUpdatingTimerBehavior onSelfUpdate(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+    }
+    
+    AjaxCallListener <|- - CancelEventIfAjaxListener
+    class CancelEventIfAjaxListener
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IAjaxIndicatorAware
+    interface IAjaxIndicatorAware
+    {
+        - -(identity)- -
+        +String getAjaxIndicatorMarkupId()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IAjaxRegionMarkupIdProvider
+    interface IAjaxRegionMarkupIdProvider
+    {
+        - -(identity)- -
+        +String getAjaxRegionMarkupId(Component)
+    }
+    
+    interface AjaxRequestTarget.IJavaScriptResponse
+    {
+        - -(collection)- -
+        +void addJavaScript(String script)
+    }
+    
+    interface AjaxRequestTarget.IListener
+    {
+        - -
+        +void onAfterRespond(Map<String,Component>, AjaxRequestTarget.IJavaScriptResponse)
+        +void onBeforeRespond(Map<String,Component>, AjaxRequestTarget)
+        +void updateAjaxAttributes(AbstractDefaultAjaxBehavior, AjaxRequestAttributes)
+    }
+    
+    interface AjaxRequestTarget.ITargetRespondListener
+    {
+        - -
+        +void onTargetRespond(AjaxRequestTarget)
+    }
+    
+    enum AjaxChannel.Type
+    {
+        ACTIVE
+        DROP
+        QUEUE
+    }
+    
+    JavaScriptResourceReference <|- - WicketAjaxJQueryResourceReference
+    class WicketAjaxJQueryResourceReference
+    {
+        - -(search)- -
+        +WicketAjaxJQueryResourceReference get()
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.ajax"
+    
+    abstract AbstractDefaultAjaxBehavior
+    abstract AbstractPartialPageRequestHandler
+    abstract AbstractAjaxTimerBehavior
+    abstract AbstractAjaxBehavior
+    
+    interface AjaxRequestTarget
+    interface IClusterable
+    
+    AbstractDefaultAjaxBehavior <|- - AbstractAjaxTimerBehavior
+    abstract class AbstractAjaxTimerBehavior
+    {
+        - -(constructors)- -
+        +AbstractAjaxTimerBehavior(Duration)
+        +AbstractAjaxTimerBehavior(org.apache.wicket.util.time.Duration)
+        - -
+        #void onTimer(AjaxRequestTarget)
+        #void setUpdateInterval(Duration updateInterval)
+        - -(checks)- -
+        +boolean isStopped()
+        #boolean shouldTrigger()
+        - -(extension points)- -
+        +AbstractAjaxTimerBehavior onTimer(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+        - -(identity)- -
+        #String getTimerId()
+        - -(lifecycle)- -
+        +void restart(IPartialPageRequestHandler target)
+        +void stop(IPartialPageRequestHandler target)
+        - -(time)- -
+        +Duration getUpdateInterval()
+    }
+    
+    AbstractAjaxBehavior <|- - AbstractDefaultAjaxBehavior
+    abstract class AbstractDefaultAjaxBehavior
+    {
+        - -
+        #AjaxRequestAttributes getAttributes()
+        #Form.MethodMismatchResponse onMethodMismatch()
+        #void respond(AjaxRequestTarget)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        - -(configuration)- -
+        #void postprocessConfiguration(JSONObject attributesJson, Component)
+        - -(primitive)- -
+        +CharSequence getCallbackFunction(CallbackParameter... extraParameters)
+        +CharSequence getCallbackFunctionBody(CallbackParameter... extraParameters)
+        +CharSequence getCallbackScript()
+        #CharSequence getCallbackScript(Component)
+        #CharSequence renderAjaxAttributes(Component)
+        #CharSequence renderAjaxAttributes(Component, AjaxRequestAttributes)
+        - -(search)- -
+        #String findIndicatorId()
+    }
+    
+    IClusterable <|- - AjaxChannel
+    class AjaxChannel
+    {
+        - -(constructors)- -
+        +AjaxChannel(String)
+        +AjaxChannel(String, Type)
+        - -
+        +Type getType()
+        - -(naming)- -
+        +String getName()
+    }
+    
+    AbstractAjaxTimerBehavior <|- - AjaxClientInfoBehavior
+    class AjaxClientInfoBehavior
+    {
+        - -(constructors)- -
+        +AjaxClientInfoBehavior()
+        +AjaxClientInfoBehavior(Duration)
+        - -(messaging)- -
+        +AjaxClientInfoBehavior onClientInfo(SerializableBiConsumer<AjaxRequestTarget,WebClientInfo> onClientInfo)
+        #WebClientInfo newWebClientInfo(RequestCycle)
+        #void onClientInfo(AjaxRequestTarget, WebClientInfo)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxEventBehavior
+    abstract class AjaxEventBehavior
+    {
+        - -(constructors)- -
+        +AjaxEventBehavior(String)
+        - -(messaging)- -
+        +String getEvent()
+        +AjaxEventBehavior onEvent(String eventName, SerializableConsumer<AjaxRequestTarget> onEvent)
+        #void onEvent(AjaxRequestTarget)
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - AjaxNewWindowNotifyingBehavior
+    class AjaxNewWindowNotifyingBehavior
+    {
+        - -(factory)- -
+        +AjaxNewWindowNotifyingBehavior onNewWindow(SerializableConsumer<AjaxRequestTarget> onNewWindow)
+        #String newWindowName()
+        #void onNewWindow(AjaxRequestTarget)
+        - -(naming)- -
+        +String getWindowName()
+    }
+    
+    AjaxEventBehavior <|- - AjaxPreventSubmitBehavior
+    class AjaxPreventSubmitBehavior
+    {
+        - -(constructors)- -
+        +AjaxPreventSubmitBehavior()
+    }
+    
+    AbstractPartialPageRequestHandler <|- - AjaxRequestHandler
+    AjaxRequestTarget <|- - AjaxRequestHandler
+    class AjaxRequestHandler
+    {
+        - -(constructors)- -
+        +AjaxRequestHandler(Page)
+    }
+    
+    interface ILoggableRequestHandler
+    interface IPartialPageRequestHandler
+    IPartialPageRequestHandler <|- - AjaxRequestTarget
+    ILoggableRequestHandler <|- - AjaxRequestTarget
+    interface AjaxRequestTarget
+    {
+        - -(collection)- -
+        +void addListener(AjaxRequestTarget.IListener)
+        +String getLastFocusedElementId()
+        - -(messaging)- -
+        +void registerRespondListener(ITargetRespondListener)
+    }
+    
+    ListenerCollection <|- - AjaxRequestTargetListenerCollection
+    class AjaxRequestTargetListenerCollection
+    {
+    }
+    
+    AbstractAjaxTimerBehavior <|- - AjaxSelfUpdatingTimerBehavior
+    class AjaxSelfUpdatingTimerBehavior
+    {
+        - -(constructors)- -
+        +AjaxSelfUpdatingTimerBehavior(Duration)
+        +AjaxSelfUpdatingTimerBehavior(org.apache.wicket.util.time.Duration)
+        - -
+        #void onPostProcessTarget(AjaxRequestTarget)
+        - -(extension points)- -
+        +AjaxSelfUpdatingTimerBehavior onSelfUpdate(Duration interval, SerializableConsumer<AjaxRequestTarget> onTimer)
+    }
+    
+    AjaxCallListener <|- - CancelEventIfAjaxListener
+    class CancelEventIfAjaxListener
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IAjaxIndicatorAware
+    interface IAjaxIndicatorAware
+    {
+        - -(identity)- -
+        +String getAjaxIndicatorMarkupId()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - IAjaxRegionMarkupIdProvider
+    interface IAjaxRegionMarkupIdProvider
+    {
+        - -(identity)- -
+        +String getAjaxRegionMarkupId(Component)
+    }
+    
+    interface AjaxRequestTarget.IJavaScriptResponse
+    {
+        - -(collection)- -
+        +void addJavaScript(String script)
+    }
+    
+    interface AjaxRequestTarget.IListener
+    {
+        - -
+        +void onAfterRespond(Map<String,Component>, AjaxRequestTarget.IJavaScriptResponse)
+        +void onBeforeRespond(Map<String,Component>, AjaxRequestTarget)
+        +void updateAjaxAttributes(AbstractDefaultAjaxBehavior, AjaxRequestAttributes)
+    }
+    
+    interface AjaxRequestTarget.ITargetRespondListener
+    {
+        - -
+        +void onTargetRespond(AjaxRequestTarget)
+    }
+    
+    enum AjaxChannel.Type
+    {
+        ACTIVE
+        DROP
+        QUEUE
+    }
+    
+    JavaScriptResourceReference <|- - WicketAjaxJQueryResourceReference
+    class WicketAjaxJQueryResourceReference
+    {
+        - -(search)- -
+        +WicketAjaxJQueryResourceReference get()
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

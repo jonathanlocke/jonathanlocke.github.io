@@ -1,0 +1,37 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.flow"
+    
+    interface IRequestHandler
+    interface ILoggableRequestHandler
+    interface IRequestHandlerDelegate
+    
+    RequestHandlerExecutor.ReplaceHandlerException <|-- RedirectToUrlException
+    class RedirectToUrlException
+    {
+        --(constructors)--
+        +RedirectToUrlException(String)
+        +RedirectToUrlException(String, int)
+        +RedirectToUrlException(String, int, RedirectRequestHandler.Mode)
+    }
+    
+    RequestHandlerExecutor.ReplaceHandlerException <|-- ResetResponseException
+    abstract class ResetResponseException
+    {
+        --(constructors)--
+        #ResetResponseException(IRequestHandler)
+    }
+    
+    IRequestHandler <|-- ResetResponseException.ResponseResettingDecorator
+    IRequestHandlerDelegate <|-- ResetResponseException.ResponseResettingDecorator
+    ILoggableRequestHandler <|-- ResetResponseException.ResponseResettingDecorator
+    class ResetResponseException.ResponseResettingDecorator
+    {
+        --(constructors)--
+        +ResponseResettingDecorator(IRequestHandler)
+    }
+    
+@enduml
+

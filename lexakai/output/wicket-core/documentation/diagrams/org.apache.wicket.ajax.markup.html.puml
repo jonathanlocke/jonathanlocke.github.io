@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.ajax.markup.html"
+    
+    abstract AbstractLink
+    
+    interface IAjaxLink
+    interface IGenericComponent
+    
+    Link <|-- AjaxFallbackLink
+    abstract class AjaxFallbackLink<T>
+    {
+        --(constructors)--
+        +AjaxFallbackLink(String)
+        +AjaxFallbackLink(String, IModel<T>)
+        --
+        +void onClick(Optional<AjaxRequestTarget>)
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(messaging)--
+        #AjaxEventBehavior newAjaxEventBehavior(String event)
+    }
+    
+    AbstractLink <|-- AjaxLink
+    IAjaxLink <|-- AjaxLink
+    IGenericComponent <|-- AjaxLink
+    abstract class AjaxLink<T>
+    {
+        --(constructors)--
+        +AjaxLink(String)
+        +AjaxLink(String, IModel<T>)
+        --
+        #void updateAjaxAttributes(AjaxRequestAttributes)
+        --(messaging)--
+        #AjaxEventBehavior newAjaxEventBehavior(String event)
+    }
+    
+    interface IClusterable
+    IClusterable <|-- IAjaxLink
+    interface IAjaxLink
+    {
+        --
+        +void onClick(AjaxRequestTarget)
+    }
+    
+@enduml
+

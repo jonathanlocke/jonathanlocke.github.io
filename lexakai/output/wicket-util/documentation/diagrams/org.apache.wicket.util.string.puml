@@ -1,0 +1,348 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.string"
+    
+    abstract AbstractStringList
+    
+    interface Serializable
+    interface EntityMap
+    interface IClusterable
+    interface IStringSequence
+    interface CharSequence
+    
+    IStringSequence <|-- AbstractStringList
+    Serializable <|-- AbstractStringList
+    abstract class AbstractStringList
+    {
+        --
+        +int totalLength()
+        --(collection)--
+        +String[] toArray()
+        +List<String> toList()
+        --(lifecycle)--
+        +String join(String separator)
+        +String join()
+        +String join(int first, int last, String separator)
+    }
+    
+    Serializable <|-- AppendingStringBuffer
+    CharSequence <|-- AppendingStringBuffer
+    class AppendingStringBuffer
+    {
+        --(constructors)--
+        +AppendingStringBuffer()
+        +AppendingStringBuffer(CharSequence)
+        +AppendingStringBuffer(int)
+        --
+        +AppendingStringBuffer append(Object)
+        +AppendingStringBuffer append(AppendingStringBuffer sb)
+        +AppendingStringBuffer append(float)
+        +AppendingStringBuffer append(StringBuilder sb)
+        +AppendingStringBuffer append(char)
+        +AppendingStringBuffer append(int)
+        +AppendingStringBuffer append(char[] str, int offset, int len)
+        +AppendingStringBuffer append(char[] str)
+        +AppendingStringBuffer append(boolean)
+        +AppendingStringBuffer append(double)
+        +AppendingStringBuffer append(String)
+        +AppendingStringBuffer append(long)
+        +int capacity()
+        +void ensureCapacity(int minimumCapacity)
+        +char[] getValue()
+        +AppendingStringBuffer insert(int offset, double)
+        +AppendingStringBuffer insert(int offset, long)
+        +AppendingStringBuffer insert(int index, char[] str, int offset, int len)
+        +AppendingStringBuffer insert(int offset, char)
+        +AppendingStringBuffer insert(int offset, Object)
+        +AppendingStringBuffer insert(int offset, StringBuffer)
+        +AppendingStringBuffer insert(int offset, char[] str)
+        +AppendingStringBuffer insert(int offset, float)
+        +AppendingStringBuffer insert(int offset, String)
+        +AppendingStringBuffer insert(int offset, boolean)
+        +AppendingStringBuffer insert(int offset, int)
+        +AppendingStringBuffer insert(int offset, StringBuilder)
+        +AppendingStringBuffer replace(int start, int end, String)
+        +void setLength(int newLength)
+        +String substring(int start)
+        +String substring(int start, int end)
+        --(checks)--
+        +boolean endsWith(CharSequence suffix)
+        +boolean startsWith(CharSequence prefix, int toffset)
+        +boolean startsWith(CharSequence prefix)
+        --(collection)--
+        +void clear()
+        +int indexOf(String)
+        +int indexOf(String, int fromIndex)
+        +int lastIndexOf(String, int fromIndex)
+        +int lastIndexOf(String)
+        --(filesystem)--
+        +AppendingStringBuffer delete(int start, int end)
+        --(primitive)--
+        +AppendingStringBuffer deleteCharAt(int index)
+        +void getChars(int srcBegin, int srcEnd, char[] dst, int dstBegin)
+        +void setCharAt(int index, char)
+    }
+    
+    Entities.EntityMap <|-- Entities.ArrayEntityMap
+    class Entities.ArrayEntityMap
+    {
+        --(constructors)--
+        +ArrayEntityMap()
+        +ArrayEntityMap(int)
+        --
+        #void ensureCapacity(int capacity)
+    }
+    
+    Entities.ArrayEntityMap <|-- Entities.BinaryEntityMap
+    class Entities.BinaryEntityMap
+    {
+        --(constructors)--
+        +BinaryEntityMap()
+        +BinaryEntityMap(int)
+    }
+    
+    class Entities
+    {
+        --(constructors)--
+        +Entities()
+        --
+        +int entityValue(String name)
+        +void escape(Writer, String)
+        +String escape(String)
+        +void unescape(Writer, String)
+        +String unescape(String)
+        --(collection)--
+        +void addEntities(String[][] entityArray)
+        +void addEntity(String name, int value)
+        --(naming)--
+        +String entityName(int value)
+    }
+    
+    interface Entities.EntityMap
+    {
+        --(collection)--
+        +void add(String name, int value)
+        +int value(String name)
+        --(naming)--
+        +String name(int value)
+    }
+    
+    Entities.MapIntMap <|-- Entities.HashEntityMap
+    class Entities.HashEntityMap
+    {
+        --(constructors)--
+        +HashEntityMap()
+    }
+    
+    interface IStringIterator
+    {
+        --(iteration)--
+        +boolean hasNext()
+        +String next()
+    }
+    
+    interface IStringSequence
+    {
+        --
+        +String get(int index)
+        --(collection)--
+        +IStringIterator iterator()
+        +int size()
+    }
+    
+    Entities.PrimitiveEntityMap <|-- Entities.LookupEntityMap
+    class Entities.LookupEntityMap
+    {
+    }
+    
+    Entities.EntityMap <|-- Entities.MapIntMap
+    abstract class Entities.MapIntMap
+    {
+    }
+    
+    class PrependingStringBuffer
+    {
+        --(constructors)--
+        +PrependingStringBuffer()
+        +PrependingStringBuffer(String)
+        +PrependingStringBuffer(int)
+        --
+        +int length()
+        +PrependingStringBuffer prepend(char)
+        +PrependingStringBuffer prepend(String)
+    }
+    
+    Entities.EntityMap <|-- Entities.PrimitiveEntityMap
+    class Entities.PrimitiveEntityMap
+    {
+    }
+    
+    class StringEscapeUtils
+    {
+        --(constructors)--
+        +StringEscapeUtils()
+        --
+        +void escapeHtml(Writer, String)
+        +String escapeHtml(String)
+        +void escapeXml(Writer, String)
+        +String escapeXml(String)
+        +String unescapeHtml(String)
+        +void unescapeHtml(Writer, String)
+        +String unescapeXml(String)
+        +void unescapeXml(Writer, String)
+    }
+    
+    AbstractStringList <|-- StringList
+    class StringList
+    {
+        --(constructors)--
+        +StringList()
+        +StringList(int)
+        --
+        +void prepend(String)
+        --(collection)--
+        +void add(StringValue)
+        +void add(int pos, String)
+        +void add(String)
+        +boolean contains(String)
+        +List<String> getList()
+        +void remove(int index)
+        +void removeLast()
+        +StringList repeat(int count, String)
+        +void sort()
+        +StringList tokenize(String)
+        +StringList tokenize(String, String delimiters)
+        +StringList valueOf(String[] array)
+        +StringList valueOf(String)
+        +StringList valueOf(Collection<?>)
+        +StringList valueOf(Object[] objects)
+    }
+    
+    IClusterable <|-- StringValue
+    class StringValue
+    {
+        --(constructors)--
+        #StringValue(String)
+        #StringValue(String, Locale)
+        --
+        +StringValue repeat(int times, String)
+        +StringValue repeat(int times, char)
+        --(checks)--
+        +boolean isNull()
+        --(collection)--
+        +String afterFirst(char)
+        +String afterLast(char)
+        +String beforeFirst(char)
+        +String beforeLast(char)
+        +boolean isEmpty()
+        --(conversion)--
+        +T to(Class<T> type)
+        +boolean toBoolean()
+        +boolean toBoolean(boolean defaultValue)
+        +Boolean toBooleanObject()
+        +char toChar()
+        +char toChar(char defaultValue)
+        +Character toCharacter()
+        +double toDouble()
+        +double toDouble(double defaultValue)
+        +Double toDoubleObject()
+        +Duration toDuration()
+        +Duration toDuration(Duration defaultValue)
+        +T toEnum(T defaultValue)
+        +T toEnum(Class<T> eClass)
+        +T toEnum(Class<T> eClass, T defaultValue)
+        +Instant toInstant()
+        +Instant toInstant(Instant defaultValue)
+        +int toInt()
+        +int toInt(int defaultValue)
+        +Integer toInteger()
+        +long toLong(long defaultValue)
+        +long toLong()
+        +Long toLongObject()
+        +T toOptional(Class<T> type)
+        +Boolean toOptionalBoolean()
+        +Character toOptionalCharacter()
+        +Double toOptionalDouble()
+        +Duration toOptionalDuration()
+        +T toOptionalEnum(Class<T> eClass)
+        +Instant toOptionalInstant()
+        +Integer toOptionalInteger()
+        +Long toOptionalLong()
+        +String toOptionalString()
+        +StringValue valueOf(double value)
+        +StringValue valueOf(double value, int places, Locale)
+        +StringValue valueOf(double value, Locale)
+        +StringValue valueOf(Object, Locale)
+        +StringValue valueOf(String)
+        +StringValue valueOf(Object)
+        +StringValue valueOf(String, Locale)
+        +StringValue valueOf(AppendingStringBuffer)
+        --(primitive)--
+        +CharSequence replaceAll(CharSequence searchFor, CharSequence replaceWith)
+    }
+    
+    ConversionException <|-- StringValueConversionException
+    class StringValueConversionException
+    {
+        --(constructors)--
+        +StringValueConversionException(String)
+        +StringValueConversionException(String, Throwable)
+    }
+    
+    class Strings
+    {
+        --
+        +String capitalize(String)
+        +String fromEscapedUnicode(String escapedUnicodeString)
+        +int getLevenshteinDistance(CharSequence, CharSequence t)
+        +String replaceHtmlEscapeNumber(String)
+        +String[] split(String, char)
+        +String stripEnding(String, String ending)
+        --(checks)--
+        +boolean isEqual(String string1, String string2)
+        +boolean isTrue(String)
+        +boolean startsWith(String, String prefix, boolean caseSensitive)
+        --(collection)--
+        +String afterFirst(String, char)
+        +String afterFirstPathComponent(String path, char separator)
+        +String afterLast(String, char)
+        +String beforeFirst(String, char)
+        +String beforeLast(String, char)
+        +String beforeLastPathComponent(String path, char separator)
+        +String defaultIfEmpty(String originalString, String defaultValue)
+        +String firstPathComponent(String path, char separator)
+        +int indexOf(CharSequence, char)
+        +boolean isEmpty(CharSequence string)
+        +String lastPathComponent(String path, char separator)
+        --(conversion)--
+        +Boolean toBoolean(String)
+        +T toEnum(CharSequence value, Class<T> enumClass)
+        +String toEscapedUnicode(String unicodeString)
+        +String toHexString(byte[] bytes)
+        --(identity)--
+        +String stripJSessionId(String url)
+        --(lifecycle)--
+        +String join(String separator, List<String> fragments)
+        +String join(String separator, String... fragments)
+        --(primitive)--
+        +CharSequence escapeMarkup(CharSequence, boolean escapeSpaces)
+        +CharSequence escapeMarkup(CharSequence, boolean escapeSpaces, boolean convertToHtmlUnicodeEscapes)
+        +CharSequence escapeMarkup(CharSequence)
+        +int lengthInBytes(String, Charset)
+        +CharSequence replaceAll(CharSequence, CharSequence searchFor, CharSequence replaceWith)
+        +char toChar(String)
+        +CharSequence toMultilineMarkup(CharSequence)
+        +CharSequence unescapeMarkup(String markup)
+    }
+    
+    Entities.MapIntMap <|-- Entities.TreeEntityMap
+    class Entities.TreeEntityMap
+    {
+        --(constructors)--
+        +TreeEntityMap()
+    }
+    
+@enduml
+

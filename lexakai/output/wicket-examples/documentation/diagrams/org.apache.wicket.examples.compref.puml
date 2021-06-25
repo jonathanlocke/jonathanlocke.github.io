@@ -1,0 +1,442 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.compref"
+    
+    interface IClusterable
+    
+    IClusterable <|-- Address
+    class Address
+    {
+        --(constructors)--
+        +Address()
+        --
+        +String getAddress()
+        +String getCity()
+        +String getCountry()
+        +String getPostcode()
+        +void setAddress(String address)
+        +void setCity(String city)
+        +void setCountry(String country)
+        +void setPostcode(String postcode)
+    }
+    
+    Panel <|-- AnotherPanel
+    class AnotherPanel
+    {
+        --(constructors)--
+        +AnotherPanel(String)
+    }
+    
+    IClusterable <|-- Book
+    class Book
+    {
+        --(constructors)--
+        +Book()
+        --
+        +String getAuthor()
+        +String getIsbn()
+        +String getTitle()
+        +void setAuthor(String author)
+        +void setIsbn(String isbn)
+        +void setTitle(String title)
+    }
+    
+    WebPage <|-- BookmarkablePage
+    class BookmarkablePage
+    {
+        --(constructors)--
+        +BookmarkablePage(PageParameters)
+    }
+    
+    WicketExamplePage <|-- BookmarkablePageLinkPage
+    class BookmarkablePageLinkPage
+    {
+        --(constructors)--
+        +BookmarkablePageLinkPage()
+    }
+    
+    WicketExamplePage <|-- BorderPage
+    class BorderPage
+    {
+        --(constructors)--
+        +BorderPage()
+    }
+    
+    WicketExamplePage <|-- ButtonPage
+    class ButtonPage
+    {
+        --(constructors)--
+        +ButtonPage()
+    }
+    
+    WicketExamplePage <|-- CheckBoxMultipleChoicePage
+    class CheckBoxMultipleChoicePage
+    {
+        --(constructors)--
+        +CheckBoxMultipleChoicePage()
+    }
+    
+    WicketExamplePage <|-- CheckBoxPage
+    class CheckBoxPage
+    {
+        --(constructors)--
+        +CheckBoxPage()
+    }
+    
+    WicketExamplePage <|-- CheckBoxSelectorPage
+    class CheckBoxSelectorPage
+    {
+        --(constructors)--
+        +CheckBoxSelectorPage(PageParameters)
+    }
+    
+    WicketExamplePage <|-- CheckGroupPage
+    class CheckGroupPage
+    {
+        --(constructors)--
+        +CheckGroupPage()
+    }
+    
+    WicketExamplePage <|-- CheckGroupPage2
+    class CheckGroupPage2
+    {
+        --(constructors)--
+        +CheckGroupPage2()
+    }
+    
+    Label <|-- LinkPage.ClickCountLabel
+    class LinkPage.ClickCountLabel
+    {
+        --(constructors)--
+        +ClickCountLabel(String, Count)
+    }
+    
+    WicketExampleApplication <|-- ComponentReferenceApplication
+    class ComponentReferenceApplication
+    {
+        --(collection)--
+        +List<Person> getPersons()
+    }
+    
+    IClusterable <|-- Count
+    class Count
+    {
+        --(collection)--
+        +int getCount()
+        --(math)--
+        +void decrement()
+        +void increment()
+    }
+    
+    Link <|-- TabbedPanelPage.CssSwitchingLink
+    class TabbedPanelPage.CssSwitchingLink
+    {
+        --(constructors)--
+        +CssSwitchingLink(String, String)
+    }
+    
+    WicketExamplePage <|-- DropDownChoicePage
+    class DropDownChoicePage
+    {
+        --(constructors)--
+        +DropDownChoicePage()
+    }
+    
+    Panel <|-- ExplainPanel
+    class ExplainPanel
+    {
+        --(constructors)--
+        +ExplainPanel(String, String)
+    }
+    
+    WicketExamplePage <|-- ExternalLinkPage
+    class ExternalLinkPage
+    {
+        --(constructors)--
+        +ExternalLinkPage()
+    }
+    
+    WicketExamplePage <|-- FormPage
+    class FormPage
+    {
+        --(constructors)--
+        +FormPage()
+    }
+    
+    WicketExamplePage <|-- FragmentPage
+    class FragmentPage
+    {
+        --(constructors)--
+        +FragmentPage()
+    }
+    
+    WicketExamplePage <|-- IncludePage
+    class IncludePage
+    {
+        --(constructors)--
+        +IncludePage()
+    }
+    
+    WicketExamplePage <|-- Index
+    class Index
+    {
+        --(constructors)--
+        +Index()
+    }
+    
+    IClusterable <|-- ListMultipleChoicePage.Input
+    class ListMultipleChoicePage.Input
+    {
+        --(constructors)--
+        +Input()
+    }
+    
+    IClusterable <|-- TextAreaPage.Input
+    class TextAreaPage.Input
+    {
+    }
+    
+    IClusterable <|-- SelectPage.Input
+    class SelectPage.Input
+    {
+        --(constructors)--
+        +Input()
+    }
+    
+    IClusterable <|-- CheckBoxPage.Input
+    class CheckBoxPage.Input
+    {
+    }
+    
+    IClusterable <|-- RadioChoicePage.Input
+    class RadioChoicePage.Input
+    {
+    }
+    
+    IClusterable <|-- TextFieldPage.Input
+    class TextFieldPage.Input
+    {
+    }
+    
+    IClusterable <|-- CheckBoxMultipleChoicePage.Input
+    class CheckBoxMultipleChoicePage.Input
+    {
+        --(constructors)--
+        +Input()
+    }
+    
+    IClusterable <|-- ListChoicePage.Input
+    class ListChoicePage.Input
+    {
+    }
+    
+    IClusterable <|-- DropDownChoicePage.Input
+    class DropDownChoicePage.Input
+    {
+    }
+    
+    WicketExamplePage <|-- LabelPage
+    class LabelPage
+    {
+        --(constructors)--
+        +LabelPage()
+    }
+    
+    WicketExamplePage <|-- LinkPage
+    class LinkPage
+    {
+        --(constructors)--
+        +LinkPage()
+    }
+    
+    WicketExamplePage <|-- ListChoicePage
+    class ListChoicePage
+    {
+        --(constructors)--
+        +ListChoicePage()
+    }
+    
+    WicketExamplePage <|-- ListMultipleChoicePage
+    class ListMultipleChoicePage
+    {
+        --(constructors)--
+        +ListMultipleChoicePage()
+    }
+    
+    WicketExamplePage <|-- MultiLineLabelPage
+    class MultiLineLabelPage
+    {
+        --(constructors)--
+        +MultiLineLabelPage()
+    }
+    
+    Border <|-- MyBorder
+    class MyBorder
+    {
+        --(constructors)--
+        +MyBorder(String)
+    }
+    
+    Fragment <|-- FragmentPage.MyFragment
+    class FragmentPage.MyFragment
+    {
+        --(constructors)--
+        +MyFragment(String, String, MarkupContainer)
+    }
+    
+    Panel <|-- MyPanel
+    class MyPanel
+    {
+        --(constructors)--
+        +MyPanel(String)
+    }
+    
+    WebPage <|-- NonBookmarkablePage
+    class NonBookmarkablePage
+    {
+        --(constructors)--
+        +NonBookmarkablePage(PageReference)
+    }
+    
+    WicketExamplePage <|-- PalettePage
+    class PalettePage
+    {
+        --(constructors)--
+        +PalettePage()
+    }
+    
+    WicketExamplePage <|-- PanelPage
+    class PanelPage
+    {
+        --(constructors)--
+        +PanelPage()
+    }
+    
+    IClusterable <|-- Person
+    class Person
+    {
+        --(constructors)--
+        +Person()
+        +Person(String, String)
+        --
+        +Address getAddress()
+        +Date getDateOfBirth()
+        +void setAddress(Address)
+        +void setDateOfBirth(Date dateOfBirth)
+        --(naming)--
+        +String getFullName()
+        +String getLastName()
+        +String getName()
+        +void setLastName(String lastName)
+        +void setName(String name)
+    }
+    
+    ListView <|-- XmlPage.PersonsListView
+    class XmlPage.PersonsListView
+    {
+        --(constructors)--
+        +PersonsListView(String, List<Person>)
+    }
+    
+    WicketExamplePage <|-- RadioChoicePage
+    class RadioChoicePage
+    {
+        --(constructors)--
+        +RadioChoicePage()
+    }
+    
+    WicketExamplePage <|-- RadioGroupPage
+    class RadioGroupPage
+    {
+        --(constructors)--
+        +RadioGroupPage()
+    }
+    
+    WicketExamplePage <|-- RadioGroupPage2
+    class RadioGroupPage2
+    {
+        --(constructors)--
+        +RadioGroupPage2()
+    }
+    
+    Panel <|-- RecursivePanel
+    class RecursivePanel
+    {
+        --(constructors)--
+        +RecursivePanel(String, List<Object>)
+    }
+    
+    ListView <|-- RecursivePanel.Rows
+    class RecursivePanel.Rows
+    {
+        --(constructors)--
+        +Rows(String, List<Object>)
+    }
+    
+    WicketExamplePage <|-- SelectPage
+    class SelectPage
+    {
+        --(constructors)--
+        +SelectPage()
+    }
+    
+    WicketExamplePage <|-- SubmitLinkPage
+    class SubmitLinkPage
+    {
+        --(constructors)--
+        +SubmitLinkPage()
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel1
+    class TabbedPanelPage.TabPanel1
+    {
+        --(constructors)--
+        +TabPanel1(String)
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel2
+    class TabbedPanelPage.TabPanel2
+    {
+        --(constructors)--
+        +TabPanel2(String)
+    }
+    
+    Panel <|-- TabbedPanelPage.TabPanel3
+    class TabbedPanelPage.TabPanel3
+    {
+        --(constructors)--
+        +TabPanel3(String)
+    }
+    
+    WicketExamplePage <|-- TabbedPanelPage
+    class TabbedPanelPage
+    {
+        --(constructors)--
+        +TabbedPanelPage()
+    }
+    
+    WicketExamplePage <|-- TextAreaPage
+    class TextAreaPage
+    {
+        --(constructors)--
+        +TextAreaPage()
+    }
+    
+    WicketExamplePage <|-- TextFieldPage
+    class TextFieldPage
+    {
+        --(constructors)--
+        +TextFieldPage()
+    }
+    
+    WebPage <|-- XmlPage
+    class XmlPage
+    {
+        --(constructors)--
+        +XmlPage()
+    }
+    
+@enduml
+

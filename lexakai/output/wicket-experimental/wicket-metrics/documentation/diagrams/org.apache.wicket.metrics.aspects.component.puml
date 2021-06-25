@@ -1,0 +1,50 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.metrics.aspects.component"
+    
+    WicketMetrics <|-- ComponentCreateAspect
+    class ComponentCreateAspect
+    {
+        --(factory)--
+        +Object aroundNew(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ComponentOnConfigureAspect
+    class ComponentOnConfigureAspect
+    {
+        --
+        +Object aroundOnConfigure(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ComponentOnDetachAspect
+    class ComponentOnDetachAspect
+    {
+        --
+        +Object arroundOnDetach(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ComponentOnInitializeAspect
+    class ComponentOnInitializeAspect
+    {
+        --(lifecycle)--
+        +Object aroundOnInitialize(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ComponentOnRenderAspect
+    class ComponentOnRenderAspect
+    {
+        --
+        +Object aroundOnRender(ProceedingJoinPoint)
+    }
+    
+    WicketMetrics <|-- ComponentSetResponsePageAspect
+    class ComponentSetResponsePageAspect
+    {
+        --
+        +void beforeResponsePage()
+    }
+    
+@enduml
+

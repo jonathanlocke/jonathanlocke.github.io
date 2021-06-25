@@ -1,0 +1,218 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.data.table"
+    
+    abstract AbstractColumn
+    abstract AbstractToolbar
+    
+    interface IExportableColumn
+    interface IStyledColumn
+    interface IClusterable
+    interface IPageableItems
+    
+    IStyledColumn <|-- AbstractColumn
+    abstract class AbstractColumn<T, S>
+    {
+        --(constructors)--
+        +AbstractColumn(IModel<String>)
+        +AbstractColumn(IModel<String>, S)
+        --
+        +IModel<String> getDisplayModel()
+    }
+    
+    Panel <|-- AbstractToolbar
+    abstract class AbstractToolbar
+    {
+        --(constructors)--
+        +AbstractToolbar(DataTable<?, ?>)
+        +AbstractToolbar(IModel<?>, DataTable<?, ?>)
+        --
+        #DataTable<?,?> getTable()
+    }
+    
+    Label <|-- DataTable.Caption
+    class DataTable.Caption
+    {
+        --(constructors)--
+        +Caption(String, IModel<String>)
+    }
+    
+    WebMarkupContainer <|-- ColGroup.Col
+    class ColGroup.Col
+    {
+        --(constructors)--
+        +Col(Behavior)
+    }
+    
+    Panel <|-- ColGroup
+    class ColGroup
+    {
+        --(constructors)--
+        +ColGroup(String)
+        --(collection)--
+        +ColGroup addCol(Col column)
+    }
+    
+    Behavior <|-- DataTable.CssAttributeBehavior
+    abstract class DataTable.CssAttributeBehavior
+    {
+        --
+        #String getCssClass()
+    }
+    
+    Panel <|-- DataTable
+    IPageableItems <|-- DataTable
+    class DataTable<T, S>
+    {
+        --(constructors)--
+        +DataTable(String, List<? extends IColumn<T, S>>, IDataProvider<T>, long)
+        --
+        +WebMarkupContainer getBody()
+        +WebMarkupContainer getBottomToolbars()
+        +Caption getCaption()
+        +ColGroup getColGroup()
+        +IDataProvider<T> getDataProvider()
+        +WebMarkupContainer getTopToolbars()
+        +DataTable<T,S> setItemReuseStrategy(IItemReuseStrategy)
+        +void setTableBodyCss(String cssStyle)
+        #IModel<String> getCaptionModel()
+        #void onPageChanged()
+        --(collection)--
+        +void addBottomToolbar(AbstractToolbar)
+        +void addTopToolbar(AbstractToolbar)
+        +List<? extends IColumn<T,S>> getColumns()
+        +long getRowCount()
+        --(factory)--
+        #WebMarkupContainer newBodyContainer(String id)
+        #Item<IColumn<T,S>> newCellItem(String id, int index, IModel<IColumn<T,S>>)
+        #DataGridView<T> newDataGridView(String id, List<? extends IColumn<T,S>> columns, IDataProvider<T>)
+        #Item<T> newRowItem(String id, int index, IModel<T>)
+    }
+    
+    DataGridView <|-- DataTable.DefaultDataGridView
+    class DataTable.DefaultDataGridView
+    {
+        --(constructors)--
+        +DefaultDataGridView(String, List<? extends IColumn<T, S>>, IDataProvider<T>)
+    }
+    
+    DataTable <|-- DefaultDataTable
+    class DefaultDataTable<T, S>
+    {
+        --(constructors)--
+        +DefaultDataTable(String, List<? extends IColumn<T, S>>, ISortableDataProvider<T, S>, int)
+    }
+    
+    AbstractColumn <|-- HeaderlessColumn
+    abstract class HeaderlessColumn<T, S>
+    {
+        --(constructors)--
+        +HeaderlessColumn()
+    }
+    
+    AbstractToolbar <|-- HeadersToolbar
+    class HeadersToolbar<S>
+    {
+        --(constructors)--
+        +HeadersToolbar(DataTable<T, S>, ISortStateLocator<S>)
+        --(factory)--
+        #WebMarkupContainer newSortableHeader(String headerId, S property, ISortStateLocator<S>)
+    }
+    
+    interface ICellPopulator
+    ICellPopulator <|-- IColumn
+    interface IColumn<T, S>
+    {
+        --
+        +Component getHeader(String componentId)
+        +int getHeaderColspan()
+        +int getHeaderRowspan()
+        --(checks)--
+        +boolean isSortable()
+        --(collection)--
+        +S getSortProperty()
+    }
+    
+    interface IDataProvider
+    interface ISortStateLocator
+    IDataProvider <|-- ISortableDataProvider
+    ISortStateLocator <|-- ISortableDataProvider
+    interface ISortableDataProvider<T, S>
+    {
+    }
+    
+    interface IColumn
+    IColumn <|-- IStyledColumn
+    interface IStyledColumn<T, S>
+    {
+        --
+        +String getCssClass()
+    }
+    
+    IClusterable <|-- NavigatorLabel.LabelModelObject
+    class NavigatorLabel.LabelModelObject
+    {
+        --(constructors)--
+        +LabelModelObject(IPageableItems)
+        --
+        +long getFrom()
+        +long getOf()
+        +long getTo()
+    }
+    
+    AbstractColumn <|-- LambdaColumn
+    IExportableColumn <|-- LambdaColumn
+    class LambdaColumn<T, S>
+    {
+        --(constructors)--
+        +LambdaColumn(IModel<String>, S, SerializableFunction<T, ?>)
+        +LambdaColumn(IModel<String>, SerializableFunction<T, ?>)
+    }
+    
+    AbstractToolbar <|-- NavigationToolbar
+    class NavigationToolbar
+    {
+        --(constructors)--
+        +NavigationToolbar(DataTable<?, ?>)
+        --(factory)--
+        #WebComponent newNavigatorLabel(String navigatorId, DataTable<?,?>)
+        #PagingNavigator newPagingNavigator(String navigatorId, DataTable<?,?>)
+    }
+    
+    Label <|-- NavigatorLabel
+    class NavigatorLabel
+    {
+        --(constructors)--
+        +NavigatorLabel(String, IPageableItems)
+    }
+    
+    AbstractToolbar <|-- NoRecordsToolbar
+    class NoRecordsToolbar
+    {
+        --(constructors)--
+        +NoRecordsToolbar(DataTable<?, ?>)
+        +NoRecordsToolbar(DataTable<?, ?>, IModel<String>)
+    }
+    
+    AbstractColumn <|-- PropertyColumn
+    IExportableColumn <|-- PropertyColumn
+    class PropertyColumn<T, S>
+    {
+        --(constructors)--
+        +PropertyColumn(IModel<String>, S, String)
+        +PropertyColumn(IModel<String>, String)
+        --
+        +String getPropertyExpression()
+    }
+    
+    WebMarkupContainer <|-- DataTable.ToolbarsContainer
+    class DataTable.ToolbarsContainer
+    {
+        --
+        +RepeatingView getRepeatingView()
+    }
+    
+@enduml
+

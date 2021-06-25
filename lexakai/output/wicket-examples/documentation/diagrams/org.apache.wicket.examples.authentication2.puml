@@ -1,0 +1,48 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.examples.authentication2"
+    
+    WicketExamplePage <|-- AuthenticatedWebPage
+    class AuthenticatedWebPage
+    {
+    }
+    
+    AuthenticatedWebPage <|-- Home
+    class Home
+    {
+        --(constructors)--
+        +Home()
+    }
+    
+    WicketExamplePage <|-- SignIn2
+    class SignIn2
+    {
+        --(constructors)--
+        +SignIn2(PageParameters)
+    }
+    
+    WicketExampleApplication <|-- SignIn2Application
+    class SignIn2Application
+    {
+    }
+    
+    AuthenticatedWebSession <|-- SignIn2Session
+    class SignIn2Session
+    {
+        --(constructors)--
+        #SignIn2Session(Request)
+        --
+        +String getUser()
+    }
+    
+    WicketExamplePage <|-- SignOut
+    class SignOut
+    {
+        --(constructors)--
+        +SignOut()
+    }
+    
+@enduml
+

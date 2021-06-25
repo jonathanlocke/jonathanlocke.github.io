@@ -1,0 +1,159 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.file"
+    
+    interface IResourceFinder
+    interface IModifiable
+    interface IFileCleaner
+    
+    File <|-- File
+    IModifiable <|-- File
+    class File
+    {
+        --(constructors)--
+        +File(File, String)
+        +File(String, String)
+        +File(String)
+        +File(URI)
+        +File(java.io.File)
+        +File(java.io.File, String)
+        --
+        +void sync()
+        --(collection)--
+        +boolean remove()
+        --(conversion)--
+        +String toQuotedString()
+        --(filesystem)--
+        +File file(String name)
+        +String getExtension()
+        +Folder getParentFolder()
+        --(read)--
+        +InputStream inputStream()
+        +Object readObject()
+        +String readString()
+        --(write)--
+        +OutputStream outputStream()
+        +int write(InputStream)
+        +void write(String)
+        +int write(File)
+        +void writeObject(Serializable object)
+    }
+    
+    IFileCleaner <|-- FileCleaner
+    class FileCleaner
+    {
+        --(constructors)--
+        +FileCleaner()
+    }
+    
+    FileCleaningTracker <|-- FileCleanerTrackerAdapter
+    class FileCleanerTrackerAdapter
+    {
+        --(constructors)--
+        +FileCleanerTrackerAdapter(IFileCleaner)
+    }
+    
+    interface Folder.FileFilter
+    {
+        --(filtering)--
+        +boolean accept(File)
+    }
+    
+    class Files
+    {
+        --(collection)--
+        +Instant getLastModified(File)
+        +boolean remove(java.io.File)
+        +boolean removeAsync(File, IFileCleaner)
+        --(filesystem)--
+        +String cleanupFilename(String filename)
+        +void copy(File sourceFile, File targetFile)
+        +String extension(String path)
+        +String filename(String path)
+        +File getLocalFileFromUrl(String url)
+        +File getLocalFileFromUrl(URL)
+        +File[] list(File)
+        +boolean mkdirs(File folder)
+        +boolean removeFolder(File folder)
+        +boolean removeFolderAsync(File folder, IFileCleaner)
+        --(path)--
+        +String basePath(String path, String extension)
+        --(primitive)--
+        +byte[] readBytes(File)
+        --(write)--
+        +int writeTo(java.io.File, InputStream)
+        +int writeTo(java.io.File, InputStream, int bufSize)
+    }
+    
+    File <|-- Folder
+    class Folder
+    {
+        --(constructors)--
+        +Folder(Folder, String)
+        +Folder(String, String)
+        +Folder(String)
+        +Folder(URI)
+        +Folder(java.io.File)
+        --(filesystem)--
+        +void ensureExists()
+        +Folder folder(String name)
+        +Bytes freeDiskSpace()
+        +File[] getFiles()
+        +File[] getFiles(FileFilter)
+        +Folder[] getFolders(FolderFilter)
+        +Folder[] getFolders()
+        +File[] getNestedFiles(FileFilter)
+        +File[] getNestedFiles()
+        +boolean removeFiles()
+    }
+    
+    FileDeleteStrategy <|-- FolderDeleteStrategy
+    class FolderDeleteStrategy
+    {
+        --(constructors)--
+        #FolderDeleteStrategy()
+    }
+    
+    interface Folder.FolderFilter
+    {
+        --(filtering)--
+        +boolean accept(Folder)
+    }
+    
+    interface IFileCleaner
+    {
+        --
+        +void destroy()
+        +void track(File, Object marker)
+        +void track(File, Object marker, FileDeleteStrategy)
+    }
+    
+    interface IResourceFinder
+    {
+        --(search)--
+        +IResourceStream find(Class<?> clazz, String pathname)
+    }
+    
+    IResourceFinder <|-- Path
+    class Path
+    {
+        --(constructors)--
+        +Path(Folder)
+        +Path(String)
+    }
+    
+    class WebXmlFile
+    {
+        --(constructors)--
+        +WebXmlFile()
+        --(filtering)--
+        +Set<String> getFilterPath(boolean isServlet, ServletContext, String filterName)
+        +Set<String> getFilterPath(boolean isServlet, String filterName, InputStream is)
+        +String getUniqueFilterPath(boolean isServlet, FilterConfig)
+        +String getUniqueFilterPath(boolean isServlet, String filterName, InputStream is)
+    }
+    
+@enduml
+

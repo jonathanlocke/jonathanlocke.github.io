@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.util.file"
+    
+    interface IResourceFinder
+    
+    IResourceFinder <|-- WebApplicationPath
+    class WebApplicationPath
+    {
+        --(constructors)--
+        +WebApplicationPath(ServletContext, String)
+    }
+    
+@enduml
+

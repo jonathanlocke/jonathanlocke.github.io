@@ -1,0 +1,17 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.core.request"
+    
+    interface IClusterable
+    
+    IClusterable <|-- ClientInfo
+    abstract class ClientInfo
+    {
+        --(constructors)--
+        +ClientInfo()
+    }
+    
+@enduml
+

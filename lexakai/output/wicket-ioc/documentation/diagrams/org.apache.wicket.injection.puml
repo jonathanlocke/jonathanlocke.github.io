@@ -1,0 +1,42 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.injection"
+    
+    interface IFieldValueFactory
+    
+    IFieldValueFactory <|-- CompoundFieldValueFactory
+    class CompoundFieldValueFactory
+    {
+        --(constructors)--
+        +CompoundFieldValueFactory(IFieldValueFactory, IFieldValueFactory)
+        +CompoundFieldValueFactory(IFieldValueFactory[])
+        +CompoundFieldValueFactory(List<IFieldValueFactory>)
+        --(collection)--
+        +void addFactory(IFieldValueFactory)
+    }
+    
+    interface IFieldValueFactory
+    {
+        --
+        +Object getFieldValue(Field, Object fieldOwner)
+        +boolean supportsField(Field)
+    }
+    
+    abstract class Injector
+    {
+        --
+        +void bind(Application)
+        +Injector get()
+        +void inject(Object)
+        #void inject(Object, IFieldValueFactory)
+    }
+    
+    IFieldValueFactory <|-- NoopFieldValueFactory
+    class NoopFieldValueFactory
+    {
+    }
+    
+@enduml
+

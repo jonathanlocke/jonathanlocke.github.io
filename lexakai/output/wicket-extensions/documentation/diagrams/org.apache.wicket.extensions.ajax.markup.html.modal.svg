@@ -1,0 +1,682 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1402.0833px" preserveAspectRatio="none" style="width:2766px;height:1402px;background:#333333;" version="1.1" viewBox="0 0 2766 1402" width="2766.6667px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="570.8333" x="1090.625" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="547.9167" x="1102.0833" y="30.5583">org.apache.wicket.extensions.ajax.markup.html.modal</text><!--MD5=[a4243e4c3e5d445c5a51ef520efe25ab]
+cluster ModalDialog--><polygon fill="#333333" points="1431.25,689.1195,1526.0417,689.1195,1533.3333,716.3411,1713.5417,716.3411,1713.5417,846.4111,1431.25,846.4111,1431.25,689.1195" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="1431.25" x2="1533.3333" y1="716.3411" y2="716.3411"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="82.2917" x="1438.5417" y="706.4128">ModalDialog</text><!--MD5=[d0ba60016ec81d1bd4a40505ca688b46]
+cluster ModalWindow--><polygon fill="#333333" points="225,689.1195,328.125,689.1195,335.4167,716.3411,990.625,716.3411,990.625,846.4111,225,846.4111,225,689.1195" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="225" x2="335.4167" y1="716.3411" y2="716.3411"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="232.2917" y="706.4128">ModalWindow</text><!--MD5=[62e2f8842f3dd40315402fce2584adfe]
+class ModalDialog.CloseBehavior--><rect codeLine="9" fill="#282828" height="83.3781" id="ModalDialog.CloseBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="212.5" x="1476.0417" y="738.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="212.5" x="1476.0417" y="738.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="212.5" x="1476.0417" y="761.1328"/><rect codeLine="9" fill="none" height="83.3781" id="ModalDialog.CloseBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="212.5" x="1476.0417" y="738.0778"/><ellipse cx="1528.6458" cy="753.772" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M1528.2389,750.474 L1527.3905,754.2033 L1529.0934,754.2033 Z M1527.1403,748.8261 L1529.3437,748.8261 L1531.8034,757.9386 L1530.0028,757.9386 L1529.4413,755.6864 L1527.0304,755.6864 L1526.4811,757.9386 L1524.6806,757.9386 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="92.7083" x="1551.5625" y="758.4961">CloseBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1477.0833" x2="1687.5" y1="769.4661" y2="769.4661"/><polygon fill="#FFFF44" points="1487.5,799.6277,1491.6667,803.7944,1487.5,807.961,1483.3333,803.7944" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="180.2083" x="1498.9583" y="811.7472">CharSequence getPrecondition()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1477.0833" x2="1550.5208" y1="787.6719" y2="787.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="1553.6458" y="791.4815">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1614.0625" x2="1687.5" y1="787.6719" y2="787.6719"/><!--MD5=[e0b6e43a431be42a4d9ceb09f3003994]
+class ModalWindow.CloseButtonBehavior--><rect codeLine="16" fill="#282828" height="83.3781" id="ModalWindow.CloseButtonBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="270.3125" y="738.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="270.3125" y="738.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="173.9583" x="270.3125" y="761.1328"/><rect codeLine="16" fill="none" height="83.3781" id="ModalWindow.CloseButtonBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="173.9583" x="270.3125" y="738.0778"/><ellipse cx="284.8958" cy="753.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M286.8062,758.197 Q286.379,758.4167 285.909,758.5266 Q285.439,758.6365 284.9202,758.6365 Q283.077,758.6365 282.1065,757.4219 Q281.1361,756.2073 281.1361,753.9124 Q281.1361,751.6113 282.1065,750.3967 Q283.077,749.1821 284.9202,749.1821 Q285.439,749.1821 285.9151,749.292 Q286.3912,749.4019 286.8062,749.6216 L286.8062,751.6235 Q286.3424,751.1963 285.906,750.9979 Q285.4696,750.7996 285.0057,750.7996 Q284.0169,750.7996 283.5134,751.5839 Q283.0098,752.3682 283.0098,753.9124 Q283.0098,755.4504 283.5134,756.2347 Q284.0169,757.019 285.0057,757.019 Q285.4696,757.019 285.906,756.8207 Q286.3424,756.6223 286.8062,756.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="136.4583" x="301.5625" y="758.4961">CloseButtonBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="271.3542" x2="443.2292" y1="769.4661" y2="769.4661"/><ellipse cx="281.7708" cy="804.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="123.9583" x="293.2292" y="811.7472">CloseButtonBehavior()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="271.3542" x2="313.5417" y1="787.6719" y2="787.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="316.6667" y="791.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="401.0417" x2="443.2292" y1="787.6719" y2="787.6719"/><!--MD5=[d2c24d5c4d942eaca28346d4a9c42d9d]
+class ModalWindow.CloseButtonCallback--><rect codeLine="24" fill="#282828" height="83.3781" id="ModalWindow.CloseButtonCallback" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="317.7083" x="647.3958" y="738.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="317.7083" x="647.3958" y="738.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="317.7083" x="647.3958" y="761.1328"/><rect codeLine="24" fill="none" height="83.3781" id="ModalWindow.CloseButtonCallback" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="317.7083" x="647.3958" y="738.0778"/><ellipse cx="731.25" cy="753.772" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M728.654,750.9338 L728.654,749.3469 L734.08,749.3469 L734.08,750.9338 L732.2673,750.9338 L732.2673,756.8726 L734.08,756.8726 L734.08,758.4595 L728.654,758.4595 L728.654,756.8726 L730.4667,756.8726 L730.4667,750.9338 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="135.4167" x="754.1667" y="758.4961">CloseButtonCallback</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="648.4375" x2="964.0625" y1="769.4661" y2="769.4661"/><ellipse cx="658.8542" cy="804.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="285.4167" x="670.3125" y="811.7472">boolean onCloseButtonClicked(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="648.4375" x2="752.0833" y1="787.6719" y2="787.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="755.2083" y="791.4815">(extension points)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="860.4167" x2="964.0625" y1="787.6719" y2="787.6719"/><!--MD5=[83371b21f8dc7368ec2c7cb71dd6bbcf]
+class ModalWindow.MaskType--><rect codeLine="31" fill="#282828" height="83.3781" id="ModalWindow.MaskType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="481.25" y="738.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="481.25" y="738.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="129.1667" x="481.25" y="761.1328"/><rect codeLine="31" fill="none" height="83.3781" id="ModalWindow.MaskType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="129.1667" x="481.25" y="738.0778"/><ellipse cx="507.5521" cy="753.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M509.4625,758.197 Q509.0352,758.4167 508.5653,758.5266 Q508.0953,758.6365 507.5765,758.6365 Q505.7332,758.6365 504.7628,757.4219 Q503.7923,756.2073 503.7923,753.9124 Q503.7923,751.6113 504.7628,750.3967 Q505.7332,749.1821 507.5765,749.1821 Q508.0953,749.1821 508.5714,749.292 Q509.0474,749.4019 509.4625,749.6216 L509.4625,751.6235 Q508.9986,751.1963 508.5622,750.9979 Q508.1258,750.7996 507.6619,750.7996 Q506.6732,750.7996 506.1696,751.5839 Q505.6661,752.3682 505.6661,753.9124 Q505.6661,755.4504 506.1696,756.2347 Q506.6732,757.019 507.6619,757.019 Q508.1258,757.019 508.5622,756.8207 Q508.9986,756.6223 509.4625,756.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="65.625" x="526.8229" y="758.4961">MaskType</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="482.2917" x2="609.375" y1="769.4661" y2="769.4661"/><ellipse cx="492.7083" cy="804.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="96.875" x="504.1667" y="811.7472">MaskType(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="482.2917" x2="502.0833" y1="787.6719" y2="787.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="505.2083" y="791.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="589.5833" x2="609.375" y1="787.6719" y2="787.6719"/><!--MD5=[c44f484162ce826c46954ab096a868bc]
+class AbstractDefaultAjaxBehavior--><rect codeLine="6" fill="#282828" height="48.055" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="223.9583" x="101.5625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="223.9583" x="101.5625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="223.9583" x="101.5625" y="76.7578"/><rect codeLine="6" fill="none" height="48.055" id="AbstractDefaultAjaxBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="223.9583" x="101.5625" y="53.7028"/><ellipse cx="116.1458" cy="69.397" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M115.7389,66.099 L114.8905,69.8283 L116.5934,69.8283 Z M114.6403,64.4511 L116.8437,64.4511 L119.3034,73.5636 L117.5028,73.5636 L116.9413,71.3114 L114.5304,71.3114 L113.9811,73.5636 L112.1806,73.5636 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="186.4583" x="132.8125" y="74.1211">AbstractDefaultAjaxBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="102.6042" x2="324.4792" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="102.6042" x2="324.4792" y1="93.4245" y2="93.4245"/><!--MD5=[61e09d85732d081f20ec5ea1cc80f915]
+class AjaxEventBehavior--><rect fill="#282828" height="48.055" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1503.6458" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1503.6458" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="157.2917" x="1503.6458" y="76.7578"/><rect fill="none" height="48.055" id="AjaxEventBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="157.2917" x="1503.6458" y="53.7028"/><ellipse cx="1518.2292" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1520.1396,73.822 Q1519.7123,74.0417 1519.2424,74.1516 Q1518.7724,74.2615 1518.2536,74.2615 Q1516.4103,74.2615 1515.4399,73.0469 Q1514.4694,71.8323 1514.4694,69.5374 Q1514.4694,67.2363 1515.4399,66.0217 Q1516.4103,64.8071 1518.2536,64.8071 Q1518.7724,64.8071 1519.2485,64.917 Q1519.7245,65.0269 1520.1396,65.2466 L1520.1396,67.2485 Q1519.6757,66.8213 1519.2393,66.6229 Q1518.8029,66.4246 1518.339,66.4246 Q1517.3503,66.4246 1516.8467,67.2089 Q1516.3432,67.9932 1516.3432,69.5374 Q1516.3432,71.0754 1516.8467,71.8597 Q1517.3503,72.644 1518.339,72.644 Q1518.8029,72.644 1519.2393,72.4457 Q1519.6757,72.2473 1520.1396,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="119.7917" x="1534.8958" y="74.1211">AjaxEventBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1504.6875" x2="1659.8958" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1504.6875" x2="1659.8958" y1="93.4245" y2="93.4245"/><!--MD5=[cd6fe5c68cc4750b98a6651e5a9afd2b]
+class IClusterable--><rect codeLine="140" fill="#282828" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1023.4375" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1023.4375" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="115.625" x="1023.4375" y="76.7578"/><rect codeLine="140" fill="none" height="48.055" id="IClusterable" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="115.625" x="1023.4375" y="53.7028"/><ellipse cx="1038.0208" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1035.4248,66.5588 L1035.4248,64.9719 L1040.8508,64.9719 L1040.8508,66.5588 L1039.0381,66.5588 L1039.0381,72.4976 L1040.8508,72.4976 L1040.8508,74.0845 L1035.4248,74.0845 L1035.4248,72.4976 L1037.2375,72.4976 L1037.2375,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="1054.6875" y="74.1211">IClusterable</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1024.4792" x2="1138.0208" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1024.4792" x2="1138.0208" y1="93.4245" y2="93.4245"/><!--MD5=[b6cf9cf1d2e104f542601f81b687b094]
+class EnumeratedType--><rect fill="#282828" height="48.055" id="EnumeratedType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="472.9167" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="472.9167" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="145.8333" x="472.9167" y="76.7578"/><rect fill="none" height="48.055" id="EnumeratedType" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="145.8333" x="472.9167" y="53.7028"/><ellipse cx="487.5" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M489.4104,73.822 Q488.9832,74.0417 488.5132,74.1516 Q488.0432,74.2615 487.5244,74.2615 Q485.6812,74.2615 484.7107,73.0469 Q483.7402,71.8323 483.7402,69.5374 Q483.7402,67.2363 484.7107,66.0217 Q485.6812,64.8071 487.5244,64.8071 Q488.0432,64.8071 488.5193,64.917 Q488.9954,65.0269 489.4104,65.2466 L489.4104,67.2485 Q488.9465,66.8213 488.5101,66.6229 Q488.0737,66.4246 487.6099,66.4246 Q486.6211,66.4246 486.1176,67.2089 Q485.614,67.9932 485.614,69.5374 Q485.614,71.0754 486.1176,71.8597 Q486.6211,72.644 487.6099,72.644 Q488.0737,72.644 488.5101,72.4457 Q488.9465,72.2473 489.4104,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="108.3333" x="504.1667" y="74.1211">EnumeratedType</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="473.9583" x2="617.7083" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="473.9583" x2="617.7083" y1="93.4245" y2="93.4245"/><!--MD5=[0174392a0c212c3b3e97bee69152624c]
+class Panel--><rect fill="#282828" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="2099.4792" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="2099.4792" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="71.875" x="2099.4792" y="76.7578"/><rect fill="none" height="48.055" id="Panel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="71.875" x="2099.4792" y="53.7028"/><ellipse cx="2114.0625" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2115.9729,73.822 Q2115.5457,74.0417 2115.0757,74.1516 Q2114.6057,74.2615 2114.0869,74.2615 Q2112.2437,74.2615 2111.2732,73.0469 Q2110.3027,71.8323 2110.3027,69.5374 Q2110.3027,67.2363 2111.2732,66.0217 Q2112.2437,64.8071 2114.0869,64.8071 Q2114.6057,64.8071 2115.0818,64.917 Q2115.5579,65.0269 2115.9729,65.2466 L2115.9729,67.2485 Q2115.509,66.8213 2115.0726,66.6229 Q2114.6362,66.4246 2114.1724,66.4246 Q2113.1836,66.4246 2112.6801,67.2089 Q2112.1765,67.9932 2112.1765,69.5374 Q2112.1765,71.0754 2112.6801,71.8597 Q2113.1836,72.644 2114.1724,72.644 Q2114.6362,72.644 2115.0726,72.4457 Q2115.509,72.2473 2115.9729,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="34.375" x="2130.7292" y="74.1211">Panel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2100.5208" x2="2170.3125" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2100.5208" x2="2170.3125" y1="93.4245" y2="93.4245"/><!--MD5=[53c52ef7b4434a31b720f212ef8124b5]
+class ModalDialog--><rect codeLine="38" fill="#282828" height="360.8948" id="ModalDialog" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="364.5833" x="1738.5417" y="599.5361"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="364.5833" x="1738.5417" y="599.5361"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="364.5833" x="1738.5417" y="622.5911"/><rect codeLine="38" fill="none" height="360.8948" id="ModalDialog" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="364.5833" x="1738.5417" y="599.5361"/><ellipse cx="1872.3958" cy="615.2303" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1874.3062,619.6554 Q1873.879,619.8751 1873.409,619.9849 Q1872.939,620.0948 1872.4202,620.0948 Q1870.577,620.0948 1869.6065,618.8802 Q1868.6361,617.6656 1868.6361,615.3707 Q1868.6361,613.0697 1869.6065,611.8551 Q1870.577,610.6405 1872.4202,610.6405 Q1872.939,610.6405 1873.4151,610.7503 Q1873.8912,610.8602 1874.3062,611.0799 L1874.3062,613.0819 Q1873.8424,612.6546 1873.406,612.4563 Q1872.9696,612.2579 1872.5057,612.2579 Q1871.5169,612.2579 1871.0134,613.0422 Q1870.5098,613.8265 1870.5098,615.3707 Q1870.5098,616.9088 1871.0134,617.6931 Q1871.5169,618.4774 1872.5057,618.4774 Q1872.9696,618.4774 1873.406,618.279 Q1873.8424,618.0806 1874.3062,617.6534 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="82.2917" x="1895.3125" y="619.9544">ModalDialog</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1739.5833" x2="2102.0833" y1="630.9245" y2="630.9245"/><ellipse cx="1750" cy="666.2944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="1761.4583" y="673.2056">ModalDialog(String)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="1877.0833" y1="649.1302" y2="649.1302"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1880.2083" y="652.9399">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1964.5833" x2="2102.0833" y1="649.1302" y2="649.1302"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="2102.0833" y1="682.9142" y2="682.9142"/><ellipse cx="1750" cy="694.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="332.2917" x="1761.4583" y="701.2838">ModalDialog open(Component content, AjaxRequestTarget)</text><ellipse cx="1750" cy="714.1174" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="214.5833" x="1761.4583" y="721.0286">ModalDialog open(AjaxRequestTarget)</text><ellipse cx="1750" cy="733.8623" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="208.3333" x="1761.4583" y="740.7735">void setContent(Component content)</text><ellipse cx="1750" cy="753.6072" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="136.4583" x="1761.4583" y="760.5184">ModalDialog trapFocus()</text><ellipse cx="1750" cy="797.2636" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="95.8333" x="1761.4583" y="804.1748">boolean isOpen()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="1894.2708" y1="780.0995" y2="780.0995"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="1897.3958" y="783.9091">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1947.3958" x2="2102.0833" y1="780.0995" y2="780.0995"/><polygon fill="#FFFF44" points="1750,835.7117,1754.1667,839.8783,1750,844.045,1745.8333,839.8783" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="269.7917" x="1761.4583" y="847.8312">WebMarkupContainer newDialog(String dialogId)</text><polygon fill="#FFFF44" points="1750,855.4565,1754.1667,859.6232,1750,863.7899,1745.8333,859.6232" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="283.3333" x="1761.4583" y="867.5761">WebMarkupContainer newOverlay(String overlayId)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="1893.75" y1="823.7559" y2="823.7559"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="1896.875" y="827.5655">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1947.9167" x2="2102.0833" y1="823.7559" y2="823.7559"/><ellipse cx="1750" cy="904.3213" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="215.625" x="1761.4583" y="911.2325">ModalDialog close(AjaxRequestTarget)</text><ellipse cx="1750" cy="924.0662" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="153.125" x="1761.4583" y="930.9774">ModalDialog closeOnClick()</text><ellipse cx="1750" cy="943.811" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="164.5833" x="1761.4583" y="950.7222">ModalDialog closeOnEscape()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1739.5833" x2="1908.3333" y1="887.1572" y2="887.1572"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="18.75" x="1911.4583" y="890.9668">(io)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1933.3333" x2="2102.0833" y1="887.1572" y2="887.1572"/><!--MD5=[80456a8bc0212f402c8ae6b2f7ea61c0]
+class ModalWindow--><rect codeLine="59" fill="#282828" height="1230.7576" id="ModalWindow" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="422.9167" x="2139.5833" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="422.9167" x="2139.5833" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="422.9167" x="2139.5833" y="187.1745"/><rect codeLine="59" fill="none" height="1230.7576" id="ModalWindow" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="422.9167" x="2139.5833" y="164.1195"/><ellipse cx="2298.4375" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2300.3479,184.2387 Q2299.9207,184.4584 2299.4507,184.5683 Q2298.9807,184.6781 2298.4619,184.6781 Q2296.6187,184.6781 2295.6482,183.4635 Q2294.6777,182.2489 2294.6777,179.954 Q2294.6777,177.653 2295.6482,176.4384 Q2296.6187,175.2238 2298.4619,175.2238 Q2298.9807,175.2238 2299.4568,175.3337 Q2299.9329,175.4435 2300.3479,175.6632 L2300.3479,177.6652 Q2299.884,177.238 2299.4476,177.0396 Q2299.0112,176.8412 2298.5474,176.8412 Q2297.5586,176.8412 2297.0551,177.6255 Q2296.5515,178.4098 2296.5515,179.954 Q2296.5515,181.4921 2297.0551,182.2764 Q2297.5586,183.0607 2298.5474,183.0607 Q2299.0112,183.0607 2299.4476,182.8623 Q2299.884,182.664 2300.3479,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="90.625" x="2321.3542" y="184.5378">ModalWindow</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="2140.625" x2="2561.4583" y1="195.5078" y2="195.5078"/><ellipse cx="2151.0417" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="2162.5" y="237.7889">ModalWindow(String)</text><ellipse cx="2151.0417" cy="250.6226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="184.375" x="2162.5" y="257.5338">ModalWindow(String, IModel&lt;?&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2307.2917" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="2310.4167" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2394.7917" x2="2561.4583" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2561.4583" y1="267.2424" y2="267.2424"/><ellipse cx="2151.0417" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="121.875" x="2162.5" y="285.612">String getHeightUnit()</text><ellipse cx="2151.0417" cy="298.4456" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="2162.5" y="305.3569">MaskType getMaskType()</text><ellipse cx="2151.0417" cy="318.1905" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="122.9167" x="2162.5" y="325.1017">int getMinimalHeight()</text><ellipse cx="2151.0417" cy="337.9354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="2162.5" y="344.8466">int getMinimalWidth()</text><ellipse cx="2151.0417" cy="357.6803" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="2162.5" y="364.5915">IModel&lt;String&gt; getTitle()</text><ellipse cx="2151.0417" cy="377.4251" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="116.6667" x="2162.5" y="384.3363">String getWidthUnit()</text><ellipse cx="2151.0417" cy="397.17" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="214.5833" x="2162.5" y="404.0812">ModalWindow setContent(Component)</text><ellipse cx="2151.0417" cy="416.9149" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="258.3333" x="2162.5" y="423.8261">ModalWindow setHeightUnit(String heightUnit)</text><ellipse cx="2151.0417" cy="436.6597" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="214.5833" x="2162.5" y="443.571">ModalWindow setMaskType(MaskType)</text><ellipse cx="2151.0417" cy="456.4046" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="281.25" x="2162.5" y="463.3158">ModalWindow setMinimalHeight(int minimalHeight)</text><ellipse cx="2151.0417" cy="476.1495" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="270.8333" x="2162.5" y="483.0607">ModalWindow setMinimalWidth(int minimalWidth)</text><ellipse cx="2151.0417" cy="495.8944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="241.6667" x="2162.5" y="502.8056">ModalWindow setPageCreator(PageCreator)</text><ellipse cx="2151.0417" cy="515.6392" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="254.1667" x="2162.5" y="522.5505">ModalWindow setResizable(boolean resizable)</text><ellipse cx="2151.0417" cy="535.3841" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="240.625" x="2162.5" y="542.2953">ModalWindow setTitle(IModel&lt;String&gt; title)</text><ellipse cx="2151.0417" cy="555.129" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="185.4167" x="2162.5" y="562.0402">ModalWindow setTitle(String title)</text><ellipse cx="2151.0417" cy="574.8739" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="2162.5" y="581.7851">ModalWindow setWidthUnit(String widthUnit)</text><ellipse cx="2151.0417" cy="594.6187" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="2162.5" y="601.5299">void show(IPartialPageRequestHandler target)</text><ellipse cx="2151.0417" cy="614.3636" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="390.625" x="2162.5" y="621.2748">ModalWindow showUnloadConfirmation(boolean unloadConfirmation)</text><ellipse cx="2151.0417" cy="634.1085" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="198.9583" x="2162.5" y="641.0197">boolean showUnloadConfirmation()</text><polygon fill="#FFFF44" points="2151.0417,648.645,2155.2083,652.8117,2151.0417,656.9784,2146.875,652.8117" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="139.5833" x="2162.5" y="660.7646">Component getContent()</text><polygon fill="#FFFF44" points="2151.0417,668.3899,2155.2083,672.5566,2151.0417,676.7232,2146.875,672.5566" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="189.5833" x="2162.5" y="680.5094">String getWindowOpenJavaScript()</text><polygon fill="#FFFF44" points="2151.0417,688.1348,2155.2083,692.3014,2151.0417,696.4681,2146.875,692.3014" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="166.6667" x="2162.5" y="700.2543">boolean makeContentVisible()</text><polygon fill="#FFFF44" points="2151.0417,707.8796,2155.2083,712.0463,2151.0417,716.213,2146.875,712.0463" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="260.4167" x="2162.5" y="719.9992">void postProcessSettings(JSONObject settings)</text><ellipse cx="2151.0417" cy="756.7444" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="114.5833" x="2162.5" y="763.6556">boolean isAutoSize()</text><ellipse cx="2151.0417" cy="776.4893" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="2162.5" y="783.4005">boolean isResizable()</text><ellipse cx="2151.0417" cy="796.2341" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="102.0833" x="2162.5" y="803.1453">boolean isShown()</text><polygon fill="#FFFF44" points="2151.0417,810.7707,2155.2083,814.9373,2151.0417,819.104,2146.875,814.9373" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="175" x="2162.5" y="822.8902">boolean isCustomComponent()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2324.4792" y1="739.5803" y2="739.5803"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="46.875" x="2327.6042" y="743.3899">(checks)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2377.6042" x2="2561.4583" y1="739.5803" y2="739.5803"/><ellipse cx="2151.0417" cy="859.6354" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="247.9167" x="2162.5" y="866.5466">ModalWindow setAutoSize(boolean autoSize)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2316.6667" y1="842.4713" y2="842.4713"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="62.5" x="2319.7917" y="846.2809">(collection)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2385.4167" x2="2561.4583" y1="842.4713" y2="842.4713"/><polygon fill="#FFFF44" points="2151.0417,898.0835,2155.2083,902.2502,2151.0417,906.4168,2146.875,902.2502" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="2162.5" y="910.203">ResourceReference newCssResource()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2323.9583" y1="886.1277" y2="886.1277"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="47.9167" x="2327.0833" y="889.9373">(factory)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2378.125" x2="2561.4583" y1="886.1277" y2="886.1277"/><ellipse cx="2151.0417" cy="946.9482" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="117.7083" x="2162.5" y="953.8595">String getContentId()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2322.9167" y1="929.7841" y2="929.7841"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="2326.0417" y="933.5938">(identity)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2379.1667" x2="2561.4583" y1="929.7841" y2="929.7841"/><ellipse cx="2151.0417" cy="990.6047" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="253.125" x="2162.5" y="997.5159">void close(IPartialPageRequestHandler target)</text><ellipse cx="2151.0417" cy="1010.3495" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="296.875" x="2162.5" y="1017.2607">void closeCurrent(IPartialPageRequestHandler target)</text><ellipse cx="2151.0417" cy="1030.0944" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="333.3333" x="2162.5" y="1037.0056">ModalWindow setCloseButtonCallback(CloseButtonCallback)</text><ellipse cx="2151.0417" cy="1049.8393" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="360.4167" x="2162.5" y="1056.7505">ModalWindow setWindowClosedCallback(WindowClosedCallback)</text><polygon fill="#FFFF44" points="2151.0417,1064.3758,2155.2083,1068.5425,2151.0417,1072.7091,2146.875,1068.5425" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="141.6667" x="2162.5" y="1076.4954">String getCloseJavacript()</text><polygon fill="#FFFF44" points="2151.0417,1084.1207,2155.2083,1088.2874,2151.0417,1092.454,2146.875,1088.2874" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="264.5833" x="2162.5" y="1096.2402">CloseButtonBehavior newCloseButtonBehavior()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2338.5417" y1="973.4406" y2="973.4406"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="18.75" x="2341.6667" y="977.2502">(io)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2363.5417" x2="2561.4583" y1="973.4406" y2="973.4406"/><ellipse cx="2151.0417" cy="1132.9854" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="110.4167" x="2162.5" y="1139.8966">int getInitialHeight()</text><ellipse cx="2151.0417" cy="1152.7303" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="105.2083" x="2162.5" y="1159.6415">int getInitialWidth()</text><ellipse cx="2151.0417" cy="1172.4752" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="153.125" x="2162.5" y="1179.3864">boolean isUseInitialHeight()</text><ellipse cx="2151.0417" cy="1192.2201" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="255.2083" x="2162.5" y="1199.1313">ModalWindow setInitialHeight(int initialHeight)</text><ellipse cx="2151.0417" cy="1211.9649" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="244.7917" x="2162.5" y="1218.8761">ModalWindow setInitialWidth(int initialWidth)</text><ellipse cx="2151.0417" cy="1231.7098" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="326.0417" x="2162.5" y="1238.621">ModalWindow setUseInitialHeight(boolean useInitialHeight)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2321.3542" y1="1115.8213" y2="1115.8213"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="53.125" x="2324.4792" y="1119.6309">(lifecycle)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2380.7292" x2="2561.4583" y1="1115.8213" y2="1115.8213"/><ellipse cx="2151.0417" cy="1275.3662" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="132.2917" x="2162.5" y="1282.2774">String getCookieName()</text><ellipse cx="2151.0417" cy="1295.1111" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="2162.5" y="1302.0223">String getCssClassName()</text><ellipse cx="2151.0417" cy="1314.856" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="278.125" x="2162.5" y="1321.7672">ModalWindow setCookieName(String cookieName)</text><ellipse cx="2151.0417" cy="1334.6008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="303.125" x="2162.5" y="1341.512">ModalWindow setCssClassName(String cssClassName)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2322.9167" y1="1258.2021" y2="1258.2021"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="50" x="2326.0417" y="1262.0117">(naming)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2379.1667" x2="2561.4583" y1="1258.2021" y2="1258.2021"/><polygon fill="#FFFF44" points="2151.0417,1373.0489,2155.2083,1377.2156,2151.0417,1381.3822,2146.875,1377.2156" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="2162.5" y="1385.1685">CharSequence getShowJavaScript()</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2140.625" x2="2319.2708" y1="1361.0931" y2="1361.0931"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="57.2917" x="2322.3958" y="1364.9028">(primitive)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2382.8125" x2="2561.4583" y1="1361.0931" y2="1361.0931"/><!--MD5=[6715fd13436130dcd7d5b47dbe7357cd]
+class ModalWindow.PageCreator--><rect codeLine="124" fill="#282828" height="67.7999" id="ModalWindow.PageCreator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="130.2083" x="1016.1458" y="745.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="130.2083" x="1016.1458" y="745.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="130.2083" x="1016.1458" y="768.9453"/><rect codeLine="124" fill="none" height="67.7999" id="ModalWindow.PageCreator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="130.2083" x="1016.1458" y="745.8903"/><ellipse cx="1037.2917" cy="761.5845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1034.6956,758.7463 L1034.6956,757.1594 L1040.1217,757.1594 L1040.1217,758.7463 L1038.3089,758.7463 L1038.3089,764.6851 L1040.1217,764.6851 L1040.1217,766.272 L1034.6956,766.272 L1034.6956,764.6851 L1036.5084,764.6851 L1036.5084,758.7463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="78.125" x="1055.4167" y="766.3086">PageCreator</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1017.1875" x2="1145.3125" y1="777.2786" y2="777.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1017.1875" x2="1145.3125" y1="785.612" y2="785.612"/><ellipse cx="1027.6042" cy="797.0703" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="97.9167" x="1039.0625" y="803.9815">Page createPage()</text><!--MD5=[9ec104ddfc62073059e345d4e82bb5a8]
+class Behavior--><rect fill="#282828" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="2632.2917" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="2632.2917" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="2632.2917" y="76.7578"/><rect fill="none" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="2632.2917" y="53.7028"/><ellipse cx="2646.875" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2648.7854,73.822 Q2648.3582,74.0417 2647.8882,74.1516 Q2647.4182,74.2615 2646.8994,74.2615 Q2645.0562,74.2615 2644.0857,73.0469 Q2643.1152,71.8323 2643.1152,69.5374 Q2643.1152,67.2363 2644.0857,66.0217 Q2645.0562,64.8071 2646.8994,64.8071 Q2647.4182,64.8071 2647.8943,64.917 Q2648.3704,65.0269 2648.7854,65.2466 L2648.7854,67.2485 Q2648.3215,66.8213 2647.8851,66.6229 Q2647.4487,66.4246 2646.9849,66.4246 Q2645.9961,66.4246 2645.4926,67.2089 Q2644.989,67.9932 2644.989,69.5374 Q2644.989,71.0754 2645.4926,71.8597 Q2645.9961,72.644 2646.9849,72.644 Q2647.4487,72.644 2647.8851,72.4457 Q2648.3215,72.2473 2648.7854,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="56.25" x="2663.5417" y="74.1211">Behavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2633.3333" x2="2725" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2633.3333" x2="2725" y1="93.4245" y2="93.4245"/><!--MD5=[f1558f7eae464c303822cc9141fa5728]
+class TrapFocusBehavior--><rect codeLine="131" fill="#282828" height="48.055" id="TrapFocusBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="2598.9583" y="755.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="2598.9583" y="755.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="2598.9583" y="778.8411"/><rect codeLine="131" fill="none" height="48.055" id="TrapFocusBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="2598.9583" y="755.7861"/><ellipse cx="2613.5417" cy="771.4803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M2615.4521,775.9054 Q2615.0248,776.1251 2614.5549,776.2349 Q2614.0849,776.3448 2613.5661,776.3448 Q2611.7228,776.3448 2610.7524,775.1302 Q2609.7819,773.9156 2609.7819,771.6207 Q2609.7819,769.3197 2610.7524,768.1051 Q2611.7228,766.8905 2613.5661,766.8905 Q2614.0849,766.8905 2614.561,767.0003 Q2615.037,767.1102 2615.4521,767.3299 L2615.4521,769.3319 Q2614.9882,768.9046 2614.5518,768.7063 Q2614.1154,768.5079 2613.6515,768.5079 Q2612.6628,768.5079 2612.1592,769.2922 Q2611.6557,770.0765 2611.6557,771.6207 Q2611.6557,773.1588 2612.1592,773.9431 Q2612.6628,774.7274 2613.6515,774.7274 Q2614.1154,774.7274 2614.5518,774.529 Q2614.9882,774.3306 2615.4521,773.9034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="122.9167" x="2630.2083" y="776.2044">TrapFocusBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2600" x2="2758.3333" y1="787.1745" y2="787.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="2600" x2="2758.3333" y1="795.5078" y2="795.5078"/><!--MD5=[6a5ed146d18d33906a0b5742a228ab0f]
+class ModalWindow.WindowClosedBehavior--><rect codeLine="136" fill="#282828" height="48.055" id="ModalWindow.WindowClosedBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="189.5833" x="7.2917" y="755.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="189.5833" x="7.2917" y="755.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="189.5833" x="7.2917" y="778.8411"/><rect codeLine="136" fill="none" height="48.055" id="ModalWindow.WindowClosedBehavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="189.5833" x="7.2917" y="755.7861"/><ellipse cx="21.875" cy="771.4803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M23.7854,775.9054 Q23.3582,776.1251 22.8882,776.2349 Q22.4182,776.3448 21.8994,776.3448 Q20.0562,776.3448 19.0857,775.1302 Q18.1152,773.9156 18.1152,771.6207 Q18.1152,769.3197 19.0857,768.1051 Q20.0562,766.8905 21.8994,766.8905 Q22.4182,766.8905 22.8943,767.0003 Q23.3704,767.1102 23.7854,767.3299 L23.7854,769.3319 Q23.3215,768.9046 22.8851,768.7063 Q22.4487,768.5079 21.9849,768.5079 Q20.9961,768.5079 20.4926,769.2922 Q19.989,770.0765 19.989,771.6207 Q19.989,773.1588 20.4926,773.9431 Q20.9961,774.7274 21.9849,774.7274 Q22.4487,774.7274 22.8851,774.529 Q23.3215,774.3306 23.7854,773.9034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="152.0833" x="38.5417" y="776.2044">WindowClosedBehavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="195.8333" y1="787.1745" y2="787.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="195.8333" y1="795.5078" y2="795.5078"/><!--MD5=[9802fd287da8596e58eac99e3034da56]
+class ModalWindow.WindowClosedCallback--><rect codeLine="142" fill="#282828" height="83.3781" id="ModalWindow.WindowClosedCallback" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="219.7917" x="1182.8125" y="738.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="219.7917" x="1182.8125" y="738.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="219.7917" x="1182.8125" y="761.1328"/><rect codeLine="142" fill="none" height="83.3781" id="ModalWindow.WindowClosedCallback" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="219.7917" x="1182.8125" y="738.0778"/><ellipse cx="1211.4583" cy="753.772" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M1208.8623,750.9338 L1208.8623,749.3469 L1214.2883,749.3469 L1214.2883,750.9338 L1212.4756,750.9338 L1212.4756,756.8726 L1214.2883,756.8726 L1214.2883,758.4595 L1208.8623,758.4595 L1208.8623,756.8726 L1210.675,756.8726 L1210.675,750.9338 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="151.0417" x="1231.25" y="758.4961">WindowClosedCallback</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1183.8542" x2="1401.5625" y1="769.4661" y2="769.4661"/><ellipse cx="1194.2708" cy="804.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="187.5" x="1205.7292" y="811.7472">void onClose(AjaxRequestTarget)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1183.8542" x2="1280.2083" y1="787.6719" y2="787.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="18.75" x="1283.3333" y="791.4815">(io)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1305.2083" x2="1401.5625" y1="787.6719" y2="787.6719"/><!--MD5=[40e6bdb047a307abf09410aa2105ad13]
+reverse link AjaxEventBehavior to ModalDialog.CloseBehavior--><path codeLine="8" d="M1582.2917,123.2132 C1582.2917,250.5465 1582.2917,615.0153 1582.2917,737.7757 " fill="none" id="AjaxEventBehavior-backto-ModalDialog.CloseBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1575,122.8278,1582.2917,101.9945,1589.5833,122.8278,1575,122.8278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[77cdf25ed9fc2bce5b6aedec6b2c3f4c]
+reverse link AbstractDefaultAjaxBehavior to ModalWindow.CloseButtonBehavior--><path codeLine="15" d="M243.2188,118.8382 C252.0625,132.5778 260.9271,148.4528 266.6667,164.1195 C342.2188,370.182 354.9167,636.9945 356.9479,737.7653 " fill="none" id="AbstractDefaultAjaxBehavior-backto-ModalWindow.CloseButtonBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="237.1979,122.9528,231.4479,101.6403,249.2292,114.7132,237.1979,122.9528" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[85e0372db107f47a138e2c92a8b29e5b]
+reverse link IClusterable to ModalWindow.CloseButtonCallback--><path codeLine="23" d="M1037.125,116.182 C1022.9896,130.0465 1008.3229,146.6611 997.9167,164.1195 C880.8542,360.432 828.5104,635.2861 812.1875,737.932 " fill="none" id="IClusterable-backto-ModalWindow.CloseButtonCallback" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1032.375,110.6507,1052.5938,101.807,1042.2917,121.3278,1032.375,110.6507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[470d2f6567806c8d60db59326a1cfbc0]
+reverse link EnumeratedType to ModalWindow.MaskType--><path codeLine="30" d="M545.8333,123.2132 C545.8333,250.5465 545.8333,615.0153 545.8333,737.7757 " fill="none" id="EnumeratedType-backto-ModalWindow.MaskType" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="538.5417,122.8278,545.8333,101.9945,553.125,122.8278,538.5417,122.8278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[bd38d6acec13bfc2f37c64b72519e916]
+reverse link Panel to ModalDialog--><path codeLine="37" d="M2122.1354,122.0153 C2093.5938,215.1403 2024.9688,439.0049 1975.7813,599.4528 " fill="none" id="Panel-backto-ModalDialog" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2115.1979,119.7757,2128.2813,101.9945,2129.1458,124.0465,2115.1979,119.7757" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[8db2f4727288a82ec27b42912056d3f1]
+reverse link Panel to ModalWindow--><path codeLine="58" d="M2148.8229,122.2236 C2152.5,134.1611 2156.8438,148.2445 2161.7083,164.0674 " fill="none" id="Panel-backto-ModalWindow" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2141.7604,124.0465,2142.5938,101.9945,2155.6875,119.7549,2141.7604,124.0465" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[c8c1077bc98c2c281de2c87b9b84d9ac]
+reverse link IClusterable to ModalWindow.PageCreator--><path codeLine="123" d="M1081.25,122.9111 C1081.25,252.8174 1081.25,631.3695 1081.25,745.6507 " fill="none" id="IClusterable-backto-ModalWindow.PageCreator" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1073.9583,122.8278,1081.25,101.9945,1088.5417,122.8278,1073.9583,122.8278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[65b9f2717f09b12cc6409045022ef81b]
+reverse link Behavior to TrapFocusBehavior--><path codeLine="130" d="M2679.1667,123.2132 C2679.1667,257.5049 2679.1667,655.6195 2679.1667,755.682 " fill="none" id="Behavior-backto-TrapFocusBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="2671.875,122.8278,2679.1667,101.9945,2686.4583,122.8278,2671.875,122.8278" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[23b79a809e173b452c239b51119a897c]
+reverse link AbstractDefaultAjaxBehavior to ModalWindow.WindowClosedBehavior--><path codeLine="135" d="M206.5208,122.7965 C185.1979,256.682 121.6979,655.5153 105.75,755.682 " fill="none" id="AbstractDefaultAjaxBehavior-backto-ModalWindow.WindowClosedBehavior" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="199.3542,121.4215,209.8333,101.9945,213.7604,123.7132,199.3542,121.4215" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[de4ce80dffd3f8ea2696260484752916]
+reverse link IClusterable to ModalWindow.WindowClosedCallback--><path codeLine="141" d="M1126.6667,115.9424 C1140.7813,129.7028 1155.1042,146.3174 1164.5833,164.1195 C1269.3438,360.859 1288.4896,635.4528 1291.9583,737.984 " fill="none" id="IClusterable-backto-ModalWindow.WindowClosedCallback" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1121.5625,121.1507,1111.1042,101.7132,1131.3958,110.3799,1121.5625,121.1507" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[29962aa5c3278e2761e52e6abedd471b]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.modal"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    AjaxEventBehavior <|- - ModalDialog.CloseBehavior
+    abstract class ModalDialog.CloseBehavior
+    {
+        - -(primitive)- -
+        #CharSequence getPrecondition()
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - ModalWindow.CloseButtonBehavior
+    class ModalWindow.CloseButtonBehavior
+    {
+        - -(constructors)- -
+        +CloseButtonBehavior()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.CloseButtonCallback
+    interface ModalWindow.CloseButtonCallback
+    {
+        - -(extension points)- -
+        +boolean onCloseButtonClicked(AjaxRequestTarget)
+    }
+    
+    EnumeratedType <|- - ModalWindow.MaskType
+    class ModalWindow.MaskType
+    {
+        - -(constructors)- -
+        +MaskType(String)
+    }
+    
+    Panel <|- - ModalDialog
+    class ModalDialog
+    {
+        - -(constructors)- -
+        +ModalDialog(String)
+        - -
+        +ModalDialog open(Component content, AjaxRequestTarget)
+        +ModalDialog open(AjaxRequestTarget)
+        +void setContent(Component content)
+        +ModalDialog trapFocus()
+        - -(checks)- -
+        +boolean isOpen()
+        - -(factory)- -
+        #WebMarkupContainer newDialog(String dialogId)
+        #WebMarkupContainer newOverlay(String overlayId)
+        - -(io)- -
+        +ModalDialog close(AjaxRequestTarget)
+        +ModalDialog closeOnClick()
+        +ModalDialog closeOnEscape()
+    }
+    
+    Panel <|- - ModalWindow
+    class ModalWindow
+    {
+        - -(constructors)- -
+        +ModalWindow(String)
+        +ModalWindow(String, IModel<?>)
+        - -
+        +String getHeightUnit()
+        +MaskType getMaskType()
+        +int getMinimalHeight()
+        +int getMinimalWidth()
+        +IModel<String> getTitle()
+        +String getWidthUnit()
+        +ModalWindow setContent(Component)
+        +ModalWindow setHeightUnit(String heightUnit)
+        +ModalWindow setMaskType(MaskType)
+        +ModalWindow setMinimalHeight(int minimalHeight)
+        +ModalWindow setMinimalWidth(int minimalWidth)
+        +ModalWindow setPageCreator(PageCreator)
+        +ModalWindow setResizable(boolean resizable)
+        +ModalWindow setTitle(IModel<String> title)
+        +ModalWindow setTitle(String title)
+        +ModalWindow setWidthUnit(String widthUnit)
+        +void show(IPartialPageRequestHandler target)
+        +ModalWindow showUnloadConfirmation(boolean unloadConfirmation)
+        +boolean showUnloadConfirmation()
+        #Component getContent()
+        #String getWindowOpenJavaScript()
+        #boolean makeContentVisible()
+        #void postProcessSettings(JSONObject settings)
+        - -(checks)- -
+        +boolean isAutoSize()
+        +boolean isResizable()
+        +boolean isShown()
+        #boolean isCustomComponent()
+        - -(collection)- -
+        +ModalWindow setAutoSize(boolean autoSize)
+        - -(factory)- -
+        #ResourceReference newCssResource()
+        - -(identity)- -
+        +String getContentId()
+        - -(io)- -
+        +void close(IPartialPageRequestHandler target)
+        +void closeCurrent(IPartialPageRequestHandler target)
+        +ModalWindow setCloseButtonCallback(CloseButtonCallback)
+        +ModalWindow setWindowClosedCallback(WindowClosedCallback)
+        #String getCloseJavacript()
+        #CloseButtonBehavior newCloseButtonBehavior()
+        - -(lifecycle)- -
+        +int getInitialHeight()
+        +int getInitialWidth()
+        +boolean isUseInitialHeight()
+        +ModalWindow setInitialHeight(int initialHeight)
+        +ModalWindow setInitialWidth(int initialWidth)
+        +ModalWindow setUseInitialHeight(boolean useInitialHeight)
+        - -(naming)- -
+        +String getCookieName()
+        +String getCssClassName()
+        +ModalWindow setCookieName(String cookieName)
+        +ModalWindow setCssClassName(String cssClassName)
+        - -(primitive)- -
+        #CharSequence getShowJavaScript()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.PageCreator
+    interface ModalWindow.PageCreator
+    {
+        - -
+        +Page createPage()
+    }
+    
+    Behavior <|- - TrapFocusBehavior
+    class TrapFocusBehavior
+    {
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - ModalWindow.WindowClosedBehavior
+    class ModalWindow.WindowClosedBehavior
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.WindowClosedCallback
+    interface ModalWindow.WindowClosedCallback
+    {
+        - -(io)- -
+        +void onClose(AjaxRequestTarget)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.ajax.markup.html.modal"
+    
+    abstract AbstractDefaultAjaxBehavior
+    
+    AjaxEventBehavior <|- - ModalDialog.CloseBehavior
+    abstract class ModalDialog.CloseBehavior
+    {
+        - -(primitive)- -
+        #CharSequence getPrecondition()
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - ModalWindow.CloseButtonBehavior
+    class ModalWindow.CloseButtonBehavior
+    {
+        - -(constructors)- -
+        +CloseButtonBehavior()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.CloseButtonCallback
+    interface ModalWindow.CloseButtonCallback
+    {
+        - -(extension points)- -
+        +boolean onCloseButtonClicked(AjaxRequestTarget)
+    }
+    
+    EnumeratedType <|- - ModalWindow.MaskType
+    class ModalWindow.MaskType
+    {
+        - -(constructors)- -
+        +MaskType(String)
+    }
+    
+    Panel <|- - ModalDialog
+    class ModalDialog
+    {
+        - -(constructors)- -
+        +ModalDialog(String)
+        - -
+        +ModalDialog open(Component content, AjaxRequestTarget)
+        +ModalDialog open(AjaxRequestTarget)
+        +void setContent(Component content)
+        +ModalDialog trapFocus()
+        - -(checks)- -
+        +boolean isOpen()
+        - -(factory)- -
+        #WebMarkupContainer newDialog(String dialogId)
+        #WebMarkupContainer newOverlay(String overlayId)
+        - -(io)- -
+        +ModalDialog close(AjaxRequestTarget)
+        +ModalDialog closeOnClick()
+        +ModalDialog closeOnEscape()
+    }
+    
+    Panel <|- - ModalWindow
+    class ModalWindow
+    {
+        - -(constructors)- -
+        +ModalWindow(String)
+        +ModalWindow(String, IModel<?>)
+        - -
+        +String getHeightUnit()
+        +MaskType getMaskType()
+        +int getMinimalHeight()
+        +int getMinimalWidth()
+        +IModel<String> getTitle()
+        +String getWidthUnit()
+        +ModalWindow setContent(Component)
+        +ModalWindow setHeightUnit(String heightUnit)
+        +ModalWindow setMaskType(MaskType)
+        +ModalWindow setMinimalHeight(int minimalHeight)
+        +ModalWindow setMinimalWidth(int minimalWidth)
+        +ModalWindow setPageCreator(PageCreator)
+        +ModalWindow setResizable(boolean resizable)
+        +ModalWindow setTitle(IModel<String> title)
+        +ModalWindow setTitle(String title)
+        +ModalWindow setWidthUnit(String widthUnit)
+        +void show(IPartialPageRequestHandler target)
+        +ModalWindow showUnloadConfirmation(boolean unloadConfirmation)
+        +boolean showUnloadConfirmation()
+        #Component getContent()
+        #String getWindowOpenJavaScript()
+        #boolean makeContentVisible()
+        #void postProcessSettings(JSONObject settings)
+        - -(checks)- -
+        +boolean isAutoSize()
+        +boolean isResizable()
+        +boolean isShown()
+        #boolean isCustomComponent()
+        - -(collection)- -
+        +ModalWindow setAutoSize(boolean autoSize)
+        - -(factory)- -
+        #ResourceReference newCssResource()
+        - -(identity)- -
+        +String getContentId()
+        - -(io)- -
+        +void close(IPartialPageRequestHandler target)
+        +void closeCurrent(IPartialPageRequestHandler target)
+        +ModalWindow setCloseButtonCallback(CloseButtonCallback)
+        +ModalWindow setWindowClosedCallback(WindowClosedCallback)
+        #String getCloseJavacript()
+        #CloseButtonBehavior newCloseButtonBehavior()
+        - -(lifecycle)- -
+        +int getInitialHeight()
+        +int getInitialWidth()
+        +boolean isUseInitialHeight()
+        +ModalWindow setInitialHeight(int initialHeight)
+        +ModalWindow setInitialWidth(int initialWidth)
+        +ModalWindow setUseInitialHeight(boolean useInitialHeight)
+        - -(naming)- -
+        +String getCookieName()
+        +String getCssClassName()
+        +ModalWindow setCookieName(String cookieName)
+        +ModalWindow setCssClassName(String cssClassName)
+        - -(primitive)- -
+        #CharSequence getShowJavaScript()
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.PageCreator
+    interface ModalWindow.PageCreator
+    {
+        - -
+        +Page createPage()
+    }
+    
+    Behavior <|- - TrapFocusBehavior
+    class TrapFocusBehavior
+    {
+    }
+    
+    AbstractDefaultAjaxBehavior <|- - ModalWindow.WindowClosedBehavior
+    class ModalWindow.WindowClosedBehavior
+    {
+    }
+    
+    interface IClusterable
+    IClusterable <|- - ModalWindow.WindowClosedCallback
+    interface ModalWindow.WindowClosedCallback
+    {
+        - -(io)- -
+        +void onClose(AjaxRequestTarget)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

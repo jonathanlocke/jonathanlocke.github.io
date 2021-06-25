@@ -1,0 +1,21 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.javascript"
+    
+    interface IJavaScriptCompressor
+    
+    IJavaScriptCompressor <|-- DefaultJavaScriptCompressor
+    class DefaultJavaScriptCompressor
+    {
+    }
+    
+    interface ITextResourceCompressor
+    ITextResourceCompressor <|-- IJavaScriptCompressor
+    interface IJavaScriptCompressor
+    {
+    }
+    
+@enduml
+

@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="661.4583px" preserveAspectRatio="none" style="width:1247px;height:661px;background:#333333;" version="1.1" viewBox="0 0 1247 661" width="1247.9167px" zoomAndPan="magnify"><defs/><g><rect fill="#48494B" height="41.2028" rx="8.3333" ry="8.3333" style="stroke:#545454;stroke-width:1.0416666666666667;" width="643.75" x="295.0521" y="2.0833"/><text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="20.8333" lengthAdjust="spacing" textLength="620.8333" x="306.5104" y="30.5583">org.apache.wicket.extensions.markup.html.repeater.tree.table</text><!--MD5=[df52746d5083c1b54003e3d8a1915611]
+cluster TreeDataProvider--><polygon fill="#333333" points="676.5625,156.8278,800.5208,156.8278,807.8125,184.0495,846.3542,184.0495,846.3542,278.7028,676.5625,278.7028,676.5625,156.8278" style="stroke:#333333;stroke-width:2.0833333333333335;"/><line style="stroke:#333333;stroke-width:2.0833333333333335;" x1="676.5625" x2="807.8125" y1="184.0495" y2="184.0495"/><text fill="#C8AC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="111.4583" x="683.8542" y="174.1211">TreeDataProvider</text><!--MD5=[e2873f6985915dbb8c364ffca29e4d9b]
+class TreeDataProvider.Branch--><rect codeLine="26" fill="#282828" height="48.055" id="TreeDataProvider.Branch" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="100" x="721.3542" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="100" x="721.3542" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="100" x="721.3542" y="228.8411"/><rect codeLine="26" fill="none" height="48.055" id="TreeDataProvider.Branch" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="100" x="721.3542" y="205.7861"/><ellipse cx="735.9375" cy="221.4803" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M737.8479,225.9054 Q737.4207,226.1251 736.9507,226.2349 Q736.4807,226.3448 735.9619,226.3448 Q734.1187,226.3448 733.1482,225.1302 Q732.1777,223.9156 732.1777,221.6207 Q732.1777,219.3197 733.1482,218.1051 Q734.1187,216.8905 735.9619,216.8905 Q736.4807,216.8905 736.9568,217.0003 Q737.4329,217.1102 737.8479,217.3299 L737.8479,219.3319 Q737.384,218.9046 736.9476,218.7063 Q736.5112,218.5079 736.0474,218.5079 Q735.0586,218.5079 734.5551,219.2922 Q734.0515,220.0765 734.0515,221.6207 Q734.0515,223.1588 734.5551,223.9431 Q735.0586,224.7274 736.0474,224.7274 Q736.5112,224.7274 736.9476,224.529 Q737.384,224.3306 737.8479,223.9034 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="43.75" x="752.6042" y="226.2044">Branch</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="807.8125" y="202.6611"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="811.9792" y="218.9128">T</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="722.3958" x2="820.3125" y1="237.1745" y2="237.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="722.3958" x2="820.3125" y1="245.5078" y2="245.5078"/><!--MD5=[002b3c9d9ed602eb5cbc7ece1e3c48a5]
+class AbstractTreeColumn--><rect codeLine="16" fill="#282828" height="131.2012" id="AbstractTreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="53.6458" y="357.8695"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="53.6458" y="357.8695"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="258.3333" x="53.6458" y="380.9245"/><rect codeLine="16" fill="none" height="131.2012" id="AbstractTreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="258.3333" x="53.6458" y="357.8695"/><ellipse cx="92.6042" cy="373.5636" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M92.1973,370.2657 L91.3489,373.995 L93.0518,373.995 Z M91.0986,368.6178 L93.302,368.6178 L95.7617,377.7303 L93.9612,377.7303 L93.3997,375.4781 L90.9888,375.4781 L90.4395,377.7303 L88.6389,377.7303 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="133.3333" x="114.6875" y="378.2878">AbstractTreeColumn</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="283.8542" y="354.7445"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="288.0208" y="370.9961">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="54.6875" x2="310.9375" y1="389.2578" y2="389.2578"/><ellipse cx="65.1042" cy="424.6277" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="213.5417" x="76.5625" y="431.5389">AbstractTreeColumn(IModel&lt;String&gt;)</text><ellipse cx="65.1042" cy="444.3726" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="226.0417" x="76.5625" y="451.2838">AbstractTreeColumn(IModel&lt;String&gt;, S)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="54.6875" x2="139.0625" y1="407.4636" y2="407.4636"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="142.1875" y="411.2732">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="226.5625" x2="310.9375" y1="407.4636" y2="407.4636"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="54.6875" x2="310.9375" y1="460.9924" y2="460.9924"/><ellipse cx="65.1042" cy="472.4508" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="144.7917" x="76.5625" y="479.362">TableTree&lt;T,S&gt; getTree()</text><!--MD5=[93a244d418af6d025cb5eaab041efcc0]
+class AbstractColumn--><rect codeLine="7" fill="#282828" height="48.055" id="AbstractColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="7.2917" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="7.2917" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="142.7083" x="7.2917" y="228.8411"/><rect codeLine="7" fill="none" height="48.055" id="AbstractColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="142.7083" x="7.2917" y="205.7861"/><ellipse cx="21.875" cy="221.4803" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M21.4681,218.1824 L20.6197,221.9116 L22.3226,221.9116 Z M20.3695,216.5344 L22.5728,216.5344 L25.0326,225.647 L23.232,225.647 L22.6705,223.3948 L20.2596,223.3948 L19.7103,225.647 L17.9097,225.647 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="105.2083" x="38.5417" y="226.2044">AbstractColumn</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="148.9583" y1="237.1745" y2="237.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="8.3333" x2="148.9583" y1="245.5078" y2="245.5078"/><!--MD5=[391c456df0f83a663dc88219cc473480]
+class IWrapModel--><rect codeLine="9" fill="#282828" height="48.055" id="IWrapModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="479.1667" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="479.1667" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="113.5417" x="479.1667" y="76.7578"/><rect codeLine="9" fill="none" height="48.055" id="IWrapModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="113.5417" x="479.1667" y="53.7028"/><ellipse cx="493.75" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M491.154,66.5588 L491.154,64.9719 L496.58,64.9719 L496.58,66.5588 L494.7673,66.5588 L494.7673,72.4976 L496.58,72.4976 L496.58,74.0845 L491.154,74.0845 L491.154,72.4976 L492.9667,72.4976 L492.9667,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="510.4167" y="74.1211">IWrapModel</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="480.2083" x2="591.6667" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="480.2083" x2="591.6667" y1="93.4245" y2="93.4245"/><!--MD5=[e2ab75807dc44f11b8ee89c5eccb194a]
+class ITreeColumn--><rect codeLine="32" fill="#282828" height="67.7999" id="ITreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="200" x="186.9792" y="195.8903"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="200" x="186.9792" y="195.8903"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="200" x="186.9792" y="218.9453"/><rect codeLine="32" fill="none" height="67.7999" id="ITreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="200" x="186.9792" y="195.8903"/><ellipse cx="222.1875" cy="211.5845" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M219.5915,208.7463 L219.5915,207.1594 L225.0175,207.1594 L225.0175,208.7463 L223.2048,208.7463 L223.2048,214.6851 L225.0175,214.6851 L225.0175,216.272 L219.5915,216.272 L219.5915,214.6851 L221.4042,214.6851 L221.4042,208.7463 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="83.3333" x="243.4375" y="216.3086">ITreeColumn</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="358.8542" y="192.7653"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="363.0208" y="209.0169">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="188.0208" x2="385.9375" y1="227.2786" y2="227.2786"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="188.0208" x2="385.9375" y1="235.612" y2="235.612"/><ellipse cx="198.4375" cy="247.0703" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="167.7083" x="209.8958" y="253.9815">void setTree(TableTree&lt;T,S&gt;)</text><!--MD5=[023ecf6702e3ca2ce47ae747eafb20f1]
+class Iterator--><rect codeLine="11" fill="#282828" height="48.055" id="Iterator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="85.4167" x="728.6458" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="85.4167" x="728.6458" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="85.4167" x="728.6458" y="76.7578"/><rect codeLine="11" fill="none" height="48.055" id="Iterator" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="85.4167" x="728.6458" y="53.7028"/><ellipse cx="743.2292" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M740.6331,66.5588 L740.6331,64.9719 L746.0592,64.9719 L746.0592,66.5588 L744.2464,66.5588 L744.2464,72.4976 L746.0592,72.4976 L746.0592,74.0845 L740.6331,74.0845 L740.6331,72.4976 L742.4459,72.4976 L742.4459,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="47.9167" x="759.8958" y="74.1211">Iterator</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="729.6875" x2="813.0208" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="729.6875" x2="813.0208" y1="93.4245" y2="93.4245"/><!--MD5=[4858d1f4dea99d09697e7c3420289edd]
+class ITreeDataProvider--><rect codeLine="40" fill="#282828" height="48.055" id="ITreeDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="871.875" y="205.7861"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="871.875" y="205.7861"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="171.875" x="871.875" y="228.8411"/><rect codeLine="40" fill="none" height="48.055" id="ITreeDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="171.875" x="871.875" y="205.7861"/><ellipse cx="886.4583" cy="221.4803" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M883.8623,218.6422 L883.8623,217.0553 L889.2883,217.0553 L889.2883,218.6422 L887.4756,218.6422 L887.4756,224.5809 L889.2883,224.5809 L889.2883,226.1678 L883.8623,226.1678 L883.8623,224.5809 L885.675,224.5809 L885.675,218.6422 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="115.625" x="903.125" y="226.2044">ITreeDataProvider</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1030.2083" y="202.6611"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1034.375" y="218.9128">T</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="872.9167" x2="1042.7083" y1="237.1745" y2="237.1745"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="872.9167" x2="1042.7083" y1="245.5078" y2="245.5078"/><!--MD5=[8dfd6a019772d0317861e2797695c6cf]
+class IColumn--><rect codeLine="30" fill="#282828" height="48.055" id="IColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="92.7083" x="240.625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="92.7083" x="240.625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="92.7083" x="240.625" y="76.7578"/><rect codeLine="30" fill="none" height="48.055" id="IColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="92.7083" x="240.625" y="53.7028"/><ellipse cx="255.2083" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M252.6123,66.5588 L252.6123,64.9719 L258.0383,64.9719 L258.0383,66.5588 L256.2256,66.5588 L256.2256,72.4976 L258.0383,72.4976 L258.0383,74.0845 L252.6123,74.0845 L252.6123,72.4976 L254.425,72.4976 L254.425,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="55.2083" x="271.875" y="74.1211">IColumn</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="241.6667" x2="332.2917" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="241.6667" x2="332.2917" y1="93.4245" y2="93.4245"/><!--MD5=[ee8fe705dd37726602310264436c8d8b]
+class IDataProvider--><rect codeLine="38" fill="#282828" height="48.055" id="IDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="125" x="895.3125" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="125" x="895.3125" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="125" x="895.3125" y="76.7578"/><rect codeLine="38" fill="none" height="48.055" id="IDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="125" x="895.3125" y="53.7028"/><ellipse cx="909.8958" cy="69.397" fill="#008400" rx="10.4167" ry="10.4167" style="stroke:#239C23;stroke-width:1.0416666666666667;"/><path d="M907.2998,66.5588 L907.2998,64.9719 L912.7258,64.9719 L912.7258,66.5588 L910.9131,66.5588 L910.9131,72.4976 L912.7258,72.4976 L912.7258,74.0845 L907.2998,74.0845 L907.2998,72.4976 L909.1125,72.4976 L909.1125,66.5588 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="87.5" x="926.5625" y="74.1211">IDataProvider</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="896.3542" x2="1019.2708" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="896.3542" x2="1019.2708" y1="93.4245" y2="93.4245"/><!--MD5=[9ec104ddfc62073059e345d4e82bb5a8]
+class Behavior--><rect fill="#282828" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="1114.0625" y="53.7028"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="1114.0625" y="53.7028"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="93.75" x="1114.0625" y="76.7578"/><rect fill="none" height="48.055" id="Behavior" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="93.75" x="1114.0625" y="53.7028"/><ellipse cx="1128.6458" cy="69.397" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1130.5562,73.822 Q1130.129,74.0417 1129.659,74.1516 Q1129.189,74.2615 1128.6702,74.2615 Q1126.827,74.2615 1125.8565,73.0469 Q1124.8861,71.8323 1124.8861,69.5374 Q1124.8861,67.2363 1125.8565,66.0217 Q1126.827,64.8071 1128.6702,64.8071 Q1129.189,64.8071 1129.6651,64.917 Q1130.1412,65.0269 1130.5562,65.2466 L1130.5562,67.2485 Q1130.0924,66.8213 1129.656,66.6229 Q1129.2196,66.4246 1128.7557,66.4246 Q1127.7669,66.4246 1127.2634,67.2089 Q1126.7598,67.9932 1126.7598,69.5374 Q1126.7598,71.0754 1127.2634,71.8597 Q1127.7669,72.644 1128.7557,72.644 Q1129.2196,72.644 1129.656,72.4457 Q1130.0924,72.2473 1130.5562,71.8201 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="56.25" x="1145.3125" y="74.1211">Behavior</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1115.1042" x2="1206.7708" y1="85.0911" y2="85.0911"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1115.1042" x2="1206.7708" y1="93.4245" y2="93.4245"/><!--MD5=[5e70ce64f260432de996a62f5287dc5f]
+class NodeBorder--><rect codeLine="45" fill="#282828" height="83.3781" id="NodeBorder" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="1080.7292" y="188.0778"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="1080.7292" y="188.0778"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="160.4167" x="1080.7292" y="211.1328"/><rect codeLine="45" fill="none" height="83.3781" id="NodeBorder" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="160.4167" x="1080.7292" y="188.0778"/><ellipse cx="1116.4063" cy="203.772" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M1118.3167,208.197 Q1117.8894,208.4167 1117.4194,208.5266 Q1116.9495,208.6365 1116.4307,208.6365 Q1114.5874,208.6365 1113.6169,207.4219 Q1112.6465,206.2073 1112.6465,203.9124 Q1112.6465,201.6113 1113.6169,200.3967 Q1114.5874,199.1821 1116.4307,199.1821 Q1116.9495,199.1821 1117.4255,199.292 Q1117.9016,199.4019 1118.3167,199.6216 L1118.3167,201.6235 Q1117.8528,201.1963 1117.4164,200.9979 Q1116.98,200.7996 1116.5161,200.7996 Q1115.5273,200.7996 1115.0238,201.5839 Q1114.5203,202.3682 1114.5203,203.9124 Q1114.5203,205.4504 1115.0238,206.2347 Q1115.5273,207.019 1116.5161,207.019 Q1116.98,207.019 1117.4164,206.8207 Q1117.8528,206.6223 1118.3167,206.1951 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="76.0417" x="1137.7604" y="208.4961">NodeBorder</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="1081.7708" x2="1240.1042" y1="219.4661" y2="219.4661"/><ellipse cx="1092.1875" cy="254.836" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="128.125" x="1103.6458" y="261.7472">NodeBorder(boolean[])</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1081.7708" x2="1117.1875" y1="237.6719" y2="237.6719"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="1120.3125" y="241.4815">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1204.6875" x2="1240.1042" y1="237.6719" y2="237.6719"/><!--MD5=[b93fc93b695d4cc1978faaf5fc0d1d4c]
+class NodeModel--><rect codeLine="52" fill="#282828" height="131.2012" id="NodeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="225" x="423.4375" y="164.1195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="225" x="423.4375" y="164.1195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="225" x="423.4375" y="187.1745"/><rect codeLine="52" fill="none" height="131.2012" id="NodeModel" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="225" x="423.4375" y="164.1195"/><ellipse cx="482.8125" cy="179.8136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M484.7229,184.2387 Q484.2957,184.4584 483.8257,184.5683 Q483.3557,184.6781 482.8369,184.6781 Q480.9937,184.6781 480.0232,183.4635 Q479.0527,182.2489 479.0527,179.954 Q479.0527,177.653 480.0232,176.4384 Q480.9937,175.2238 482.8369,175.2238 Q483.3557,175.2238 483.8318,175.3337 Q484.3079,175.4435 484.7229,175.6632 L484.7229,177.6652 Q484.259,177.238 483.8226,177.0396 Q483.3862,176.8412 482.9224,176.8412 Q481.9336,176.8412 481.4301,177.6255 Q480.9265,178.4098 480.9265,179.954 Q480.9265,181.4921 481.4301,182.2764 Q481.9336,183.0607 482.9224,183.0607 Q483.3862,183.0607 483.8226,182.8623 Q484.259,182.664 484.7229,182.2367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="72.9167" x="505.7292" y="184.5378">NodeModel</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="634.8958" y="160.9945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="639.0625" y="177.2461">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="424.4792" x2="647.3958" y1="195.5078" y2="195.5078"/><ellipse cx="434.8958" cy="230.8777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="192.7083" x="446.3542" y="237.7889">NodeModel(IModel&lt;T&gt;, boolean[])</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="424.4792" x2="492.1875" y1="213.7136" y2="213.7136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="495.3125" y="217.5232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="579.6875" x2="647.3958" y1="213.7136" y2="213.7136"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="424.4792" x2="647.3958" y1="247.4976" y2="247.4976"/><ellipse cx="434.8958" cy="258.9559" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="133.3333" x="446.3542" y="265.8671">boolean[] getBranches()</text><ellipse cx="434.8958" cy="278.7008" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="77.0833" x="446.3542" y="285.612">int getDepth()</text><!--MD5=[612a2cea36abaf210fcd50d1102cb70d]
+class TreeColumn--><rect codeLine="62" fill="#282828" height="103.123" id="TreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="77.6042" y="551.6195"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="77.6042" y="551.6195"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="210.4167" x="77.6042" y="574.6745"/><rect codeLine="62" fill="none" height="103.123" id="TreeColumn" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="210.4167" x="77.6042" y="551.6195"/><ellipse cx="119.375" cy="567.3136" fill="#0066CF" rx="10.4167" ry="10.4167" style="stroke:#0086EF;stroke-width:1.0416666666666667;"/><path d="M121.2854,571.7387 Q120.8582,571.9584 120.3882,572.0683 Q119.9182,572.1781 119.3994,572.1781 Q117.5562,572.1781 116.5857,570.9635 Q115.6152,569.7489 115.6152,567.454 Q115.6152,565.153 116.5857,563.9384 Q117.5562,562.7238 119.3994,562.7238 Q119.9182,562.7238 120.3943,562.8337 Q120.8704,562.9435 121.2854,563.1632 L121.2854,565.1652 Q120.8215,564.738 120.3851,564.5396 Q119.9487,564.3412 119.4849,564.3412 Q118.4961,564.3412 117.9926,565.1255 Q117.489,565.9098 117.489,567.454 Q117.489,568.9921 117.9926,569.7764 Q118.4961,570.5607 119.4849,570.5607 Q119.9487,570.5607 120.3851,570.3623 Q120.8215,570.164 121.2854,569.7367 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="79.1667" x="142.0833" y="572.0378">TreeColumn</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="31.25" x="259.8958" y="548.4945"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="22.9167" x="264.0625" y="564.7461">T, S</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="78.6458" x2="286.9792" y1="583.0078" y2="583.0078"/><ellipse cx="89.0625" cy="618.3777" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="165.625" x="100.5208" y="625.2889">TreeColumn(IModel&lt;String&gt;)</text><ellipse cx="89.0625" cy="638.1226" fill="#84BE84" rx="3.125" ry="3.125" style="stroke:#038048;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="100.5208" y="645.0338">TreeColumn(IModel&lt;String&gt;, S)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="78.6458" x2="139.0625" y1="601.2136" y2="601.2136"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="142.1875" y="605.0232">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="226.5625" x2="286.9792" y1="601.2136" y2="601.2136"/><!--MD5=[1cecfc73578c7bcd55b7d35f788f6532]
+class TreeDataProvider--><rect codeLine="70" fill="#282828" height="111.4563" id="TreeDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="238.5417" x="838.5417" y="367.7653"/><rect fill="#1B1B1A" height="31.3883" rx="8.3333" ry="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="238.5417" x="838.5417" y="367.7653"/><rect fill="#1B1B1A" height="8.3333" style="stroke:#1B1B1A;stroke-width:1.0416666666666667;" width="238.5417" x="838.5417" y="390.8203"/><rect codeLine="70" fill="none" height="111.4563" id="TreeDataProvider" rx="8.3333" ry="8.3333" style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" width="238.5417" x="838.5417" y="367.7653"/><ellipse cx="885.4167" cy="383.4595" fill="#C8AC00" rx="10.4167" ry="10.4167" style="stroke:#D8BC00;stroke-width:1.0416666666666667;"/><path d="M885.0098,380.1615 L884.1614,383.8908 L885.8643,383.8908 Z M883.9111,378.5136 L886.1145,378.5136 L888.5742,387.6261 L886.7737,387.6261 L886.2122,385.3739 L883.8013,385.3739 L883.252,387.6261 L881.4514,387.6261 Z " fill="#000000"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="111.4583" x="908.3333" y="388.1836">TreeDataProvider</text><rect fill="#333333" height="23.055" style="stroke:#A0A0A0;stroke-width:1.0416666666666667;stroke-dasharray:2.0,2.0;" width="16.6667" x="1063.5417" y="364.6403"/><text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="12.5" font-weight="bold" lengthAdjust="spacing" textLength="8.3333" x="1067.7083" y="380.8919">T</text><line style="stroke:#5E5E5E;stroke-width:1.5625;" x1="839.5833" x2="1076.0417" y1="399.1536" y2="399.1536"/><polygon fill="#FFFF44" points="850,429.3152,854.1667,433.4819,850,437.6485,845.8333,433.4819" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="206.25" x="861.4583" y="441.4347">TreeDataProvider(ITreeProvider&lt;T&gt;)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="839.5833" x2="914.0625" y1="417.3594" y2="417.3594"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="81.25" x="917.1875" y="421.169">(constructors)</text><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="1001.5625" x2="1076.0417" y1="417.3594" y2="417.3594"/><line style="stroke:#5E5E5E;stroke-width:1.0416666666666667;" x1="839.5833" x2="1076.0417" y1="451.1434" y2="451.1434"/><polygon fill="#FFFF44" points="850,457.3934,854.1667,461.5601,850,465.7267,845.8333,461.5601" style="stroke:#B38D22;stroke-width:1.0416666666666667;"/><text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="11.4583" lengthAdjust="spacing" textLength="178.125" x="861.4583" y="469.5129">boolean iterateChildren(T node)</text><!--MD5=[8c64954b02ccf096e740575507d2dcec]
+reverse link AbstractColumn to AbstractTreeColumn--><path codeLine="14" d="M101.3125,272.4945 C114.8438,297.4007 132.3333,329.5674 147.625,357.7132 " fill="none" id="AbstractColumn-backto-AbstractTreeColumn" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="94.75,275.6924,91.2083,253.9007,107.5625,268.7236,94.75,275.6924" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[29c4dda88e034b8ef8bb288013c4770b]
+reverse link ITreeColumn to AbstractTreeColumn--><path codeLine="15" d="M259.1146,282.057 C246.4688,305.3278 231.3646,333.1195 217.9479,357.807 " fill="none" id="ITreeColumn-backto-AbstractTreeColumn" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="252.7188,278.557,269.0729,263.734,265.5313,285.5257,252.7188,278.557" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[5632fff2ccc3b57e5bc7e7c46a127e34]
+reverse link Iterator to TreeDataProvider.Branch--><path codeLine="25" d="M771.3542,123.0049 C771.3542,149.984 771.3542,183.3799 771.3542,205.3174 " fill="none" id="Iterator-backto-TreeDataProvider.Branch" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="764.0625,122.6403,771.3542,101.807,778.6458,122.6403,764.0625,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[041049d479b618e0589d19803f538ab0]
+reverse link IColumn to ITreeColumn--><path codeLine="31" d="M286.9792,122.7445 C286.9792,146.1299 286.9792,174.3695 286.9792,195.8174 " fill="none" id="IColumn-backto-ITreeColumn" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="279.6875,122.6403,286.9792,101.807,294.2708,122.6403,279.6875,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[b5378e59fc9290e54d3060d82262c38b]
+reverse link IDataProvider to ITreeDataProvider--><path codeLine="39" d="M957.8125,123.0049 C957.8125,149.984 957.8125,183.3799 957.8125,205.3174 " fill="none" id="IDataProvider-backto-ITreeDataProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="950.5208,122.6403,957.8125,101.807,965.1042,122.6403,950.5208,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[ba3bba88a93bd4e4acede30e9fc91268]
+reverse link Behavior to NodeBorder--><path codeLine="44" d="M1160.9375,122.7132 C1160.9375,143.359 1160.9375,167.8174 1160.9375,188.0257 " fill="none" id="Behavior-backto-NodeBorder" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="1153.6458,122.6403,1160.9375,101.807,1168.2292,122.6403,1153.6458,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[60f3b6583dcb708cd53a6e83ee38752c]
+reverse link IWrapModel to NodeModel--><path codeLine="51" d="M535.9375,122.9945 C535.9375,135.8695 535.9375,150.2132 535.9375,164.0674 " fill="none" id="IWrapModel-backto-NodeModel" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="528.6458,122.6403,535.9375,101.807,543.2292,122.6403,528.6458,122.6403" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[021bb45d04c1c98b5af7d7c43a13ce44]
+reverse link AbstractTreeColumn to TreeColumn--><path codeLine="61" d="M182.8125,510.2965 C182.8125,524.4007 182.8125,538.5986 182.8125,551.484 " fill="none" id="AbstractTreeColumn-backto-TreeColumn" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="175.5208,509.9945,182.8125,489.1611,190.1042,509.9945,175.5208,509.9945" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[3e487b0c5828280663c3740be2b0f159]
+reverse link ITreeDataProvider to TreeDataProvider--><path codeLine="69" d="M957.8125,274.8278 C957.8125,302.4007 957.8125,338.1507 957.8125,367.5674 " fill="none" id="ITreeDataProvider-backto-TreeDataProvider" style="stroke:#545454;stroke-width:1.5625;"/><polygon fill="none" points="950.5208,274.734,957.8125,253.9007,965.1042,274.734,950.5208,274.734" style="stroke:#545454;stroke-width:1.5625;"/><!--MD5=[23ccc5d1d9b78e946a979767e7b20573]
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.tree.table"
+    
+    abstract AbstractTreeColumn
+    abstract AbstractColumn
+    
+    interface IWrapModel
+    interface ITreeColumn
+    interface Iterator
+    interface ITreeDataProvider
+    
+    AbstractColumn <|- - AbstractTreeColumn
+    ITreeColumn <|- - AbstractTreeColumn
+    abstract class AbstractTreeColumn<T, S>
+    {
+        - -(constructors)- -
+        +AbstractTreeColumn(IModel<String>)
+        +AbstractTreeColumn(IModel<String>, S)
+        - -
+        +TableTree<T,S> getTree()
+    }
+    
+    Iterator <|- - TreeDataProvider.Branch
+    class TreeDataProvider.Branch<T>
+    {
+    }
+    
+    interface IColumn
+    IColumn <|- - ITreeColumn
+    interface ITreeColumn<T, S>
+    {
+        - -
+        +void setTree(TableTree<T,S>)
+    }
+    
+    interface IDataProvider
+    IDataProvider <|- - ITreeDataProvider
+    interface ITreeDataProvider<T>
+    {
+    }
+    
+    Behavior <|- - NodeBorder
+    class NodeBorder
+    {
+        - -(constructors)- -
+        +NodeBorder(boolean[])
+    }
+    
+    IWrapModel <|- - NodeModel
+    class NodeModel<T>
+    {
+        - -(constructors)- -
+        +NodeModel(IModel<T>, boolean[])
+        - -
+        +boolean[] getBranches()
+        +int getDepth()
+    }
+    
+    AbstractTreeColumn <|- - TreeColumn
+    class TreeColumn<T, S>
+    {
+        - -(constructors)- -
+        +TreeColumn(IModel<String>)
+        +TreeColumn(IModel<String>, S)
+    }
+    
+    ITreeDataProvider <|- - TreeDataProvider
+    abstract class TreeDataProvider<T>
+    {
+        - -(constructors)- -
+        #TreeDataProvider(ITreeProvider<T>)
+        - -
+        #boolean iterateChildren(T node)
+    }
+    
+@enduml
+
+@startuml
+
+
+
+
+
+
+
+
+
+skinparam backgroundColor #333333
+
+
+
+
+
+
+skinparam  {
+    defaultFontName   "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+    defaultFontSize   12
+    defaultTextAlignment left
+    shadowing false
+    RoundCorner 10
+    TitleFontSize 18
+}
+
+skinparam defaultFontName       "Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif"
+skinparam defaultFontSize       12
+skinparam dpi                   100
+skinparam shadowing             false
+skinparam roundcorner           16
+skinparam ParticipantPadding    40
+skinparam BoxPadding            40
+skinparam Padding               3
+skinparam ArrowColor            #545454
+skinparam stereotype {
+    CBackgroundColor #0066cf
+    CBorderColor #0086ef
+    ABackgroundColor #C8Ac00
+    ABorderColor #D8Bc00
+    IBackgroundColor #008400
+    IBorderColor #239c23
+    EBackgroundColor #cf6300
+    EBorderColor #ef8300
+    NBackgroundColor #3380b9
+    NBorderColor #004d86
+}
+skinparam title {
+	FontColor	                 #c0c0c0
+ 	BorderColor                  #545454
+	FontSize	    	         20
+	BorderRoundCorner            16
+	BorderThickness 	         1
+	BackgroundColor              #48494b
+}
+
+
+skinparam legend {
+	BackgroundColor #303030
+	BorderColor #404040
+	FontColor #a0a0a0
+}
+
+	skinparam swimlane {
+	BorderColor #5e5e5e
+	BorderThickness 2
+	TitleBackgroundColor  #6d6d6d-#484848
+	TitleFontColor #303030
+}
+
+skinparam activity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BarColor #00FF00
+	StartColor #0060a8
+	EndColor #0060a8
+	DiamondBackgroundColor #6d6d6d-#3a3a3a
+  	DiamondBorderColor #3a3a3a
+  	DiamondFontColor #fefefe
+}
+
+
+skinparam participant {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	ParticipantBorderThickness 2
+}
+
+
+skinparam actor {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam arrow {
+	Thickness 1.5
+	Color #545454
+	FontColor #a0a0a0
+    FontStyle bold
+    MessageAlignment center
+}
+
+
+
+skinparam sequence {
+	BorderColor #303030
+	TitleFontColor #303030
+	BackgroundColor #333333
+	StartColor #303030
+	EndColor #303030
+	BoxBackgroundColor #333333
+	BoxBorderColor #484848
+	BoxFontColor #484848
+	LifeLineBorderColor #484848
+	LifeLineBorderThickness 2
+	LifeLineBackgroundColor #3a3a3a
+	GroupBorderColor #484848
+	GroupFontColor #484848
+	GroupHeaderFontColor #0060a8
+	GroupBackgroundColor #484848
+	GroupHeaderBackgroundColor #333333
+	DividerBackgroundColor #484848
+    DividerBorderColor #484848
+    DividerBorderThickness 2
+    DividerFontColor #D8Bc00
+	ReferenceBackgroundColor #333333
+	ReferenceBorderColor #484848
+	ReferenceFontColor #fefefe
+	ReferenceHeaderBackgroundColor #484848
+}
+
+
+skinparam partition {
+	BorderColor #303030
+	FontColor #333333
+	BackgroundColor #333333
+}
+
+
+skinparam collections {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam control {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam entity {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam boundary {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam agent {
+	BackgroundColor #ff8000
+	BorderColor #ff9933
+	FontColor #484848
+}
+
+
+skinparam note {
+	BorderThickness 1
+	BackgroundColor #1b1b1a
+	BorderColor #5e5e5e
+	FontSize 11
+	FontColor #a0a0a0
+}
+
+
+skinparam artifact {
+	BorderThickness 10
+	BorderColor #5e5e5e
+	BackgroundColor #1b1b1a
+	FontColor #D8Bc00
+}
+
+
+skinparam component {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam interface {
+	BackgroundColor  #008400
+	BorderColor  #007F00
+	FontColor #484848
+}
+
+
+skinparam storage {
+	BackgroundColor #ff8000
+  	BorderColor #cc6600
+	FontColor #222222
+}
+
+
+skinparam node {
+	BackgroundColor #333333
+	BorderColor #333333
+	FontColor #C8Ac00
+}
+
+
+skinparam cloud {
+	BackgroundColor #484848-black
+	BorderColor #484848
+	FontColor #D8Bc00
+}
+
+
+skinparam database {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor  #333333
+}
+
+
+skinparam class {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	HeaderBackgroundColor #1b1b1a
+    BackgroundColor #282828
+    BorderColor #5e5e5e
+ 	StereotypeFontColor #a0a0a0
+    StereotypeFontStyle bold
+	BorderThickness 1
+	AttributeFontColor #D8Bc00
+	AttributeFontSize 11
+    FontColor #D8Bc00
+    FontStyle bold
+}
+
+
+skinparam object {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StereotypeFontColor #484848
+	BorderThickness 1
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam usecase {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam rectangle {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+	StereotypeFontColor #303030
+}
+
+
+skinparam package {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	BackgroundColor #333333
+	BorderThickness 2
+}
+
+
+skinparam folder {
+	BackgroundColor #6d6d6d
+  	BorderColor #ff8000
+	FontColor #ff8000
+	BorderThickness 2
+}
+
+
+skinparam frame {
+	BackgroundColor #6d6d6d
+  	BorderColor #0060a8
+	FontColor #0060a8
+	BorderThickness 2
+}
+
+
+skinparam state {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+	StartColor #0060a8
+	EndColor #0060a8
+	AttributeFontColor #fefefe
+	AttributeFontSize 11
+}
+
+
+skinparam queue {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+
+skinparam card {
+	BackgroundColor #0060a8
+	BorderColor #004d86
+	FontColor $INFO_TEXT
+}
+
+
+skinparam file {
+	BackgroundColor #6d6d6d-#484848
+	BorderColor #0060a8
+	FontColor #fefefe
+}
+
+
+skinparam stack {
+		FontColor #C8Ac00
+	BorderColor #333333
+	BackgroundColor #333333-#333333
+}
+
+    
+    title "org.apache.wicket.extensions.markup.html.repeater.tree.table"
+    
+    abstract AbstractTreeColumn
+    abstract AbstractColumn
+    
+    interface IWrapModel
+    interface ITreeColumn
+    interface Iterator
+    interface ITreeDataProvider
+    
+    AbstractColumn <|- - AbstractTreeColumn
+    ITreeColumn <|- - AbstractTreeColumn
+    abstract class AbstractTreeColumn<T, S>
+    {
+        - -(constructors)- -
+        +AbstractTreeColumn(IModel<String>)
+        +AbstractTreeColumn(IModel<String>, S)
+        - -
+        +TableTree<T,S> getTree()
+    }
+    
+    Iterator <|- - TreeDataProvider.Branch
+    class TreeDataProvider.Branch<T>
+    {
+    }
+    
+    interface IColumn
+    IColumn <|- - ITreeColumn
+    interface ITreeColumn<T, S>
+    {
+        - -
+        +void setTree(TableTree<T,S>)
+    }
+    
+    interface IDataProvider
+    IDataProvider <|- - ITreeDataProvider
+    interface ITreeDataProvider<T>
+    {
+    }
+    
+    Behavior <|- - NodeBorder
+    class NodeBorder
+    {
+        - -(constructors)- -
+        +NodeBorder(boolean[])
+    }
+    
+    IWrapModel <|- - NodeModel
+    class NodeModel<T>
+    {
+        - -(constructors)- -
+        +NodeModel(IModel<T>, boolean[])
+        - -
+        +boolean[] getBranches()
+        +int getDepth()
+    }
+    
+    AbstractTreeColumn <|- - TreeColumn
+    class TreeColumn<T, S>
+    {
+        - -(constructors)- -
+        +TreeColumn(IModel<String>)
+        +TreeColumn(IModel<String>, S)
+    }
+    
+    ITreeDataProvider <|- - TreeDataProvider
+    abstract class TreeDataProvider<T>
+    {
+        - -(constructors)- -
+        #TreeDataProvider(ITreeProvider<T>)
+        - -
+        #boolean iterateChildren(T node)
+    }
+    
+@enduml
+
+PlantUML version 1.2021.01(Tue Feb 02 00:55:08 MST 2021)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

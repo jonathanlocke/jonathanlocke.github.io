@@ -1,0 +1,77 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.util.visit"
+    
+    interface Iterable
+    interface IVisit
+    interface IVisitFilter
+    
+    enum Visit.Action
+    {
+        CONTINUE
+        CONTINUE_BUT_DONT_GO_DEEPER
+        STOP
+    }
+    
+    IVisitFilter <|-- ClassVisitFilter
+    class ClassVisitFilter
+    {
+        --(constructors)--
+        +ClassVisitFilter(Class<?>)
+    }
+    
+    interface IVisit<R>
+    {
+        --
+        +void dontGoDeeper()
+        --(lifecycle)--
+        +void stop(R result)
+        +void stop()
+    }
+    
+    interface IVisitFilter
+    {
+        --
+        +boolean visitChildren(Object)
+        +boolean visitObject(Object)
+    }
+    
+    interface IVisitor<T, R>
+    {
+        --
+        +void component(T object, IVisit<R>)
+    }
+    
+    Iterable <|-- Visits.SingletonIterable
+    class Visits.SingletonIterable<T>
+    {
+        --(constructors)--
+        +SingletonIterable(T)
+    }
+    
+    IVisit <|-- Visit
+    class Visit<R>
+    {
+        --
+        +R getResult()
+        --(checks)--
+        +boolean isContinue()
+        +boolean isDontGoDeeper()
+        +boolean isStopped()
+    }
+    
+    class Visits
+    {
+        --
+        +R visit(Iterable<? super S> container, IVisitor<S,R>, IVisitFilter)
+        +R visit(Iterable<? super S> container, IVisitor<S,R>)
+        +R visitChildren(Iterable<? super S> container, IVisitor<S,R>, IVisitFilter)
+        +R visitChildren(Iterable<? super S> container, IVisitor<S,R>)
+        +R visitPostOrder(S root, org.apache.wicket.util.visit.IVisitor<S,R>)
+        +R visitPostOrder(Object root, org.apache.wicket.util.visit.IVisitor<S,R>, IVisitFilter)
+    }
+    
+@enduml
+

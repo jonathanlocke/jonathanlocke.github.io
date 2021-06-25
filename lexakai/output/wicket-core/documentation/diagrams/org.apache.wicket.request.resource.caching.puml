@@ -1,0 +1,68 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.resource.caching"
+    
+    interface IResourceCachingStrategy
+    
+    IResourceCachingStrategy <|-- FilenameWithVersionResourceCachingStrategy
+    class FilenameWithVersionResourceCachingStrategy
+    {
+        --(constructors)--
+        +FilenameWithVersionResourceCachingStrategy(IResourceVersion)
+        +FilenameWithVersionResourceCachingStrategy(String, IResourceVersion)
+        --(identity)--
+        +String getVersionPrefix()
+    }
+    
+    interface IResourceCachingStrategy
+    {
+        --
+        +void decorateResponse(AbstractResource.ResourceResponse, IStaticCacheableResource)
+        --(collection)--
+        +void clearCache()
+        --(network)--
+        +void decorateUrl(ResourceUrl, IStaticCacheableResource)
+        +void undecorateUrl(ResourceUrl)
+    }
+    
+    interface IResource
+    IResource <|-- IStaticCacheableResource
+    interface IStaticCacheableResource
+    {
+        --
+        +IResourceStream getResourceStream()
+        --(checks)--
+        +boolean isCachingEnabled()
+        --(collection)--
+        +Serializable getCacheKey()
+    }
+    
+    IResourceCachingStrategy <|-- NoOpResourceCachingStrategy
+    class NoOpResourceCachingStrategy
+    {
+    }
+    
+    IResourceCachingStrategy <|-- QueryStringWithVersionResourceCachingStrategy
+    class QueryStringWithVersionResourceCachingStrategy
+    {
+        --(constructors)--
+        +QueryStringWithVersionResourceCachingStrategy(IResourceVersion)
+        +QueryStringWithVersionResourceCachingStrategy(String, IResourceVersion)
+        --(identity)--
+        +String getVersionParameter()
+    }
+    
+    class ResourceUrl
+    {
+        --(constructors)--
+        +ResourceUrl(String, INamedParameters)
+        --(naming)--
+        +String getFileName()
+        +INamedParameters getParameters()
+        +void setFileName(String fileName)
+    }
+    
+@enduml
+

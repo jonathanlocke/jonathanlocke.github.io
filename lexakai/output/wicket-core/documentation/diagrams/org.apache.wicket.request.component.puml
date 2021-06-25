@@ -1,0 +1,40 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "org.apache.wicket.request.component"
+    
+    interface IRequestableComponent
+    {
+        --
+        +void detach()
+        +IRequestableComponent get(String path)
+        +IRequestablePage getPage()
+        --(identity)--
+        +Behavior getBehaviorById(int id)
+        +int getBehaviorId(Behavior)
+        +String getId()
+        --(messaging)--
+        +boolean canCallListenerAfterExpiry()
+        --(path)--
+        +String getPageRelativePath()
+    }
+    
+    interface IManageablePage
+    interface IRequestableComponent
+    IRequestableComponent <|-- IRequestablePage
+    IManageablePage <|-- IRequestablePage
+    interface IRequestablePage
+    {
+        --
+        +PageParameters getPageParameters()
+        +void renderPage()
+        +boolean wasCreatedBookmarkable()
+        --(checks)--
+        +boolean isBookmarkable()
+        --(collection)--
+        +int getRenderCount()
+    }
+    
+@enduml
+
