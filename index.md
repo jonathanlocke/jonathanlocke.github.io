@@ -60,5 +60,4 @@ A full implementation of the SL design pattern is available in [KivaKit](https:/
 
 <a title="Real Time Web Analytics" href="http://clicky.com/101323427"><img alt="Clicky" src="https://static.getclicky.com/media/links/badge.gif" border="0" /></a>
 <script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101323427);</script>
-<script async src="//static.getclicky.com/js"></script>
-<noscript><p><img alt="Clicky" width="1" height="1" src="https://in.getclicky.com/101323427ns.gif" /></p></noscript>
+<script async src="http://static.getclicky.com/js"></script>
