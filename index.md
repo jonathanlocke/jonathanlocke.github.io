@@ -1,5 +1,4 @@
 
-
 <!-- <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" /> -->
 
 2021.06.23
@@ -54,3 +53,12 @@ These two approaches seem identical at first glance, but there *is* one subtle d
 Why should we care about this? Well, aside from purely ideological differences, the SL approach makes it very easy for a registry implementation to manage services more dynamically and potentially more efficiently. For example, a sophisticated registry could pool instances of non-thread-safe services that are expensive to create and use some form of concurrency control to restrict access. A registry implementation could also hold weak or soft references to services, allowing rarely used but memory hungry services to be collected when they're not actually in use. It could create some services with a factory on-the-fly. It could even vary the implementation of an interface over time. In each case, the SL design pattern is more flexible because the scope of reference to a service is an implementation detail, and with the SL pattern the consumer of a service can hold a reference to it exactly as long as it needs it.
 
 A full implementation of the SL design pattern is available in [KivaKit](https://www.kivakit.org).
+
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
+<sub>Copyright &#169; 2021 Jonathan Locke.</sub>  
+
+<a title="Real Time Web Analytics" href="http://clicky.com/101323427"><img alt="Clicky" src="https://static.getclicky.com/media/links/badge.gif" border="0" /></a>
+<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101323427);</script>
+<script async src="//static.getclicky.com/js"></script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="https://in.getclicky.com/101323427ns.gif" /></p></noscript>
