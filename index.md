@@ -1,5 +1,5 @@
 
-### Index
+### Articles
 
 [**2021.06.25 - Java Mixins**](#mixins)  
 [**‌2021.06.23 - Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
