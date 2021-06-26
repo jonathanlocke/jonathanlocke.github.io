@@ -50,7 +50,7 @@ To define a new *Mixin*, we can simply extend the *Mixin* interface and use the 
         }
     }
 
-The *Attributed* mixin can be added to any object and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
+The *Attributed* mixin can now be added to any object and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
 
     public class AttributedTest
     {
@@ -72,7 +72,10 @@ The *Attributed* mixin can be added to any object and it will provide a keyed at
         }
     }
 
-This is a test case for the *Mixin* interface from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org)
+This is a unit test for the *Attributed* mixin from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org)
+
+<br/>
+<br/>
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
