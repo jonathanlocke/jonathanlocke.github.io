@@ -36,7 +36,7 @@ Here, the *state()* method allows any interface extending *Mixin* to retrieve as
 
 To define a new *Mixin*, we can simply extend the *Mixin* interface and use the *state()* method in our interface's default methods to access our state, as needed:
 
-    public interface Attributed<Key, Value> extends Mixin
+    public interface AttributedMixin<Key, Value> extends Mixin
     {
         default Value attribute(Key key)
         {
@@ -50,17 +50,17 @@ To define a new *Mixin*, we can simply extend the *Mixin* interface and use the 
     
         private HashMap<Key, Value> map()
         {
-            return state(Attributed.class, () -> new HashMap<>());
+            return state(AttributedMixin.class, () -> new HashMap<>());
         }
     }
 
-The *Attributed* mixin can now be added to any object and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
+*AttributedMixin* can now be added to any object, and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
 
-    public class AttributedTest
+    public class AttributedMixinTest
     {
-        static class A implements Attributed<String, String> { }
+        static class A implements AttributedMixin<String, String> { }
     
-        static class B implements Attributed<String, String> { }
+        static class B implements AttributedMixin<String, String> { }
     
         @Test
         public void test()
@@ -76,7 +76,7 @@ The *Attributed* mixin can now be added to any object and it will provide a keye
         }
     }
 
-This is a unit test for the *Attributed* mixin from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org). 
+This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org). 
 
 Your comments?
 
