@@ -68,7 +68,7 @@ The *Attributed* mixin can be added to any object and it will provide a keyed at
 
 This is a test case for the *Mixin* interface from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org)
 
-<!-- <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" /> -->
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.23
 
