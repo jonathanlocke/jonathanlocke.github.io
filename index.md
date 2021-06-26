@@ -80,7 +80,7 @@ This is a unit test for the *Attributed* mixin from *kivakit-kernel* which is a 
 
 <script src="https://utteranc.es/client.js"
         repo="jonathanlocke.github.io"
-        issue-term="pathname"
+        issue-term="url"
         theme="github-dark"
         crossorigin="anonymous"
         async>
