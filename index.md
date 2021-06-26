@@ -1,8 +1,11 @@
 
 ### Index
 
-[**Java Mixins**](#mixins)  
-[**‌Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
+[**2021.06.25 - Java Mixins**](#mixins)  
+[**‌2021.06.23 - Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
+
+<br/>
+<br/>
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
