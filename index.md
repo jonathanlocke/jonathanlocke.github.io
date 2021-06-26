@@ -1,4 +1,9 @@
 
+<img src="ribbons.png"></img>
+
+<br/>
+<br/>
+
 ### Articles
 
 [**2021.06.26 - Constructors are Evil (and how to eliminate them)**](#construction)  
