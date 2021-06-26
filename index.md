@@ -79,7 +79,7 @@ The *Attributed* mixin can now be added to any object and it will provide a keye
 This is a unit test for the *Attributed* mixin from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org)
 
 <script src="https://utteranc.es/client.js"
-        repo="jonathanlocke.github.io"
+        repo="jonathanlocke/jonathanlocke.github.io"
         issue-term="url"
         theme="github-dark"
         crossorigin="anonymous"
