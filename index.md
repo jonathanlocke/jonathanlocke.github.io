@@ -1,5 +1,5 @@
 
-<img src="ribbons.png"></img>
+<img src="lexakai-background-narrow-512.png" srcset="lexakai-background-narrow-512-2x.png"/>
 
 <br/>
 <br/>
