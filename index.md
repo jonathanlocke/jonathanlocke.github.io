@@ -1,8 +1,14 @@
-<!-- <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" /> -->
+
+### Index
+
+[**Java Mixins**](#mixins)  
+[**‌Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
+
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.25
 
-### Java Mixins
+### Java Mixins <a name = "mixins"></a>
 
 [Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
@@ -72,7 +78,7 @@ This is a test case for the *Mixin* interface from *kivakit-kernel* which is a m
 
 2021.06.23
 
-### Why I prefer the service locator design pattern over dependency injection
+### Why I prefer the service locator design pattern over dependency injection <a name = "service-locator"></a>
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion. 
 
