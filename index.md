@@ -6,8 +6,8 @@
 
 ### Articles
 
-[**2021.06.26 - Constructors are Evil (and how to eliminate them)**](#construction)  
-[**2021.06.25 - How to Add Mixins to Java**](#mixins)  
+[**2021.06.26 - Constructors are evil (and how to eliminate them)**](#construction)  
+[**2021.06.25 - How to add mixins to Java**](#mixins)  
 [**‌2021.06.23 - Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
 
 <br/>
@@ -18,7 +18,7 @@
 
 2021.06.26
 
-### Constructors are Evil (and how to eliminate them)
+### Constructors are evil (and how to eliminate them)
 
 Methods for creating and initializing objects vary some from language to language, but most object-oriented languages allocate an object, often with a keyword such as *new*, and then perform object initialization using specialized methods called [constructors](https://tinyurl.com/5686t2km). One of the problems with constructors is that an object is not fully initialized until the constructor returns, which means that *during construction* the object is in a semi-initialized and possibly inconsistent state. This problem can be partly addressed with special compile-time checking, but even with this in place, constructors can still cause surprising and hard-to-diagnose problems:
 
@@ -181,7 +181,7 @@ Your comments?
 
 2021.06.25
 
-### How to Add Mixins to Java
+### How to add mixins to Java
 
 [Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
