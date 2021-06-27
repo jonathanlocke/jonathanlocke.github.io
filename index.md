@@ -5,12 +5,15 @@
 <br/>
 [Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
 
+<br/>
+<br/>
+
 ### Articles
 
-[**2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go**](#loom)
-[**2021.06.26 - Constructors are evil (and how to eliminate them)**](#construction)  
-[**2021.06.25 - How to add mixins to Java**](#mixins)  
-[**2021.06.23 - Why I prefer the service locator design pattern over dependency injection**](#service-locator)  
+[2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)
+[2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
+[2021.06.25 - How to add mixins to Java](#mixins)  
+[2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
 
 <br/>
 <br/>
