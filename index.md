@@ -3,10 +3,6 @@
 
 <br/>
 <br/>
-[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
-
-<br/>
-<br/>
 
 ### Articles
 
@@ -17,6 +13,8 @@
 
 <br/>
 <br/>
+
+[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
