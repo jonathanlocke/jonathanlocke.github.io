@@ -1,7 +1,7 @@
 
-<img src="lexakai-background-narrow-512.png" srcset="lexakai-background-narrow-512-2x.png"/>
-
 <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ce3507ff8af80e3a803a42215/f897891c17e02825073b23c6f.js");</script>
+
+<img src="lexakai-background-narrow-512.png" srcset="lexakai-background-narrow-512-2x.png"/>
 
 <br/>
 <br/>
