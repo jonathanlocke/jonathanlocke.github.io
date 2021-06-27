@@ -2,7 +2,6 @@
 <img src="lexakai-background-narrow-512.png" srcset="lexakai-background-narrow-512-2x.png"/>
 
 <br/>
-<br/>
 
 ### Articles
 
@@ -11,7 +10,6 @@
 [2021.06.25 - How to add mixins to Java](#mixins)  
 [2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
 
-<br/>
 <br/>
 
 [Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
