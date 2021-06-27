@@ -3,6 +3,7 @@
 
 <br/>
 <br/>
+[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
 
 ### Articles
 
