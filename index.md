@@ -5,10 +5,10 @@
 
 ### Articles
 
-<img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
-<img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
-<img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.25 - How to add mixins to Java](#mixins)  
-<img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
+#### <img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>&nbsp;[2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
+#### <img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>&nbsp;[2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
+#### <img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>&nbsp;[2021.06.25 - How to add mixins to Java](#mixins)  
+#### <img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>&nbsp;[2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
 
 <br/>
 
