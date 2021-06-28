@@ -255,8 +255,14 @@ When traits include state, they are referred to as *stateful traits* or *mixins*
     public interface Mixin
     {
         /**
-         * @param type The type of state to associate with this mixin
-         * @param factory Creates state to associate with this mixin
+         * Retrieves state associated with the given Mixin sub-interface 
+         * This is done in MixinState using a composite key formed
+         * from this object's *this* reference and the type of the Mixin 
+         * sub-interface.
+         *
+         * @param type The sub-interface's type (like AttributedMixin.class)
+         * @param factory A factory that creates the initial state to
+         * associate with this mixin
          * @return The state for this mixin
          */
         default <T> T state(Class<? extends Mixin> type, Factory<T> factory)
@@ -266,7 +272,42 @@ When traits include state, they are referred to as *stateful traits* or *mixins*
         }
     }
 
-Here, the *state()* method allows any interface extending *Mixin* to retrieve associated state for itself. If the state is not yet attached to the mixin, it is created with the given *Factory*. The *MixinState* class that is used in the body of the *state()* method stores and retrieves state with a key that combines the object and the *Class* of the mixin. This allows each object to have state for many mixins associated with it. Note that an object using mixin(s) does not need to implement the *hashCode()* / *equals()* contract. Also note that mixin state is stored by *MixinState* using a *ConcurrentHashMap* to avoid concurrency problems. Access to this map may become contentious if there are a large number of objects accessing mixin state at the same time.
+Here, the *state()* method allows any interface extending *Mixin* to retrieve associated state for itself. If the state is not yet attached to the mixin, it is created with the given *Factory*. The *MixinState* class that is used in the body of the *state()* method stores and retrieves state using a key that combines the object's *this* reference and the *Class* of the mixin sub-interface:
+
+    class MixinState
+    {
+        private static final Map<MixinKey, Object> values = new ConcurrentHashMap<>();
+    
+        /**
+         * @return Gets a value for the given mixin of the given object, 
+         * creating a new value with the given factory if it doesn't 
+         * already exist.
+         */
+        @SuppressWarnings("unchecked")
+        public static synchronized <T> T get(final Object object,
+                                             final Class<? extends Mixin> mixinType,
+                                             final Factory<T> factory)
+        {
+            // Create a composite key (to allow multiple traits on an object),
+            final var key = new MixinKey(object, mixinType);
+    
+            // get any current value for the mixin,
+            var value = (T) values.get(key);
+    
+            // and if none exists,
+            if (value == null)
+            {
+                // create a new value,
+                value = factory.newInstance();
+    
+                // and store that.
+                values.put(key, value);
+            }
+    
+            return value;
+        }
+
+This allows each object to have state for many mixins associated with it. Note that an object using mixin(s) does not need to implement the *hashCode()* / *equals()* contract. Also note that mixin state is stored by *MixinState* using a *ConcurrentHashMap* to avoid concurrency problems. Access to this map may become contentious if there are a large number of objects accessing mixin state at the same time.
 
 To define a new *Mixin*, we can simply extend the *Mixin* interface and use the *state()* method in our interface's default methods to access our state, as needed:
 
