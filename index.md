@@ -255,7 +255,7 @@ When traits include state, they are referred to as *stateful traits* or *mixins*
     public interface Mixin
     {
         /**
-         * Retrieves state associated with the given Mixin sub-interface 
+         * Retrieves state associated with the given Mixin sub-interface. 
          * This is done in MixinState using a composite key formed
          * from this object's *this* reference and the type of the Mixin 
          * sub-interface.
@@ -307,9 +307,9 @@ Here, the *state()* method allows any interface extending *Mixin* to retrieve as
             return value;
         }
 
-This allows each object to have state for many mixins associated with it. Note that an object using mixin(s) does not need to implement the *hashCode()* / *equals()* contract. Also note that mixin state is stored by *MixinState* using a *ConcurrentHashMap* to avoid concurrency problems. Access to this map may become contentious if there are a large number of objects accessing mixin state at the same time.
+This allows each object to have state for many mixins associated with it. Note that an object using mixin(s) does not need to implement the *hashCode()* / *equals()* contract. Also note that mixin state is stored by the package private class *MixinState* using a *ConcurrentHashMap* to avoid concurrency problems. Access to this map may become contentious if there are a large number of objects accessing mixin state at the same time.
 
-To define a new *Mixin*, we can simply extend the *Mixin* interface and use the *state()* method in our interface's default methods to access our state, as needed:
+To define a new *Mixin*, we can now simply extend the *Mixin* interface and use the *state()* method in our interface's default methods to access our state, as needed:
 
     public interface AttributedMixin<Key, Value> extends Mixin
     {
@@ -329,7 +329,7 @@ To define a new *Mixin*, we can simply extend the *Mixin* interface and use the 
         }
     }
 
-*AttributedMixin* can now be added to any object, and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
+Our *AttributedMixin* can now be added to any object, and it will provide a keyed attribute attached to that object. For example, it can be used like this to add a name to any arbitrary class:
 
     public class AttributedMixinTest
     {
