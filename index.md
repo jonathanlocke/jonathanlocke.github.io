@@ -372,6 +372,3 @@ A full implementation of the SL design pattern is available in [KivaKit](https:/
 
 <sub>Copyright &#169; 2021 Jonathan Locke.</sub>  
 
-<a title="Real Time Web Analytics" href="http://clicky.com/101323427"><img alt="Clicky" src="https://static.getclicky.com/media/links/badge.gif" border="0" /></a>
-<script>var clicky_site_ids = clicky_site_ids || []; clicky_site_ids.push(101323427);</script>
-<script async src="http://static.getclicky.com/js"></script>
