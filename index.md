@@ -103,7 +103,7 @@ Your comments?
 
 Methods for creating and initializing objects vary some from language to language, but most object-oriented languages allocate an object, often with a keyword such as *new*, and then perform object initialization using specialized methods called [constructors](https://tinyurl.com/5686t2km). One of the problems with constructors is that an object is not fully initialized until the constructor returns, which means that *during construction* the object is in a semi-initialized and possibly inconsistent state. This problem can be partly addressed with special compile-time checking, but even with this in place, constructors can still cause surprising and hard-to-diagnose problems:
 
-1. Invoking overridable methods during construction can result in the use of data by subclasses that is not yet properly initialized.
+1. Invoking overridable methods during construction can result in the use of data by subclasses that are not yet properly initialized.
 2. Constructors can allow the object's *this* reference to "escape" by being assigned to some field that is accessible by another thread. This other thread can then potentially use that field to access the object before its initialization has completed.
 3. [Class initialization in Java can cause deadlocks](https://www.farside.org.uk/201510/deadlocks_in_java_class_initialisation)
 4. Access to the static field(s) of a base class in Java does not cause the initialization of any subclasses, even though those subclasses might initialize these field(s). This can result in [counterintuitive behavior](https://stackoverflow.com/questions/10698516/behavior-of-static-blocks-with-inheritance).
