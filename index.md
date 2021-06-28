@@ -5,10 +5,10 @@
 
 ### Articles
 
-[2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)<img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>  
-[2021.06.26 - Constructors are evil (and how to eliminate them)](#construction) <img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>  
-[2021.06.25 - KivaKit: How to add mixins to Java](#mixins) <img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>  
-[2021.06.23 - KivaKit: Why I prefer the service locator design pattern over dependency injection](#service-locator) <img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>
+<img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
+<img src="spacer-32.png" srcset="spacer-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
+<img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.25 - How to add mixins to Java](#mixins)  
+<img src="kivakit-32.png" srcset="kivakit-32-2x.png 2x" style="vertical-align:text-bottom"/>[2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
 
 <br/>
 
@@ -246,7 +246,7 @@ The object can no longer be used once it is *shutdown*.
 
 2021.06.25
 
-### KivaKit: How to add mixins to Java
+### How to add mixins to Java
 
 [Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
@@ -317,7 +317,7 @@ This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a modul
 
 2021.06.23
 
-### KivaKit: Why I prefer the service locator design pattern over dependency injection
+### Why I prefer the service locator design pattern over dependency injection
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion. 
 
