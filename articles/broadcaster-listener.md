@@ -18,7 +18,7 @@ A *Broadcaster* transmits *Messages* to an *audience* of one or more *Listeners*
 
 <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-300.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-300-2x.png 2x" style="vertical-align:middle"/>
 
-A *Broadcaster* is a *Transmitter* that keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from this audience. When the *Broadcaster.transmit(Value)* method is called with a *Transmittable* message, that message object is transmitted to each member of the audience.
+A *Broadcaster* is a *Transmitter* that keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from this audience. When the *Broadcaster.transmit(Transmittable)* method is called with a *Transmittable* message, that message object is transmitted to each member of the audience.
 
     public interface Transmitter<Transmittable>
     {
@@ -62,7 +62,7 @@ A *Listener* receives messages transmitted by a broadcaster with its *receive(Tr
 Here are a few examples of *Listeners* in KivaKit, just to give an idea of the range of tasks that listeners might perform:
 
 | Listener | Purpose |
---------------------
+|---------|--------|
 | Logger | Write the message to a Log |
 | MutableCount | Counts the number of messages it receives |
 | MessageList | Keeps a list of the messages it receives |
