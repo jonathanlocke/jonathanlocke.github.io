@@ -1,25 +1,25 @@
 
-<img src="lexakai-background-narrow-512.png" srcset="lexakai-background-narrow-512-2x.png"/>
+<img src="https://www.state-of-the-art.org/grahics/lexakai-background/lexakai-background-narrow-512.png" srcset="https://www.state-of-the-art.org/graphics/lexakai-background/lexakai-background-narrow-512-2x.png"/>
 
 <br/>
 
 ### Articles
 
-#### <img src="https://state-of-the-art.org/spacer-32.png" srcset="https://state-of-the-art.org/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
-#### <img src="https://state-of-the-art.org/spacer-32.png" srcset="https://state-of-the-art.org/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
-#### <img src="https://state-of-the-art.org/kivakit-32.png" srcset="https://state-of-the-art.org/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How to add mixins to Java](#mixins)  
-#### <img src="https://state-of-the-art.org/kivakit-32.png" srcset="https://state-of-the-art.org/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
+#### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
+#### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How to add mixins to Java](#mixins)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
 
 <br/>
 
-[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
+[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX) &nbsp; <img src="https://www.state-of-the-art.org/grahics/envelope/envelope-32.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-32-2x.png"/>
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
 
 2021.06.28
 
-### Why project Loom will ultimately make Java a better cloud language than Go
+### Why project Loom will ultimately make Java a better cloud language than Go  &nbsp; <img src="https://state-of-the-art.org/graphics/chips/chips-32.png" srcset="https://state-of-the-art.org/graphics/chips/chips-32-2x.png 2x" style="vertical-align:baseline"/>
 
 At first glance, the *Go* programming language in 2021 looks and feels to me a bit like garbage collected C. It *isn't* for a number of reasons, but it is certainly more of a systems programming language than a pure applications programming language like Java. Putting aside lots of small features and improvements, we've seen most of what Go has to offer before. So *why are so many people using Go to write cloud applications*? The main reason is that the cloud is highly concurrent and Go has a killer feature for concurrency: *go routines*.
 
@@ -99,7 +99,7 @@ Your comments?
 
 2021.06.26
 
-### Constructors are evil (and how to eliminate them)
+### Constructors are evil (and how to eliminate them) &nbsp; <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Methods for creating and initializing objects vary some from language to language, but most object-oriented languages allocate an object, often with a keyword such as *new*, and then perform object initialization using specialized methods called [constructors](https://tinyurl.com/5686t2km). One of the problems with constructors is that an object is not fully initialized until the constructor returns, which means that *during construction* the object is in a semi-initialized and possibly inconsistent state. This problem can be partly addressed with special compile-time checking, but even with this in place, constructors can still cause surprising and hard-to-diagnose problems:
 
@@ -246,7 +246,7 @@ The object can no longer be used once it is *shutdown*.
 
 2021.06.25
 
-### How to add mixins to Java
+### How to add mixins to Java  &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
 
 [Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
@@ -358,7 +358,7 @@ This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a modul
 
 2021.06.23
 
-### Why I prefer the service locator design pattern over dependency injection
+### Why I prefer the service locator design pattern over dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). The basic distinction between these two patterns is that in DI, a container pushes interfaces into an object based on its configuration while in SL, the object reaches out to the container to ask for the interface. While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion.
 
