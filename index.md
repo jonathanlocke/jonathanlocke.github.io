@@ -12,7 +12,8 @@
 
 <br/>
 
-[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX) &nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"/>
+<img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"
+style="vertical-align:bottom"/> &nbsp;  [Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
