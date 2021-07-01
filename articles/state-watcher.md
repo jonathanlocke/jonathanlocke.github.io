@@ -6,7 +6,7 @@
 
 2021.07.20
 
-### Signaling and waiting for concurrent state changes
+### Signaling and waiting for concurrent state changes &nbsp; <img src="https://state-of-the-art.org/graphics/communicate/communicate-32.png" srcset="https://state-of-the-art.org/graphics/communicate/communicate-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Java's concurrency library (java.util.concurrent) provides a mutual-exclusion (mutex) *Lock* called *ReentrantLock*. This lock maintains a queue of threads that are waiting to *own* the lock, allowing access to a protected resource. A thread can be added to the lock's wait queue by calling *lock()*. When the *lock()* method returns, the thread will own the lock. Once the thread obtains the lock in this way, it can mutate any shared state protected by the lock, and then it can release its ownership by calling *unlock()*, allowing another thread to get its turn at owning the lock and accessing the shared state. Because the lock is reentrant, a thread can call *lock()* multiple times, and the lock will only be released to the next waiting thread when all nested calls to *lock()* have been undone with calls to *unlock()*. The flow of a reentrant thread using a lock looks like this:
 

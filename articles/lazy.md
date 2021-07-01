@@ -6,7 +6,7 @@
 
 2021.07.06
 
-### Lazy initialization as a Java design pattern
+### Lazy initialization as a Java design pattern &nbsp; <img src="https://state-of-the-art.org/graphics/coffee/coffee-32.png" srcset="https://state-of-the-art.org/graphics/coffee/coffee-32-2x.png 2x" style="vertical-align:baseline"/>
 
 It would be interesting for Java to have a *lazy* keyword. This imaginary keyword would only evaluate the expression to the right of the equals sign when the reference on the left side is accessed. Code using this keyword might look like this:
 

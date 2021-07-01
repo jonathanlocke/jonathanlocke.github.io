@@ -6,7 +6,7 @@
 
 2021.07.13
 
-### How *Broadcaster* / *Listener* loosens coupling and improves component semantics
+### How *Broadcaster* / *Listener* loosens coupling and improves component semantics  &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar-32.png" srcset="https://state-of-the-art.org/graphics/sonar/sonar-32-2x.png 2x" style="vertical-align:baseline"/>
 
 I'm speculating here, but Dr. Alan Kay's conception of object-oriented programming in the late 1960's might have come about, at least partly, as a result of his undergraduate work in molecular biology. A cell is a pretty good analogy for an object and DNA is a sort of template or class from which cells are created. But to Kay, what would have been the most interesting is cell surface receptors and the way that cells pass various kinds of messages to each other (and themselves) by secreting compounds that bind to these receptors. In fact, he posted this revealing email in 1998:
 
