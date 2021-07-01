@@ -5,7 +5,7 @@
 
 ### Articles
 
-#### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will ultimately make Java a better cloud language than Go](#loom)  
+#### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will make Java a better cloud language than Go](#loom)  
 #### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How to add mixins to Java](#mixins)  
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
@@ -19,7 +19,7 @@
 
 2021.06.28
 
-### Why project Loom will ultimately make Java a better cloud language than Go  &nbsp; <img src="https://state-of-the-art.org/graphics/chips/chips-32.png" srcset="https://state-of-the-art.org/graphics/chips/chips-32-2x.png 2x" style="vertical-align:baseline"/>
+### Why project Loom will make Java a better cloud language than Go  &nbsp; <img src="https://state-of-the-art.org/graphics/chips/chips-32.png" srcset="https://state-of-the-art.org/graphics/chips/chips-32-2x.png 2x" style="vertical-align:baseline"/>
 
 At first glance, the *Go* programming language in 2021 looks and feels to me a bit like garbage collected C. It *isn't* for a number of reasons, but it is certainly more of a systems programming language than a pure applications programming language like Java. Putting aside lots of small features and improvements, we've seen most of what Go has to offer before. So *why are so many people using Go to write cloud applications*? The main reason is that the cloud is highly concurrent and Go has a killer feature for concurrency: *go routines*.
 
