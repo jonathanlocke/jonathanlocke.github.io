@@ -8,11 +8,11 @@
 #### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will make Java a better cloud language than Go](#loom)  
 #### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How to add mixins to Java](#mixins)  
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer the service locator design pattern over dependency injection](#service-locator)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer service locator over dependency injection](#service-locator)  
 
 <br/>
 
-[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX) &nbsp; <img src="https://www.state-of-the-art.org/grahics/envelope/envelope-32.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-32-2x.png"/>
+[Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX) &nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"/>
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
@@ -358,7 +358,7 @@ This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a modul
 
 2021.06.23
 
-### Why I prefer the service locator design pattern over dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
+### Why I prefer service locator over dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). The basic distinction between these two patterns is that in DI, a container pushes interfaces into an object based on its configuration while in SL, the object reaches out to the container to ask for the interface. While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion.
 
