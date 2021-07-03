@@ -1,19 +1,106 @@
 
+<a href="https://github.com/Telenav/kivakit">
+<img src="https://www.kivakit.org/images/github-32.png" srcset="https://www.kivakit.org/images/github-32-2x.png 2x"/>
+</a>
+&nbsp;
+<a href="https://twitter.com/openkivakit">
+<img src="https://www.kivakit.org/images/twitter-32.png" srcset="https://www.kivakit.org/images/twitter-32-2x.png 2x"/>
+</a>
+&nbsp;
+<a href="https://kivakit.zulipchat.com">
+<img src="https://www.kivakit.org/images/zulip-32.png" srcset="https://www.kivakit.org/images/zulip-32-2x.png 2x"/>
+</a>
+
 <img src="https://www.state-of-the-art.org/grahics/lexakai-background/lexakai-background-narrow-512.png" srcset="https://www.state-of-the-art.org/graphics/lexakai-background/lexakai-background-narrow-512-2x.png"/>
 
 <br/>
 
 ### Articles
 
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.03 - Lazy initialization as a Java design pattern](#lazy)  
+
 #### <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will make Java a better cloud language than Go](#loom)  
-#### <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how to eliminate them)](#construction)  
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How to add mixins to Java](#mixins)  
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why I prefer service locator over dependency injection](#service-locator)  
+#### <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how we could eliminate them)](#construction)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How KivaKit adds mixins to Java](#mixins)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why KivaKit provides service locator instead of dependency injection](#service-locator)  
 
 <br/>
 
 <img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"
-style="vertical-align:bottom"/> &nbsp;  [Sign Up for State(Art) Mailing List](http://eepurl.com/hCivUX)
+style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](http://eepurl.com/hCivUX)
+
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+<a name = "lazy"></a>
+
+2021.07.03
+
+### Lazy initialization as a Java design pattern &nbsp; <img src="https://state-of-the-art.org/graphics/coffee/coffee-32.png" srcset="https://state-of-the-art.org/graphics/coffee/coffee-32-2x.png 2x" style="vertical-align:baseline"/>
+
+It would be interesting for Java to have a *lazy* keyword. This imaginary keyword would only evaluate the expression to the right of the equals sign when the reference on the left side is accessed. Code using this keyword might look like this:
+
+    private lazy Map<Key, Value> lazyMap = createMap();
+    
+    [...]
+    
+    lazyMap.put(key, value);
+
+Here, just before *lazyMap.put()* is executed, the *createMap()* method would be called and its value assigned to *lazyMap*.
+
+Instead, a common and less succinct idiom in Java is something like this:
+
+    private Map<Key, Value> lazyMap;
+    
+    [...]
+    
+    if (lazyMap == null)
+    {
+        lazyMap = createMap():
+    }
+    
+    lazyMap.put(key, value);
+
+We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we can create a class with similar functionality:
+
+    public class Lazy<Value>
+    {
+        /**
+         * Factory method to create a Lazy object with the given value factory
+         */
+        public static <V> Lazy<V> of(Factory<V> factory)
+        {
+            return new Lazy<>(factory);
+        }
+    
+        private Value value;
+    
+        private Factory<Value> factory;
+    
+        protected Lazy(final Factory<Value> factory)
+        {
+            this.factory = factory;
+        }
+        
+        public synchronized Value get()
+        {
+            if (value == null)
+            {
+                value = factory.newInstance();
+            }
+            return value;
+        }
+    }
+
+*Lazy* can reduce the four lines of if-*null* check boilerplate above to these two lines:
+
+    private Map<Key, Value> lazyMap = Lazy.of(this::createMap);
+    
+    [...]
+    
+    lazyMap.get().put(key, value);
+
+True, it's not quite as nice as having a *lazy* keyword, but it improves readability by making the flow of code easier to follow. The *Lazy* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
+
+Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
@@ -79,28 +166,14 @@ This method allows our code is reduced to just this:
 
 Right now, Go is a reasonable choice for cloud development, but when Project Loom does arrive (when will this be?), Java will have Go's killer cloud feature. It will also have a much bigger ecosystem, excellent tooling and, in my opinion, better readability. Many people will stick with Go when this happens, but there will be no good reason at that point not to prefer Java for new projects.
 
-Your comments?
-
-<br/>
-<br/>
-
-<script src="https://utteranc.es/client.js"
-        repo="jonathanlocke/jonathanlocke.github.io"
-        issue-term="url"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-
-<br/>
-<br/>
+Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "construction"></a>
 
 2021.06.26
 
-### Constructors are evil (and how to eliminate them) &nbsp; <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:baseline"/>
+### Constructors are evil (and how we could eliminate them) &nbsp; <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Methods for creating and initializing objects vary some from language to language, but most object-oriented languages allocate an object, often with a keyword such as *new*, and then perform object initialization using specialized methods called [constructors](https://tinyurl.com/5686t2km). One of the problems with constructors is that an object is not fully initialized until the constructor returns, which means that *during construction* the object is in a semi-initialized and possibly inconsistent state. This problem can be partly addressed with special compile-time checking, but even with this in place, constructors can still cause surprising and hard-to-diagnose problems:
 
@@ -242,12 +315,14 @@ Note also that we might want to deny access to methods in a given state, such as
 
 The object can no longer be used once it is *shutdown*.
 
+Questions? Comments? Tweet yours to @OpenKivaKit.
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "mixins"></a>
 
 2021.06.25
 
-### How to add mixins to Java  &nbsp; <img src="https://state-of-the-art.org/graphics/math/math-32.png" srcset="https://state-of-the-art.org/graphics/math/math-32-2x.png 2x" style="vertical-align:baseline"/>
+### How KivaKit adds mixins to Java  &nbsp; <img src="https://state-of-the-art.org/graphics/math/math-32.png" srcset="https://state-of-the-art.org/graphics/math/math-32-2x.png 2x" style="vertical-align:baseline"/>
 
 [Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
@@ -354,12 +429,14 @@ Our *AttributedMixin* can now be added to any object, and it will provide a keye
 
 This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org). 
 
+Questions? Comments? Tweet yours to @OpenKivaKit.
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "service-locator"></a>
 
 2021.06.23
 
-### Why I prefer service locator over dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
+### Why KivaKit provides service locator instead of dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link-32.png" srcset="https://state-of-the-art.org/graphics/link/link-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). The basic distinction between these two patterns is that in DI, a container pushes interfaces into an object based on its configuration while in SL, the object reaches out to the container to ask for the interface. While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion.
 
@@ -408,6 +485,8 @@ These two approaches seem identical at first glance, but there *is* one subtle d
 Why should we care about this? Well, aside from purely ideological differences, the SL approach makes it very easy for a registry implementation to manage services more dynamically, and potentially more efficiently as well. For example, a sophisticated registry could pool instances of non-thread-safe services that are expensive to create, and use some form of concurrency control to restrict access. A registry implementation could also hold weak or soft references to services, allowing rarely used but memory hungry services to be collected when they're not actually in use. It could create some services with a factory on-the-fly. It could even vary the implementation of an interface over time. In each case, the SL design pattern is more flexible because the scope of reference to a service is an implementation detail, and with the SL pattern the consumer of a service can hold a reference to it exactly as long as it needs it.
 
 A full implementation of the SL design pattern is available in [KivaKit](https://www.kivakit.org).
+
+Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
