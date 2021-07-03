@@ -15,9 +15,12 @@
 
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.03 - Lazy initialization as a Java design pattern](#lazy)  
 
-#### <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will make Java a better cloud language than Go](#loom)  
-#### <img src="https://state-of-the-art.org/graphics/stars/stars-32.png" srcset="https://state-of-the-art.org/graphics/stars/stars-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how we could eliminate them)](#construction)  
+#### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.28 - Why project Loom will make Java a better cloud language than Go](#loom)  
+
+#### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how we could eliminate them)](#construction)  
+
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How KivaKit adds mixins to Java](#mixins)  
+
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why KivaKit provides service locator instead of dependency injection](#service-locator)  
 
 <br/>
