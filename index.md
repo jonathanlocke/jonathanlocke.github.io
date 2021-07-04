@@ -37,7 +37,7 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
 
 ### A (very) slightly simpler builder pattern &nbsp; <img src="https://state-of-the-art.org/graphics/compress/compress-32.png" srcset="https://state-of-the-art.org/graphics/compress/compress-32-2x.png 2x" style="vertical-align:baseline"/>
 
-[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about the code example in this article. There is a way to eliminate a bit of repetition, making the code just a little easier to read and more succinct. The example looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
+[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about the code example in this article. There is a way to eliminate a bit of repetition (mentioned in the article as a point of criticism of the pattern), making the code just a little easier to read and more succinct. The example looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
 
     public class Book 
     {
@@ -92,7 +92,7 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
         }
     }
 
-My quibble is that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, and the line count drops from 52 lines in "Josh's builder pattern" to 47 in mine (and the more fields there are, the more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*.
+My quibble is that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*.
 
     public class Book 
     {
@@ -137,7 +137,9 @@ My quibble is that we can get rid of the duplicate fields in the *Builder* class
     
             public Book build() 
             {
-                return book;
+                var built = book;
+                book = new Book();
+                return built;
             }
         }
     }
