@@ -327,7 +327,7 @@ We can specify this transition by adding two new keywords to our language: *is* 
         [..]
     }
 
-The *is-when* statement here specifies that when our *allocated* *Alien* has both a *brain* and a *spaceship*, it will transition to the state *ready*.
+The *is-when* statement here specifies that when our *allocated* *Alien* has both a *brain* and a *spaceship* (aliens have plug-and-play brains), it will transition to the state *ready*.
 
 Now we can simply allow methods to mutate the *brain* and *ship* fields to trigger this transition. But some methods cannot function in the *allocated* state. These methods need to be *gated* until our *Alien* reaches the *ready* state. We can do this by adding the keyword *can*:
 
@@ -355,15 +355,15 @@ The method *attack()* can only be called now when the *Alien* is in state *ready
 
 One nice thing about this design is that eliminating constructors in favor of a state machine not only fixes our issue with partial initialization, but it also eliminates the clutter of constructor overloads and the confusion of constructors with too many parameters. Instead, initialization is both safe and clear:
     
-    var alien = Alien;
-    alien.brain(QuantumComputer);
-    alien.spaceship(ZimsCoolSpaceship);
+    var alien = new Alien();
+    alien.brain(quantumComputer);
+    alien.spaceship(spaceshipZim);
     alien.attack();
 
 With our *is-when* statement, if we forget to add a *Brain* to the *Alien* the compiler can give us an error reminding us that we can't call the *attack()* method until the *Alien* has both a *brain* and a *spaceship*:
 
-    var alien = Alien;
-    alien.spaceship(ZimsCoolSpaceship);
+    var alien = new Alien();
+    alien.spaceship(spaceshipZim);
     alien.attack();
     
     [...]
@@ -415,7 +415,7 @@ Suppose we have a *SubspaceRadio* object that can be connected to a *SubspaceNet
         }
     }
     
-In this example, our radio object is *ready* as soon as it has a *network*. It can then transition to the *connected* state via a call to *connect()*, at which point it can *transmit()* and *receive()*. If *disconnect()* is called, the radio transitions back to *ready*, at which point it would have to reconnect with *connect()* before it can *transmit()* or *receive()* again. 
+In this example, our radio object is *ready* as soon as it has a *network*. It can then transition to the *connected* state via a call to *connect()*, at which point it can *transmit()* and *receive()*. If *disconnect()* is called, the radio transitions back to *ready*, at which point it would have to reconnect with *connect()* before it can *transmit()* or *receive()* again.
 
 Because the transition to *connected* is dynamic and conditional on whether the *network.connect()* method can establish a connection, this state machine transition cannot be determined at compile time. Instead, the compiler has to associate some of parts of the state machine with the object at runtime.
 
