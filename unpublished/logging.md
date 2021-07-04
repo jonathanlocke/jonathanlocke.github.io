@@ -1,14 +1,14 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - Why the design of KivaKit logging is better than the rest](#converters)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - KivaKit logging and the broadcaster / listener design pattern](#converters)  
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "converters"></a>
 
 2021.07.XX
 
-### Why the design of KivaKit logging is better than the rest &nbsp; <img src="https://state-of-the-art.org/graphics/log/log-32.png" srcset="https://state-of-the-art.org/graphics/log/log-32-2x.png 2x" style="vertical-align:baseline"/>
+### KivaKit logging and the broadcaster / listener design pattern &nbsp; <img src="https://state-of-the-art.org/graphics/log/log-32.png" srcset="https://state-of-the-art.org/graphics/log/log-32-2x.png 2x" style="vertical-align:baseline"/>
 
-Logging is a common need for applications and servers to allow events that occurred during execution to be analyzed after the fact. Java has a number of logging frameworks (this is not an exhaustive list):
+Logging allows events that occur during the execution of a program to be analyzed after the fact. A few of the more popular open source logging frameworks for Java include:
 
 * Log4J
 * Java Logging API
@@ -17,7 +17,9 @@ Logging is a common need for applications and servers to allow events that occur
 * Apache Commons Logging
 * SLF4J
 
-KivaKit departs from these frameworks because a KivaKit *Logger* participates in the [*Broadcaster / Listener*](#broadcaster) design pattern because it is a message *Listener*:
+While these frameworks vary in their feature sets, the common idea is that calls to a few specialized logger methods are used to direct log entry information to one or more log implementations. 
+
+KivaKit departs from these frameworks significantly because KivaKit *Logger*s participate in the [*Broadcaster / Listener*](#broadcaster) design pattern. A *Logger* in KivaKit is a *Listener* which can receive and log any kind of *Transmittable* *Message*:
 
     public interface Logger extends Listener
     {
@@ -29,19 +31,9 @@ KivaKit departs from these frameworks because a KivaKit *Logger* participates in
         }
     }
 
-The *Logger.log(Message)* method adds the given message to each *Log* that is attached to the *Logger*. There are a variety of *Logs* available, including:
+The *Listener.onMessage(Message)* method here simply calls *log()* with any messages that it hears. This is an especially powerful design, because a *Logger* can be plugged in anywhere that a *Listener* is accepted, and listeners are commonly accepted throughout KivaKit. A message can be routed through a chain of *Repeater*s, and anywhere along the way (although most typically at the end of the chain), the message will be logged if it is transmitted to a *Logger*.
 
-* *ConsoleLog*
-* *EmailLog*
-* *FileLog*
-
-Logs can be added from the command line with -DKIVAKIT_LOG. They can be filtered by log level with -DKIVAKIT_LOG_LEVEL, and asynchronous logging can be turned off with -DKIVAKIT_LOG_SYNCHRONOUS=false. For details, see [kivakit system properties](https://github.com/Telenav/kivakit/blob/master/documentation/developing/system-properties.md) and [kivakit-kernel logging](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/logging.md).
-
-
-
-The *Listener.onMessage(Message)* method simply calls *log()* with any messages that it hears. This is an especially powerful design, because a *Logger* can be plugged in anywhere that a *Listener* is accepted, and listeners are used throughout KivaKit. Messages can be routed through a chain of *Repeater*s and anywhere along the way (or most typically at the end of the chain), they can be logged. The design for the logging frameworks above is more special-purpose where messages are only intended to be logged.
-
-*Logger* instances can be retrieved from *LoggerFactory*:
+*Logger* instances are created by *LoggerFactory*:
 
     public class LoggerFactory
     {
@@ -58,11 +50,23 @@ The *Listener.onMessage(Message)* method simply calls *log()* with any messages 
         }
     }
 
-Typical usage looks like:
+And typical usage looks like this:
 
     private static final Logger LOGGER = LoggerFactory.newLogger();
 
-However, it is rare to directly use the *Logger* interface. Instead, a component will extend *BaseRepeater* or implement the *RepeaterMixin* interface, and it will broadcast messages. Those messages would then be redirected at the end of the listener chain to a *Logger*. The *Application* class (more on that in a future article) does exactly this:
+By default, *LoggerFactory* returns instances of *LogServiceLogger*. This logger parses the KIVAKIT_LOG system property and uses *LogServiceLoader* to dynamically load and configure implementations of the *Log* service provider interface (SPI). Logs are discovered and loaded with Java's *ServiceLoader* class. Once *LogServiceLogger* has loaded and configured its *Log*s, it proceeds to forward any messages it receives via *log(Message)* to each log in turn.
+
+A few *Log* implementations are included in KivaKit (and it's very easy to implement new ones):
+
+* *ConsoleLog*
+* *EmailLog*
+* *FileLog*
+
+Logs can be filtered using the system property KIVAKIT_LOG_LEVEL, and asynchronous logging can be turned off with -DKIVAKIT_LOG_SYNCHRONOUS=false. For more details on logging configuration, see [kivakit system properties](https://github.com/Telenav/kivakit/blob/master/documentation/developing/system-properties.md) and [kivakit-kernel logging](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/logging.md).
+
+Although *Logger*s are easy enough to use by themselves, in KivaKit it is rare to use one directly. Instead, an object will extend *BaseRepeater* or implement the *RepeaterMixin* interface, and it will simply broadcast messages without regard to where they might go. Any actual logging only comes in if those messages arrive at a *Logger* at the end of the listener chain (or somewhere along the way). This design completely decouples an object's reporting of its status from logging functionality, while still allowing it to happen when desired.
+
+The *Application* class (more on this in a future article) does exactly this:
 
     public abstract class Application extends BaseRepeater
     {
@@ -80,7 +84,7 @@ However, it is rare to directly use the *Logger* interface. Instead, a component
         [...]
     }
 
-This means that any *Application* subclass that broadcasts a message (directly or through a listener chain) can depend on it being logged (if it isn't filtered out in the listener chain). In practice this looks like:
+Here, when any *Application* subclass broadcasts a message (directly or through a listener chain) it can depend on it being logged (if it isn't filtered out somewhere along the way in the listener chain). In practice usage this looks like:
 
     public OperationDoomIII extends Application
     {
@@ -110,17 +114,16 @@ This means that any *Application* subclass that broadcasts a message (directly o
         [...]
     }
 
-If the spaceship isn't ready when *Attack.start()* is called, a *Problem* message is broadcast. The *OperationDoomIII* class listens to messages from the *Attack*, and the LOGGER in *Application* listens to *OperationDoomIII*, so the message will be logged.
+If the spaceship isn't ready when *Attack.start()* is called, a *Problem* message is broadcast. The *OperationDoomIII* class listens to messages from *Attack*, and the LOGGER in *Application* listens to *OperationDoomIII*, so our *Problem* message, declaring "Spaceship isn't ready", will follow this path:
 
-It is worth noting that the methods inherited from *BaseRepeater* allow formatting of messages:
+    Attack.start() -> Attack.Repeater -> OperationDoomIII.Repeater -> Application.LOGGER
+
+It is worth noting that methods like *problem()*, inherited from *BaseRepeater*, allow formatting of messages:
 
     narrate("Launching in $ seconds", secondsToLaunch());
 
-And the formatting of messages is lazy. If the message is filtered out (for example, by a log level), no formatting occurs. In addition argument evaluation doesn't happen until formatting time, so it's easy to delay evaluation of expensive arguments:
+Since the formatting of messages is lazy, if a message is filtered out (perhaps by log level), then no formatting occurs. In addition, argument evaluation doesn't happen until formatting time, so it's easy to delay evaluation of expensive arguments:
 
     narrate("Launching in $ seconds", this::computeSecondsToLaunch);
 
-Details on formatting can be found in *MessageFormatter*. 
-
-Registry.of(this)
-[KivaKit](https://www.kivakit.org) 
+Details on formatting can be found in *MessageFormatter*. The logging classes discussed here are part of the kivakit-kernel module of [KivaKit](https://www.kivakit.org).
