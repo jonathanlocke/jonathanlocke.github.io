@@ -13,7 +13,7 @@
 
 <img src="https://www.state-of-the-art.org/grahics/lexakai-background/lexakai-background-narrow-512.png" srcset="https://www.state-of-the-art.org/graphics/lexakai-background/lexakai-background-narrow-512-2x.png"/>
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.04 - A (very) slightly simpler builder pattern](#builder)  
+#### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/>  &nbsp; [2021.07.04 - A (very) slightly simpler builder pattern](#builder)  
 
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.03 - Lazy initialization as a Java design pattern](#lazy)  
 
