@@ -1,10 +1,10 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.13 - How *Broadcaster* / *Listener* loosens coupling and improves component semantics](#broadcaster)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.06 - How *Broadcaster* / *Listener* loosens coupling and improves component semantics](#broadcaster)  
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "broadcaster"></a>
 
-2021.07.13
+2021.07.06
 
 ### How *Broadcaster* / *Listener* loosens coupling and improves component semantics  &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar-32.png" srcset="https://state-of-the-art.org/graphics/sonar/sonar-32-2x.png 2x" style="vertical-align:baseline"/>
 

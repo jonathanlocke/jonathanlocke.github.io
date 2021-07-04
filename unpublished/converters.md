@@ -1,10 +1,10 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - Type converters](#converters)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.20 - Type converters](#converters)  
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "converters"></a>
 
-2021.07.XX
+2021.07.20
 
 ### Type converters &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
 

@@ -1,10 +1,10 @@
 
-#### <img src="https://state-of-the-art.org/graphics/spacer/spacer-32.png" srcset="https://state-of-the-art.org/graphics/spacer/spacer-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - Mirror methods](#mirror-methods)  
+#### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.08 - Mirror methods](#mirror-methods)  
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "mirror-methods"></a>
 
-2021.07.XX
+2021.07.08
 
 ### Mirror methods &nbsp; <img src="https://state-of-the-art.org/graphics/mirror/mirror-32.png" srcset="https://state-of-the-art.org/graphics/mirror/mirror-32-2x.png 2x" style="vertical-align:baseline"/>
 
