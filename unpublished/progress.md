@@ -6,9 +6,9 @@
 
 2021.07.XX
 
-### Reporting the progress of an operation&nbsp; <img src="https://state-of-the-art.org/graphics/bits/bits-32.png" srcset="https://state-of-the-art.org/graphics/bits/bits-32-2x.png 2x" style="vertical-align:baseline"/>
+### Reporting the progress of an operation&nbsp; <img src="https://state-of-the-art.org/graphics/progress/progress-32.png" srcset="https://state-of-the-art.org/graphics/progress/progress-32-2x.png 2x" style="vertical-align:baseline"/>
 
 ProgressReporter
 ProgressiveInput
 
-[KivaKit](https://www.kivakit.org).
+[KivaKit](https://www.kivakit.org)
