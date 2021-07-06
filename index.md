@@ -39,7 +39,7 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
 
 ### Mirror methods &nbsp; <img src="https://state-of-the-art.org/graphics/mirror/mirror-32.png" srcset="https://state-of-the-art.org/graphics/mirror/mirror-32-2x.png 2x" style="vertical-align:baseline"/>
 
-This bite-sized article describes a simple syntactic idea that could make object-oriented programming a little nicer. One legitimate criticism of object-oriented programming is that it sometimes pretty arbitrary which object should have a method. 
+This article describes a simple syntactic idea that could make object-oriented programming a little nicer. One legitimate criticism of object-oriented programming is that it sometimes pretty arbitrary which object should have a method. 
 
 For example, since aliens are able to convert themselves to and from pure energy, we might write:
 
