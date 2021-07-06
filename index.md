@@ -89,6 +89,8 @@ One way to manage this might be to create a converter interface like:
 
 The logic is separate now and more flexible, but we have a whole extra class that is going to have to access properties of *both* classes to perform calculations (breaking encapsulation). And in some cases, maybe we *don't* want this flexibility, so the class is just a waste.
 
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
 This is where the mirror methods come in. What if we could define all of our energy conversion logic in one class, say *Alien*, but make it accessible in *PureEnergy*, without writing any additional code?  
 
 First, lets put all of our extraterrestrial physics logic in one place, in *Alien*:
@@ -115,11 +117,11 @@ Now, the idea. We could solve this whole problem just by adding an annotation. W
         @MirrorMethod("toAlien")
         public static Alien fromPureEnergy(PureEnergy energy)
         {
-            [...]
+            return [...]
         }
     }
 
-The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should automatically (without writing any code) have the method *PureEnergy.toAlien()*:
+The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should automatically (without writing any code) have the mirror method *PureEnergy.toAlien()*:
 
     public class PureEnergy
     {
@@ -129,6 +131,8 @@ The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should
         }
     }
 
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
 The same goes for the other mirrored method. The *toPureEnergy()* method:
 
     public class Alien
@@ -136,11 +140,11 @@ The same goes for the other mirrored method. The *toPureEnergy()* method:
         @MirrorMethod("fromAlien")
         public PureEnergy toPureEnergy()
         {
-            [...]
+            return [...]
         }
     }
 
-would automatically imply the existence of this method:
+would automatically imply the existence of this mirror method:
 
     public class PureEnergy
     {
@@ -157,7 +161,97 @@ Now, we have centralized, encapsulated logic in the *Alien* class that supports 
     energy.toAlien()
     PureEnergy.fromAlien(Alien)
 
-With this idea we get all four methods just by adding two *@MirrorMethod* annotations.
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
+*But how does the mirror method figure out how and where to implement these methods?*. All mirror methods follow these two (possibly self-evident) rules:
+
+1. The mirror method has to have the same return value
+2. The implementation of a mirror method has to call the method being mirrored
+3. If the mirrored method is static with no parameters, it cannot be mirrored
+4. If the mirrored method is static with one or more parameters, the mirror method will be an instance method in the class of the first parameter. It will pass *this* as the first parameter when calling the mirrored method.
+5. If the mirrored method is an instance method with no parameters, the mirror method will be a static method in the class of the return value. It will take the enclosing class of the mirrored method as the class of its first parameter and will use that reference to call the mirrored method.
+6. If the mirrored method is an instance method with one or more parameters, the mirror method will be placed in the class of the first parameter. It will take the enclosing class of the mirrored method as the class of its first parameter, and it will pass *this* as the first parameter when calling the mirrored method.
+7. Any parameters beyond the first parameter will be parameters to the mirror method and will be passed through when calling the mirrored method.
+
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
+So, the mirror method of this (from above):
+
+    public class Alien
+    {
+        @MirrorMethod("toAlien")
+        public static Alien fromPureEnergy(PureEnergy energy)
+        {
+            return [...]
+        }
+    }
+        
+has to look like this (by rules 1, 2 and 4):
+
+    public class PureEnergy
+    {
+        public Alien toAlien()
+        {
+            return Alien.fromPureEnergy(this);
+        }
+    }
+
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
+In the case of the other mirror method above, the mirror method of this:
+
+    public class Alien
+    {
+        @MirrorMethod("fromAlien")
+        public PureEnergy toPureEnergy()
+        {
+            return [...]
+        }
+    }
+    
+will be this (by rules 1, 2 and 5):
+
+    public class PureEnergy
+    {
+        public static PureEnergy fromAlien(Alien alien)
+        {
+            return alien.toPureEnergy();
+        }
+    }
+
+The *toPureEnergy()* method is an instance method with no parameters. So the *alien* value here has to be a parameter.
+
+<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+
+Let's take a look at another example using the same process:
+
+This mirror method here:
+
+    public class Distance
+    {
+        @MirrorMethod("speedToGo")
+        public Speed per(Duration duration)
+        {
+            return [...]
+        }
+    }    
+
+infers the existence of this method (by rules 1, 2 and 6):
+
+    public class Duration
+    {
+        public Speed speedToGo(Distance distance)
+        {
+            return distance.per(this);
+        }
+    }
+    
+Now we can say either of these two things:
+
+    var speed = Distance.miles(1).per(Duration.minutes(4));
+    var speed = Duration.minutes(4).speedToGo(Distance.miles(1));
+
+and both resolve to the same code.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
