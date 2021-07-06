@@ -53,7 +53,7 @@ For example, since aliens are able to convert themselves to and from pure energy
     
     public class PureEnergy
     {
-        public PureEnergy toAlien()
+        public Alien toAlien()
         {
             [...]
         }
@@ -77,7 +77,7 @@ But we could just as easily write:
         }
     }
 
-The code in *Alien* seems preferable since it doesn't use static methods, but what if the conversion between aliens and pure energy involves a lot of calculations? We will want to keep those calculations private, since the implementation may change. And we may also want to share some of the common code between the two conversions (alien to pure energy and pure energy to alien).
+The code in *Alien* seems preferable since it doesn't use static methods, but what if the conversion between aliens and pure energy involves a lot of calculations? We would probably want to keep those calculations private, since the implementation may change. But we might also want to share some of the common code between the two conversions (alien to pure energy and pure energy to alien).
 
 One way to manage this might be to create a converter interface like:
 
