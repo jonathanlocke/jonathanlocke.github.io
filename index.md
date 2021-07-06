@@ -163,14 +163,14 @@ Now, we have centralized, encapsulated logic in the *Alien* class that supports 
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
-*But how does the mirror method figure out how and where to implement these methods?*. 
+*But how does the mirror method feature figure out how and where to implement these methods?*. 
 
 All mirror methods follow these rules:
 
 1. The mirror method has to have the same return value
 2. The implementation of a mirror method has to call the method being mirrored
 3. If the mirrored method is static with no parameters, it cannot be mirrored
-4. If the mirrored method is static with one or more parameters, the mirror method will be an instance method in the class of the first parameter. It will pass *this* as the first parameter when calling the mirrored method.
+4. If the mirrored method is static with one or more parameters, the mirror method will be an instance method in the class of the mirrored method's first parameter. It will pass *this* as the first parameter when calling the mirrored method.
 5. If the mirrored method is an instance method with no parameters, the mirror method will be a static method in the class of the return value. It will take the enclosing class of the mirrored method as the class of its first parameter and will use that reference to call the mirrored method.
 6. If the mirrored method is an instance method with one or more parameters, the mirror method will be placed in the class of the first parameter. It will take the enclosing class of the mirrored method as the class of its first parameter, and it will pass *this* as the first parameter when calling the mirrored method.
 7. Any parameters beyond the first parameter will be parameters to the mirror method and will be passed through when calling the mirrored method.
