@@ -77,9 +77,9 @@ But we could just as easily write:
         }
     }
 
-The code in *Alien* seems preferable since it doesn't use static methods, but what if the conversion between aliens and pure energy involves a lot of calculations? We would probably want to keep those calculations private, since the implementation may change. But we might also want to share some of the common code between the two conversions (alien to pure energy and pure energy to alien).
+The code in the first example seems preferable since it doesn't use static methods, but  our code is split between two classes. What if the conversion between aliens and pure energy involves common code that we might like to keep private to a single class? We can do that, but we would have to adopt an asymmetrical design where we have one *from* static method and one *to* instance method.
 
-One way to manage this might be to create a converter interface like:
+One way to get around this might be to create a converter interface like:
 
     public class AlienTransmogrifier
     {
@@ -87,7 +87,7 @@ One way to manage this might be to create a converter interface like:
         PureEnergy toPureEnergy(Alien alien);
     }
 
-The logic is separate now and more flexible, but we have a whole extra class that is going to have to access properties of *both* classes to perform calculations (breaking encapsulation). And in some cases, maybe we *don't* want this flexibility, so the class is just a waste.
+The logic is separate now and more flexible, but we have a whole extra class that is going to have to access properties of *both* classes to perform calculations (possibly breaking encapsulation). And in some cases, maybe we *don't* want this flexibility, so the class is just a waste.
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
