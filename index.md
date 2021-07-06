@@ -77,7 +77,7 @@ But we could just as easily write:
         }
     }
 
-The code in *Alien* seems preferable since it doesn't use static methods, but what if the conversion between aliens and pure energy involves a lot of calculations? We may want to keep those calculations private, since the implementation may change. There might also be code that we could share between the two conversions (alien to pure energy and pure energy to alien). And we will want to keep that code private to improve encapsulation.
+The code in *Alien* seems preferable since it doesn't use static methods, but what if the conversion between aliens and pure energy involves a lot of calculations? We will want to keep those calculations private, since the implementation may change. And we may also want to share some of the common code between the two conversions (alien to pure energy and pure energy to alien).
 
 One way to manage this might be to create a converter interface like:
 
@@ -108,7 +108,7 @@ First, lets put all of our extraterrestrial physics logic in one place, in *Alie
 
 This is great for encapsulating our conversion logic. But now if we have a *PureEnergy* object we can't just say *energy.toAlien()*. We won't even know that this conversion is possible unless we happen to look at *Alien*. That's not good for API ease-of-use.
 
-We can solve this whole problem by adding an annotation (and plenty of [*handwaving*](https://en.wikipedia.org/wiki/Hand-waving)):
+Now, the idea. We could solve this whole problem just by adding an annotation. With plenty of [handwaving](https://en.wikipedia.org/wiki/Hand-waving), we have:
  
     public class Alien
     {
@@ -119,7 +119,7 @@ We can solve this whole problem by adding an annotation (and plenty of [*handwav
         }
     }
 
-The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should automatically (without writing any code) have the static method *PureEnergy.toAlien()*:
+The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should automatically (without writing any code) have the method *PureEnergy.toAlien()*:
 
     public class PureEnergy
     {
@@ -150,14 +150,14 @@ would automatically imply the existence of this method:
         }
     }
 
-Now, we have centralized, encapsulated logic that supports all four of our conversion use cases and is easily discovered with IDE autocompletion. 
+Now, we have centralized, encapsulated logic in the *Alien* class that supports all four of our conversion use cases and is easily discovered with IDE autocompletion: 
 
     alien.toPureEnergy()
+    alien.fromPureEnergy(PureEnergy)
     energy.toAlien()
     PureEnergy.fromAlien(Alien)
-    Alien.fromPureEnergy(PureEnergy)
 
-We did this by simply adding two *@MirrorMethod* annotations.
+With this idea we get all four methods just by adding two *@MirrorMethod* annotations.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
