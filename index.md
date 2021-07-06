@@ -91,7 +91,7 @@ The logic is separate now and more flexible, but we have a whole extra class tha
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
-This is where the mirror methods come in. What if we could define all of our energy conversion logic in one class, say *Alien*, but make it accessible in *PureEnergy*, without writing any additional code?  
+This is where mirror methods come in. What if we could define all of our energy conversion logic in one class, say *Alien*, but make it accessible in *PureEnergy*, without writing any additional code?  
 
 First, lets put all of our extraterrestrial physics logic in one place, in *Alien*:
 
@@ -110,7 +110,7 @@ First, lets put all of our extraterrestrial physics logic in one place, in *Alie
 
 This is great for encapsulating our conversion logic. But now if we have a *PureEnergy* object we can't just say *energy.toAlien()*. We won't even know that this conversion is possible unless we happen to look at *Alien*. That's not good for API ease-of-use.
 
-Now, the idea. We could solve this whole problem just by adding an annotation. With plenty of [handwaving](https://en.wikipedia.org/wiki/Hand-waving), we have:
+Now, the idea. What if we could solve this whole problem by just adding an annotation? With plenty of [handwaving](https://en.wikipedia.org/wiki/Hand-waving) concerning compilers and language specs, we have:
  
     public class Alien
     {
@@ -163,7 +163,9 @@ Now, we have centralized, encapsulated logic in the *Alien* class that supports 
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
-*But how does the mirror method figure out how and where to implement these methods?*. All mirror methods follow these two (possibly self-evident) rules:
+*But how does the mirror method figure out how and where to implement these methods?*. 
+
+All mirror methods follow these rules:
 
 1. The mirror method has to have the same return value
 2. The implementation of a mirror method has to call the method being mirrored
@@ -175,7 +177,7 @@ Now, we have centralized, encapsulated logic in the *Alien* class that supports 
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
-So, the mirror method of this (from above):
+So, the mirror method of this (repeated from above):
 
     public class Alien
     {
@@ -187,6 +189,8 @@ So, the mirror method of this (from above):
     }
         
 has to look like this (by rules 1, 2 and 4):
+
+> (4) If the mirrored method is static with one or more parameters, the mirror method will be an instance method in the class of the first parameter. It will pass *this* as the first parameter when calling the mirrored method.
 
     public class PureEnergy
     {
@@ -211,6 +215,8 @@ In the case of the other mirror method above, the mirror method of this:
     
 will be this (by rules 1, 2 and 5):
 
+> (5) If the mirrored method is an instance method with no parameters, the mirror method will be a static method in the class of the return value. It will take the enclosing class of the mirrored method as the class of its first parameter and will use that reference to call the mirrored method.
+
     public class PureEnergy
     {
         public static PureEnergy fromAlien(Alien alien)
@@ -218,8 +224,6 @@ will be this (by rules 1, 2 and 5):
             return alien.toPureEnergy();
         }
     }
-
-The *toPureEnergy()* method is an instance method with no parameters. So the *alien* value here has to be a parameter.
 
 <img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
 
@@ -237,6 +241,8 @@ This mirror method here:
     }    
 
 infers the existence of this method (by rules 1, 2 and 6):
+
+> (6) If the mirrored method is an instance method with one or more parameters, the mirror method will be placed in the class of the first parameter. It will take the enclosing class of the mirrored method as the class of its first parameter, and it will pass *this* as the first parameter when calling the mirrored method.
 
     public class Duration
     {
