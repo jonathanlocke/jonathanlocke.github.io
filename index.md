@@ -440,7 +440,7 @@ We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we 
 
 *Lazy* can reduce the four lines of if-*null* check boilerplate above to these two lines:
 
-    private Map<Key, Value> lazyMap = Lazy.of(this::createMap);
+    private Lazy<Map<Key, Value>> lazyMap = Lazy.of(this::createMap);
     
     [...]
     
