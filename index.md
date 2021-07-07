@@ -45,11 +45,11 @@ Dr. Alan Kay's conception of object-oriented programming in the late 1960's came
 
 > [...] Smalltalk is not only NOT its syntax or the class library, it is not even about classes. I'm sorry that I long ago coined the term "objects" for this topic because it gets many people to focus on the lesser idea. The big idea is "messaging" [...] 
 
-Which brings us to the *Broadcaster* / *Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster/Listener* design pattern is one way to implement messaging, and it turns out to be very useful and powerful.
+Which brings us to the *Broadcaster/Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster/Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
-A *Broadcaster* is a *Transmitter* that transmits *Messages* to an *audience* of one or more *Listeners*:
+A *Broadcaster* is a *Transmitter* that transmits *Messages* to an audience of one or more *Listeners*:
 
-<img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-300.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-300-2x.png 2x" style="vertical-align:middle"/>
+<img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150-2x.png 2x" style="vertical-align:middle"/>
 
 A *Broadcaster* keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
@@ -64,7 +64,7 @@ A *Broadcaster* keeps a list of *Listener*s (the audience) to which it will tran
         void removeListener(Listener listener);
     }
 
-A *Listener* receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message.
+A *Listener* receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
     public interface Listener<Transmittable>
     {
@@ -77,7 +77,7 @@ A *Listener* receives messages sent to it with its *receive(Transmittable)* meth
         void receive(Transmittable message);
     }
 
-Here are a few examples of the many *Listener*s in KivaKit, just to give an idea of the range of tasks that listeners might perform:
+Here are a few examples of the many *Listener*s in KivaKit, just to give an idea of the range of tasks that listeners can perform:
 
 | Listener | Purpose |
 |---------|--------|
