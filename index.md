@@ -49,7 +49,7 @@ Which brings us to the *Broadcaster/Listener* design pattern. A language like Ja
 
 A *Broadcaster* is a *Transmitter* that transmits *Messages* to an audience of one or more *Listeners*:
 
-<img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150-2x.png 2x" style="vertical-align:middle"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150-2x.png 2x" style="vertical-align:middle"/>
 
 A *Broadcaster* keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
@@ -193,7 +193,7 @@ For example, since aliens are able to convert themselves to and from pure energy
         }
     }
 
-<img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
 
 But we could just as easily write:
 
@@ -682,7 +682,7 @@ Further, this transition must be *atomic*. An object should either be *allocated
 
 Let's try a thought-experiment where we associate an actual state machine with each object. Initially this state machine will be in the *allocated* state. When the object has been fully initialized (by calling methods on the object), it will transition to *ready*. 
 
-<img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
 
 We can specify this transition by adding two new keywords to our language: *is* and *when*:
 
@@ -698,7 +698,7 @@ We can specify this transition by adding two new keywords to our language: *is* 
 
 The *is-when* statement here specifies that when our *allocated* *Alien* has both a *brain* and a *spaceship* (aliens have plug-and-play brains), it will transition to the state *ready*. 
 
-<img src="https://state-of-the-art.org/graphics/saucer/saucer-80.png" srcset="https://state-of-the-art.org/graphics/saucer/saucer-80-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer-80.png" srcset="https://state-of-the-art.org/graphics/saucer/saucer-80-2x.png 2x" style="vertical-align:middle"/> 
 
 Now we can simply allow methods to mutate the *brain* and *ship* fields to trigger this transition. But some methods cannot function in the *allocated* state. These methods need to be *gated* until our *Alien* reaches the *ready* state. We can do this by adding the keyword *can*:
 
