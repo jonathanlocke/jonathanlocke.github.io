@@ -47,26 +47,26 @@ KivaKit provides an abstraction that allows easy and consistent access to these 
         listenTo(zip.entry("data.txt")).safeCopyTo(folder, OVERWRITE);
     }
     
-In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* call connects the method's object to the argument object, creating a listener chain. If something interesting happened in the resource, it would broadcast a message to its listeners, and the example method's object would re-broadcast it to its listeners.
+In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* call connects the method's object to the argument object, creating a listener chain. If something interesting happens in a resource, it would broadcast a message to its listeners, and the example method's object would then re-broadcast it to its listeners. For more information, see the [Broadcaster/Listener design pattern.](#broadcaster)
 
-All *Resource*s use the *Broadcaster.fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base class *Transceiver* does this:
+All *Resource*s inherit and use the *fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base class *Transceiver* does two things:
 
-1. Broadcasts *FatalProblem* message to listeners
-2. Throws *IllegalStateException*
+1. Broadcasts a *FatalProblem* message to listeners
+2. Throws an *IllegalStateException*
 
 The code (in *Broadcaster*'s parent interface *Transceiver*) looks like this:
 
-    default <T> T fatal(final String text, final Object... arguments)
+    default <T> T fatal(String text, Object... arguments)
     {
-        final var problem = new FatalProblem(text, arguments);
+        var problem = new FatalProblem(text, arguments);
         handle(problem);
         problem.throwAsIllegalStateException();
         return null;
     }
 
-*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast.
+*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast (and probably logged depending on the terminal listener(s)).
 
-For example, in this common(but unfortunate) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause and logged:
+For example, in this common (but unfortunate looking) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause and logged:
 
     class Launcher
     {
@@ -95,7 +95,7 @@ For example, in this common(but unfortunate) idiom, error information is propaga
         }
     }
 
-A KivaKit alternative is this:
+A KivaKit alternative to this idiom is this:
 
     class Launcher extends BaseRepeater
     {
@@ -118,9 +118,9 @@ A KivaKit alternative is this:
 
 After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). 
 
-How do KivaKit resources work?
+Okay, but how do KivaKit resources work?
 
-The design of KivaKit resources is [fairly complex](https://www.kivakit.org/0.9.8-beta/lexakai/kivakit/kivakit-resource/documentation/diagrams/diagram-resource.svg), so we will focus on the most important, high level aspects in this article.
+The design of KivaKit's resource module is [fairly complex](https://www.kivakit.org/0.9.8-beta/lexakai/kivakit/kivakit-resource/documentation/diagrams/diagram-resource.svg), so we will focus on the most important, high level aspects in this article.
 
 A simplified UML diagram:
 
@@ -133,11 +133,11 @@ The *Resource* class in this diagram is central. This class:
 * Has a time of last modification (from *ModificationTimestamped*)
 * Is a *ReadableResource*
 
-Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()* or read from with the convenience methods  *ResourceReader*.
+Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()* or read from with the convenience methods in *ResourceReader*.
 
 In addition, some resources are *WritableResource*s. Those can be opened with *Writable.openForWriting()* and written to with the convenience class *ResourceWriter*
 
-The *Resource* class itself can determine if the resource *exists()* and if it *isRemote()*. Remote resources can be *materialized* to the local filesystem before reading them (using methods not in the UML diagram). *Resource*s can perform a safe copy to a destination *File* or *Folder* with the two *safeCopyTo()* methods. Safe copying involves 3 steps:
+The *Resource* class itself can determine if the resource *exists()* and if it *isRemote()*. Remote resources can be *materialized* to a temporary file on the local filesystem before reading them (using methods not in the UML diagram). *Resource*s can also perform a safe copy of their contents to a destination *File* or *Folder* with the two *safeCopyTo()* methods. Safe copying involves 3 steps:
 
 1. Write to a temporary file
 2. Delete the destination file
@@ -147,9 +147,7 @@ Finally, *BaseWritableResource* extends *BaseReadableResource* to add the abilit
 
 <img src="../uml/resource-classes.png" width=500/>
 
-Notice that all resources are *Repeater*s (see [Broadcaster/Listener design pattern](#broadcaster)), which makes error handling easy and consistent. 
-
-The implementation of a simple *ReadableResource* requires only an *onOpenForReading* method and a *sizeInBytes()* method. The *StringResource* class is a good example, and looks like this:
+Now, let's take a quick look at a *Resource* implementation. The implementation of a simple *ReadableResource* requires only an *onOpenForReading* method and a *sizeInBytes()* method. A default for everything else will be provided by *BaseReadableResource*. The *StringResource* class is a good example, and looks like this:
 
     public class StringResource extends BaseReadableResource
     {
@@ -174,13 +172,13 @@ The implementation of a simple *ReadableResource* requires only an *onOpenForRea
         }
     }
 
-A few things we didn't talk about (that will be covered in future articles):
+A few things we didn't talk about (to be covered in future articles):
 
 * All resources transparently implement different kinds of compression and decompression via the *Codec* interface
 * How the *ProgressReporter* interface works
 * Resolution of generic resource identifiers
 * Loading of SPI implementations used by File and Folder (Local, S3, HDFS, etc)
 
-The resources covered above are available at [KivaKit](https://www.kivakit.org).
+The resource module covered above is available in *kivakit-resource* in the [KivaKit](https://www.kivakit.org) project.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
