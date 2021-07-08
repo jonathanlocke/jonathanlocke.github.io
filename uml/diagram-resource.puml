@@ -1,0 +1,103 @@
+@startuml
+
+    !include lexakai.theme
+
+    title "Resources"
+
+    abstract BaseReadableResource
+
+    interface WritableResource
+    interface Resource
+
+    Resource <|-- BaseReadableResource
+    abstract class BaseReadableResource
+    {
+    }
+
+    BaseReadableResource <|-- BaseWritableResource
+    WritableResource <|-- BaseWritableResource
+    abstract class BaseWritableResource
+    {
+        +boolean delete()
+        +void save(InputStream, ProgressReporter)
+    }
+
+    interface Readable
+    {
+        InputStream openForReading()
+    }
+    interface Writable
+    {
+        OutputStream openForWriting()
+    }
+    Readable <|-- ReadableResource
+    ReadableResource --> ResourceReader : "provides"
+    interface ReadableResource
+    {
+        +ResourceReader reader()
+    }
+
+    interface ByteSized
+    {
+        Bytes sizeInBytes()
+    }
+    interface ModificationTimestamped
+    {
+        Time lastModified()
+    }
+    interface ReadableResource
+    interface ResourcePathed
+    ResourcePathed <|-- Resource
+    ModificationTimestamped <|-- Resource
+    ByteSized <|-- Resource
+    ReadableResource <|-- Resource
+    interface Resource
+    {
+        +boolean isRemote()
+        +boolean exists()
+        +void safeCopyTo(File destination, CopyMode)
+        +void safeCopyTo(Folder destination, CopyMode)
+    }
+
+    class StringPath
+    ResourcePath <|- StringPath
+    class ResourcePath
+    {
+        +FileName fileName()
+        +Extension extension()
+        +FilePath withExtension(Extension)
+    }
+
+    ResourcePathed --> ResourcePath : "provides"
+    interface ResourcePathed
+    {
+        +ResourcePath path()
+    }
+
+    class ResourceReader
+    {
+        +String string()
+        +Iterable<String> lines()
+        +byte[] bytes()
+        +Reader textReader()
+    }
+
+    class ResourceWriter
+    {
+        +PrintWriter printWriter()
+        +void save(String)
+        +Writer textWriter()
+    }
+
+    interface Resource
+    interface Writable
+    Resource <|-- WritableResource
+    Writable <|-- WritableResource
+    WritableResource --> ResourceWriter : "provides"
+    interface WritableResource
+    {
+        +ResourceWriter writer()
+    }
+
+@enduml
+
