@@ -8,18 +8,19 @@
 
 ### KivaKit resources &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
 
-A resource is a stream of data that can be opened and then read from or written to. Examples of resources include:
+A resource is a stream of data that can be opened, and then read from or written to. Examples of resources include:
 
 * Files
 * Sockets
 * Zip or JAR file entries
 * S3 objects
+* Package resources
 * HDFS files
 * HTTP responses
 * Input streams
 * Output streams
 
-KivaKit provides an abstraction that allows easy and consistent access to these resources and others, and it is easy to create new resources. Some short examples that use the resource mini-framework API:
+KivaKit provides an abstraction that allows easy and consistent access to these resources and others, and it makes it easy to create new resources. Some short examples:
 
 *Read the lines of a .csv file from a package, reporting progress:*
 
@@ -41,12 +42,83 @@ KivaKit provides an abstraction that allows easy and consistent access to these 
 
     var file = File.parse("/users/jonathan/input.zip");
     var folder = Folder.parse("/users/jonathan");
-    try (ZipArchive zip = ZipArchive.open(file, reporter, READ))
+    try (var zip = ZipArchive.open(file, reporter, READ))
     {
         listenTo(zip.entry("data.txt")).safeCopyTo(folder, OVERWRITE);
     }
     
-In each case, the code is assumed to be in a *Repeater* class. So, the *listenTo()* call will broadcast messages to the listener of that class. Each example will throw an exception if the resource cannot be opened or read from.
+In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* call connects the method's object to the argument object, creating a listener chain. If something interesting happened in the resource, it would broadcast a message to its listeners, and the example method's object would re-broadcast it to its listeners.
+
+All *Resource*s use the *Broadcaster.fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base class *Transceiver* does this:
+
+1. Broadcasts *FatalProblem* message to listeners
+2. Throws *IllegalStateException*
+
+The code (in *Broadcaster*'s parent interface *Transceiver*) looks like this:
+
+    default <T> T fatal(final String text, final Object... arguments)
+    {
+        final var problem = new FatalProblem(text, arguments);
+        handle(problem);
+        problem.throwAsIllegalStateException();
+        return null;
+    }
+
+*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast.
+
+For example, in this common(but unfortunate) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause and logged:
+
+    class Launcher
+    {
+        void doDangerousStuff()
+        {
+            [...]
+            
+            throw new DangerousStuffException("Whoops.");
+        }
+    }
+     
+    class AttackPlanet
+    {
+        boolean prepareMissileLauncher()
+        {
+            try
+            {
+                doDangerousStuff();
+                return true;
+            }
+            catch (DangerousStuffException e)
+            {
+                LOGGER.problem(e, "Unable to do dangerous stuff");
+                return false;
+            }
+        }
+    }
+
+A KivaKit alternative is this:
+
+    class Launcher extends BaseRepeater
+    {
+        void doDangerousStuff()
+        {
+            [...]
+     
+            fatal("Unable to do dangerous stuff: Whoops.");
+        }
+    }
+    
+    class AttackPlanet extends BaseRepeater
+    {
+        boolean prepareMissileLauncher()
+        {    
+            listenTo(new Launcher()).doDangerousStuff();
+            return true;
+        }
+    }
+
+After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). 
+
+How do KivaKit resources work?
 
 The design of KivaKit resources is [fairly complex](https://www.kivakit.org/0.9.8-beta/lexakai/kivakit/kivakit-resource/documentation/diagrams/diagram-resource.svg), so we will focus on the most important, high level aspects in this article.
 
@@ -102,12 +174,13 @@ The implementation of a simple *ReadableResource* requires only an *onOpenForRea
         }
     }
 
+A few things we didn't talk about (that will be covered in future articles):
 
+* All resources transparently implement different kinds of compression and decompression via the *Codec* interface
+* How the *ProgressReporter* interface works
+* Resolution of generic resource identifiers
+* Loading of SPI implementations used by File and Folder (Local, S3, HDFS, etc)
 
-Some things we didn't talk about:
+The resources covered above are available at [KivaKit](https://www.kivakit.org).
 
-* All resources are repeaters 
-* All resources transparently implement compression and decompression
-
-
-[KivaKit](https://www.kivakit.org)
+Questions? Comments? Tweet yours to @OpenKivaKit.
