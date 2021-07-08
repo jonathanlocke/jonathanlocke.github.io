@@ -13,7 +13,7 @@
 
 <img src="https://www.state-of-the-art.org/grahics/lexakai-background/lexakai-background-narrow-512.png" srcset="https://www.state-of-the-art.org/graphics/lexakai-background/lexakai-background-narrow-512-2x.png"/>
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.07 - How *Broadcaster/Listener* improves KivaKit component semantics](#broadcaster)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.07 - How *Broadcaster/Listener* improves KivaKit component semantics](#broadcaster) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> 
 
 #### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.05 - Mirror methods](#mirror-methods)  
 
@@ -25,9 +25,13 @@
 
 #### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.26 - Constructors are evil (and how we could eliminate them)](#construction)  
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How KivaKit adds mixins to Java](#mixins)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.25 - How KivaKit adds mixins to Java](#mixins) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/>
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why KivaKit provides service locator instead of dependency injection](#service-locator)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.06.23 - Why KivaKit provides service locator instead of dependency injection](#service-locator) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> 
+
+<br/>
+
+<img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> Key KivaKit article
 
 <br/>
 
