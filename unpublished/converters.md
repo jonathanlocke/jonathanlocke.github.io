@@ -15,6 +15,8 @@ It is common problem to convert one type into another. As with most problems, it
         To convert(From from);
     }
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../graphics/convert/convert.svg" width=50/>
+
 In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [broadcast to interested listeners](#broadcaster). 
 
 While this interface perfectly captures a one way conversion, we may want to convert the destination type back to the original type:
@@ -29,6 +31,8 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
     public interface StringConverter<Value> extends TwoWayConverter<String, Value>
     {
     }
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../graphics/string/string.svg" width=50/>
 
 These are fairly elegant interfaces, but what about the implementation?
 
