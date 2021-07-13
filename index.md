@@ -203,7 +203,8 @@ Now we can implement our *StringConverter* interface. Besides *null* values and 
                 // and we allow null values
                 if (allowsNull())
                 {
-                    // return the string representation of null.                    return nullString();
+                    // return the string representation of null.
+                    return nullString();
                 }
                 else
                 {
