@@ -110,7 +110,7 @@ We would like the base implementation of *Converter* to handle issues that come 
          * as problems.
          */
         @Override
-        public final To convert(final From from)
+        public To convert(From from)
         {
             // If the value is null,
             if (from == null)
@@ -131,7 +131,7 @@ We would like the base implementation of *Converter* to handle issues that come 
                 // Return the converted value.
                 return onConvert(from);
             }
-            catch (final Exception e)
+            catch (Exception e)
             {
                 // If an exception occurs, broadcast a problem
                 problem(e, "${class}: Cannot convert ${debug}", getClass(), from);
