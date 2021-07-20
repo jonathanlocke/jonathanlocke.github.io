@@ -58,7 +58,7 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
         Validator validator(ValidationType type);
     }
  
-*ValidationType* is an identifier that has sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the KivaKit [*Broadcaster / Listener*](#broadcaster) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
+*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the KivaKit [*Broadcaster / Listener*](#broadcaster) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
 
     public interface Validator
     {
@@ -67,8 +67,8 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
  
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"
-style="vertical-align:bottom"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope.svg" width="80" style="vertical-align:bottom"/>
+
 
     public class Email implements Validatable
     {
@@ -102,7 +102,7 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
           addIfNotNull()  // broadcast it and add it to the list of issues
     issues.isValid()      // Return true if there are no important issues
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/footprints/footprints.svg" width="60"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/footprints/footprints.svg" width="80"/>
     
 And the implementation of this looks (very roughly) like this:
 
