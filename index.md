@@ -71,17 +71,20 @@ In this diagram, the 'A' characters represent *alpha* bits, the 'R' characters r
     private static BitField GREEN = COLOR.field('G');
     private static BitField BLUE  = COLOR.field('B');
 
-These *BitField* objects contain the shift and mask values, determined from the diagram,  needed to retrieve the field value from a primitive. For example, in this code:
+These *BitField* objects contain the shift and mask values, determined from the diagram, needed to retrieve the field values from a primitive. For example, in this code:
 
     var rgb   = 0xff8040;
+    
     var red   = RED.getInt(rgb);
     var green = GREEN.getInt(rgb);
     var blue  = BLUE.getInt(rgb);
 
 the variable *red* will be 0xff, *green* will be 0x80 and *blue* will be 0x40.
 
-We can use these same *BitField* objects to set values into a primitive value:
+We can use these same *BitField* objects to set the bit fields of a primitive value:
 
+    var rgb = 0;
+    
     rgb = RED.set(rgb, 0x12);
     rgb = GREEN.set(rgb, 0x34);
     rgb = BLUE.set(rgb, 0x56);
