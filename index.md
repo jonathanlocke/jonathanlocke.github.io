@@ -82,9 +82,9 @@ the variable *red* will be 0xff, *green* will be 0x80 and *blue* will be 0x40.
 
 We can use these same *BitField* objects to set values into a primitive value:
 
-    RED.set(rgb, 0x12);
-    GREEN.set(rgb, 0x34);
-    BLUE.set(rgb, 0x56);
+    rgb = RED.set(rgb, 0x12);
+    rgb = GREEN.set(rgb, 0x34);
+    rgb = BLUE.set(rgb, 0x56);
 
 After executing this code, our *rgb* variable will now be 0x123456. The handy *BitDiagram* class is in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
 
