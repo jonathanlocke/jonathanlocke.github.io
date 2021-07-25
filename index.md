@@ -46,8 +46,8 @@
 <img src="https://www.state-of-the-art.org/graphics/envelope/envelope-20.png" srcset="https://www.state-of-the-art.org/graphics/envelope/envelope-20-2x.png"
 style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](http://eepurl.com/hCivUX)
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "bit-diagram"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.27
 
@@ -90,8 +90,8 @@ After executing this code, our *rgb* variable will now be 0x123456. The handy *B
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "validation"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.20
  
@@ -196,8 +196,8 @@ Note that the *validate()* / *onValidate()* methods are an example of the [polym
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "converters"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.13
 
@@ -458,8 +458,8 @@ In another article, we can take a look at how converters are used to implement o
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "polymorphic-final-methods"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.13
 
@@ -557,8 +557,8 @@ The *polymorphic final method* pattern is used throughout [KivaKit](https://www.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "broadcaster"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.07
 
@@ -689,8 +689,8 @@ The simplified *Broadcaster/Listener* design pattern discussed above is availabl
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "mirror-methods"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.05
 
@@ -920,8 +920,8 @@ and both resolve to the same code.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "builder"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.04
 
@@ -1036,8 +1036,8 @@ My quibble is that we can get rid of the duplicate fields in the *Builder* class
      
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "lazy"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.07.03
 
@@ -1109,8 +1109,8 @@ True, it's not quite as nice as having a *lazy* keyword, but it improves readabi
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "loom"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.28
 
@@ -1175,8 +1175,8 @@ Right now, Go is a reasonable choice for cloud development, but when Project Loo
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "construction"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.26
 
@@ -1328,8 +1328,8 @@ The object can no longer be used once it is *shutdown*.
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "mixins"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.25
 
@@ -1442,8 +1442,8 @@ This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a modul
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 <a name = "service-locator"></a>
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 2021.06.23
 
