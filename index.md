@@ -91,6 +91,12 @@ We can use these same *BitField* objects to set the bit fields of a primitive va
 
 After executing this code, our *rgb* variable will now be 0x123456. The handy *BitDiagram* class is in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
 
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <a name = "validation"></a>
@@ -195,7 +201,13 @@ And the implementation of this looks (very roughly) like this:
         }
     }
 
-Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](#polymorphic-final-methods). The validation mini-framework that we've discussed here is available in the kivakit-kernel module in [KivaKit](https://www.kivakit.org).
+Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](#polymorphic-final-methods). The validation mini-framework that we've discussed here is available in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
@@ -206,7 +218,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit.
 
 ### Broadcasting KivaKit type converters &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
 
-It is common problem to convert one type into another. As with most problems, it is best to begin with the simplest possible design:
+It is a common problem to convert one type into another. As with most problems, it is best to begin with the simplest possible design:
 
     public interface Converter<From, To> extends Repeater
     {
@@ -459,6 +471,12 @@ We could also capture the errors with *MessageList* and analyze them, or count t
 
 In another article, we can take a look at how converters are used to implement other features in KivaKit. In the meantime, the simplified conversion code we've explored above is available for use in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
 
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <a name = "polymorphic-final-methods"></a>
@@ -689,6 +707,12 @@ KivaKit has hundreds of classes that are *Repeaters*. This allows most non-trivi
 Each of these classes listens to errors from components it uses and broadcasts problems to its own listeners.
 
 The simplified *Broadcaster/Listener* design pattern discussed above is available in its entirety in *kivakit-kernel* and is used throughout [KivaKit](https://www.kivakit.org) for messaging between components.
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
@@ -1110,6 +1134,12 @@ We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we 
 
 True, it's not quite as nice as having a *lazy* keyword, but it improves readability by making the flow of code easier to follow. The *Lazy* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
 
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <a name = "loom"></a>
@@ -1443,6 +1473,12 @@ Our *AttributedMixin* can now be added to any object, and it will provide a keye
 
 This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org). 
 
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <a name = "service-locator"></a>
@@ -1499,6 +1535,12 @@ These two approaches seem identical at first glance, but there *is* one subtle d
 Why should we care about this? Well, aside from purely ideological differences, the SL approach makes it very easy for a registry implementation to manage services more dynamically, and potentially more efficiently as well. For example, a sophisticated registry could pool instances of non-thread-safe services that are expensive to create, and use some form of concurrency control to restrict access. A registry implementation could also hold weak or soft references to services, allowing rarely used but memory hungry services to be collected when they're not actually in use. It could create some services with a factory on-the-fly. It could even vary the implementation of an interface over time. In each case, the SL design pattern is more flexible because the scope of reference to a service is an implementation detail, and with the SL pattern the consumer of a service can hold a reference to it exactly as long as it needs it.
 
 A full implementation of the SL design pattern is available in [KivaKit](https://www.kivakit.org).
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
 
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
