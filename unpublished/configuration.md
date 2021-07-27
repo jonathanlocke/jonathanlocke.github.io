@@ -14,11 +14,11 @@ The *kivakit-configuration* module provides three useful facilities for configur
 2. Settings registry (*Settings*)
 3. Base component class (*BaseComponent*)
 
-We will examine each of these in order.
+We will examine each of these in order. In practice, most applications will simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with lookup and settings registries.
 
 #### The object lookup registry
 
-The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see <a href="#service-locator">Why KivaKit provides service locator instead of dependency injection</a>. The preferred way to use *Registry* to register an object is:
+The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see <a href="#service-locator">Why KivaKit provides service locator instead of dependency injection</a>. The preferred way to use *Registry* to register an object is:
 
     Spaceship spaceship = [...]
     
@@ -36,15 +36,15 @@ If there is more than one *Spaceship* in the registry, is becomes necessary to d
     
     Spaceship spaceship = [...]
 
-    Registry.of(this).register(spaceship, ShipType.ORBITER);
+    Registry.of(this).register(spaceship, ORBITER);
     
     [...]
     
-    var orbiter = Registry.of(this).lookup(Spaceship.class, ShipType.ORBITER);
+    var orbiter = Registry.of(this).lookup(Spaceship.class, ORBITER);
 
 #### The settings registry
 
-The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its subclasses *SettingsFolder* and *SettingsPackage* provide access to configuration objects in the form of user-defined settings objects. For example, this settings object might be used to configure Apache Pinot:
+The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its subclasses *SettingsFolder* and *SettingsPackage* provide registries of user-defined settings objects. For example, this user-defined settings object might configure *Apache Pinot*:
 
     public class PinotSettings
     {
@@ -60,7 +60,7 @@ The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its su
         }
     }
 
-The *PinotSettings* object here specifies a port for Apache Zookeeper and the name of an Apache Pinot cluster. These settings can be loaded from a *.properties* file in a *Folder* or a *Package*. The *.properties* file for *PinoSettings* looks like this:
+The *PinotSettings* object here specifies a port for *Apache Zookeeper*, and the name of an *Apache Pinot* cluster. These settings can be loaded from a *.properties* file in a *Folder* or a *Package*. The *.properties* file for *PinoSettings* looks like this:
 
     class         = com.telenav.scout.safety.demo.PinotSettings
     zookeeperPort = localhost:2181
@@ -79,9 +79,35 @@ To load all settings objects from a folder into the settings registry for *this*
 
     Settings.of(this).addAllFrom(Folder.parse("settings"));
 
+When multiple instances of the same settings class are required (for example, two *Apache Pinot* clusters each defined by PinotSettings objects), 
+an *instance* property can be used to distinguish which instance is defined in each *.properties* file:
+
+    PinotCluster1.properties:
+
+        class         = com.telenav.scout.safety.demo.PinotSettings
+        instance      = CLUSTER1
+        zookeeperPort = localhost:2181
+        clusterName   = PinotCluster
+
+    PinotCluster2.properties:
+
+        class         = com.telenav.scout.safety.demo.PinotSettings
+        instance      = CLUSTER2
+        zookeeperPort = localhost:2181
+        clusterName   = PinotCluster
+
+These configurations can then be found using an instance specifier as in:
+
+    enum Cluster { CLUSTER1, CLUSTER2 }
+
+    var cluster1 = Settings.of(this).lookup(PinotSettings.class, CLUSTER1);
+    var cluster2 = Settings.of(this).lookup(PinotSettings.class, CLUSTER2);
+
+
+<a name="#components"></a>
 #### KivaKit components
 
-Now that we have covered the mechanisms for registering and locating objects and settings, we can forget about it for now (until some later date if it becomes relevant). All of the above functionality is more easily accessible by creating a KivaKit component. KivaKit components, including *Application*, extend *BaseComponent*, which provides convenience methods for accessing objects from the lookup registry and the settings registry for the component. 
+Now that we have covered the mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make this easier. KivaKit components, including *Application* and *Server* extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used (see [How KivaKit adds mixins to Java](#mixins) for details).
 
 Continuing with our Apache Pinot example from above, we can write a *Pinot* component which uses *PinoSettings* to get a connection to the specified Apache Pinot database cluster:
 
@@ -101,21 +127,29 @@ Notice that *require(PinotSettings.class)* in *BaseComponent* returns a *PinotSe
 
 Note also that *BaseComponent* extends *BaseRepeater* and so all KivaKit components inherit messaging functionality.
 
-Finally, the Application class in the *kivakit-application* module extends *BaseComponent*, which means that all applications have convenient ways to perform messaging operations and to look up objects and settings. In fact, in our *Application*, we might wish to register our settings like this:
+Finally, the *Application* and *Server* classes in the *kivakit-application* module extend *BaseComponent*, which means that all applications have convenient ways to perform messaging operations and to look up objects and settings. In fact, in our *Application*, we can register our settings like this:
 
     public MyPinotApplication extends Application
     {
         protected void onRun()
         {
-            registerSettingsIn(Folder.parse("settings"));
+            registerSettingsIn(Folder.parse("settings/development"));
             
             [...]
         }
     }
     
-In this code, the settings folder containing *PinotSettings.properties* will be loaded into the application's settings registry so it can be queried by the *Pinot* component.
+In this code, all *.properties* files in the settings folder *settings/development* will be loaded into the application's settings registry. Note that the names of *.properties* files do not have to correspond to the settings class that they instantiate (as above in PinotCluster1.properties and PinotCluster2.properties).
 
-The code covered above is available in *kivakit-configuration* in the [KivaKit](https://www.kivakit.org) project.
+Once the settings are loaded, they can be queried by the *Pinot* component, as shown above. In our *ApachePinot* example, we've shown how KivaKit's BaseComponent class (or ComponentMixin interface) makes it easy to register and locate settings objects. In the end, only two lines were required to load all of the application's settings objects:
+
+            registerSettingsIn(Folder.parse("settings/development"));
+            
+and then access a database connection defined by *PinotSettings* elsewhere in the code:
+            
+            require(PinotSettings.class).connection()
+
+The object and settings registries, and base component class covered above are all available in *kivakit-configuration* in the [KivaKit](https://www.kivakit.org) project.
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>
