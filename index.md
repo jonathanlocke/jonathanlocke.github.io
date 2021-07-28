@@ -122,7 +122,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit.
 
 The UML diagram for the key classes in this mini-framework looks like this:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-validation.svg" width="800"></img>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-validation.svg" width="800"/>
  
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 
@@ -246,11 +246,11 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
     {
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width="80"></img>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width="80"/>
 
 The relationships between the classes in the converter mini-framework discussed above can be seen in this UML diagram:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-conversion.svg" width="800"></img>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-conversion.svg" width="800"/>
 
 These are fairly elegant interfaces, but what about the implementation?
 
@@ -1537,7 +1537,7 @@ Now, let's look at how SL might solve the same problem:
     
 The statement *Registry.of(this)* finds the right *Registry* object to use to find our *Alien* object (this is normally a global registry, but it could vary in some circumstances). Then the *lookup()* method yields an implementation of the *QuantumDatabase* interface for the *Alien* to use.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-lookup.svg" width="350"></img>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-lookup.svg" width="350"/>
 
 These two approaches seem identical at first glance, but there *is* one subtle difference. When the *attackPlanet()* method returns in the DI example, the *database* field still holds a reference to the *QuantumDatabase* service. The alien and its database have the same lifecycle. However, in the SL implementation the *database* reference is a local and when *attackPlanet()* returns, the *QuantumDatabase* service implementation is no longer referenced and can potentially be garbage collected. Because encapsulation isn't broken, the *Alien* object can use a *QuantumDatabase* implementation only *when it needs it*. In fact, if *attackPlanet()* is never called, there will be no *QuantumDatabase* lookup at all (and potentially the *QuantumDatabase* won't be constructed either, saving on energy used by the particle accelerator).
 
