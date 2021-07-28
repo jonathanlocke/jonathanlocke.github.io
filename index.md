@@ -119,6 +119,10 @@ Questions? Comments? Tweet yours to @OpenKivaKit.
     {
         boolean validate(Listener listener);
     }
+
+The UML diagram for the key classes in this mini-framework looks like this:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-validation.svg" width="800"></img>
  
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 
@@ -242,7 +246,11 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
     {
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width=50/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width="80"></img>
+
+The relationships between the classes in the converter mini-framework discussed above can be seen in this UML diagram:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-conversion.svg" width="800"></img>
 
 These are fairly elegant interfaces, but what about the implementation?
 
@@ -591,11 +599,11 @@ Dr. Alan Kay's conception of object-oriented programming in the late 1960's came
 
 Which brings us to the *Broadcaster/Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster/Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
-A *Broadcaster* is a *Transmitter* that transmits *Messages* to an audience of one or more *Listeners*:
+A *Broadcaster* is a *Transmitter* that transmits [*Messages*](uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are some of the messages that can be sent (and more can be added through subclassing).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150-2x.png 2x" style="vertical-align:middle"/>
 
-A *Broadcaster* keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
+A [*Broadcaster*](uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
     public interface Transmitter<T extends Transmittable>
     {
@@ -608,7 +616,7 @@ A *Broadcaster* keeps a list of *Listener*s (the audience) to which it will tran
         void removeListener(Listener listener);
     }
 
-A *Listener* receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
+A [*Listener*](uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
     public interface Listener<Transmittable>
     {
@@ -621,7 +629,7 @@ A *Listener* receives messages sent to it with its *receive(Transmittable)* meth
         void receive(Transmittable message);
     }
 
-Here are a few examples of the many *Listener*s in KivaKit, just to give an idea of the range of tasks that listeners can perform:
+Here are a few examples of the many [*Listener*s](uml/diagram-message-listener-type.svg) in KivaKit, just to give an idea of the range of tasks that listeners can perform:
 
 | Listener | Purpose |
 |---------|--------|
@@ -634,7 +642,7 @@ Here are a few examples of the many *Listener*s in KivaKit, just to give an idea
 | NullListener | A listener that discards the messages it receives |
 | ValidationReporter | Reports validation problems it receives |
 
-A *Repeater* is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
+A [*Repeater*](uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
 
     public interface Repeater extends Listener, Broadcaster
     {
@@ -1403,7 +1411,6 @@ Here, the *state()* method allows any interface extending *Mixin* to retrieve as
          * creating a new value with the given factory if it doesn't 
          * already exist.
          */
-        @SuppressWarnings("unchecked")
         public static synchronized <T> T get(final Object object,
                                              final Class<? extends Mixin> mixinType,
                                              final Factory<T> factory)
@@ -1529,6 +1536,8 @@ Now, let's look at how SL might solve the same problem:
     }
     
 The statement *Registry.of(this)* finds the right *Registry* object to use to find our *Alien* object (this is normally a global registry, but it could vary in some circumstances). Then the *lookup()* method yields an implementation of the *QuantumDatabase* interface for the *Alien* to use.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-lookup.svg" width="350"></img>
 
 These two approaches seem identical at first glance, but there *is* one subtle difference. When the *attackPlanet()* method returns in the DI example, the *database* field still holds a reference to the *QuantumDatabase* service. The alien and its database have the same lifecycle. However, in the SL implementation the *database* reference is a local and when *attackPlanet()* returns, the *QuantumDatabase* service implementation is no longer referenced and can potentially be garbage collected. Because encapsulation isn't broken, the *Alien* object can use a *QuantumDatabase* implementation only *when it needs it*. In fact, if *attackPlanet()* is never called, there will be no *QuantumDatabase* lookup at all (and potentially the *QuantumDatabase* won't be constructed either, saving on energy used by the particle accelerator).
 

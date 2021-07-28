@@ -18,7 +18,11 @@ We will examine each of these in order. In practice, most applications will simp
 
 #### The object lookup registry
 
-The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see <a href="#service-locator">Why KivaKit provides service locator instead of dependency injection</a>. The preferred way to use *Registry* to register an object is:
+The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see <a href="#service-locator">Why KivaKit provides service locator instead of dependency injection</a>. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.configuration.lookup.svg" width="500"></img>
+
+The preferred way to use *Registry* to register an object is:
 
     Spaceship spaceship = [...]
     
@@ -44,7 +48,11 @@ If there is more than one *Spaceship* in the registry, is becomes necessary to d
 
 #### The settings registry
 
-The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its subclasses *SettingsFolder* and *SettingsPackage* provide registries of user-defined settings objects. For example, this user-defined settings object might configure *Apache Pinot*:
+The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its subclasses *SettingsFolder* and *SettingsPackage* provide registries of user-defined settings objects. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.configuration.settings.svg" width="600"></img>
+
+For example, this user-defined settings object might configure *Apache Pinot*:
 
     public class PinotSettings
     {
@@ -109,6 +117,8 @@ These configurations can then be found using an instance specifier as in:
 
 Now that we have covered the mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make this easier. KivaKit components, including *Application* and *Server* extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used (see [How KivaKit adds mixins to Java](#mixins) for details).
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.application.component.svg" width="700"></img>
+
 Continuing with our Apache Pinot example from above, we can write a *Pinot* component which uses *PinoSettings* to get a connection to the specified Apache Pinot database cluster:
 
     public class Pinot extends BaseComponent
@@ -149,11 +159,19 @@ and then access a database connection defined by *PinotSettings* elsewhere in th
             
             require(PinotSettings.class).connection()
 
-The object and settings registries, and base component class covered above are all available in *kivakit-configuration* in the [KivaKit](https://www.kivakit.org) project.
+The object and settings registries discussed above are available in *kivakit-configuration* in the [KivaKit](https://www.kivakit.org) project:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>
         <artifactId>kivakit-configuration</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+The component-related classes are available in *kivakit-application*:
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-application</artifactId>
         <version>${kivakit.version}</version>
     </dependency>
 
