@@ -28,6 +28,8 @@ The preferred way to use *Registry* to register an object is:
     
     Registry.of(this).register(spaceship);
 
+The *this* reference here will be used by KivaKit in the future to provide different lookup registries for different objects. For example, some objects might belong to one container with its own registry and other objects might belong to another container using a separate registry. When accessing a registry from a *static* method, *null* can be passed as the *this* reference to *Registry.of()* and the global registry will always be used.
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer-80.png" srcset="https://state-of-the-art.org/graphics/saucer/saucer-80-2x.png 2x" style="vertical-align:middle"/> 
 
 Our *Spaceship* object can then be found with:
@@ -86,6 +88,8 @@ Packages and folders of *.properties* files can be used to group the settings fo
 To load all settings objects from a folder into the settings registry for *this* object, the *addAllFrom()* method of *Settings* can be used like this:
 
     Settings.of(this).addAllFrom(Folder.parse("settings"));
+
+The *Settings.of()* method works in the same way as *Registry.of()*, as described above. Passing in the *this* reference of the object requesting a settings registry will allow different settings registries to be returned to different requesting objects in the future.
 
 When multiple instances of the same settings class are required (for example, two *Apache Pinot* clusters each defined by PinotSettings objects), 
 an *instance* property can be used to distinguish which instance is defined in each *.properties* file:
