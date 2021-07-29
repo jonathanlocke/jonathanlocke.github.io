@@ -62,7 +62,7 @@ This pattern can be implemented using a copy constructor, but we will also add a
             return copy;
         }
         
-        public Color darker(final Percent percent)
+        public Color darker(Percent percent)
         {
             final var copy = copy();
             final var scaleFactor = 1.0 - percent.asZeroToOne();
@@ -141,7 +141,9 @@ You might be wondering why we created the *withAlpha()* and *withRed()* methods 
 
 The overridden *copy* method here ensures that if we change the red property of an alien color, the xray property will be preserved. The downcast on *AlienColor.withRed()* returns an *AlienColor* rather than a *Color*. This makes it possible to make a subsequent call to *withXRay()*, like this:
 
-    var color = AlienColor.create().withRed(255).withXRay(128);
+    var color = AlienColor.create()
+        .withRed(255)
+        .withXRay(128);
 
 The *functional property* design pattern is used frequently in [KivaKit](https://www.kivakit.org).
 

@@ -250,7 +250,7 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
 
 The relationships between the classes in the converter mini-framework discussed above can be seen in this UML diagram:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-conversion.svg" width="800"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-data-conversion.svg" width="700"/>
 
 These are fairly elegant interfaces, but what about the implementation?
 
