@@ -10,8 +10,13 @@
 
 The *kivakit-commandline* module provides switch and argument parsing used by *kivakit-application*. 
 
-
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-command-line.svg" width="700"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-argument.svg" width="700"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-switch.svg" width="700"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-validation.svg" width="700"/>
 
 The complete code for the example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository.
 
