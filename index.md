@@ -1113,7 +1113,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit.
 
 ### A (very) slightly simpler builder pattern &nbsp; <img src="https://state-of-the-art.org/graphics/compress/compress-32.png" srcset="https://state-of-the-art.org/graphics/compress/compress-32-2x.png 2x" style="vertical-align:baseline"/>
 
-[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about the code example in this article. There is a way to eliminate a bit of repetition (mentioned in the article as a point of criticism of the pattern), making the code just a little easier to read and more succinct. The example looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
+[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about the code example in this article. There is a way to eliminate a bit of repetition (mentioned in the article as a point of criticism of the pattern), making the code just a little easier to read and more succinct. The example in Frank's article looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
 
     public class Book 
     {
@@ -1168,7 +1168,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit.
         }
     }
 
-My quibble is that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*. It is also true that it's not possible to build multiple objects from the same builder by inheriting previous builder state, but that is "a feature, not a bug." To build multiple related objects, consider instead [the functional property pattern](#with-x). 
+My quibble is just that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*. It is also true that it's not possible to build multiple objects from the same builder by inheriting previous builder state, but that is "a feature, not a bug." To build multiple related objects, consider instead [the functional property pattern](#with-x).
 
     public class Book 
     {
@@ -1220,6 +1220,17 @@ My quibble is that we can get rid of the duplicate fields in the *Builder* class
         }
     }
      
+Finally, yes, Frank is right that the builder pattern is a workaround for a missing language feature, and named parameters would be probably be welcomed. However it might be worth thinking about other approaches to this issue, such as my starting point for [abolishing contructors](#construction) (although perhaps not in Java) or creating a syntax for functional field updating similar to [the functional properties pattern](#with-x):
+
+    var spaceAliens = new Book() 
+        with isbn = "81729387" 
+        with title = "Space Aliens"
+        with author = "Calvin and Hobbes";
+
+This pattern would allow *Book* to be initialized clearly as with named parameters to a constructor but it would also permit new books to be functionally derived, as in:
+
+    var martians = spaceAliens with title = "Martians";
+
 Questions? Comments? Tweet yours to @OpenKivaKit.
 
 <a name = "lazy"></a>
