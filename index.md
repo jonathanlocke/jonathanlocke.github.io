@@ -1511,7 +1511,9 @@ Suppose we have a *SubspaceRadio* object that can be connected to a *SubspaceNet
             [...]
         }
     }
-    
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/state-machine/state-machine.svg" width="300" style="vertical-align:middle"/>
+
 In this example, our radio object is *ready* as soon as it has a *network*. It can then transition to the *connected* state via a call to *connect()*, at which point it can *transmit()* and *receive()*. If *disconnect()* is called, the radio transitions back to *ready*, at which point it would have to reconnect with *connect()* before it can *transmit()* or *receive()* again.
 
 Because the transition to *connected* is dynamic and conditional on whether the *network.connect()* method can establish a connection, this state machine transition cannot be determined at compile time. Instead, the compiler has to associate some of parts of the state machine with the object at runtime.
