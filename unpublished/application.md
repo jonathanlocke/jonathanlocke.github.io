@@ -8,7 +8,7 @@
 
 ### KivaKit applications and servers &nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/server/server.svg" width="128" style="vertical-align:baseline"/>
 
-The *kivakit-application* module contains building blocks for creating applications and servers in KivaKit. The class *Application* extends *BaseComponent* and *Server* extends *Application*. In turn, *BaseComponent* inherits *Repeater* functionality from *BaseRepeater* and default methods from *Component* (*ComponentMixin*, not shown, also inherits these methods):
+The *kivakit-application* module contains building blocks for creating applications and servers in KivaKit. The class *Application* extends *BaseComponent*, and *Server* extends *Application*. In turn, *BaseComponent* inherits *Repeater* functionality from *BaseRepeater* and default methods from *Component* (*ComponentMixin*, not shown, also inherits these methods):
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-application.svg" width="600"/>
 
@@ -134,7 +134,7 @@ Once our example application has initialized, *onRun()* provides the application
     }
 
 
-When the *Application.run()* method is called, switch and argument parsers for the application are retrieved from *switchParsers()* and *argumentParsers()*, respectively. The logic in *Application.run()* uses these parsers to parse the *String[]* argument to *main()* into a *CommandLine* object.
+When the *Application.run()* method is called, switch and argument parsers for the application are retrieved from *switchParsers()* and *argumentParsers()*, respectively. The logic in *Application.run()* then uses these parsers to parse the *String[]* argument that was passed to *main()* into a *CommandLine* object.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/command-line/command-line.svg" width="80"/> 
 

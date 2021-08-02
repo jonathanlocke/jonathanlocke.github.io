@@ -946,6 +946,8 @@ A [*Broadcaster*](uml/diagram-message-broadcaster.svg) keeps a list of *Listener
         void removeListener(Listener listener);
     }
 
+> Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this is acceptable.
+
 A [*Listener*](uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
     public interface Listener<Transmittable>

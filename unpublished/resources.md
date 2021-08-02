@@ -30,26 +30,32 @@ KivaKit provides an abstraction that allows easy and consistent access to these 
         [...]
     }
 
+Note that if this code is in a KivaKit *Component*, then the first line can be reduced to:
+
+    var resource = packageResource("target-planets.csv");
+
 *Write a string to a file on S3:*
 
-    var file = File.parse("s3://mybucket/myobject.txt");    
-    try (var out = listenTo(file).writer().printWriter())
+    var file = listenTo(File.parse("s3://mybucket/myobject.txt"));    
+    try (var out = file.writer().printWriter())
     {
         out.println("Start Operation Impending Doom III in 10 seconds");
     }
 
 *Safely extract an entry (ensuring no partial result) from a .zip file:*
 
-    var file = File.parse("/users/jonathan/input.zip");
-    var folder = Folder.parse("/users/jonathan");
+    var file = listenTo(File.parse("/users/jonathan/input.zip"));
+    var folder = listenTo(Folder.parse("/users/jonathan"));
     try (var zip = ZipArchive.open(file, reporter, READ))
     {
         listenTo(zip.entry("data.txt")).safeCopyTo(folder, OVERWRITE);
     }
-    
-In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* call connects the method's object to the argument object, creating a listener chain. If something interesting happens in a resource, it would broadcast a message to its listeners, and the example method's object would then re-broadcast it to its listeners. For more information, see the [Broadcaster/Listener design pattern.](#broadcaster)
 
-All *Resource*s inherit and use the *fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base class *Transceiver* does two things:
+In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* calls add *this* as a listener to the argument object, creating a listener chain. If something notable happens in a *Resource*, it will broadcast a message down the listener chain. For more information, see the [Broadcaster/Listener design pattern.](#broadcaster) 
+
+> Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this behavior is acceptable. This means that the calls to *listenTo* in the code above are optional if there is no need for downstream listeners to receive messages from *File* and *Folder*.
+
+All *Resource*s inherit and use the *fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base interface *Transceiver* does two things:
 
 1. Broadcasts a *FatalProblem* message to listeners
 2. Throws an *IllegalStateException*
@@ -64,7 +70,7 @@ The code (in *Broadcaster*'s parent interface *Transceiver*) looks like this:
         return null;
     }
 
-*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast (and probably logged depending on the terminal listener(s)).
+*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast (and probably logged, depending on the terminal listener(s)).
 
 For example, in this common (but unfortunate looking) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause and logged:
 
@@ -95,7 +101,7 @@ For example, in this common (but unfortunate looking) idiom, error information i
         }
     }
 
-A KivaKit alternative to this idiom is this:
+One KivaKit alternative to this idiom is this:
 
     class Launcher extends BaseRepeater
     {
@@ -133,7 +139,7 @@ The *Resource* class in this diagram is central. This class:
 * Has a time of last modification (from *ModificationTimestamped*)
 * Is a *ReadableResource*
 
-Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()* or read from with the convenience methods in *ResourceReader*.
+Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()* or read from with the convenience methods in *ResourceReader* (which is accessed with *ReadableResource.reader()*).
 
 In addition, some resources are *WritableResource*s. Those can be opened with *Writable.openForWriting()* and written to with the convenience class *ResourceWriter*
 
@@ -147,7 +153,7 @@ Finally, *BaseWritableResource* extends *BaseReadableResource* to add the abilit
 
 <img src="../uml/resource-classes.png" width=500/>
 
-Now, let's take a quick look at a *Resource* implementation. The implementation of a simple *ReadableResource* requires only an *onOpenForReading* method and a *sizeInBytes()* method. A default for everything else will be provided by *BaseReadableResource*. The *StringResource* class is a good example, and looks like this:
+Now, let's take a quick look at a *Resource* implementation. The implementation of a simple *ReadableResource* requires only an *onOpenForReading* method and a *sizeInBytes()* method. A default for everything else will be provided by *BaseReadableResource*. The *StringResource* class is a good example. It looks like this:
 
     public class StringResource extends BaseReadableResource
     {
@@ -172,11 +178,11 @@ Now, let's take a quick look at a *Resource* implementation. The implementation 
         }
     }
 
-A few things we didn't talk about (to be covered in future articles):
+A few things we didn't talk about:
 
 * All resources transparently implement different kinds of compression and decompression via the *Codec* interface
 * How the *ProgressReporter* interface works
-* Resolution of generic resource identifiers
+* Generic resource identifiers and their resolution
 * Loading of SPI implementations used by File and Folder (Local, S3, HDFS, etc)
 
 The resource module covered above is available in *kivakit-resource* in the [KivaKit](https://www.kivakit.org) project.
