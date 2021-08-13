@@ -1,4 +1,3 @@
-
 <a href="https://github.com/Telenav/kivakit">
 <img src="https://www.kivakit.org/images/github-32.png" srcset="https://www.kivakit.org/images/github-32-2x.png 2x"/>
 </a>
@@ -571,7 +570,16 @@ The overridden *copy* method here ensures that if we change the red property of 
 
 The *functional property* design pattern is used frequently in [KivaKit](https://www.kivakit.org).
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="functional-properties"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "bit-diagram"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -624,7 +632,16 @@ After executing this code, our *rgb* variable will now be 0x123456. The handy *B
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="bit-diagram"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "validation"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -740,7 +757,16 @@ Note that the *validate()* / *onValidate()* methods are an example of the [polym
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="validation"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "converters"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1012,7 +1038,16 @@ In another article, we can take a look at how converters are used to implement o
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="converters"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "polymorphic-final-methods"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1111,7 +1146,16 @@ By providing the ability to "wrap" the *onLaunch()* polymorphic method in logic,
 
 The *polymorphic final method* pattern is used throughout [KivaKit](https://www.kivakit.org).
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="polymorphic-final-methods"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "broadcaster"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1251,7 +1295,16 @@ The simplified *Broadcaster/Listener* design pattern discussed above is availabl
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="broadcaster"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "mirror-methods"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1482,7 +1535,16 @@ Now we can say either of these two things:
 
 and both resolve to the same code.
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="mirror-methods"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "builder"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1609,7 +1671,16 @@ This pattern would allow *Book* to be initialized clearly as with named paramete
 
     var martians = spaceAliens with title = "Martians";
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="builder"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "lazy"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1688,7 +1759,16 @@ True, it's not quite as nice as having a *lazy* keyword, but it improves readabi
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="lazy"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "loom"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1754,7 +1834,16 @@ This method allows our code is reduced to just this:
 
 Right now, Go is a reasonable choice for cloud development, but when Project Loom does arrive (when will this be?), Java will have Go's killer cloud feature. It will also have a much bigger ecosystem, excellent tooling and, in my opinion, better readability. Many people will stick with Go when this happens, but there will be no good reason at that point not to prefer Java for new projects.
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="loom"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "construction"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -1909,7 +1998,16 @@ Note also that we might want to deny access to methods in a given state, such as
 
 The object can no longer be used once it is *shutdown*.
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="construction"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "mixins"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -2028,7 +2126,16 @@ This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a modul
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="mixins"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "service-locator"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
@@ -2093,7 +2200,16 @@ A full implementation of the SL design pattern is available in [KivaKit](https:/
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="service-locator"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
