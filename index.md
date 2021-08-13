@@ -228,7 +228,16 @@ Finally, if something goes wrong interpreting our application's command-line arg
 
 The complete code for this example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository.
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="title"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "settings"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
