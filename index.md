@@ -234,7 +234,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
   async
   src="https://utteranc.es/client.js"
   repo="jonathanlocke/jonathanlocke.github.io"
-  issue-term="title"
+  issue-term="applications"
   theme="github-dark"
   crossorigin="anonymous"
 ></script>
@@ -414,7 +414,16 @@ The component-related classes are available in *kivakit-application*:
         <version>${kivakit.version}</version>
     </dependency>
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="settings"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
 
 <a name = "functional-properties"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
