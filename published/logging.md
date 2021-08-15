@@ -1,10 +1,10 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - KivaKit logging and the broadcaster / listener design pattern](#converters)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.17 - KivaKit logging and the broadcaster / listener design pattern](#logging)  
 
+<a name = "logging"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "converters"></a>
 
-2021.07.XX
+2021.08.17
 
 ### KivaKit logging and the broadcaster / listener design pattern &nbsp; <img src="https://state-of-the-art.org/graphics/log/log-32.png" srcset="https://state-of-the-art.org/graphics/log/log-32-2x.png 2x" style="vertical-align:baseline"/>
 
