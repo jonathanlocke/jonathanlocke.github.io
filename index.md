@@ -118,7 +118,7 @@ One possibility is "molecular computing", where the density of computation and s
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/nucleus/nucleus.svg" width="80"/>
 
-It will take time for computing to evolve in this direction, but it surely will. And along with it will go the von Neumann model. Molecular computers will need to be qualitatively different from von Neumann machines. They will have giant amounts of memory, but they will likely have to perform computations more locally, as a centralized bus and a clock pulse won't scale to this size. Whatever the actual form of molecular computers, they will (probably temporarily) obviate the present need for The Cloud. So what will we have instead? Some kind of localized computing again.
+It will take time for computing to evolve in this direction, but it surely will. And along with it will go the von Neumann model. Molecular computers will need to be qualitatively different from von Neumann machines. They will have giant amounts of memory, but they will likely have to perform computations more locally, as a centralized bus and a clock pulse won't scale to this size. Whatever the actual form of molecular computers, they will (probably temporarily) obviate our present need for The Cloud. So what will we have instead? Some kind of localized computing again.
 
 The driver for this paradigm shift will be the same as the last major paradigm shifts: 
 
@@ -128,10 +128,10 @@ Of course, a decade later, we will probably have applications so demanding that 
 
 The transitions that have occurred between paradigms in computation have more to do with ownership and control of computation and data than with technology itself:
 
-1880's to 1950's - Centralized (Mainframe era)
-1960's to 1980's - Decentralized (Microchip era)
-1990's to 2020's - Centralized (Internet era)
-????'s to ????'s - Decentralized (Molecular era?)
+1880's to 1950's - Centralized (Mainframe era)  
+1960's to 1980's - Decentralized (Microchip era)  
+1990's to 2020's - Centralized (Internet era)  
+????'s to ????'s - Decentralized (Molecular era?)  
 
 The decentralization that occurred during the microchip era had to do with demand from managers and executives who wanted full control of the systems that they used (in the 1950's IBM mainframes were rentals leased from and maintained by IBM). Will the same occur in reaction to the cloud era? Is AWS the new IBM, renting computation to companies that will ultimately want control of their computing resources back? The only thing stopping companies from going back to desktop computers is that they can't handle the required computational load. If molecular computers of not-too-distant future can do what entire cloud systems do today, why would anyone use the cloud except to run legacy software?
 
