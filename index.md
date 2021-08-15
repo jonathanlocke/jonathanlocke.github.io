@@ -58,7 +58,7 @@ style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](ht
 <a name = "after-the-cloud"></a>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
-2021.08.24
+2021.08.17
 
 ### What's after the cloud? &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
 
@@ -143,7 +143,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
   async
   src="https://utteranc.es/client.js"
   repo="jonathanlocke/jonathanlocke.github.io"
-  issue-term="after-the-cloud"
+  issue-term="cloud"
   theme="github-dark"
   crossorigin="anonymous"
 ></script>
