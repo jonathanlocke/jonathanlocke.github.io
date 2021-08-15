@@ -14,7 +14,7 @@
 
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.17 - KivaKit logging and the broadcaster / listener design pattern](#logging) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/>
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.10 - KivaKit applications and servers](#applications) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> 
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.10 - KivaKit applications](#applications) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> 
 
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.03 - KivaKit components and settings](#settings) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/>  
 
@@ -198,7 +198,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 2021.08.10
 
-### KivaKit applications and servers &nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/server/server.svg" width="128" style="vertical-align:baseline"/>
+### KivaKit applications &nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/server/server.svg" width="128" style="vertical-align:baseline"/>
 
 The *kivakit-application* module contains building blocks for creating applications and servers. The class *Application* extends *BaseComponent*, and *Server* extends *Application*. In turn, *BaseComponent* inherits *Repeater* functionality from *BaseRepeater* and default methods from *Component* (*ComponentMixin*, not shown, also inherits these methods):
 
