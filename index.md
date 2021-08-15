@@ -56,11 +56,11 @@
 style="vertical-align:bottom"/> &nbsp;  [Sign up for State(Art) mailing list](http://eepurl.com/hCivUX)
 
 <a name = "after-the-cloud"></a>
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x"/>
 
 2021.08.17
 
-### What's after the cloud? &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
+### What's after the cloud? &nbsp; <img src="https://state-of-the-art.org/graphics/chips/chips.svg" width="40" style="vertical-align:baseline"/>
 
 At present, the software world is dominated by work on "Big Data" and "AI" that takes place in "The Cloud". Looking back at the era of mainframes in the 1950's, it must have been exceptionally difficult to see microcomputers, cell phones and the Internet coming, or that mainframes would be obsoleted and left behind, only existing to run legacy software. So it is with the cloud today. We are at a unique point in the evolution of computing machines, and something is next. But what?
 
