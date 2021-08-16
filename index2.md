@@ -1,6 +1,25 @@
+
+<a href="https://github.com/Telenav/kivakit">
+<img style="vertical-align:bottom" src="https://www.kivakit.org/images/github-32.png" srcset="https://www.kivakit.org/images/github-32-2x.png 2x"/>
+</a>
+&nbsp;
+<a href="https://twitter.com/openkivakit">
+<img style="vertical-align:bottom" src="https://www.kivakit.org/images/twitter-32.png" srcset="https://www.kivakit.org/images/twitter-32-2x.png 2x"/>
+</a>
+&nbsp;
+<a href="https://kivakit.zulipchat.com">
+<img style="vertical-align:bottom" src="https://www.kivakit.org/images/zulip-32.png" srcset="https://www.kivakit.org/images/zulip-32-2x.png 2x"/>
+</a>
+&nbsp;&nbsp;&nbsp;
+<a href="http://eepurl.com/hCivUX"><img src="https://www.state-of-the-art.org/graphics/envelope/envelope-clean.svg" height="32"
+style="vertical-align:bottom"/> &nbsp; Sign up for the State(Art) mailing list
+</a>
+
 <img src="https://www.state-of-the-art.org/graphics/twisty/twisty.svg" height="100"/>
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
+
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Logging](published/logging.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
@@ -35,6 +54,8 @@
 <br/>
 
 ## <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Thoughts About Software
+
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [What's after the cloud?](published/after-the-cloud.md)  
