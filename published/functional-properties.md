@@ -75,8 +75,7 @@ But what if we want to subclass our object?
 
 It turns out that aliens have x-ray rods and cones in their eyes, so to them colors are red, green, blue, x-ray and alpha. Our alien overlords require an *AlienColor* that is derived from the class *Color*. We would like to reuse the code from the superclass as much as possible, yet add a new value *xray*. We can do this by adding a *withXRay()* method, and then overriding the superclass constructors, the copy method and the *withX()* methods:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/>
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien.svg" width="55" style="vertical-align:middle"/>
 
     public class AlienColor extends Color
     {

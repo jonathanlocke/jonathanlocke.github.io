@@ -22,7 +22,7 @@ For example, since aliens are able to convert themselves to and from pure energy
         }
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien.svg" width="55" style="vertical-align:middle"/> 
 
 But we could just as easily write:
 

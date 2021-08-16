@@ -1,6 +1,6 @@
 2021.07.13
 
-### Polymorphic final methods &nbsp; <img src="https://state-of-the-art.org/graphics/override/override-40.png" srcset="https://state-of-the-art.org/graphics/override/override-40-2x.png 2x" style="vertical-align:baseline"/>
+### Polymorphic final methods &nbsp; <img src="https://state-of-the-art.org/graphics/override/override.svg" width="60" style="vertical-align:baseline"/>
 
 A *polymorphic* class literally has "many shapes". Subclasses can add functionality and specialize methods of the parent class by *overriding* them:
 

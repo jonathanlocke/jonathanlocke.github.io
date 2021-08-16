@@ -24,7 +24,7 @@ The code to register an object with *Registry* looks like:
 
 The *this* reference here will be used by KivaKit in the future to provide different lookup registries for different objects. For example, some objects might belong to one container with its own registry and other objects might belong to another container using a separate registry. When accessing a registry from a *static* method, *null* can be passed as the *this* reference to *Registry.of()* and the global registry will always be used.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer-80.png" srcset="https://state-of-the-art.org/graphics/saucer/saucer-80-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer.svg" width="60" style="vertical-align:middle"/> 
 
 Our *Spaceship* object can then be found with:
 

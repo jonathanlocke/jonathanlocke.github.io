@@ -41,7 +41,7 @@ To start our application running we supply code similar to this:
 
 The *main()* method creates an instance of the application and the constructor for the application passes an instance of *Project* to the superclass. The application then calls *run()*, which proceeds to initialize the project and application. When the application is fully initialized and ready to run, the  *onRun()* method is called.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/rocket/rocket.svg" width="80"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/rocket/rocket.svg" width="50"/>
 
 #### Project initialization
 
@@ -130,7 +130,7 @@ Once our example application has initialized, *onRun()* provides the application
 
 When the *Application.run()* method is called, switch and argument parsers for the application are retrieved from *switchParsers()* and *argumentParsers()*, respectively. The logic in *Application.run()* then uses these parsers to parse the *String[]* argument that was passed to *main()* into a *CommandLine* object.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/command-line/command-line.svg" width="80"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/command-line/command-line.svg" width="50"/> 
 
 The *onRun()* method in our example application calls *argument()* with the *INPUT* file argument parser to obtain an input *File* object from the *CommandLine*:
 
@@ -170,6 +170,12 @@ Finally, if something goes wrong interpreting our application's command-line arg
     
 
 The complete code for this example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository.
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-application</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 

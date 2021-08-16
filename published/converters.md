@@ -9,7 +9,7 @@ It is a common problem to convert one type into another. As with most problems, 
         To convert(From from);
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/convert/convert.svg" width=50/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/convert/convert.svg" width="40"/>
 
 In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [broadcast to interested listeners](../published/broadcaster.md). 
 
@@ -26,7 +26,7 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
     {
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width="80"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/string/string.svg" width="60"/>
 
 The relationships between the classes in the converter mini-framework discussed above can be seen in this UML diagram:
 

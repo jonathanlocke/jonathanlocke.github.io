@@ -25,7 +25,7 @@ Further, this transition must be *atomic*. An object should either be *allocated
 
 Let's try a thought-experiment where we associate an actual state machine with each object. Initially this state machine will be in the *allocated* state. When the object has been fully initialized (by calling methods on the object), it will transition to *ready*. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien-64.png" srcset="https://state-of-the-art.org/graphics/alien/alien-64-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/alien/alien.svg" width="55" style="vertical-align:middle"/> 
 
 We can specify this transition by adding two new keywords to our language: *is* and *when*:
 
@@ -41,7 +41,7 @@ We can specify this transition by adding two new keywords to our language: *is* 
 
 The *is-when* statement here specifies that when our *allocated* *Alien* has both a *brain* and a *spaceship* (aliens have plug-and-play brains), it will transition to the state *ready*. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer-80.png" srcset="https://state-of-the-art.org/graphics/saucer/saucer-80-2x.png 2x" style="vertical-align:middle"/> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/saucer/saucer.svg" width="60" style="vertical-align:middle"/> 
 
 Now we can simply allow methods to mutate the *brain* and *ship* fields to trigger this transition. But some methods cannot function in the *allocated* state. These methods need to be *gated* until our *Alien* reaches the *ready* state. We can do this by adding the keyword *can*:
 
@@ -129,7 +129,7 @@ Suppose we have a *SubspaceRadio* object that can be connected to a *SubspaceNet
         }
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/state-machine/state-machine.svg" width="300" style="vertical-align:middle"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="https://state-of-the-art.org/graphics/state-machine/state-machine.svg" width="200" style="vertical-align:middle"/>
 
 In this example, our radio object is *ready* as soon as it has a *network*. It can then transition to the *connected* state via a call to *connect()*, at which point it can *transmit()* and *receive()*. If *disconnect()* is called, the radio transitions back to *ready*, at which point it would have to reconnect with *connect()* before it can *transmit()* or *receive()* again.
 

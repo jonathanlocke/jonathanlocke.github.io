@@ -77,6 +77,8 @@ The transitions that have occurred between paradigms in computation have more to
 
 The decentralization that occurred during the microchip era had to do with demand from managers and executives who wanted full control of the systems that they used (in the 1950's IBM mainframes were rentals leased from and maintained by IBM). Will the same occur in reaction to the cloud era? Is AWS the new IBM, renting computation to companies that will ultimately want control of their computing resources back? The only thing stopping companies from going back to desktop computers is that they can't handle the required computational load. If molecular computers of not-too-distant future can do what entire cloud systems do today, why would anyone use the cloud except to run legacy software?
 
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script

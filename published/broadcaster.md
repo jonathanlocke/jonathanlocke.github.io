@@ -8,11 +8,11 @@ Dr. Alan Kay's conception of object-oriented programming in the late 1960's came
 
 Which brings us to the *Broadcaster/Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster/Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
-A *Broadcaster* is a *Transmitter* that transmits [*Messages*](uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are some of the messages that can be sent (and more can be added through subclassing).
+A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are some of the messages that can be sent (and more can be added through subclassing).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150.png" srcset="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-150-2x.png 2x" style="vertical-align:middle"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="90" style="vertical-align:middle"/>
 
-A [*Broadcaster*](uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
+A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
     public interface Transmitter<T extends Transmittable>
     {
@@ -27,7 +27,7 @@ A [*Broadcaster*](uml/diagram-message-broadcaster.svg) keeps a list of *Listener
 
 > Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this is acceptable.
 
-A [*Listener*](uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
+A [*Listener*](../uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
     public interface Listener<Transmittable>
     {
@@ -40,7 +40,7 @@ A [*Listener*](uml/diagram-message-listener.svg) receives messages sent to it wi
         void receive(Transmittable message);
     }
 
-Here are a few examples of the many [*Listener*s](uml/diagram-message-listener-type.svg) in KivaKit, just to give an idea of the range of tasks that listeners can perform:
+Here are a few examples of the many [*Listener*s](../uml/diagram-message-listener-type.svg) in KivaKit, just to give an idea of the range of tasks that listeners can perform:
 
 | Listener | Purpose |
 |---------|--------|
@@ -53,7 +53,7 @@ Here are a few examples of the many [*Listener*s](uml/diagram-message-listener-t
 | NullListener | A listener that discards the messages it receives |
 | ValidationReporter | Reports validation problems it receives |
 
-A [*Repeater*](uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
+A [*Repeater*](../uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
 
     public interface Repeater extends Listener, Broadcaster
     {
@@ -102,7 +102,7 @@ The final line of code listens to messages from *PayrollProcessor* with a *Logge
 
 This design yields a lots of flexibility as well as clean, simple error handling with very little code.
 
-A class can implement the *Repeater* interface in two ways. It can extend *BaseRepeater* (as above) or it can implement *RepeaterMixin* if it already has a base class. For more details on how mixins work in KivaKit, see [How KivaKit adds mixins to Java.](../published/mixins.md)
+A class can implement the *Repeater* interface in two ways. It can extend *BaseRepeater* (as above) or it can implement *RepeaterMixin* if it already has a base class. For more details on how mixins work in KivaKit, see [*how KivaKit adds mixins to Java.*](../published/mixins.md)
 
 The ability to arbitrarily chain messages, particularly messages that represent some kind of warning or problem, greatly increases component flexibility:
 

@@ -18,7 +18,7 @@
 
 #### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.10 - KivaKit applications](published/applications.md) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/> 
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.03 - KivaKit components and settings](published/settings.md) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/>  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.03 - KivaKit components and settings](published/components-and-settings.md) <img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:top"/>  
 
 #### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp;  [2021.07.31 - The functional properties pattern](published/functional-properties.md)  
 

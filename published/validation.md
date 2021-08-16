@@ -18,12 +18,11 @@
 
 The UML diagram for the key classes in this mini-framework looks like this:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-validation.svg" width="800"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/diagram-data-validation.svg" width="800"/>
  
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope.svg" width="80" style="vertical-align:bottom"/>
-
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope.svg" width="50" style="vertical-align:bottom"/>
 
     public class Email implements Validatable
     {
@@ -57,8 +56,8 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
           addIfNotNull()  // broadcast it and add it to the list of issues
     issues.isValid()      // Return true if there are no important issues
     
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/footprints/footprints.svg" width="80"/>
-    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/footprints/footprints.svg" width="60"/>
+
 And the implementation of this looks (very roughly) like this:
 
     public abstract class BaseValidator implements Validator

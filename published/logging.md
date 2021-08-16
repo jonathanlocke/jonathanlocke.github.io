@@ -124,6 +124,12 @@ Since the formatting of messages is lazy, if a message is filtered out (perhaps 
 
 Details on formatting can be found in *MessageFormatter*. The logging classes discussed here are part of the kivakit-kernel module of [KivaKit](https://www.kivakit.org).
 
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script
