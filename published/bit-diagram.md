@@ -46,6 +46,8 @@ After executing this code, our *rgb* variable will now be 0x123456. The handy *B
         <version>${kivakit.version}</version>
     </dependency>
 
+<br/>
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:

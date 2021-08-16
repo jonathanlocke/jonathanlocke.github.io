@@ -148,6 +148,8 @@ Note also that we might want to deny access to methods in a given state, such as
 
 The object can no longer be used once it is *shutdown*.
 
+<br/>
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:

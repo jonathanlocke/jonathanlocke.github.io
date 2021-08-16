@@ -140,6 +140,8 @@ The overridden *copy* method here ensures that if we change the red property of 
 
 The *functional property* design pattern is used frequently in [KivaKit](https://www.kivakit.org).
 
+<br/>
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:

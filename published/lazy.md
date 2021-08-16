@@ -72,6 +72,8 @@ True, it's not quite as nice as having a *lazy* keyword, but it improves readabi
         <version>${kivakit.version}</version>
     </dependency>
 
+<br/>
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:

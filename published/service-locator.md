@@ -59,6 +59,7 @@ A full implementation of the SL design pattern is available in [KivaKit](https:/
     </dependency>
 
 <br/>
+
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
