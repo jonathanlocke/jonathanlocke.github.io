@@ -1,11 +1,6 @@
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.24 - What's after the cloud?](#after-the-cloud)  
+2021.08.17
 
-<a name = "after-the-cloud"></a>
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-
-2021.08.24
-
-### What's after the cloud? &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
+### What's after the cloud? &nbsp; <img src="https://state-of-the-art.org/graphics/chips/chips.svg" width="40" style="vertical-align:baseline"/>
 
 At present, the software world is dominated by work on "Big Data" and "AI" that takes place in "The Cloud". Looking back at the era of mainframes in the 1950's, it must have been exceptionally difficult to see microcomputers, cell phones and the Internet coming, or that mainframes would be obsoleted and left behind, only existing to run legacy software. So it is with the cloud today. We are at a unique point in the evolution of computing machines, and something is next. But what?
 
@@ -34,17 +29,18 @@ It's interesting that Kuhn made these observations of science but not of technol
 
 The pace of this is especially fast in computation. In terms of the evolution of electronic computational systems, the progression to date is something (only very roughly) like this:
 
-1. 1880's - Relays, logic gates
-1. 1890's - Hollerith tabulator
-1. 1930's - Special-purpose computers
-1. 1940's - Memory, transistors, von Neumann architecture
-1. 1950's - Mainframes
-1. 1960's - Microprocessors, graphical interfaces
-1. 1970's - Minicomputers, UNIX, ethernet, microcomputers, distributed computing
-1. 1980's - Personal computers, AI
-1. 1990's - Cell phones, Internet
-1. 2000's - Cloud computing, big data
-1. 2010's - Quantum computers
+|---|---|
+| 1880's | Relays, logic gates |
+| 1890's | Hollerith tabulator |
+| 1930's | Special-purpose computers |
+| 1940's | Memory, transistors, von Neumann architecture |
+| 1950's | Mainframes |
+| 1960's | Microprocessors, graphical interfaces |
+| 1970's | Minicomputers, UNIX, ethernet, microcomputers, distributed computing |
+| 1980's | Personal computers, AI |
+| 1990's | Cell phones, Internet |
+| 2000's | Cloud computing, big data |
+| 2010's | Quantum computers |
 
 At present, The Cloud is our era of "normal technology" (quantum computers exist, but nobody seems to know quite what to do with them). So, given that major shifts have occurred in virtually every decade in the past, what can we expect is coming next?
 
@@ -61,7 +57,9 @@ Perhaps the von Neumann architecture spanning from the 1940's to the present day
 
 One possibility is "molecular computing", where the density of computation and storage might increase radically. The internet may seem like a big thing. It's estimated that it is of the order of a zettabyte (10^21 bytes or 10^22 bits). This is an interesting number because it's very close to 10^23, which is the order of magnitude of a mole (of any substance, a mole of water weighing about 18 grams). So, if we were able to store data in terms of water molecules, where each molecule stored a bit, we could store 10^23 bits, or 10 present-day internets worth of bits. In 18 grams.
 
-It will take time for computing to evolve in this direction, but it surely will. And along with it will go the von Neumann model. Molecular computers will need to be qualitatively different from von Neumann machines. They will have giant amounts of memory, but they will likely have to perform computations more locally, as a centralized bus and a clock pulse won't scale to this size. Whatever the actual form of molecular computers, they will (probably temporarily) obviate the present need for The Cloud. So what will we have instead? Some kind of localized computing again.
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/nucleus/nucleus.svg" width="80"/>
+
+It will take time for computing to evolve in this direction, but it surely will. And along with it will go the von Neumann model. Molecular computers will need to be qualitatively different from von Neumann machines. They will have giant amounts of memory, but they will likely have to perform computations more locally, as a centralized bus and a clock pulse won't scale to this size. Whatever the actual form of molecular computers, they will (probably temporarily) obviate our present need for The Cloud. So what will we have instead? Some kind of localized computing again.
 
 The driver for this paradigm shift will be the same as the last major paradigm shifts: 
 
@@ -71,9 +69,21 @@ Of course, a decade later, we will probably have applications so demanding that 
 
 The transitions that have occurred between paradigms in computation have more to do with ownership and control of computation and data than with technology itself:
 
-1880's to 1950's - Centralized (Mainframe era)
-1960's to 1980's - Decentralized (Microchip era)
-1990's to 2020's - Centralized (Internet era)
-????'s to ????'s - Decentralized (Molecular era?)
+|---|---|
+| 1880's to 1950's | Mainframe era (Centralized) |
+| 1960's to 1980's | Microchip era (Decentralized) |
+| 1990's to 2020's | Internet era (Centralized) |
+| Unknown | Molecular era (Decentralized) |
 
 The decentralization that occurred during the microchip era had to do with demand from managers and executives who wanted full control of the systems that they used (in the 1950's IBM mainframes were rentals leased from and maintained by IBM). Will the same occur in reaction to the cloud era? Is AWS the new IBM, renting computation to companies that will ultimately want control of their computing resources back? The only thing stopping companies from going back to desktop computers is that they can't handle the required computational load. If molecular computers of not-too-distant future can do what entire cloud systems do today, why would anyone use the cloud except to run legacy software?
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="cloud"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

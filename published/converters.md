@@ -1,23 +1,17 @@
+2021.07.13
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.20 - Type converters](#converters)  
+### KivaKit type converters &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "converters"></a>
-
-2021.07.20
-
-### Type converters &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
-
-It is common problem to convert one type into another. As with most problems, it is best to begin with the simplest possible design:
+It is a common problem to convert one type into another. As with most problems, it is best to begin with the simplest possible design:
 
     public interface Converter<From, To> extends Repeater
     {
         To convert(From from);
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../graphics/convert/convert.svg" width=50/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/convert/convert.svg" width=50/>
 
-In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [broadcast to interested listeners](#broadcaster). 
+In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [broadcast to interested listeners](../published/broadcaster.md). 
 
 While this interface perfectly captures a one way conversion, we may want to convert the destination type back to the original type:
 
@@ -32,11 +26,15 @@ Now, a *StringConverter*, as we normally think of it, is just a two-way converte
     {
     }
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="../graphics/string/string.svg" width=50/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/string/string.svg" width="80"/>
+
+The relationships between the classes in the converter mini-framework discussed above can be seen in this UML diagram:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-data-conversion.svg" width="700"/>
 
 These are fairly elegant interfaces, but what about the implementation?
 
-We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [polymorphic final methods pattern](#polymorphic-final-methods) to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
+We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md) to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
 
     public abstract class BaseConverter<From, To> extends BaseRepeater 
         implements Converter<From, To>
@@ -69,7 +67,7 @@ We would like the base implementation of *Converter* to handle issues that come 
          * as problems.
          */
         @Override
-        public final To convert(final From from)
+        public To convert(From from)
         {
             // If the value is null,
             if (from == null)
@@ -90,7 +88,7 @@ We would like the base implementation of *Converter* to handle issues that come 
                 // Return the converted value.
                 return onConvert(from);
             }
-            catch (final Exception e)
+            catch (Exception e)
             {
                 // If an exception occurs, broadcast a problem
                 problem(e, "${class}: Cannot convert ${debug}", getClass(), from);
@@ -162,7 +160,8 @@ Now we can implement our *StringConverter* interface. Besides *null* values and 
                 // and we allow null values
                 if (allowsNull())
                 {
-                    // return the string representation of null.                    return nullString();
+                    // return the string representation of null.
+                    return nullString();
                 }
                 else
                 {
@@ -259,3 +258,20 @@ We could also capture the errors with *MessageList* and analyze them, or count t
     }
 
 In another article, we can take a look at how converters are used to implement other features in KivaKit. In the meantime, the simplified conversion code we've explored above is available for use in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="converters"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

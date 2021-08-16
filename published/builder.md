@@ -1,14 +1,8 @@
-
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.04 - A (very) slightly simpler builder pattern](#builder)  
-
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "builder"></a>
-
 2021.07.04
 
-### A (very) slightly simpler builder pattern &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
+### A (very) slightly simpler builder pattern &nbsp; <img src="https://state-of-the-art.org/graphics/compress/compress-32.png" srcset="https://state-of-the-art.org/graphics/compress/compress-32-2x.png 2x" style="vertical-align:baseline"/>
 
-[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about it. There is a way to eliminate a bit of repetition from the example in this article, making the code a little easier to read and more succinct. The example looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
+[Frank Kiwy](https://blogs.oracle.com/author/frank-kiwy) recently published, in Java Magazine, the article [*Exploring Joshua Bloch’s Builder design pattern in Java: Bloch’s Builder pattern can be thought of as a workaround for a missing language feature*](https://blogs.oracle.com/javamagazine/java-builder-pattern-bloch). I have a fine point to make about the code example in this article. There is a way to eliminate a bit of repetition (mentioned in the article as a point of criticism of the pattern), making the code just a little easier to read and more succinct. The example in Frank's article looks something like this (I've reduced the number of fields and changed the formatting, because I'm just like that):
 
     public class Book 
     {
@@ -63,7 +57,7 @@
         }
     }
 
-My quibble is that we can get rid of the duplicate fields in the *Builder* class above by instead using an instance of *Book*. The difference between the two is that my version is a little bit simpler and clearer, and the line count drops from 52 lines in Josh's builder pattern to 47 in mine (and the more fields there are, the more this difference will widen). It is true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no difference because the fields can't be mutated except by *Builder*. They are effectively immutable once *build()* is called. 
+My quibble is just that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*. It is also true that it's not possible to build multiple objects from the same builder by inheriting previous builder state, but that is "a feature, not a bug." To build multiple related objects, consider instead [the functional property pattern](../published/functional-properties.md).
 
     public class Book 
     {
@@ -108,9 +102,31 @@ My quibble is that we can get rid of the duplicate fields in the *Builder* class
     
             public Book build() 
             {
-                return book;
+                var built = book;
+                book = new Book();
+                return built;
             }
         }
     }
      
-Questions? Comments? Tweet yours to @OpenKivaKit.
+Finally, yes, Frank is right that the builder pattern is a workaround for a missing language feature, and named parameters would be probably be welcomed. However it might be worth thinking about other approaches to this issue, such as my starting point for [abolishing constructors](../published/construction.md) (although perhaps not in Java) or creating a syntax for functional field updating similar to [the functional properties pattern](#functional-properties):
+
+    var spaceAliens = new Book() 
+        with isbn = "81729387" 
+        with title = "Space Aliens"
+        with author = "Calvin and Hobbes";
+
+This pattern would allow *Book* to be initialized clearly as with named parameters to a constructor but it would also permit new books to be functionally derived, as in:
+
+    var martians = spaceAliens with title = "Martians";
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="builder"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

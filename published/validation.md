@@ -1,10 +1,4 @@
-
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.27 - The design of KivaKit validation](#validation)  
-
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "validation"></a>
-
-2021.07.XX
+2021.07.20
  
 ### The design of KivaKit validation  &nbsp; <img src="https://state-of-the-art.org/graphics/checkmark/checkmark-32.png" srcset="https://state-of-the-art.org/graphics/checkmark/checkmark-32-2x.png 2x" style="vertical-align:baseline"/>
 
@@ -15,14 +9,21 @@
         Validator validator(ValidationType type);
     }
  
-*ValidationType* is an identifier that has sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the KivaKit [*Broadcaster / Listener*](#broadcaster) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
+*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the KivaKit [broadcaster / listener](../published/broadcaster.md) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
 
     public interface Validator
     {
         boolean validate(Listener listener);
     }
+
+The UML diagram for the key classes in this mini-framework looks like this:
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "uml/diagram-data-validation.svg" width="800"/>
  
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope.svg" width="80" style="vertical-align:bottom"/>
+
 
     public class Email implements Validatable
     {
@@ -55,6 +56,8 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
         problemIf()       // If there is a problem,
           addIfNotNull()  // broadcast it and add it to the list of issues
     issues.isValid()      // Return true if there are no important issues
+    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="graphics/footprints/footprints.svg" width="80"/>
     
 And the implementation of this looks (very roughly) like this:
 
@@ -98,4 +101,22 @@ And the implementation of this looks (very roughly) like this:
         }
     }
 
-Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](#polymorphic-final-methods). The validation mini-framework that we've discussed here is available in the kivakit-kernel module in [KivaKit](https://www.kivakit.org).
+Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md). The validation mini-framework that we've discussed here is available in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="validation"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
+

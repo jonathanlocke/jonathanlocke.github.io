@@ -1,9 +1,3 @@
-
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.13 - Polymorphic final methods](#polymorphic-final-methods)  
-
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "polymorphic-final-methods"></a>
-
 2021.07.13
 
 ### Polymorphic final methods &nbsp; <img src="https://state-of-the-art.org/graphics/override/override-40.png" srcset="https://state-of-the-art.org/graphics/override/override-40-2x.png 2x" style="vertical-align:baseline"/>
@@ -98,3 +92,13 @@ By providing the ability to "wrap" the *onLaunch()* polymorphic method in logic,
 
 The *polymorphic final method* pattern is used throughout [KivaKit](https://www.kivakit.org).
 
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="polymorphic-final-methods"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

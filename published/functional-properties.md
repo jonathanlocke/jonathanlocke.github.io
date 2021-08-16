@@ -1,14 +1,8 @@
-
-#### <img src="https://state-of-the-art.org/graphics/speech/speech-32.png" srcset="https://state-of-the-art.org/graphics/speech/speech-32-2x.png 2x" style="vertical-align:middle"/> &nbsp;  [2021.07.27 - Functional properties](#with-x)  
-
-<a name = "functional-properties"></a>
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-
 2021.07.27
 
-### Functional properties &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears-32.png" srcset="https://state-of-the-art.org/graphics/gears/gears-32-2x.png 2x" style="vertical-align:baseline"/>
+### The functional properties pattern &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears-32.png" srcset="https://state-of-the-art.org/graphics/gears/gears-32-2x.png 2x" style="vertical-align:baseline"/>
 
-When objects have properties in Java, this is often expressed with *getters* and *setters*. While [getters and setters should be avoided as much as possible](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html), some objects need to be configured to be used. We would like their fields to be immutable after construction, avoiding the risks associated with setters. This can be accomplished with constructor(s) or with the [builder pattern](https://dzone.com/articles/design-patterns-the-builder-pattern). But there is another approach that is sometimes useful. We can refer to this pattern as the *functional properties* pattern (since I'm not aware of any existing name for this design pattern). Functional properties preserve immutability while allowing state to be effectively "changed" after construction. This is accomplished by making a *copy* of an object with its state changed accordingly. The use of this pattern looks like this:
+When objects have properties in Java, this is often expressed with *getters* and *setters*. While [getters and setters should be avoided as much as possible](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html), some objects need to be configured to be used. We would like their fields to be immutable after construction, avoiding the risks associated with setters. This can be accomplished with constructor(s) or with the [builder pattern](../published/builder.md). But there is another approach that is sometimes useful. We can refer to this pattern as the *functional properties* pattern (since I'm not aware of any existing name for this design pattern). Functional properties preserve immutability while allowing state to be effectively "changed" after construction. This is accomplished by making a *copy* of an object with its state changed accordingly. The use of this pattern looks like this:
 
     var color = Color.RED
         .withAlpha(128)
@@ -147,3 +141,13 @@ The overridden *copy* method here ensures that if we change the red property of 
 
 The *functional property* design pattern is used frequently in [KivaKit](https://www.kivakit.org).
 
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="functional-properties"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

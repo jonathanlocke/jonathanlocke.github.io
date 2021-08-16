@@ -1,12 +1,6 @@
+2021.07.27
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.07.XX - A super easy way to access bit fields](#bit-diagram)  
-
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "bit-diagram"></a>
-
-2021.07.XX
-
-### A super easy way to access bit fields &nbsp; <img src="https://state-of-the-art.org/graphics/bits/bits-32.png" srcset="https://state-of-the-art.org/graphics/bits/bits-32-2x.png 2x" style="vertical-align:baseline"/>
+### A super easy way to access bit fields in Java &nbsp; <img src="https://state-of-the-art.org/graphics/bits/bits-32.png" srcset="https://state-of-the-art.org/graphics/bits/bits-32-2x.png 2x" style="vertical-align:baseline"/>
 
 A bit field is a series of bits in a primitive value like an *int* or a *long* that, taken together, can hold a value. For example, display colors are represented with bit fields for red, green, blue and alpha:
 
@@ -26,19 +20,39 @@ In this diagram, the 'A' characters represent *alpha* bits, the 'R' characters r
     private static BitField GREEN = COLOR.field('G');
     private static BitField BLUE  = COLOR.field('B');
 
-These *BitField* objects contain the shift and mask values, determined from the diagram,  needed to retrieve the field value from a primitive. For example, in this code:
+These *BitField* objects contain the shift and mask values, determined from the diagram, needed to retrieve the field values from a primitive. For example, in this code:
 
     var rgb   = 0xff8040;
+    
     var red   = RED.getInt(rgb);
     var green = GREEN.getInt(rgb);
     var blue  = BLUE.getInt(rgb);
-    
+
 the variable *red* will be 0xff, *green* will be 0x80 and *blue* will be 0x40.
 
-We can use these same *BitField* objects to set values into a primitive value:
+We can use these same *BitField* objects to set the bit fields of a primitive value:
 
-    RED.set(rgb, 0x12);
-    GREEN.set(rgb, 0x34);
-    BLUE.set(rgb, 0x56);
+    var rgb = 0;
+    
+    rgb = RED.set(rgb, 0x12);
+    rgb = GREEN.set(rgb, 0x34);
+    rgb = BLUE.set(rgb, 0x56);
 
 After executing this code, our *rgb* variable will now be 0x123456. The handy *BitDiagram* class is in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="bit-diagram"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
