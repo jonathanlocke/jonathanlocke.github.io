@@ -265,6 +265,8 @@ In another article, we can take a look at how converters are used to implement o
         <version>${kivakit.version}</version>
     </dependency>
 
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script

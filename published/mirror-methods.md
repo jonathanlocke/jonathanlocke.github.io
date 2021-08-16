@@ -224,6 +224,8 @@ Now we can say either of these two things:
 
 and both resolve to the same code.
 
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script

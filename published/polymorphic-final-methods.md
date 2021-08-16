@@ -92,6 +92,8 @@ By providing the ability to "wrap" the *onLaunch()* polymorphic method in logic,
 
 The *polymorphic final method* pattern is used throughout [KivaKit](https://www.kivakit.org).
 
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script

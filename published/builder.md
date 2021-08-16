@@ -120,6 +120,8 @@ This pattern would allow *Book* to be initialized clearly as with named paramete
 
     var martians = spaceAliens with title = "Martians";
 
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
 <script
