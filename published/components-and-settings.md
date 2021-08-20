@@ -2,13 +2,12 @@
 
 ### KivaKit components and settings &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears.svg" width="40"/>
 
-The *kivakit-configuration* module provides three useful facilities for configuring and working with components:
+The *kivakit-configuration* module provides two useful facilities for configuring and working with components:
 
-1. Object lookup registry (*Registry*)
-2. Settings registry (*Settings*)
-3. Base component class (*BaseComponent*)
+1. An object lookup registry (*Registry*)
+2. A settings registry (*Settings*)
 
-We will examine each of these in order. In practice, most applications will simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with lookup and settings registries.
+The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [message broadcasting and listening](broadcaster.md). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
 
 #### The object lookup registry
 
@@ -52,7 +51,7 @@ For example, this user-defined settings object might be used to configure *Apach
 
     public class PinotSettings
     {
-        @KivaKitPropertyConverter
+        @KivaKitPropertyConverter(Port.Converter.class)
         Port zookeeperPort;
     
         @KivaKitPropertyConverter
@@ -75,7 +74,7 @@ The *class* value specifies the settings object to instantiate. Once the object 
 Packages and folders of *.properties* files can be used to group the settings for a particular configuration of an application or server (the *Deployment* and *DeploymentSet* classes help to do this and will be the subject of a future article). For example:
 
     settings
-       |── PinotSettings.properties
+       ├── PinotSettings.properties
        ├── WebSettings.properties
        └── HdfsSettings.properties
 
@@ -112,7 +111,7 @@ These configurations can then be found using an instance specifier as in:
 <a name="#components"></a>
 #### KivaKit components
 
-Now that we have covered the mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make this easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [How KivaKit adds mixins to Java](../published/mixins.md) for details).
+Now that we have covered the core mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make accessing this functionality easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [How KivaKit adds mixins to Java](mixins.md) for details).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.application.component.svg" width="700"/>
 
@@ -132,7 +131,7 @@ Notice that *require(PinotSettings.class)* in *BaseComponent* returns a *PinotSe
 
     require(PinotSettings.class).connection()
 
-Finally, the *Application* and *Server* classes in the *kivakit-application* module extend *BaseComponent*, which means that all applications have convenient ways to perform messaging operations, and look up objects and settings. In fact, in our *Application*, we can register our settings like this:
+Finally, the *Application* and *Server* classes in the *kivakit-application* module extend *BaseComponent*, which means that all applications are components and have convenient ways to perform messaging operations, and look up objects and settings. In fact, in our *Application*, we can register our settings like this:
 
     public MyPinotApplication extends Application
     {
@@ -162,11 +161,11 @@ The object and settings registries discussed above are available in *kivakit-con
         <version>${kivakit.version}</version>
     </dependency>
 
-The component-related classes are available in *kivakit-application*:
+The component-related classes are available in *kivakit-component*:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>
-        <artifactId>kivakit-application</artifactId>
+        <artifactId>kivakit-component</artifactId>
         <version>${kivakit.version}</version>
     </dependency>
 

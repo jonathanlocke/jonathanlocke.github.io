@@ -2,7 +2,7 @@
 
 ### KivaKit applications &nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/server/server.svg" width="128" style="vertical-align:baseline"/>
 
-The *kivakit-application* module contains building blocks for creating applications and servers. The class *Application* extends *BaseComponent*, and *Server* extends *Application*. In turn, *BaseComponent* inherits *Repeater* functionality from *BaseRepeater* and default methods from *Component* (*ComponentMixin*, not shown, also inherits these methods):
+The *kivakit-application* module contains building blocks for creating applications and servers. In the diagram below, we can see that the *Application* class extends *BaseComponent*. *Server*, in turn, extends *Application*. *BaseComponent* inherits *Repeater* functionality from *BaseRepeater*, and handy default methods from the *Component* interface. *ComponentMixin* (shown in the next diagram) also inherits these methods from *Component*.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-application.svg" width="600"/>
 
