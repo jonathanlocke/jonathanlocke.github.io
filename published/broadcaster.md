@@ -10,7 +10,7 @@ Which brings us to the *Broadcaster/Listener* design pattern. A language like Ja
 
 A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are some of the messages that can be sent (and more can be added through subclassing).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="90" style="vertical-align:middle"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="120" style="vertical-align:middle"/>
 
 A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
