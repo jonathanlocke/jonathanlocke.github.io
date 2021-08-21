@@ -104,7 +104,11 @@ Our *AttributedMixin* can now be added to any object, and it will provide a keye
         }
     }
 
-This is a unit test for *AttributedMixin* from *kivakit-kernel* which is a module in [KivaKit](https://www.kivakit.org). 
+This is a unit test for *AttributedMixin*.
+
+#### Code
+
+Mixins are available in the *kivakit-kernel* project, which is a module in [KivaKit](https://www.kivakit.org):
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

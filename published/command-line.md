@@ -18,7 +18,9 @@ The *kivakit-commandline* module provides the switch and argument parsing used b
 
 In *run()*, a *CommandLineParser* instance is created and configured with the applications argument and switch parsers, as returned by *switchParsers()* and *argumentParsers()* in our application subclass. Next, when the *parse(String[])* method is called, the command line is parsed. The resulting *CommandLine* model is stored in *Application*, and is used later by our application to retrieve argument and switch values.
 
-An overview of the classes used in this parsing process can be seen in this abbreviated UML diagram:
+#### Parsing 
+
+An overview of the classes used in command line parsing can be seen in this abbreviated UML diagram:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-command-line.svg" width="700"/>
 

@@ -13,6 +13,8 @@ Logging allows events that occur during the execution of a program to be analyze
 
 While these frameworks vary in their feature sets, the common idea is that calls to a few specialized logger methods are used to direct log entry information to one or more log implementations. 
 
+#### Logging and messaging
+
 KivaKit departs from these frameworks because KivaKit *Logger*s participate in the [*Broadcaster / Listener*](../published/broadcaster.md) design pattern. A *Logger* in KivaKit is a *Listener* which can receive and log any kind of (*Transmittable*) *Message*:
 
     public interface Logger extends Listener
@@ -50,13 +52,17 @@ Usage looks like this:
 
 By default, *LoggerFactory* returns instances of *LogServiceLogger*. This logger parses the KIVAKIT_LOG system property and uses *LogServiceLoader* to dynamically load and configure implementations of the *Log* service provider interface (SPI). Logs are discovered and loaded with Java's *ServiceLoader* class. Once *LogServiceLogger* has loaded and configured its *Log*s, it forwards any messages it receives to each.
 
+#### Logs
+
 A few *Log* implementations are included in KivaKit, and it's very easy to implement new ones:
 
 * *ConsoleLog*
 * *EmailLog*
 * *FileLog*
 
-Logs can be filtered using the system property KIVAKIT_LOG_LEVEL, and asynchronous logging can be turned off with -DKIVAKIT_LOG_SYNCHRONOUS=false. For more details on logging configuration, see [kivakit-kernel logging](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/logging.md). You will need to read this documention enough to understand the details of the KIVAKIT_LOG property at a minimum.
+Logs can be filtered using the system property KIVAKIT_LOG_LEVEL, and asynchronous logging can be turned off with -DKIVAKIT_LOG_SYNCHRONOUS=false. For more details on logging configuration, see [kivakit-kernel logging](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/logging.md). You will need to read this documentation enough to understand the details of the KIVAKIT_LOG property at a minimum.
+
+#### Loggers
 
 Although *Logger*s are easy enough to use by themselves, in KivaKit it is rare to use one directly. Instead, an object will extend *BaseComponent* or implement the *ComponentMixin* interface, and it will simply broadcast messages without regard to where they might go. Any actual logging only comes in if those messages arrive at a *Logger* at the end of the listener chain (or somewhere along the way). This design completely decouples an object's reporting of its status from logging functionality, while still allowing it to happen when desired.
 
@@ -80,7 +86,9 @@ The *Application* class (more on this in a future article) does exactly this:
 
 Here, when any *Application* subclass broadcasts a message (directly or through a listener chain) it can depend on it being logged (if it isn't filtered out somewhere along the way in the listener chain). 
 
-In practice usage this looks like:
+#### Listener chain example
+
+Here is an example of how messages from KivaKit components are routed through a listener chain and logged:
 
     public OperationDoomIII extends Application
     {
@@ -118,11 +126,13 @@ It is worth noting that methods like *problem()*, inherited from *BaseComponent*
 
     narrate("Launching in $ seconds", secondsToLaunch());
 
-Since the formatting of messages is lazy, if a message is filtered out (perhaps by log level), then no formatting occurs. In addition, argument evaluation doesn't happen until formatting time, so it's easy to delay evaluation of expensive arguments:
+Since the formatting of messages is lazy, if a message is filtered out (perhaps by KIVAKIT_LOG_LEVEL), then no formatting occurs. In addition, argument evaluation doesn't happen until formatting time, so it's easy to delay evaluation of expensive arguments by passing a method reference as an argument:
 
     narrate("Launching in $ seconds", this::computeSecondsToLaunch);
 
-Details on formatting can be found in *MessageFormatter*. The logging classes discussed here are part of the kivakit-kernel module of [KivaKit](https://www.kivakit.org).
+#### Code
+
+Details on formatting can be found in *MessageFormatter*. The logging classes discussed here are part of the *kivakit-kernel* module of [KivaKit](https://www.kivakit.org).
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

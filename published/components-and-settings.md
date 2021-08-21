@@ -153,6 +153,8 @@ and one further line was required to access an *Apache Pinot* database connectio
             
     require(PinotSettings.class).connection()
 
+#### Code 
+
 The object and settings registries discussed above are available in *kivakit-configuration* in the [KivaKit](https://www.kivakit.org) project:
 
     <dependency>

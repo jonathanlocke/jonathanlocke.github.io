@@ -1,14 +1,28 @@
 2021.07.07
 
-### How *Broadcaster/Listener* improves KivaKit component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar-32.png" srcset="https://state-of-the-art.org/graphics/sonar/sonar-32-2x.png 2x" style="vertical-align:baseline"/>
+### How *Broadcaster / Listener* improves KivaKit component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar-32.png" srcset="https://state-of-the-art.org/graphics/sonar/sonar-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Dr. Alan Kay's conception of object-oriented programming in the late 1960's came about, in part, as a result of his undergraduate work in molecular biology. A cell is a pretty good analogy for an object and DNA is a sort of template or class from which cells are created. But to Kay, what would have been most interesting were cell surface receptors, and the way that cells pass various kinds of messages to each other (and themselves) by secreting compounds that bind to these receptors. He posted this revealing email in 1998:
 
 > [...] Smalltalk is not only NOT its syntax or the class library, it is not even about classes. I'm sorry that I long ago coined the term "objects" for this topic because it gets many people to focus on the lesser idea. The big idea is "messaging" [...] 
 
-Which brings us to the *Broadcaster/Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster/Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
+Which brings us to the *Broadcaster / Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster / Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
-A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are some of the messages that can be sent (and more can be added through subclassing).
+#### Broadcasters
+
+A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKits most commonly used messages:
+
+| Message | Purpose |
+|---|---|
+| CriticalAlert | An operation failed and needs *immediate attention* from a human operator | 
+| Alert | An operation failed and needs to be looked at by an operator soon |
+| FatalProblem | An unrecoverable problem has caused an operation to fail and needs to be addressed |
+| Problem | Something has gone wrong and needs to be addressed, but it's not fatal to the current operation |
+| Glitch | A minor problem has occurred. Unlike a Warning, a Glitch indicates validation failure or minor data loss has occurred. Unlike a Problem, a Glitch indicates that the operation will definitely recover and continue. |
+| Warning | A minor issue occurred but does not necessarily require attention |
+| Narration | A step in some operation has started or completed |
+| Information | Commonly useful information that doesn't represent any problem |
+| Trace | Diagnostic information for use when debugging |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="120" style="vertical-align:middle"/>
 
@@ -26,6 +40,8 @@ A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Liste
     }
 
 > Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this is acceptable.
+
+#### Listeners
 
 A [*Listener*](../uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
@@ -52,6 +68,8 @@ Here are a few examples of the many [*Listener*s](../uml/diagram-message-listene
 | StatusPanel | A Swing panel that displays messages it receives |
 | NullListener | A listener that discards the messages it receives |
 | ValidationReporter | Reports validation problems it receives |
+
+#### Repeaters
 
 A [*Repeater*](../uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
 
@@ -125,7 +143,9 @@ KivaKit has hundreds of classes that are *Repeaters*. This allows most non-trivi
 
 Each of these classes listens to errors from components it uses and broadcasts problems to its own listeners.
 
-The simplified *Broadcaster/Listener* design pattern discussed above is available in its entirety in *kivakit-kernel* and is used throughout [KivaKit](https://www.kivakit.org) for messaging between components.
+#### Code 
+
+The simplified *Broadcaster / Listener* design pattern discussed above is available in its entirety in *kivakit-kernel* and is used throughout [KivaKit](https://www.kivakit.org) for messaging between components:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

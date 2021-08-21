@@ -64,7 +64,11 @@ We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we 
     
     lazyMap.get().put(key, value);
 
-True, it's not quite as nice as having a *lazy* keyword, but it improves readability by making the flow of code easier to follow. The *Lazy* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
+True, it's not quite as nice as having a *lazy* keyword, but it improves readability by making the flow of code easier to follow. 
+
+#### Code
+
+The *Lazy* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

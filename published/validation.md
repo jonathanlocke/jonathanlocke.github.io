@@ -16,6 +16,8 @@
         boolean validate(Listener listener);
     }
 
+#### Design
+
 The UML diagram for the key classes in this mini-framework looks like this:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/diagram-data-validation.svg" width="800"/>
@@ -58,7 +60,9 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/footprints/footprints.svg" width="60"/>
 
-And the implementation of this looks (very roughly) like this:
+#### Implementation 
+
+The implementation of BaseValidator looks (very roughly) like this:
 
     public abstract class BaseValidator implements Validator
     {
@@ -100,7 +104,11 @@ And the implementation of this looks (very roughly) like this:
         }
     }
 
-Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md). The validation mini-framework that we've discussed here is available in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md). 
+
+#### Code
+
+The validation mini-framework that we've discussed here is available in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

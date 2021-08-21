@@ -145,6 +145,8 @@ The *onRun()* method in our example application calls *argument()* with the *INP
     
     information("Lines = $", Count.count(input.reader().lines()));
  
+#### Help
+ 
 Finally, if something goes wrong interpreting our application's command-line arguments, *KivaKit* will capture any broadcast messages, as well as information from the argument and switch parsers. It will then use this information to provide detailed help about what went wrong and how to correctly use the application:
 
     ┏━━━━━━━━━━━━━━━━━┫ COMMAND LINE ERROR(S) ┣━━━━━━━━━━━━━━━━━┓
@@ -168,8 +170,9 @@ Finally, if something goes wrong interpreting our application's command-line arg
     
       -show-file-size=Boolean (optional, default: false) : Show the file size in bytes
     
+#### Code
 
-The complete code for this example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository.
+The complete code for the example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository. The Maven dependency for *kivakit-application* is:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

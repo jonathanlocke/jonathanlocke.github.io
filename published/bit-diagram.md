@@ -8,6 +8,8 @@ A bit field is a series of bits in a primitive value like an *int* or a *long* t
 
 The code required to get and set fields of a primitive involve shifting and masking operations which can be error prone and sometimes hard to follow.
 
+#### Bit diagrams and bit fields
+
 KivaKit provides the *BitDiagram* class to make this task easy. Taking our example of ARGB colors, we can create a *BitDiagram* for colors:
 
     private static BitDiagram COLOR = new BitDiagram
@@ -20,7 +22,11 @@ In this diagram, the 'A' characters represent *alpha* bits, the 'R' characters r
     private static BitField GREEN = COLOR.field('G');
     private static BitField BLUE  = COLOR.field('B');
 
-These *BitField* objects contain the shift and mask values, determined from the diagram, needed to retrieve the field values from a primitive. For example, in this code:
+These *BitField* objects contain the shift and mask values, determined from the diagram, needed to retrieve the field values from a primitive. 
+
+#### Example
+
+In this code:
 
     var rgb   = 0xff8040;
     
@@ -28,17 +34,19 @@ These *BitField* objects contain the shift and mask values, determined from the 
     var green = GREEN.getInt(rgb);
     var blue  = BLUE.getInt(rgb);
 
-the variable *red* will be 0xff, *green* will be 0x80 and *blue* will be 0x40.
+the BitField*s RED, GREEN and BLUE are used to extract the *red*, *green* and *blue* values from the *rgb* integer variable. After executing this code, the variable *red* will be 0xff, *green* will be 0x80 and *blue* will be 0x40.
 
-We can use these same *BitField* objects to set the bit fields of a primitive value:
+We can use the same *BitField* objects again to set the bit fields of a primitive value:
 
-    var rgb = 0;
-    
     rgb = RED.set(rgb, 0x12);
     rgb = GREEN.set(rgb, 0x34);
     rgb = BLUE.set(rgb, 0x56);
 
-After executing this code, our *rgb* variable will now be 0x123456. The handy *BitDiagram* class is in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+After executing this code, our *rgb* variable will be 0x123456. 
+
+#### Code
+
+The handy *BitDiagram* class is in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org):
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

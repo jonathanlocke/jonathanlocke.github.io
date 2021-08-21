@@ -1,14 +1,11 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.XX.XX - KivaKit resources](#resources)  
+#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.24 - KivaKit resources](#resources)  
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "state-machine"></a>
-
-2021.XX.XX
+2021.08.24
 
 ### KivaKit resources &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
 
-A resource is a stream of data that can be opened, and then read from or written to. Examples of resources include:
+A resource is a stream of data that can be opened, and then read from or written to. KivaKit provides an abstraction mini-framework that allows easy and consistent access to many types of resources, and it makes it easy to create new resources. Examples of KivaKit resources include:
 
 * Files
 * Sockets
@@ -20,7 +17,9 @@ A resource is a stream of data that can be opened, and then read from or written
 * Input streams
 * Output streams
 
-KivaKit provides an abstraction that allows easy and consistent access to these resources and others, and it makes it easy to create new resources. Some short examples:
+#### Example use cases
+
+A few short examples of resource use cases:
 
 *Read the lines of a .csv file from a package, reporting progress:*
 
@@ -51,28 +50,18 @@ Note that if this code is in a KivaKit *Component*, then the first line can be r
         listenTo(zip.entry("data.txt")).safeCopyTo(folder, OVERWRITE);
     }
 
-In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* calls add *this* as a listener to the argument object, creating a listener chain. If something notable happens in a *Resource*, it will broadcast a message down the listener chain. For more information, see the [Broadcaster/Listener design pattern.](#broadcaster) 
+In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* calls add *this* as a listener to the argument object, creating a listener chain. If something notable happens in a *Resource* (for example, an attempt to open the resource when it doesn't exist), it will broadcast a message down the listener chain. 
 
-> Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this behavior is acceptable. This means that the calls to *listenTo* in the code above are optional if there is no need for downstream listeners to receive messages from *File* and *Folder*.
+#### Resource problems and messaging
 
-All *Resource*s inherit and use the *fatal()* method to report problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base interface *Transceiver* does two things:
+All *Resource*s inherit and use the *fatal()* method to report unrecoverable problems with opening, reading and writing (other methods may have different semantics, such as those with a boolean return value). The *fatal()* method in *Broadcaster*'s base interface *Transceiver* does two things:
 
 1. Broadcasts a *FatalProblem* message to listeners
 2. Throws an *IllegalStateException*
 
-The code (in *Broadcaster*'s parent interface *Transceiver*) looks like this:
+*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can usually be ignored because it has already been broadcast (and probably logged, depending on the terminal listener(s)).
 
-    default <T> T fatal(String text, Object... arguments)
-    {
-        var problem = new FatalProblem(text, arguments);
-        handle(problem);
-        problem.throwAsIllegalStateException();
-        return null;
-    }
-
-*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can be ignored because it has already been broadcast (and probably logged, depending on the terminal listener(s)).
-
-For example, in this common (but unfortunate looking) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause and logged:
+For example, in this common (but unfortunate looking) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause, and logged:
 
     class Launcher
     {
@@ -122,9 +111,11 @@ One KivaKit alternative to this idiom is this:
         }
     }
 
-After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). 
+After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). For more information on messaging, see [the broadcaster / listener design pattern.](broadcaster.md)
 
-Okay, but how do KivaKit resources work?
+#### The design of resources
+
+Okay, so how do KivaKit resources work?
 
 The design of KivaKit's resource module is [fairly complex](https://www.kivakit.org/0.9.8-beta/lexakai/kivakit/kivakit-resource/documentation/diagrams/diagram-resource.svg), so we will focus on the most important, high level aspects in this article.
 
@@ -139,9 +130,9 @@ The *Resource* class in this diagram is central. This class:
 * Has a time of last modification (from *ModificationTimestamped*)
 * Is a *ReadableResource*
 
-Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()* or read from with the convenience methods in *ResourceReader* (which is accessed with *ReadableResource.reader()*).
+Since all resources are *ReadableResource*s, they can be opened with *Readable.openForReading()*, or read from with the convenience methods in *ResourceReader* (which is accessed with *ReadableResource.reader()*).
 
-In addition, some resources are *WritableResource*s. Those can be opened with *Writable.openForWriting()* and written to with the convenience class *ResourceWriter*
+In addition, some resources are *WritableResource*s. Those can be opened with *Writable.openForWriting()*, and written to with methods in the convenience class *ResourceWriter*
 
 The *Resource* class itself can determine if the resource *exists()* and if it *isRemote()*. Remote resources can be *materialized* to a temporary file on the local filesystem before reading them (using methods not in the UML diagram). *Resource*s can also perform a safe copy of their contents to a destination *File* or *Folder* with the two *safeCopyTo()* methods. Safe copying involves 3 steps:
 
@@ -149,9 +140,13 @@ The *Resource* class itself can determine if the resource *exists()* and if it *
 2. Delete the destination file
 3. Rename the temporary file to the destination filename
 
-Finally, *BaseWritableResource* extends *BaseReadableResource* to add the ability to *delete* a resource, and to save an *InputStream* to the resource, reporting progress as it does this. This is the class hierarchy for *ReadableResource*s and *WritableResource*s:
+Finally, *BaseWritableResource* extends *BaseReadableResource* to add the ability to *delete* a resource, and to save an *InputStream* to the resource, reporting progress as it does this. 
+
+To give an idea of the resources that KivaKit provides this is a snapshot of the class hierarchy of readable and writable resources:
 
 <img src="../uml/resource-classes.png" width=500/>
+
+#### Implementing a resource
 
 Now, let's take a quick look at a *Resource* implementation. The implementation of a simple *ReadableResource* requires only an *onOpenForReading* method and a *sizeInBytes()* method. A default for everything else will be provided by *BaseReadableResource*. The *StringResource* class is a good example. It looks like this:
 
@@ -178,6 +173,8 @@ Now, let's take a quick look at a *Resource* implementation. The implementation 
         }
     }
 
+#### Conclusion
+
 A few things we didn't talk about:
 
 * All resources transparently implement different kinds of compression and decompression via the *Codec* interface
@@ -185,6 +182,28 @@ A few things we didn't talk about:
 * Generic resource identifiers and their resolution
 * Loading of SPI implementations used by File and Folder (Local, S3, HDFS, etc)
 
+#### Code 
+
 The resource module covered above is available in *kivakit-resource* in the [KivaKit](https://www.kivakit.org) project.
 
-Questions? Comments? Tweet yours to @OpenKivaKit.
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-resource</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+<br/>
+
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="bit-diagram"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>

@@ -32,6 +32,8 @@ The relationships between the classes in the converter mini-framework discussed 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-data-conversion.svg" width="700"/>
 
+#### Implementation 
+
 These are fairly elegant interfaces, but what about the implementation?
 
 We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md) to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
@@ -257,7 +259,13 @@ We could also capture the errors with *MessageList* and analyze them, or count t
         [...]
     }
 
-In another article, we can take a look at how converters are used to implement other features in KivaKit. In the meantime, the simplified conversion code we've explored above is available for use in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
+#### Conclusion
+
+This article has given a basic description of how KivaKit converters are designed and implemented. In the [command line parsing](command-line.md) article, we take a look at how string converters are used to parse command line switches and arguments.
+
+#### Code
+
+The simplified conversion code we've explored above is available for use in *kivakit-kernel* in the [KivaKit](https://www.kivakit.org) project.
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>
