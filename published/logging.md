@@ -1,6 +1,6 @@
 2021.08.17
 
-### KivaKit logging and the broadcaster / listener design pattern &nbsp; <img src="https://state-of-the-art.org/graphics/log/log-32.png" srcset="https://state-of-the-art.org/graphics/log/log-32-2x.png 2x" style="vertical-align:baseline"/>
+### KivaKit logging &nbsp; <img src="https://state-of-the-art.org/graphics/log/log-32.png" srcset="https://state-of-the-art.org/graphics/log/log-32-2x.png 2x" style="vertical-align:baseline"/>
 
 Logging allows events that occur during the execution of a program to be analyzed after the fact. A few of the more popular open source logging frameworks for Java include:
 
