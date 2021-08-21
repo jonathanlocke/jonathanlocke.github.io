@@ -2,7 +2,7 @@
 
 ### How KivaKit adds mixins to Java  &nbsp; <img src="https://state-of-the-art.org/graphics/math/math-32.png" srcset="https://state-of-the-art.org/graphics/math/math-32-2x.png 2x" style="vertical-align:baseline"/>
 
-[Traits](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [Traits in Java 8: Semantic, DRY-compliant, Interface-first Code](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
+[*Traits*](https://tinyurl.com/2n6bbnv3) are a language feature in Scala, Groovy, Kotlin and other languages which allow groups of methods to be added to objects in arbitrary combinations. Unlike interfaces, however, traits can contain method bodies, which allows traits to provide objects with new behaviors. With the addition of [default methods](https://docs.oracle.com/javase/tutorial/java/IandI/defaultmethods.html), Java now provides some of the features of traits, as described by Emil Forslund in [*Traits in Java 8: Semantic, DRY-compliant, Interface-first Code*](https://dzone.com/articles/definition-of-the-trait-pattern-in-java).
 
 When traits include state, they are referred to as *stateful traits* or *mixins*. It is also possible to implement mixins in Java:
 

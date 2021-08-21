@@ -12,7 +12,7 @@ Which brings us to the *Broadcaster / Listener* design pattern. A language like 
 
 #### Broadcasters
 
-A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKits most commonly used messages:
+A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKit's most commonly used messages:
 
 | Message | Purpose |
 |---|---|
@@ -128,7 +128,7 @@ The final line of code listens to messages from *PayrollProcessor* with a *Logge
 
 This design yields a lots of flexibility as well as clean, simple error handling with very little code.
 
-A class can implement the *Repeater* interface in two ways. It can extend *BaseRepeater* (as above) or it can implement *RepeaterMixin* if it already has a base class. For more details on how mixins work in KivaKit, see [*how KivaKit adds mixins to Java.*](../published/mixins.md)
+A class can implement the *Repeater* interface in two ways. It can extend *BaseRepeater* (as above) or it can implement *RepeaterMixin* if it already has a base class. For more details on how mixins work in KivaKit, see [*How KivaKit adds mixins to Java.*](../published/mixins.md)
 
 The ability to arbitrarily chain messages, particularly messages that represent some kind of warning or problem, greatly increases component flexibility:
 

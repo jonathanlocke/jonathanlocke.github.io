@@ -36,7 +36,7 @@ Once a *CommandLine* has been successfully parsed, it is available through *Appl
 
 #### Example
 
-In the example in [KivaKit applications](applications.md), the argument and switch parsers returned by the example application were declared like this:
+In the example in [*KivaKit applications*](applications.md), the argument and switch parsers returned by the example application were declared like this:
 
     import static com.telenav.kivakit.commandline.SwitchParser.booleanSwitchParser;
     import static com.telenav.kivakit.filesystem.File.fileArgumentParser;
@@ -87,7 +87,7 @@ But there are a few questions to address regarding how all this works. How are a
 
 #### Command line validation
 
-The KivaKit [validation](validation.md) mini-framework is used to validate switches and arguments. As shown in the diagram below, validators for arguments and switches are implemented in the (private) classes *ArgumentListValidator* and *SwitchListValidator*, respectively. When arguments and switches are parsed by *CommandLineParser* these validators are used to ensure that the resulting parsed values are valid.
+The [*KivaKit validation*](validation.md) mini-framework is used to validate switches and arguments. As shown in the diagram below, validators for arguments and switches are implemented in the (private) classes *ArgumentListValidator* and *SwitchListValidator*, respectively. When arguments and switches are parsed by *CommandLineParser* these validators are used to ensure that the resulting parsed values are valid.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-validation.svg" width="700"/>
 
@@ -184,7 +184,7 @@ The description comes from *Application.description()*, which we can override in
 
 #### Creating new switch and argument parsers
 
-Creating a new switch (or argument) parser is very easy if you have a [type converter](converters.md) for the switch. For example, in the application above, we created the *SHOW_FILE_SIZE* switch parser by calling *SwitchParser.booleanSwitchParser()* to create a builder. We then called *optional()* to make the switch optional and gave it a default value of *false* before building the parser with *build()*:
+Creating a new switch (or argument) parser is very easy if you have a [*KivaKit type converter*](converters.md) for the switch. For example, in the application above, we created the *SHOW_FILE_SIZE* switch parser by calling *SwitchParser.booleanSwitchParser()* to create a builder. We then called *optional()* to make the switch optional and gave it a default value of *false* before building the parser with *build()*:
 
     import static com.telenav.kivakit.commandline.SwitchParser.booleanSwitchParser;
 

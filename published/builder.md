@@ -57,7 +57,7 @@
         }
     }
 
-My quibble is just that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*. It is also true that it's not possible to build multiple objects from the same builder by inheriting previous builder state, but that is "a feature, not a bug." To build multiple related objects, consider instead [the functional property pattern](../published/functional-properties.md).
+My quibble is just that we can get rid of the duplicate fields in the *Builder* class in the code above by instead using an instance of *Book*. My version is a little bit simpler and clearer, doesn't repeat assignments, and the line count drops from 52 lines in "Josh's builder pattern" to 49 in mine (and with more fields there will be more difference). It *is* true that in my version, the fields in *Book* are no longer explicitly declared as *final*. However, this makes no practical difference because the fields can't be mutated except by *Builder*. It is also true that it's not possible to build multiple objects from the same builder by inheriting previous builder state, but that is "a feature, not a bug." To build multiple related objects, consider instead [*The functional properties pattern*](../published/functional-properties.md).
 
     public class Book 
     {
@@ -109,7 +109,7 @@ My quibble is just that we can get rid of the duplicate fields in the *Builder* 
         }
     }
      
-Finally, yes, Frank is right that the builder pattern is a workaround for a missing language feature, and named parameters would be probably be welcomed. However it might be worth thinking about other approaches to this issue, such as my starting point for [abolishing constructors](../published/construction.md) (although perhaps not in Java) or creating a syntax for functional field updating similar to [the functional properties pattern](#functional-properties):
+Finally, yes, Frank is right that the builder pattern is a workaround for a missing language feature, and named parameters would be probably be welcomed. However it might be worth thinking about other approaches to this issue, such as my starting point for [abolishing constructors](../published/construction.md) or creating a language syntax for functional field updating similar to [*The functional properties pattern*](#functional-properties):
 
     var spaceAliens = new Book() 
         with isbn = "81729387" 

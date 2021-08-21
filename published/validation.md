@@ -9,7 +9,7 @@
         Validator validator(ValidationType type);
     }
  
-*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the KivaKit [broadcaster / listener](../published/broadcaster.md) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
+*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the [*KivaKit Broadcaster / Listener*](../published/broadcaster.md) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
 
     public interface Validator
     {
@@ -108,7 +108,7 @@ The implementation of BaseValidator looks (very roughly) like this:
         }
     }
 
-Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md). 
+Note that the *validate()* / *onValidate()* methods are an example of the [*polymorphic final methods pattern*](../published/polymorphic-final-methods.md). 
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 

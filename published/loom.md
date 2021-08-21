@@ -12,7 +12,7 @@ In the world of the cloud, where huge numbers of requests are typically blocked 
 
 Enter project Loom.
 
-[Project Loom](https://blogs.oracle.com/javamagazine/going-inside-javas-project-loom-and-virtual-threads) is Java's answer to lightweight user-mode threads, and it will likely make Java very competitive with Go as a cloud language. Loom's lightweight threading model is designed to be fully compatible with Java's existing threading model, so you won't have to learn anything to use it. This feat has been accomplished by integrating Loom's *virtual threads* with *java.lang.Thread* and *java.util.concurrent.Executor*. The only different between kernel threads and Loom's virtual threads are how threads are initially created.
+[*Project Loom*](https://blogs.oracle.com/javamagazine/going-inside-javas-project-loom-and-virtual-threads) is Java's answer to lightweight user-mode threads, and it will likely make Java very competitive with Go as a cloud language. Loom's lightweight threading model is designed to be fully compatible with Java's existing threading model, so you won't have to learn anything to use it. This feat has been accomplished by integrating Loom's *virtual threads* with *java.lang.Thread* and *java.util.concurrent.Executor*. The only different between kernel threads and Loom's virtual threads are how threads are initially created.
 
 A thread builder in the *Thread* class will allow threads to be created as virtual. With this functionality, Java can easily mimic the functionality provided by the *go* statement in Go:
 
