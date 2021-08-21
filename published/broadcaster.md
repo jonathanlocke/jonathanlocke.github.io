@@ -23,6 +23,7 @@ A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-me
 | Glitch | A minor problem has occurred. Unlike a Warning, a Glitch indicates validation failure or minor data loss has occurred. Unlike a Problem, a Glitch indicates that the operation will definitely recover and continue. |
 | Warning | A minor issue occurred which should be corrected, but does not necessarily require attention |
 | Quibble | A trivial issue that does not require correction |
+| Announcement | Announcement of an important phase of an operation |
 | Narration | A step in some operation has started or completed |
 | Information | Commonly useful information that doesn't represent any problem |
 | Trace | Diagnostic information for use when debugging |
