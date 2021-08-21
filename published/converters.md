@@ -2,7 +2,7 @@
 
 ### KivaKit type converters &nbsp; <img src="https://state-of-the-art.org/graphics/wand/wand-32.png" srcset="https://state-of-the-art.org/graphics/wand/wand-32-2x.png 2x" style="vertical-align:baseline"/>
 
-It is a common problem to convert one type into another. As with most problems, it is best to begin with the simplest possible design:
+It is a common problem to convert one type into another. As with most problems, it is best to begin with the simplest design possible:
 
     public interface Converter<From, To> extends Repeater
     {

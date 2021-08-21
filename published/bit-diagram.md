@@ -11,7 +11,7 @@ The code required to get and set fields of a primitive involve shifting and mask
 <br/>
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Bit diagrams and bit fields
+#### Bit diagrams
 
 KivaKit provides the *BitDiagram* class to make this task easy. Taking our example of ARGB colors, we can create a *BitDiagram* for colors:
 

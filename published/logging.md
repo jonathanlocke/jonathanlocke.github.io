@@ -94,7 +94,7 @@ Here, when any *Application* subclass broadcasts a message (directly or through 
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Listener chain example
+#### Listener chains
 
 Here is an example of how messages from KivaKit components are routed through a listener chain and logged:
 

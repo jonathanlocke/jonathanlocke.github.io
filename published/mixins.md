@@ -62,6 +62,10 @@ Here, the *state()* method allows any interface extending *Mixin* to retrieve as
 
 This allows each object to have state for many mixins associated with it. Note that an object using mixin(s) does not need to implement the *hashCode()* / *equals()* contract. Also note that mixin state is stored by the package private class *MixinState* using a *ConcurrentHashMap* to avoid concurrency problems. Access to this map may become contentious if there are a large number of objects accessing mixin state at the same time.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
+#### Example
+
 To define a new *Mixin*, we can now simply extend the *Mixin* interface and use the *state()* method in our interface's default methods to access our state, as needed:
 
     public interface AttributedMixin<Key, Value> extends Mixin
@@ -104,7 +108,7 @@ Our *AttributedMixin* can now be added to any object, and it will provide a keye
         }
     }
 
-This is a unit test for *AttributedMixin*.
+This is the unit test for *AttributedMixin*.
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 

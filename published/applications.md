@@ -13,7 +13,7 @@ The *kivakit-application* module contains building blocks for creating applicati
 <br/>
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Example application
+#### Example
 
 In the following example, we will create an application that counts the lines of its file argument. With no arguments, the application will give detailed help. With the argument *-show-file-size=true*, it will show the size of the file in bytes.
 

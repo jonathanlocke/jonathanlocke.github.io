@@ -25,6 +25,10 @@ Instead, a common and less succinct idiom in Java is something like this:
     
     lazyMap.put(key, value);
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
+#### Lazy
+
 We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we can create a class with similar functionality:
 
     public class Lazy<Value>

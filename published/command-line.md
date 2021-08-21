@@ -34,7 +34,7 @@ Once a *CommandLine* has been successfully parsed, it is available through *Appl
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Example command line parsing
+#### Example
 
 In the example in [KivaKit applications](applications.md), the argument and switch parsers returned by the example application were declared like this:
 
