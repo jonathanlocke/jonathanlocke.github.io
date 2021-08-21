@@ -8,6 +8,9 @@ Dr. Alan Kay's conception of object-oriented programming in the late 1960's came
 
 Which brings us to the *Broadcaster / Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster / Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Broadcasters
 
 A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKits most commonly used messages:
@@ -41,6 +44,9 @@ A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Liste
 
 > Note: By default, a broadcaster with no listeners will log any messages it hears, along with a warning that the broadcaster has no listeners. The system property *KIVAKIT_IGNORE_MISSING_LISTENERS* can be used to suppress these warnings for applications where this is acceptable.
 
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Listeners
 
 A [*Listener*](../uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
@@ -68,6 +74,9 @@ Here are a few examples of the many [*Listener*s](../uml/diagram-message-listene
 | StatusPanel | A Swing panel that displays messages it receives |
 | NullListener | A listener that discards the messages it receives |
 | ValidationReporter | Reports validation problems it receives |
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Repeaters
 
@@ -142,6 +151,9 @@ KivaKit has hundreds of classes that are *Repeaters*. This allows most non-trivi
 | JarLauncher | Downloads and launches a JAR file |
 
 Each of these classes listens to errors from components it uses and broadcasts problems to its own listeners.
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code 
 

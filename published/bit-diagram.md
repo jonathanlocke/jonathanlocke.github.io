@@ -8,6 +8,9 @@ A bit field is a series of bits in a primitive value like an *int* or a *long* t
 
 The code required to get and set fields of a primitive involve shifting and masking operations which can be error prone and sometimes hard to follow.
 
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Bit diagrams and bit fields
 
 KivaKit provides the *BitDiagram* class to make this task easy. Taking our example of ARGB colors, we can create a *BitDiagram* for colors:
@@ -23,6 +26,9 @@ In this diagram, the 'A' characters represent *alpha* bits, the 'R' characters r
     private static BitField BLUE  = COLOR.field('B');
 
 These *BitField* objects contain the shift and mask values, determined from the diagram, needed to retrieve the field values from a primitive. 
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Example
 
@@ -43,6 +49,9 @@ We can use the same *BitField* objects again to set the bit fields of a primitiv
     rgb = BLUE.set(rgb, 0x56);
 
 After executing this code, our *rgb* variable will be 0x123456. 
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code
 

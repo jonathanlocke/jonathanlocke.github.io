@@ -10,9 +10,15 @@ The *kivakit-application* module contains building blocks for creating applicati
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.application.component.svg" width="700"/>
 
-#### Line count application example
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
+#### Example application
 
 In the following example, we will create an application that counts the lines of its file argument. With no arguments, the application will give detailed help. With the argument *-show-file-size=true*, it will show the size of the file in bytes.
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Application initialization
 
@@ -43,6 +49,9 @@ The *main()* method creates an instance of the application and the constructor f
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/rocket/rocket.svg" width="50"/>
 
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Project initialization
 
 To initialize our application's project, we create a subclass of *Project*, which provides any required initialization logic, as well as a set of dependent projects retrieved via the *dependencies()* method. When the application runs, its project and all of the sub-projects in its project dependency tree will be initialized before *onRun()* is called:
@@ -67,6 +76,9 @@ To initialize our application's project, we create a subclass of *Project*, whic
             return Set.of(ResourceProject.get());
         }
     }
+
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Command line parsing and application logic
 
@@ -145,6 +157,9 @@ The *onRun()* method in our example application calls *argument()* with the *INP
     
     information("Lines = $", Count.count(input.reader().lines()));
  
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Help
  
 Finally, if something goes wrong interpreting our application's command-line arguments, *KivaKit* will capture any broadcast messages, as well as information from the argument and switch parsers. It will then use this information to provide detailed help about what went wrong and how to correctly use the application:
@@ -170,6 +185,9 @@ Finally, if something goes wrong interpreting our application's command-line arg
     
       -show-file-size=Boolean (optional, default: false) : Show the file size in bytes
     
+<br/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Code
 
 The complete code for the example presented here is available in the [*kivakit-examples*](https://github.com/Telenav/kivakit-examples/tree/master/kivakit-examples-application) repository. The Maven dependency for *kivakit-application* is:
