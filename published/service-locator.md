@@ -1,6 +1,6 @@
 2021.06.23
 
-### Why KivaKit uses service locator instead of dependency injection &nbsp; <img src="https://state-of-the-art.org/graphics/link/link.svg" width="25" style="vertical-align:bottom"/>
+### Why KivaKit uses service locator instead of DI &nbsp; <img src="https://state-of-the-art.org/graphics/link/link.svg" width="25" style="vertical-align:bottom"/>
 
 Martin Fowler does a nice job of describing the *service locator* (SL) design pattern and *dependency injection* (DI) in his article [Inversion of Control Containers and the Dependency Injection pattern](https://martinfowler.com/articles/injection.html#ServiceLocatorVsDependencyInjection). The basic distinction between these two patterns is that in DI, a container pushes interfaces into an object based on its configuration while in SL, the object reaches out to the container to ask for the interface. While I agree overall with what this article has to say (and I think we *all* agree on the principle of decoupling), I have a couple of fine points to add to the discussion.
 
