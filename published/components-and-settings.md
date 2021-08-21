@@ -9,6 +9,8 @@ The *kivakit-configuration* module provides two useful facilities for configurin
 
 The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [message broadcasting and listening](broadcaster.md). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### The object lookup registry
 
 The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see <a href="#service-locator">Why KivaKit provides service locator instead of dependency injection</a>. 
@@ -40,6 +42,8 @@ If there is more than one *Spaceship* in the registry, is becomes necessary to d
     [...]
     
     var orbiter = Registry.of(this).lookup(Spaceship.class, ORBITER);
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### The settings registry
 
@@ -87,12 +91,16 @@ The *Settings.of()* method works in the same way as *Registry.of()*, as describe
 When multiple instances of the same settings class are required (for example, two *Apache Pinot* clusters each defined by *PinotSettings* objects), 
 an *instance* property can be used to distinguish which instance is defined in each *.properties* file:
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### PinotCluster1.properties:
 
         class         = com.telenav.scout.safety.demo.PinotSettings
         instance      = CLUSTER1
         zookeeperPort = localhost:2181
         clusterName   = PinotCluster
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### PinotCluster2.properties:
 
@@ -109,6 +117,8 @@ These configurations can then be found using an instance specifier as in:
     var cluster2 = Settings.of(this).lookup(PinotSettings.class, CLUSTER2);
 
 <a name="#components"></a>
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### KivaKit components
 
 Now that we have covered the core mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make accessing this functionality easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [How KivaKit adds mixins to Java](mixins.md) for details).
@@ -152,6 +162,8 @@ Once the settings are loaded, they can be queried by our *Pinot* component, as s
 and one further line was required to access an *Apache Pinot* database connection defined by *PinotSettings*:
             
     require(PinotSettings.class).connection()
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code 
 

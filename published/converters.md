@@ -32,6 +32,8 @@ The relationships between the classes in the converter mini-framework discussed 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-data-conversion.svg" width="700"/>
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Implementation 
 
 These are fairly elegant interfaces, but what about the implementation?
@@ -259,9 +261,13 @@ We could also capture the errors with *MessageList* and analyze them, or count t
         [...]
     }
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Conclusion
 
 This article has given a basic description of how KivaKit converters are designed and implemented. In the [command line parsing](command-line.md) article, we take a look at how string converters are used to parse command line switches and arguments.
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code
 

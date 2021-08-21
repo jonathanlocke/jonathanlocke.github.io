@@ -50,6 +50,8 @@ These two approaches seem identical at first glance, but there *is* one subtle d
 
 Why should we care about this? Well, aside from purely ideological differences, the SL approach makes it very easy for a registry implementation to manage services more dynamically, and potentially more efficiently as well. For example, a sophisticated registry could pool instances of non-thread-safe services that are expensive to create, and use some form of concurrency control to restrict access. A registry implementation could also hold weak or soft references to services, allowing rarely used but memory hungry services to be collected when they're not actually in use. It could create some services with a factory on-the-fly. It could even vary the implementation of an interface over time. In each case, the SL design pattern is more flexible because the scope of reference to a service is an implementation detail, and with the SL pattern the consumer of a service can hold a reference to it exactly as long as it needs it.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Code
 
 A full implementation of the SL design pattern is available in [KivaKit](https://www.kivakit.org).

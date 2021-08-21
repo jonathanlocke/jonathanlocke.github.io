@@ -16,6 +16,8 @@
         boolean validate(Listener listener);
     }
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Design
 
 The UML diagram for the key classes in this mini-framework looks like this:
@@ -59,6 +61,8 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
     issues.isValid()      // Return true if there are no important issues
     
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/footprints/footprints.svg" width="60"/>
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Implementation 
 
@@ -105,6 +109,8 @@ The implementation of BaseValidator looks (very roughly) like this:
     }
 
 Note that the *validate()* / *onValidate()* methods are an example of the [polymorphic final methods pattern](../published/polymorphic-final-methods.md). 
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code
 

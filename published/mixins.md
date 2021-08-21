@@ -106,6 +106,8 @@ Our *AttributedMixin* can now be added to any object, and it will provide a keye
 
 This is a unit test for *AttributedMixin*.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Code
 
 Mixins are available in the *kivakit-kernel* project, which is a module in [KivaKit](https://www.kivakit.org):

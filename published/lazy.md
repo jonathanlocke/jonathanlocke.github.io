@@ -66,6 +66,8 @@ We can't (easily) introduce the *lazy* keyword that we'd like into Java, but we 
 
 True, it's not quite as nice as having a *lazy* keyword, but it improves readability by making the flow of code easier to follow. 
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Code
 
 The *Lazy* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.

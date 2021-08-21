@@ -18,6 +18,8 @@ The *kivakit-commandline* module provides the switch and argument parsing used b
 
 In *run()*, a *CommandLineParser* instance is created and configured with the applications argument and switch parsers, as returned by *switchParsers()* and *argumentParsers()* in our application subclass. Next, when the *parse(String[])* method is called, the command line is parsed. The resulting *CommandLine* model is stored in *Application*, and is used later by our application to retrieve argument and switch values.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Parsing 
 
 An overview of the classes used in command line parsing can be seen in this abbreviated UML diagram:
@@ -29,6 +31,8 @@ The *CommandLineParser* class references a *SwitchParserList* and an *ArgumentPa
 > Note that *all* switches must be of the form -switch-name=[value]. If a string in the argument array is not of this form, it is considered an argument and not a switch.
 
 Once a *CommandLine* has been successfully parsed, it is available through *Application.commandLine()*. The values of specific arguments and switches can be retrieved through its *get()* and *argument()* methods. The *Application* class provides convenience methods so that the call to *commandLine()* can often be omitted for the sake of brevity.
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Example command line parsing
 
@@ -78,6 +82,8 @@ and the SHOW_FILE_SIZE boolean switch is accessed in a similar way with *get()*:
 This is all that's required to do basic switch parsing in *KivaKit*. 
 
 But there are a few questions to address regarding how all this works. How are arguments and switches validated? How does *KivaKit* automatically provide command line help? And how can we define new *SwitchParser*s and *ArgumentParser*s?
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Command line validation
 
@@ -137,6 +143,8 @@ However, it would *not* be valid to return these two argument parsers in the rev
 
 since the ROOT_FOLDER parser must be last in the list.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Command line help
 
 Command line help for applications is provided automatically by KivaKit. For example, forgetting to pass the -deployment switch (more on deployments in a future article) to a server that expects such a switch results in:
@@ -171,6 +179,8 @@ Command line help for applications is provided automatically by KivaKit. For exa
       -quiet=Boolean (optional, default: false) : Minimize output
 
 The description comes from *Application.description()*, which we can override in our application. The argument and switch help is generated from the argument and switch parsers from their name, description, type, quantity, default value, and list of valid values.
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Creating new switch and argument parsers
 
@@ -215,6 +225,8 @@ In general, if a *StringConverter* already exists for a type, it is trivial to c
 * Folder, FolderList
 * Host
 * Port
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code
 

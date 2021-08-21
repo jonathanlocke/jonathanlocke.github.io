@@ -13,6 +13,8 @@ Logging allows events that occur during the execution of a program to be analyze
 
 While these frameworks vary in their feature sets, the common idea is that calls to a few specialized logger methods are used to direct log entry information to one or more log implementations. 
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Logging and messaging
 
 KivaKit departs from these frameworks because KivaKit *Logger*s participate in the [*Broadcaster / Listener*](../published/broadcaster.md) design pattern. A *Logger* in KivaKit is a *Listener* which can receive and log any kind of (*Transmittable*) *Message*:
@@ -52,6 +54,8 @@ Usage looks like this:
 
 By default, *LoggerFactory* returns instances of *LogServiceLogger*. This logger parses the KIVAKIT_LOG system property and uses *LogServiceLoader* to dynamically load and configure implementations of the *Log* service provider interface (SPI). Logs are discovered and loaded with Java's *ServiceLoader* class. Once *LogServiceLogger* has loaded and configured its *Log*s, it forwards any messages it receives to each.
 
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Logs
 
 A few *Log* implementations are included in KivaKit, and it's very easy to implement new ones:
@@ -61,6 +65,8 @@ A few *Log* implementations are included in KivaKit, and it's very easy to imple
 * *FileLog*
 
 Logs can be filtered using the system property KIVAKIT_LOG_LEVEL, and asynchronous logging can be turned off with -DKIVAKIT_LOG_SYNCHRONOUS=false. For more details on logging configuration, see [kivakit-kernel logging](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/logging.md). You will need to read this documentation enough to understand the details of the KIVAKIT_LOG property at a minimum.
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Loggers
 
@@ -85,6 +91,8 @@ The *Application* class (more on this in a future article) does exactly this:
     }
 
 Here, when any *Application* subclass broadcasts a message (directly or through a listener chain) it can depend on it being logged (if it isn't filtered out somewhere along the way in the listener chain). 
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Listener chain example
 
@@ -129,6 +137,8 @@ It is worth noting that methods like *problem()*, inherited from *BaseComponent*
 Since the formatting of messages is lazy, if a message is filtered out (perhaps by KIVAKIT_LOG_LEVEL), then no formatting occurs. In addition, argument evaluation doesn't happen until formatting time, so it's easy to delay evaluation of expensive arguments by passing a method reference as an argument:
 
     narrate("Launching in $ seconds", this::computeSecondsToLaunch);
+
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Code
 

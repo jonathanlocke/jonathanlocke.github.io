@@ -1,6 +1,6 @@
 2021.07.07
 
-### How *Broadcaster / Listener* improves KivaKit component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="25" style="vertical-align:baseline"/>
+### How *Broadcaster / Listener* improves KivaKit component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="22" style="vertical-align:baseline"/>
 
 Dr. Alan Kay's conception of object-oriented programming in the late 1960's came about, in part, as a result of his undergraduate work in molecular biology. A cell is a pretty good analogy for an object and DNA is a sort of template or class from which cells are created. But to Kay, what would have been most interesting were cell surface receptors, and the way that cells pass various kinds of messages to each other (and themselves) by secreting compounds that bind to these receptors. He posted this revealing email in 1998:
 
@@ -8,7 +8,8 @@ Dr. Alan Kay's conception of object-oriented programming in the late 1960's came
 
 Which brings us to the *Broadcaster / Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster / Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
-<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300" style="margin-bottom: 0px"/>
+<br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+
 #### Broadcasters
 
 A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKits most commonly used messages:
