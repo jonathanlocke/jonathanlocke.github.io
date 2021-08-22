@@ -57,7 +57,7 @@ All *Resource*s inherit and use the *fatal()* method to report unrecoverable pro
 1. Broadcasts a *FatalProblem* message to listeners
 2. Throws an *IllegalStateException*
 
-*This design decouples the broadcasting of a *FatalProblem* message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can usually be ignored because it has already been broadcast (and probably logged, depending on the terminal listener(s)).
+*This design decouples the broadcasting of a FatalProblem message to listeners from the flow-of-control change that occurs as the result of throwing an exception*. The result is that, in most cases, exceptions can be caught only when an operation is recoverable, and the information in the exception can usually be ignored because it has already been broadcast (and probably logged, depending on the terminal listener(s)).
 
 For example, in this common (but unfortunate looking) idiom, error information is propagated to the caller with an exception that is caught, qualified with a cause, and logged:
 
