@@ -1,11 +1,9 @@
 
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [2021.08.24 - KivaKit resources](#resources)  
-
 2021.08.24
 
 ### KivaKit resources &nbsp; <img src="https://state-of-the-art.org/graphics/water/water-32.png" srcset="https://state-of-the-art.org/graphics/water/water-32-2x.png 2x" style="vertical-align:baseline"/>
 
-A resource is a stream of data that can be opened, and then read from or written to. KivaKit provides an abstraction mini-framework that allows easy and consistent access to many types of resources, and it makes it easy to create new resources. Examples of KivaKit resources include:
+A resource is a stream of data that can be opened, read from or written to, and then closed. KivaKit provides a resource mini-framework that allows easy and consistent access to many types of resources, and it makes it easy to create new resources. Examples of KivaKit resources include:
 
 * Files
 * Sockets
@@ -50,7 +48,7 @@ Note that if this code is in a KivaKit *Component*, then the first line can be r
         listenTo(zip.entry("data.txt")).safeCopyTo(folder, OVERWRITE);
     }
 
-In each case, the code is assumed to be in a class implementing *Repeater*. The *listenTo()* calls add *this* as a listener to the argument object, creating a listener chain. If something notable happens in a *Resource* (for example, an attempt to open the resource when it doesn't exist), it will broadcast a message down the listener chain. 
+In each case, the code is assumed to be present in a class implementing *Repeater*. The *listenTo()* calls add *this* as a listener to the argument object, creating a listener chain. If something notable happens in a *Resource* (for example, an attempt to open the resource when it doesn't exist), it will broadcast a message down the listener chain. 
 
 #### Resource problems and messaging
 
@@ -113,7 +111,7 @@ One KivaKit alternative to this idiom is this:
 
 After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). For more information on messaging, see [the broadcaster / listener design pattern.](broadcaster.md)
 
-#### The design of resources
+#### Design
 
 Okay, so how do KivaKit resources work?
 
@@ -178,9 +176,9 @@ Now, let's take a quick look at a *Resource* implementation. The implementation 
 A few things we didn't talk about:
 
 * All resources transparently implement different kinds of compression and decompression via the *Codec* interface
-* How the *ProgressReporter* interface works
+* The *ProgressReporter* interface and I/O progress
 * Generic resource identifiers and their resolution
-* Loading of SPI implementations used by File and Folder (Local, S3, HDFS, etc)
+* The service provider interface (SPI) for *File* and *Folder*
 
 #### Code 
 
@@ -203,7 +201,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
   async
   src="https://utteranc.es/client.js"
   repo="jonathanlocke/jonathanlocke.github.io"
-  issue-term="bit-diagram"
+  issue-term="resources"
   theme="github-dark"
   crossorigin="anonymous"
 ></script>
