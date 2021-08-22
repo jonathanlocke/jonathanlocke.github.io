@@ -19,7 +19,7 @@ style="vertical-align:bottom"/> &nbsp; Sign up for the State(Art) mailing list
 
 <br/>
 
-<img src="graphics/mini-frameworks/mini-frameworks.svg"/>
+<img src="graphics/mini-frameworks/mini-frameworks.svg" width="600"/>
 
 <br/>
 <br/>
