@@ -15,15 +15,13 @@ style="vertical-align:bottom"/> &nbsp; Sign up for the State(Art) mailing list
 
 <img src="https://www.state-of-the-art.org/graphics/twisty/twisty.svg" height="100"/>
 
-<br/>
+[KivaKit](https://www.kivakit.org) is a Java application framework composed of smaller, *mini-frameworks*:
+
+<img src="graphics/mini-frameworks/mini-frameworks.svg"/>
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
 
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
-
-[KivaKit](https://www.kivakit.org) is a Java application framework composed of smaller, *mini-frameworks*, as shown in this diagram:
-
-<img src="graphics/mini-frameworks/mini-frameworks.svg"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Applications](published/applications.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
