@@ -1,20 +1,4 @@
 
-<a href="https://github.com/Telenav/kivakit">
-<img style="vertical-align:bottom" src="https://www.kivakit.org/images/github-32.png" srcset="https://www.kivakit.org/images/github-32-2x.png 2x"/>
-</a>
-&nbsp;<a href="https://twitter.com/openkivakit">
-<img style="vertical-align:bottom" src="https://www.kivakit.org/images/twitter-32.png" srcset="https://www.kivakit.org/images/twitter-32-2x.png 2x"/>
-</a>
-&nbsp;<a href="https://kivakit.zulipchat.com">
-<img style="vertical-align:bottom" src="https://www.kivakit.org/images/zulip-32.png" srcset="https://www.kivakit.org/images/zulip-32-2x.png 2x"/>
-</a>
-&nbsp;&nbsp;&nbsp;
-<a href="http://eepurl.com/hCivUX"><img src="https://www.state-of-the-art.org/graphics/envelope/envelope-clean.svg" height="32"
-style="vertical-align:bottom"/> &nbsp; Sign up for the State(Art) mailing list
-</a> 
-
-<img src="https://www.state-of-the-art.org/graphics/twisty/twisty.svg" height="100"/>
-
 ##### [KivaKit](https://www.kivakit.org) is a Java application framework composed of *mini-frameworks*:
 
 <br/>
