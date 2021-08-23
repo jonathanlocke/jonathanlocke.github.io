@@ -1,10 +1,10 @@
 2021.07.07
 
-### How *Broadcaster / Listener* improves component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="22" style="vertical-align:baseline"/>
+### How messaging improves component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="22" style="vertical-align:baseline"/>
 
 Dr. Alan Kay's conception of object-oriented programming in the late 1960's came about, in part, as a result of his undergraduate work in molecular biology. A cell is a pretty good analogy for an object and DNA is a sort of template or class from which cells are created. But to Kay, what would have been most interesting were cell surface receptors, and the way that cells pass various kinds of messages to each other (and themselves) by secreting compounds that bind to these receptors. He posted this revealing email in 1998:
 
-> [...] Smalltalk is not only NOT its syntax or the class library, it is not even about classes. I'm sorry that I long ago coined the term "objects" for this topic because it gets many people to focus on the lesser idea. The big idea is "messaging" [...] 
+> [...] Smalltalk is not only NOT its syntax or the class library, it is not even about classes. I'm sorry that I long ago coined the term "objects" for this topic because it gets many people to focus on the lesser idea. The big idea is "messaging" [...]
 
 Which brings us to the *Broadcaster / Listener* design pattern. A language like Java, with statically bound, synchronously invoked methods, is not at all what Dr. Kay means when he talks about messaging. But even if Java isn't a dynamic, late-bound, messaging-oriented language, we can still do some interesting messaging in Java. The *Broadcaster / Listener* design pattern is one way to do it, and it turns out to be very useful and powerful.
 
@@ -122,7 +122,7 @@ For example:
     
     var processor = LOGGER.listenTo(new PayrollProcessor());
 
-Here, if the *EmployeeLoader* class can't load employees, it reports a problem via the *problem()* method. The *problem()* method in *BaseRepeater* broadcasts a *Problem* message to all listeners of *EmployeeLoader*. The *PayrollProcessor* class creates and listens to an instance of *EmployeeLoader*. Since *PayrollProcessor* is itself a repeater, any messages that the *EmployeeLoader* broadcasts to *PayrollProcessor* will be re-broadcast by *PayrollProcessor* to each of its listeners. 
+Here, if the *EmployeeLoader* class can't load employees, it reports a problem via the *problem()* method. The *problem()* method in *BaseRepeater* broadcasts a *Problem* message to all listeners of *EmployeeLoader*. The *PayrollProcessor* class creates and listens to an instance of *EmployeeLoader*. Since *PayrollProcessor* is itself a repeater, any messages that the *EmployeeLoader* broadcasts to *PayrollProcessor* will be re-broadcast by *PayrollProcessor* to each of its listeners.
 
 The final line of code listens to messages from *PayrollProcessor* with a *Logger*. So if something goes wrong loading employees, the problem message goes from *EmployeeLoader* through *PayrollProcessor* to *Logger*, where it gets logged:
 
@@ -156,9 +156,9 @@ Each of these classes listens to errors from components it uses and broadcasts p
 <br/>
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Code 
+#### Code
 
-The simplified *Broadcaster / Listener* design pattern discussed above is available in its entirety in *kivakit-kernel* and is used throughout [KivaKit](https://www.kivakit.org) for messaging between components:
+The simplified messaging code discussed above is available in its entirety in *kivakit-kernel* and is used throughout [KivaKit](https://www.kivakit.org) for messaging between components:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

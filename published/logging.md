@@ -11,13 +11,13 @@ Logging allows events that occur during the execution of a program to be analyze
 * Apache Commons Logging
 * SLF4J
 
-While these frameworks vary in their feature sets, the common idea is that calls to a few specialized logger methods are used to direct log entry information to one or more log implementations. 
+While these frameworks vary in their feature sets, the common idea is that calls to a few specialized logger methods are used to direct log entry information to one or more log implementations.
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### Logging and messaging
 
-KivaKit departs from these frameworks because KivaKit *Logger*s participate in the [*Broadcaster / Listener*](../published/broadcaster.md) design pattern. A *Logger* in KivaKit is a *Listener* which can receive and log any kind of (*Transmittable*) *Message*:
+KivaKit departs from these frameworks because KivaKit *Logger*s participate in [*messaging*](../published/broadcaster.md). A *Logger* in KivaKit is a *Listener* which can receive and log any kind of (*Transmittable*) *Message*:
 
     public interface Logger extends Listener
     {
@@ -90,7 +90,7 @@ The *Application* class (more on this in a future article) does exactly this:
         [...]
     }
 
-Here, when any *Application* subclass broadcasts a message (directly or through a listener chain) it can depend on it being logged (if it isn't filtered out somewhere along the way in the listener chain). 
+Here, when any *Application* subclass broadcasts a message (directly or through a listener chain) it can depend on it being logged (if it isn't filtered out somewhere along the way in the listener chain).
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 

@@ -1,6 +1,6 @@
 2021.07.20
- 
-### The design of KivaKit validation  &nbsp; <img src="https://state-of-the-art.org/graphics/checkmark/checkmark-32.png" srcset="https://state-of-the-art.org/graphics/checkmark/checkmark-32-2x.png 2x" style="vertical-align:baseline"/>
+
+### The design of KivaKit validation &nbsp; <img src="https://state-of-the-art.org/graphics/checkmark/checkmark-32.png" srcset="https://state-of-the-art.org/graphics/checkmark/checkmark-32-2x.png 2x" style="vertical-align:baseline"/>
 
 *KivaKit* objects that implement *Validatable* can participate in *validation*. Validation checks an object for consistency and reports any problems. Note that a single object may have more than one *ValidationType*. For example, validation of user input may be somewhat different from the validation of an object about to be inserted into a database:
 
@@ -8,8 +8,8 @@
     {
         Validator validator(ValidationType type);
     }
- 
-*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the [*KivaKit Broadcaster / Listener*](../published/broadcaster.md) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
+
+*ValidationType* is an identifier that has associated sets of classes that should or should not be validated. The *Validator* returned from *Validatable* leverages the *Listener* interface from the [*KivaKit messaging*](../published/broadcaster.md) mini-framework to provide integration with the rest of KivaKit. The *Validator.validate(Listener)* method performs validation, broadcasts any warnings or problems to its *Listener* argument, and returns true if validation discovered no problems.
 
     public interface Validator
     {
@@ -23,7 +23,7 @@
 The UML diagram for the key classes in this mini-framework looks like this:
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/diagram-data-validation.svg" width="800"/>
- 
+
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/envelope/envelope.svg" width="50" style="vertical-align:bottom"/>
@@ -59,12 +59,12 @@ The actual details of *BaseValidator* are too complex to fully explore here, but
         problemIf()       // If there is a problem,
           addIfNotNull()  // broadcast it and add it to the list of issues
     issues.isValid()      // Return true if there are no important issues
-    
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/footprints/footprints.svg" width="60"/>
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
-#### Implementation 
+#### Implementation
 
 The implementation of BaseValidator looks (very roughly) like this:
 
@@ -108,7 +108,7 @@ The implementation of BaseValidator looks (very roughly) like this:
         }
     }
 
-Note that the *validate()* / *onValidate()* methods are an example of the [*polymorphic final methods pattern*](../published/polymorphic-final-methods.md). 
+Note that the *validate()* / *onValidate()* methods are an example of the [*polymorphic final methods pattern*](../published/polymorphic-final-methods.md).
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
