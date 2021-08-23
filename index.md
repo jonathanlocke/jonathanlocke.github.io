@@ -1,5 +1,5 @@
 
-##### [KivaKit](https://www.kivakit.org) is a Java application framework composed of *mini-frameworks*:
+[KivaKit](https://www.kivakit.org) is a Java application framework composed of *mini-frameworks*:
 
 <br/>
 
@@ -15,7 +15,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Applications](published/applications.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
 [Bit Diagrams](published/bit-diagram.md)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
