@@ -55,7 +55,7 @@
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[What's after the cloud?](published/after-the-cloud.md)  
+[What's after the cloud?](published/after-the-cloud.md)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [The functional properties pattern](published/functional-properties.md)  
