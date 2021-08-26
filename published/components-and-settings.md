@@ -13,7 +13,7 @@ The *kivakit-component* module provides a (very) lightweight base component clas
 
 #### The object lookup registry
 
-The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see [*Why KivaKit provides service locator instead of DI*](service-locator.md)</a>. 
+The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see [*Why KivaKit provides service locator instead of DI*](service-locator.md). 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.configuration.lookup.svg" width="400"/>
 
