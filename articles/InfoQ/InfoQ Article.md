@@ -3,11 +3,11 @@
 Jonathan Locke  
 September 2021
 
-KivaKit is an Apache License open source framework designed for implementing [microservices](https://martinfowler.com/articles/microservices.html). KivaKit is composed of a set of carefully integrated *mini-frameworks*. Each mini-framework has a consistent design and its own focus, and can be used in concert with other mini-frameworks or on its own. A simplified dependency network of these frameworks provides a good high level view of KivaKit:
+KivaKit is an Apache License open source framework ideal for implementing [microservices](https://martinfowler.com/articles/microservices.html). KivaKit is composed of a set of carefully integrated *mini-frameworks*. Each mini-framework has a consistent design and its own focus, and can be used in concert with other mini-frameworks or on its own. A simplified dependency network of these frameworks provides a good high level view of KivaKit:
 
 ![](mini-frameworks.svg)
 
-Each mini-framework addresses a different need when developing microservices. This article provides a brief overview of the mini-frameworks in the diagram above, and a sketch of how they can be used.
+Each mini-framework addresses a different issue that is commonly encountered when developing microservices. This article provides a brief overview of the mini-frameworks in the diagram above, and a sketch of how they can be used.
 
 ## Messaging
 
@@ -15,24 +15,24 @@ As we can see in the diagram above, messaging is central to KivaKit. Messaging i
 
     C -> B -> A
 
-Often, the final listener in a chain is some kind of *Logger*, but there can be multiple listeners at the end of the chain as well, and any object implementing *Listener* will work. For example, in the *validation* mini-framework, status messages can be captured by the *ValidationIssues* class, which can be used to determine if validation succeeded or not, and to present specific problems from a validation failure to a user.
+Often, the final listener in a chain is some kind of *Logger*, but there can be multiple listeners at the end of the chain as well, and any object implementing *Listener* will work. For example, in the *validation* mini-framework, status messages are captured by the *ValidationIssues* class, which is then used to determine if validation succeeded or not, as well as to present specific problems from a validation failure to a user.
 
 Given the listener chain above, C and B implement *Repeater* and the final object A implements *Listener*. Within each class in the chain, the listener chain is extended with:
 
-    listenTo(source)
+    listener.listenTo(broadcaster)
 
 To transmit a message to interested listener(s), convenience methods are inherited from *Broadcaster* for common types of messages:
 
 | Message | Purpose |
 |---|---|
-| problem() | Something has gone wrong and needs to be addressed, but it's not fatal to the current operation |
+| problem() | Something has gone wrong and needs to be addressed, but it's not fatal to the current operation. |
 | glitch() | A minor problem has occurred. Unlike a Warning, a Glitch indicates validation failure or data loss has occurred. Unlike a Problem, a Glitch indicates that the operation will definitely recover and continue. |
-| warning() | A minor issue occurred which should be corrected, but does not necessarily require attention |
-| quibble() | A trivial issue that does not require correction |
-| announcement() | Announcement of an important phase of an operation |
-| narration() | A step in some operation has started or completed |
-| information() | Commonly useful information that doesn't represent any problem |
-| trace() | Diagnostic information for use when debugging |
+| warning() | A minor issue has occurred which should be corrected, but does not necessarily require attention. |
+| quibble() | A trivial issue has occurred that does not require correction. |
+| announcement() | Announces of an important phase of an operation. |
+| narration() | A step in some operation has started or completed. |
+| information() | Commonly useful information that doesn't represent any problem .|
+| trace() | Diagnostic information for use when debugging. |
 
 *Broadcaster* also provides a mechanism for switching *Trace* messages on and off from the command line by pattern matching against classes and packages.
 
@@ -40,7 +40,7 @@ To transmit a message to interested listener(s), convenience methods are inherit
 
 In KivaKit, there are two ways to implement *Repeater*. The first is by simply extending *BaseRepeater*. The second is to use a stateful trait or *Mixin*. Implementing the *RepeaterMixin* interface is the same as extending *BaseRepeater*, but the repeater mixin can be used in a class that already has a base class. Note that the same pattern is used for the *Component* interface discussed below. If it's not possible to extend *BaseComponent* then *ComponentMixin* can be implemented instead.
 
-The *Mixin* interface provides a workaround for a missing Java language feature. It works by delegating state lookup to a package private class, *MixinState*, which uses the *this* reference of the class implementing *Mixin* to look up the relevant state object in an identity hash map. The *Mixin* interface looks like this:
+The *Mixin* interface provides a workaround for a missing Java language feature. It works by delegating state lookup to a package private class, *MixinState*, which uses the *this* reference of the class implementing *Mixin* to look up an associated state object in an identity hash map. The *Mixin* interface looks like this:
 
     public interface Mixin
     {
@@ -50,7 +50,7 @@ The *Mixin* interface provides a workaround for a missing Java language feature.
         }
     }
 
-If the state object for *this* is not found, the factory method will be used to create a new state object, which is then attached to the mixin by putting it in the state map. For example, our *RepeaterMixin* interface looks roughly like this (without many methods for the sake of brevity):
+If the state object for *this* is not found by *state()*, the given factory method will be used to create a new state object, which will then be associated with the mixin in the state map. For example, our *RepeaterMixin* interface looks roughly like this (without most of the methods for the sake of brevity):
 
     public interface RepeaterMixin extends Repeater, Mixin
     {
@@ -68,9 +68,6 @@ If the state object for *this* is not found, the factory method will be used to 
     
         [...]
         
-        /**
-         * @return The {@link Repeater} object associated with this mixin
-         */
         default Repeater repeater()
         {
             return state(RepeaterMixin.class, BaseRepeater::new);
@@ -79,23 +76,25 @@ If the state object for *this* is not found, the factory method will be used to 
 
 Here, the *addListener()* and *removeListener()* methods each retrieve their *BaseRepeater* state object through *repeater()* and delegate the method call to that object. As we can see, it's not very complicated to implement a mixin in KivaKit.
 
-> It should be noted that each call to a method in a mixin will require a lookup in the state map. For a few components, this could be a performance problem. However, as with most performance problems, it's best for us to assume things will be fine until our profiler says otherwise.
+> It should be noted that each call to a method in a mixin will require a lookup in the state map. An identity hash map should be fairly efficient in general, but for a few components this could be a performance problem. As with most performance problems, it's best for us to do the simplest thing until our profiler says otherwise.
 
 ## Components
 
-A KivaKit *Component* might commonly be a key part of a microservice. Components provide easy access to messaging either through extension of *BaseComponent* (the most common case) or by implementing *ComponentMixin*. Inheriting from *Component* adds no state at all to an object except for the list of listeners inherited from *Repeater*. This makes components are very lightweight, and it is not a problem to instantiate large numbers of them. Since *Component*s are *Repeater*s, listener chains can be created, as described above.
+A KivaKit *Component* might commonly be a key part of a microservice. Components provide easy access to messaging either through extension of *BaseComponent* (the most common case) or by implementing *ComponentMixin*. Inheriting from *Component* adds no state at all to an object except for the list of listeners inherited from *Repeater*. This makes components very lightweight. It is not a problem to instantiate large numbers of them. Since *Component*s are *Repeater*s, listener chains can be created, as described above.
 
-In addition to providing messaging, components provide convenient access to:
+<img src="component.svg" width="700"/>
 
- * Lookup of registered objects
- * Access to settings objects 
- * Access to package resources 
+In addition to providing convenient access to messaging, components also provide functionality to:
+
+ * Register and lookup objects
+ * Load and access settings objects 
+ * Access package resources 
 
 Let's take a look at each of these facilities.
 
 ### Object Registration and Lookup
 
-KivaKit uses the (*service locator*)[https://martinfowler.com/articles/injection.html] design pattern to provide object lookup instead of dependency injection. The use of this pattern in a *Component* is simple. One component can register an object with *registerObject()* and another component can look the object up with *require()*:
+KivaKit uses the [*service locator*](https://martinfowler.com/articles/injection.html) design pattern instead of dependency injection. The use of this pattern in a *Component* is simple. One component can register an object with *registerObject()* and another component can look it up with *require()*:
 
     Database database = [...]
     registerObject(database);
@@ -114,7 +113,7 @@ If multiple instances of a single class need to be registered, an *enum* value c
     
     var database = require(Database.class, Database.SERVICES);
 
-In KivaKit, anywhere you might have used dependency injection you use *register* and *require* instead.
+In KivaKit, anywhere we might have used dependency injection we use *register* and *require* instead.
 
 ### Settings
 
@@ -131,9 +130,11 @@ Settings information can be registered in several ways:
     registerAllSettingsIn(Folder)
     registerAllSettingsIn(Package)
     registerSettingsObject(Object)
-    registerSettingsObject(Object, Enum<?>)
+    registerSettingsObject(Object, Enum)
 
-At present, settings objects loaded with the *registerAllSettingsIn()* methods are defined only by *.properties* files. In the future, an API will be provided to allow properties to be loaded from other sources, such as .json files. The name of the settings class to instantiate is given by the *class* property. Individual properties of the instantiated object are then set using the remaining properties. Each string property is converted to an object using a KivaKit converter (described below).
+In KivaKit 1.0, settings objects loaded with the *registerAllSettingsIn()* methods are defined by *.properties* files. In the future, an API will be provided to allow properties to be loaded from other sources, such as .json files. The name of the settings class to instantiate is given by the *class* property. Individual properties of the instantiated object are then retrieved from the remaining properties. Each property is converted to an object using a KivaKit converter (described below).
+
+For example:
 
 #### DatabaseSettings.properties
 
@@ -157,7 +158,7 @@ At present, settings objects loaded with the *registerAllSettingsIn()* methods a
 
 ### Package Resources
 
-KivaKit provides a resource mini-framework that unifies a variety of resource types:
+KivaKit provides a resource mini-framework that unifies a variety of *Resource* types:
 
 * Files
 * Sockets
@@ -168,13 +169,17 @@ KivaKit provides a resource mini-framework that unifies a variety of resource ty
 * Output streams
 * [...]
 
+<img src="resources.svg" width="900"/>
+
+*Resource*s are *Component*s that can be read from. *WritableResource*s are readable resources that can also be written to. Most of the methods available to a *File* will be available in any given *Resource*, but some resource types may leave some methods unsupported. For example, a resource might be streamed, so it can't implement *sizeInBytes()*.
+
 KivaKit *File* is a special resource. It uses a service provider interface (SPI) to permit new filesystems to be added. The *kivakit-extensions* project provides implementations for the following filesystems:
 
 * HDFS files
 * S3 objects
 * GitHub repositories (read-only)
 
-KivaKit components provide easy access to package resources. The style of packaging resources in KivaKit is similar to that in Apache Wicket, where a component's package will have a sub-package containing resources that it requires to function. This allows easy packaging and use of components from a single source tree. Access to a package resource relative to a *Component* looks like this:
+KivaKit components provide easy access to *PackageResource*s. The style of encapsulating resources in KivaKit is similar to that in Apache Wicket, where a component's package will have a sub-package containing resources that it requires to function. This allows easy packaging and use of components from a single source tree. Access to a package resource relative to a *Component* looks like this:
 
     public class MyComponent extends BaseComponent
     {
@@ -196,9 +201,13 @@ Where the package structure looks like this:
 
 ## Applications
 
-A KivaKit *Application* is a glorified *Component*, containing methods related to startup, initialization and execution. Microservices are the common use for KivaKit applications, but other types of applications can also be implemented. The bare bones code for a microservice application looks like this:
+A KivaKit *Application* is a glorified *Component*, containing methods related to startup, initialization and execution. *Server* is a subclass of *Application*:
 
-    public class MyMicroservice extends Application
+<img src="application.svg" width="500"/>
+
+Microservices are the most common use for KivaKit applications, but other types of applications can also be implemented (desktop, web, utility, etc.). The bare bones code for a microservice application looks like this:
+
+    public class MyMicroservice extends Server
     {
         public static void main(final String[] arguments)
         {
@@ -217,7 +226,7 @@ A KivaKit *Application* is a glorified *Component*, containing methods related t
         }
     }
     
-The *main()* method creates the application and calls the *run()* method in the *Application* base class with the arguments passed from the command line. The constructor for the application then passes a *Project* object to the superclass constructor. This object is used to initialize the project that contains the application, as well as any other projects that it depends on. Continuing our example:
+The *main()* method here creates the application and calls the *run()* method in the *Application* base class with the arguments passed from the command line. The constructor for the microservice then passes a *Project* object to the superclass constructor. This object is used to initialize the project that contains the application, as well as any other projects that it depends on. Continuing our example, our *Project* class looks like this:
 
     public class MyProject extends Project
     {
@@ -239,11 +248,11 @@ The *main()* method creates the application and calls the *run()* method in the 
         }
     }
 
-A *singleton* instance of *MyProject* can be retrieved with *get()*. The dependencies for the project are returned by *dependencies()*. In this case, the project is dependent only on *ResourceProject*, which is the *Project* definition for the *kivakit-resource* mini-framework. *ResourceProject* in turn has its own dependencies. KivaKit will ensure that all transitive project dependencies are initialized before *onRun()* is called.
+A *singleton* instance of *MyProject* can be retrieved with *get()*. The dependencies for *MyProject* are returned by *dependencies()*. In this case, *MyProject* is dependent only on *ResourceProject*, which is the *Project* definition for the *kivakit-resource* mini-framework. *ResourceProject* in turn has its own dependencies. KivaKit will ensure that all transitive project dependencies are initialized before *onRun()* is called.
 
 ## Deployments
 
-KivaKit applications can load collections of settings objects automatically from an application-relative package named "deployments". This feature is useful when deploying a microservice to a particular environment. The structure of the application looks like this:
+KivaKit applications can load collections of settings objects automatically from an application-relative package named *deployments*. This feature is useful when deploying a microservice to a particular environment. The structure of our application looks like this:
 
     ├── MyMicroservice
     └── deployments
@@ -254,15 +263,15 @@ KivaKit applications can load collections of settings objects automatically from
             ├── WebSettings.properties
             └── DatabaseSettings.properties
 
-When the switch -deployment=<deployment> is passed to the application on the command line, it will load settings from the named deployment. This is especially nice when using packaged deployment settings because the use of the application is like:
+When the switch -deployment=<deployment> is passed to the application on the command line, it will load settings from the named deployment (either *development* or *production* in this case). It is especially nice to use packaged deployment settings for a microservice because use of the application is very simple:
 
     java -jar my-microservice.jar -deployment=development [...]
 
-which makes it easy to run in a Docker container even if you don't know much about the application.
+This makes it easy to run the application in a Docker container even if you don't know much about it.
 
 If packaged deployment settings are not desired, an external folder can be used by setting the environment variable KIVAKIT_SETTINGS_FOLDERS:
 
-    -DKIVAKIT_SETTINGS_FOLDERS=~/my-microservice-settings
+    -DKIVAKIT_SETTINGS_FOLDERS=/Users/jonathan/my-microservice-settings
 
 ## Command Line Parsing
 
@@ -302,15 +311,15 @@ Applications can also parse command lines by returning a set of *SwitchParser*s 
         }
     }
 
-Here, the *DICTIONARY* switch parser is returned by *switchParsers()* and used by KivaKit to parse the command line. In the *onRun()* method, the *File* argument passed on the command line is retrieved with *get(DICTIONARY)*. If there is a syntactic problem with the command line or it doesn't pass validation, KivaKit will automatically report the problem and give usage help derived from the *description()*, and the switch and argument parsers:
+Here, the *DICTIONARY* switch parser returned by *switchParsers()* is used by KivaKit to parse the command line. In the *onRun()* method, the *File* argument passed on the command line is retrieved with *get(DICTIONARY)*. If there is a syntactic problem with the command line or it doesn't pass validation, KivaKit will automatically report the problem and give usage help derived from the *description()*, and the switch and argument parsers:
 
     ┏-------- COMMAND LINE ERROR(S) -----------   
     ┋ ○ Required File switch -input is missing  
     ┗------------------------------------------ 
     
-    KivaKit 0.9.9-SNAPSHOT (puffy telephone)
+    KivaKit 1.0.0 (puffy telephone)
     
-    Usage: MyApplication 0.9.9-SNAPSHOT <switches> <arguments>
+    Usage: MyApplication 1.0.0 <switches> <arguments>
     
     This microservice checks spelling.
     
@@ -326,7 +335,7 @@ Here, the *DICTIONARY* switch parser is returned by *switchParsers()* and used b
 
 ## Switch Parsers
 
-In our application example above, we used this code to build a *SwitchParser*:
+In our application example, we used this code to build a *SwitchParser*:
 
     private SwitchParser<File> INPUT = 
         File.fileSwitchParser("input", "Input text file")
@@ -358,7 +367,7 @@ All switches and arguments are typed objects, so the *builder(Class)* method cre
 
 ## Converters
 
-KivaKit provides many converters, and converters can be used in many places. Converters are reusable objects that transform one type into another. They are especially easy to create, and they handle common issues like exceptions and null or empty values:
+KivaKit provides many converters, and converters can be used in many places in KivaKit. Converters are reusable objects that transform one type into another. They are especially easy to create, and they handle common issues like exceptions and null or empty values:
 
     public static class Converter extends BaseStringConverter<File>
     {
@@ -374,22 +383,28 @@ KivaKit provides many converters, and converters can be used in many places. Con
         }
     }
 
-As we can see, converters take a different approach to listener chains. Instead of relying on consumers to call *listenTo()*, all converters require a listener as a constructor argument. This is because all converters need to be able to report conversion problems to their listener(s).
+Calling *StringConverter.convert(String)* will turn a *String* into a *File*. Calling *StringConverter.unconvert(File)* will turn a *File* back into a *String*. Any issues that are encountered during conversion are broadcast to interested listener(s), and if conversion fails null is returned. 
+
+As we can see, converters take a different approach to listener chains. Instead of relying on converter users to call *listenTo()*, all converters require a listener as a constructor argument. This ensures that all converters are able to report conversion problems to at least one listener.
 
 ## Validation
 
-In the command line parsing code above, switch and arguments are validated using the KivaKit validation mini-framework. Another common use case is in validating the domain objects of a web application user interface to a microservice. A *Validatable* class implements:
+In the command line parsing code above, switches and arguments are validated using the *kivakit-validation* mini-framework. Another common use case is in validating the domain objects of a web application user interface to a microservice. 
+
+<img src="validation.svg" width="700"/>
+
+A *Validatable* class implements:
 
     public interface Validatable
     {
         /**
          * @param type The type of validation to perform
-         * @return A new {@link Validator} instance
+         * @return A {@link Validator} instance
          */
         Validator validator(ValidationType type);
     }
 
-To implement this method, a *BaseValidator* can be subclassed anonymously. *BaseValidator* provides convenience methods to broadcast problems and warnings. KivaKit captures these messages with a *ValidationIssues* object. Default methods in the *Validatable* interface can then be used to query this state. Usage looks like:
+To implement this method, a *BaseValidator* can be subclassed anonymously. *BaseValidator* provides convenience methods to check state consistency, and to broadcast problems and warnings. KivaKit captures these messages with a *ValidationIssues* object. Default methods in the *Validatable* interface can then be used to query this state. Usage looks like:
 
     public class User implements Validatable
     {
@@ -427,9 +442,9 @@ Messages from validation here are captured to determine if the *User* object is 
 
 ## Logging
 
-A KivaKit *Logger* is a message *Listener* that logs all of the messages it hears. The base *Application* class has a *Logger* that listens to any messages that it hears. This means that there isn't any need to create loggers in an application or any of its components, provided that the listener chain leads from each component all the way back to the application.
+A KivaKit *Logger* is a message *Listener* that logs all of the messages it hears. The base *Application* class has a *Logger* that logs any messages that bubble up from components to the application level. This means that there isn't any need to create loggers in an application or any of its components, provided that the listener chain leads from each component all the way back to the application.
 
-The simplest logger is *ConsoleLogger*. Shrinking this design to its bare bones, *ConsoleLogger* and related classes look roughly like this:
+The simplest logger is *ConsoleLogger*. Shrinking this design to its bare bones, *ConsoleLogger* and related classes look roughly like this (and see UML diagram below):
 
     public class ConsoleLogger extends BaseLogger
     {
@@ -453,7 +468,7 @@ The simplest logger is *ConsoleLogger*. Shrinking this design to its bare bones,
         { 
             [...] 
             
-            for (final var log : logs())
+            for (var log : logs())
             {
                 log.log(entry);
             }
@@ -462,7 +477,7 @@ The simplest logger is *ConsoleLogger*. Shrinking this design to its bare bones,
     
     public class ConsoleLog extends BaseTextLog
     {
-        private final Console console = new Console();
+        private Console console = new Console();
     
         @Override
         public synchronized void onLog(LogEntry entry)
@@ -470,6 +485,10 @@ The simplest logger is *ConsoleLogger*. Shrinking this design to its bare bones,
             console.printLine(entry.message().formatted());
         }
     }
+
+The *BaseLogger.log(Message)* method converts the message it is given into a *LogEntry* by adding contextual information. It then passes the log entry to each *Log* in the list of logs returned by *logs()*. In the case of *ConsoleLogger*, a single instance of *ConsoleLog* is returned. *ConsoleLog* writes the *LogEntry* to the console.
+
+<img src="logging.svg" width="700"/>
 
 KivaKit has an SPI that allows new loggers to be dynamically added and configured from the command line. Some loggers provided with KivaKit include:
 
@@ -479,19 +498,19 @@ KivaKit has an SPI that allows new loggers to be dynamically added and configure
 
 ## Web and REST
 
-The *kivakit-extensions* project contains support for Jetty, Jersey, Swagger and Apache Wicket since these are often useful in implementing microservices. These mini-frameworks are all integrated together so it's very easy to start a Jetty server providing REST and Web access to a microservice:
+The *kivakit-extensions* project contains bare-bones support for Jetty, Jersey, Swagger and Apache Wicket since these are often useful in implementing microservices. These mini-frameworks are all integrated together so it's very easy to start a Jetty server providing REST and Web access for a microservice:
 
     @Override
     protected void onRun()
     {
-        final var port = (int) commandLine().get(PORT);
+        final var port = (int) get(PORT);
 
-        final var application = new ServiceRegistryRestApplication();
+        final var application = new MyRestApplication();
 
         // and start up Jetty with Swagger, Jersey and Wicket.
         listenTo(new JettyServer())
                 .port(port)
-                .add("/*", new JettyWicket(ServiceRegistryWebApplication.class))
+                .add("/*", new JettyWicket(MyWebApplication.class))
                 .add("/open-api/*", new JettySwaggerOpenApi(application))
                 .add("/docs/*", new JettySwaggerIndex(port))
                 .add("/webapp/*", new JettySwaggerStaticResources())
@@ -500,11 +519,11 @@ The *kivakit-extensions* project contains support for Jetty, Jersey, Swagger and
                 .start();
     }
 
-JettyServer here allows Jersey, Wicket and Swagger to be added with a consistent API, making the code clear and concise.
+JettyServer here allows Jersey, Wicket and Swagger to be combined with a consistent API, making the code clear and concise. Often this is all that's needed.
 
 ## Summary
 
-In this article we took a brief tour of KivaKit's mini-frameworks. Each mini-framework is described in more detail at [https://www.kivakit.org](https://www.kivakit.org) and on Jonathan's blog [*State of the Art*](https://state-of-the-art.org). KivaKit can be cloned from [GitHub](https://github.com/Telenav/kivakit) and built according to the setup instructions. It can also be used module-by-module from Maven Central. Dependencies look like:
+In this article we took a brief tour of KivaKit's mini-frameworks. Each mini-framework is described in more detail at [https://www.kivakit.org](https://www.kivakit.org) as well as on Jonathan's blog [*State of the Art*](https://state-of-the-art.org). KivaKit can be cloned from [GitHub](https://github.com/Telenav/kivakit) and built according to the setup instructions, or it can be used module-by-module from Maven Central. Dependencies look like:
 
     <dependency>
         <groupId>com.telenav.kivakit</groupId>

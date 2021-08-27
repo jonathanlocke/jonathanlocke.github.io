@@ -1,0 +1,58 @@
+@startuml
+
+    !include lexakai.theme
+
+    title "ConsoleLogger"
+
+    interface Listener
+    {
+        +T listenTo(T broadcaster)
+        +void onMessage(Message)
+    }
+
+    Logger o-- CodeContext
+    Listener <|-- Logger
+    interface Logger
+    {
+        +void log(Message)
+        +CodeContext codeContext();
+    }
+
+    Logger <|-- BaseLogger
+    BaseLogger "1" o-- "many   " Log
+    abstract class BaseLogger
+    {
+        #abstract Set<Log> logs();
+    }
+
+    LogEntry o-- Message
+    LogEntry o-- CodeContext
+    class LogEntry
+    {
+        +Message message()
+        +CodeContext context()
+        +String format(LogFormatter, Format)
+    }
+
+    Log --> LogEntry : "logs"
+    interface Log
+    {
+        +void configure(Map<String,String> properties)
+        +void level(Severity)
+        +void log(LogEntry)
+    }
+
+    Log <|-- ConsoleLog
+    class ConsoleLog
+    {
+        +void onLog(final LogEntry entry)
+    }
+
+    BaseLogger <|-- ConsoleLogger
+    ConsoleLogger o-- ConsoleLog
+    class ConsoleLogger
+    {
+        #Set<Log> logs()
+    }
+
+@enduml

@@ -1,0 +1,49 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "Component"
+
+    Repeater <|-- BaseRepeater
+    abstract BaseRepeater
+    
+    interface Component
+    
+    BaseRepeater <|-- BaseComponent
+    Component <|-- BaseComponent
+    class BaseComponent
+    {
+    }
+    
+    interface Repeater
+    Repeater <|-- Component
+    interface Component
+    {
+        --(resources)--
+        +Resource packageResource(String path)
+        --(settings registry)--
+        +void registerAllSettingsIn(Package)
+        +void registerAllSettingsIn(Folder)
+        +void registerSettingsObject(Object settings)
+        +void registerSettingsObject(Object settings, Enum instance)
+        --(object registry)--
+        +T registerObject(T object)
+        +T registerObject(T object, Enum instance)
+        --(lookup)--
+        +T require(Class<T> type)
+        +T require(Class<T> type, Enum<?> instance)
+    }
+    
+    interface Component
+    interface Mixin
+    interface RepeaterMixin
+    Component <|-- ComponentMixin
+    Mixin <|-- ComponentMixin
+    RepeaterMixin <|-- ComponentMixin
+    ComponentMixin --> BaseComponent : "accesses state"
+    interface ComponentMixin
+    {
+    }
+    
+@enduml
+

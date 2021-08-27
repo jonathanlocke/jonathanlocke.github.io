@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg contentscripttype="application/ecmascript" contentstyletype="text/css" height="2889.5833px" preserveAspectRatio="none" style="width:1475px;height:2889px;background:#333333;" version="1.1" viewBox="0 0 1475 2889" width="1475px" zoomAndPan="magnify" xmlns="http://www.w3.org/2000/svg">
+  <g>
+    <rect fill="#48494B" height="82.4056" rx="16.6667" ry="16.6667" style="stroke:#545454;stroke-width:2.0833333333333335;" width="389.5833" x="528.6458" y="4.1667"/>
+    <text fill="#C0C0C0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="41.6667" lengthAdjust="spacing" textLength="343.75" x="551.5625" y="61.1165" style="white-space: pre;">Data - Validation</text>
+    <rect codeline="38" fill="#282828" height="214.5793" id="MessageCounter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="635.4167" x="405.2083" y="1907.4056"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="635.4167" x="405.2083" y="1907.4056"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="635.4167" x="405.2083" y="1953.5156"/>
+    <rect codeline="38" fill="none" height="214.5793" id="MessageCounter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="635.4167" x="405.2083" y="1907.4056"/>
+    <ellipse cx="600" cy="1938.7939" fill="#008400" rx="20.8333" ry="20.8333" style="stroke:#239C23;stroke-width:2.0833333333333335;"/>
+    <path d="M594.8079,1933.1177 L594.8079,1929.9438 L605.66,1929.9438 L605.66,1933.1177 L602.0345,1933.1177 L602.0345,1944.9951 L605.66,1944.9951 L605.66,1948.1689 L594.8079,1948.1689 L594.8079,1944.9951 L598.4334,1944.9951 L598.4334,1933.1177 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="216.6667" x="645.8333" y="1948.2422" style="white-space: pre;">MessageCounter</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="407.2917" x2="1038.5417" y1="1970.1823" y2="1970.1823"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="407.2917" x2="1038.5417" y1="1986.849" y2="1986.849"/>
+    <ellipse cx="428.125" cy="2009.7656" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="381.25" x="451.0417" y="2023.5881" style="white-space: pre;">Count count(Message.Status type)</text>
+    <ellipse cx="428.125" cy="2049.2554" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="516.6667" x="451.0417" y="2063.0778" style="white-space: pre;">Count count(Class&lt;? extends Message&gt; type)</text>
+    <ellipse cx="428.125" cy="2088.7451" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="570.8333" x="451.0417" y="2102.5675" style="white-space: pre;">Count countWorseThanOrEqualTo(Message.Status)</text>
+    <rect codeline="88" fill="#282828" height="135.5998" id="ValidationReporter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="316.6667" x="1114.5833" y="1946.9889"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="316.6667" x="1114.5833" y="1946.9889"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="316.6667" x="1114.5833" y="1993.099"/>
+    <rect codeline="88" fill="none" height="135.5998" id="ValidationReporter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="316.6667" x="1114.5833" y="1946.9889"/>
+    <ellipse cx="1143.75" cy="1978.3773" fill="#008400" rx="20.8333" ry="20.8333" style="stroke:#239C23;stroke-width:2.0833333333333335;"/>
+    <path d="M1138.5579,1972.701 L1138.5579,1969.5272 L1149.41,1969.5272 L1149.41,1972.701 L1145.7845,1972.701 L1145.7845,1984.5785 L1149.41,1984.5785 L1149.41,1987.7523 L1138.5579,1987.7523 L1138.5579,1984.5785 L1142.1834,1984.5785 L1142.1834,1972.701 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="241.6667" x="1177.0833" y="1987.8255" style="white-space: pre;">ValidationReporter</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1116.6667" x2="1429.1667" y1="2009.7656" y2="2009.7656"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1116.6667" x2="1429.1667" y1="2026.4323" y2="2026.4323"/>
+    <ellipse cx="1137.5" cy="2049.349" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="237.5" x="1160.4167" y="2063.1714" style="white-space: pre;">void report(Message)</text>
+    <rect codeline="94" fill="#282828" height="175.0895" id="Validator" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="352.0833" x="340.625" y="642.8223"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="352.0833" x="340.625" y="642.8223"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="352.0833" x="340.625" y="688.9323"/>
+    <rect codeline="94" fill="none" height="175.0895" id="Validator" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="352.0833" x="340.625" y="642.8223"/>
+    <ellipse cx="443.75" cy="674.2106" fill="#008400" rx="20.8333" ry="20.8333" style="stroke:#239C23;stroke-width:2.0833333333333335;"/>
+    <path d="M438.5579,668.5343 L438.5579,665.3605 L449.41,665.3605 L449.41,668.5343 L445.7845,668.5343 L445.7845,680.4118 L449.41,680.4118 L449.41,683.5856 L438.5579,683.5856 L438.5579,680.4118 L442.1834,680.4118 L442.1834,668.5343 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="116.6667" x="489.5833" y="683.6589" style="white-space: pre;">Validator</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="342.7083" x2="690.625" y1="705.599" y2="705.599"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="342.7083" x2="690.625" y1="722.2656" y2="722.2656"/>
+    <ellipse cx="363.5417" cy="745.1823" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="287.5" x="386.4583" y="759.0047" style="white-space: pre;">boolean validate(Listener)</text>
+    <ellipse cx="363.5417" cy="784.672" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="197.9167" x="386.4583" y="798.4945" style="white-space: pre;">boolean validate()</text>
+    <rect codeline="11" fill="#282828" height="96.11" id="BaseValidationReporter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="377.0833" x="1084.375" y="2383.4473"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="377.0833" x="1084.375" y="2383.4473"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="377.0833" x="1084.375" y="2429.5573"/>
+    <rect codeline="11" fill="none" height="96.11" id="BaseValidationReporter" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="377.0833" x="1084.375" y="2383.4473"/>
+    <ellipse cx="1113.5417" cy="2414.8356" fill="#C8AC00" rx="20.8333" ry="20.8333" style="stroke:#D8BC00;stroke-width:2.0833333333333335;"/>
+    <path d="M1112.7279,2408.2397 L1111.0311,2415.6982 L1114.4368,2415.6982 Z M1110.5306,2404.9438 L1114.9373,2404.9438 L1119.8568,2423.1689 L1116.2557,2423.1689 L1115.1326,2418.6646 L1110.3109,2418.6646 L1109.2122,2423.1689 L1105.6112,2423.1689 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="302.0833" x="1146.875" y="2424.2839" style="white-space: pre;">BaseValidationReporter</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1086.4583" x2="1459.375" y1="2446.224" y2="2446.224"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1086.4583" x2="1459.375" y1="2462.8906" y2="2462.8906"/>
+    <rect codeline="16" fill="#282828" height="713.4562" id="BaseValidator" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="875" x="18.75" y="1067.8223"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="875" x="18.75" y="1067.8223"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="875" x="18.75" y="1113.9323"/>
+    <rect codeline="16" fill="none" height="713.4562" id="BaseValidator" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="875" x="18.75" y="1067.8223"/>
+    <ellipse cx="353.125" cy="1099.2106" fill="#C8AC00" rx="20.8333" ry="20.8333" style="stroke:#D8BC00;stroke-width:2.0833333333333335;"/>
+    <path d="M352.3112,1092.6147 L350.6144,1100.0732 L354.0202,1100.0732 Z M350.1139,1089.3188 L354.5207,1089.3188 L359.4401,1107.5439 L355.839,1107.5439 L354.716,1103.0396 L349.8942,1103.0396 L348.7956,1107.5439 L345.1945,1107.5439 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="177.0833" x="398.9583" y="1108.6589" style="white-space: pre;">BaseValidator</text>
+    <line style="stroke:#5E5E5E;stroke-width:3.125;" x1="20.8333" x2="891.6667" y1="1130.599" y2="1130.599"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="20.8333" x2="891.6667" y1="1147.2656" y2="1147.2656"/>
+    <polygon fill="#FFFF44" points="41.6667,1159.7656,50,1168.099,41.6667,1176.4323,33.3333,1168.099" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="187.5" x="64.5833" y="1184.0047" style="white-space: pre;">void onValidate()</text>
+    <polygon fill="#FFFF44" points="41.6667,1199.2554,50,1207.5887,41.6667,1215.922,33.3333,1207.5887" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="256.25" x="64.5833" y="1223.4945" style="white-space: pre;">void validate(Validator)</text>
+    <ellipse cx="41.6667" cy="1296.9849" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="204.1667" x="64.5833" y="1310.8073" style="white-space: pre;">boolean isInvalid()</text>
+    <ellipse cx="41.6667" cy="1336.4746" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="185.4167" x="64.5833" y="1350.297" style="white-space: pre;">boolean isValid()</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="20.8333" x2="403.125" y1="1262.6567" y2="1262.6567"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="93.75" x="409.375" y="1270.2759" style="white-space: pre;">(checks)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="509.375" x2="891.6667" y1="1262.6567" y2="1262.6567"/>
+    <polygon fill="#FFFF44" points="41.6667,1413.3708,50,1421.7041,41.6667,1430.0374,33.3333,1421.7041" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="527.0833" x="64.5833" y="1437.6099" style="white-space: pre;">void fatal(String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1452.8605,50,1461.1938,41.6667,1469.5272,33.3333,1461.1938" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="572.9167" x="64.5833" y="1477.0996" style="white-space: pre;">void problem(String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1492.3503,50,1500.6836,41.6667,1509.0169,33.3333,1500.6836" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="562.5" x="64.5833" y="1516.5894" style="white-space: pre;">void quibble(String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1531.84,50,1540.1733,41.6667,1548.5067,33.3333,1540.1733" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="568.75" x="64.5833" y="1556.0791" style="white-space: pre;">void warning(String message, Object... parameters)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="20.8333" x2="381.25" y1="1389.4592" y2="1389.4592"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="137.5" x="387.5" y="1397.0785" style="white-space: pre;">(messaging)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="531.25" x2="891.6667" y1="1389.4592" y2="1389.4592"/>
+    <polygon fill="#FFFF44" points="41.6667,1619.1528,50,1627.4862,41.6667,1635.8195,33.3333,1627.4862" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="764.5833" x="64.5833" y="1643.3919" style="white-space: pre;">boolean fatalIf(boolean invalid, String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1658.6426,50,1666.9759,41.6667,1675.3092,33.3333,1666.9759" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="810.4167" x="64.5833" y="1682.8817" style="white-space: pre;">boolean problemIf(boolean invalid, String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1698.1323,50,1706.4657,41.6667,1714.799,33.3333,1706.4657" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="800" x="64.5833" y="1722.3714" style="white-space: pre;">boolean quibbleIf(boolean invalid, String message, Object... parameters)</text>
+    <polygon fill="#FFFF44" points="41.6667,1737.6221,50,1745.9554,41.6667,1754.2887,33.3333,1745.9554" style="stroke:#B38D22;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="764.5833" x="64.5833" y="1761.8612" style="white-space: pre;">void warningIf(boolean invalid, String message, Object... parameters)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="20.8333" x2="387.5" y1="1595.2413" y2="1595.2413"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="125" x="393.75" y="1602.8605" style="white-space: pre;">(validation)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="525" x2="891.6667" y1="1595.2413" y2="1595.2413"/>
+    <rect codeline="86" fill="#282828" height="96.11" id="Listener" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="179.1667" x="966.6667" y="1376.1556"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="179.1667" x="966.6667" y="1376.1556"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="179.1667" x="966.6667" y="1422.2656"/>
+    <rect codeline="86" fill="none" height="96.11" id="Listener" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="179.1667" x="966.6667" y="1376.1556"/>
+    <ellipse cx="995.8333" cy="1407.5439" fill="#008400" rx="20.8333" ry="20.8333" style="stroke:#239C23;stroke-width:2.0833333333333335;"/>
+    <path d="M990.6413,1401.8677 L990.6413,1398.6938 L1001.4933,1398.6938 L1001.4933,1401.8677 L997.8678,1401.8677 L997.8678,1413.7451 L1001.4933,1413.7451 L1001.4933,1416.9189 L990.6413,1416.9189 L990.6413,1413.7451 L994.2668,1413.7451 L994.2668,1401.8677 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="104.1667" x="1029.1667" y="1416.9922" style="white-space: pre;">Listener</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="968.75" x2="1143.75" y1="1438.9323" y2="1438.9323"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="968.75" x2="1143.75" y1="1455.599" y2="1455.599"/>
+    <rect fill="#282828" height="96.11" id="ObjectList" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="206.25" x="126.0417" y="1966.7806"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="206.25" x="126.0417" y="1966.7806"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="206.25" x="126.0417" y="2012.8906"/>
+    <rect fill="none" height="96.11" id="ObjectList" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="206.25" x="126.0417" y="1966.7806"/>
+    <ellipse cx="155.2083" cy="1998.1689" fill="#0066CF" rx="20.8333" ry="20.8333" style="stroke:#0086EF;stroke-width:2.0833333333333335;"/>
+    <path d="M159.0291,2007.019 Q158.1746,2007.4585 157.2347,2007.6782 Q156.2948,2007.8979 155.2572,2007.8979 Q151.5706,2007.8979 149.6297,2005.4688 Q147.6888,2003.0396 147.6888,1998.4497 Q147.6888,1993.8477 149.6297,1991.4185 Q151.5706,1988.9893 155.2572,1988.9893 Q156.2948,1988.9893 157.2469,1989.209 Q158.1991,1989.4287 159.0291,1989.8682 L159.0291,1993.8721 Q158.1014,1993.0176 157.2286,1992.6208 Q156.3558,1992.2241 155.4281,1992.2241 Q153.4505,1992.2241 152.4434,1993.7927 Q151.4364,1995.3613 151.4364,1998.4497 Q151.4364,2001.5259 152.4434,2003.0945 Q153.4505,2004.6631 155.4281,2004.6631 Q156.3558,2004.6631 157.2286,2004.2664 Q158.1014,2003.8696 159.0291,2003.0151 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="131.25" x="188.5417" y="2007.6172" style="white-space: pre;">ObjectList</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="128.125" x2="330.2083" y1="2029.5573" y2="2029.5573"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="128.125" x2="330.2083" y1="2046.224" y2="2046.224"/>
+    <rect codeline="47" fill="#282828" height="364.2049" id="MessageList" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="804.1667" x="16.6667" y="2249.0723"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="804.1667" x="16.6667" y="2249.0723"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="804.1667" x="16.6667" y="2295.1823"/>
+    <rect codeline="47" fill="none" height="364.2049" id="MessageList" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="804.1667" x="16.6667" y="2249.0723"/>
+    <ellipse cx="323.9583" cy="2280.4606" fill="#0066CF" rx="20.8333" ry="20.8333" style="stroke:#0086EF;stroke-width:2.0833333333333335;"/>
+    <path d="M327.7791,2289.3107 Q326.9246,2289.7502 325.9847,2289.9699 Q325.0448,2290.1896 324.0072,2290.1896 Q320.3206,2290.1896 318.3797,2287.7604 Q316.4388,2285.3312 316.4388,2280.7414 Q316.4388,2276.1393 318.3797,2273.7101 Q320.3206,2271.2809 324.0072,2271.2809 Q325.0448,2271.2809 325.9969,2271.5007 Q326.9491,2271.7204 327.7791,2272.1598 L327.7791,2276.1637 Q326.8514,2275.3092 325.9786,2274.9125 Q325.1058,2274.5158 324.1781,2274.5158 Q322.2005,2274.5158 321.1934,2276.0844 Q320.1864,2277.653 320.1864,2280.7414 Q320.1864,2283.8175 321.1934,2285.3861 Q322.2005,2286.9548 324.1781,2286.9548 Q325.1058,2286.9548 325.9786,2286.558 Q326.8514,2286.1613 327.7791,2285.3068 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="160.4167" x="369.7917" y="2289.9089" style="white-space: pre;">MessageList</text>
+    <line style="stroke:#5E5E5E;stroke-width:3.125;" x1="18.75" x2="818.75" y1="2311.849" y2="2311.849"/>
+    <ellipse cx="39.5833" cy="2334.7656" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="375" x="62.5" y="2348.5881" style="white-space: pre;">MessageList(Matcher&lt;Message&gt;)</text>
+    <ellipse cx="39.5833" cy="2374.2554" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="495.8333" x="62.5" y="2388.0778" style="white-space: pre;">MessageList(Maximum, Matcher&lt;Message&gt;)</text>
+    <ellipse cx="39.5833" cy="2461.5682" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="239.5833" x="62.5" y="2475.3906" style="white-space: pre;">StringList formatted()</text>
+    <ellipse cx="39.5833" cy="2501.0579" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="739.5833" x="62.5" y="2514.8804" style="white-space: pre;">ObjectList&lt;Message&gt; messages(Class&lt;? extends Message&gt; type)</text>
+    <ellipse cx="39.5833" cy="2540.5477" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="518.75" x="62.5" y="2554.3701" style="white-space: pre;">StringList statistics(Message.Status... statuses)</text>
+    <ellipse cx="39.5833" cy="2580.0374" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="700" x="62.5" y="2593.8599" style="white-space: pre;">StringList statisticsByType(Class&lt;? extends Message&gt;... types)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="18.75" x2="350" y1="2427.24" y2="2427.24"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="125" x="356.25" y="2434.8592" style="white-space: pre;">(collection)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="487.5" x2="818.75" y1="2427.24" y2="2427.24"/>
+    <rect codeline="60" fill="#282828" height="285.2254" id="Validatable" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="450" x="360.4167" y="107.4056"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="450" x="360.4167" y="107.4056"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="450" x="360.4167" y="153.5156"/>
+    <rect codeline="60" fill="none" height="285.2254" id="Validatable" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="450" x="360.4167" y="107.4056"/>
+    <ellipse cx="498.9583" cy="138.7939" fill="#008400" rx="20.8333" ry="20.8333" style="stroke:#239C23;stroke-width:2.0833333333333335;"/>
+    <path d="M493.7663,133.1177 L493.7663,129.9438 L504.6183,129.9438 L504.6183,133.1177 L500.9928,133.1177 L500.9928,144.9951 L504.6183,144.9951 L504.6183,148.1689 L493.7663,148.1689 L493.7663,144.9951 L497.3918,144.9951 L497.3918,133.1177 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-style="italic" font-weight="bold" lengthAdjust="spacing" textLength="143.75" x="544.7917" y="148.2422" style="white-space: pre;">Validatable</text>
+    <line style="stroke:#5E5E5E;stroke-width:3.125;" x1="362.5" x2="808.3333" y1="170.1823" y2="170.1823"/>
+    <ellipse cx="383.3333" cy="193.099" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="385.4167" x="406.25" y="206.9214" style="white-space: pre;">Validator validator(Validation type)</text>
+    <ellipse cx="383.3333" cy="232.5887" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="220.8333" x="406.25" y="246.4111" style="white-space: pre;">Validator validator()</text>
+    <ellipse cx="383.3333" cy="319.9015" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="185.4167" x="406.25" y="333.724" style="white-space: pre;">boolean isValid()</text>
+    <ellipse cx="383.3333" cy="359.3913" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="275" x="406.25" y="373.2137" style="white-space: pre;">boolean isValid(Listener)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="362.5" x2="532.2917" y1="285.5733" y2="285.5733"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="93.75" x="538.5417" y="293.1925" style="white-space: pre;">(checks)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="638.5417" x2="808.3333" y1="285.5733" y2="285.5733"/>
+    <rect codeline="70" fill="#282828" height="333.0485" id="Validation" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="504.1667" x="766.6667" y="563.6556"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="504.1667" x="766.6667" y="563.6556"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="504.1667" x="766.6667" y="609.7656"/>
+    <rect codeline="70" fill="none" height="333.0485" id="Validation" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="504.1667" x="766.6667" y="563.6556"/>
+    <ellipse cx="938.5417" cy="595.0439" fill="#0066CF" rx="20.8333" ry="20.8333" style="stroke:#0086EF;stroke-width:2.0833333333333335;"/>
+    <path d="M942.3625,603.894 Q941.508,604.3335 940.568,604.5532 Q939.6281,604.7729 938.5905,604.7729 Q934.904,604.7729 932.9631,602.3438 Q931.0221,599.9146 931.0221,595.3247 Q931.0221,590.7227 932.9631,588.2935 Q934.904,585.8643 938.5905,585.8643 Q939.6281,585.8643 940.5802,586.084 Q941.5324,586.3037 942.3625,586.7432 L942.3625,590.7471 Q941.4347,589.8926 940.5619,589.4958 Q939.6891,589.0991 938.7614,589.0991 Q936.7839,589.0991 935.7768,590.6677 Q934.7697,592.2363 934.7697,595.3247 Q934.7697,598.4009 935.7768,599.9695 Q936.7839,601.5381 938.7614,601.5381 Q939.6891,601.5381 940.5619,601.1414 Q941.4347,600.7446 942.3625,599.8901 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="131.25" x="984.375" y="604.4922" style="white-space: pre;">Validation</text>
+    <line style="stroke:#5E5E5E;stroke-width:3.125;" x1="768.75" x2="1268.75" y1="626.4323" y2="626.4323"/>
+    <ellipse cx="789.5833" cy="649.349" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="193.75" x="812.5" y="663.1714" style="white-space: pre;">Validation(String)</text>
+    <ellipse cx="789.5833" cy="736.6618" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="439.5833" x="812.5" y="750.4842" style="white-space: pre;">boolean shouldValidate(Class&lt;?&gt; type)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="768.75" x2="965.625" y1="702.3336" y2="702.3336"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="93.75" x="971.875" y="709.9528" style="white-space: pre;">(checks)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1071.875" x2="1268.75" y1="702.3336" y2="702.3336"/>
+    <ellipse cx="789.5833" cy="823.9746" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="383.3333" x="812.5" y="837.797" style="white-space: pre;">Validation exclude(Class&lt;?&gt; type)</text>
+    <ellipse cx="789.5833" cy="863.4644" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="377.0833" x="812.5" y="877.2868" style="white-space: pre;">Validation include(Class&lt;?&gt; type)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="768.75" x2="960.4167" y1="789.6464" y2="789.6464"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="104.1667" x="966.6667" y="797.2656" style="white-space: pre;">(filtering)</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="1077.0833" x2="1268.75" y1="789.6464" y2="789.6464"/>
+    <rect fill="#282828" height="96.11" id="Name" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="147.9167" x="944.7917" y="202.1973"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="147.9167" x="944.7917" y="202.1973"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="147.9167" x="944.7917" y="248.3073"/>
+    <rect fill="none" height="96.11" id="Name" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="147.9167" x="944.7917" y="202.1973"/>
+    <ellipse cx="973.9583" cy="233.5856" fill="#0066CF" rx="20.8333" ry="20.8333" style="stroke:#0086EF;stroke-width:2.0833333333333335;"/>
+    <path d="M977.7791,242.4357 Q976.9246,242.8752 975.9847,243.0949 Q975.0448,243.3146 974.0072,243.3146 Q970.3206,243.3146 968.3797,240.8854 Q966.4388,238.4562 966.4388,233.8664 Q966.4388,229.2643 968.3797,226.8351 Q970.3206,224.4059 974.0072,224.4059 Q975.0448,224.4059 975.9969,224.6257 Q976.9491,224.8454 977.7791,225.2848 L977.7791,229.2887 Q976.8514,228.4342 975.9786,228.0375 Q975.1058,227.6408 974.1781,227.6408 Q972.2005,227.6408 971.1934,229.2094 Q970.1864,230.778 970.1864,233.8664 Q970.1864,236.9425 971.1934,238.5111 Q972.2005,240.0798 974.1781,240.0798 Q975.1058,240.0798 975.9786,239.683 Q976.8514,239.2863 977.7791,238.4318 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="72.9167" x="1007.2917" y="243.0339" style="white-space: pre;">Name</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="946.875" x2="1090.625" y1="264.974" y2="264.974"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="946.875" x2="1090.625" y1="281.6406" y2="281.6406"/>
+    <rect codeline="81" fill="#282828" height="135.5998" id="ValidationIssues" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="289.5833" x="273.9583" y="2740.7389"/>
+    <rect fill="#1B1B1A" height="62.7767" rx="16.6667" ry="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="289.5833" x="273.9583" y="2740.7389"/>
+    <rect fill="#1B1B1A" height="16.6667" style="stroke:#1B1B1A;stroke-width:2.0833333333333335;" width="289.5833" x="273.9583" y="2786.849"/>
+    <rect codeline="81" fill="none" height="135.5998" id="ValidationIssues" rx="16.6667" ry="16.6667" style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" width="289.5833" x="273.9583" y="2740.7389"/>
+    <ellipse cx="303.125" cy="2772.1273" fill="#0066CF" rx="20.8333" ry="20.8333" style="stroke:#0086EF;stroke-width:2.0833333333333335;"/>
+    <path d="M306.9458,2780.9774 Q306.0913,2781.4168 305.1514,2781.6366 Q304.2114,2781.8563 303.1738,2781.8563 Q299.4873,2781.8563 297.5464,2779.4271 Q295.6055,2776.9979 295.6055,2772.408 Q295.6055,2767.806 297.5464,2765.3768 Q299.4873,2762.9476 303.1738,2762.9476 Q304.2114,2762.9476 305.1636,2763.1673 Q306.1157,2763.387 306.9458,2763.8265 L306.9458,2767.8304 Q306.0181,2766.9759 305.1453,2766.5792 Q304.2725,2766.1825 303.3447,2766.1825 Q301.3672,2766.1825 300.3601,2767.7511 Q299.353,2769.3197 299.353,2772.408 Q299.353,2775.4842 300.3601,2777.0528 Q301.3672,2778.6214 303.3447,2778.6214 Q304.2725,2778.6214 305.1453,2778.2247 Q306.0181,2777.828 306.9458,2776.9735 Z " fill="#000000"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="214.5833" x="336.4583" y="2781.5755" style="white-space: pre;">ValidationIssues</text>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="276.0417" x2="561.4583" y1="2803.5156" y2="2803.5156"/>
+    <line style="stroke:#5E5E5E;stroke-width:2.0833333333333335;" x1="276.0417" x2="561.4583" y1="2820.1823" y2="2820.1823"/>
+    <ellipse cx="296.875" cy="2843.099" fill="#84BE84" rx="6.25" ry="6.25" style="stroke:#038048;stroke-width:2.0833333333333335;"/>
+    <text fill="#D8BC00" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="22.9167" lengthAdjust="spacing" textLength="197.9167" x="319.7917" y="2856.9214" style="white-space: pre;">ValidationIssues()</text>
+    <path codeline="10" d="M1272.9167,2125.0931 C1272.9167,2208.9681 1272.9167,2320.9889 1272.9167,2383.0098 " fill="none" id="ValidationReporter-backto-BaseValidationReporter" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="1258.3333,2124.7181,1272.9167,2083.0514,1287.5,2124.7181,1258.3333,2124.7181" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="15" d="M505.4375,860.6556 C500.2292,919.9264 493.7917,993.5514 487.2917,1067.7598 " fill="none" id="Validator-backto-BaseValidator" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="490.9792,858.5723,509.1458,818.3431,520.0208,861.1348,490.9792,858.5723" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="37" d="M1035.2083,1512.5723 C1014.8542,1586.8848 979.625,1695.2389 929.1667,1780.3223 C902.4792,1825.3223 866.4167,1869.5723 831.8958,1907.1764 " fill="none" id="Listener-backto-MessageCounter" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="1021.125,1508.8431,1045.7292,1472.1973,1049.3542,1516.1973,1021.125,1508.8431" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="45" d="M268.2292,2101.7598 C287.75,2144.2598 312.1875,2197.4056 335.625,2248.4264 " fill="none" id="ObjectList-backto-MessageList" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="254.6875,2107.2389,250.5417,2063.3014,281.1875,2095.0723,254.6875,2107.2389" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="46" d="M620.125,2156.1973 C598.2292,2185.8639 574.8125,2217.6139 551.9792,2248.5931 " fill="none" id="MessageCounter-backto-MessageList" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="608.5208,2147.3639,644.9792,2122.4681,632,2164.6556,608.5208,2147.3639" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="58" d="M693.5625,392.9681 C722.5625,428.9681 754.4583,467.1139 785.4167,501.1556 C801.7292,519.0931 819.1042,537.3848 836.75,555.4264 " fill="none" id="Validatable-to-Validation" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="#545454" points="844.3333,563.1348,837.1223,543.9252,837.0273,555.7099,825.2425,555.6149,844.3333,563.1348" style="stroke:#545454;stroke-width:3.125;"/>
+    <text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="200" x="793.75" y="487.8255" style="white-space: pre;">how to validate</text>
+    <path codeline="59" d="M541.9583,393.3639 C536.8958,413.9889 532.3958,435.0931 529.1667,455.3223 C519.9375,513.2598 516.7083,578.9264 515.8333,631.3431 " fill="none" id="Validatable-to-Validator" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="#545454" points="515.6875,642.3014,524.2878,623.6724,515.8363,631.8858,507.6228,623.4343,515.6875,642.3014" style="stroke:#545454;stroke-width:3.125;"/>
+    <text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="112.5" x="537.5" y="487.8255" style="white-space: pre;">provides</text>
+    <path codeline="69" d="M1018.75,340.4681 C1018.75,402.8639 1018.75,488.4056 1018.75,563.2598 " fill="none" id="Name-backto-Validation" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="1004.1667,340.3848,1018.75,298.7181,1033.3333,340.3848,1004.1667,340.3848" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="80" d="M418.75,2655.7181 C418.75,2686.5723 418.75,2716.0723 418.75,2740.6556 " fill="none" id="MessageList-backto-ValidationIssues" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="404.1667,2655.5723,418.75,2613.9056,433.3333,2655.5723,404.1667,2655.5723" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="87" d="M1087.8958,1511.8223 C1131.5208,1629.8848 1209.1667,1840.0514 1248.5625,1946.6764 " fill="none" id="Listener-backto-ValidationReporter" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="none" points="1074.0208,1516.3223,1073.25,1472.1764,1101.375,1506.1973,1074.0208,1516.3223" style="stroke:#545454;stroke-width:3.125;"/>
+    <path codeline="93" d="M628.1667,818.0514 C742.6667,906.7806 907.1875,1036.8014 929.1667,1067.8223 C995.0208,1160.8014 1030.1458,1291.4889 1045.8333,1365.3431 " fill="none" id="Validator-to-Listener" style="stroke:#545454;stroke-width:3.125;"/>
+    <polygon fill="#545454" points="1048,1375.8223,1052.3037,1355.7602,1045.86,1365.6278,1035.9925,1359.1842,1048,1375.8223" style="stroke:#545454;stroke-width:3.125;"/>
+    <text fill="#A0A0A0" font-family="Open Sans,Avenir,Nunito,Arial,Helvetica,SansSerif" font-size="25" font-weight="bold" lengthAdjust="spacing" textLength="129.1667" x="864.5833" y="991.9922" style="white-space: pre;">reports to</text>
+  </g>
+</svg>

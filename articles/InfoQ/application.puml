@@ -1,0 +1,45 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "Applications"
+    
+    abstract BaseComponent
+    
+    BaseComponent <|-- Application
+    Application --> CommandLine : "parses arguments into"
+    Application o-- Project : "initializes and uses"
+    Application o-- CommandLine
+    abstract class Application
+    {
+        --(constructors)--
+        #Application(Project)
+        --
+        +Application get()
+        +Project project()
+        +PropertyMap properties()
+        --(command line parsing)--
+        +T argument(int index, ArgumentParser<T>)
+        +T argument(ArgumentParser<T>)
+        +ArgumentList arguments()
+        +CommandLine commandLine()
+        +T get(SwitchParser<T>, T defaultValue)
+        +T get(SwitchParser<T>)
+        +boolean has(SwitchParser<T>)
+        #List<ArgumentParser<?>> argumentParsers()
+        #Set<SwitchParser<?>> switchParsers()
+        --(lifecycle)--
+        +void exit(String message, Object... arguments)
+        +void run(String[] arguments)
+        #void onRun()
+    }
+    
+    Application <|-- Server
+    abstract class Server
+    {
+        --(constructors)--
+        #Server(Project)
+    }
+    
+@enduml
+
