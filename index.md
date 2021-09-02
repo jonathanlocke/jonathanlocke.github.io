@@ -1,6 +1,6 @@
 [KivaKit](https://www.kivakit.org) is a Java application framework composed of *mini-frameworks*:
 
-<img src="graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
+<img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
 
