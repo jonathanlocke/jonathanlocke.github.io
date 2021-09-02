@@ -22,7 +22,7 @@
 [Converters](_posts/2021-07-13-converters.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Deployments](_posts/2021-09-07-deployment) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Deployments](_posts/2021-09-07-deployment.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Messaging](_posts/2021-07-07-broadcaster.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
