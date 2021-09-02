@@ -118,7 +118,7 @@ The design of KivaKit's resource module is [fairly complex](https://www.kivakit.
 
 A simplified UML diagram:
 
-![](../uml/simplified-resource-uml.png)
+![](https://state-of-the-art.org/uml/simplified-resource-uml.png)
 
 The *Resource* class in this diagram is central. This class:
 
@@ -141,7 +141,7 @@ Finally, *BaseWritableResource* extends *BaseReadableResource* to add the abilit
 
 To give an idea of the resources that KivaKit provides this is a snapshot of the class hierarchy of readable and writable resources:
 
-<img src="../uml/resource-classes.png" width=500/>
+<img src="https://state-of-the-art.org/uml/resource-classes.png" width=500/>
 
 #### Implementing a resource
 

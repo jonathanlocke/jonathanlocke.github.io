@@ -12,7 +12,7 @@ Which brings us to the *Broadcaster / Listener* design pattern. A language like 
 
 #### Broadcasters
 
-A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKit's most commonly used messages:
+A *Broadcaster* is a *Transmitter* that transmits [*Messages*](https://state-of-the-art.org/uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKit's most commonly used messages:
 
 | Message | Purpose |
 |---|---|
@@ -30,7 +30,7 @@ A *Broadcaster* is a *Transmitter* that transmits [*Messages*](../uml/diagram-me
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="120" style="vertical-align:middle"/>
 
-A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
+A [*Broadcaster*](https://state-of-the-art.org/uml/diagram-message-broadcaster.svg) keeps a list of *Listener*s (the audience) to which it will transmit messages. Listeners can be added and removed from the list. When the *transmit(Transmittable)* method is called with a message, that message is given to each member of the audience:
 
     public interface Transmitter<T extends Transmittable>
     {
@@ -50,7 +50,7 @@ A [*Broadcaster*](../uml/diagram-message-broadcaster.svg) keeps a list of *Liste
 
 #### Listeners
 
-A [*Listener*](../uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
+A [*Listener*](https://state-of-the-art.org/uml/diagram-message-listener.svg) receives messages sent to it with its *receive(Transmittable)* method. Different implementations of this interface may do different things with the message:
 
     public interface Listener<Transmittable>
     {
@@ -63,7 +63,7 @@ A [*Listener*](../uml/diagram-message-listener.svg) receives messages sent to it
         void receive(Transmittable message);
     }
 
-Here are a few examples of the many [*Listener*s](../uml/diagram-message-listener-type.svg) in KivaKit, just to give an idea of the range of tasks that listeners can perform:
+Here are a few examples of the many [*Listener*s](https://state-of-the-art.org/uml/diagram-message-listener-type.svg) in KivaKit, just to give an idea of the range of tasks that listeners can perform:
 
 | Listener | Purpose |
 |---------|--------|
@@ -81,7 +81,7 @@ Here are a few examples of the many [*Listener*s](../uml/diagram-message-listene
 
 #### Repeaters
 
-A [*Repeater*](../uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
+A [*Repeater*](https://state-of-the-art.org/uml/diagram-message-repeater.svg) is both a *Listener* and a *Broadcaster*. When a repeater hears a message via *receive()*, it re-broadcasts it with *transmit()*:
 
     public interface Repeater extends Listener, Broadcaster
     {

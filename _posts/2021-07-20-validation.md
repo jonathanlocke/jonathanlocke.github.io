@@ -22,7 +22,7 @@
 
 The UML diagram for the key classes in this mini-framework looks like this:
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/diagram-data-validation.svg" width="800"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-data-validation.svg" width="800"/>
 
 In the following example, an *Email* object is *Validatable* and its *Validatable.validator()* method returns an anonymous subclass of *BaseValidator*. The *onValidate()* override then provides the actual validation with a series of calls to the *problemIf()* method in *BaseValidator*. For each problem encountered, the validator broadcasts a message. The *BaseValidator* implementation *also* captures these messages, analyzes them and returns true if no problem messages were broadcast by *onValidate()*. This design allows the *Email* class to focus entirely on providing validation logic and not on the plumbing for reporting validation problems.
 

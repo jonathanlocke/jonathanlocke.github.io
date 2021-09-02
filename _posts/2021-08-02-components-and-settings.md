@@ -15,7 +15,7 @@ The *kivakit-component* module provides a (very) lightweight base component clas
 
 The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see [*Why KivaKit provides service locator instead of DI*](2021-06-23-service-locator.md). 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.configuration.lookup.svg" width="400"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.configuration.lookup.svg" width="400"/>
 
 The code to register an object with *Registry* looks like:
 
@@ -49,7 +49,7 @@ If there is more than one *Spaceship* in the registry, is becomes necessary to d
 
 The *Settings* class in *com.telenav.kivakit.configuration.settings*, and its subclasses *SettingsFolder* and *SettingsPackage* provide registries of user-defined settings objects. 
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.configuration.settings.svg" width="600"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.configuration.settings.svg" width="600"/>
 
 For example, this user-defined settings object might be used to configure *Apache Pinot*:
 
@@ -123,7 +123,7 @@ These configurations can then be found using an instance specifier as in:
 
 Now that we have covered the core mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make accessing this functionality easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [*How KivaKit adds mixins to Java*](2021-06-25-mixins.md) for details).
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "../uml/com.telenav.kivakit.application.component.svg" width="700"/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.application.component.svg" width="700"/>
 
 Continuing with our Apache Pinot example from above, we can write a *Pinot* component which uses *PinoSettings* to get a connection to the specified Apache Pinot database cluster:
 
