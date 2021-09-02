@@ -11,7 +11,7 @@ It is a common problem to convert one type into another. As with most problems, 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/convert/convert.svg" width="40"/>
 
-In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [*broadcast to interested listeners*](../published/broadcaster.md). 
+In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [*broadcast to interested listeners*](/broadcaster.md). 
 
 While this interface perfectly captures a one way conversion, we may want to convert the destination type back to the original type:
 
@@ -38,7 +38,7 @@ The relationships between the classes in the converter mini-framework discussed 
 
 These are fairly elegant interfaces, but what about the implementation?
 
-We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [*Polymorphic final methods*](../published/polymorphic-final-methods.md) pattern to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
+We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [*Polymorphic final methods*](/polymorphic-final-methods.md) pattern to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
 
     public abstract class BaseConverter<From, To> extends BaseRepeater 
         implements Converter<From, To>
@@ -265,7 +265,7 @@ We could also capture the errors with *MessageList* and analyze them, or count t
 
 #### Conclusion
 
-This article has given a basic description of how KivaKit converters are designed and implemented. In the [*KivaKit command line parsing*](command-line.md) article, we take a look at how string converters are used to parse command line switches and arguments.
+This article has given a basic description of how KivaKit converters are designed and implemented. In the [*KivaKit command line parsing*](2021-08-19-command-line.md) article, we take a look at how string converters are used to parse command line switches and arguments.
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 

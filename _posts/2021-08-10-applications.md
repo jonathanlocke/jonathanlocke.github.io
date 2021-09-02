@@ -6,7 +6,7 @@ The *kivakit-application* module contains building blocks for creating applicati
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/diagram-application.svg" width="600"/>
 
-*Application* provides command-line parsing (see [*KivaKit command line parsing*](../published/commandline.md)) and application lifecycle methods. In addition, it inherits functionality from *BaseComponent* for registering and locating objects and settings (see [*Kivakit components and settings*](../published/settings.md)):
+*Application* provides command-line parsing (see [*KivaKit command line parsing*](/commandline.md)) and application lifecycle methods. In addition, it inherits functionality from *BaseComponent* for registering and locating objects and settings (see [*Kivakit components and settings*](/settings.md)):
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.application.component.svg" width="700"/>
 
