@@ -52,7 +52,7 @@
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[A poor man's multiple-repository, continuous integration build system](_posts/2021-09-07-kivakit-build.md)
+[A poor man's multiple-repository build system](_posts/2021-09-07-kivakit-build.md)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [What's after the cloud?](_posts/2021-08-17-after-the-cloud.md)
