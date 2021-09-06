@@ -1,7 +1,7 @@
 
 2021.09.07
 
-### A poor man's GitHub multiple-repository, continuous integration build system &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears-32.png" srcset="https://state-of-the-art.org/graphics/gears/gears-32-2x.png 2x" style="vertical-align:baseline"/>
+### A poor man's multiple-repository, continuous integration build system &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears-32.png" srcset="https://state-of-the-art.org/graphics/gears/gears-32-2x.png 2x" style="vertical-align:baseline"/>
 
 #### Refactoring feature branches across multiple repositories
 
