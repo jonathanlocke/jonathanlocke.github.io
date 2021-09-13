@@ -119,16 +119,16 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
             Condition condition;
         }
     
-        /** The KivaKit re-entrant lock */
-        final transient Lock lock = new Lock();
-    
+        /** The re-entrant (KivaKit) lock */
+        private Lock lock = new Lock();
+
         /** The clients waiting for a predicate to be satisfied */
-        private final List<Waiter> waiters = new ArrayList<>();
-    
+        private List<Waiter> waiters = new ArrayList<>();
+
         /** The most recently reported state */
-        private volatile State current;
-    
-        public StateWatcher(final State current)
+        private State current;
+        
+        public StateWatcher(State current)
         {
             this.current = current;
         }
@@ -144,7 +144,7 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
                 current = state;
     
                 // go through the waiters
-                for (final var watcher : waiters)
+                for (var watcher : waiters)
                 {
                     // and if the reported value satisfies the watcher's predicate,
                     if (watcher.predicate.test(state))
@@ -159,7 +159,7 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
         /**
          * Waits for the given boolean predicate to be satisfied based on changes * to the observed state value
          */
-        public WakeState waitFor(final Predicate<State> predicate)
+        public WakeState waitFor(Predicate<State> predicate)
         {
             return lock.whileLocked(() ->
             {
@@ -171,7 +171,7 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
                 }
     
                 // otherwise, add ourselves as a waiter,
-                final var waiter = new Waiter();
+                var waiter = new Waiter();
                 waiter.predicate = predicate;
                 waiter.condition = lock.newCondition();
                 waiters.add(waiter);
@@ -188,7 +188,7 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
                         return COMPLETED;
                     }
                 }
-                catch (final InterruptedException e)
+                catch (InterruptedException e)
                 {
                     return INTERRUPTED;
                 }
@@ -198,7 +198,7 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
         /**
          * Wait forever for the desired state
          */
-        public WakeState waitFor(final State desired)
+        public WakeState waitFor(State desired)
         {
             return waitFor(desired::equals);
         }
