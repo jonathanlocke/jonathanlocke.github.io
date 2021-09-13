@@ -1,14 +1,8 @@
-
-#### <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp;  [2021.07.20 - Signaling and waiting for concurrent state changes](#state-watcher)  
-
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
-<a name = "state-watcher"></a>
-
 2021.07.20
 
 ### Signaling and waiting for concurrent state changes &nbsp; <img src="https://state-of-the-art.org/graphics/communicate/communicate-32.png" srcset="https://state-of-the-art.org/graphics/communicate/communicate-32-2x.png 2x" style="vertical-align:baseline"/>
 
-Java's concurrency library (java.util.concurrent) provides a mutual-exclusion (mutex) *Lock* called *ReentrantLock*. This lock maintains a queue of threads that are waiting to *own* the lock, allowing access to a protected resource. A thread can be added to the lock's wait queue by calling *lock()*. When the *lock()* method returns, the thread will own the lock. Once the thread obtains the lock in this way, it can mutate any shared state protected by the lock, and then it can release its ownership by calling *unlock()*, allowing another thread to get its turn at owning the lock and accessing the shared state. Because the lock is reentrant, a thread can call *lock()* multiple times, and the lock will only be released to the next waiting thread when all nested calls to *lock()* have been undone with calls to *unlock()*. The flow of a reentrant thread using a lock looks like this:
+Java's concurrency library (*java.util.concurrent*) provides a mutual-exclusion (mutex) *Lock* called *ReentrantLock*. This lock maintains a queue of threads that are waiting to *own* the lock, allowing access to a protected resource. A thread can be added to the lock's wait queue by calling *lock()*. When the *lock()* method returns, the thread will own the lock. Once the thread obtains the lock in this way, it can mutate any shared state protected by the lock, and then it can release its ownership by calling *unlock()*, allowing another thread to get its turn at owning the lock and accessing the shared state. Because the lock is reentrant, a thread can call *lock()* multiple times, and the lock will only be released to the next waiting thread when all nested calls to *lock()* have been undone with calls to *unlock()*. The flow of a reentrant thread using a lock looks like this:
 
     lock() 
         lock() 
@@ -17,14 +11,14 @@ Java's concurrency library (java.util.concurrent) provides a mutual-exclusion (m
         unlock()
     unlock()
 
-KivaKit provides a simple extension to this functionality that reduces boilerplate calls to *lock()* and *unlock()*, and ensures that all lock calls are balanced by unlock calls:
+KivaKit provides a simple extension of this functionality that reduces boilerplate calls to *lock()* and *unlock()*, and ensures that all lock calls are balanced by unlock calls:
 
     public class Lock extends ReentrantLock
     {
         /**
          * Runs the provided code while holding this lock.
          */
-        public void whileLocked(final Runnable code)
+        public void whileLocked(Runnable code)
         {
             lock();
             try
@@ -63,7 +57,7 @@ The *Condition* implementation returned by *newCondition* has methods for thread
         void signal();
     }
 
-KivaKit uses condition locks to create *StateWatcher*, which provides a way to signal and wait for a *state*.  
+KivaKit uses condition locks to implement *StateWatcher*, which provides a way to signal and wait for a particular *state*.
 
 For example:
 
@@ -75,7 +69,7 @@ For example:
         DONE      // Signal that the background thread is done
     }
     
-    private StateWatcher state = new StateWatcher(IDLE);
+    private StateWatcher state = new StateWatcher(State.IDLE);
     
     [...]
     
@@ -93,21 +87,23 @@ For example:
     state.signal(WAITING);
     state.waitFor(DONE);
 
-In this example, you might expect that this code has a race condition. It is okay if the thread starts up and reaches *waitFor(WAITING)* before the foreground thread reaches *signal(WAITING)*. But what if the foreground thread signals that it's *WAITING* and proceeds to wait for *DONE* before the background thread even starts? With Java monitors (or *Conditions*), the signal would be missed by the background thread. It would then hang forever waiting for a *WAITING* signal that will never come. The foreground thread would also hang waiting for a *DONE* signal that will never arrive. This is a classic deadlock scenario.
+In this example, you might expect that this code has a race condition. It is okay if the thread starts up and reaches *waitFor(WAITING)* before the foreground thread reaches *signal(WAITING)*. But what if the foreground thread signals that it's *WAITING* and proceeds to wait for *DONE* before the background thread even starts? With Java monitors (or *Conditions*), the signal would be missed by the background thread. It would then hang forever waiting for a *WAITING* signal that will never come. The foreground thread would also hang waiting for a *DONE* signal that will never arrive. A classic deadlock scenario.
 
-*StateWatcher* solves this issue by making signaling and waiting *stateful* operations. In our race condition case, the foreground thread calls *signal(WAITING)*, as before. But the signal isn't lost. Instead, the watcher records that it is in the *WAITING* state before proceeding to wait for *DONE*. If the background thread then finishes starting up and it calls *waitFor(WAITING)*, the current state retained by *StateWatcher* will still be *WAITING* and the call will return immediately rather than doing any waiting. Our deadlock is eliminated, and with a minimal amount of code. The state that *StateWatcher* keeps to allow this to happen is commonly known as a *condition variable*.
+*StateWatcher* solves this issue by making signaling and waiting *stateful* operations. In our race condition case, the foreground thread calls *signal(WAITING)*, as before. But the signal isn't lost. Instead, *StateWatcher* records that it is in the *WAITING* state before proceeding to wait for *DONE*. If the background thread then finishes starting up and it calls *waitFor(WAITING)*, the current state retained by *StateWatcher* will still be *WAITING* and the call will return immediately instead of waiting. Our deadlock is eliminated, and with a minimal amount of code. The state that *StateWatcher* keeps to allow this to happen is commonly known as a *condition variable*.
 
 But how exactly does StateWatcher implement this magic? 
 
 *StateWatcher* has a *State* value that can be updated, and a (KivaKit) *Lock* that it uses to protect this state. It also maintains a list of *Waiter*s, each of which has a *Condition* to wait on (created from the *Lock*) and a *Predicate* that it needs to be satisfied.
 
-When the *waitFor(Predicate<State>)* method is called (if the watcher isn't already in the desired *State*), a new *Waiter* is created and assigned the *Predicate* as well as a new *Condition* created from the *Lock*. The *waitFor()* method then adds the *Waiter* to the wait list and *awaits()* future signaling of the condition.
+When the *waitFor(Predicate<State>)* method is called (if the watcher isn't already in the desired *State*), a new *Waiter* object (see below) is created with the *Predicate* and a *Condition* created from the *Lock*. The *waitFor()* method then adds the *Waiter* to the wait list and *awaits()* future signaling of the condition.
 
-When *signal(State)* is called, the current state is updated, and then each waiter is processed. If a waiter's predicate is satisfied by the new state, its condition object is signaled, causing the thread awaiting satisfaction of the predicate to be awakened.
+When *signal(State)* is called, the current state is updated, and each waiter is processed. If a waiter's predicate is satisfied by the new state, its condition object is signaled, causing the thread awaiting satisfaction of the predicate to be awakened.
 
-Finally, *waitFor(State)* is simply implemented with a method reference as a predicate: waitFor(desiredState::equals).
+Finally, *waitFor(State)* is simply implemented with a method reference to *equals()* as a predicate: 
 
-A simplified version of *StateWatcher* is shown below. The full *StateWatcher* class is available in kivakit-kernel in the [KivaKit](https://www.kivakit.org) project.
+    waitFor(desiredState::equals)
+
+A simplified version of *StateWatcher* is shown below. The full *StateWatcher* class is available in *kivakit-kernel* in the [KivaKit](https://www.kivakit.org) project.
 
     public class StateWatcher<State>
     {
@@ -207,3 +203,28 @@ A simplified version of *StateWatcher* is shown below. The full *StateWatcher* c
             return waitFor(desired::equals);
         }
     }
+
+#### Code
+
+The *StateWatcher* class is available in the *kivakit-kernel* module in [KivaKit](https://www.kivakit.org).
+
+    <dependency>
+        <groupId>com.telenav.kivakit</groupId>
+        <artifactId>kivakit-kernel</artifactId>
+        <version>${kivakit.version}</version>
+    </dependency>
+
+<br/>
+
+<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+
+Questions? Comments? Tweet yours to @OpenKivaKit or post here:
+
+<script
+  async
+  src="https://utteranc.es/client.js"
+  repo="jonathanlocke/jonathanlocke.github.io"
+  issue-term="state-watcher"
+  theme="github-dark"
+  crossorigin="anonymous"
+></script>
