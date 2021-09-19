@@ -1,0 +1,58 @@
+@startuml
+
+    !include ../../lexakai/lexakai.theme
+
+    title "BaseComponent and ComponentMixin"
+    
+    abstract BaseRepeater
+    
+    interface Component
+    
+    BaseRepeater <|-- BaseComponent
+    BaseRepeater -right-|> Repeater
+    Component <|-- BaseComponent
+    class BaseComponent
+    {
+    }
+    
+    interface Repeater
+    Repeater <|-- Component
+    interface Component
+    {
+        --(resources)--
+        +Resource packageResource(String path)
+        +Package relativePackage(String path)
+        --(settings)--
+        +T settings(Class<T> type, Enum<?> instance)
+        +T settings(Class<T> type)
+        --(lookup)--
+        +T lookup(Class<T> type)
+        +T lookup(Class<T> type, Enum<?> instance)
+        +void registerAllSettingsIn(Package package_)
+        +void registerAllSettingsIn(Folder)
+        +void registerDeployment(Deployment)
+        +T registerObject(T object)
+        +T registerObject(T object, Enum<?> instance)
+        +T require(Class<T> type, Enum<?> instance)
+        +T require(Class<T> type)
+    }
+    
+    interface Component
+    interface Mixin
+    {
+        default <T> T state(Class<? extends Mixin> type,  Factory<T> factory)
+    }
+    interface RepeaterMixin
+    Component <|-- ComponentMixin
+    Mixin <|-- ComponentMixin
+    RepeaterMixin <|-- ComponentMixin
+    RepeaterMixin --|> Mixin
+    Repeater <|-- RepeaterMixin
+    interface ComponentMixin
+    {
+        --
+        +BaseComponent component()
+    }
+    
+@enduml
+
