@@ -73,7 +73,7 @@ The *PinotSettings* object here specifies a port for *Apache Zookeeper*, and the
     zookeeperPort = localhost:2181
     clusterName   = PinotCluster
 
-The *class* value specifies the settings object to instantiate. Once the object is created, the *zookeeperPort* and *clusterName* values are converted to objects using the property converter specified (or implied by the field's type signature) by *@KivaKitPropertyConverter*. Those objects are then assigned to the appropriate fields of *PinotSettings*.
+The *class* value specifies the settings object to instantiate. Once the object is created, the *zookeeperPort* and *clusterName* values are converted to objects using the property converter specified (or implied by the field's type signature) by *\@KivaKitPropertyConverter*. Those objects are then assigned to the appropriate fields of *PinotSettings*.
 
 Packages and folders of *.properties* files can be used to group the settings for a particular configuration of an application or server (the *Deployment* and *DeploymentSet* classes help to do this and will be the subject of a future article). For example:
 
