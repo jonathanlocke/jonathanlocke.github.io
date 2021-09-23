@@ -7,46 +7,46 @@
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Applications](_posts/2021-08-10-applications.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Applications]({% post_url 2021-08-10-applications %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Bit Diagrams](_posts/2021-07-27-bit-diagram.md)
+[Bit Diagrams]({% post_url 2021-07-27-bit-diagram %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Command Line Parsing](_posts/2021-08-19-command-line.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Command Line Parsing]({% post_url 2021-08-19-command-line %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Components and Settings](_posts/2021-08-02-components-and-settings.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Components and Settings]({% post_url 2021-08-02-components-and-settings %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Concurrent State](_posts/2021-09-14-state-watcher.md)  
+[Concurrent State]({% post_url 2021-09-14-state-watcher %})  
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Converters](_posts/2021-07-13-converters.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Converters]({% post_url 2021-07-13-converters %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Deployments](_posts/2021-09-07-deployment.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Deployments]({% post_url 2021-09-07-deployment %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Messaging](_posts/2021-07-07-broadcaster.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Mixins](_posts/2021-06-25-mixins.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Mixins]({% post_url 2021-06-25-mixins %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Lazy Initialization](_posts/2021-07-03-lazy.md)
+[Lazy Initialization]({% post_url 2021-07-03-lazy %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Logging](_posts/2021-08-17-logging.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Logging]({% post_url 2021-08-17-logging %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Resources](_posts/2021-08-24-resources.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Resources]({% post_url 2021-08-24-resources %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Service Locator](_posts/2021-06-23-service-locator.md) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Service Locator]({% post_url 2021-06-23-service-locator %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Validation](_posts/2021-07-20-validation.md)
+[Validation]({% post_url 2021-07-20-validation %})
 
 <br/> 
 
@@ -55,28 +55,28 @@
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[A poor man's multiple-repository build system](_posts/2021-09-07-kivakit-build.md)
+[A poor man's multiple-repository build system]({% post_url 2021-09-07-kivakit-build %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[What's after the cloud?](_posts/2021-08-17-after-the-cloud.md)
+[What's after the cloud?]({% post_url 2021-08-17-after-the-cloud %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[The functional properties pattern](_posts/2021-07-27-functional-properties.md)
+[The functional properties pattern]({% post_url 2021-07-27-functional-properties %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Polymorphic final methods](_posts/2021-07-13-polymorphic-final-methods.md)
+[Polymorphic final methods]({% post_url 2021-07-13-polymorphic-final-methods %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Mirror methods](_posts/2021-07-05-mirror-methods.md)
+[Mirror methods]({% post_url 2021-07-05-mirror-methods %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[A (very) slightly simpler builder pattern](_posts/2021-07-04-builder.md)
+[A (very) slightly simpler builder pattern]({% post_url 2021-07-04-builder %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Why project Loom will make Java a better cloud language than Go](_posts/2021-06-28-loom.md)
+[Why project Loom will make Java a better cloud language than Go]({% post_url 2021-06-28-loom %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Constructors are evil (and how we could eliminate them)](_posts/2021-06-26-construction.md)
+[Constructors are evil (and how we could eliminate them)]({% post_url 2021-06-26-construction %})
 
 <br/>
 <br/>

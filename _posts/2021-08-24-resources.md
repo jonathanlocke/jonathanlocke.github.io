@@ -108,7 +108,7 @@ One KivaKit alternative to this idiom is this:
         }
     }
 
-After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). For more information, see [KivaKit messaging.](2021-07-07-broadcaster.md)
+After the *FatalProblem* message in *doDangerousStuff()* is broadcast by the *fatal()* method, the flow of control propagates separately via an *IllegalStateException* thrown by the same *fatal()* method to any caller on the call stack that might be able to substantially respond to the issue (as opposed to simply recording it). For more information, see [KivaKit messaging.]({% post_url 2021-07-07-broadcaster %})
 
 #### Design
 

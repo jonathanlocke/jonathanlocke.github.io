@@ -7,13 +7,13 @@ The *kivakit-configuration* module provides two useful facilities for configurin
 1. An object lookup registry (*Registry*)
 2. A settings registry (*Settings*)
 
-The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [*message broadcasting and listening*](2021-07-07-broadcaster.md). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
+The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [*message broadcasting and listening*]({ % post_url 2021-07-07-broadcaster % }). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 
 #### The object lookup registry
 
-The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see [*Why KivaKit provides service locator instead of DI*](2021-06-23-service-locator.md). 
+The class *Registry* in *com.telenav.kivakit.configuration.lookup* can be used to register and look up ordinary Java objects. For a detailed examination of the design pattern used by *Registry* and its advantages, see [*Why KivaKit provides service locator instead of DI*]({% post_url 2021-06-23-service-locator %}). 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.configuration.lookup.svg" width="400"/>
 
@@ -121,7 +121,7 @@ These configurations can then be found using an instance specifier as in:
 
 #### KivaKit components
 
-Now that we have covered the core mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make accessing this functionality easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [*How KivaKit adds mixins to Java*](2021-06-25-mixins.md) for details).
+Now that we have covered the core mechanisms for registering and locating objects and settings, we can take a look at how KivaKit components make accessing this functionality easier. KivaKit components extend *BaseComponent*, which provides convenience methods for messaging, and for accessing objects from the lookup and settings registries for the component. In the event that a class already extends another base class, the *ComponentMixin* interface can be used instead (see [*How KivaKit adds mixins to Java*]({% post_url 2021-06-25-mixins %}) for details).
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src = "https://state-of-the-art.org/uml/com.telenav.kivakit.application.component.svg" width="700"/>
 

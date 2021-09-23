@@ -2,13 +2,13 @@
 
 ### KivaKit deployments &nbsp; <img style="vertical-align:baseline; margin-left: 8px;" src="https://state-of-the-art.org/graphics/server/server.svg" height="24"/>
 
-KivaKit applications can be configured using the [settings api](2021-08-02-components-and-settings.md), but there is an easier way to configure an application for deployment built right into *Application*. By default, *Application* looks for the switch *-deployment=[deployment-name]*. If the switch is present and deployment settings can be found, KivaKit will load all of the settings objects in the named deployment into the global settings store, where they can be accessed with *require()*. 
+KivaKit applications can be configured using the [settings api]({% post_url 2021-08-02-components-and-settings %}), but there is an easier way to configure an application for deployment built right into *Application*. By default, *Application* looks for the switch *-deployment=[deployment-name]*. If the switch is present and deployment settings can be found, KivaKit will load all of the settings objects in the named deployment into the global settings store, where they can be accessed with *require()*. 
 
 Deployments can be packaged into a shaded jar file, so that usage of the application is very simple for an operations team:
 
     java -jar my-application.jar -deployment=local
 
-To discover what *packaged* deployments are available, KivaKit looks in the *deployments* package next to the application class. Each sub-package in the *deployments* package is then a deployment, where the name of the deployment is the name of the package. A deployment description is contained in a file in the package named *Deployment.metadata*. The deployment package also contains a set of one or more *.properties* files. Each settings file describes a settings object, as described in [components and settings](2021-08-02-components-and-settings.md).
+To discover what *packaged* deployments are available, KivaKit looks in the *deployments* package next to the application class. Each sub-package in the *deployments* package is then a deployment, where the name of the deployment is the name of the package. A deployment description is contained in a file in the package named *Deployment.metadata*. The deployment package also contains a set of one or more *.properties* files. Each settings file describes a settings object, as described in [components and settings]({% post_url 2021-08-02-components-and-settings %}).
 
     └── MyApplication.java
     └── deployments
