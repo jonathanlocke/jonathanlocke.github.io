@@ -7,7 +7,7 @@ The *kivakit-configuration* module provides two useful facilities for configurin
 1. An object lookup registry (*Registry*)
 2. A settings registry (*Settings*)
 
-The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [*message broadcasting and listening*]({ % post_url 2021-07-07-broadcaster % }). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
+The *kivakit-component* module provides a (very) lightweight base component class (*BaseComponent*) that makes it easy to define modular components that use this functionality as well as other common component-related functionality such as [*message broadcasting and listening*]({% post_url 2021-07-07-broadcaster %}). In practice, it is easiest to simply use *BaseComponent* (or *ComponentMixin*) instead of directly interacting with the lookup and settings registries in *kivakit-configuration*.
 
 <br/><img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
 

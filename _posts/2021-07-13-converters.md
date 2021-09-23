@@ -11,7 +11,7 @@ It is a common problem to convert one type into another. As with most problems, 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/convert/convert.svg" width="40"/>
 
-In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [*broadcast to interested listeners*]({ % post_url 2021-07-07-broadcaster % }). 
+In this design, the *convert()* method converts the *From* type into the *To* type. The interface extends *Repeater* so that any warnings or problems that occur during conversion are captured and [*broadcast to interested listeners*]({% post_url 2021-07-07-broadcaster %}). 
 
 While this interface perfectly captures a one way conversion, we may want to convert the destination type back to the original type:
 
@@ -38,7 +38,7 @@ The relationships between the classes in the converter mini-framework discussed 
 
 These are fairly elegant interfaces, but what about the implementation?
 
-We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [*Polymorphic final methods*]({ % post_url 2021-07-13-polymorphic-final-methods % }) pattern to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
+We would like the base implementation of *Converter* to handle issues that come up that are common to all type converters, namely *null* values and exceptions. We can make use of the [*Polymorphic final methods*]({% post_url 2021-07-13-polymorphic-final-methods %}) pattern to layer in this functionality for all converters. We will also need to ensure that the converter has at least one listener to hear broadcast problems by making *Listener* a parameter to the constructor.
 
     public abstract class BaseConverter<From, To> extends BaseRepeater 
         implements Converter<From, To>
