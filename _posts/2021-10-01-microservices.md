@@ -69,19 +69,19 @@ When the microservice starts, the following resources are available:
 
 A REST application is created by extending the *MicroserviceRestApplication* class:
 
-		public class DivideRestApplication extends MicroserviceRestApplication
+	public class DivideRestApplication extends MicroserviceRestApplication
+	{
+		public DivideRestApplication(Microservice microservice)
 		{
-			public DivideRestApplication(Microservice microservice)
-			{
-				super(microservice);
-			}
-			
-			@Override
-			public void onInitialize()
-			{
-				mount("divide", DivideRequest.class);
-			}
+			super(microservice);
 		}
+		
+		@Override
+		public void onInitialize()
+		{
+			mount("divide", DivideRequest.class);
+		}
+	}
 
 Request handlers must be mounted on specific paths inside the *onInitialize()* method (or an error is reported). If the mount path (in this case "divide") doesn't begin with a slash ("/"), the path "/api/[major-version].[minor-version]/" is prepended automatically. So, "divide" becomes "/api/1.0/divide" in the code above, where the version *1.0* comes from the metadata returned by *DivideMicroservice*. The *same path* can be used to mount a single request handler for each HTTP method (GET, POST, DELETE). However, trying to mount two handlers for the same HTTP method on the same path will result in an error.
 
@@ -208,11 +208,11 @@ The *kivakit-microservice* module includes *MicroserviceClient*, which provides 
         }
     }
 
-Here, we create a *MicroservletClient* to access the microservice we built above. We tell it to find the service on port 8086 of the local host. Then we POST a *DivideRequest* to divide 9 by 3 using the client, and we read the response. The response shows that the quotient is 3.
+Here, we create a *MicroservletClient* to access the microservice we built above. We tell it to use the service on port 8086 of the local host. Then we POST a *DivideRequest* to divide 9 by 3 using the client, and we read the response. The response shows that the quotient is 3:
 
-    ━━━━━━━━━━━━
+    -------------------
     |  response => 3  |
-    ━━━━━━━━━━━━
+    -------------------
 
 #### Path and Query Parameters
 
@@ -231,11 +231,11 @@ The microservlet processes this JSON just as if it had been posted. This feature
 
 #### OpenAPI
 
-The "/docs" path on the server provides a generated OpenAPI specification via Swagger:
+The "/docs" root path on the server provides a generated OpenAPI specification via Swagger:
 
 ![](https://www.state-of-the-art.org/graphics/swagger/swagger.png)
 
-The annotations available for OpenAPI are:
+The annotations available for OpenAPI are minimal, but effective for simple REST projects:
 
 | Annotation | Purpose |
 |------------|---------|
