@@ -18,7 +18,7 @@ The *kivakit-microservice* mini-framework makes it easy to implement REST-ful GE
 
 #### Microservices
 
-The *Microservice* class is an *Application* which provides automatic configuration and startup of Jetty server. For example:
+The *DivisionMicroservice* class below is a *Microservice* that performs arithmetic division (in the slowest and most expensive way imaginable). The *Microservice* superclass provides automatic configuration and startup of Jetty server:
 
     public class DivisionMicroservice extends Microservice
     {
@@ -48,9 +48,9 @@ The *Microservice* class is an *Application* which provides automatic configurat
         }
     }
 
-The *main()* method of this microservice creates an instance of *DivisionMicroservice* and starts it running with a call to *run(String[])*, the same as with any KivaKit application. The *metadata()* method returns information about the service that is included in the REST OpenAPI specification (mounted on /open-api/swagger.json). The *restApplication()* factory method creates a REST application for the microservice, and the *webApplication()* factory method optionally creates an Apache Wicket web application for configuring the service and viewing its status. Any initialization of the microservice must take place in the *onInitialize()* method. This is the best place to [register components](2021-06-23-service-locator.md) used throughout the application. 
+Here, the *main(String[] arguments)* method creates an instance of *DivisionMicroservice* and starts it running with a call to *run(String[])* (the same as with any KivaKit application). The *metadata()* method returns information about the service that is included in the REST OpenAPI specification (mounted on /open-api/swagger.json). The *restApplication()* factory method creates a REST application for the microservice, and the *webApplication()* factory method optionally creates an Apache Wicket web application for configuring the service and viewing its status. Any initialization of the microservice must take place in the *onInitialize()* method. This is the best place to [register components](2021-06-23-service-locator.md) used throughout the application. 
 
-When the *run(String[] arguments)* method is called, the microservice configures and starts Jetty server on the port specified by the *MicroserviceSettings* object loaded by the [*-deployment* switch](2021-09-07-deployment.md). However, the *-port* command line switch can be used to override this value. 
+When the *run(String[] arguments)* method is called, Jetty web server is started on the port specified by the *MicroserviceSettings* object loaded by the [*-deployment* switch](2021-09-07-deployment.md). The *-port* command line switch can be used to override this value. 
 
 When the microservice starts, the following resources are available:
 
@@ -67,7 +67,7 @@ When the microservice starts, the following resources are available:
 
 #### REST Applications
 
-A REST application in *kivakit-microservice* is created by extending the *MicroserviceRestApplication* class:
+A REST application is created by extending the *MicroserviceRestApplication* class:
 
 		public class DivideRestApplication extends MicroserviceRestApplication
 		{
@@ -83,25 +83,25 @@ A REST application in *kivakit-microservice* is created by extending the *Micros
 			}
 		}
 
-The *onInitialize()* method must be used to mount request handlers on specific paths. If the mount path (in this case "divide") doesn't begin with a slash ("/"), the path "/api/[major-version].[minor-version]/" is prepended automatically. So, "divide" becomes "/api/1.0/divide" in the code above, where the version *1.0* comes from the metadata returned by *DivideMicroservice*. The *same path* can be used to mount a single request handler for each HTTP method (GET, POST, DELETE). However, trying to mount two handlers for the same HTTP method on the same path will result in an error.
+Request handlers must be mounted on specific paths inside the *onInitialize()* method (or an error is reported). If the mount path (in this case "divide") doesn't begin with a slash ("/"), the path "/api/[major-version].[minor-version]/" is prepended automatically. So, "divide" becomes "/api/1.0/divide" in the code above, where the version *1.0* comes from the metadata returned by *DivideMicroservice*. The *same path* can be used to mount a single request handler for each HTTP method (GET, POST, DELETE). However, trying to mount two handlers for the same HTTP method on the same path will result in an error.
 
-The *gsonFactory()* factory method (not shown) can optionally provide a factory that creates configured *Gson* objects. The *Gson* factory should extend the class *MicroserviceRestApplicationGsonFactory*. KivaKit will use this factory when serializing and deserializing JSON objects.
+The *gsonFactory()* factory method (not shown above) can optionally provide a factory that creates configured *Gson* objects. The *Gson* factory should extend the class *MicroserviceRestApplicationGsonFactory*. KivaKit will use this factory when serializing and deserializing JSON objects.
 
 The exact flow of control that occurs when a request is made to a KivaKit microservice, is detailed in the Javadoc for [*MicroserviceRestApplication*](https://github.com/Telenav/kivakit-extensions/blob/develop/kivakit-microservice/src/main/java/com/telenav/kivakit/microservice/rest/MicroserviceRestApplication.java).
 
 #### Microservlets
 
-*Microservlets* handle GET, POST and DELETE requests. They are mounted on paths the same way that request handlers. The main difference is that a microservlet can handle any or all HTTP methods at the same time, while request handlers only handle a single request method. In most cases, request handlers are more flexible and generally more useful than microservlets. The key use case for microservlets is that request handlers are implemented using an internal microservlet.
+*Microservlets* handle GET, POST and DELETE requests. They are mounted on paths in the same way that request handlers are mounted. But unlike a request handler, a microservlet can handle any or all HTTP request methods at the same time. Request handlers are more flexible and generally more useful than microservlets, so this information is mainly here for the sake of completeness. The key use case (the only one so far) for microservlets is that they are used to implement request handlers. You can see the internal microservlet for this in MicroserviceRestApplication in the method *mount(String path, Class<MicroservletRequest> requestType)*.
 
 #### Request Handlers
 
-The request handlers that are mounted on a *MicroserviceRestApplication* with calls to *mount(String path, Class&lt;MicroserviceRequest&gt; requestType)* come in three flavors, each of which is a subclass of *MicroserviceRequest*:
+Request handlers are mounted on a *MicroserviceRestApplication* with calls to *mount(String path, Class&lt;MicroserviceRequest&gt; requestType)*. They come in three flavors, each of which is a subclass of *MicroserviceRequest*:
 
 * MicroservletGetRequest
 * MicroservletPostRequest
 * MicroservletDeleteRequest
 
-Below, we see a POST request handler, *DivideRequest*, that divides to numbers. The response is formulated by the nested class *DivideResponse*. An OpenAPI specification is generated using information from the *@OpenApi* annotations. The request performs self-validation by implementing the *Validatable* interface required by *MicroservletPostRequest*:
+Below, we see a POST request handler, *DivideRequest*, that divides two numbers. The response is formulated by the nested class *DivideResponse*. An OpenAPI specification is generated using information from the *@OpenApi* annotations. Finally, the request performs self-validation by implementing the *Validatable* interface required by *MicroservletPostRequest*:
 
     @OpenApiIncludeType(description = "Request for divisive action")
     public class DivideRequest extends MicroservletPostRequest
@@ -172,14 +172,14 @@ Below, we see a POST request handler, *DivideRequest*, that divides to numbers. 
         }
     }
 
-Notice that the nested response class uses the outer class to access the request's fields. This makes [getters and setters](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html) unnecessary. When *onPost()* is called by KivaKit, the response object is created (and any messages it produces are repeated due to the call to *listenTo()*) and the constructor for the response object performs the divide operation. This makes the *onPost()* handler very short:
+Notice that the nested response class uses the outer class to access the request's fields. This makes [getters and setters](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html) unnecessary. When *onPost()* is called by KivaKit, the response object is created (and any messages it produces are repeated due to the call to *listenTo()*), and the constructor for the response object performs the divide operation. This makes the *onPost()* handler a one-liner:
 
 		public DivideResponse onPost()
 		{
 		    return listenTo(new DivideResponse());
 		}
 
-Notice how OO design principles have created a simple, easy-to-read request handler.
+Notice how OO design principles have created a simple, easy-to-read POST request handler.
 
 #### Accessing KivaKit Microservices in Java
 
@@ -210,11 +210,26 @@ The *kivakit-microservice* module includes *MicroserviceClient*, which provides 
 
 Here, we create the *MicroservletClient* that accesses the microservice at localhost:8086. We then create a *DivideRequest* to divide 9 by 3. We post the request using the client and read the response. The response shows that the quotient is 3. 
 
+#### Path and Query Parameters
+
+In a request handler, path and query parameters are not accessed directly. Instead they are automatically turned into JSON objects. For example, a POST to this URL:
+
+    http://localhost:8086/api/1.0/divide/dividend/9/divisor/3
+
+does the exact same thing as the POST request in the *DivisionClient* code above. The *dividend/9/divisor/3* part of the path is turned into a JSON object like this:
+
+    {
+        "dividend": 9,
+        "divisor": 3
+    }    
+
+This can come in handy when POST-ing relatively flat requests. When path variables or query parameters are provided to describe a JSON request object, the body of the request is ignored.
+
 #### OpenAPI
 
 The "/docs" path on the server provides a generated OpenAPI specification via Swagger:
 
-![](../graphics/swagger/swagger.png)
+![](https://www.state-of-the-art.org/graphics/swagger/swagger.png)
 
 The annotations available for OpenAPI are:
 
