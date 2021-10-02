@@ -30,10 +30,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
-<!--
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Microservices]({% post_url 2021-10-01-microservices %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
--->
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Mixins]({% post_url 2021-06-25-mixins %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
