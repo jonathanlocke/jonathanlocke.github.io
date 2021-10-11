@@ -71,16 +71,16 @@ A REST application is created by extending the *MicroserviceRestApplication* cla
 
 	public class DivideRestApplication extends MicroserviceRestApplication
 	{
-		public DivideRestApplication(Microservice microservice)
-		{
-			super(microservice);
-		}
-		
-		@Override
-		public void onInitialize()
-		{
-			mount("divide", DivideRequest.class);
-		}
+        public DivideRestApplication(Microservice microservice)
+        {
+            super(microservice);
+        }
+        
+        @Override
+        public void onInitialize()
+        {
+            mount("divide", POST, DivideRequest.class);
+        }
 	}
 
 Request handlers must be mounted on specific paths inside the *onInitialize()* method (or an error is reported). If the mount path (in this case "divide") doesn't begin with a slash ("/"), the path "/api/[major-version].[minor-version]/" is prepended automatically. So, "divide" becomes "/api/1.0/divide" in the code above, where the version *1.0* comes from the metadata returned by *DivideMicroservice*. The *same path* can be used to mount a single request handler for each HTTP method (GET, POST, DELETE). However, trying to mount two handlers for the same HTTP method on the same path will result in an error.
@@ -91,23 +91,43 @@ For anyone interested in the gory details, the exact flow of control that occurs
 
 #### Microservlets
 
-*Microservlets* handle GET, POST and DELETE requests. They are mounted on paths in the same way that request handlers are mounted. But unlike a request handler, a microservlet can handle any or all HTTP request methods at the same time. Request handlers are more flexible and generally more useful than microservlets, so this information is mainly here for the sake of completeness. The key use case (the only one so far) for microservlets is that they are used to implement request handlers. You can see the internal microservlet for this in *MicroserviceRestApplication* in the method *mount(String path, Class&lt;MicroservletRequest&gt; requestType)*.
+*Microservlets* handle *MicroservletRequest*s by producing *MicroservletResponse*s. They are mounted on paths in the same way that request handlers are mounted. Although *Microservlet* is a public API, so far the only use case is in dispatching requests to request handlers. The *MicroservletRestService* class uses anonymous *Microservlet*s to forward requests to *MicroservletRequestHandler*s. 
+You can see this in *MicroserviceRestApplication* in the method *mount(String path, HttpMethod method, Class&lt;MicroservletRequest&gt; requestType)*.
 
-#### Request Handlers
+#### Microservlet Request Handlers
 
-Request handlers are mounted on a *MicroserviceRestApplication* with calls to *mount(String path, Class&lt;MicroserviceRequest&gt; requestType)*. They come in three flavors, each of which is a subclass of *MicroserviceRequest*:
+Request handlers are mounted on a *MicroserviceRestApplication* with calls to *mount(String path, HttpMethod method, Class&lt;MicroserviceRequest&gt; requestType)*. 
 
-* MicroservletGetRequest
-* MicroservletPostRequest
-* MicroservletDeleteRequest
+Note that the *BaseMicroservletRequest* class implements both *MicroservletRequest* and *MicroservletRequestHandler*:
 
-Below, we see a POST request handler, *DivideRequest*, that divides two numbers. The response is formulated by the nested class *DivideResponse*. An OpenAPI specification is generated using information from the *@OpenApi* annotations. Finally, the request performs self-validation by implementing the *Validatable* interface required by *MicroservletPostRequest*:
+    public abstract class BaseMicroservletRequest extends BaseComponent implements
+            MicroservletRequest,
+            MicroservletRequestHandler
+
+This is crucial in terms of object-oriented design and encapsulation: *the request object itself has the data and therefore knows how to produce a response using that data*.
+
+> **KEY DESIGN PRINCIPLE**
+> 
+> [*Don't ask for the information you need to do the work; ask the object that has the information to do the work for you.*](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html)
+ 
+By employing this principle we avoid getters and setters, and our abstraction does not "leak".
+
+For example, below we see a request handler, *DivideRequest*, that divides two numbers. The request contains a dividend and a divisor. Its *onRequest()* method produces the response, which is implemented by the nested class *DivideResponse*. The response has access to the dividend and the divisor in the outer request class. So, it can create the response quotient in its constructor:
+
+    public DivideResponse()
+    {
+        this.quotient = dividend / divisor;
+    }
+
+The request and response can also perform self-validation, again following the key design principle above, by overriding the *Validatable.validator()* method, as seen below.
+
+> Note that an OpenAPI specification is generated using information from *@OpenApi** annotations
 
     @OpenApiIncludeType(description = "Request for divisive action")
-    public class DivideRequest extends MicroservletPostRequest
+    public class DivideRequest extends BaseMicroservletRequest
     {
         @OpenApiIncludeType(description = "Response to a divide request")
-        public class DivideResponse extends MicroservletResponse
+        public class DivideResponse extends BaseMicroservletResponse
         {
             @Expose
             @OpenApiIncludeMember(description = "The result of dividing",
@@ -147,7 +167,7 @@ Below, we see a POST request handler, *DivideRequest*, that divides two numbers.
     
         @Override
         @OpenApiRequestHandler(summary = "Divides two numbers")
-        public DivideResponse onPost()
+        public DivideResponse onRequest()
         {
             return listenTo(new DivideResponse());
         }
@@ -172,14 +192,7 @@ Below, we see a POST request handler, *DivideRequest*, that divides two numbers.
         }
     }
 
-Notice that the nested response class uses the outer class to access the request's fields. This makes [getters and setters](https://www.infoworld.com/article/2073723/why-getter-and-setter-methods-are-evil.html) unnecessary. When *onPost()* is called by KivaKit, the response object is created (and any messages it produces are repeated due to the call to *listenTo()*), and the constructor for the *DivideResponse* object performs the divide operation. This makes the *onPost()* handler a one-liner:
-
-		public DivideResponse onPost()
-		{
-		    return listenTo(new DivideResponse());
-		}
-
-Notice how OO design principles have improved encapsulation, eliminated boilerplate and increased readability.
+We can appreciate now how time-tested OO design principles have improved encapsulation, eliminated boilerplate and increased code readability.
 
 #### Accessing KivaKit Microservices in Java
 
