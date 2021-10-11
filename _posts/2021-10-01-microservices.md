@@ -2,7 +2,7 @@
 
 ### KivaKit Microservices &nbsp; <img src="https://state-of-the-art.org/graphics/gears/gears-32.png" srcset="https://state-of-the-art.org/graphics/gears/gears-32-2x.png 2x" style="vertical-align:baseline"/>
 
-KivaKit is designed to make coding microservices faster and easier. In this blog post, we will examine the [*kivakit-microservice*](https://github.com/Telenav/kivakit-extensions/tree/develop/kivakit-microservice) module. As of this date, this module is only available for early access via SNAPSHOT builds and by [building KivaKit](https://github.com/Telenav/kivakit/blob/develop/documentation/overview/setup.md). The final release of KivaKit 1.1 will include this module and should happen by the end of October, 2021 or sooner.
+KivaKit is designed to make coding microservices faster and easier. In this blog post, we will examine the [*kivakit-microservice*](https://github.com/Telenav/kivakit-extensions/tree/develop/kivakit-microservice) module. As of this date, this module is only available for early access via SNAPSHOT builds and by [building KivaKit](https://github.com/Telenav/kivakit/blob/develop/documentation/overview/setup.md). The final release of KivaKit 1.1 will include this module and should happen by the end of October, 2021.
 
 #### What does it do?
 
@@ -48,7 +48,7 @@ The *DivisionMicroservice* class below is a *Microservice* that performs arithme
         }
     }
 
-Here, the *main(String[] arguments)* method creates an instance of *DivisionMicroservice* and starts it running with a call to *run(String[])* (the same as with any KivaKit application). The *metadata()* method returns information about the service that is included in the REST OpenAPI specification (mounted on /open-api/swagger.json). The *restApplication()* factory method creates a REST application for the microservice, and the *webApplication()* factory method optionally creates an Apache Wicket web application for configuring the service and viewing its status. Any initialization of the microservice must take place in the *onInitialize()* method. This is the best place to [register components](2021-06-23-service-locator.md) used throughout the application. 
+Here, the *main(String[] arguments)* method creates an instance of *DivisionMicroservice* and starts it running with a call to *run(String[])* (the same as with any KivaKit application). The *metadata()* method returns information about the service that is included in the REST OpenAPI specification (mounted on */open-api/swagger.json*). The *restApplication()* factory method creates a REST application for the microservice, and the *webApplication()* factory method optionally creates an Apache Wicket web application for configuring the service and viewing its status. Any initialization of the microservice must take place in the *onInitialize()* method. This is the best place to [register components](2021-06-23-service-locator.md) used throughout the application. 
 
 When the *run(String[] arguments)* method is called, Jetty web server is started on the port specified by the *MicroserviceSettings* object loaded by the [*-deployment* switch](2021-09-07-deployment.md). The *-port* command line switch can be used to override this value. 
 
@@ -69,8 +69,8 @@ When the microservice starts, the following resources are available:
 
 A REST application is created by extending the *MicroserviceRestApplication* class:
 
-	public class DivideRestApplication extends MicroserviceRestApplication
-	{
+    public class DivideRestApplication extends MicroserviceRestApplication
+    {
         public DivideRestApplication(Microservice microservice)
         {
             super(microservice);
@@ -81,7 +81,7 @@ A REST application is created by extending the *MicroserviceRestApplication* cla
         {
             mount("divide", POST, DivideRequest.class);
         }
-	}
+    }
 
 Request handlers must be mounted on specific paths inside the *onInitialize()* method (or an error is reported). If the mount path (in this case "divide") doesn't begin with a slash ("/"), the path "/api/[major-version].[minor-version]/" is prepended automatically. So, "divide" becomes "/api/1.0/divide" in the code above, where the version *1.0* comes from the metadata returned by *DivideMicroservice*. The *same path* can be used to mount a single request handler for each HTTP method (GET, POST, DELETE). However, trying to mount two handlers for the same HTTP method on the same path will result in an error.
 
@@ -91,7 +91,7 @@ For anyone interested in the gory details, the exact flow of control that occurs
 
 #### Microservlets
 
-*Microservlets* handle *MicroservletRequest*s by producing *MicroservletResponse*s. They are mounted on paths in the same way that request handlers are mounted. Although *Microservlet* is a public API, so far the only use case is in dispatching requests to request handlers. The *MicroservletRestService* class uses anonymous *Microservlet*s to forward requests to *MicroservletRequestHandler*s. 
+*Microservlets* handle *MicroservletRequest*s by producing *MicroservletResponse*s. They are mounted on paths in the same way that request handlers are mounted. Although *Microservlet* is a public API, so far the only use case is in dispatching requests to request handlers. The *MicroservletRestService* class uses an anonymous *Microservlet* class to forward requests to *MicroservletRequestHandler*s. 
 You can see this in *MicroserviceRestApplication* in the method *mount(String path, HttpMethod method, Class&lt;MicroservletRequest&gt; requestType)*.
 
 #### Microservlet Request Handlers
@@ -112,7 +112,7 @@ This is crucial in terms of object-oriented design and encapsulation: *the reque
  
 By employing this principle we avoid getters and setters, and our abstraction does not "leak".
 
-For example, below we see a request handler, *DivideRequest*, that divides two numbers. The request contains a dividend and a divisor. Its *onRequest()* method produces the response, which is implemented by the nested class *DivideResponse*. The response has access to the dividend and the divisor in the outer request class. So, it can create the response quotient in its constructor:
+Below we see a request handler, *DivideRequest*, that divides two numbers. The request contains a dividend and a divisor. Its *onRequest()* method produces the response, which is implemented by the nested class *DivideResponse*. The response has access to the dividend and the divisor in the outer request class. So, it can create the response quotient in its constructor:
 
     public DivideResponse()
     {
