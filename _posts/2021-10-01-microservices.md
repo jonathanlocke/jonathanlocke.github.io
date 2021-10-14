@@ -10,7 +10,6 @@ The *kivakit-microservice* mini-framework makes it easy to implement REST-ful GE
 
 * Configuration and startup of Jetty web server
 * Handling GET, POST and DELETE requests
-* Handling of GRPC requests
 * Serialization of JSON objects with Json
 * Error handling with KivaKit [messaging](2021-07-07-broadcaster.md)
 * Generating an OpenAPI specification
@@ -123,7 +122,7 @@ Below we see a request handler, *DivisionRequest*, that divides two numbers. The
 
 The request and response can also perform self-validation, again following the key design principle above, by overriding the *Validatable.validator()* method, as seen below.
 
-> Note that an OpenAPI specification is generated using information from *@OpenApi** annotations
+> Note that an OpenAPI specification is generated using information from *@OpenApi* annotations
 
     @OpenApiIncludeType(description = "Request for divisive action")
     public class DivisionRequest extends BaseMicroservletRequest
@@ -265,7 +264,7 @@ The annotations available for OpenAPI are minimal, but effective for simple REST
 
 #### GRPC
 
-Google's remote procedure call protocol (GRPC) is transparently supported by the *kivakit-microservice* mini-framework thanks to the [Protostuff](https://github.com/protostuff/protostuff) project. To enable the GRPC protocol (on a separate port specified by the *-grpc-port* switch), two changes are required. The first is to create a trivial subclass of *MicroserviceGrpcService*. The second is to instantiate this class in *onNewGrpcService().
+Google's remote procedure call protocol (GRPC) is transparently supported by the *kivakit-microservice* mini-framework thanks to the [Protostuff](https://github.com/protostuff/protostuff) project. To enable the GRPC protocol (on a separate port specified by the *-grpc-port* switch), two changes are required. The first is to create a trivial subclass of *MicroserviceGrpcService*. The second is to instantiate this class in *onNewGrpcService()*. That's it. Done.
 
 
     public class DivisionGrpcService extends MicroserviceGrpcService
