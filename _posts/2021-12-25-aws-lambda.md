@@ -1,14 +1,14 @@
 2021.12.25
 
-### KivaKit and AWS Lambda &nbsp; <img src="https://www.state-of-the-art.org/graphics/lambda/lambda.svg" width="40"/>
+### KivaKit and AWS Lambda &nbsp; <img src="https://www.state-of-the-art.org/graphics/lambda/lambda.svg" width="128"/>
 
 KivaKit 1.2 adds seamless support for [AWS Lambda](https://aws.amazon.com/lambda/). Lambdas for [REST and GRPC](2021-10-01-microservices) 
 can be added to a KivaKit Microservice without alteration (which will make this a short article).
 
-#### Writing the Lambda
+#### Creating a Lambda
 
-We have already seen a KivaKit Lambda REST request handler in the [Microservices](2021-10-01-microservices.md) article.
-As a reminder the code from that article looks like this:
+We have already seen a KivaKit request handler for REST in the [Microservices](2021-10-01-microservices.md) article.
+We will simply reuse this code as our Lambda request handler. As a reminder the code from that article looks like this:
 
     @OpenApiIncludeType(description = "Request for divisive action")
     public class DivisionRequest extends BaseMicroservletRequest
@@ -84,26 +84,11 @@ As a reminder the code from that article looks like this:
 
 #### Adding a Lambda Service
 
-Just as with REST services, a Lambda service is added like this:
+In a similar fashion to adding a REST service, a Lambda service is added like this:
 
-    public class DivisionMicroservice extends Microservice<Void>
+    public class DivisionMicroservice extends Microservice
     {
-        public static void main(String[] arguments)
-        {
-            new DivisionMicroservice().run(arguments);
-        }
-    
-        /**
-         * @return Metadata describing this microservice
-         */
-        @Override
-        public MicroserviceMetadata metadata()
-        {
-            return new MicroserviceMetadata()
-                    .withName("division-microservice")
-                    .withDescription("Example microservice performing arithmetic division")
-                    .withVersion(Version.parse(this, "1.0"));
-        }
+        [...]
     
         @Override
         public MicroserviceLambdaService onNewLambdaService()
@@ -116,22 +101,17 @@ The *onNewLambdaService()* method returns an instance of *DivisionLambdaService*
 
     public class DivisionLambdaService extends MicroserviceLambdaService
     {
-        public DivisionLambdaService(final Microservice<?> microservice)
-        {
-            super(microservice);
-        }
+        [...]
     
         @Override
         public void onInitialize()
         {
-            // Associates the "division" lambda function (version 1.0) with the DivisionRequest
-            // microservlet request handler
             mount("division", "1.0", DivisionRequest.class);
         }
     }
 
-The *mount()* method here is similar to the one in *MicroserviceRestService*. It takes the name of the lambda and its 
-version and associates it with *DivisionRequest*, which again is unmodified from the version used for REST.
+When the service is initialized, a call to the *mount()* method in *onInitialize()* is used to associate 
+the name of our lambda and its version with the handler *DivisionRequest*. Nothing more is required.
 
 #### Code
 
