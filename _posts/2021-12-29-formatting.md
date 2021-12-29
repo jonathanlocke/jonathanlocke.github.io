@@ -24,27 +24,27 @@ value will be substituted for the second *$*. Both arguments will be converted t
 
 In addition to this basic subsitution syntax, arguments can be formatted in a variety of ways using the syntax *${format}*, where *format* is one of the following:
 
-| Format     | Description                                                                                         |
-|------------|-----------------------------------------------------------------------------------------------------|
-| $$         | evaluates to a literal '$'                                                                          |
-| ${class}   | converts a {@link Class} argument to a simple (non-qualified) class name                            |
-| ${hex}     | converts a long argument to a hexadecimal value                                                     |
-| ${binary}  | converts a long argument to a binary string                                                         |
-| ${integer} | converts an integer argument to a non-comma-separated numeric string                                |
-| ${long}    | converts a long argument to a non-comma-separated numeric string                                    |
-| ${float}   | converts a float argument to a string with one digit after the decimal                              |
-| ${double}  | converts a double argument to a string with one digit after the decimal                             |
-| ${debug}   | converts an argument to a string using toDebugString() if that interface is supported.              |
-| ${object}  | uses the {@link ObjectFormatter} to format the argument by reflecting on it                         |
-| ${flag}    | converts boolean arguments to 'enabled' or 'disabled'                                               |
-| ${name}    | converts the argument to the name returned by {@link Named#name()} if the argument is {@link Named} |
-| ${nowrap}  | signals that the message should not be wrapped                                                      |
+| Format     | Description                                                                                          |
+|------------|------------------------------------------------------------------------------------------------------|
+| $$         | evaluates to a literal '$'                                                                           |
+| ${class}   | converts a *Class* argument to a simple (non-qualified) class name                                   |
+| ${hex}     | converts a long argument to a hexadecimal value                                                      |
+| ${binary}  | converts a long argument to a binary string                                                          |
+| ${integer} | converts an integer argument to a non-comma-separated numeric string                                 |
+| ${long}    | converts a long argument to a non-comma-separated numeric string                                     |
+| ${float}   | converts a float argument to a string with one digit after the decimal                               |
+| ${double}  | converts a double argument to a string with one digit after the decimal                              |
+| ${debug}   | converts an argument to a string using *DebugString.toDebugString()* if that interface is supported. |
+| ${object}  | uses an *ObjectFormatter* to format the argument by reflecting on it                                 |
+| ${flag}    | converts boolean arguments to 'enabled' or 'disabled'                                                |
+| ${name}    | converts the argument to the name returned by *Named.name()* if the argument is {@link Named}        |
+| ${nowrap}  | signals that the message should not be wrapped                                                       |
 
 For example:
 
     format("The file named '${name}' was read in $", fileName, start.elapsedSince());
 
-The reason for the ${long} and ${integer} formats in the table above is that *int*, *long* and *Count* objects are formatted by default
+The reason for the *${long}* and *${integer}* formats in the table above is that *int*, *long* and *Count* objects are formatted by default
 with comma separators. This code:
 
     Count lines;
