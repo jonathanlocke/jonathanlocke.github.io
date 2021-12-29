@@ -40,6 +40,9 @@
 [InfoQ - Introducing the KivaKit Framework](https://www.infoq.com/articles/introducing-kivakit/)
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[KivaKit Core - Message Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
