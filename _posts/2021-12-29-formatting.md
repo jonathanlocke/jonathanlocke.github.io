@@ -1,6 +1,6 @@
 2021.12.25
 
-### KivaKit Kernel - Message Formatting and Template Expansions &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/nucleus/nucleus.svg" width="48"/>
+### Kernel - Message Formatting and Template Expansions &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/nucleus/nucleus.svg" width="48"/>
 
 The module [kivakit-kernel](https://github.com/Telenav/kivakit/tree/master/kivakit-kernel) supports a simple variable substitution syntax. This syntax
 can be used when formatting messages, or when substituting variables into templates.
@@ -124,7 +124,7 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
   async
   src="https://utteranc.es/client.js"
   repo="jonathanlocke/jonathanlocke.github.io"
-  issue-term="lambda"
+  issue-term="formatting"
   theme="github-dark"
   crossorigin="anonymous"
 ></script>
