@@ -37,7 +37,7 @@ In addition to this basic subsitution syntax, arguments can be formatted in a va
 | ${debug}   | converts an argument to a string using *DebugString.toDebugString()* if that interface is supported. |
 | ${object}  | uses an *ObjectFormatter* to format the argument by reflecting on it                                 |
 | ${flag}    | converts boolean arguments to 'enabled' or 'disabled'                                                |
-| ${name}    | converts the argument to the name returned by *Named.name()* if the argument is {@link Named}        |
+| ${name}    | converts the argument to the name returned by *Named.name()* if the argument is *Named*              |
 | ${nowrap}  | signals that the message should not be wrapped                                                       |
 
 For example:
@@ -48,7 +48,9 @@ The reason for the *${long}* and *${integer}* formats in the table above is that
 with comma separators. This code:
 
     Count lines;
+
         [...]
+
     format("Processed $ lines.", lines);
 
 will produce a string like:
@@ -58,7 +60,9 @@ will produce a string like:
 Using *${integer}* like this:
 
     Count lines;
+
         [...]
+
     format("Processed ${integer} lines.", lines);
 
 produces string this instead:
@@ -93,6 +97,9 @@ the template like this:
 
     Resource template;
     Resource properties;
+
+        [...]
+
     var expanded = PropertyMap.load(this, properties).expand(template.string());
 
 The properties file resource *properties* is read with *load()*, broadcasting any warning or
