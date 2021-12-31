@@ -4,7 +4,7 @@
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
 
-<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="300"/>
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Applications]({% post_url 2021-08-10-applications %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
@@ -46,7 +46,7 @@
 [Kernel - Logging]({% post_url 2021-08-17-logging %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Message Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
+[Kernel - Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Kernel - Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>

@@ -42,7 +42,7 @@ In addition to this basic subsitution syntax, arguments can be formatted in a va
 
 For example:
 
-    format("The file named '${name}' was read in $", fileName, start.elapsedSince());
+    format("The file named '${name}' was read in $", file, start.elapsedSince());
 
 The reason for the *${long}* and *${integer}* formats in the table above is that *int*, *long* and *Count* objects are formatted by default
 with comma separators. This code:
