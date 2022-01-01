@@ -1,6 +1,6 @@
 [KivaKit](https://www.kivakit.org) is a Java microservices framework composed of *mini-frameworks*:
 
-<img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="600" style="margin-top: 12px; margin-bottom: 12px"/>
+<img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
 
@@ -55,6 +55,9 @@
 [Kernel - Mixins]({% post_url 2021-06-25-mixins %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Kernel - Service Locator]({% post_url 2021-06-23-service-locator %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Kernel - Validation]({% post_url 2021-07-20-validation %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -62,9 +65,6 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Resources]({% post_url 2021-08-24-resources %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Service Locator]({% post_url 2021-06-23-service-locator %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [XML Streaming]({% post_url 2021-11-12-xml-streaming %})
