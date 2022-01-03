@@ -1,6 +1,6 @@
 2021.12.25
 
-### KivaKit and AWS Lambda &nbsp; <img src="https://www.state-of-the-art.org/graphics/lambda/lambda.svg" height="24"/>
+### KivaKit and AWS Lambda &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/lambda/lambda.svg" height="32"/>
 
 KivaKit 1.2 adds seamless support for [AWS Lambda](https://aws.amazon.com/lambda/). Lambdas for [REST and GRPC](2021-10-01-microservices) 
 can be added to a KivaKit Microservice without alteration (which will make this a short article).
