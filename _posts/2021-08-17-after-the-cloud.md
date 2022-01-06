@@ -65,7 +65,7 @@ The driver for this paradigm shift will be the same as the last major paradigm s
 
 > Why would you want your massive pile of sensitive, proprietary data under someone else's control on an Internet cloud like AWS, when you can put it on one or two devices that are under your full control? If your big data division can meet all its needs with a small number of machines, why would you even connect those machines to the internet?
 
-Of course, a decade later, we will probably have applications so demanding that a few odd applications (maybe computation biology) require that molecular computers be put into a "Molecular Cloud". 
+Of course, a decade later, we will probably have applications so demanding that a few odd applications (maybe computational biology) will require that molecular computers be put into a "Molecular Cloud". 
 
 The transitions that have occurred between paradigms in computation have more to do with ownership and control of computation and data than with technology itself:
 
