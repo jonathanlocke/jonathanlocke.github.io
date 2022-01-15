@@ -1,6 +1,6 @@
 2021.07.07
 
-### How messaging improves component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="22" style="vertical-align:baseline"/>
+### Kernel - Messaging - How messaging improves component semantics &nbsp; <img src="https://state-of-the-art.org/graphics/sonar/sonar.svg" width="22" style="vertical-align:baseline"/>
 
 Dr. Alan Kay's conception of object-oriented programming in the late 1960's came about, in part, as a result of his undergraduate work in molecular biology. A cell is a pretty good analogy for an object and DNA is a sort of template or class from which cells are created. But to Kay, what would have been most interesting were cell surface receptors, and the way that cells pass various kinds of messages to each other (and themselves) by secreting compounds that bind to these receptors. He posted this revealing email in 1998:
 
@@ -14,19 +14,19 @@ Which brings us to the *Broadcaster / Listener* design pattern. A language like 
 
 A *Broadcaster* is a *Transmitter* that transmits [*Messages*](https://state-of-the-art.org/uml/diagram-message-type.svg) to an audience of one or more *Listeners*. Here are a few of KivaKit's most commonly used messages:
 
-| Message | Purpose |
-|---|---|
-| CriticalAlert | An operation failed and needs *immediate attention* from a human operator | 
-| Alert | An operation failed and needs to be looked at by an operator soon |
-| FatalProblem | An unrecoverable problem has caused an operation to fail and needs to be addressed |
-| Problem | Something has gone wrong and needs to be addressed, but it's not fatal to the current operation |
-| Glitch | A minor problem has occurred. Unlike a Warning, a Glitch indicates validation failure or minor data loss has occurred. Unlike a Problem, a Glitch indicates that the operation will definitely recover and continue. |
-| Warning | A minor issue occurred which should be corrected, but does not necessarily require attention |
-| Quibble | A trivial issue that does not require correction |
-| Announcement | Announcement of an important phase of an operation |
-| Narration | A step in some operation has started or completed |
-| Information | Commonly useful information that doesn't represent any problem |
-| Trace | Diagnostic information for use when debugging |
+| Message       | Purpose                                                                                                                                                                                                              |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| CriticalAlert | An operation failed and needs *immediate attention* from a human operator                                                                                                                                            | 
+| Alert         | An operation failed and needs to be looked at by an operator soon                                                                                                                                                    |
+| FatalProblem  | An unrecoverable problem has caused an operation to fail and needs to be addressed                                                                                                                                   |
+| Problem       | Something has gone wrong and needs to be addressed, but it's not fatal to the current operation                                                                                                                      |
+| Glitch        | A minor problem has occurred. Unlike a Warning, a Glitch indicates validation failure or minor data loss has occurred. Unlike a Problem, a Glitch indicates that the operation will definitely recover and continue. |
+| Warning       | A minor issue occurred which should be corrected, but does not necessarily require attention                                                                                                                         |
+| Quibble       | A trivial issue that does not require correction                                                                                                                                                                     |
+| Announcement  | Announcement of an important phase of an operation                                                                                                                                                                   |
+| Narration     | A step in some operation has started or completed                                                                                                                                                                    |
+| Information   | Commonly useful information that doesn't represent any problem                                                                                                                                                       |
+| Trace         | Diagnostic information for use when debugging                                                                                                                                                                        |
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener.svg" width="120" style="vertical-align:middle"/>
 
