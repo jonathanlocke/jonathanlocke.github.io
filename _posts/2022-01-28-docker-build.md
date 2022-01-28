@@ -2,7 +2,7 @@
 
 ### KivaKit - Docker Build Environment &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/gears/gears.svg" width="48"/>
 
-KivaKit 1.2.3 provides a Docker build environment that makes it easy to build KivaKit without 
+[KivaKit](https://www.kivakit.org) 1.2.3 provides a Docker build environment that makes it easy to build KivaKit without 
 installing software or configuring the build environment.
 
 #### Launching the Build Environment  &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/rocket/rocket.svg" width="32"/>
@@ -41,13 +41,13 @@ directory with *cd*:
 
     kivakit-build.sh
 
-Here are some of the more important scripts:
+We can see all available KivaKit scripts by typing kivakit- followed by **TAB**. Here are some of the more important scripts:
 
 | KivaKit Script                      | Purpose                                   | 
 |-------------------------------------|-------------------------------------------|
-| kivakit-\[tab]                      | See available KivaKit shell scripts       |
 | kivakit-version.sh                  | Show KivaKit version                      |
 | kivakit-build.sh                    | Build KivaKit                             |
+| kivakit-build-documentation.sh      | Build KivaKit documentation               |
 | kivakit-git-pull.sh                 | Pull changes from GitHub **               |
 | kivakit-git-checkout.sh \[branch]   | Check out the given branch **             |
 | kivakit-docker-build-workspace.sh   | Switch between host and Docker workspaces |
