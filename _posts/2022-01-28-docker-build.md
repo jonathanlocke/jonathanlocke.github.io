@@ -63,14 +63,14 @@ provided inside the container. This baseline build should work nearly all of the
 because the build environment is standardized, and the build should have worked at 
 the time the Docker image was created. Having a common, standardized
 build environment provides us with an easy way to determine if there's a problem 
-in the source code versus a build environmental problem. If the Docker workspace builds,
-we can be fairly sure that there is nothing wrong with code, even if the host 
-workspace build fails.
+in the source code versus a build environment problem. If the Docker workspace builds
+successfully, we can be fairly sure that there is nothing wrong with code, even if 
+the host workspace build fails.
 
 The *kivakit-docker-build-workspace.sh* script allows us to switch between the 
 Docker and host workspaces. Initially, the workspace inside the Docker container
 is set up to build. If we want to switch to the host workspace, we can issue 
-this command:
+this command (use **TAB** to complete the long script name):
 
 
     kivakit-docker-build-workspace.sh host
@@ -79,7 +79,7 @@ Switching to the host workspace will allow us to do an initial build of the code
 cloned into that workspace above. Once the host workspace has been built, KivaKit projects 
 can be imported into an IDE like IntelliJ.
 
-But how does workspace switching work?
+*But how does workspace switching work?*
 
 Notice that the *docker run* command has three Docker *--volume* mounts. 
 The *--volume* switch makes a host folder visible inside a Docker container:
