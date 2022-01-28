@@ -119,7 +119,7 @@ looks like this:
 | /root/.kivakit    | /host/.kivakit  |
 
 and, when we execute *kivakit-build.sh* in Docker, the host's workspace
-will be built.
+will be built, *using our standardized Docker build environment*.
 
 <br/>
 
