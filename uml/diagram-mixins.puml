@@ -1,0 +1,39 @@
+@startuml
+
+    !include lexakai.theme
+
+    title "Mixins"
+
+    abstract BaseRepeater
+
+    interface Repeater
+
+    BaseRepeater -u-|> Repeater
+
+    interface Mixin
+    {
+        default <State> State mixin(Class<? extends Mixin>, Factory<State>)
+    }
+
+    Mixin --> "retrieves mixin" Mixins
+
+    class Mixins
+    {
+        static IdentityHashMap<Mixin, State> mixinState
+        + static <State> State mixin(Object, Class<? extends Mixin>, Factory<State>)
+    }
+
+    Mixins --> "creates mixin" BaseRepeater
+
+    interface RepeaterMixin
+    {
+        default Repeater repeater()
+    }
+
+    RepeaterMixin -u-> "delegates to mixin" BaseRepeater
+
+    RepeaterMixin -u-|> Repeater
+
+    RepeaterMixin -u-|> Mixin
+
+@enduml
