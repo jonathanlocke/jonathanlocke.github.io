@@ -24,6 +24,8 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [The KivaKit Microservices Framework in Depth](https://medium.com/me/stats/post/3cd1d064107c)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
+<br/>
+
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [KivaKit](https://www.kivakit.org) in Depth
 
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
