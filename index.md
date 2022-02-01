@@ -2,7 +2,29 @@
 
 <img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
 
-## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Articles on [KivaKit](https://www.kivakit.org)
+## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Introductory Articles on [KivaKit](https://www.kivakit.org)
+
+<img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Build a KivaKit Microservice in 5 minutes](https://medium.com/me/stats/post/b5067cd26b60)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Why Messaging is a Better Way to Report Status in Java](https://medium.com/me/stats/post/2badb679345e)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/> 
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[InfoQ - Introducing the KivaKit Framework](https://www.infoq.com/articles/introducing-kivakit/)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Baeldung - Introducing KivaKit](https://www.baeldung.com/kivakit)
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[KivaKit’s New Docker Build Environment](https://medium.com/me/stats/post/d2137e3e12a0)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[The KivaKit Microservices Framework in Depth](https://medium.com/me/stats/post/3cd1d064107c)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+
+## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; [KivaKit](https://www.kivakit.org) in Depth
 
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
 
@@ -10,64 +32,58 @@
 [Applications]({% post_url 2021-08-10-applications %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[AWS Lambda]({% post_url 2021-12-25-aws-lambda %})
+[Applications - Command Line Parsing]({% post_url 2021-08-19-command-line %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Baeldung - Introducing KivaKit](https://www.baeldung.com/kivakit)
+[Applications - Components and Settings]({% post_url 2021-08-02-components-and-settings %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Clustering]({% post_url 2021-12-22-clustering %})
+[Applications - Deployments]({% post_url 2021-09-07-deployment %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Command Line Parsing]({% post_url 2021-08-19-command-line %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Bit Diagrams]({% post_url 2021-07-27-bit-diagram %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Components and Settings]({% post_url 2021-08-02-components-and-settings %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Concurrent State]({% post_url 2021-09-14-state-watcher %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Deployments]({% post_url 2021-09-07-deployment %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Converters]({% post_url 2021-07-13-converters %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[InfoQ - Introducing the KivaKit Framework](https://www.infoq.com/articles/introducing-kivakit/)
+[Core - Lazy Initialization]({% post_url 2021-07-03-lazy %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Bit Diagrams]({% post_url 2021-07-27-bit-diagram %})
+[Core - Logging]({% post_url 2021-08-17-logging %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Concurrent State]({% post_url 2021-09-14-state-watcher %})
+[Core - Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Converters]({% post_url 2021-07-13-converters %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Lazy Initialization]({% post_url 2021-07-03-lazy %})
+[Core - Mixins]({% post_url 2021-06-25-mixins %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Logging]({% post_url 2021-08-17-logging %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Resources]({% post_url 2021-08-24-resources %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
+[Core - Service Locator]({% post_url 2021-06-23-service-locator %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Messaging]({% post_url 2021-07-07-broadcaster %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Core - Validation]({% post_url 2021-07-20-validation %})  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Mixins]({% post_url 2021-06-25-mixins %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Service Locator]({% post_url 2021-06-23-service-locator %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Kernel - Validation]({% post_url 2021-07-20-validation %})
+[Extensions - XML Streaming]({% post_url 2021-11-12-xml-streaming %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Microservices]({% post_url 2021-10-01-microservices %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Resources]({% post_url 2021-08-24-resources %}) <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
+[Microservices - AWS Lambda]({% post_url 2021-12-25-aws-lambda %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[XML Streaming]({% post_url 2021-11-12-xml-streaming %})
+[Microservices - Clustering]({% post_url 2021-12-22-clustering %})
 
 <br/> 
 
