@@ -2,6 +2,8 @@
 
 <img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
 
+<br/>
+
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Introductory Articles on [KivaKit](https://www.kivakit.org)
 
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
