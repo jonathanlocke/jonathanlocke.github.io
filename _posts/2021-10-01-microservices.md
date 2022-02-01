@@ -254,12 +254,12 @@ The "/docs" root path on the server provides a generated OpenAPI specification v
 
 The annotations available for OpenAPI are minimal, but effective for simple REST projects:
 
-| Annotation | Purpose |
-|------------|---------|
+| Annotation | Purpose                                                                            |
+|------------|------------------------------------------------------------------------------------|
 | @OpenApiIncludeMember | Includes the annotated method or field in the specification |
 | @OpenApiExcludeMember | Excludes the annotation method or field from the specification |
-| @OpenApiIncludeMemberFromSuperType | Includes a member from the superclass or superinterface in the specification |
-| @OpenApiIncludeType | Includes the annotated type in the specification schemas |
+| @OpenApiIncludeMemberFromSuperType | Includes a member from the superclass or superinterface in the specification       |
+| @OpenApiIncludeType | Includes the annotated type in the specification schemas                           |
 | @OpenApiRequestHandler | Provides information about a request handling method (*onGet()*, *onPost()* or *onDelete()*) |
 
 #### GRPC
