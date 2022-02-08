@@ -1,7 +1,7 @@
 
 2022.02.07
 
-### Why Status Messaging is a Better Way to Report Status in Java &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/gears/gears.svg" width="48"/>
+### Why Messaging is a Better Way to Report Status &nbsp;&nbsp; <img src="https://www.state-of-the-art.org/graphics/gears/gears.svg" width="48"/>
 
 In a typical Java program, the status of a method call is typically reported in one of three ways:
 
@@ -59,7 +59,7 @@ catch (SendException e)
 }
 ```
 
-![](graphics/broadcaster-listener-96.png)
+![](https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-96.png)
 
 An alternative to these common idioms is to report status "out-of-band" by broadcasting messages to interested listeners. This has a few immediate advantages:
 
@@ -68,7 +68,7 @@ An alternative to these common idioms is to report status "out-of-band" by broad
 - It simplifies and clarifies the responsibilities of components by decoupling status reporting from status handling
 - It allows multiple listeners and chains of listeners to handle the same status information in different ways
 
-![](graphics/link-96.png)
+![](https://state-of-the-art.org/graphics/link/link-96.png)
 
 This status reporting model is implemented by the Java Open Source microservices 
 framework, KivaKit. In KivaKit, our *EmailSender* class would implement *Repeater* 
@@ -141,7 +141,7 @@ reporting why the connection failed.
 
 The flow of control for KivaKit messaging is shown in this UML sequence diagram:
 
-![](uml/out-of-band.png)
+![](https://state-of-the-art.org/uml/out-of-band.png)
 
 <small>KivaKit's "Out-of-Band" Messaging</small>
 
@@ -150,7 +150,7 @@ execution of each of these methods, status messages may be transmitted down
 the listener chain (as shown by the orange lines) when a method like *problem()*
 is called.
 
-![](graphics/ruler-96.png)
+![](https://state-of-the-art.org/graphics/ruler/ruler-96.png)
 
 The rules of listener chains are:
 
@@ -170,7 +170,7 @@ return false;
 return true;
 ```
 
-![](graphics/compress-96.png)
+![](https://state-of-the-art.org/graphics/compress/compress-96.png)
 
 Because the semantics of KivaKit status reporting are so regular, it's possible to condense this idiom even further:
 
@@ -224,7 +224,7 @@ if (isTrueOr(isTimeToSend(), "Not time to send yet") &&
 return false;
 ```
 
-![](graphics/ear-96.png)
+![](https://state-of-the-art.org/graphics/ear/ear-96.png)
 
 #### A Few KivaKit Listeners and Repeaters
 
