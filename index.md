@@ -12,7 +12,7 @@
 [Build a KivaKit Microservice in 5 minutes](https://medium.com/me/stats/post/b5067cd26b60)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Why Messaging is a Better Way to Report Status in Java](https://medium.com/me/stats/post/2badb679345e)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/> 
+[Why Messaging is a Better Way to Report Status]({% post_url 2022-02-07-status-messaging %})  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/> 
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [InfoQ - Introducing the KivaKit Framework](https://www.infoq.com/articles/introducing-kivakit/)  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="16" style="vertical-align:top"/>
