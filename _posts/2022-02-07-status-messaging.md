@@ -59,7 +59,7 @@ catch (SendException e)
 }
 ```
 
-![](https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-96.png)
+<img src="https://state-of-the-art.org/graphics/broadcaster-listener/broadcaster-listener-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 An alternative to these common idioms is to report status "out-of-band" by broadcasting messages to interested listeners. This has a few immediate advantages:
 
@@ -68,10 +68,10 @@ An alternative to these common idioms is to report status "out-of-band" by broad
 - It simplifies and clarifies the responsibilities of components by decoupling status reporting from status handling
 - It allows multiple listeners and chains of listeners to handle the same status information in different ways
 
-![](https://state-of-the-art.org/graphics/link/link-96.png)
+<img src="https://state-of-the-art.org/graphics/link/link-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 This status reporting model is implemented by the Java Open Source microservices 
-framework, KivaKit. In KivaKit, our *EmailSender* class would implement *Repeater* 
+framework, [KivaKit](https://www.kivakit.org). In KivaKit, our *EmailSender* class would implement *Repeater* 
 (which is a kind of *Broadcaster*) by extending *BaseRepeater* or (more likely) 
 *BaseComponent*.
 
@@ -141,16 +141,16 @@ reporting why the connection failed.
 
 The flow of control for KivaKit messaging is shown in this UML sequence diagram:
 
-![](https://state-of-the-art.org/uml/out-of-band.png)
+<img src="https://state-of-the-art.org/uml/out-of-band.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
-<small>KivaKit's "Out-of-Band" Messaging</small>
+<div style="text-align: center; font-size: 12px">KivaKit's "Out-of-Band" Messaging</div>
 
 *Client* calls *EmailSender.send()*, which calls *Connector.connect()*. During the 
 execution of each of these methods, status messages may be transmitted down 
 the listener chain (as shown by the orange lines) when a method like *problem()*
 is called.
 
-![](https://state-of-the-art.org/graphics/ruler/ruler-96.png)
+<img src="https://state-of-the-art.org/graphics/ruler/ruler-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 The rules of listener chains are:
 
@@ -170,7 +170,7 @@ return false;
 return true;
 ```
 
-![](https://state-of-the-art.org/graphics/compress/compress-96.png)
+<img src="https://state-of-the-art.org/graphics/compress/compress-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 Because the semantics of KivaKit status reporting are so regular, it's possible to condense this idiom even further:
 
@@ -224,33 +224,36 @@ if (isTrueOr(isTimeToSend(), "Not time to send yet") &&
 return false;
 ```
 
-![](https://state-of-the-art.org/graphics/ear/ear-96.png)
+<img src="https://state-of-the-art.org/graphics/mirror/mirror-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 #### A Few KivaKit Listeners and Repeaters
 
-KivaKit has hundreds of Listeners and Repeaters. This includes all KivaKit 
-Components. To give an idea of the range of Listener implementations:
+KivaKit has hundreds of *Listeners* and *Repeaters*. This includes all KivaKit 
+*Components*. To give an idea of the range of *Listener* implementations:
 
-| Listener             | Purpose                                         |
-|----------------------|-------------------------------------------------|
-| Logger               | Log status messages                             |
-| MutableCount         | Count status messages                           |
-| MessageAlarm         | Trigger an alarm if there are too many problems |
-| StatusPanel          | Show status messages in a Swing panel           |
-| MessageList          | Capture messages in a list                      |
-| ValidationIssues     | Capture problems during validation              |
-| Converter            | Broadcast conversion errors                     |
-| ThrowingListener     | Throws an exception when a problem is received  |
-| ConsoleWriter        | Writes status messages directly to the console  |
-| MicroservletRequest  | Captures microservlet request handling errors   |
-| Application          | Terminal listener that logs and counts messages |
+| Listener              | Purpose                                         |
+|-----------------------|-------------------------------------------------|
+| *Logger*              | Log status messages                             |
+| *MutableCount*        | Count status messages                           |
+| *MessageAlarm*        | Trigger an alarm if there are too many problems |
+| *StatusPanel*         | Show status messages in a Swing panel           |
+| *MessageList*         | Capture messages in a list                      |
+| *ValidationIssues*    | Capture problems during validation              |
+| *Converter*           | Broadcast conversion errors                     |
+| *ThrowingListener*    | Throws an exception when a problem is received  |
+| *ConsoleWriter*       | Writes status messages directly to the console  |
+| *MicroservletRequest* | Captures microservlet request handling errors   |
+| *Application*         | Terminal listener that logs and counts messages |
+
+<img src="https://state-of-the-art.org/graphics/footprints/footprints-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
 
 ### Conclusion
 
 In this short article we took a look at the advantages of broadcaster/listener 
 messaging in status reporting over more typical idioms. We then took a look at 
 how KivaKit implements this system. More information on KivaKit messaging is 
-available on my blog as well as on GitHub.
+available [on my blog](https://state-of-the-art.org/2021/07/07/broadcaster.html) 
+as well as on [GitHub](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/messaging.md).
 
 <br/>
 <img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
