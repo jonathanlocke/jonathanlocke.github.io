@@ -145,6 +145,8 @@ The flow of control for KivaKit messaging is shown in this UML sequence diagram:
 
 <div style="text-align: center; font-size: 12px">KivaKit's "Out-of-Band" Messaging</div>
 
+<br/>
+
 *Client* calls *EmailSender.send()*, which calls *Connector.connect()*. During the 
 execution of each of these methods, status messages may be transmitted down 
 the listener chain (as shown by the orange lines) when a method like *problem()*
@@ -164,8 +166,8 @@ Use of EmailSender in Client now looks like this:
 var sender = listenTo(new EmailSender());
 if (!sender.send(email))
 {
-problem("Unable to send report: $", email);
-return false;
+    problem("Unable to send report: $", email);
+    return false;
 }
 return true;
 ```
@@ -183,7 +185,7 @@ via the *Component* interface. If the boolean argument to *isTrueOr()* is not
 true, it broadcasts the message specified by the remaining arguments as a 
 *Problem*. It then returns the boolean value. This eliminates a lot of 
 boilerplate if/else nesting when checking multiple conditions. Code like 
-this (22 lines):
+this (23 lines):
 
 ```
 if (isTimeToSend())
@@ -224,7 +226,7 @@ if (isTrueOr(isTimeToSend(), "Not time to send yet") &&
 return false;
 ```
 
-<img src="https://state-of-the-art.org/graphics/mirror/mirror-96.png" style="display: block; margin-left: auto; margin-right: auto;"></img>
+<img src="https://state-of-the-art.org/graphics/mirror/mirror-96.png" style="display: block; margin-left: auto; margin-right: auto;"/>
 
 #### A Few KivaKit Listeners and Repeaters
 
