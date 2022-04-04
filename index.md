@@ -45,13 +45,16 @@
 [Applications - Command Line Parsing]({% post_url 2021-08-19-command-line %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Applications - Components and Settings]({% post_url 2021-08-02-components-and-settings %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Applications - Deployments]({% post_url 2021-09-07-deployment %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Building - Docker Build Environment]({% post_url 2022-01-28-docker-build %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Component - Components and Settings]({% post_url 2021-08-02-components-and-settings %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Component - Components and Interface Composition](https://towardsdev.com/components-and-interface-composition-7d946a10b353) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Conversion - Converters]({% post_url 2021-07-13-converters %})  &nbsp;<img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
@@ -67,6 +70,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Lazy Initialization]({% post_url 2021-07-03-lazy %})
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Core - Extra Lazy Initialization](https://towardsdev.com/extra-lazy-initialization-81d10b4d8581) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Logging]({% post_url 2021-08-17-logging %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
