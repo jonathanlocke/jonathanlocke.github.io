@@ -143,4 +143,4 @@
 <br/>
 <br/>
 
-<img src="https://state-of-the-art.org/graphics/star/star-16.png" srcset="https://state-of-the-art.org/graphics/star/star-16-2x.png 2x" style="vertical-align:middle"/> <sub>Key KivaKit article</sub>
+&nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> <sub>Key KivaKit article</sub>
