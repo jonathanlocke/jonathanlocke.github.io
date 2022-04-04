@@ -54,19 +54,25 @@
 [Building - Docker Build Environment]({% post_url 2022-01-28-docker-build %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Conversion - Converters]({% post_url 2021-07-13-converters %})  &nbsp;<img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Conversion - KivaKit Type Converters](https://towardsdev.com/kivakit-type-conversion-a3ab264c2ac0) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Bit Diagrams]({% post_url 2021-07-27-bit-diagram %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Concurrent State]({% post_url 2021-09-14-state-watcher %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Core - Converters]({% post_url 2021-07-13-converters %})  &nbsp;<img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
-
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Lazy Initialization]({% post_url 2021-07-03-lazy %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Logging]({% post_url 2021-08-17-logging %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Core - KivaKit Logging Isn't Special](https://medium.com/@jonathanlocke/kivakit-logging-isnt-special-703c5f09a708) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Formatting and Template Expansions]({% post_url 2021-12-29-formatting %})
@@ -82,6 +88,9 @@
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Monads are Not Rocket Surgery - Part 2](https://medium.com/@jonathanlocke/monads-are-not-rocket-surgery-part-two-result-a8c24e49b290) &nbsp;<img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[Core - Mixins - Multiple Inheritance in Java](https://towardsdev.com/mixins-multiple-inheritance-in-java-d26f2a2c9b4) &nbsp;<img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Resources]({% post_url 2021-08-24-resources %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
