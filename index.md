@@ -9,10 +9,10 @@
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Build a KivaKit Microservice in 5 minutes](https://medium.com/me/stats/post/b5067cd26b60)  &nbsp;   <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Build a KivaKit Microservice in 5 minutes](https://medium.com/me/stats/post/b5067cd26b60)  &nbsp;   <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[KivaKit Repository Structure](https://medium.com/@jonathanlocke/open-source-repository-structure-c1050d5840c6)  &nbsp;  <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[KivaKit Repository Structure](https://medium.com/@jonathanlocke/open-source-repository-structure-c1050d5840c6)  &nbsp;  <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Why Messaging is a Better Way to Report Status]({% post_url 2022-02-07-status-messaging %})   &nbsp;  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> 
@@ -24,13 +24,13 @@
 [Baeldung - Introducing KivaKit](https://www.baeldung.com/kivakit)  &nbsp; <img src="https://state-of-the-art.org/graphics/baeldung/logo.svg" height="24" style="vertical-align:middle"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[KivaKit’s New Docker Build Environment](https://medium.com/me/stats/post/d2137e3e12a0)    &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>   &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[KivaKit’s New Docker Build Environment](https://medium.com/me/stats/post/d2137e3e12a0)    &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>   &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[The KivaKit Microservices Framework in Depth](https://medium.com/me/stats/post/3cd1d064107c)   &nbsp;  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[The KivaKit Microservices Framework in Depth](https://medium.com/me/stats/post/3cd1d064107c)   &nbsp;  <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/> &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Visualizing KivaKit](https://medium.com/@jonathanlocke/visualizing-kivakit-b60e7bb31a9f)  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Visualizing KivaKit](https://medium.com/@jonathanlocke/visualizing-kivakit-b60e7bb31a9f)  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 <br/>
 
@@ -78,10 +78,10 @@
 [Core - Mixins]({% post_url 2021-06-25-mixins %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Core - Monads are Not Rocket Surgery - Part 1](https://towardsdev.com/monads-are-not-rocket-surgery-part-one-maybe-73c819f9ad3b) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Core - Monads are Not Rocket Surgery - Part 1](https://towardsdev.com/monads-are-not-rocket-surgery-part-one-maybe-73c819f9ad3b) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Core - Monads are Not Rocket Surgery - Part 2](https://medium.com/@jonathanlocke/monads-are-not-rocket-surgery-part-two-result-a8c24e49b290) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Core - Monads are Not Rocket Surgery - Part 2](https://medium.com/@jonathanlocke/monads-are-not-rocket-surgery-part-two-result-a8c24e49b290) &nbsp;<img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Core - Resources]({% post_url 2021-08-24-resources %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
@@ -93,7 +93,7 @@
 [Core - Validation]({% post_url 2021-07-20-validation %}) &nbsp; <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Core - Values - Why an Integer is Not a Count](https://towardsdev.com/an-integer-is-not-a-count-45a3623431a )  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Core - Values - Why an Integer is Not a Count](https://towardsdev.com/an-integer-is-not-a-count-45a3623431a )  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Extensions - XML Streaming]({% post_url 2021-11-12-xml-streaming %})
@@ -108,7 +108,7 @@
 [Microservices - Clustering]({% post_url 2021-12-22-clustering %})
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-[Network - Core - Why a Host is Not a String](https://towardsdev.com/why-a-host-is-not-a-string-and-a-port-is-not-an-integer-595c182d817c) &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="24" style="vertical-align:bottom"/>
+[Network - Core - Why a Host is Not a String](https://towardsdev.com/why-a-host-is-not-a-string-and-a-port-is-not-an-integer-595c182d817c) &nbsp;<img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 <br/> 
 
