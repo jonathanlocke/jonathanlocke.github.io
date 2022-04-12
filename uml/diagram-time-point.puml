@@ -1,0 +1,324 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "Time"
+    
+    interface Epochal
+    {
+        --(time)--
+        +long epochMilliseconds()
+    }
+    
+    interface Milliseconds
+    interface TimeUnits
+    interface TimeZoned
+    TimeZoned <|-- PointInTime
+    TimeUnits <|-- PointInTime
+    Epochal <|-- PointInTime
+    interface PointInTime<Time, Duration>
+    {
+        --arithmetic--
+        +Time decremented()
+        +Duration difference(PointInTime<?,?> that)
+        +Time incremented()
+        +Duration minus(PointInTime<?,?> that)
+        +Time minus(LengthOfTime<?> that)
+        +Time plus(LengthOfTime<?> that)
+        +Time roundDown(LengthOfTime<?> unit)
+        +Time roundUp(LengthOfTime<?> unit)
+        --conversion--
+        +Instant asInstant()
+        +long asMilliseconds()
+        --temporal--
+        +Duration age()
+        +Duration durationBefore(PointInTime<?,?> future)
+        +long epochMilliseconds()
+        +Duration elapsedSince()
+        +boolean isAfter(PointInTime<?,?> that)
+        +boolean isAtOrAfter(PointInTime<?,?> that)
+        +boolean isAtOrBefore(Time that)
+        +boolean isBefore(Time that)
+        +boolean isOlderThan(Duration age)
+        +boolean isOlderThanOrEqualTo(Duration)
+        +boolean isYoungerThan(Duration age)
+        +boolean isYoungerThanOrEqualTo(Duration age)
+        +Duration until(Time that)
+        +LengthOfTime<?> until(LengthOfTime<?> elapsed)
+        +LengthOfTime<?> untilNow()
+    }
+    
+    interface Milliseconds
+    {
+        +long milliseconds()
+    }
+    Milliseconds <|-d- TimeUnits
+    interface TimeUnits<TimeOrDuration>
+    {
+        --(conversion)--
+        +long units(Milliseconds value)
+        +long asUnits()
+        --(time)--
+        +long millisecondsPerUnit()
+        +TimeOrDuration next()
+    }
+    
+    interface Milliseconds
+    Milliseconds <|-d- TimeZoned
+    interface TimeZoned<SubClass>
+    {
+        --(conversion)--
+        +SubClass asUtc()
+        +SubClass asUtc(ZoneId)
+        +boolean isUtc()
+        --(identity)--
+        +ZoneId utc()
+        --(time zone)--
+        +ZonedSubClass asZonedTime(ZoneId)
+        +boolean hasTimeZone()
+        +ZoneId localTimeZone()
+        +ZonedSubClass asLocalTime()
+        +ZoneId timeZone()
+    }
+
+        abstract BaseTime
+
+        interface TimeZoned
+        interface PointInTime
+
+        PointInTime <|-d- BaseTime
+        abstract class BaseTime
+        {
+            --
+            +void clock(Clock)
+            +void systemClock(PointInTime<?,?>)
+            +void systemClock(Clock systemClock)
+            +Clock systemClock()
+            --(time)--
+            +SubClass endOfDay()
+            +SubClass startOfDay()
+        }
+
+        BaseTime <|-- DayOfWeek
+        class DayOfWeek
+        {
+            --(conversion)--
+            +long asIso()
+            +long asJava()
+            +boolean isIso()
+            +boolean isJava()
+            --(time)--
+            +Day asDay()
+            +long asDays()
+            +HourOfWeek asHourOfWeek()
+            +java.time.DayOfWeek asJavaDayOfWeek()
+            +HourOfWeek at(Hour)
+            +Standard standard()
+            --factory--
+            +DayOfWeek dayOfWeek(long dayOfWeek, Standard)
+            +DayOfWeek isoDayOfWeek(long dayOfWeek)
+            +DayOfWeek javaDayOfWeek(long dayOfWeek)
+            +DayOfWeek javaDayOfWeek(java.time.DayOfWeek)
+        }
+
+        BaseTime <|-l- HourOfWeek
+        class HourOfWeek
+        {
+            --(time)--
+            +Time asEpochTime()
+            +long asHours()
+            +DayOfWeek dayOfWeek()
+            +Hour hourOfDay()
+            --factory--
+            +HourOfWeek hourOfWeek(BaseCount<?> hourOfWeek)
+            +HourOfWeek hourOfWeek(long militaryHourOfWeek)
+            +HourOfWeek hourOfWeek(DayOfWeek, Hour hourOfDay)
+        }
+
+        BaseTime <|-d- Time
+        class Time
+        {
+            --factory--
+            +Time epochMilliseconds(long milliseconds)
+            +Time epochNanoseconds(long nanoseconds)
+            +Time epochSeconds(double seconds)
+            +Time now()
+            +Time parseKivaKitDate(Listener, String text)
+            +Time parseKivaKitDateTime(Listener, String text)
+            +Time parseKivaKitTime(Listener, String text)
+            +Time parseTime(Listener, DateTimeFormatter, String text)
+            +Time time(Year, Month)
+            +Time time(Year, Month, Day dayOfMonth, Hour, Minute, Second)
+            +Time time(Year, Month, Day dayOfMonth)
+            +Time time(Year, Month, Day dayOfMonth, Hour)
+        }
+
+        BaseTime <|-d- ZonedTime
+        class ZonedTime
+        {
+            --
+            +Quarter calendarQuarter()
+            +Quarter fiscalQuarter()
+            +Meridiem meridiem()
+            +int weekOfYear()
+            +Year year()
+            --(conversion)--
+            +String asDateString()
+            +String asDateString(ZoneId)
+            --(time)--
+            +String asDateTimeString(ZoneId)
+            +String asDateTimeString()
+            +Time asTime()
+            +String asTimeString(ZoneId)
+            +String asTimeString()
+            +Day dayOfMonth()
+            +Day dayOfUnixEpoch()
+            +DayOfWeek dayOfWeek()
+            +Day dayOfYear()
+            +Hour hourOfDay()
+            +HourOfWeek hourOfWeek()
+            +LocalDateTime javaLocalDateTime()
+            +java.time.LocalTime javaLocalTime()
+            +ZonedDateTime javaZonedDate()
+            +ZonedDateTime javaZonedDateTime(ZoneOffset)
+            +Minute minute()
+            +int minuteOfDay()
+            +Minute minuteOfHour()
+            +Month month()
+            +ZonedTime startOfHour()
+            +ZonedTime startOfNextHour()
+            +ZonedTime startOfTomorrow()
+            +ZonedTime withDay(Day)
+            +ZonedTime withDayOfMonth(Day)
+            +ZonedTime withDayOfWeek(DayOfWeek)
+            +ZonedTime withHourOfDay(Hour)
+            +ZonedTime withMinute(Minute)
+            +ZonedTime withMonth(Month)
+            +ZonedTime withUnixEpochDay(Day)
+            --factory--
+            +ZonedTime epochMilliseconds(ZoneId, long milliseconds)
+            +ZonedTime epochNanoseconds(ZoneId, long nanoseconds)
+            +ZonedTime epochSeconds(ZoneId, double seconds)
+            +ZonedTime localTime(Year, Month)
+            +ZonedTime localTime(Year, Month, Day dayOfMonth)
+            +ZonedTime localTime(Year, Month, Day dayOfMonth, Hour)
+            +ZoneId localTimeZone()
+            +ZonedTime now(ZoneId)
+            +ZonedTime nowLocal()
+            +ZonedTime parseIsoLocalTime(Listener, String text)
+            +ZonedTime parseIsoTime(Listener, ZoneId, String text)
+            +ZonedTime parseLocalDate(Listener, String text)
+            +ZonedTime parseLocalDateTime(Listener, String text)
+            +ZonedTime parseLocalTime(Listener, String text)
+            +ZonedTime parseLocalTime(Listener, DateTimeFormatter, String text)
+            +ZonedTime parseZonedDate(Listener, ZoneId, String text)
+            +ZonedTime parseZonedDateTime(Listener, ZoneId, String text)
+            +ZonedTime parseZonedTime(Listener, ZoneId, String text)
+            +ZonedTime parseZonedTime(Listener, ZoneId, DateTimeFormatter, String text)
+            +ZonedTime zonedTime(ZoneId, Year, Month, Day dayOfMonth)
+            +ZonedTime zonedTime(ZoneId, Year, Month, Day dayOfMonth, Hour, Minute, Second)
+            +ZonedTime zonedTime(ZoneId, LocalDateTime)
+            +ZonedTime zonedTime(ZoneId, Year, Month)
+            +ZonedTime zonedTime(ZoneId, Year, Month, Day dayOfMonth, Hour)
+        }
+
+        BaseTime <|-r- Day
+        Day o-u- Day.Type : "is of type"
+        class Day
+        {
+            --conversion--
+            +DayOfWeek asDayOfWeek()
+            +int asIndex()
+            --factory--
+            +Day dayOfMonth(long day)
+            +Day dayOfUnixEpoch(long day)
+            +Day dayOfWeek(long day, Standard)
+            +Day dayOfYear(long day)
+            +Day days(long day)
+            --properties--
+            +Type type()
+            --validation--
+            +boolean isValid()
+        }
+
+        BaseTime <|-- Hour
+        Hour o-r- Meridiem : "has"
+        Hour o-l- Hour.Type : "is of type"
+        class Hour
+        {
+            --conversion--
+            +HourOfWeek asHourOfWeek()
+            +long asMeridiemHour()
+            +int asMilitaryHour()
+            +boolean isMeridiem()
+            +boolean isMilitary()
+            --factory--
+            +Hour am(long meridiemHour)
+            +Hour hour(long militaryHour)
+            +Hour hourOfDay(long hour, Meridiem)
+            +Hour midnight()
+            +Hour militaryHour(long militaryHouor)
+            +Hour noon()
+            +Hour pm(long meridiemHour)
+            --properties--
+            +Meridiem meridiem()
+            +Type type()
+        }
+
+        enum Meridiem
+        {
+            AM
+            NO_MERIDIEM
+            PM
+        }
+
+        BaseTime <|-r- Minute
+        class Minute
+        {
+            --factory--
+            +Minute minutes(long minute)
+            --units--
+            +long minutes()
+        }
+
+        BaseTime <|-l- Second
+        class Second
+        {
+            --factory--
+            +Second seconds(long second)
+        }
+
+        enum Day.Type
+        {
+            DAY
+            DAY_OF_MONTH
+            DAY_OF_UNIX_EPOCH
+            DAY_OF_WEEK
+            DAY_OF_YEAR
+        }
+
+        enum Hour.Type
+        {
+            HOUR
+            HOUR_OF_MERIDIEM
+            HOUR_OF_WEEK
+            MILITARY_HOUR
+        }
+
+        BaseTime <|-l- Week
+        class Week
+        {
+            --
+            +Week weeks(long weeks)
+        }
+
+        BaseTime <|-r- Year
+        class Year
+        {
+            --
+            +Year year(int year)
+            --(time)--
+            +Time withMonth(Month)
+        }
+@enduml
+

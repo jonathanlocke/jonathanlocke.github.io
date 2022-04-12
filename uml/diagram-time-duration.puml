@@ -1,0 +1,106 @@
+@startuml
+
+    !include lexakai.theme
+    
+    title "Time Length"
+    
+    interface TimeUnited
+    TimeUnited <|-l- LengthOfTime
+    interface LengthOfTime<Duration>
+    {
+        --arithmetic--
+        +Duration decremented()
+        +Duration difference(Duration that)
+        +double dividedBy(LengthOfTime<?> that)
+        +Duration dividedBy(double value)
+        +Duration incremented()
+        +Duration longerBy(Percentage)
+        +Duration minus(LengthOfTime<?> that)
+        +Duration modulus(LengthOfTime<?> that)
+        +Duration nearest(LengthOfTime<?> unit)
+        +Duration oneUnit()
+        +Percentage percentageOf(LengthOfTime<?> that)
+        +Duration plus(LengthOfTime<?> that)
+        +Duration roundDown(LengthOfTime<?> unit)
+        +Duration roundUp(LengthOfTime<?> unit)
+        +Duration shorterBy(Percentage)
+        +Duration times(double value)
+        --conversion--
+        +double asDays()
+        +double asHours()
+        +String asHumanReadableString()
+        +java.time.Duration asJavaDuration()
+        +double asMilliseconds()
+        +double asMinutes()
+        +double asSeconds()
+        +double asWeeks()
+        +double asYears()
+        --operations--
+        +boolean await(Condition)
+        +void every(Callback<Timer> onTimer)
+        +void sleep()
+        +boolean wait(Object monitor)
+        +void waitThen(Callback<Timer>)
+        --units--
+        +String unitString(double value, String units)
+    }
+    
+    interface Milliseconds
+    Milliseconds <|-- TimeUnited
+    interface TimeUnited<TimeOrDuration>
+    {
+        --
+        +long modulo()
+        +long units(Milliseconds value)
+        --(conversion)--
+        +long asUnits()
+        --(time)--
+        +long millisecondsPerUnit()
+        +TimeOrDuration minusUnits(long units)
+        +TimeOrDuration next()
+        +TimeOrDuration plusUnits(long units)
+    }
+
+        abstract BaseDuration
+
+        interface LengthOfTime
+
+        LengthOfTime <|-- BaseDuration
+        abstract class BaseDuration<SubClass>
+        {
+            --(time)--
+            +Duration asDuration()
+        }
+
+        BaseDuration <|-- Duration
+        class Duration
+        {
+            --arithmetic--
+            +String fromStartOfWeekModuloWeekLength()
+            +Duration minus(Duration that, Restriction)
+            +Duration minus(Duration that)
+            +Duration nearestHour()
+            +Duration untilNextSecond()
+            --conversion--
+            +Frequency asFrequency()
+            --factory--
+            +Duration days(double days)
+            +Duration days(long days)
+            +Duration hours(long hours)
+            +Duration hours(double hours)
+            +Duration milliseconds(long milliseconds)
+            +Duration milliseconds(double milliseconds)
+            +Duration minutes(double minutes)
+            +Duration minutes(long minutes)
+            +Duration nanoseconds(long nanoseconds)
+            +Duration seconds(double seconds)
+            +Duration seconds(long seconds)
+            +Duration weeks(double scalar)
+            +Duration years(double scalar)
+            --parsing--
+            +Duration parseDuration(Listener, String value)
+            +Duration parseDuration(String value)
+        }
+    
+@enduml
+
