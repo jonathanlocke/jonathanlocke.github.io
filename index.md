@@ -1,4 +1,6 @@
-[KivaKit](https://www.kivakit.org) is a new vision for Java coding that makes development faster and easier.
+[KivaKit](https://www.kivakit.org) is a new vision for Java coding that makes development faster and easier.  
+
+<br/>
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Introductory Articles on [KivaKit](https://www.kivakit.org)
 
