@@ -64,7 +64,7 @@ A full implementation of the SL design pattern is available in [KivaKit](https:/
 
 <br/>
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
@@ -76,4 +76,3 @@ Questions? Comments? Tweet yours to @OpenKivaKit or post here:
   theme="github-dark"
   crossorigin="anonymous"
 ></script>
-

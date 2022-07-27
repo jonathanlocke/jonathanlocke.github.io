@@ -54,7 +54,7 @@ One way to get around this might be to create a converter interface like:
 
 The logic is separate now and more flexible, but we have a whole extra class that is going to have to access properties of *both* classes to perform calculations (possibly breaking encapsulation). And in some cases, maybe we *don't* want this flexibility, so the class is just a waste.
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 This is where mirror methods come in. What if we could define all of our energy conversion logic (it turns out to be quite easy) in one class, say *Alien*, but make it accessible in *PureEnergy*, without writing any additional code?  
 
@@ -96,7 +96,7 @@ The *@MirrorMethod* annotation here specifies that the *PureEnergy* class should
         }
     }
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 The same goes for the other mirrored method. The *toPureEnergy()* method:
 
@@ -126,7 +126,7 @@ Now, we have centralized, encapsulated logic in the *Alien* class that supports 
     energy.toAlien()
     PureEnergy.fromAlien(Alien)
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 *But how does the mirror method feature figure out how and where to implement these methods?*. 
 
@@ -140,7 +140,7 @@ All mirror methods follow these rules:
 6. If the mirrored method is an instance method with one or more parameters, the mirror method will be placed in the class of the first parameter. It will take the enclosing class of the mirrored method as the class of its first parameter, and it will pass *this* as the first parameter when calling the mirrored method.
 7. Any parameters beyond the first parameter will be parameters to the mirror method and will be passed through when calling the mirrored method.
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 So, the mirror method of this (repeated from above):
 
@@ -165,7 +165,7 @@ has to look like this (by rules 1, 2 and 4):
         }
     }
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 In the case of the other mirror method above, the mirror method of this:
 
@@ -190,7 +190,7 @@ will be this (by rules 1, 2 and 5):
         }
     }
 
-<img src="https://www.kivakit.org/images/horizontal-line-128.png" srcset="https://www.kivakit.org/images/horizontal-line-128-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-128-2x.png 2x" />
 
 Let's take a look at another example using the same process:
 
@@ -226,7 +226,7 @@ and both resolve to the same code.
 
 <br/>
 
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 

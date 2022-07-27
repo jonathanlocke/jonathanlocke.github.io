@@ -269,7 +269,7 @@ available [on my blog](https://state-of-the-art.org/2021/07/07/broadcaster.html)
 as well as on [GitHub](https://github.com/Telenav/kivakit/blob/master/kivakit-kernel/documentation/messaging.md).
 
 <br/>
-<img src="https://www.kivakit.org/images/horizontal-line-512.png" srcset="https://www.kivakit.org/images/horizontal-line-512-2x.png 2x" />
+<img src="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512.png" srcset="https://telenav.github.io/telenav-assets/images/separators/horizontal-line-512-2x.png 2x" />
 
 Questions? Comments? Tweet yours to @OpenKivaKit or post here:
 
