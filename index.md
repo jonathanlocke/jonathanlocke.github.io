@@ -1,12 +1,11 @@
-[KivaKit](https://www.kivakit.org) is a Java microservices framework composed of *mini-frameworks*:
-
-<img src="https://state-of-the-art.org/graphics/mini-frameworks/mini-frameworks.svg" width="700" style="margin-top: 12px; margin-bottom: 12px"/>
-
-<br/>
+[KivaKit](https://www.kivakit.org) is a new vision for Java coding that makes development faster and easier.
 
 ## <img src="https://state-of-the-art.org/graphics/kivakit/kivakit-32.png" srcset="https://state-of-the-art.org/graphics/kivakit/kivakit-32-2x.png 2x" style="vertical-align:middle"/> &nbsp; Introductory Articles on [KivaKit](https://www.kivakit.org)
 
 <img src="https://www.state-of-the-art.org/graphics/line/line.svg" width="500"/>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+[The KivaKit Manifesto](https://medium.com/@jonathanlocke/kivakit-a-new-vision-for-java-66e7f6b18ae6)   &nbsp;   <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 [Build a KivaKit Microservice in 5 minutes](https://medium.com/me/stats/post/b5067cd26b60)  &nbsp;   <img src="https://state-of-the-art.org/graphics/star/star.svg" width="14" style="vertical-align:top"/>  &nbsp; <img src="https://state-of-the-art.org/graphics/medium/medium-logo-white.png" height="12"/>
