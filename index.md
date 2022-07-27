@@ -1,4 +1,4 @@
-[KivaKit](https://www.kivakit.org) is a new vision for Java coding that makes development faster and easier.  
+[KivaKit](https://www.kivakit.org) is a new vision for Java coding that makes development faster and easier.
 
 <br/>
 

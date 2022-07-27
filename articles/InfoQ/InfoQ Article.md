@@ -549,15 +549,14 @@ Although KivaKit is brand-new at version 1.0, it has been in use at [Telenav](ht
 
 The following resources can help you dive into the details:
 
-| Resource     |     Description                   |
-|--------------|-----------------------------------|
-| *License* | [Apache License, Version 2.0](LICENSE) |
-| *Related Projects* | [kivakit-examples](https://github.com/Telenav/kivakit-examples), [kivakit-extensions](https://github.com/Telenav/kivakit) |
-| *Setup* | [Step-by-step setup instructions](https://github.com/Telenav/kivakit/blob/master/documentation/overview/setup.md)
-| *GitHub* | [GitHub project home page](https://github.com/Telenav/kivakit) |
-| *Code* | `git clone https://github.com/Telenav/kivakit.git` |
-| *Email* | [kivakit@telenav.com](mailto:kivakit@telenav.com) |
-| *Chat* | [Zulip](https://kivakit.zulip.com) |
-| *Twitter* | [@OpenKivaKit](https://twitter.com/openkivakit) |
-| *Issues* | [GitHub Issues](https://github.com/Telenav/kivakit/issues) |
-
+| Resource           | Description                                                                                                                                                                          |
+|--------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| *License*          | [Apache License, Version 2.0](LICENSE)                                                                                                                                               |
+| *Related Projects* | [kivakit-examples](https://github.com/Telenav/kivakit-examples), [kivakit-extensions](https://github.com/Telenav/kivakit), [kivakit-stuff](https://github.com/Telenav/kivakit-stuff) |
+| *Setup*            | [Step-by-step setup instructions](https://github.com/Telenav/kivakit/blob/release/current/documentation/overview/setup.md)                                                           |
+| *GitHub*           | [GitHub project home page](https://github.com/Telenav/kivakit)                                                                                                                       |
+| *Code*             | `git clone https://github.com/Telenav/kivakit.git`                                                                                                                                   |
+| *Email*            | [kivakit@telenav.com](mailto:kivakit@telenav.com)                                                                                                                                    |
+| *Chat*             | [Zulip](https://kivakit.zulip.com)                                                                                                                                                   |
+| *Twitter*          | [@OpenKivaKit](https://twitter.com/openkivakit)                                                                                                                                      |
+| *Issues*           | [GitHub Issues](https://github.com/Telenav/kivakit/issues)                                                                                                                           |
